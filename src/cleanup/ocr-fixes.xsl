@@ -71,6 +71,7 @@
         'Ilandels'    : 'Handels',
         'liändler'    : 'händler',
         'heiinweg'    : 'heimweg',
+        'Herrn.'      : 'Herm.',
         'llelvetia|Ilelvetia'   : 'Helvetia',
         'Iiirschen|Hirsclien' : 'Hirschen',
         'Hirschenf\sraben'  : 'Hirschengraben',
