@@ -3,6 +3,7 @@ import re
 
 FIXES = [
     ('(g|G)ehiilf', '\g<1>ehülf'),
+    ('Ghrist', 'Christ'),
     ('Herrn\.', 'Herm.'),
     ('Job\.', 'Joh.'),
     #(r'£(\d\d+)', '↯\g<1>'),
