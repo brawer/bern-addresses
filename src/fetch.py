@@ -1,7 +1,7 @@
 # SPDX-FileCopyrightText: 2023 Sascha Brawer <sascha@brawer.ch>
 # SPDX-License-Identifier: MIT
 #
-# Fetch address books of Bern (1861-1945) from www.e-rara.ch,
+# Fetch address books of Bern (1860-1945) from www.e-rara.ch,
 # and auxiliary data (such as famiily names) from Wikidata.
 
 from collections import namedtuple
