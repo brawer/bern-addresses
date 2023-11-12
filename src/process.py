@@ -92,7 +92,7 @@ class Processor(object):
     def process_proofread(self):
         dirpath = os.path.join(os.path.dirname(__file__), '..', 'proofread')
         page_re = re.compile(
-            r'^# Date: (\d{4}-\d\d-\d\d) Page: (\d+)/([\[\]\d]+)$')
+            r'^# Date: (\d{4}-\d\d-\d\d) Page: (\d+)/[\[]?([\d]+)[\]]?$')
         for filename in sorted(os.listdir(dirpath)):
             if not filename.endswith('.txt'):
                 continue
