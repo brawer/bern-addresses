@@ -4,14 +4,14 @@
 
 **Chapters**: The [historic address books of Bern](https://www.e-rara.ch/bes_1/periodical/structure/1395833) are split into chapters. We wanted to focus on the directory of
 residents, which is just one or (starting 1938) two chapters of the yearly volume. From the table of contents of each volume, we created a
-[list of chapters](../src/chapters.txt) with columns `Date`, `Year` `VolumeID`, `ChapterTitle` and `ChapterID`. The date is the editorial deadline of the volume, which was typically stated in the foreword, an appendix, and which we
+[list of chapters](../src/chapters.csv) with columns `Date`, `Year` `VolumeID`, `ChapterTitle` and `ChapterID`. The date is the editorial deadline of the volume, which was typically stated in the foreword, an appendix, and which we
 manually checked for each volume.
 
 **Full-page ads**: Among the content pages, there occasionally are
 [full-page ads](https://www.e-rara.ch/bes_1/periodical/pageview/25703771).
 We manually created a [denylist with 407 ads pages](../src/ads.txt).
 
-**Content pages**: We created a [list of content pages](../src/pages.txt).
+**Content pages**: We created a [list of content pages](../src/pages.csv).
 The `Date`column is the editorial deadline of the
 volume (same as in the chapters list), such as `1893-05-31`;
 the `PageID` column is the numeric ID for the scalled page on e-rara.ch,
