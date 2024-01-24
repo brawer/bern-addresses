@@ -30,8 +30,8 @@ In a first iteration, we worked with the OCR files hosted on e-rara.ch
 However, their OCR quality turned out to quite terrible, requiring lots of
 manual correction. We therefore re-OCRed all content  pages with
 [Google Document AI](https://cloud.google.com/document-ai?hl=en) using
-the [../src/send_to_ocr.py](send_to_ocr.py) script, which stores
-the convesion result in both [DocumentAI JSON] and [hOCR](http://kba.github.io/hocr-spec/1.2/) format on local disk.
+the [send_to_ocr.py](../src/send_to_ocr.py) script, which stores
+the conversion result to local disk, both in [DocumentAI JSON](https://cloud.google.com/document-ai/docs/handle-response) and [hOCR](http://kba.github.io/hocr-spec/1.2/) format.
 
 
 ## TODO: Elaborate work plan
