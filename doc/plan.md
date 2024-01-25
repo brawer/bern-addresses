@@ -70,6 +70,16 @@ reviewed, but this should be quick (a few hours). We will also
 double-check our name lists against [Wikidata names](https://names.toolforge.org/).
 
 
+## Address remapping
+
+*Status: Not yet implemented.*
+
+In 1882, Bern changed its addressing scheme and renumbered all
+buildings.  As a side project, we should bring the [published mapping
+table](https://www.e-rara.ch/bes_1/periodical/structure/3012646) into
+a machine-readable form like CSV. Without this, addresses before 1882
+cannot be resolved to a building. This is a side project.
+
 ## Splitting
 
 *Status: Not yet implemented, but an earlier version can be salvaged.*
