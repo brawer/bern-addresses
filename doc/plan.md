@@ -40,7 +40,7 @@ the conversion result to local disk, both in [DocumentAI JSON](https://cloud.goo
 for merging multi-line entries. Work estimate: Another 2 days of coding.*
 
 A [script](../src/convert_hocr_to_plaintext.py) converts hOCR files
-to plaintext. We store its output in the [proofread](../proofred) directory
+to plaintext. We store its output in the [proofread](../proofread) directory
 for editing, such as manual boilerplate removal.
 
 **Page:** In the plaintext files, the start of a new scanned page
@@ -53,8 +53,8 @@ number, we put the implicit page number in brackets, as in `[1]`.
 **Location on page:** The plaintext files
 will also include semicolon-sperated bounding boxes, for example
 `# 292,1297,1011,67;1520,1319,49,34`. These indicate
-which pixel areas (x, y, width, height) of the scanned page image
-form the entry. From this information, it would be straightforward
+which pixel areas (x, y, width, height) are part of the entry.
+From this information, it would be straightforward
 to generate a cropped image for each entry that highlights the
 contributing areas.
 
@@ -66,8 +66,8 @@ contributing areas.
 
 A yet to-be-written script will mine the plaintext files for family names,
 given names, street names, and professions. The output needs be manually
-reviewed, but this should be a quick scan (a few hours). We will also
-double-check them against [Wikidata names](https://names.toolforge.org/).
+reviewed, but this should be quick (a few hours). We will also
+double-check our name lists against [Wikidata names](https://names.toolforge.org/).
 
 
 ## Splitting
@@ -75,11 +75,16 @@ double-check them against [Wikidata names](https://names.toolforge.org/).
 *Status: Not yet implemented, but an earlier version can be salvaged.*
 
 A yet to-be-written script will split the plaintext files into columns
-(family name, given name, profession, work/home address, bounding boxes
-with location on page, etc.) and produce
+(family name, given name, maiden name, title, profession, work/home address,
+bounding boxes with location on page, etc.) and produce
 Excel files for manual review. We plan to emit a separate Excel
 sheet for each scanned page, since that constitutes a reasonable work
 item size for human review.
+
+Not sure yet what to do about phone numbers. We don’t care about the exact
+number, but it’s interesting who got a phone line at which point in time.
+Maybe we’ll just emit a column with a boolean flag to know whether or not
+they had a phone.
 
 
 ## Human review
