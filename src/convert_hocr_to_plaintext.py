@@ -23,11 +23,10 @@ MIN_Y = {
     29210065: 1600,
 }
 
-def convert_page(date, page_id, page_label):
+def read_page(date, page_id):
     boxes = []
     min_y = MIN_Y.get(page_id, 260)
-    print(f"# Date: {date} Page: {page_id}/{page_label}")
-    with open(f"hocr/{page_id}.hocr", "r") as f:
+    with open(f"cache/hocr/{page_id}.hocr", "r") as f:
         hocr = f.read()
     for x, y, x2, y2, txt in re.findall(
         r"<span class='ocr_line' id='line_[_0-9]+' title='bbox (\d+) (\d+) (\d+) (\d+)'>(.+)\n", hocr):
@@ -41,11 +40,43 @@ def convert_page(date, page_id, page_label):
             txt = "- " + txt[1:]
         boxes.append((x, y, w, h, txt))
     for x, y, w, h, txt in boxes:
-        print(f"{txt}  # {x},{y},{w},{h}")
+        yield f"{txt}  # {x},{y},{w},{h}"
+
+
+def convert_page(date, page_id, page_label):
+    yield f"# Date: {date} Page: {page_id}/{page_label}"
+    last, last_pos = '', ''
+    for line in read_page(date, page_id):
+        line = ' '.join(line.replace('.', '. ').split())
+        line = line.replace('. ,', '.,').replace('. -', '.-')
+        if line[0] == '#':
+            if last or last_pos: yield f'{last}  # {last_pos}'
+            yield line
+            last, last_pos = '', ''
+            continue
+        if len(line) > 3 and (re.match(r'^[A-Z]\.', line) or line.startswith("geb.") or line.startswith("Chr.") or line.startswith("Jb.")):
+            line = '- ' + line
+        if line.startswith('--'):
+            line = '- -' + line[2:]
+        elif line.startswith('('):
+            line = '- ' + line
+        cur, cur_pos = [x.strip() for x in line.split('#')]
+        if last.endswith('-'):
+            last = last[:-1] + cur
+            last_pos += ';' + cur_pos
+        elif last.endswith(','):
+            last = last + ' ' + cur
+            last_pos += ';' + cur_pos
+        else:
+            if last or last_pos: yield f'{last}  # {last_pos}'
+            last, last_pos = cur, cur_pos
+    if last or last_pos: yield f'{last}  # {last_pos}'
 
 
 if __name__ == "__main__":
     for date, pages in sorted(read_pages().items()):
+        if not date.startswith('1861'): continue
         for page_id, page_label in pages:
-            convert_page(date, page_id, page_label)
+            for line in convert_page(date, page_id, page_label):
+                print(line)
         break
