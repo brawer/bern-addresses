@@ -23,6 +23,15 @@ MIN_Y = {
     29210065: 1600,
 }
 
+JOIN_WORDS = {
+    'in', 'im', 'auf', 'bei', 'beim', 'der', 'des', 'den', 'um', 'am', 'an',
+}
+
+
+ABBREVS = {
+    'Chr.', 'Jb.', 'Th.', 'Fr.', 'Frl.', 'Wtw.', 'Wwe.', 'Schwest.', 'Pfr.', 'Gebr.',
+}
+
 def read_page(date, page_id):
     boxes = []
     min_y = MIN_Y.get(page_id, 260)
@@ -38,6 +47,9 @@ def read_page(date, page_id):
             continue
         if re.match(r"^-\w", txt):
             txt = "- " + txt[1:]
+        if '#' in txt:
+            txt = txt.replace('#', ' ')
+        txt = txt.replace('ſ', 's')
         boxes.append((x, y, w, h, txt))
     for x, y, w, h, txt in boxes:
         yield f"{txt}  # {x},{y},{w},{h}"
@@ -54,7 +66,7 @@ def convert_page(date, page_id, page_label):
             yield line
             last, last_pos = '', ''
             continue
-        if len(line) > 3 and (re.match(r'^[A-Z]\.', line) or line.startswith("geb.") or line.startswith("Chr.") or line.startswith("Jb.")):
+        if len(line) > 3 and (re.match(r'^[A-Z]\.', line) or any(line.startswith(x) for x in ABBREVS)):
             line = '- ' + line
         if line.startswith('--'):
             line = '- -' + line[2:]
@@ -65,6 +77,9 @@ def convert_page(date, page_id, page_label):
             last = last[:-1] + cur
             last_pos += ';' + cur_pos
         elif last.endswith(','):
+            last = last + ' ' + cur
+            last_pos += ';' + cur_pos
+        elif any(last.endswith(' ' + x) for x in JOIN_WORDS) and not cur.startswith('-'):
             last = last + ' ' + cur
             last_pos += ';' + cur_pos
         else:
@@ -79,4 +94,4 @@ if __name__ == "__main__":
         for page_id, page_label in pages:
             for line in convert_page(date, page_id, page_label):
                 print(line)
-        break
+
