@@ -19,22 +19,52 @@ def read_pages():
     return pages
 
 
-MIN_Y = {
-    29210065: 1600,
-}
-
+# If any of these words are last on a line, we join that line with the next one,
+# unless the following line starts with a hyphen (that got actually recognized
+# by OCR). The heuristic is not perfect but seems to work pretty well.
 JOIN_WORDS = {
-    'in', 'im', 'auf', 'bei', 'beim', 'der', 'des', 'den', 'um', 'am', 'an',
+    'in', 'im', 'auf', 'bei', 'beim', 'der', 'des', 'den', 'um', 'am', 'an', 'u.',
 }
 
 
+# Abbreviations (and full words) that are definitely not family names.
+# If they start a new line, we assume that OCR has missed to recognize
+# a leading hyphen, and insert that missing hyphen programmatically.
 ABBREVS = {
-    'Chr.', 'Jb.', 'Th.', 'Fr.', 'Frl.', 'Wtw.', 'Wwe.', 'Schwest.', 'Pfr.', 'Gebr.',
+    '&',
+    'Abl.',
+    'Alb.',
+    'Chr.',
+    'Cie.',
+    'Fr.',
+    'Frau',
+    'Frl.',
+    'gb.',
+    'geb.',
+    'Gebr.'
+    'Gottf.',
+    'Math.',
+    'Karol.',
+    'Jb.',
+    'Jh.',
+    'Jgfr.',
+    'Joh.',
+    'Pfr.',
+    'Sam.',
+    'Schn.',
+    'Schuhm.',
+    'Schwest.',
+    'Tel.',
+    'Th.',
+    'Wittwe',
+    'Wtw.',
+    'Wwe.',
 }
 
 def read_page(date, page_id):
+    has_phone_arrows = (date >= '1885') and (date <= '1924')
     boxes = []
-    min_y = MIN_Y.get(page_id, 260)
+    min_y = 260
     with open(f"cache/hocr/{page_id}.hocr", "r") as f:
         hocr = f.read()
     for x, y, x2, y2, txt in re.findall(
@@ -48,8 +78,14 @@ def read_page(date, page_id):
         if re.match(r"^-\w", txt):
             txt = "- " + txt[1:]
         if '#' in txt:
+            if has_phone_arrows:
+                txt = re.sub(r'(#)\d{3,}', '↯', txt)
             txt = txt.replace('#', ' ')
-        txt = txt.replace('ſ', 's')
+        txt = txt.replace('ſ', 's').replace("'", "’")
+        if has_phone_arrows:
+            txt = re.sub(r'\s+(\d{4,})[^\]]', r' ↯\1 ', txt)
+        if txt.strip() == '↯':
+            continue
         boxes.append((x, y, w, h, txt))
     for x, y, w, h, txt in boxes:
         yield f"{txt}  # {x},{y},{w},{h}"
@@ -60,7 +96,7 @@ def convert_page(date, page_id, page_label):
     last, last_pos = '', ''
     for line in read_page(date, page_id):
         line = ' '.join(line.replace('.', '. ').split())
-        line = line.replace('. ,', '.,').replace('. -', '.-')
+        line = line.replace('. ,', '.,').replace('. -', '.-').replace('. )', '.)').replace('. :', '.:')
         if line[0] == '#':
             if last or last_pos: yield f'{last}  # {last_pos}'
             yield line
@@ -90,8 +126,10 @@ def convert_page(date, page_id, page_label):
 
 if __name__ == "__main__":
     for date, pages in sorted(read_pages().items()):
-        if not date.startswith('1861'): continue
-        for page_id, page_label in pages:
-            for line in convert_page(date, page_id, page_label):
-                print(line)
+        if date <= '1862': continue
+        with open(f'proofread/{date}.txt', 'w') as out:
+            for page_id, page_label in pages:
+                for line in convert_page(date, page_id, page_label):
+                    out.write(line + '\n')
+
 
