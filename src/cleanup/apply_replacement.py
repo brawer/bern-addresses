@@ -2,7 +2,8 @@ import os
 import re
 
 FIXES = [
-    (r'Arnold\.', 'Arnold,'),
+    (r'Emma\.', 'Emma,'),
+    #(r'Arnold\.', 'Arnold,'),
     #(r'Alfred\.', 'Alfred,'),
     #('(g|G)ehiilf', '\g<1>ehülf'),
     #('Herrn\.', 'Herm.'),
