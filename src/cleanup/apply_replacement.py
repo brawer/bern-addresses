@@ -2,9 +2,11 @@ import os
 import re
 
 FIXES = [
-    ('(g|G)ehiilf', '\g<1>ehülf'),
-    ('Herrn\.', 'Herm.'),
-    ('Job\.', 'Joh.'),
+    (r'Arnold\.', 'Arnold,'),
+    #(r'Alfred\.', 'Alfred,'),
+    #('(g|G)ehiilf', '\g<1>ehülf'),
+    #('Herrn\.', 'Herm.'),
+    #('Job\.', 'Joh.'),
     #(r'£(\d\d+)', '↯\g<1>'),
     #(r'gasse(\d+)', r'gasse \g<1>'),
     #(r'Kirclienfeld|Kirchen-\sIfeld', r'Kirchenfeld'),
