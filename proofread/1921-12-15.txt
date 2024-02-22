@@ -1096,7 +1096,7 @@ Auer, Katharina, Damenschneiderin, Seftigenstrasse 47  # 1080,1135,807,35;1131,1
 weg 11  # 1131,1259,118,17
 Aufdermauer, Franz, Sekretär der Oberpostdirektion, Moserstrasse 26  # 1080,1282,809,29;1132,1324,457,22
 $3496  # 966,1283,84,35
-Aufenast, Ernst. Rud., Gärtnermeister, Fricktreppe 5  # 1083,1359,807,20;1130,1397,147,27
+Aufenast, Ernst, Rud., Gärtnermeister, Fricktreppe 5  # 1083,1359,807,20;1130,1397,147,27
 $4921  # 1807,1386,83,26
 - Frieda, Ladentochter, Fricktreppe 5  # 1108,1429,666,24
 14231  # 964,1463,84,26
@@ -2731,7 +2731,7 @@ Alois, Privatier, Neuengasse 21  # 308,1948,554,31
 Bertha, Ladentochter, Neufeldstrasse 53  # 306,1983,725,30
 - Franz, Spengler, Eggimannstrasse 24  # 285,2019,710,31
 Friedr. E., Bahnarbeiter, Bühlstr. 39  # 309,2057,678,30
-- Fritz. Lederwaren- u. Reiseartikelgeschäft, Gerechtigkeitsgasse 3  # 276,2094,793,30;307,2130,380,32
+- Fritz, Lederwaren- u. Reiseartikelgeschäft, Gerechtigkeitsgasse 3  # 276,2094,793,30;307,2130,380,32
 - Gottlieb, Bureaudiener d. Obertelegraphendirektion, Frohbergweg 5  # 256,2162,816,34;308,2201,442,30
 - Joh., Mechaniker der Waffenfabrik, Lorrainestrasse 21  # 258,2236,812,29;307,2274,269,25
 Josef Franz, Kommis, Mühlemattstrasse 5  # 308,2307,764,30
@@ -3144,7 +3144,7 @@ $6228  # 877,1572,83,27
 - E., Pedell der Universität, Hochschulstr. 4  # 1045,1610,751,18
 - Ernst, Bahnarbeiter der S. B. B., Brunnadernstrasse 40  # 1020,1646,775,17;1044,1682,268,22
 16228  # 877,1682,84,25
-- Ernst. Gesellschaftsstr. 4  # 1020,1720,466,20
+- Ernst, Gesellschaftsstr. 4  # 1020,1720,466,20
 - Ernst, Sek.-Lehrer, Bitziusstr. 9  # 1019,1757,585,18
 Ernst Friedr., Schlosser, Cäcilienstr. 27  # 1046,1788,715,22
 Ernst Karl, Buchhalter, Brünigweg 11  # 1046,1827,688,23
@@ -3199,7 +3199,7 @@ Walter, Hilfsarbeiter, Bümplizstr. 13  # 231,1058,692,39
 - -Witz, E., Privatiere, Bühlstrasse 29  # 204,1348,676,36
 - -Zingg, Klara, Privatiere, Dorngasse 8  # 196,1383,738,39
 Bietenharder, Alfr., Kaufm., Brunnhofweg 32  # 181,1425,808,41
-- Ernst. Postbeamter, Ulmenweg 13  # 204,1464,644,38
+- Ernst, Postbeamter, Ulmenweg 13  # 204,1464,644,38
 - Ernst, techn. Beamter der städt. Baudirektion, Mattenhofstrasse 33  # 206,1499,784,36;223,1537,451,29
 - Gust. Ad., Kommis, Balmweg 21  # 208,1569,604,39
 - Klara, Ladentochter, Balmweg 21  # 196,1606,635,39
@@ -3677,7 +3677,7 @@ Blatter. Christ., Gasarbeiter, Mezenerweg 11  # 188,1567,808,39
 Elise, Ladentochter, Fabrikstrasse 31  # 235,1605,652,32
 - Friedr., Sekretär der Oberpostdirektion, Brunnadernstr. 30  # 196,1634,801,48;233,1679,331,30
 Friedr. . Handlanger, Feldheimweg  # 230,1713,667,41
-Fritz. Postbeamter, Jubiläumsstrasse 52  # 234,1788,723,37
+Fritz, Postbeamter, Jubiläumsstrasse 52  # 234,1788,723,37
 Hs., Bahnarb., Feldheimweg 40, Bümpliz  # 231,1822,744,41
 - Karl Gottfr., Handlanger, Bümplizstr. 116  # 210,1857,764,40
 - M. Heinrich, Kaufmann, Thunstrasse 12  # 229,1896,726,35
@@ -10472,7 +10472,7 @@ Emma, Ladentochter, Militärstrasse 60  # 1040,1042,681,31
 Erika, Bureaulistin, Stadtbachstrasse 58  # 1038,1077,729,30
 - Ernst, Bahnarbeiter, Brunngasse 58  # 1012,1114,665,32
 104 Bümpliz  # 741,1146,214,28
-- Ernst.  # 1024,1152,119,28
+- Ernst,  # 1024,1152,119,28
 Bahnarbeiter, Keltenstrasse 6, 5570  # 1196,1154,594,29;1718,1226,75,25
 Bümpliz  # 1040,1190,141,28
 13578  # 872,1216,88,25
@@ -15347,7 +15347,7 @@ Sohn & Co., Hans, Wein- u. Spirituosenhandlung, Aarbergergasse 10  # 261,262,765
 Hotel Löwen A.-G. Bern, Spitalgasse 43 605  # 217,774,809,40
 Hotelier-Verein, schweizer. . Stellenbureau:  # 221,812,804,41
 Marktgasse 32  # 255,857,255,30
-Hottinger, Ernst., Mech., Elisabethenstr. 40  # 216,892,773,31
+Hottinger, Ernst,, Mech., Elisabethenstr. 40  # 216,892,773,31
 - Ernst, Spengler, Brunnhofweg 27  # 212,924,645,38
 Jak., Stationsvorsteher, Südbahnhofstr. 14  # 262,961,766,35
 Karl Joh., Mechaniker, Breitenrainstr. 35  # 264,997,765,36
@@ -15357,7 +15357,7 @@ Hotz, Alfr., Handlanger, Wylerstrasse 79  # 221,1181,731,37
 Emil, Buchbindermeister, i. Fa. Gebr. Kull  # 267,1255,764,32
 - & E. Hotz, Aarbergergasse 15  # 263,1288,541,39
 - Ernst, Stricker, Metzgergasse 37  # 235,1325,615,37
-Ernst. Prokurist d. Baukontor Bern A.-G., Bundesgasse 20  # 268,1364,757,34;265,1401,280,35
+Ernst, Prokurist d. Baukontor Bern A.-G., Bundesgasse 20  # 268,1364,757,34;265,1401,280,35
 - Franz, Photograph, Metzgergasse 40  # 234,1439,676,37
 Heinrich, Buchhalter, Römerweg 22  # 267,1474,643,36
 Hermann, Handlanger, Metzgergasse 62  # 265,1511,705,40
@@ -18011,7 +18011,7 @@ L  # 155,1225,21,4
 - F. G., Pächter, Wabernstrasse 49  # 171,1245,636,30
 - Franz, Schriftsetzer, Armandweg 11  # 191,1278,656,30
 - Fritz, Bankangest., Ob. Beaumontweg 12  # 155,1314,770,33
-- Fritz. Dr. phil., Lehrer am bern. Oberseminar, Weyersträsschen 16 H, Wabern  # 190,1351,771,30;206,1388,714,29
+- Fritz, Dr. phil., Lehrer am bern. Oberseminar, Weyersträsschen 16 H, Wabern  # 190,1351,771,30;206,1388,714,29
 - Fritz, Kaminfeger, Scheibenstrasse 24  # 172,1425,707,33
 Fritz, Landwirt, Wabernstrasse 49  # 206,1460,618,32
 1  # 153,1477,22,5
@@ -21899,7 +21899,7 @@ Friedr., Zigarrenhandlung, Lerchenweg 37  # 1123,1459,759,26
 —  # 1074,1480,19,3
 - (5675  # 1799,1491,80,25
 - Fritz, Schlosser, Papiermühlestrasse 82 F  # 1091,1534,774,22
-- Fritz. Eisendreher, Murtenstrasse 155f  # 1112,1569,702,23
+- Fritz, Eisendreher, Murtenstrasse 155f  # 1112,1569,702,23
 - Fritz, Uhrenmacher, Mattenenge 13  # 1112,1606,655,28
 Fritz, Schreiner, Bantigerstrasse 37  # 1131,1643,627,24
 - F. C. & Co., Inc., New-York, Zweigniederlassung Bern, Import u. Export, Hirschengraben 8  # 1091,1678,793,23;1125,1713,761,24;1128,1752,262,25
@@ -22450,7 +22450,7 @@ zzi45  # 0,1491,41,23;8,1631,34,25
 Ernst, Kaufmann, Bümplizstrasse 98  # 212,1531,659,28
 - Ernst, Milchhändler, Bümplizstrasse 98  # 191,1568,716,30
 - Fr., Adjunkt bei der Oberpostkontrolle, Diesbachstrasse 9  # 188,1601,778,31;211,1639,314,26
-Frieda. Glätterin, Stöckackerstrasse 70, Bümpliz  # 210,1671,756,32;210,1711,142,28
+Frieda, Glätterin, Stöckackerstrasse 70, Bümpliz  # 210,1671,756,32;210,1711,142,28
 - B., äft  # 3,1703,41,29;2,1807,45,26
 - Friedr., Arbeiter S. B. B., Berchtoldstr. 11  # 187,1745,778,28
 - Friedr., Ausläufer, Stöckackerstrasse 70, Bümpliz  # 187,1779,779,29;211,1816,143,31
@@ -26275,7 +26275,7 @@ Oesch, Christ., Handlanger, Rütlistrasse 15  # 213,1875,764,34
 - Christ, Handlanger, Haldenweg 18  # 240,1944,668,39
 Christ., Sattler, Hopfenweg 41  # 263,1981,545,40
 Christ. Alfred, Hilfsarbeiter, Bethlehemstrasse 115, Bümpliz  # 262,2018,769,37;263,2058,376,31
-- Ernst. Bahnarbeiter, Gerbergasse 17  # 235,2097,694,38
+- Ernst, Bahnarbeiter, Gerbergasse 17  # 235,2097,694,38
 - Ernst, Elektromonteur, Armandweg 10  # 232,2134,722,37
 Ernst, Schlosser, Hopfenweg 18  # 270,2173,567,39
 Frieda, Kanzlistin, Bümplizstr. 67  # 269,2212,620,35
@@ -28250,7 +28250,7 @@ Edmund, Kommis, Murtenstrasse 43  # 179,1069,660,31
 Emil, Schlosser, Murtenstrasse 153b  # 180,1144,644,31
 - Elise Dora, Bureaulistin, Metzgergasse 43  # 159,1181,797,33
 Ernst, Bereiter, Wylerringstrasse 69  # 180,1215,658,33
-- Ernst. Mechaniker, Martiweg 11  # 146,1255,610,32
+- Ernst, Mechaniker, Martiweg 11  # 146,1255,610,32
 - Fr., Häuserverwalter, Hopfenweg 23  # 157,1290,681,34
 1  # 128,1307,14,4
 - Fr. E., Mechaniker, Garage-Chef bei G.  # 129,1327,825,28
@@ -32039,7 +32039,7 @@ Schori, Alfred, Bahnarbeiter, Aarbergerg. 24  # 122,2394,818,40
 - Bertha, Bureaulistin, Eigerweg 5  # 119,2431,641,39
 - Christ. B., Photograph, Erikaweg 6  # 120,2468,693,43
 - E. & E., Spezerei- und Merceriehandlung, Bümpliz  # 132,2507,808,40;167,2543,148,33
-- Ernst.  # 122,2579,150,35
+- Ernst,  # 122,2579,150,35
 Bahnarbeiter, Stöckackerstr. 98, - Ernst Tr., Mech., Bottigenstr. 37, Bümpliz  # 328,2581,609,43;140,2657,794,46
 Bümpliz  # 167,2621,142,33
 Friedr., Elektriker, Bümplizstrasse 93  # 1049,269,690,46
@@ -32539,7 +32539,7 @@ Ernst Herm., Lok.-Heizer, Murtenstr. 30  # 1032,1418,752,51
 Erwin, Stenograph, Greyerzstrasse 35  # 1030,1493,672,47
 Eugenie, Bureaulistin, Neuengasse 39  # 1029,1530,686,50
 - Fr., Gipser und Maler, Weissenbühlweg 30  # 1006,1568,794,48
-Fritz. Beamter S. B. B., Gotthardweg 9  # 1028,1603,717,49
+Fritz, Beamter S. B. B., Gotthardweg 9  # 1028,1603,717,49
 Friedr., Redaktor, Erlachstrasse 5  # 1024,1641,637,43
 - (6295  # 1710,1660,87,26
 - H. & Co., techn. Neuheiten, Ob. Dufourstrasse 7  # 987,1678,810,51;1025,1724,158,24
@@ -37649,7 +37649,7 @@ Robert, Velohändler, Bümplizstr. 115 136  # 1014,2675,771,39
 - (912  # 1715,2795,69,26
 # Date: 1921-12-15 Page: 25901955/444
 9  # 278,272,1604,62
-Kunstglaserei, Brunngasse 60 und Graben- - Ernst. i. Fa. E. Wälti & Cie., Aegertenpromenade  # 278,272,1604,62;277,318,226,26
+Kunstglaserei, Brunngasse 60 und Graben- - Ernst, i. Fa. E. Wälti & Cie., Aegertenpromenade  # 278,272,1604,62;277,318,226,26
 - Berger, M. B., Wwe. des Obersten, Brei-Ernst Hans, Schreiner, Berchtoldstr. 48  # 277,346,1556,55
 tenrainstrasse 13  # 279,389,301,28
 - -Bucher, Kolonialwaren, Weine, Liköre, Kornhausplatz 13  # 258,423,783,41;277,465,317,34
@@ -40829,7 +40829,7 @@ Kav.-Remontendepois, Kasernenstrasse 39  # 244,493,772,32
 - -Wyss, A., Camionnage, Gewerbestrasse 29  # 219,900,793,33
 Zurflüh, Emil, Angestellter der Landestopo-- Alfr. . Kaufmann, Dalmazirain 16  # 192,973,1504,35
 graphie, Schmidweg 6  # 240,1013,393,31
-- Ernst. Kanzleiausläufer, Neuengasse 18  # 219,1085,758,32
+- Ernst, Kanzleiausläufer, Neuengasse 18  # 219,1085,758,32
 - Fr., Pferdewärter, Melchenbühlweg 23  # 193,1121,746,32
 - Fritz, Handlanger, Sulgeneckstrasse 58  # 224,1157,715,34
 Gottfr., Handlanger, Muesmattstrasse 38  # 242,1194,733,33
