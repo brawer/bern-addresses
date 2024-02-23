@@ -2,12 +2,13 @@ import os
 import re
 
 FIXES = [
-    (r'Gertrud\.', 'Gertrud,'),
-    (r'Hans\.', 'Hans,'),
-    (r'Hedwig\.', 'Hedwig,'),
-    (r'Ida\.', 'Ida,'),
-    (r'Jakob\.', 'Jakob,'),
-    (r'Robert\.', 'Robert,'),
+    (r' 0\.', ' O.'),
+    #(r'Gertrud\.', 'Gertrud,'),
+    #(r'Hans\.', 'Hans,'),
+    #(r'Hedwig\.', 'Hedwig,'),
+    #(r'Ida\.', 'Ida,'),
+    #(r'Jakob\.', 'Jakob,'),
+    #(r'Robert\.', 'Robert,'),
     #(r'Rudolf\.', 'Rudolf,'),
     #(r'Ernst\.', 'Ernst,'),
     #(r'Frieda\.', 'Frieda,'),
