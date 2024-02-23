@@ -2,8 +2,11 @@ import os
 import re
 
 FIXES = [
-    (r',,(\w+)"', '„\g<1>“'),
-    (r'\.„', '. „'),
+    # Willy A,, Vers.-Angestellter --> Willy A., Vers.-Angestellter
+    (r' ([A-Z]),, ', ' \g<1>., '),
+
+    #(r',,(\w+)"', '„\g<1>“'),
+    #(r'\.„', '. „'),
     #(r' 0\.', ' O.'),
     #(r'Gertrud\.', 'Gertrud,'),
     #(r'Hans\.', 'Hans,'),
