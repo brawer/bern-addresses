@@ -2,7 +2,9 @@ import os
 import re
 
 FIXES = [
-    (r' 0\.', ' O.'),
+    (r',,(\w+)"', '„\g<1>“'),
+    (r'\.„', '. „'),
+    #(r' 0\.', ' O.'),
     #(r'Gertrud\.', 'Gertrud,'),
     #(r'Hans\.', 'Hans,'),
     #(r'Hedwig\.', 'Hedwig,'),
