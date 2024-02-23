@@ -2,8 +2,14 @@ import os
 import re
 
 FIXES = [
+    # << Bärag >> --> «Bärag»
+    (r'<<\s*', '«'),
+    (r'<«\s*', '«'),
+    (r'\s*>>', '»'),
+    (r'\s*»>', '»'),
+
     # Willy A,, Vers.-Angestellter --> Willy A., Vers.-Angestellter
-    (r' ([A-Z]),, ', ' \g<1>., '),
+    #(r' ([A-Z]),, ', ' \g<1>., '),
 
     #(r',,(\w+)"', '„\g<1>“'),
     #(r'\.„', '. „'),
