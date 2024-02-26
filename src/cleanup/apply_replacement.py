@@ -1,41 +1,47 @@
 import os
 import re
 
+
 FIXES = [
+    (r'Igfr\.', 'Jgfr.'),
+]
+
+
+DONE_FIXES = [
     # << Bärag >> --> «Bärag»
     (r'<<\s*', '«'),
     (r'<«\s*', '«'),
     (r'\s*>>', '»'),
     (r'\s*»>', '»'),
 
-    (r'[ ]?\. \.,? ', '., ')
     # Willy A,, Vers.-Angestellter --> Willy A., Vers.-Angestellter
     #(r' ([A-Z]),, ', ' \g<1>., '),
 
-    #(r',,(\w+)"', '„\g<1>“'),
-    #(r'\.„', '. „'),
-    #(r' 0\.', ' O.'),
-    #(r'Gertrud\.', 'Gertrud,'),
-    #(r'Hans\.', 'Hans,'),
-    #(r'Hedwig\.', 'Hedwig,'),
-    #(r'Ida\.', 'Ida,'),
-    #(r'Jakob\.', 'Jakob,'),
-    #(r'Robert\.', 'Robert,'),
-    #(r'Rudolf\.', 'Rudolf,'),
-    #(r'Ernst\.', 'Ernst,'),
-    #(r'Frieda\.', 'Frieda,'),
-    #(r'Fritz\.', 'Fritz,'),
-    #(r'Emma\.', 'Emma,'),
-    #(r'Arnold\.', 'Arnold,'),
-    #(r'Alfred\.', 'Alfred,'),
-    #('(g|G)ehiilf', '\g<1>ehülf'),
-    #('Herrn\.', 'Herm.'),
-    #('Job\.', 'Joh.'),
-    #(r'£(\d\d+)', '↯\g<1>'),
-    #(r'gasse(\d+)', r'gasse \g<1>'),
-    #(r'Kirclienfeld|Kirchen-\sIfeld', r'Kirchenfeld'),
-    #(r'\\Vildhain'  , r'Wildhain'),
-    #(r'^\d+\s+(.+)$'
+    (r'[ ]?\. \.,? ', '., '),
+
+    (r',,(\w+)"', '„\g<1>“'),
+    (r'\.„', '. „'),
+    (r' 0\.', ' O.'),
+    (r'Gertrud\.', 'Gertrud,'),
+    (r'Hans\.', 'Hans,'),
+    (r'Hedwig\.', 'Hedwig,'),
+    (r'Ida\.', 'Ida,'),
+    (r'Jakob\.', 'Jakob,'),
+    (r'Robert\.', 'Robert,'),
+    (r'Rudolf\.', 'Rudolf,'),
+    (r'Ernst\.', 'Ernst,'),
+    (r'Frieda\.', 'Frieda,'),
+    (r'Fritz\.', 'Fritz,'),
+    (r'Emma\.', 'Emma,'),
+    (r'Arnold\.', 'Arnold,'),
+    (r'Alfred\.', 'Alfred,'),
+    ('(g|G)ehiilf', '\g<1>ehülf'),
+    ('Herrn\.', 'Herm.'),
+    ('Job\.', 'Joh.'),
+    (r'£(\d\d+)', '↯\g<1>'),
+    (r'gasse(\d+)', r'gasse \g<1>'),
+    (r'Kirclienfeld|Kirchen-\sIfeld', r'Kirchenfeld'),
+    (r'\\Vildhain'  , r'Wildhain'),
 ]
 
 
