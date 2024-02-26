@@ -15,7 +15,7 @@ Adelmann, Marg. Cath., Lehrerin, Meßgerg. 130  # 959,1821,696,72;1066,1880,494,
 Aeberhard geb. Schmid, Neuengasse 93.  # 955,1933,709,64;1063,1992,209,43
 Johann, Bahnhofarbeiter, Spitalg. 176  # 1055,2037,604,69;1064,2099,315,52
 - Joh., Zimmermann, Marzieledr. 65  # 1056,2150,600,61;1054,2205,251,46
-Friedr., Stationsvorsteh. .  # 1058,2254,594,67
+Friedr., Stationsvorsteh.,  # 1058,2254,594,67
 Schoßhalde 106  # 1057,2310,369,53
 - Frau, Schneid., Lorr. 88  # 1056,2365,592,56
 Aeberle, Rud., Schriftsetzer, Gerberngr. 142  # 946,2412,699,74;1056,2472,359,56
@@ -1849,7 +1849,7 @@ Fried., Steinhauermeister, Gemdr., Lorr. 45  # 1173,1641,571,64;1176,1694,402,51
 - Joh., Baumeister, Aarbergergasse 38  # 1172,1746,575,57;1170,1798,317,50
 - I. F., Pensionshalter, Mygg. u. Zwiebing. 137  # 1166,1850,574,54;1168,1901,573,56
 - geb. Wermuth, M., Modistin, Meggg. 73  # 1167,1955,575,52;1166,1997,404,63
-Friedr. ., Buchdr., Mpg. 70  # 1168,2052,569,64
+Friedr., Buchdr., Mpg. 70  # 1168,2052,569,64
 - J., Schuhmachermeister, Lorraine 115  # 1166,2102,566,64;1167,2155,287,43
 - Joh. Ludw., Schneidermeister, Sulgenb. 86  # 1166,2208,572,51;1167,2257,469,62
 - Joh., Steinbrecher, Lorraine 135  # 1164,2310,571,57;1159,2364,216,41
@@ -2572,7 +2572,7 @@ Friedr., Zugmstr. u. Wirth  # 379,1726,581,48
 Schauplagg. 198.  # 385,1782,405,43
 Hohloch, Messerschm. u. Schuhhändler, Zeughauspl. 247  # 274,1836,693,43;379,1890,591,42
 Hohlenweger J., Wirth z. Sternen, Aarbergerg. 34  # 276,1938,694,49;385,2000,472,44
-Höhn, J. H., Sekretär der Bundeskzl. . Stadtb. 178a  # 280,2047,693,40;388,2099,585,39
+Höhn, J. H., Sekretär der Bundeskzl., Stadtb. 178a  # 280,2047,693,40;388,2099,585,39
 Euphros., Primarlehrerin, Stadtbach 178 a  # 390,2154,582,48;392,2207,370,40
 Emma, Sekundarlehrerin, Stadtbach 178 a  # 394,2260,584,44;396,2312,376,42
 - Höhn, Bertha, Lehrerin, Stadtbach 178 a  # 350,2362,629,52;400,2418,366,44
@@ -2887,7 +2887,7 @@ Nikl., Handl., Grchtg. 145  # 1181,903,563,46
 Jourdat, Jgfr., Schneiderin, Gerechtigkg. 85  # 1086,1050,660,57;1186,1104,328,50
 Isch Ad., Schreinerg., gg. 280  # 1085,1150,660,56
 Ischer R., Architekt, Mktg. 69  # 1085,1201,659,56
-Friedr., Spezier. ., Gerechtigkeitsg. 85  # 1187,1257,560,43;1182,1308,358,46
+Friedr., Spezier., Gerechtigkeitsg. 85  # 1187,1257,560,43;1182,1308,358,46
 - Sam., Ellenwaarenhdlg., Schauplaggasse 212  # 1186,1352,556,59;1186,1407,429,50
 Ischi E., Zeughspört., 3ghg. 5  # 1082,1456,659,52
 Iseli-Schmuß, Wwe., Spez., Framg. 184  # 1081,1504,660,57;1181,1563,265,38
@@ -2970,14 +2970,14 @@ Räser allié Steinmann, J., Weinhdl., Gerechtg. 101  # 987,2467,697,50;1094,252
 zieledrittel 51 al (Weißenbühl).  # 484,305,565,53;483,359,126,44
 - J. R., Weinhdlg. Spitalgasse 174  # 488,407,561,58;485,464,205,38
 - C. F., Spengler, Altb. 177  # 487,510,562,50
-- Sam. . Spengler u. Trödler, Meßg. 76  # 484,558,565,49;485,611,305,51
+- Sam., Spengler u. Trödler, Meßg. 76  # 484,558,565,49;485,611,305,51
 - I. I., Schneid., Abg. 72  # 483,663,565,53
 111  # 459,677,-53,127
 - J., Gypser, Aarbergg. 37  # 472,713,552,54
 - geb. Scheidegger, Glätter.  # 471,764,574,48
 u. Wascherin, Aarbg. 59  # 482,815,540,54
 Ch., Delkräm., Nydeg. 201  # 474,866,570,51
-Käsermann, Spezier. . Jtg. 195  # 379,914,667,50
+Käsermann, Spezier., Jtg. 195  # 379,914,667,50
 Kaspar Friedr. Hauskn.,Mt. 77  # 379,967,667,47
 Kasteler, Chr., Eisenbahnhofarbeiter, Marziele 22  # 382,1016,664,51;486,1070,459,42
 Kästli, Schneider, Aarbergg. 28  # 379,1114,667,58
@@ -3580,7 +3580,7 @@ Leroy L. E., Kanzlist, Bllw. 264  # 990,1593,713,49
 Leserf, Posamenter u. Negot., Marktg. 48  # 992,1647,709,52;1100,1704,263,44
 Leu F., Kanzlist, Brunng. 18  # 991,1754,683,52
 - A., Commis, Käfichg. 94  # 1099,1808,603,49
-- Fr. . Postangest., Nng. 100  # 1085,1861,617,50
+- Fr., Postangest., Nng. 100  # 1085,1861,617,50
 Johann, Schneidermeister, Judeng. 112 a  # 1090,1911,610,54;1105,1967,325,48
 Friedr., Controllgeh. der Staatsb., Aarbg. 64  # 1102,2022,599,52;1103,2073,491,56
 - St., Weißmüller, Küchliwirth, Gerechtg. 116  # 1060,2130,639,50;1100,2186,496,45
@@ -4670,7 +4670,7 @@ Ed., Sohn, Tapezierer, Bollw. 78 u. 262  # 1108,2451,589,47;1108,2507,416,37
 Ingenieur, Proß G., Schneid., Marktg. 33  # 692,2514,251,50;245,2624,697,48
 Rabe, E., Hutmacher, Gerechtigkeitsgasse 106  # 1000,2560,699,46;1105,2616,379,44
 # Date: 1873-03-31 Page: 3010619/200
-Räber E. F., Pächter, Marz. 47 | Nayroud Dav. . Hafner u. Fü-Rabus J.  # 375,288,1397,88
+Räber E. F., Pächter, Marz. 47 | Nayroud Dav., Hafner u. Fü-Rabus J.  # 375,288,1397,88
 Jak., Bäcker, Mezgergasse. 119  # 373,337,667,73;473,403,293,41
 Räder, Glas- u. Geschirrhdl., Bollw. 81, Neueng. 122c  # 372,443,668,67;474,499,564,64
 Rahm-Melen A., Weinhändler, Christoffelgasse 235 b und  # 370,547,666,70;469,603,567,58
@@ -4748,7 +4748,7 @@ Reisdorf, Ludw., Pflästermstr.  # 222,1926,695,51
 b. Bierhübeli 267  # 326,1978,405,44
 Heinr. Pfläst., Aarbg. 29  # 325,2031,593,57
 Reisinger-Durheim, C. A., Vater, Kramg. 215  # 222,2088,694,51;330,2149,371,39
-Jul., Privat. . Idng. 122  # 333,2198,586,46
+Jul., Privat., Idng. 122  # 333,2198,586,46
 Emilie, Privat., Judengasse 122  # 331,2251,587,51;327,2308,218,39
 - K. R., allié Gerber, Gemeindrath Länggdr. 272 a  # 292,2357,627,48;331,2414,592,51
 - (Falkenheim)  # 329,2465,301,51
@@ -4886,14 +4886,14 @@ Rohrer-Jenzer, F. E., Negot., Marktg. 71  # 990,1430,697,53;1099,1490,261,41
 - D., Gypser und Maler, Gerechtg. 143  # 1100,1538,592,42;1100,1594,316,40
 Em., Abwart, Marktg. 87  # 1093,1646,602,43
 Ad., Kassier, Megg. 132  # 1092,1702,555,42
-- geb. Märki, Ver. . Rostgeb., Gerechtigkeitsgasse 107  # 1087,1752,604,43;1105,1807,525,43
+- geb. Märki, Ver., Rostgeb., Gerechtigkeitsgasse 107  # 1087,1752,604,43;1105,1807,525,43
 - J., Bachauff., Hollig. 152  # 1047,1866,648,39
 - J. P., Schneider, Hrg. 298  # 1048,1912,647,47
 - J. U., Kräm., Postg. 30  # 1097,1969,545,41
 Jos., Steinhauerg., Altenberg 128 a  # 1100,2023,597,42;1103,2078,232,39
 Rud., Schreinerg., Marz. 25  # 1087,2128,608,45
 - Joh. Samuel, Abwart, Christoffelgaffe 186 f  # 1108,2179,586,49;1109,2238,470,41
-- N., Briefträg. . Lgg. 218 a  # 1100,2289,600,46
+- N., Briefträg., Lgg. 218 a  # 1100,2289,600,46
 Rollé Ed., Wollenspinnerei u. Weberei, Matte 127 u. 128  # 1000,2343,695,47;1106,2398,595,36
 Fabrik Matte 100  # 1109,2454,417,37
 Rolli, Schlosser und Kochherdfabrikant, Aarbg. 38  # 1000,2500,702,48;1106,2560,469,47
@@ -4948,7 +4948,7 @@ Nikl., Maler, Langm. 230  # 1133,1560,577,61
 - geb. Lämmlin R., Wasch., Längm. 230 (Pelikan)  # 1134,1607,569,63;1140,1661,489,59
 - J. J., Rechnungsf. der Just.-Dir., Matte 65  # 1139,1714,567,56;1140,1762,479,52
 1 11  # 1111,1729,-53,172
-Jak. . Dienstm., Brunnad. 5  # 1124,1816,579,50
+Jak., Dienstm., Brunnad. 5  # 1124,1816,579,50
 Ch. K., Maler u. Lakirer, Längg. 279. Abl. Mgg. 87  # 1126,1866,573,55;1135,1917,568,58
 - Sam. Fr., Quartieraufs., Lorraine 157  # 1138,1964,562,65;1133,2021,291,39
 Ch., Weißmüller, Gerechtigkeitsgasse 135  # 1134,2069,566,59;1130,2125,360,49
@@ -6467,7 +6467,7 @@ Weiler, Isaak, Gerechtigkeitsgaffe 116  # 983,981,691,62;1088,1041,216,44
 - Guggenheim, Modenwaarenhandlung, Kramg. 188  # 1086,1196,587,51;1087,1249,588,56
 Weill-Lewy, J., Weinhändler, Aarbergerg. 71  # 980,1298,688,58;1088,1357,344,50
 Weingart A., Buchdr., ä. Bollwerk 263  # 979,1407,691,54;1086,1460,193,40
-- I. . Oberlehrer, Neuengaffe 87  # 1087,1514,588,48;1081,1570,191,41
+- I., Oberlehrer, Neuengaffe 87  # 1087,1514,588,48;1081,1570,191,41
 Weiß, Jb. F., Vater, Keßlergaffe 280  # 976,1612,695,60;1081,1674,214,39
 - Wwe., Wirthin z. Bären, Schauplagg. 200 d  # 1083,1722,583,52;1085,1776,432,50
 Gebr., Schirmfabrikant, Marktg. 67 u. 81  # 1084,1827,584,56;1082,1883,410,47
