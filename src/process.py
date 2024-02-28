@@ -57,7 +57,7 @@ class Processor(object):
 
     def read_firstnames(self):
         result = {}
-        filepath = os.path.join(os.path.dirname(__file__), 'givennames.csv')
+        filepath = os.path.join(os.path.dirname(__file__), 'givennames_wikidata.csv')
         for line in open(filepath):
             line = list(csv.reader([line.strip()]))
             key = line[0][0].lower()

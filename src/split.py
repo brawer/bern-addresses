@@ -9,7 +9,7 @@ import re
 
 GIVENNAMES = {
     line.strip()
-    for line in open(os.path.join(os.path.dirname(__file__), 'givennames_in_corpus.txt'))
+    for line in open(os.path.join(os.path.dirname(__file__), 'givennames.txt'))
 }
 
 
