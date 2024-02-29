@@ -164,16 +164,16 @@ def split_address(p):
     if len(p) == 0:
         return ("", "", [])
     last = p[-1].removesuffix(".")
-    if m := re.match(r"(.+\d+) ([abcdefgh])", last):
+    if m := re.match(r"(.+\d+) ([a-t])", last):
         addr, rest = ("".join(m.groups()), p[:-1])
     elif last and last[-1] in "0123456789":
         addr, rest = (last, p[:-1])
     else:
         return ("", "", p)
-    if m := re.match(r"^(.+) (\d+\s?[abcdefgh]?) u\. (\d+\s?[abcdefgh]?)$", addr):
+    if m := re.match(r"^(.+) (\d+\s?[a-t]?) u\. (\d+\s?[a-t]?)$", addr):
         street, housenum1, housenum2 = m.groups()
-        return (f"{street} {housenum1}", f"{street} {housenum2}", p)
-    elif m := re.match(r"^(.+ \d+\s?[abcdefgh]?) u\. (.+)$", addr):
+        return (f"{street} {housenum1}", f"{street} {housenum2}", rest)
+    elif m := re.match(r"^(.+ \d+\s?[a-z]?) u\. (.+)$", addr):
         a1, a2 = m.groups()
         return (a1, a2, rest)
     return (addr, "", rest)
