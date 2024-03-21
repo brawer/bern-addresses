@@ -6,10 +6,37 @@ import io
 import os
 import re
 
-GIVENNAMES = {
+import openpyxl
+
+
+FAMILY_NAMES = {
+    line.strip()
+    for line in open(os.path.join(os.path.dirname(__file__), "family_names.txt"))
+}
+
+
+GIVEN_NAMES = {
     line.strip()
     for line in open(os.path.join(os.path.dirname(__file__), "givennames.txt"))
 }
+
+
+GIVEN_NAME_ABBREVS = {
+    line.strip()
+    for line in open(
+        os.path.join(os.path.dirname(__file__), "given_name_abbreviations.csv")
+    )
+    if line != "Abbreviations\n"
+}
+
+
+def read_titles():
+    result = set()
+    filepath = os.path.join(os.path.dirname(__file__), "titles.csv")
+    with open(filepath) as stream:
+        for row in csv.DictReader(stream):
+            result.add(row["Title"])
+    return result
 
 
 def read_occupations():
@@ -21,40 +48,63 @@ def read_occupations():
     return occ
 
 
+def read_streets():
+    result = set()
+    filepath = os.path.join(os.path.dirname(__file__), "streets.csv")
+    with open(filepath) as stream:
+        for row in csv.DictReader(stream):
+            result.add(row["Street"])
+    return result
+
+
+def read_street_abbrevs(streets):
+    result = {}
+    filepath = os.path.join(os.path.dirname(__file__), "street_abbrevs.csv")
+    with open(filepath) as stream:
+        for row in csv.DictReader(stream):
+            s = row["Street"]
+            assert s in streets, f"not in streets.csv: {s}"
+            result[row["Abbreviation"]] = s
+    return result
+
+
+TITLES = read_titles()
 OCCUPATIONS = read_occupations()
+STREETS = read_streets()
+STREET_ABBREVS = read_street_abbrevs(STREETS)
+
+
+def is_valid_address(addr):
+    if m := re.match(r"^(.+) (\d+[a-t]?)$", addr):
+        street, num = m.groups()
+        return (street in STREET_ABBREVS) or (street in STREETS)
+    return False
 
 
 def split(vol):
-    out = io.StringIO()
-    out.write(
-        "\t".join(
-            [
-                "Date",
-                "Page",
-                "Position",
-                "Name",
-                "GivenName",
-                "MaidenName",
-                "Title",
-                "Occupation",
-                "Address",
-                "Address2",
-                "Other",
-            ]
-        )
+    workbook = openpyxl.Workbook()
+    del workbook["Sheet"]
+    font = openpyxl.styles.Font(name="Calibri")
+    red = openpyxl.styles.colors.Color(rgb="00FF2222")
+    light_red = openpyxl.styles.colors.Color(rgb="00FFAAAA")
+    red_fill = openpyxl.styles.fills.PatternFill(patternType="solid", fgColor=red)
+    light_red_fill = openpyxl.styles.fills.PatternFill(
+        patternType="solid", fgColor=light_red
     )
-    out.write("\n")
-    page_re = re.compile(r"^# Date: (\d{4}-\d{2}-\d{2}) Page: (\d+)/.*")
-    date, page, name = None, None, ""
+    out = io.StringIO()
+    page_re = re.compile(r"^# Date: (\d{4}-\d{2}-\d{2}) Page: (\d+)/(.*)")
+    sheet, date, page, name, row = None, None, None, "", 0
     for line in open(vol):
         line = line.strip()
         if m := page_re.match(line):
-            date, page = m.groups()
+            date, page, page_num = m.groups()
+            sheet = create_sheet(workbook, page_num)
+            row = 1
             page = f"https://www.e-rara.ch/bes_1/periodical/pageview/{page}"
-            out.write("\n")
             continue
         p, pos = line.split("#", 1)
         p = [x.strip() for x in p.split(",")]
+        p = [x for x in p if x != ""]
         nam, rest = split_familyname(p[0])
         if nam != "-":
             name = nam
@@ -65,6 +115,99 @@ def split(vol):
         givenname, p = split_givenname(p)
         occupation, p = split_occupation(p)
         other = ", ".join(p)
+        row = row + 1
+
+        family_name_ok = name in FAMILY_NAMES
+        given_name_ok = all(
+            n in GIVEN_NAMES or n in GIVEN_NAME_ABBREVS for n in givenname.split()
+        )
+        maiden_name_ok = (not maidenname) or (maidenname in FAMILY_NAMES)
+        title_ok = (not title) or (title in TITLES)
+        occupation_ok = (not occupation) or (occupation in OCCUPATIONS)
+        address_ok = (not address) or is_valid_address(address)
+        address2_ok = (not address2) or is_valid_address(address2)
+        other_ok = not other
+        all_ok = (
+            family_name_ok
+            and given_name_ok
+            and maiden_name_ok
+            and title_ok
+            and occupation_ok
+            and address_ok
+            and address2_ok
+            and other_ok
+        )
+
+        # scan
+        cell = sheet.cell(row, 1)
+        cell.value, cell.font = "", font
+        if not all_ok:
+            cell.fill = light_red_fill
+
+        # family name
+        cell = sheet.cell(row, 2)
+        cell.value, cell.font = name, font
+        if not family_name_ok:
+            cell.fill = red_fill
+        elif not all_ok:
+            cell.fill = light_red_fill
+
+        # given name
+        cell = sheet.cell(row, 3)
+        cell.value, cell.font = givenname, font
+        if not given_name_ok:
+            cell.fill = red_fill
+        elif not all_ok:
+            cell.fill = light_red_fill
+
+        # maiden name
+        cell = sheet.cell(row, 4)
+        cell.value, cell.font = maidenname, font
+        if not maiden_name_ok:
+            cell.fill = red_fill
+        elif not all_ok:
+            cell.fill = light_red_fill
+
+        # title
+        cell = sheet.cell(row, 5)
+        cell.value, cell.font = title, font
+        if not title_ok:
+            cell.fill = red_fill
+        elif not all_ok:
+            cell.fill = light_red_fill
+
+        # occupation
+        cell = sheet.cell(row, 6)
+        cell.value, cell.font = occupation, font
+        if not occupation_ok:
+            cell.fill = red_fill
+        elif not all_ok:
+            cell.fill = light_red_fill
+
+        # address
+        cell = sheet.cell(row, 7)
+        cell.value, cell.font = address, font
+        if not address_ok:
+            cell.fill = red_fill
+        elif not all_ok:
+            cell.fill = light_red_fill
+
+        # address2
+        cell = sheet.cell(row, 8)
+        cell.value, cell.font = address2, font
+        if not address2_ok:
+            cell.fill = red_fill
+        elif not all_ok:
+            cell.fill = light_red_fill
+
+        # other
+        cell = sheet.cell(row, 9)
+        cell.value, cell.font = other, font
+        if not other_ok:
+            cell.fill = red_fill
+        elif not all_ok:
+            cell.fill = light_red_fill
+
         out.write(
             "\t".join(
                 [
@@ -83,7 +226,9 @@ def split(vol):
             )
         )
         out.write("\n")
-    print(out.getvalue())
+    # print(out.getvalue())
+    outpath = os.path.basename(vol).split(".")[0] + ".xlsx"
+    workbook.save(outpath)
 
 
 def split_familyname(n):
@@ -105,7 +250,7 @@ def split_familyname(n):
 def split_givenname(p):
     if len(p) == 0:
         return ("", [])
-    if all(n in GIVENNAMES for n in p[0].split()):
+    if all(n in GIVEN_NAMES for n in p[0].split()):
         return (p[0], p[1:])
     else:
         return ("", p)
@@ -123,38 +268,7 @@ def split_maidenname(n):
 
 
 def split_title(p):
-    if len(p) > 0 and p[0] in {
-        "älter",
-        "jünger",
-        "Frau",
-        "Dr.",
-        "Frauen",
-        "Fräul.",
-        "Frln.",
-        "Frl.",
-        "Frau u. Tocht.",
-        "Gebr.",
-        "Gebrüder",
-        "Jgfr.",
-        "Jgfrn.",
-        "Miß",
-        "Frau Oberst",
-        "Schwest.",
-        "Schwestern",
-        "Schwester",
-        "Sohn",
-        "Söhne",
-        "Geschwister",
-        "Töcht.",
-        "Töchter",
-        "Töchtern",
-        "Wiw.",
-        "Wtw.",
-        "Wwe.",
-        "Ww.",
-        "Vater",
-        "Wtw. und Sohn",
-    }:
+    if len(p) > 0 and p[0] in TITLES:
         return (p[0], p[1:])
     else:
         return ("", p)
@@ -195,7 +309,30 @@ def list_volumes():
     )
 
 
+def create_sheet(workbook, page_num):
+    sheet = workbook.create_sheet(page_num)
+    font = openpyxl.styles.Font(name="Calibri", bold=True)
+    for i, col in enumerate(
+        [
+            "Scan",
+            "Name",
+            "Vorname",
+            "Ledigname",
+            "Titel",
+            "Beruf",
+            "Addresse",
+            "Addresse 2",
+            "Unklar",
+        ]
+    ):
+        cell = sheet.cell(1, i + 1)
+        cell.value = col
+        cell.font = font
+    return sheet
+
+
 if __name__ == "__main__":
     for vol in list_volumes():
-        if os.path.basename(vol).startswith("1860"):
+        year = int(os.path.basename(vol)[:4])
+        if year >= 1860 and year <= 1860:
             split(vol)
