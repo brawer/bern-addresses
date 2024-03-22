@@ -105,7 +105,7 @@ def split(vol):
     )
     out = io.StringIO()
     page_re = re.compile(r"^# Date: (\d{4}-\d{2}-\d{2}) Page: (\d+)/(.*)")
-    sheet, date, page, name, row = None, None, None, "", 0
+    sheet, date, page, lemma, name, row = None, None, None, "-", "", 0
     for line in open(vol):
         line = line.strip()
         if m := page_re.match(line):
@@ -117,9 +117,11 @@ def split(vol):
         p, pos = line.split("#", 1)
         p = [x.strip() for x in p.split(",")]
         p = [x for x in p if x != ""]
-        nam, rest = split_familyname(p[0])
-        if nam != "-":
-            name = nam
+        if p[0].startswith('-'):
+            p[0] = lemma + ' ' + p[0][1:].strip()
+        name, rest = split_familyname(p[0])
+        # After "von Goumoens-von Tavel", the new lemma is "von Goumoens".
+        lemma = name.split('-')[0].strip()
         maidenname, rest = split_maidenname(rest)
         p = [rest] + p[1:] if rest else p[1:]
         title, p = split_title(p)
