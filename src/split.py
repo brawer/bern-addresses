@@ -119,7 +119,7 @@ def split(vol):
         p = [x for x in p if x != ""]
         if p[0].startswith('-'):
             p[0] = lemma + ' ' + p[0][1:].strip()
-        name, rest = split_familyname(p[0])
+        name, rest = split_family_name(p[0])
         # After "von Goumoens-von Tavel", the new lemma is "von Goumoens".
         lemma = name.split('-')[0].strip()
         maidenname, rest = split_maidenname(rest)
@@ -251,7 +251,7 @@ def split(vol):
     workbook.save(outpath)
 
 
-def split_familyname(n):
+def split_family_name(n):
     n = n.replace(" - ", "-")
     words = n.split()
     if words[0] in {"de", "De"}:
@@ -265,8 +265,9 @@ def split_familyname(n):
                 " ".join(words[3:]),
             )
         return ("von " + words[1], " ".join(words[2:]))
-    else:
-        return (words[0], " ".join(words[1:]))
+    if len(words) > 1 and words[1] == "-v.":  # "Bucher -v. Trachselwald"
+        return (words[0] + "-von " + words[2], " ".join(words[3:]))
+    return (words[0], " ".join(words[1:]))
 
 
 def split_givenname(p):
