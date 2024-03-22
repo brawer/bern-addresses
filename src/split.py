@@ -318,10 +318,16 @@ def split_address(p):
 
 
 def split_occupation(p):
-    if len(p) > 0 and p[0] in OCCUPATIONS:
-        return (p[0], p[1:])
-    else:
+    if len(p) == 0:
         return ("", p)
+    occ = p[0]
+    occ = {"Nent.": "Rent."}.get(occ, occ)
+    if occ in OCCUPATIONS:
+        return (occ, p[1:])
+    # Sometimes OCR (or the typesetter) missed a final dot, as in "Schneid"
+    if not occ.endswith('.') and occ+'.' in OCCUPATIONS:
+        return (occ+'.', p[1:])
+    return ("", p)
 
 
 # Returns the file paths to all address book volumes.
