@@ -5,8 +5,11 @@ import csv
 import io
 import os
 import re
+import urllib.request
+import zipfile
 
 import openpyxl
+import PIL
 
 
 FAMILY_NAMES = {
@@ -94,8 +97,8 @@ def is_valid_address(addr):
 
 
 def split(vol):
-    workbook = openpyxl.Workbook()
-    del workbook["Sheet"]
+    outpath = os.path.basename(vol).split(".")[0] + ".zip"
+    zip_file = zipfile.ZipFile(outpath, "w")
     font = openpyxl.styles.Font(name="Calibri")
     red = openpyxl.styles.colors.Color(rgb="00FF2222")
     light_red = openpyxl.styles.colors.Color(rgb="00FFAAAA")
@@ -103,25 +106,29 @@ def split(vol):
     light_red_fill = openpyxl.styles.fills.PatternFill(
         patternType="solid", fgColor=light_red
     )
-    out = io.StringIO()
     page_re = re.compile(r"^# Date: (\d{4}-\d{2}-\d{2}) Page: (\d+)/(.*)")
-    sheet, date, page, lemma, name, row = None, None, None, "-", "", 0
+    sheet, date, page_id, lemma, name, row = None, None, None, "-", "", 0
+    workbook, image = None, None
     for line in open(vol):
         line = line.strip()
         if m := page_re.match(line):
-            date, page, page_num = m.groups()
-            sheet = create_sheet(workbook, page, page_num)
+            save_workbook(workbook, page_id, zip_file)
+            date, page_id, page_num = m.groups()
+            workbook = openpyxl.Workbook()
+            del workbook["Sheet"]
+            sheet = create_sheet(workbook, page_id, page_num)
             row = 2
-            page = f"https://www.e-rara.ch/bes_1/periodical/pageview/{page}"
+            image = fetch_jpeg(page_id)
             continue
         p, pos = line.split("#", 1)
+        pos = ",".join([str(x) for x in simplify_pos(pos)])
         p = [x.strip() for x in p.split(",")]
         p = [x for x in p if x != ""]
-        if p[0].startswith('-'):
-            p[0] = lemma + ' ' + p[0][1:].strip()
+        if p[0].startswith("-"):
+            p[0] = lemma + " " + p[0][1:].strip()
         name, rest = split_family_name(p[0])
         # After "von Goumoens-von Tavel", the new lemma is "von Goumoens".
-        lemma = name.split('-')[0].strip()
+        lemma = name.split("-")[0].strip()
         maidenname, rest = split_maidenname(rest)
         p = [rest] + p[1:] if rest else p[1:]
         title, p = split_title(p)
@@ -163,6 +170,9 @@ def split(vol):
         cell.value, cell.font = "", font
         if not all_ok:
             cell.fill = light_red_fill
+        cropped = crop_image(image, pos)
+        sheet.add_image(cropped, f"B{row}")
+        sheet.row_dimensions[row].height = cropped.height + 5
 
         # family name
         cell = sheet.cell(row, 3)
@@ -227,28 +237,26 @@ def split(vol):
             cell.fill = red_fill
         elif not all_ok:
             cell.fill = light_red_fill
+    save_workbook(workbook, page_id, zip_file)
+    # outpath = os.path.basename(vol).split(".")[0] + ".xlsx"
+    # workbook.save(outpath)
+    zip_file.close()
 
-        out.write(
-            "\t".join(
-                [
-                    date,
-                    page,
-                    pos,
-                    name,
-                    givenname,
-                    maidenname,
-                    title,
-                    occupation,
-                    address,
-                    address2,
-                    other,
-                ]
-            )
+
+def save_workbook(workbook, page_id, zip_file):
+    if workbook is not None:
+        # TODO: Remove this check. Just for sending a small initial sample.
+        if int(page_id) >= 29210075:
+            return
+        workbook.save("tmp.xlsx")
+        with open("tmp.xlsx", "rb") as f:
+            content = f.read()
+        zip_file.writestr(
+            f"{page_id}.xlsx",
+            content,
+            compress_type=zipfile.ZIP_DEFLATED,
+            compresslevel=9,
         )
-        out.write("\n")
-    # print(out.getvalue())
-    outpath = os.path.basename(vol).split(".")[0] + ".xlsx"
-    workbook.save(outpath)
 
 
 def split_family_name(n):
@@ -328,8 +336,8 @@ def split_occupation(p):
     if occ in OCCUPATIONS:
         return (occ, p[1:])
     # Sometimes OCR (or the typesetter) missed a final dot, as in "Schneid"
-    if not occ.endswith('.') and occ+'.' in OCCUPATIONS:
-        return (occ+'.', p[1:])
+    if not occ.endswith(".") and occ + "." in OCCUPATIONS:
+        return (occ + ".", p[1:])
     return ("", p)
 
 
@@ -370,8 +378,50 @@ def create_sheet(workbook, page_id, page_num):
         cell.value = col
         cell.font = font
         cell.fill = gray_fill
-    sheet.column_dimensions["A"].width = 3
+    sheet.column_dimensions["A"].width = 3  # ID
+    sheet.column_dimensions["B"].width = 35  # Scan
     return sheet
+
+
+def simplify_pos(pos):
+    left, top, right, bottom = 2000, 2977, 0, 0
+    for p in pos.split(";"):
+        x, y, w, h = [int(x) for x in p.split(",")]
+        if h < 0:
+            h = 100
+        left, right = min(x, left), max(x + w, right)
+        top, bottom = min(y, top), max(y + h, bottom)
+    left, right = (300, 1050) if left < 600 else (1000, 1750)
+    top, bottom = max(top - 5, 0), min(bottom + 5, 2977)
+    return (left, top, right - left, bottom - top)
+
+
+# Fetch the JPEG image for a single page from e-rara.ch.
+# If the image is already in cache, the cached content is returned
+# without re-downloading it over the internet.
+def fetch_jpeg(pageid):
+    filepath = os.path.join("cache", "images", f"{pageid}.jpg")
+    if not os.path.exists(filepath):
+        os.makedirs(os.path.join("cache", "images"), exist_ok=True)
+        url = f"https://www.e-rara.ch/download/webcache/2000/{pageid}"
+        print(f"fetching {url}")
+        with urllib.request.urlopen(url) as u:
+            img = u.read()
+        # Write to a temp file, followed by (atomic) rename, so we never
+        # have partially written files in the final location, even if
+        # the process crashes while writing out the file.
+        with open(filepath + ".tmp", "wb") as f:
+            f.write(img)
+        os.rename(filepath + ".tmp", filepath)
+    return PIL.Image.open(filepath)
+
+
+def crop_image(img, pos):
+    x, y, w, h = [int(val) for val in pos.split(",")]
+    crop = img.reduce(3, (x, y, x + w, y + h))
+    out = io.BytesIO()
+    crop.save(out, format="PNG")
+    return openpyxl.drawing.image.Image(out)
 
 
 if __name__ == "__main__":
