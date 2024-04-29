@@ -287,20 +287,18 @@ def split(vol):
 
 
 def save_workbook(workbook, page_id, zip_file):
-    if workbook is not None:
-        # TODO: Remove this check. Just for sending a small initial sample.
-        if int(page_id) >= 29210075:
-            return
-        workbook.save("tmp.xlsx")
-        with open("tmp.xlsx", "rb") as f:
-            content = f.read()
-        os.remove("tmp.xlsx")
-        zip_file.writestr(
-            f"{page_id}.xlsx",
-            content,
-            compress_type=zipfile.ZIP_DEFLATED,
-            compresslevel=9,
-        )
+    if workbook is None:
+        return
+    workbook.save("tmp.xlsx")
+    with open("tmp.xlsx", "rb") as f:
+        content = f.read()
+    os.remove("tmp.xlsx")
+    zip_file.writestr(
+        f"{page_id}.xlsx",
+        content,
+        compress_type=zipfile.ZIP_DEFLATED,
+        compresslevel=9,
+    )
 
 
 def split_company(name, rest):
