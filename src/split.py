@@ -87,6 +87,13 @@ STREETS = read_streets()
 STREET_ABBREVS = read_street_abbrevs(STREETS)
 
 
+def is_valid_given_name(name):
+    for n in name.split():
+        if (n in GIVEN_NAMES) or (n in GIVEN_NAME_ABBREVS):
+            return True
+    return False
+
+
 def is_valid_address(addr):
     if m := re.match(r"^(.+) (\d+[a-t]?)$", addr):
         street, num = m.groups()
@@ -139,9 +146,7 @@ def split(vol):
         row = row + 1
 
         family_name_ok = name in FAMILY_NAMES
-        given_name_ok = all(
-            n in GIVEN_NAMES or n in GIVEN_NAME_ABBREVS for n in givenname.split()
-        )
+        given_name_ok = (not givenname) or is_valid_given_name(givenname)
         maiden_name_ok = (not maidenname) or (maidenname in FAMILY_NAMES)
         title_ok = (not title) or (title in TITLES)
         occupation_ok = (not occupation) or (occupation in OCCUPATIONS)
@@ -170,9 +175,10 @@ def split(vol):
         cell.value, cell.font = "", font
         if not all_ok:
             cell.fill = light_red_fill
-        cropped = crop_image(image, pos)
-        sheet.add_image(cropped, f"B{row}")
-        sheet.row_dimensions[row].height = cropped.height + 5
+        if True:  # set to False for speed-up in development
+            cropped = crop_image(image, pos)
+            sheet.add_image(cropped, f"B{row}")
+            sheet.row_dimensions[row].height = cropped.height + 5
 
         # family name
         cell = sheet.cell(row, 3)
@@ -238,8 +244,6 @@ def split(vol):
         elif not all_ok:
             cell.fill = light_red_fill
     save_workbook(workbook, page_id, zip_file)
-    # outpath = os.path.basename(vol).split(".")[0] + ".xlsx"
-    # workbook.save(outpath)
     zip_file.close()
 
 
@@ -427,5 +431,5 @@ def crop_image(img, pos):
 if __name__ == "__main__":
     for vol in list_volumes():
         year = int(os.path.basename(vol)[:4])
-        if year >= 1860 and year <= 1860:
+        if 1860 <= year <= 1860:
             split(vol)
