@@ -163,7 +163,6 @@ def split(vol):
         if company:
             name = company
             maidenname = None
-            print(company)
         else:
             maidenname, rest = split_maidenname(rest)
         p = [rest] + p[1:] if rest else p[1:]
@@ -287,6 +286,7 @@ def save_workbook(workbook, page_id, zip_file):
         workbook.save("tmp.xlsx")
         with open("tmp.xlsx", "rb") as f:
             content = f.read()
+        os.remove("tmp.xlsx")
         zip_file.writestr(
             f"{page_id}.xlsx",
             content,
