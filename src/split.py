@@ -33,6 +33,28 @@ GIVEN_NAME_ABBREVS = {
 }
 
 
+# Company abbreviations, must be single words. If there's a need for
+# multi-word sequences separated by whitespace, change the logic
+# in split_company() below.
+COMPANY_ABBREVS = {
+    "AG",
+    "A.-G.",
+    "Cie.",
+    "Co.",
+    "Comp.",
+    "Compagnie",
+}
+
+
+def read_companies():
+    result = set()
+    filepath = os.path.join(os.path.dirname(__file__), "companies.csv")
+    with open(filepath) as stream:
+        for row in csv.DictReader(stream):
+            result.add(row["Name"])
+    return result
+
+
 def read_titles():
     result = set()
     filepath = os.path.join(os.path.dirname(__file__), "titles.csv")
@@ -80,6 +102,7 @@ def read_pois():
     return result
 
 
+COMPANIES = read_companies()
 TITLES = read_titles()
 OCCUPATIONS = read_occupations()
 POIS = read_pois()
@@ -136,25 +159,34 @@ def split(vol):
         name, rest = split_family_name(p[0])
         # After "von Goumoens-von Tavel", the new lemma is "von Goumoens".
         lemma = name.split("-")[0].strip()
-        maidenname, rest = split_maidenname(rest)
+        company, rest = split_company(name, rest)
+        if company:
+            name = company
+            maidenname = None
+            print(company)
+        else:
+            maidenname, rest = split_maidenname(rest)
         p = [rest] + p[1:] if rest else p[1:]
-        title, p = split_title(p)
+        if company:
+            title = "[Firma]"
+        else:
+            title, p = split_title(p)
         address, address2, p = split_address(p)
         givenname, p = split_givenname(p)
         occupation, p = split_occupation(p)
         other = ", ".join(p)
         row = row + 1
 
-        family_name_ok = name in FAMILY_NAMES
+        name_ok = name in COMPANIES if company else name in FAMILY_NAMES
         given_name_ok = (not givenname) or is_valid_given_name(givenname)
         maiden_name_ok = (not maidenname) or (maidenname in FAMILY_NAMES)
-        title_ok = (not title) or (title in TITLES)
+        title_ok = (not title) or (title == "[Firma]") or (title in TITLES)
         occupation_ok = (not occupation) or (occupation in OCCUPATIONS)
         address_ok = (not address) or is_valid_address(address)
         address2_ok = (not address2) or is_valid_address(address2)
         other_ok = not other
         all_ok = (
-            family_name_ok
+            name_ok
             and given_name_ok
             and maiden_name_ok
             and title_ok
@@ -180,10 +212,10 @@ def split(vol):
             sheet.add_image(cropped, f"B{row}")
             sheet.row_dimensions[row].height = cropped.height + 5
 
-        # family name
+        # name
         cell = sheet.cell(row, 3)
         cell.value, cell.font = name, font
-        if not family_name_ok:
+        if not name_ok:
             cell.fill = red_fill
         elif not all_ok:
             cell.fill = light_red_fill
@@ -261,6 +293,15 @@ def save_workbook(workbook, page_id, zip_file):
             compress_type=zipfile.ZIP_DEFLATED,
             compresslevel=9,
         )
+
+
+def split_company(name, rest):
+    words = rest.split()
+    for i, word in enumerate(words):
+        if word in COMPANY_ABBREVS:
+            company = " ".join([name] + words[: i + 1])
+            return company, " ".join(words[i + 1 :])
+    return None, rest
 
 
 def split_family_name(n):
