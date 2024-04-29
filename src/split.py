@@ -110,6 +110,14 @@ STREETS = read_streets()
 STREET_ABBREVS = read_street_abbrevs(STREETS)
 
 
+def is_valid_family_name(name):
+    if name is None:
+        return False
+    name = name.replace("V. ", "von ").replace("v. ", "von ")
+    name = name.replace("De ", "de ")
+    return name in FAMILY_NAMES
+
+
 def is_valid_given_name(name):
     for n in name.split():
         if (n in GIVEN_NAMES) or (n in GIVEN_NAME_ABBREVS):
@@ -176,7 +184,7 @@ def split(vol):
         other = ", ".join(p)
         row = row + 1
 
-        name_ok = name in COMPANIES if company else name in FAMILY_NAMES
+        name_ok = name in COMPANIES if company else is_valid_family_name(name)
         given_name_ok = (not givenname) or is_valid_given_name(givenname)
         maiden_name_ok = (not maidenname) or (maidenname in FAMILY_NAMES)
         title_ok = (not title) or (title == "[Firma]") or (title in TITLES)
@@ -305,22 +313,15 @@ def split_company(name, rest):
 
 
 def split_family_name(n):
-    n = n.replace(" - ", "-")
+    n = n.replace(" -", "-").replace("- ", "-")
     words = n.split()
-    if words[0] in {"de", "De"}:
-        return ("de " + words[1], " ".join(words[2:]))
-    if words[0] in {"v.", "V.", "von", "Von"}:
-        if words[1].endswith(
-            "-v."
-        ):  # "v. Wagner-v. Steiger A." -> ('von Wagner-von Steiger', 'A.')
-            return (
-                "von " + words[1].replace("-v.", "-von") + " " + words[2],
-                " ".join(words[3:]),
-            )
-        return ("von " + words[1], " ".join(words[2:]))
-    if len(words) > 1 and words[1] == "-v.":  # "Bucher -v. Trachselwald"
-        return (words[0] + "-von " + words[2], " ".join(words[3:]))
-    return (words[0], " ".join(words[1:]))
+    pos = 0
+    prefixes = {"de", "De", "von", "Von", "v.", "V."}
+    if words[0] in prefixes:
+        pos = pos + 1
+    if any(words[pos].endswith("-" + p) for p in prefixes):
+        pos = pos + 1
+    return (" ".join(words[: pos + 1]), " ".join(words[pos + 1 :]))
 
 
 def split_givenname(p):
