@@ -8,8 +8,8 @@
 #   venv/bin/python3 import_reviewed.py ~/Downloads/1860-02-01_reviewed.zip
 #
 # will write the file `1860-02-01.csv` into the `reviewed` subdirectory.
-# This tool does not perform any checks against lists of known good names;
-# for that, use check_reviewed.py.
+# This tool does not perform any checks against lists of known good names,
+# but build_release.py runs this kind of checks when generating release data.
 
 import argparse
 import csv
