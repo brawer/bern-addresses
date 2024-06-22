@@ -13,6 +13,7 @@ import re
 class Validator:
     def __init__(self):
         self.family_names = self.read_lines("family_names.txt")
+        self.given_names = self.read_lines("givennames.txt")
         self.nobility_names = self.read_csv("nobility_names.csv", "Abkürzung")
         self.missing_family_names = set()
         self.re_von = re.compile(r"\b([vV]\.)")  # "Bondeli-v. Allmen"
@@ -28,6 +29,7 @@ class Validator:
                 print(name)
 
     def validate(self, entry, pos):
+        self.validate_given_name(entry, pos)
         is_company = entry["Titel"] == "[Firma]"
         if is_company:
             return self.validate_company(entry, pos)
@@ -48,6 +50,14 @@ class Validator:
         for p in ("Adelsname", "Ledigname"):
             if entry[p]:
                 self.warn("%s should not be set on companies" % p, entry, pos)
+
+    def validate_given_name(self, entry, pos):
+        given_names = entry["Vorname"].split()
+        ok = all(g in self.given_names for g in given_names)
+        if not ok:
+            message = 'unknwn given name "%s"' % entry["Vorname"]
+            self.warn(message, entry, pos)
+        return ok
 
     def read_lines(self, filename):
         path = os.path.join(os.path.dirname(__file__), filename)
