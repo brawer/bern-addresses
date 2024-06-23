@@ -32,6 +32,7 @@ class Validator:
         bad = set()
         if not self.validate_given_name(entry, pos):
             bad.add("Vorname")
+        bad.update(self.validate_addresses(entry, pos))
         is_company = entry["Titel"] == "[Firma]"
         if is_company:
             bad.update(self.validate_company(entry, pos))
@@ -49,6 +50,13 @@ class Validator:
                     self.warn(message, entry, pos)
                     bad.add(p)
         bad.update(self.validate_occupations(entry, pos))
+        return bad
+
+    def validate_addresses(self, entry, pos):
+        bad = set()
+        if entry["Adresse 2"] and not entry["Adresse"]:
+            self.warn("empty address #1", entry, pos)
+            bad.add("Adresse")
         return bad
 
     def validate_company(self, entry, pos):
