@@ -38,6 +38,8 @@ KNOWN_COLUMNS = [
 
 # Known typos in column names; we fix them here instead of editing the data.
 COLUMN_TYPOS = {
+    "Addresse": "Adresse",
+    "Adresse 2": "Adresse 2",
     "Bemerkung": "Bemerkungen",
     "Bermerkungen": "Bemerkungen",
 }
