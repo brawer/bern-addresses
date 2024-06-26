@@ -6,6 +6,7 @@
 *~
 /cache
 /venv
+__pycache__/
 
 # generated output
 bern-address-book.csv
