@@ -10,7 +10,6 @@ import os
 
 from validator import Validator
 
-
 if __name__ == "__main__":
     validator = Validator()
     base_dir = os.path.split(os.path.dirname(__file__))[0]

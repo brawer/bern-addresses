@@ -15,8 +15,10 @@ class Validator:
         self.given_names = self.read_lines("givennames.txt")
         self.nobility_names = self.read_csv("nobility_names.csv", "Abkürzung")
         self.occupations = self.read_csv("occupations.csv", "Occupation")
+        self.street_abbrevs = self.read_csv("street_abbrevs.csv", "Abbreviation")
+        self.streets = self.read_csv("streets.csv", "Street")
         self._missing_family_names = set()
-        self._re_von = re.compile(r"\b(v\.)")  # "Bondeli-v. Allmen"
+        self._re_von = re.compile(r"\b(v\.)")  # eg. "v. Bonstetten-de Vigneule"
 
     def warn(self, message, entry, pos):
         print("%s:%s:%s: %s" % (pos[0], pos[1], entry["Scan"], message))
