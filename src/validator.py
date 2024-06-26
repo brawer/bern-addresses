@@ -15,9 +15,15 @@ class Validator:
         self.given_names = self.read_lines("givennames.txt")
         self.nobility_names = self.read_csv("nobility_names.csv", "Abkürzung")
         self.occupations = self.read_csv("occupations.csv", "Occupation")
+        self.pois = self.read_csv("pois.csv", "PointOfInterest")
         self.street_abbrevs = self.read_csv("street_abbrevs.csv", "Abbreviation")
         self.streets = self.read_csv("streets.csv", "Street")
+        for abbr, s in self.street_abbrevs.items():
+            street = s["Street"]
+            message = 'unknown street "%s" for street_abbrev "%s"' % (street, abbr)
+            assert street in self.streets, message
         self._missing_family_names = set()
+        self._re_split_addr = re.compile(r"^(.+) (\d+[a-t]?)$")
         self._re_von = re.compile(r"\b(v\.)")  # eg. "v. Bonstetten-de Vigneule"
 
     def warn(self, message, entry, pos):
@@ -59,6 +65,12 @@ class Validator:
         if entry["Adresse 2"] and not entry["Adresse"]:
             self.warn("empty address #1", entry, pos)
             bad.add("Adresse")
+        for p in ("Adresse", "Adresse 2"):
+            if addr := entry[p]:
+                ok, _normalized = self._normalize_address(addr)
+                if not ok:
+                    self.warn('unknown address "%s"' % addr, entry, pos)
+                    bad.add(p)
         return bad
 
     def validate_company(self, entry, pos):
@@ -85,6 +97,24 @@ class Validator:
                     self.warn('unknown occupation "%s"' % occ, entry, pos)
                     bad.add(p)
         return bad
+
+    def _normalize_address(self, addr):
+        # Some POIs such as "Kaserne 1" look like street + number,
+        # so we need to check for POIS before anything else.
+        if poi := self.pois.get(addr):
+            return True, poi["Normalized"]
+        if m := self._re_split_addr.match(addr):
+            street, num = m.groups()
+            if abbrev := self.street_abbrevs.get(street):
+                street = abbrev["Street"]
+            normalized = "%s %s" % (street, num)
+            ok = street in self.streets
+            return (ok, normalized)
+        if addr in self.streets:
+            return True, addr
+        if abbrev := self.street_abbrevs.get(addr):
+            return True, abbrev["Street"]
+        return False, ""
 
     def read_lines(self, filename):
         path = os.path.join(os.path.dirname(__file__), filename)
