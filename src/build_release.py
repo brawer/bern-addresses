@@ -6,14 +6,69 @@
 # and builds a CSV file for external distribution.
 
 import csv
+import io
 import os
+import zipfile
 
 from validator import Validator
+
+
+PEOPLE_FIELDS = [
+    "Name",
+    "Vorname",
+    "Ledigname",
+    "Adelsname",
+    "Titel",
+    "Adresse 1",
+    "Adresse 2",
+    "Beruf 1 (CH-ISCO-19)",
+    "Beruf 2 (CH-ISCO-19)",
+    "Name (Rohtext)",
+    "Vorname (Rohtext)",
+    "Ledigname (Rohtext)",
+    "Adelsname (Rohtext)",
+    "Titel (Rohtext)",
+    "Adresse 1 (Rohtext)",
+    "Adresse 2 (Rohtext)",
+    "Beruf 1 (Rohtext)",
+    "Beruf 2 (Rohtext)",
+    "Bemerkungen",
+    "Scan",
+    "Position (X)",
+    "Position (Y)",
+    "Position (Breite)",
+    "Position (Höhe)",
+]
+
+
+COMPANY_FIELDS = [
+    "Name",
+    "Adresse 1",
+    "Adresse 2",
+    "Name (Rohtext)",
+    "Adresse 1 (Rohtext)",
+    "Adresse 2 (Rohtext)",
+    "Tätigkeit 1 (Rohtext)",
+    "Tätigkeit 2 (Rohtext)",
+    "Bemerkungen",
+    "Scan",
+    "Position (X)",
+    "Position (Y)",
+    "Position (Breite)",
+    "Position (Höhe)",
+]
+
 
 if __name__ == "__main__":
     validator = Validator()
     base_dir = os.path.split(os.path.dirname(__file__))[0]
     reviewed_dir = os.path.join(base_dir, "reviewed")
+    people_buffer = io.StringIO()
+    people_writer = csv.DictWriter(people_buffer, fieldnames=PEOPLE_FIELDS)
+    people_writer.writeheader()
+    company_buffer = io.StringIO()
+    company_writer = csv.DictWriter(company_buffer, fieldnames=COMPANY_FIELDS)
+    company_writer.writeheader()
     for filename in sorted(os.listdir(reviewed_dir)):
         path = os.path.join(reviewed_dir, filename)
         line = 1
@@ -21,4 +76,15 @@ if __name__ == "__main__":
             for row in csv.DictReader(stream):
                 line += 1
                 validator.validate(row, (filename, line))
+                if validator.is_company(row):
+                    if norm := validator.normalize_company(row):
+                        company_writer.writerow(norm)
+                else:
+                    if norm := validator.normalize_person(row):
+                        people_writer.writerow(norm)
     validator.report()
+    with zipfile.ZipFile("bern-addresses.zip", "w") as zf:
+        people = people_buffer.getvalue()
+        zf.writestr("Personen.csv", people, compress_type=zipfile.ZIP_DEFLATED)
+        companies = company_buffer.getvalue()
+        zf.writestr("Firmen.csv", companies, compress_type=zipfile.ZIP_DEFLATED)
