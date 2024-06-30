@@ -83,8 +83,10 @@ if __name__ == "__main__":
                     if norm := validator.normalize_person(row):
                         people_writer.writerow(norm)
     validator.report()
-    with zipfile.ZipFile("bern-addresses.zip", "w") as zf:
-        people = people_buffer.getvalue()
-        zf.writestr("Personen.csv", people, compress_type=zipfile.ZIP_DEFLATED)
-        companies = company_buffer.getvalue()
-        zf.writestr("Firmen.csv", companies, compress_type=zipfile.ZIP_DEFLATED)
+    with zipfile.ZipFile("Berner_Adressbuch.zip", "w") as zf:
+        for name, buf in [
+            ("Personen.csv", people_buffer),
+            ("Firmen.csv", company_buffer),
+        ]:
+            content = buf.getvalue()
+            zf.writestr(name, buf.getvalue(), compress_type=zipfile.ZIP_DEFLATED)
