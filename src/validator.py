@@ -16,6 +16,8 @@ class Validator:
         self.nobility_names = self.read_csv("nobility_names.csv", "Abkürzung")
         self.titles = self.read_csv("titles.csv", "Title")
         self.occupations = self.read_csv("occupations.csv", "Occupation")
+        self.isco = self.read_csv("HCL_CH_ISCO_19_PROF_1_2_1_level_6.csv", "Code")
+        self.noga = self.read_csv("HCL_NOGA_level_5.csv", "Code")
         self.pois = self.read_csv("pois.csv", "PointOfInterest")
         self.street_abbrevs = self.read_csv("street_abbrevs.csv", "Abbreviation")
         self.streets = self.read_csv("streets.csv", "Street")
@@ -23,6 +25,12 @@ class Validator:
             street = s["Street"]
             message = 'unknown street "%s" for street_abbrev "%s"' % (street, abbr)
             assert street in self.streets, message
+        for occ in self.occupations.values():
+            code = occ["CH-ISCO-19"]
+            if code == "*":
+                continue
+            code = code.removesuffix("-EX")
+            assert code in self.isco, "code %s not in CH-ISCO-19 codelist" % code
         self._num_warnings = 0
         self._missing_family_names = set()
         self._re_split_addr = re.compile(r"^(.+) (\d+[a-t]?)$")
