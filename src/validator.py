@@ -120,6 +120,15 @@ class Validator:
         _, addr_2 = self._normalize_address(entry["Adresse 2"])
         occ_1 = self.occupations.get(entry["Beruf"], {}).get("CH-ISCO-19")
         occ_2 = self.occupations.get(entry["Beruf 2"], {}).get("CH-ISCO-19")
+        occ_1_male, occ_1_female, occ_2_male, occ_2_female = "", "", "", ""
+        if occ_1 and occ_1 != "*":
+            labels = self.isco[occ_1.removesuffix("-EX")]["Name_de"].split(" | ")
+            occ_1_male = labels[0]
+            occ_1_female = labels[1] if len(labels) > 1 else labels[0]
+        if occ_2 and occ_2 != "*":
+            labels = self.isco[occ_2.removesuffix("-EX")]["Name_de"].split(" | ")
+            occ_2_male = labels[0]
+            occ_2_female = labels[1] if len(labels) > 1 else labels[0]
         pos_x, pos_y, pos_w, pos_h = "", "", "", ""
         if pos := entry["ID"]:
             [pos_x, pos_y, pos_w, pos_h] = [str(int(n.strip())) for n in pos.split(",")]
@@ -133,7 +142,11 @@ class Validator:
             "Adresse 1": addr_1,
             "Adresse 2": addr_2,
             "Beruf 1 (CH-ISCO-19)": occ_1,
+            "Beruf 1 (CH-ISCO-19, männliche Bezeichnung)": occ_1_male,
+            "Beruf 1 (CH-ISCO-19, weibliche Bezeichnung)": occ_1_female,
             "Beruf 2 (CH-ISCO-19)": occ_2,
+            "Beruf 2 (CH-ISCO-19, männliche Bezeichnung)": occ_2_male,
+            "Beruf 2 (CH-ISCO-19, weibliche Bezeichnung)": occ_2_female,
             "Name (Rohtext)": entry["Name"],
             "Vorname (Rohtext)": entry["Vorname"],
             "Ledigname (Rohtext)": entry["Ledigname"],
