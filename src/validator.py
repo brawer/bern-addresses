@@ -11,6 +11,7 @@ import re
 
 class Validator:
     def __init__(self):
+        self.pages = self.read_csv("pages.csv", "PageID")
         self.family_names = self.read_lines("family_names.txt")
         self.given_names = self.read_lines("givennames.txt")
         self.nobility_names = self.read_csv("nobility_names.csv", "Abkürzung")
@@ -122,6 +123,7 @@ class Validator:
         pos_x, pos_y, pos_w, pos_h = "", "", "", ""
         if pos := entry["ID"]:
             [pos_x, pos_y, pos_w, pos_h] = [str(int(n.strip())) for n in pos.split(",")]
+        scan = self.pages[entry["Scan"]]
         return {
             "Name": self._normalize_name(entry["Name"]),
             "Vorname": entry["Vorname"],
@@ -142,6 +144,8 @@ class Validator:
             "Beruf 1 (Rohtext)": entry["Beruf"],
             "Beruf 2 (Rohtext)": entry["Beruf 2"],
             "Bemerkungen": entry["Bemerkungen"],
+            "Datum": scan["Date"],
+            "Seite": scan["PageLabel"],
             "Scan": entry["Scan"],
             "Position (X)": pos_x,
             "Position (Y)": pos_y,
@@ -156,6 +160,7 @@ class Validator:
         pos_x, pos_y, pos_w, pos_h = "", "", "", ""
         if pos := entry["ID"]:
             [pos_x, pos_y, pos_w, pos_h] = [str(int(n.strip())) for n in pos.split(",")]
+        scan = self.pages[entry["Scan"]]
         return {
             "Name": self._normalize_company_name(entry["Name"]),
             "Adresse 1": addr_1,
@@ -166,6 +171,8 @@ class Validator:
             "Tätigkeit 1 (Rohtext)": entry["Beruf"],
             "Tätigkeit 2 (Rohtext)": entry["Beruf 2"],
             "Bemerkungen": entry["Bemerkungen"],
+            "Datum": scan["Date"],
+            "Seite": scan["PageLabel"],
             "Scan": entry["Scan"],
             "Position (X)": pos_x,
             "Position (Y)": pos_y,
