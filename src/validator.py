@@ -18,6 +18,7 @@ class Validator:
         self.nobility_names = self.read_csv("nobility_names.csv", "Adelsname (Rohtext)")
         self.titles = self.read_csv("titles.csv", "Title")
         self.occupations = self.read_csv("occupations.csv", "Occupation")
+        self.economic_activities = self.read_csv("economic_activities.csv", "Branche")
         self.isco = self.read_csv("HCL_CH_ISCO_19_PROF_1_2_1_level_6.csv", "Code")
         self.noga = self.read_csv("HCL_NOGA_level_5.csv", "Code")
         self.pois = self.read_csv("pois.csv", "PointOfInterest")
@@ -109,6 +110,12 @@ class Validator:
             if entry[p]:
                 self.warn("%s should not be set on companies" % p, entry, pos)
                 bad.add(p)
+        for p in ("Beruf", "Beruf 2"):
+            if activity := entry[p]:
+                if activity not in self.economic_activities:
+                    message = 'unknown economic activity "%s"' % activity
+                    self.warn(message, entry, pos)
+                    bad.add(p)
         return bad
 
     def validate_given_name(self, entry, pos):
@@ -201,15 +208,27 @@ class Validator:
         if pos := entry["ID"]:
             [pos_x, pos_y, pos_w, pos_h] = [str(int(n.strip())) for n in pos.split(",")]
         scan = self.pages[entry["Scan"]]
+        noga_code_1, noga_label_1, noga_code_2, noga_label_2 = "", "", "", ""
+        if activity_1 := self.economic_activities.get(entry["Beruf"]):
+            noga_code_1 = activity_1["NOGA-Code"]
+            noga_label_1 = self.noga[noga_code_1]["Name_de"]
+        activity_2 = self.economic_activities.get(entry["Beruf 2"])
+        if activity_2 := self.economic_activities.get(entry["Beruf 2"]):
+            noga_code_2 = activity_2["NOGA-Code"]
+            noga_label_2 = self.noga[noga_code_2]["Name_de"]
         return {
             "Name": self._normalize_company_name(entry["Name"]),
             "Adresse 1": addr_1,
             "Adresse 2": addr_2,
+            "Branche 1 (NOGA-Code)": noga_code_1,
+            "Branche 1 (NOGA-Bezeichnung)": noga_label_1,
+            "Branche 2 (NOGA-Code)": noga_code_2,
+            "Branche 2 (NOGA-Bezeichnung)": noga_label_2,
             "Name (Rohtext)": entry["Name"],
             "Adresse 1 (Rohtext)": entry["Adresse"],
             "Adresse 2 (Rohtext)": entry["Adresse 2"],
-            "Tätigkeit 1 (Rohtext)": entry["Beruf"],
-            "Tätigkeit 2 (Rohtext)": entry["Beruf 2"],
+            "Branche 1 (Rohtext)": entry["Beruf"],
+            "Branche 2 (Rohtext)": entry["Beruf 2"],
             "Bemerkungen": entry["Bemerkungen"],
             "Datum": scan["Date"],
             "Seite": scan["PageLabel"],
