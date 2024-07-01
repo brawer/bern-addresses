@@ -56,7 +56,7 @@ class Validator:
         print("%d warnings" % self._num_warnings)
 
     def is_company(self, entry):
-        return entry["Titel"] == "[Firma]"
+        return "[Firma]" in entry["Titel"]
 
     def validate(self, entry, pos):
         bad = set()
@@ -97,6 +97,14 @@ class Validator:
 
     def validate_company(self, entry, pos):
         bad = set()
+        if entry["Titel"] != "[Firma]":
+            self.warn(
+                'title "%s" should just be "[Firma]", move rest to name'
+                % entry["Titel"],
+                entry,
+                pos,
+            )
+            bad.add("Titel")
         for p in ("Adelsname", "Ledigname"):
             if entry[p]:
                 self.warn("%s should not be set on companies" % p, entry, pos)
@@ -221,6 +229,10 @@ class Validator:
             "u.": "und",
             "Cie.": "Compagnie",
             "Comp.": "Compagnie",
+            "Gebr.": "Gebrüder",
+            "Gebrd.": "Gebrüder",
+            "Schwst.": "Schwestern",
+            "Töcht.": "Töchter",
         }
         words = [abbrevs.get(w, w) for w in name.split()]
         return " ".join(words)
