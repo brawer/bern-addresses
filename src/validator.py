@@ -78,6 +78,7 @@ class Validator:
                     message = '%s "%s" not a known family name' % (p, name)
                     self.warn(message, entry, pos)
                     bad.add(p)
+        bad.update(self.validate_title(entry, pos))
         bad.update(self.validate_occupations(entry, pos))
         return bad
 
@@ -120,6 +121,13 @@ class Validator:
                     self.warn('unknown occupation "%s"' % occ, entry, pos)
                     bad.add(p)
         return bad
+
+    def validate_title(self, entry, pos):
+        title = entry["Titel"]
+        if title == "" or title in self.titles:
+            return set()
+        self.warn('unknown title "%s"' % title, entry, pos)
+        return {"Titel"}
 
     def normalize_person(self, entry):
         assert not self.is_company(entry)
