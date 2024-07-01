@@ -111,11 +111,11 @@ Bierbrauer,21201027
 Bierwirth,39101051
 Bildh.,38301001
 Bildhauer,38301001
-Bildschnitzer,38403010
 Bildschntz.,38403010
 Blasinstrumentm.,38406005
 Blondenfabr.,*
 Blondenm.,*
+Blousenm.,22202015
 Blumenfabrk.,11401065
 Blumenhandl.,31109070
 Blumenhändler.,31109070
@@ -155,7 +155,6 @@ Buchführer,33203029
 Buchh.,33203029
 Buchhalt.,33203029
 Buchhalter,33203029
-Buchhandlung,31104006
 Buchhdl.,31104006
 Buchhl.,31104006
 Buchhl.-Commis,31104006
@@ -171,14 +170,13 @@ Bundesweibel,33202022
 Bureauchef,33105108
 Burgerrathsschreib.,33202051
 Burgerschreiber,33202206
-Butter- u. Käshändler,31109071
 Butterh.,31109071
 Butterhdl.,31109071
 Butterhändl.,31109071
+Butter[händler],31109071
 Bäcker,21103001
 Bärenw.,11305014
 Bärenwärt.,11305014
-Bärenwärter,11305014
 Bäurisch-Schn.,22201006
 Bäurisch-Schneid.,22201006
 Bäurischschn.,22201006
@@ -440,7 +438,7 @@ Helf. a. d. franz. Kirche,43204005
 Helf. z. heil. Geist,43204005
 Helfer an d. Nydeck,43204005
 Helfer,43204005
-Hemden- u. Blousenm.,22202099
+Hemden[m.],22202099
 Hlzschuhm.,22302075
 Holzhauer,11502021
 Holzhdl.,31109052
@@ -471,7 +469,6 @@ Journal.,37101003
 Journalist,37101003
 Jüponsstep.,22204110
 Kabshbl.,*
-Kaffee- u. Küchliw.,39101006
 Kaffeew.,39101006
 Kaffeewirth,39101006
 Kaminf.,41104001
@@ -564,9 +561,10 @@ Kupferschmd.,25305002
 Kursinsp.,46106013
 Kutsch.,34503015
 Kutscher,34503015
-Käs- u. Milchhdl.,31109071
+Käs[hdl.],31109071
 Käshdl.,31109071
 Käshändl.,31109071
+Käshändler,31109071
 Körber,26106002
 Kübl.,26107056
 Kübler,26107056
@@ -746,7 +744,6 @@ Oberrichter,36201014
 Oberst,36104021
 Oberstl.,51101872
 Oberstlieut.,51101872
-Oberstlieutenant,51101872
 Oberzollrevis.,33102054
 Oberzollsekret.,33102054
 Obrstkrgsc.,33102019
@@ -839,10 +836,9 @@ Pächt.,11101005
 Pächter,11101005
 Pörtn. im Burgersp.,41103060
 Quartieramtschef,51103486
-Quartierauff.,36102014
 Quartieraufs.,36102014
 Quartieraufseher,36102014
-Quincaill.- u. Spielzeughandlg.,31109042
+Quincaill.-[Handlung],31109042
 Quincaill.-Hdlg.,31109042
 Quincaillerie-Handlg.,31109042
 Quincailleriehandlung,31109042
@@ -882,7 +878,6 @@ Rothfärb.,22103014
 Roßhaarfabr.,22102106
 Roßhaarfabrikant,22102106
 Rt.,*
-Saager im Dalmazi,26101001
 Saager,26101001
 Saamenhandlg.,31109029
 Sachw.,32402004
@@ -946,9 +941,7 @@ Schreiber,33201078
 Schreib[lehrer],44601024
 Schreiblehrer,44601024
 Schreibr.,33201078
-Schrein. u. Möbelhdl.,31109078
 Schrein.,26105004
-Schreiner u. Speisew.,26105004
 Schreiner,26105004
 Schreinerm.,51102927
 Schriftgieß.,27101041
@@ -957,7 +950,6 @@ Schrifts.,27101001
 Schriftsetz.,27101001
 Schriftsetzer und Faktor,27101001
 Schriftsetzer,27101001
-Schrn. u. Glas.,26105004
 Schrn.,26105004
 Schrnrm.,51102927
 Schröpf.,42207004
@@ -975,11 +967,9 @@ Schulinspektor,33102005
 Schulvorsteher,33102137
 Schuster,22302007
 Schwarzwälderuhren-Fabrikant,25601025
-Schweinm. u. Speisewirth,21102001
 Schweinm.,21102001
-Schweinmetzg. u. Speisew.,21102001
 Schweinmetzg.,21102001
-Schweinmetzger und Wirth,21102001
+Schweinmetzger,21102001
 Schweinmtz.,21102001
 Schwellenmeister,29507067
 Schwnm.,21102001
@@ -1029,6 +1019,7 @@ Spiegelhdl.,31109078
 Spielkartenfabrikant,33101055
 Spielwaarenhandlung,31109073
 Spielwaarnhdl.,31109073
+Spielzeughandlg.,31109073
 Spitaleinzieher,31103001
 Spitalprediger,43202002
 Spitalverwalt.,33102098
@@ -1126,9 +1117,6 @@ Tuchneg.,31109162
 Tuchnegt.,31109162
 Tuchng.,31109162
 Tuchngt.,31109162
-Typ.,27101042
-Typograf,27101042
-Typograph,27101042
 Uebers.,37103002
 Uhrenfb.,25601025
 Uhrenhdl.,31109106
@@ -1165,7 +1153,6 @@ Wascherin,41102025
 Wattenfabr.,26302024
 Wattenfb.,26302024
 Weber,22102084
-Weberei,22102084
 Wegkn.,41203016
 Wegknecht,41203016
 Wegmstr.,23104029
@@ -1237,7 +1224,6 @@ Zügler,34503040
 alt Amtsstatthalter,33102068
 alt-Landam.,33102027
 alt-Oberrichter,36201014
-alt-Reg-Rath,33102120
 alt-Reg.-Rath,33102120
 alt-Ständer.,33102216
 des M. Dr.,*

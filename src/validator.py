@@ -4,6 +4,7 @@
 # Validator detects potential issues with address book entries,
 # loading lists of known names, occupations, etc.
 
+from collections import Counter
 import csv
 import os
 import re
@@ -32,6 +33,7 @@ class Validator:
                 continue
             code = code.removesuffix("-EX")
             assert code in self.isco, "code %s not in CH-ISCO-19 codelist" % code
+        self._occupation_counts = Counter()
         self._num_warnings = 0
         self._missing_family_names = set()
         self._re_split_addr = re.compile(r"^(.+) (\d+[a-t]?)$")
@@ -42,6 +44,9 @@ class Validator:
         print("%s:%s:%s: %s" % (pos[0], pos[1], entry["Scan"], message))
 
     def report(self):
+        for occ in self.occupations:
+            if occ not in self._occupation_counts:
+                print('src/occupatons.csv: unused entry "%s"' % occ)
         if self._missing_family_names:
             print("Missing family names")
             print("--------------------")
@@ -109,7 +114,9 @@ class Validator:
         bad = set()
         for p in ("Beruf", "Beruf 2"):
             if occ := entry[p]:
-                if occ not in self.occupations:
+                if occ in self.occupations:
+                    self._occupation_counts[occ] += 1
+                else:
                     self.warn('unknown occupation "%s"' % occ, entry, pos)
                     bad.add(p)
         return bad
