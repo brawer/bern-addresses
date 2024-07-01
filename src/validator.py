@@ -15,7 +15,7 @@ class Validator:
         self.pages = self.read_csv("pages.csv", "PageID")
         self.family_names = self.read_lines("family_names.txt")
         self.given_names = self.read_lines("givennames.txt")
-        self.nobility_names = self.read_csv("nobility_names.csv", "Abkürzung")
+        self.nobility_names = self.read_csv("nobility_names.csv", "Adelsname (Rohtext)")
         self.titles = self.read_csv("titles.csv", "Title")
         self.occupations = self.read_csv("occupations.csv", "Occupation")
         self.isco = self.read_csv("HCL_CH_ISCO_19_PROF_1_2_1_level_6.csv", "Code")
@@ -144,7 +144,7 @@ class Validator:
             "Name": self._normalize_name(entry["Name"]),
             "Vorname": entry["Vorname"],
             "Ledigname": self._normalize_name(entry["Ledigname"]),
-            "Adelsname": self._normalize_name(entry["Adelsname"]),
+            "Adelsname": self._normalize_nobility_name(entry["Adelsname"]),
             "Titel": self._normalize_title(entry["Titel"]),
             "Adresse 1": addr_1,
             "Adresse 2": addr_2,
@@ -212,6 +212,12 @@ class Validator:
         }
         words = [abbrevs.get(w, w) for w in name.split()]
         return " ".join(words)
+
+    def _normalize_nobility_name(self, name):
+        if entry := self.nobility_names.get(name):
+            return entry["Adelsname (bereinigt)"]
+        else:
+            return name
 
     def _normalize_title(self, title):
         if t := self.titles.get(title):
