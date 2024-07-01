@@ -136,11 +136,15 @@ class Validator:
         occ_1 = self.occupations.get(entry["Beruf"], {}).get("CH-ISCO-19")
         occ_2 = self.occupations.get(entry["Beruf 2"], {}).get("CH-ISCO-19")
         occ_1_male, occ_1_female, occ_2_male, occ_2_female = "", "", "", ""
-        if occ_1 and occ_1 != "*":
+        if occ_1 == "*":
+            occ_1 = ""
+        if occ_2 == "*":
+            occ_2 = ""
+        if occ_1:
             labels = self.isco[occ_1.removesuffix("-EX")]["Name_de"].split(" | ")
             occ_1_male = labels[0]
             occ_1_female = labels[1] if len(labels) > 1 else labels[0]
-        if occ_2 and occ_2 != "*":
+        if occ_2:
             labels = self.isco[occ_2.removesuffix("-EX")]["Name_de"].split(" | ")
             occ_2_male = labels[0]
             occ_2_female = labels[1] if len(labels) > 1 else labels[0]
