@@ -19,7 +19,7 @@ def strip_lines():
 
   for vol in list_volumes():
     # TODO(otz): remove gate
-    if vol != '/home/ao/src/bern-addresses/proofread/1881-09-30.txt':
+    if os.path.split(vol)[1] != '1881-09-30.txt':
       continue
     print("Blackholing lines in %s" % vol)
 
