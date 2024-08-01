@@ -52,7 +52,7 @@ def apply_replacements():
         path = os.path.join(dirpath, filename)
         with open(path, 'r') as f:
             content = f.read()
-        for (fro, to) in DONE_FIXES:
+        for (fro, to) in FIXES:
             content = re.sub(fro, to, content)
         with open(path, 'w') as f:
             f.write(content)
