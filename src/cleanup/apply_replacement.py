@@ -4,10 +4,6 @@ import re
 
 FIXES = [
     (r'Igfr\.', 'Jgfr.'),
-]
-
-
-DONE_FIXES = [
     # << Bärag >> --> «Bärag»
     (r'<<\s*', '«'),
     (r'<«\s*', '«'),
@@ -42,6 +38,8 @@ DONE_FIXES = [
     (r'gasse(\d+)', r'gasse \g<1>'),
     (r'Kirclienfeld|Kirchen-\sIfeld', r'Kirchenfeld'),
     (r'\\Vildhain'  , r'Wildhain'),
+    (r'R\. B,,', r'R. B.,'),
+    (r'K\. R,,', r'K. R.,'),
 ]
 
 
@@ -54,7 +52,7 @@ def apply_replacements():
         path = os.path.join(dirpath, filename)
         with open(path, 'r') as f:
             content = f.read()
-        for (fro, to) in FIXES:
+        for (fro, to) in DONE_FIXES:
             content = re.sub(fro, to, content)
         with open(path, 'w') as f:
             f.write(content)
