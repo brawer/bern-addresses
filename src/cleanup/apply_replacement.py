@@ -4,10 +4,6 @@ import re
 
 FIXES = [
     (r'Igfr\.', 'Jgfr.'),
-]
-
-
-DONE_FIXES = [
     # << Bärag >> --> «Bärag»
     (r'<<\s*', '«'),
     (r'<«\s*', '«'),
@@ -42,6 +38,8 @@ DONE_FIXES = [
     (r'gasse(\d+)', r'gasse \g<1>'),
     (r'Kirclienfeld|Kirchen-\sIfeld', r'Kirchenfeld'),
     (r'\\Vildhain'  , r'Wildhain'),
+    (r'R\. B,,', r'R. B.,'),
+    (r'K\. R,,', r'K. R.,'),
 ]
 
 
