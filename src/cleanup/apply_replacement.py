@@ -40,6 +40,7 @@ FIXES = [
     (r'\\Vildhain'  , r'Wildhain'),
     (r'R\. B,,', r'R. B.,'),
     (r'K\. R,,', r'K. R.,'),
+    (r',, ', r'., '),
 ]
 
 
