@@ -58,6 +58,8 @@ FIXES = [
     (r'Martha\.,', r'Martha,'),
     (r'Olga\.,', r'Olga,'),
     (r'Otto\.,', r'Otto,'),
+    # fix Neuengaffe > Neuengasse
+    (r'Neuengaffe', r'Neuengasse'),
 ]
 
 
