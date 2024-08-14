@@ -42,6 +42,22 @@ FIXES = [
     (r'K\. R,,', r'K. R.,'),
     (r',, ', r'., '),
     (r'\.\., ', r'., '),
+    # re-fix firstnames plus some (see above)
+    (r'Alfred\.,', r'Alfred,'),
+    (r'Anna\.,', r'Anna,'),
+    (r'Arnold\.,', r'Arnold,'),
+    (r'Bernhard\.,', r'Bernhard,'),
+    (r'Ernst\.,', r'Ernst,'),
+    (r'Fritz\.,', r'Fritz,'),
+    (r'Gertrud\.,', r'Gertrud,'),
+    (r'Hans\.,', r'Hans,'),
+    (r'Jakob\.,', r'Jakob,'),
+    (r'Lenhard\.,', r'Lenhard,'),
+    (r'Margaritha\.,', r'Margaritha,'),
+    (r'Marie\.,', r'Marie,'),
+    (r'Martha\.,', r'Martha,'),
+    (r'Olga\.,', r'Olga,'),
+    (r'Otto\.,', r'Otto,'),
 ]
 
 
