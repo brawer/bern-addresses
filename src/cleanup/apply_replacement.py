@@ -132,6 +132,8 @@ FIXES = [
     (r'Walzenführer,,', r'Walzenführer,'),
     (r'Wegmeister,,', r'Wegmeister,'),
     (r'Zimmermann,,', r'Zimmermann,'),
+    # Nealsch > Realsch
+    (r'Nealsch', r'Realsch'),
 ]
 
 
