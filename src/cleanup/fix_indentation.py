@@ -22,9 +22,13 @@ def fix_indentation():
         with open(vol + '.tmp', 'w') as out:
             for line in open(vol, 'r'):
                 line = line.strip()
-                start = line.split()[0] if line else None
-                if start in givennames:
-                    out.write('- ' + line + '\n')
+                if not line:
+                    continue
+                # TODO(random-ao): is whitespace split
+                # really useful? revisit, save cycles
+                if (line.split(',')[0] in givennames
+                    or line.split()[0] in givennames):
+                        out.write('- ' + line + '\n')
                 else:
                     out.write(line + '\n')
         os.rename(vol + '.tmp', vol)
