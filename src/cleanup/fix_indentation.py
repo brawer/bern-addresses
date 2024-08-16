@@ -17,7 +17,7 @@ def list_volumes():
 
 def fix_indentation():
     gnpath = os.path.join(os.path.dirname(__file__), 'frequent_given_names.txt')
-    # TODO(random-ao): use families.txt?
+    # TODO(random-ao): generate a freq list, family_names.txt/.. are too broad
     lnpath = os.path.join(os.path.dirname(__file__), 'frequent_last_names.txt')
     givennames = {name.strip() for name in open(gnpath, 'r')}
     lastnames = {name.strip() for name in open(lnpath, 'r')}
