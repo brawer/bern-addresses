@@ -9,6 +9,7 @@ FIXES = [
     (r'<«\s*', '«'),
     (r'\s*>>', '»'),
     (r'\s*»>', '»'),
+    (r'«\s?(\w*)\s?»', '«\g<1>»'),
 
     # Willy A,, Vers.-Angestellter --> Willy A., Vers.-Angestellter
     #(r' ([A-Z]),, ', ' \g<1>., '),
