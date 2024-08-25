@@ -9,8 +9,8 @@ FIXES = [
     (r'<«[ ]*', '«'),
     (r'[ ]*>>', '»'),
     (r'[ ]*»>', '»'),
-    (r'<([\w\s\.]*)»', '«\g<1>»'),
-    (r'«([\w\s\.]*)>', '«\g<1>»'),
+    (r'<([\w\s\.\,]*)»', '«\g<1>»'),
+    (r'«([\w\s\.\,]*)>', '«\g<1>»'),
     (r'«\s?(\w*)\s?»', '«\g<1>»'),
     (r'»»', '»'),
     (r'««', '«'),
@@ -152,6 +152,10 @@ FIXES = [
     (r'Zimmermann,,', r'Zimmermann,'),
     # Nealsch > Realsch
     (r'Nealsch', r'Realsch'),
+    # Anstait > Anstalt
+    (r'Anstait', r'Anstalt'),
+    # «Genferhaus,»
+    (r'«Genferhaus,»', r'«Genferhaus»'),
 ]
 
 
