@@ -221,8 +221,8 @@ Aebi, Ad., Bäckermeister, Kesslergasse 25  # 1020,1882,785,41
 - Fritz, Stellenvermittlungsbur., Spitalg. 37  # 1068,2566,796,42
 - Christ. 6269  # 1655,2610,209,30
 - Fritz, Zimmermann, Predigergasse 10  # 1035,2643,749,40
-- Gottfr., Dreher, Schönauweg 10  # 1066,2682,588,39
 Bollw. 4089  # 778,2682,199,27
+- Gottfr., Dreher, Schönauweg 10  # 1066,2682,588,39
 - Gottfr., Zimmermann, Altenbergstrasse 19  # 1046,2717,799,44
 - Gottfr., Zimmermann, Mittelstrasse 21  # 1063,2757,715,37
 # Date: 1927-12-15 Page: 25906943/133
@@ -408,8 +408,8 @@ SpitalackerChrist. 3822  # 1623,469,214,36;1633,508,203,29
 —  # 1010,560,19,3
 - A. M., Tapeziererin, Turnweg 28  # 1061,581,596,34
 - Berta, Buchhalterin, Papiermühlestr. 11  # 1061,618,737,35
-- Emil, Coiffeurgeschäft, Militärstrasse 48  # 1063,658,737,34
 Bollw. 4383  # 776,658,195,25
+- Emil, Coiffeurgeschäft, Militärstrasse 48  # 1063,658,737,34
 - Emil, photogr. Atelier (Simonstrasse 41), Hirschengraben 10  # 1063,694,777,35;1061,731,339,31
 - Christ. 3933  # 1633,734,205,27
 - Emma, Hallwylstrasse 32  # 1038,769,489,33
@@ -979,7 +979,7 @@ Anderegg, Ernst, Dr. phil., eidg. Beamter  # 1020,606,826,21;152,582,1693,8
 - Hermann, Drogist, Berchtoldstrasse 17  # 1074,902,742,23
 - Christ. 5391  # 781,915,201,26
 - Paul, Polizist, Karl-Staufferstrasse 20  # 1055,939,716,21
-- -Burkhard, Pauline, Wwe., «Lindenegg», Balderstrasse 46  # 1030,972,823,27;1074,1013,295,24
+- -Burkhard, Pauline, Wwe., Lindenegg>, Balderstrasse 46  # 1030,972,823,27;1074,1013,295,24
 Andereggen, Arnold Jos., Maler, Eggimannstrasse 19  # 1024,1051,830,23;1076,1092,179,22
 Anderes, s. auch Andres  # 1028,1128,448,23
 - Ad., Zimmermann, Krippenstrasse 24  # 1022,1164,755,28
@@ -1441,8 +1441,8 @@ Bollw. 3984  # 801,2144,195,26
 - Christ. 5679  # 1660,2289,199,24
 - Christ. 5300-Ernst, Chauffeur, Gerbergasse 34  # 796,2328,896,35
 - Ernst Schlosser, Standstrasse 35  # 1087,2403,613,26
-- Ernst, Schneider, Rodtmattstrasse 61  # 1087,2442,673,24
 Bollw. 4355  # 806,2442,195,25
+- Ernst, Schneider, Rodtmattstrasse 61  # 1087,2442,673,24
 - Ernst, Wärter, Zieglerspital  # 1071,2480,523,29
 - Franz, Kaufmann, Bonstettenstrasse 5  # 1060,2517,738,22
 - Christ. 1242  # 1658,2548,200,23
@@ -1623,8 +1623,10 @@ Bollw. 1796  # 1645,828,195,25
 Bakteriologische u. milchwirtschaftliche Anstalt, Schweiz., Liebefeld  # 1013,865,833,36;1063,913,459,22
 Bollw. 2264  # 782,866,195,39
 Zähr. 5038  # 1661,907,182,26
-Baldegger, Hans, Vertreter d. Addit.- u. Rechen-Maschinen A.-G., Zürich (Bürkiweg 4), Karl Schenk-Haus, Spitalgasse 4  # 1012,951,829,23;1063,983,779,31;1060,1024,661,27
+Baldegger, Hans, Vertreter d. Addit.- u. Rechen-Maschinen A.-G., Zürich (Bürkiweg  # 1012,951,829,23;1063,983,779,31
+4), Karl Schenk-Haus, Spitalgasse 4  # 1060,1024,661,27
 Bollw. 2670  # 1646,1058,195,24
+<  # 769,1070,13,11
 Baldinger, Ernst, Sekundarlehrer, Gutenbergstrasse 5  # 1020,1098,826,28;1065,1140,234,27
 - Christ. 6029  # 779,1168,200,26
 - Gustav, Zeichner, Helvetiastrasse 19  # 1065,1174,673,25
@@ -3016,7 +3018,9 @@ Brunngasse 64  # 1105,2122,275,29
 bo  # 795,2156,7,8
 - Christ. 4957  # 1680,2186,200,24
 - -Schranz, Louise, Wwe., Schwarztorstr. 53  # 1084,2234,797,22
-- Stalder, Oswald, «Au Départ», Sattlerei u. Reiseartikelfabrik (Beaulieustrasse 21  # 1105,2275,773,23;1104,2312,774,20
+- Stalder, Oswald, Au Départ >, Sattlerei  # 1105,2275,773,23
+«# 1442,2283,13,14
+u. Reiseartikelfabrik (Beaulieustrasse 21  # 1104,2312,774,20
 Bollw. 2914), Spitalgasse 33 Bollw. 2084  # 1106,2350,773,24
 - -Stettler, M., Käse- u. Butterhdlg., Freie  # 1084,2390,799,20
 - Christ. 4047  # 1678,2418,202,23
@@ -3658,13 +3662,13 @@ Waren aller Art (Hch. Wildstrasse 6  # 204,2485,778,40
 - Joh. Friedr., Beamter S. B. B., Weissenbühlweg 6  # 1062,299,773,30;1059,338,180,29
 - Joh. Friedr., Chauffeur, Berchtoldstr. 49  # 1061,376,737,28
 - Joh., Sattler, Polygonweg 11  # 1046,414,528,34
-- Karl, Gas-, Wasser- und sanitäre Anlagen, Muesmattstrasse 33  # 1063,451,775,31;1061,490,354,26
 Bollw. 1842  # 779,451,192,26
+- Karl, Gas-, Wasser- und sanitäre Anlagen, Muesmattstrasse 33  # 1063,451,775,31;1061,490,354,26
 Bollw. 4181  # 1644,487,190,25
 - Karl E., Angestellter, Stalden 32  # 1063,525,598,28
 - Karl Ferd., Schreiner, Talweg 1  # 1062,562,580,32
-- Klara, Murtenstrasse 153d  # 1062,599,482,28
 Bollw. 3577  # 781,599,195,25
+- Klara, Murtenstrasse 153d  # 1062,599,482,28
 - Leo Fr., Gasarbeiter, Holligenstrasse 30  # 1062,634,744,32
 - Maria, Aegertenstrasse 75 Christ. 1380  # 1061,672,779,32
 - Martha, Bureaulistin, Militärstrasse 53  # 1065,709,716,30
@@ -3685,8 +3689,8 @@ Bollw. 3577  # 781,599,195,25
 Bollw. 2585  # 784,1268,194,24
 - Walter Friedr., Kramgasse 19  # 1066,1301,567,37
 - Christ. 6419  # 775,1340,202,25
-- Walter, Bümpliz  # 1065,1340,131,33;1066,1377,146,33
 Hilfsarbeiter, Weidmattweg 18,  # 1239,1340,606,33
+- Walter, Bümpliz  # 1065,1340,131,33;1066,1377,146,33
 - -Frey, Herm., Dr. phil., Gymnasiallehrer, Egghölzliweg 59  # 1047,1414,798,34;1065,1452,287,30
 Christ, 1232  # 1637,1453,204,26
 - Greub, Friedrich, Handlanger, Wylerfeldstrasse 40  # 1064,1488,777,35;1063,1530,182,22
@@ -4249,8 +4253,8 @@ Bollw. 4923  # 1688,728,195,27
 - -Kleiner, Elise, Wwe., Brückfeldstrasse 8a  # 1078,764,806,33
 - -Kölla, S. Alb., Bubenbergplatz 4  # 1085,803,625,33
 - -Zybach, Bertha, Wwe., Meisenweg 14  # 1083,840,724,33
-- Christ. 2815  # 816,876,204,34
 Bläuer, Frieda Kl., Angestellte, Schwarztorstrasse 82  # 1058,876,828,34;1105,917,176,23
+- Christ. 2815  # 816,876,204,34
 - Friedr. August, Jurastrasse 37  # 1107,951,562,31
 - Ida, Bureaulistin, Schwarztorstrasse 82  # 1106,988,720,31
 Blaues Kreuz, städt. Agentur u. Trinkerfürsorgestelle, Zeughausg. 39 Bollw. 1156;  # 1058,1023,827,36;1103,1061,779,32
@@ -4348,8 +4352,8 @@ der Eika, Weissensteinstrasse 93  # 182,2093,614,35
 - -Sapas, Elsa, Dr. med., Engl. Anlage 8  # 1027,277,752,33
 - Christ. 2355  # 1651,318,203,28
 - -Sapas, Ernst, Dr. med., Nervenarzt, Engl.  # 1034,355,821,35
-- Christ. 2355  # 1650,394,204,28
 Anlage 8  # 1062,394,168,30
+- Christ. 2355  # 1650,394,204,28
 Blume, Hans, Violinlehrer, Greyerzstrasse 45  # 1015,430,845,36
 - Christ. 4719  # 1649,471,206,26
 Blumenfeld, Leon, Packer, Falkenplatz 9  # 1015,501,765,40
@@ -4358,8 +4362,8 @@ Blumenstein, E. W., pens. Angestellter der Brandvers.-Anstalt, Lerchenweg 20  # 
 Bollw. 2332  # 777,651,200,33
 Bollw. 2548  # 1660,660,198,25
 - Rosa, Bureaulistin, Sulgenbachstrasse 21  # 1062,692,776,39
-- Christ. 4877  # 769,729,208,35
 Blumer, Jakob Julius, eidg. Beamter, BreiBollw. 4046  # 1015,729,844,38;1661,2329,198,26
+- Christ. 4877  # 769,729,208,35
 Alpenstrasse 13  # 1066,844,288,34
 - Christ. 5217  # 1652,847,206,29
 - Heiniger, S., Dr. phil., Oberlehrer, Myrtenweg 12, Bümpliz  # 1065,881,793,40;1062,922,354,33
@@ -4591,8 +4595,8 @@ Bollinger, Johannes, Abwart, Kramgasse 6  # 998,496,802,33
 Bollmann, Alf., Handelsmann, Lentulusrain 7  # 997,647,844,25
 Bölsterli, Alfred Victor, eidg. Angestellter, Monbijoustrasse 26  # 999,685,843,31;1049,724,349,29
 - Alfred, Kaufmann, Monbijoustrasse 26  # 1034,763,749,32
-- Christ. 6536  # 756,802,207,35
 Bolt, Jakob, Buchhalter, Brückfeldstrasse 34  # 1000,802,845,35
+- Christ. 6536  # 756,802,207,35
 Bolz, Anna Rosa, Bureaulistin, Kehrgasse 51, Bümpliz  # 1000,842,845,34;1051,882,148,31
 - Christ., Fabrikarbeiter, Kehrg. 51, Bümpliz  # 1050,917,792,33
 - Emil Ed., Zahnarzt, Schwanengasse 5  # 1053,953,708,38
@@ -4832,8 +4836,8 @@ Bollw. 4359  # 767,652,196,25
 - Rudolf, Dr., Seminarlehrer, Kirchenfeldstrasse 78  # 1054,1138,797,31;1056,1180,182,24
 - Christ. 4607  # 1643,1177,209,28
 - Däppen, - W.,  # 1057,1215,158,33;1413,1208,56,46
-- Fritz  # 1271,1215,86,25
 Buchbindermeister  # 1514,1215,336,29
+- Fritz  # 1271,1215,86,25
 - (Tscharnerstrasse 25), Wagnerstrasse 27  # 1059,1252,777,33
 - Christ. 4717  # 1642,1290,208,26
 - -Fankhauser, A. Maria, Mittelstrasse 5  # 1037,1328,753,32
@@ -4961,8 +4965,8 @@ Bureau (Neubrückstr. 99), Gutenbergstr. 4  # 1087,1692,782,39
 - Christ. 2250  # 1664,1808,203,28
 Brambilla, F. D., Maurer, Hopfenrain 11  # 1042,1840,761,40
 - Giuseppe, Maurer, Nydeckhof 21  # 1088,1878,587,35
-- Christ. 2179  # 800,1916,203,33
 Brand, s. auch Brandt  # 1041,1916,423,33
+- Christ. 2179  # 800,1916,203,33
 - Alfr., Spezerei-, Gemüse- u. Südfrüchtehandlung, Länggassstrasse 41 Christ. 2137  # 1059,1955,809,30;1086,1989,783,35
 Bollw. 4904  # 807,1990,193,29
 in Fa. BoBollw. 2227  # 804,2025,199,34;806,2064,196,29
@@ -4978,8 +4982,8 @@ in Fa. BoBollw. 2227  # 804,2025,199,34;806,2064,196,29
 Bollw. 2445  # 805,2286,193,29
 - Christ., Kaufmann, Humboldtstrasse 55  # 1086,2323,734,33
 - Emil, eidg. Beamter, Graffenriedweg 12  # 1088,2360,719,33
-- Christ. 1084  # 797,2397,203,27
 - Emil, Malermeister, Kramgasse 35  # 1071,2397,651,35
+- Christ. 1084  # 797,2397,203,27
 - Emil, Maschinist, Elisabethenstrasse 34  # 1089,2436,717,31
 - Emma, Bureaulistin, Bümplizstrasse 146  # 1087,2472,741,33
 - Ernst, Handlanger, Rütlistrasse 13  # 1089,2509,652,33
@@ -5386,8 +5390,8 @@ Bruder, Adolf, Schlosser, Seftigenstrasse 32  # 180,2591,808,22
 Bruderer, Ernst, Kaufmann, Länggassstr. 14  # 180,2665,828,22
 —  # 1028,262,16,3
 Brüderlin, Marie Gertr., Ladentochter, Spitalgasse 2  # 1032,279,827,38;1078,324,175,27
-- Christ. 3136  # 790,358,203,25
 - Willi, Ingenieur, Ob. Dufourstrasse 23  # 1063,358,732,29
+- Christ. 3136  # 790,358,203,25
 Brugg, Emil, Bonnet. en gros (Brückfeldstrasse 23), Gesellschaftsstr. 21 Christ. 4271  # 1031,393,827,33;1078,433,777,26
 - -Badan, S. Helene, Wwe., Gesellschaftsstrasse 21  # 1051,472,808,27;1081,512,174,23
 Brudermann, Elsa Berta, Frau, Pension, Kornhausplatz 13  # 1032,549,828,26;1081,587,311,30
@@ -6224,8 +6228,8 @@ L  # 1000,1206,27,6
 ―  # 999,1280,22,5
 - Walter Joh., Angest., Bubenbergstr. 32  # 1054,1299,724,41
 - W., Kupferstecher, Gryphenhübeliweg 31  # 1050,1335,776,41
-- Christ. 1795  # 757,1377,207,29
 - W., Chefmonteur, Monbijoustr. 23 Chr. 5133  # 1051,1377,794,38
+- Christ. 1795  # 757,1377,207,29
 - Werner, in Fa. Bertschinger, Burkhard &  # 1032,1415,815,37
 - Cie., Stockernweg 18  # 1052,1452,379,36
 - Willy, Musiker, Amthausgasse 16  # 1056,1489,659,42
@@ -6876,8 +6880,8 @@ Chéneval, H., Vorarbeiter, Rabbentalstr. 41  # 121,2576,805,32
 - Jos., Ing.-Arch., Chef des eidg. Arbeitsnachweises, Monbijoustrasse 30  # 173,2616,794,32;170,2654,594,32
 Cherix, Ernest, Kondukteur S. B. B., Seidenweg 8  # 122,2690,842,32;171,2732,108,31
 - Jules, Handlanger, Weihergasse 8  # 1046,275,632,35
-- Christ. 3776  # 749,311,208,34
 Chervet, Daniel Rod., Reproduktionsphotograph, Karl Staufferstrasse 22  # 998,311,840,34;1046,351,560,32
+- Christ. 3776  # 749,311,208,34
 - J. E., Schreiner, Krippenstrasse 44  # 1029,384,674,40
 Chetag Chemisch-technische Produkte A.-G., Schauplatzgasse 11  # 996,423,843,36;1047,463,351,35
 Chevalier, Anna L., gew. Lehrerin, Tscharnerstrasse 23  # 998,500,839,34;1049,541,238,24
@@ -6933,7 +6937,7 @@ Christ, Emma Louise, Fabrikarbeiterin, Metzgergasse 28  # 1004,2122,842,28;1053,
 Brunnadernstrasse 4  # 1054,2501,382,29
 Christe-Biedermann, Auguste, Beamter, Allmendstrasse 38  # 1004,2535,843,33;1054,2579,278,26
 Bollw. 2240  # 766,2536,198,34
-- Simon Henri Jos., Handlanger, Schanzeneckstrasse 27  # 1054,2613,790,27;1052,2654,241,25
+Simon Henri Jos., Handlanger, Schanzeneckstrasse 27  # 1054,2613,790,27;1052,2654,241,25
 Christeler, Lydia Hanna, Bernastrasse 60  # 1003,2684,777,33
 - Werner, Bankangest., Breitenrainstr. 67  # 1054,2728,727,28
 # Date: 1927-12-15 Page: 25907002/192
@@ -6999,7 +7003,9 @@ Ger., Briefträger, Brunngasse 8.  # 242,1837,577,29
 - Karl, Spedit.-Arbeiter, Marzilistr. 2b  # 1048,428,727,28
 - Klara, Damenschneiderin, Gesellschaftsstrasse 40  # 1077,464,798,32;1097,506,183,23
 - L. & M., Monbijoustrasse 33  # 1048,540,571,30
-- Marie, Strickwaren- u. Chemiseriegeschäft «zur Wollstube» (Monbijoustrasse 33), Schauplatzgasse 37  # 1076,575,802,33;1097,623,73,19;1221,612,655,31;1095,650,355,33
+- Marie, Strickwaren- u. Chemiseriegeschäft  # 1076,575,802,33
+Wollstube» (Monbijoustrasse 33), Schauplatzgasse 37  # 1221,612,655,31;1095,650,355,33
+«zur  # 1097,623,73,19
 - Christ. 2097  # 1674,650,201,26
 - Martha Emma, Fabrikarbeiterin, Waffenweg 15  # 1049,685,827,34;1099,735,125,16
 - Max, Mechaniker, Südbahnhofstrasse 10  # 1099,760,723,30
@@ -7770,13 +7776,15 @@ Deutsch, Ernst, Kaufmann, Militärstr. 26  # 141,1513,767,28
 Deutsche Gesandtschaft, Willadingweg 7. 8  # 140,1734,768,33
 Devaux-Messerli, Ida, Damenschneiderin, Zieglerstrasse 31  # 144,1809,823,32;193,1848,300,30
 Dey, Louis, Schmied, Kramgasse 18  # 141,1883,663,30
-Deyhle & Cie., R., Postkartenverlag, Karl Staufferstrasse 26  # 145,1923,825,29;195,1960,335,28
-- -Hiller, H., Gipser- und Malermeister, in  # 141,1998,1687,23
-- -Schärer, Robert, Kaufmann, Karl Staufferstrasse 26  # 191,2036,239,26
+Deyhle & Cie., R., Postkartenverlag, Karl  # 145,1923,825,29
+Staufferstrasse 26  # 195,1960,335,28
+- -Schärer, Robert, Kaufmann, Karl Stauf---Hiller, H., Gipser- und Malermeister, in ferstrasse 26  # 141,1998,1687,23;191,2036,239,26
 Deynet, Laurenz Aug., Photographie Moderne» (Muristr. 61), Amthausgasse 12  # 143,2072,826,27;191,2107,738,30
 Diacon, Max, Beamt. S. B. B., Frickartweg 24  # 144,2146,825,30
 - -Pauli, Helene, Wwe., Lerchenweg 32  # 142,2184,740,30
-Diakonissenhaus, Nydeckgasse 11 und 13 und Schänzlistrasse 31 (Blumenberg): Spital «Salem», Schänzlistr. 39 Bollw. 2636  # 145,2222,824,26;192,2258,779,26;193,2295,774,25
+Diakonissenhaus, Nydeckgasse 11 und 13 und  # 145,2222,824,26
+Schänzlistrasse 31 (Blumenberg): Spital  # 192,2258,779,26
+«Salem», Schänzlistr. 39 Bollw. 2636  # 193,2295,774,25
 Diakonat Bethesda, Annahmestelle für Privatkrankenpflege, Jägerweg 11  # 144,2333,826,24;189,2372,571,28
 Dick, Ad., Hilfsmonteur, Badgasse 49  # 145,2405,685,31
 - Alb. F., Schlosser, Gerbergasse 36  # 194,2441,615,33
@@ -7808,29 +7816,34 @@ Bollw. 2197  # 1633,808,194,26
 - -Kocher, S. E., Wwe., Schwarzenburgstr. 12  # 1019,955,806,31
 - Christ. 3484  # 759,959,205,25
 - -Kuhn, Rich., Postbeamt., Seftigenstr. 20  # 1030,992,798,34
-- Nüesch, Hs., Vorsteher d. Schlosserabtlg. d. Lehrwerkstätten, Gümligen Zähr. 2081  # 1050,1030,776,33;1050,1068,771,33
-Dickenstein, Abraham, Kaufhaus (Thunstrasse 35 Bollw. 2693), Marktgasse 16 Bollw. 4017 u. Neuengasse 13 Bollw. 4637  # 1004,1104,821,30;1049,1143,776,30;1054,1180,754,30
+—  # 999,1010,22,5
+- Nüesch, Hs., Vorsteher d. Schlosserabtlg.  # 1050,1030,776,33
+d, Lehrwerkstätten, Gümligen Zähr. 2081  # 1050,1068,771,33
+Dickenstein, Abraham, Kaufhaus (Thunstrasse 35 Bollw. 2693), Marktgasse 16  # 1004,1104,821,30;1049,1143,776,30
+Bollw. 4017 u. Neuengasse 13 Bollw. 4637  # 1054,1180,754,30
 - Bernhard, Kaufmann, Thunstrasse 35  # 1052,1216,691,26
-- -Kukuj, Sima, Warenhalle, Aarbergerg. 37  # 1053,1252,775,35
+- Kukuj, Sima, Warenhalle, Aarbergerg. 37  # 1053,1252,775,35
 - Christ. 3959  # 1623,1289,201,25
 Dictograph Telephon Aktiengesellschaft, Schwarztorstrasse 26  # 1005,1324,820,36;1051,1365,382,28
+1  # 1456,1343,13,5
 - Christ. 4665  # 1624,1362,200,26
 - Christ. 1591  # 764,1366,198,25
 Diday-Pedrazzini, Marcel, Ing.-Adjunkt beim eidg. Grundbuchamt, Kapellenstrasse 5  # 1003,1403,822,29;1054,1436,713,33
 Diebold, Herm., Angestellter, Obstbergweg 8  # 1003,1475,805,32
-Diehl, André, vorm. Fr. Stücker, Fisch- und Geflügelhdlg., Platanenweg 8 Bollw. 4289  # 1005,1514,824,26;1053,1549,774,29
+Diehl, André, vorm. Fr. Stücker, Fisch- und  # 1005,1514,824,26
+Geflügelhdlg., Platanenweg 8 Bollw. 4289  # 1053,1549,774,29
 - Em., Lok.-Führer S. B. B., Depotstr. 28  # 1060,1587,730,28
 - H., & Söhne, Maler- und Gipsergeschäft, Randweg 8  # 1054,1623,773,31;1052,1663,201,29
 - Christ. 2840  # 1624,1658,201,26
 - Herm. Rud., Malermeister, in Fa. H. Diehl  # 1053,1698,776,27
 - & Söhne, Randweg 8  # 1053,1734,378,34
-- Oktave Ignaz, Malermeister, in Fa. H. Diehl  # 1052,1772,777,26
+Oktave Ignaz, Malermeister, in Fa. H. Diehl  # 1052,1772,777,26
 Bollw. 1823-1825  # 653,1773,314,27
 - & Söhne, Randweg 8  # 1054,1809,378,31
-- Wilh. Louis, Maler, Randweg 8.  # 1040,1843,591,34
-- -Günter, Marie, Wwe., Ensingerstrasse 28  # 1053,1882,776,28
+. Wilh. Louis, Maler, Randweg 8.  # 1040,1843,591,34
+- Günter, Marie, Wwe., Ensingerstrasse 28  # 1053,1882,776,28
 - Christ. 2639  # 1625,1915,201,27
-- Philipp R., Maler, Randweg 8  # 766,1954,835,34
+- Christ. 4897-Philipp R., Maler, Randweg 8  # 766,1954,835,34
 Fa. H. Diehl & Söhne, Randweg 8  # 1057,2028,622,31
 - Christ. 4897  # 764,2033,205,25
 - Christ. 2840  # 1624,2063,202,25
@@ -7853,7 +7866,8 @@ Dier, Herm., Korrektor, Mittelstrasse 15  # 1008,2656,754,28
 Diesslin, W. H., Angestellter, Weissenbühlweg 14  # 152,340,831,35;200,388,126,17
 Dieterle, Klara, Coiffeuse, Damenfrisiersalon, Spitalgasse 22  # 151,419,833,32;201,456,258,31
 - Rob., Drogist, Hallerstrasse 10  # 148,492,617,33
-Dieterich-Etzel, Hugo, Handelsgärtnerei und Blumenbinderei, Wylerstr. 29 Christ. 2948  # 150,536,829,31;200,573,784,32
+Dieterich-Etzel, Hugo, Handelsgärtnerei und  # 150,536,829,31
+Blumenbinderei, Wylerstr. 29 Christ. 2948  # 200,573,784,32
 Dietheim, Albert, Typograph, Moserstrasse 8  # 152,610,832,32
 - Alb., Buchhalter, Optingenstr. 46 Bw. 2287  # 149,646,835,40
 - Bernhard, Dr. chem. (Optingenstrasse 4  # 202,686,784,37
@@ -8855,7 +8869,8 @@ Bollw. 2421  # 814,2022,196,26
 - W., Architekt, Baugeschäft (Bühlplatz 4  # 1082,2087,798,33
 Bollw. 2121  # 1684,2125,190,25
 - Christ. 1112), Länggassstr. 48  # 1101,2127,530,33
-- & Co., Ferd., «Velimex»-Velos Import-Export, Thunstrasse 4, Bollw. 2368  # 1101,2161,770,32;1102,2202,404,29;1685,2200,196,26
+- & Co., Ferd., «Velimex». Velos-ImportExport, Thunstrasse 4  # 1101,2161,770,32;1102,2202,404,29
+Bollw. 2368  # 1685,2200,196,26
 - -Bertschinger, Erw., Optingenstrasse 11  # 1049,2238,793,29
 - -Hänni, Martha, Wwe., Posthalterin, Marzilistrasse 7  # 1086,2276,796,28;1106,2312,214,28
 - Jaussi, Anna, Wwe., Bubenbergplatz 4  # 1102,2349,741,28
@@ -9057,8 +9072,8 @@ Emmert, Ernst Wilh., Bankangestellter, Rosenweg 3  # 1024,832,827,35;1072,875,16
 - -Sahli, weg 3  # 1027,908,157,33;1069,951,105,22
 Bollw. 3994  # 790,945,195,25
 Emminger, Marc. Rob., Elektrotechniker der  # 1022,979,828,42
-- Christ. 2637  # 1642,1022,205,26
 - S. B. B., Morellweg 5  # 1069,1022,378,33
+- Christ. 2637  # 1642,1022,205,26
 Emmisberger, Jakob, Angestellter, K. T. A., Lorrainestrasse 62  # 1023,1059,825,31;1069,1098,335,28
 - Christ. 2559  # 782,1096,201,26
 E-m-y Kunstweberei A.-G., Monbijoustr. 99  # 1025,1170,786,40
@@ -9240,7 +9255,7 @@ Erni, s. auch Aerni  # 152,477,362,29
 - -Benz, J., Kanzleisekretär b. eidg. Amt f.  # 164,999,816,26
 geist. Eigentum, Bernastrasse 34  # 199,1038,603,24
 - -Bührer, Arthur, Beamter der Landestopographie, Haspelweg 54  # 171,1074,811,26;200,1112,437,27
-- Ernst, Adele, Kramgasse 6  # 151,1152,484,26
+Ernst, Adele, Kramgasse 6  # 151,1152,484,26
 - Adolf, Beamter der S. B. B., Bridelstr. 58  # 201,1188,760,22
 - Alfred, Koch, Kyburgstrasse 9  # 202,1226,551,29
 - Berta Pauline, Kl. Muristalden 20  # 201,1263,615,24
@@ -9530,8 +9545,8 @@ Bollw. 1450  # 1639,572,197,25
 - Joh., Heizer, Schänzlistrasse 43  # 1039,911,614,31
 - J. E., Milchführer, Zähringerstrasse 16c  # 1030,942,769,37
 - Konrad, Schlosser, Flurstrasse 17  # 1039,985,641,30
-- Christ. 2848  # 764,1020,203,26
 - Lina Joh., Angestellte, Beundenfeldstr. 7  # 1028,1020,812,36
+- Christ. 2848  # 764,1020,203,26
 —  # 1004,1039,18,4
 - Louis, Gipser- und Malermeister, Wasserwerkgasse 4  # 1039,1062,797,34;1057,1103,219,28
 - Christ. 6397  # 1633,1101,204,26
@@ -10831,8 +10846,8 @@ Friedezky, Walter, Dr., Handelsmann, Laupenstrasse 6  # 1007,2285,821,34;1054,23
 Friedhof Bremgarten (Friedhofgärtner), Murtenstrasse 55  # 1008,2361,819,35;1054,2402,238,23
 Bollw. 1774  # 1634,2402,190,25
 - Israelitischer, Wankdorffeld, Papiermühlestrasse 114  # 1026,2435,802,35;1053,2474,196,24
-- Christ. 2319  # 1624,2475,199,25
 Bollw. 4172  # 773,2475,193,27
+- Christ. 2319  # 1624,2475,199,25
 Schosshalde (Friedhofgärtner), Ostermundigenstrasse 60  # 1053,2508,774,36;1052,2547,278,31
 - Christ. 1901  # 761,2548,203,28
 Zähr. 1095  # 1644,2548,178,26
@@ -10994,7 +11009,7 @@ Amalia, Damenschneiderin, Florastr. 26  # 207,2251,714,37
 - Elisabeth, Schneiderin, Nägeligasse 6  # 207,2362,669,41
 - Emil, Kommis, Könizstrasse 71  # 166,2399,602,41
 - Emil, Schreiner, Metzgergasse 6  # 206,2437,590,40
-- Ernst, Dr., Zahnarzt (Scheuerrain 3a  # 204,2473,777,42
+Ernst, Dr., Zahnarzt (Scheuerrain 3a  # 204,2473,777,42
 - Christ. 1659), Waisenhauspl. 2 Bollw. 2778  # 205,2511,777,45
 - Frz. Josef, Handlanger, Wylerstrasse 37  # 154,2547,788,47
 - Frz. Ed., Maurerpolier, Wylerstrasse 37  # 166,2584,776,47
@@ -11018,8 +11033,8 @@ Bollw. 1784  # 1649,922,192,27
 - Friedr., Hilfsarbeiter, Scheibenstrasse 31  # 1072,955,750,35
 - Karl, Hilfsarbeiter, Stalden 16  # 1071,994,553,31
 - Margr. Helene, Bureaulistin, Freiburgstrasse 82  # 1018,1027,825,44;1070,1071,174,23
-- Christ. 1648  # 778,1106,204,32
 - Rosa, Schneiderin, Belpstrasse 59  # 1018,1106,668,32
+- Christ. 1648  # 778,1106,204,32
 Fuchter, Hans, Zeichner, Tscharnerstrasse 19  # 1023,1141,822,36
 Füeg, Theodor, Magaziner, Freie Strasse 46  # 1020,1181,803,35
 Fues, Alice, E., Arbeitslehrerin, Seftigenstr. 25  # 1024,1217,821,40
@@ -11468,8 +11483,8 @@ Mary, Kanzlistin d. O. Z. D., Moserstr. 52  # 224,2570,771,25
 - Rud., Reisender, Laubeckstrasse 1  # 1079,563,613,29
 ——  # 1028,581,26,3
 - Rud. Hans, Bureauangest., Bäckereiw. 19  # 1077,600,751,32
-- Rud., Schlosser, Flurstr. 34  # 1078,637,510,30
 Bollw. 1064  # 1655,637,192,25
+- Rud., Schlosser, Flurstr. 34  # 1078,637,510,30
 - Rud., Zeichner, Pestalozzistrasse 32  # 1079,674,653,32
 - Rud., gew. Vorarbeiter, Bäckereiweg 19  # 1079,713,710,31
 - Werner, Mechaniker, Tannackerstrasse 15  # 1077,749,773,32
@@ -11741,24 +11756,27 @@ Zähr. 5278  # 1640,2696,180,30
 Neuengasse 24  # 236,295,263,32
 Gemeinnützige Baugenossenschaft Länggasse, Schwanengasse 7 (Advokatur- u. Notariatsbureau Tenger)  # 188,334,828,32;237,372,783,26;238,406,274,36
 Gemeinnützige Baugenossenschaft Tscharnerstrasse, Bubenbergplatz 6  # 192,449,825,29;235,485,462,28
-Gemeinnützige Gesellschaft «Altes Schloss», (Alkoholfreies Restaurant), Bümpliz  # 191,522,825,26;238,558,659,27
+Gemeinnützige Gesellschaft «Altes Schloss»  # 191,522,825,26
+- (Alkoholfreies Restaurant), Bümpliz  # 238,558,659,27
 Gemeinnützige Wohnbaugenossenschaft Jolimont-Muristrasse, Bubenbergplatz 9  # 192,633,826,30;238,671,658,29
 Gempeler, Ernst, Lehrer, Rohrweg 21  # 189,710,675,27
 - Walter, Kaufm., Spitalgasse 9 Bw. 4245  # 240,781,777,27
 Gemperle, Jos. Alb., kaufmänn. Angestellter, Marzilistrasse 6  # 191,821,830,27;237,859,288,26
 Generalstabsabteilung des eidg. Militärdepartements, Bundeshaus Ostbau  # 192,895,829,27;238,934,531,23
 Genesini, Giovanni, Humboldtstrasse 43  # 193,969,713,26
-Genevoise, La, Genfer Lebensversich.-Ges., Generalagent: Carey, Ch., «Genferhaus», Bahnhofplatz Bollw. 2547, Ges.-Insp.: Ulli, F. E., Monbijoustrasse 22 Christ. 2169  # 192,1007,831,26;240,1044,780,25;240,1081,780,27;239,1118,780,22
+Genevoise, La, Genfer Lebensversich.-Ges., Generalagent: Carey, Ch., «Genferhaus», Bahnhofplatz Bollw. 2547, Ges.-Insp.: Ulli, - F. E., Monbijoustrasse 22 Christ. 2169  # 192,1007,831,26;240,1044,780,25;240,1081,780,27;239,1118,780,22
 Genfer Kragenwäscherei Ideal A.-G., Waisenhausplatz 22 u. Falkenplatz 24  # 190,1154,831,26;240,1193,569,26
 Genge, Hildegard, Lehrerin, Breitenrainpl. 38b  # 193,1230,828,24
-Geniebureau (Abteilung für Genie des eidg. Militärdepart.), Bundeshaus Ostbau B. 61  # 193,1265,830,26;240,1304,779,23
+Geniebureau (Abteilung für Genie des eidg.  # 193,1265,830,26
+Militärdepart.), Bundeshaus Ostbau B. 61  # 240,1304,779,23
 Geninazzi, E. Reinh., Mechaniker, Rodtmattstrasse 85  # 194,1342,829,22;242,1380,177,25
 Gennert-Müller, Ed., Schneidermstr., Schwarzenburgstrasse 6  # 193,1414,830,24;241,1453,297,29
 Genossenschaft bern. Sägebesitzer, Sekretariat: Neuengasse 20 Bollw. 3699; Verkaufsdepot: Waldheimstrasse 10a  # 195,1487,831,25;240,1527,784,22;242,1564,507,25
 Genossenschaft Verlag freiwirtschaftl. Schriften, Weissensteinstrasse 38  # 193,1599,831,24;239,1639,506,24
 Genossenschaft für Immobilien-Besitz, Bundesplatz 2  # 194,1674,831,22;242,1713,179,29
 Genossenschaft für Landmaschinenbedarf, Bümpliz  # 197,1748,828,25;241,1786,148,32
-Genossenschaft für das Metallgewerbe Bern und Umgebung, Wagnerstr. 11 Christ. 4155  # 196,1825,824,25;231,1864,791,23
+Genossenschaft für das Metallgewerbe Bern  # 196,1825,824,25
+und Umgebung, Wagnerstr. 11 Christ. 4155  # 231,1864,791,23
 Genossenschaftsbäckerei, Konsumstrasse 19  # 191,1898,798,23
 Genossenschaftsbuchdruckerei, Viktoriastr. 82  # 195,1974,831,21
 Genossenschaftsbureau, landwirtschaftliches, Speichergasse 12  # 196,2047,832,24;244,2084,304,28
@@ -11778,7 +11796,7 @@ gasse 18), Kramgasse 31 Christ. 2807  # 1104,289,779,27
 - Werner Eduard, Kaufm., Ensingerstr. 36  # 1086,363,778,33
 - Gebr. & Cie., Schuhhdlg., Marktgasse 42  # 1105,400,737,34
 Bollw. 1481  # 1686,438,192,25
-- -Cramer, F. C. W., Wwe., Rabbentalstr. 76  # 1104,476,779,26
+- Cramer, F. C. W., Wwe., Rabbentalstr. 76  # 1104,476,779,26
 - Christ. 3355  # 1681,512,201,25
 - Wildbolz, Jean F., Kaufmann, Schanzenbergstrasse 21  # 1106,549,779,30;1105,587,252,30
 - Christ. 2872  # 1681,586,201,26
@@ -12290,8 +12308,8 @@ Bollw. 1876  # 815,1973,194,28
 - Ernst Christ., Handlanger, Quartierhof 12  # 1100,2052,776,36
 Bollw. 4914 u. 4915  # 666,2084,343,32
 - Ernst, Direktor, Wildermettweg 22  # 1067,2092,666,31
-- Christ. 3771  # 1673,2128,200,29
 - Ernst, Alleeweg 19  # 1078,2128,361,34
+- Christ. 3771  # 1673,2128,200,29
 - Ernst, Lokomotivführer, Muldenstrasse 5  # 1097,2165,747,31
 - Ernst, Schreiner, Brünnackerweg 25, Bümpliz  # 1082,2203,793,34;1095,2239,68,29
 - Ernst, Spenglerei u. Installationsgeschäft, Zähringerstrasse 48  # 1096,2273,779,36;1099,2312,361,33
@@ -12489,8 +12507,8 @@ Bollw. 4325 Emma Ida, Ausläuferin, Polygonweg 4  # 828,589,1002,41
 - Ernst, Einleger, Kramgasse 49  # 1113,669,560,35
 - Ernst, Bureauangestellter, Rehhagstr. 18, Bümpliz  # 1113,702,779,40;1110,744,144,35
 - Ernst, Fabrikarbeiter, Jurastrasse 77  # 1093,782,713,33
-- Ernst, Kaufm., Wintermattw. 8, Bümpliz  # 1113,816,777,39
 Bollw. 1897  # 828,816,196,26
+- Ernst, Kaufm., Wintermattw. 8, Bümpliz  # 1113,816,777,39
 - Ernst, Portier, Seidenweg 27  # 1082,857,559,33
 Bollw. 1897  # 828,890,196,27
 - Ernst, Schlosser, Riedernstr. 102, Bümpliz  # 1113,894,776,37
@@ -13072,8 +13090,8 @@ Zähr. 5123  # 785,1231,182,26
 - Otto, Schlosser, Pestalozzistrasse 12  # 1026,1862,680,31
 - Paul, Handlanger, Nydeckhof 49  # 1026,1900,627,34
 - Paul, Dr., eidg. Beamter, Greyerzstr. 24  # 1053,1937,735,34
-- Christ. 6346  # 766,1973,200,26
 - Rosa. Ladentochter, Aarbergergasse 12  # 1034,1973,728,34
+- Christ. 6346  # 766,1973,200,26
 - Ulrich, pens. Lehrer, Gryphenhübeliweg 4  # 1055,2011,752,35
 - Walter, Bureaulist, Bundesrain 16  # 1053,2048,632,32
 - Christ. 5271  # 1625,2085,197,28
@@ -13753,8 +13771,8 @@ Bollw. 2380  # 1662,2411,195,30
 - Christ. 2077  # 1651,2526,206,29
 Gubser, J., Agentur in Kolonialwaren, Wein  # 1028,2562,829,34
 u. Spirituosen (Kirchenfeldstr. 18 Christ.  # 1076,2598,781,36
-- Christ. 4183 4491), Bärenplatz 2  # 785,2639,654,30
 Bollw. 4658  # 1660,2639,195,26
+- Christ. 4183 4491), Bärenplatz 2  # 785,2639,654,30
 - Joh., Bureaulistin, Kirchenfeldstrasse 18  # 1026,2671,795,36
 # Date: 1927-12-15 Page: 25907062/252
 - Bertha Hedwig, Frl., Kramgasse 12  # 212,270,675,41
@@ -14920,8 +14938,8 @@ Bollw. 3219  # 788,2294,194,27
 - Fritz, Bahnangestellter, Freieckweg 16, Bümpliz  # 1071,2484,772,34;1073,2523,144,34
 - Georg, Tramführer, Steinhölzliweg 57  # 1070,2559,671,30
 - Gottfr., Handlanger, Wylerfeldstrasse 44  # 1071,2598,751,28
-- Christ. 3903  # 783,2634,201,26
 - Gottfr., Tapezierermeister, Archivstrasse 8  # 1055,2634,788,28
+- Christ. 3903  # 783,2634,201,26
 - Christ. 6132  # 1641,2669,199,25
 # Date: 1927-12-15 Page: 25907072/262
 - Gottlieb, Schuhmacher, Effingerstrasse 25  # 229,288,752,32
@@ -15125,8 +15143,8 @@ Hasler, Schwarztorstrasse 50 Bollw. 3221  # 1086,1099,766,30
 - Julie, Sennweg 10  # 1088,1539,320,32
 - Karl Friedrich, Bahnarbeiter, Zimmerw. 12  # 1088,1574,765,31
 - Karl, Handlanger, Zaunweg 23  # 1087,1612,558,32
-- Lina, Glätterin, Bühlstrasse 55  # 1087,1649,552,29
 Bollw, 4090  # 806,1649,191,27
+- Lina, Glätterin, Bühlstrasse 55  # 1087,1649,552,29
 - L. Achille, Bereiter, Viktoriarain 3  # 1059,1685,645,32
 - Rolf W., Kaufmann, Länggassstrasse 25  # 1083,1723,734,32
 - Rosina, Kindergärtnerin b. d. städt. Armendirektion, Lorrainestrasse 80  # 1086,1758,770,33;1084,1796,592,28
@@ -15271,8 +15289,9 @@ Hauptzollamt (Frachtgut), Güterbahnhof  # 1016,2221,737,31
 - Christ. 4474  # 1632,2294,204,26
 Hauri, Adolf Oskar, Bankangestellter, Länggassstrasse 104  # 1017,2333,818,34;1066,2373,266,26
 - Emil, gew. Gärtner, Freiburgstrasse 18.  # 1014,2408,772,28
-- Gottl., Informations- und Inkassobureau «Conscientia», Zeughausgasse 23  # 1035,2446,802,28;1065,2482,594,35
+- Gottl., Informations- und Inkassobureau  # 1035,2446,802,28
 - Christ. 4451  # 777,2456,200,28
+«Conscientia», Zeughausgasse 23  # 1065,2482,594,35
 - Hans, Postbeamter, Länggassstrasse 96  # 1063,2520,712,35
 —  # 1010,2539,29,6
 - Heinrich, Kaufmann, Moserstrasse 30  # 1066,2561,691,32
@@ -15891,7 +15910,7 @@ Henze, s. auch Henzi  # 193,2213,382,24
 - -Sedelmeyer, B. M. L., Wwe., Schwarztorstrasse 18  # 204,2433,810,26;237,2475,175,20
 Henzen, K. Jos., eidg. Beamter, Bernastr. 58  # 196,2507,817,28
 Henzer, Alb., Maurer, Engerain 24  # 193,2546,629,26
-- Henzi u. Hänzi, s. auch Henze  # 197,2583,563,26
+Henzi u. Hänzi, s. auch Henze  # 197,2583,563,26
 - A. E., Ing., gew. Adj. b. städt. Ingenieurbureau, Christoffelgasse 5  # 194,2618,818,29;241,2655,463,28
 pliz  # 1088,293,62,29
 - E. H., Waffenfabrikarbeiter, Standstr. 19  # 1059,327,768,27
@@ -16009,7 +16028,7 @@ Reichenbachstrasse 4  # 1050,544,381,32
 - -Gräub, Ida, - Wwe., Spezereihandlung, Glas u. Geschirr, Bühlstr. 55a Christ. 4466  # 1013,801,165,33;1230,805,70,28;1349,805,104,30;1347,803,473,37;1049,836,769,40
 - Christ. 3651  # 764,834,199,28
 - -Jost, Katharina, Wwe., Privat., Matzenriedstrasse 118, Bümpliz  # 1020,874,798,40;1048,910,434,36
-- -Ries, Ida, Wirtin zum «Café Amthaus», Waisenhausstrasse 16  # 1020,947,796,37;1049,984,391,33
+- -Ries, Ida, Wirtin zum Café Amthaus», Waisenhausstrasse 16  # 1020,947,796,37;1049,984,391,33
 Bollw. 2649  # 1625,990,190,28
 Herrenschwand-Walter, Th., Oberst, Waldhöheweg 13  # 1005,1017,813,43;1050,1060,204,30
 - Christ. 1122  # 763,1054,201,28
@@ -16711,8 +16730,8 @@ Schuhmachermeister, Murifeldweg 21  # 1177,1234,678,40
 - Fr., Tramführer, Elfenauweg 41  # 1088,1270,573,39
 - Fr. E., städt. Beamter, Tscharnerstrasse 23  # 1059,1305,796,43
 - Frieda, Bureaulistin, Bolligenstrasse 117  # 1087,1344,751,39
-- Frieda, Bureaulistin, Neufeldstrasse 27c  # 1087,1380,730,40
 Bollw. 4425  # 806,1380,191,30
+- Frieda, Bureaulistin, Neufeldstrasse 27c  # 1087,1380,730,40
 - Frieda, Lingère, Kehrgasse 2, Bümpliz  # 1084,1415,713,43
 - Friedr., Bahnarbeiter, Länggassstr. 92  # 1086,1452,704,40
 - Friedr., Chauffeur, Chutzenstrasse 8  # 1085,1490,651,39
@@ -18513,8 +18532,8 @@ Jaberg, Albr., Tannenweg 21  # 174,2507,513,40
 - Emma, Telephonistin, Tannenweg 21  # 225,2543,649,43
 - Ernst Peter, Maschinenschlosser, Wasserwerkgasse 14  # 198,2582,790,34;216,2620,235,32
 - Friedr., Fuhrmann, Freiburgstrasse 48  # 166,2654,754,39
-- Christ. 2059  # 793,268,199,27
 - Joh., Handlanger, Ladenwandstrasse 41  # 1051,268,733,39
+- Christ. 2059  # 793,268,199,27
 - Karl, Prof. Dr., Schänzlistr. 57 Bw. 2957  # 1076,304,767,37
 - Imhoof, Ernst, Kaufmann, Tillierstr. 13  # 1075,341,749,37
 - Christ. 5831  # 1642,385,196,29
@@ -19466,7 +19485,8 @@ Zähr. 5194  # 798,1218,181,26
 - -Rupp, Jak., Bankbeamter, Dalmaziw. 101  # 1020,1304,785,30
 Kaffeerösterei Mattenhof (Aeberhard, Otto), Schwarztorstrasse 79  # 1017,1338,812,33;1064,1378,373,26
 Bollw. 4089  # 1637,1378,189,24
-zer Chocoladen- u. Colonialhaus, Laupenstrasse 8 Bollw. 1456 (Filialen siehe unter «Merkur»)  # 1065,1449,766,30;1063,1485,765,31;1067,1524,196,27
+zer Chocoladen- u. Colonialhaus, Laupenstrasse 8 Bollw. 1456 (Filialen siehe unter  # 1065,1449,766,30;1063,1485,765,31
+«Merkur»)  # 1067,1524,196,27
 Kaffee- und Teestube, A.-G., Marktgasse 23  # 1020,1548,772,43
 Bollw. 4693  # 1637,1595,191,24
 v. Kager, Erika, Kunstmalerin (Junkerngasse 17), Schänzlistrasse 75 Christ. 2423  # 1015,1633,814,27;1064,1671,764,23
@@ -19666,8 +19686,8 @@ a16  # 1,1895,34,18;0,1993,35,27
 n, 67  # 5,2115,31,19;0,2217,38,26
 - Hedwig, Bureaulistin, Moserstrasse 6  # 216,2181,671,30
 - Hermann, Angestellter, Bundesgasse 34  # 195,2217,758,33
-- Hermann, Hilfsarbeiter, Scheibenstr. 20  # 221,2253,730,30
 6a  # 0,2253,36,31
+- Hermann, Hilfsarbeiter, Scheibenstr. 20  # 221,2253,730,30
 - Hilda, Bureaulistin, Erlachstrasse 18  # 221,2289,660,31
 - J. F., Polizeiwachtmeister, Karl Staufferstrasse 14  # 219,2327,768,31;218,2368,175,23
 n78  # 0,2338,34,16;2,2584,35,32
@@ -19753,7 +19773,7 @@ him  # 33,526,28,16
 Käppeli, Jos., Dr. phil., Chef d. Abtlg. Landwirtschaft im Schweiz. Volkswirtschaftsdepartement, Muri, Rainweg Zähr. 2153  # 183,690,834,32;229,725,788,29;226,761,792,34
 Kappelmacher, Oscar, Dr. phil., Kapellmstr., Schwarzenburgstrasse 6  # 181,800,838,34;230,836,436,39
 Karafiat, Emilie, Bureaulistin, Marzilistr. 22c  # 184,879,835,33
-Karg. J. F. Paul, Photohaus «Zytglogge»  # 181,913,832,40
+Karg. J. F. Paul, Photohaus Zytglogge >  # 181,913,832,40
 - (Obstbergweg 7a), Theaterpl. 6 Bw. 3028  # 232,955,786,32
 - Karl, Alfred, Schlossermeister, Flurstrasse 13  # 183,990,837,33
 - E. ’s Wwe., Papeterie, Mühlemattstrasse 33  # 215,1065,806,34
@@ -19811,9 +19831,13 @@ Käser, Alb., Mechaniker, Graffenriedweg 10  # 193,2416,820,26
 - Christ. 4162  # 807,653,207,27
 - W. Robert, Beamter, Gesellschaftsstrasse 5  # 1102,688,785,31
 - Werner Arnold, Angestellter. Waffenweg 27  # 1078,722,811,35
-- -Karch, Ad., Beamter d. Bern. Kraftwerke A.-G., Breitenrainstrasse 37  # 1051,760,836,34;1103,800,509,30
+- -Karch, Ad., Beamter d. Bern. Kraftwerke  # 1051,760,836,34
+- A.-G., Breitenrainstrasse 37  # 1103,800,509,30
 - Christ. 5422  # 810,836,207,34
-Käsermann, Albert, Spenglermeister, in Fa. Gebr. A. & P. Käsermann, Schwarztorstrasse 79, Christ. 4495  # 1056,836,834,34;1105,874,782,31;1104,915,180,23;1685,912,202,25
+Käsermann, Albert, Spenglermeister, in Fa.  # 1056,836,834,34
+- Gebr. A. & P. Käsermann, Schwarztorstrasse 79  # 1105,874,782,31;1104,915,180,23
+- Christ. 4495  # 1685,912,202,25
+«# 571,927,14,14
 - Alb., Vater, Spengler, Dalmazirain 12  # 1101,948,700,30
 - Ed. J., Schuhmacher, Brunngasse 6  # 1108,985,647,34
 —  # 1053,1003,22,4
@@ -20054,7 +20078,7 @@ Bümpliz  # 1112,972,148,32
 - Ernst Albert, Schneider, Freiburgstr. 71  # 1093,1197,763,34
 - Ernst Robert, Sonneggweg 7  # 1114,1231,526,36
 - Christ. 4049  # 818,1243,203,26
-- E. & M., Generalagentur der «Zürich», Allgem. Unfall- und Haftpflicht-Versicherungs-Gesellsch., Zeughausg. 29 Chr. 1048  # 1093,1272,803,30;1113,1309,783,31;1112,1347,784,30
+- E. & M., Generalagentur der Zürich >, Allgem. Unfall- und Haftpflicht-Versicherungs-Gesellsch., Zeughausg. 29 Chr. 1048  # 1093,1272,803,30;1113,1309,783,31;1112,1347,784,30
 - Fanny, Bureaulistin, Kramgasse 27  # 1094,1384,670,31
 - Ferd., Telegr.-Beamter, Allmendstr. 14  # 1112,1421,713,28
 - Franz Ulr., Angestellter, Schützenweg 39  # 1113,1456,785,34
@@ -20094,8 +20118,9 @@ Tillierstrasse 52  # 1111,2700,284,26
 - Gustav, eidg. Beamter, Beaumontweg 38  # 182,266,770,41
 - Gust. Ad., Kaufmann, Mattenhofstrasse 9  # 201,306,792,33
 - Gust., Dr. phil., Wernerstrasse 11  # 166,345,651,33
-- Rosa Dora, Bureaulistin, Jägerweg 7  # 170,380,1601,42
-- H., Generalagentur der «Helvetia», Feuer- und Transport-Versicherungs-Gesellschaft, Bollw. 1281  # 305,414,684,41;196,415,70,35;1670,465,194,27
+- H., Generalagentur der Helvetia>, Feuer- -Rosa Dora, Bureaulistin, Jägerweg 7  # 170,380,1601,42
+Transport-Versicherungs-Gesellschaft, Bollw. 1281  # 305,414,684,41;1670,465,194,27
+und  # 196,415,70,35
 Laupenstrasse 3  # 197,457,304,32
 - H., «Zahnärztl. Atelier Bern», (Kanonen- Rudolf, Magaziner, Ulmenweg 13  # 149,494,1543,41
 weg 18), Neuengasse 13  # 194,534,452,29
@@ -20246,7 +20271,8 @@ Kern, August, Abteilungschef, Gesellschaftsstrasse 20  # 202,2021,839,21;253,206
 - Léon, Prof. Dr. jur., Unterarchivar b. Bundesarchiv, Heinrich Wildstr. 9 Christ. 4568  # 227,2100,817,19;256,2137,788,18
 - Paul W., Mechaniker, Effingerstrasse 69  # 202,2175,801,20
 - W., Handelsagentur u. Generalagentur d.  # 237,2211,807,22
-Feuervers.-Ges. «Urbaine» und Transportversicherung «The Marine», Schwaneng. 3  # 255,2251,786,22;255,2290,788,22
+—  # 203,2230,24,4
+Feuervers.-Ges. «Urbaine» und Transportversicherung The Marine», Schwaneng. 3  # 255,2251,786,22;255,2290,788,22
 - -Burger, P., Wwe., Wirtin z. Zähringerhof, Gesellschaftsstrasse 20  # 239,2360,807,24;258,2404,414,23
 - -Fueter, Walter, Konsul von Uruguay, Diesbachstrasse 17  # 206,2445,842,17;258,2480,344,25
 Kernen, G. Erika, Sekretärin. Kirchenfeld- Kieffer, Gaston, Zeichner b. eidg. Amt für  # 211,2517,1704,-3
@@ -20420,8 +20446,8 @@ Kindler, Emma Elise, Eigerweg 3  # 1027,2243,623,38
 - Fritz, Bahnbeamter, Brünnenstrasse 97, Bümpliz  # 1078,2285,786,30;1076,2319,149,38
 - Gottlieb, Postkommis, Simplonstrasse 23  # 1074,2360,748,32
 Zähr. 6139  # 802,2388,185,28
-- Hans, Bäckermstr., Seidenw. 27  # 1075,2398,585,28
 Bw. 3381  # 1707,2398,151,26
+- Hans, Bäckermstr., Seidenw. 27  # 1075,2398,585,28
 - Jakob, Reisender, Alleeweg 31  # 1073,2434,556,32
 - Jos. P. R., Hilfsarbeiter, Breitfeldstr. 50  # 1052,2472,770,33
 - Karl, Schlossermstr., Neueng. 18 Chr. 2475  # 1074,2510,786,32
@@ -21216,8 +21242,8 @@ Bollw. 3196  # 1677,1201,195,25
 - P., & Grimmer, Versicherungsagentur und  # 1059,1420,814,38
 Vertretungen, Hotelgasse 1  # 1089,1458,495,34
 Bollw. 4828  # 1677,1461,195,26
-- Christ. 4605  # 797,1494,205,27
 - Rudolf, Angestellter, Eigerplatz 1  # 1069,1494,629,39
+- Christ. 4605  # 797,1494,205,27
 - Rudolf, Treuhand- und Revisionsbureau, Schattenhofweg 17  # 1090,1527,784,39;1090,1568,341,36
 Bollw. 4395  # 1677,1574,195,27
 - Sophie, Ladentochter, Schanzenbergstr. 31  # 1042,1608,811,35
@@ -21810,8 +21836,8 @@ v. Werdt-Passage 39  # 1025,1249,369,35
 Bollw. 3791  # 1608,1256,191,29
 Krumbein, F. C., Dr. med., techn. Direktor des schweiz. Serum- u. Impfinstituts, Anshelmstrasse 18  # 981,1282,819,47;1027,1320,773,45;1026,1365,176,23
 Krumm, Hedwig, Ladentochter, Jurastr. 19  # 980,1394,780,47
-- Christ. 1495  # 735,1430,201,31
 - K. Herm., Bäckermstr., Schattenhofweg 13  # 1025,1430,772,45
+- Christ. 1495  # 735,1430,201,31
 - Olga M., Ladentochter, Jurastrasse 19  # 1025,1471,696,41
 - Otto, Metzger, Falkenplatz 9 Bollw. 4185  # 1006,1508,791,44
 - Folly, F., Spezereihandlung, Effingerstrasse 69  # 1027,1542,769,47;1019,1585,178,26
@@ -21833,8 +21859,8 @@ Krummenacher, A., Elektriker in Fa. Krummenacher & Sohn, Neubrückstr. 122  # 97
 - Friedrich, Lorrainestrasse 11  # 1001,2143,539,37
 - Eugen, Schlossermeister (Sulgenbachstr. 5a  # 1013,2179,776,40
 Bw. 3641), Weissenbühlweg 35b Bw. 3103  # 1012,2218,774,39
-- Christ. 1536  # 727,2256,202,30
 - Joh. Jos., Messgehilfe, Tscharnerstr. 34  # 1015,2256,733,40
+- Christ. 1536  # 727,2256,202,30
 - Rosa, Telegraphistin. Greyerzstrasse 82  # 1014,2289,712,41
 Unternehmungen, Bollw. 2243  # 1479,2327,304,42;1588,2371,193,28
 - & Sohn, Alex., elektr.  # 990,2329,450,34
@@ -22449,7 +22475,7 @@ strasse 12  # 190,405,177,24
 - Moritz, Bundesweibel, Marktgasse 25  # 193,473,673,43
 Kurth, s. auch Kuert und Kurt  # 143,516,567,36
 - Arnold, Sattler, Militärstrasse 41  # 138,552,649,39
-- Ernst, Dr., Professor an der Universität  # 192,592,777,37
+Ernst, Dr., Professor an der Universität  # 192,592,777,37
 - (Spiez), Mittelstrasse 5  # 188,628,419,36
 - J. Alfr., Hausmeister beim eidg. Amt für  # 138,662,829,46
 Gewicht, Bundesgasse 8  # 190,702,436,38
@@ -22598,29 +22624,38 @@ Lambert, Pio, Schwarztorstrasse 53a  # 179,2032,675,25
 Lamborot, Louis, Hauswart E. W. B., Sulgeneckstrasse 22  # 179,2070,837,24;230,2108,236,24
 Lämmlin & Cie., Damenschneiderei-Atelier, Schwanengasse 7  # 177,2145,840,24;229,2182,317,30
 - -Marthaler, Alwin, in Fa. Lämmlin & Co., Schwanengasse 7  # 176,2218,843,26;229,2254,311,38
+PA  # 41,2280,22,12
 Lampart, Jacques Ant., Geschäftsführer des Versicherungsverbandes Schweiz. Bahnen, Balmweg 8  # 179,2296,835,22;228,2329,788,28;230,2369,201,33
 - Jules, Techniker, Neuengasse 5  # 232,2406,571,27
 Lamy, Th. E., Buchbinder, Jurastrasse 23  # 181,2446,759,22
 - Rosa, Stoffe, Mercerie u. Bonneterie, Neubrückstrasse (61) 65  # 229,2483,791,22;228,2518,374,30
 - Theodor Jos., Ausläufer, Jurastrasse 23  # 230,2556,750,25
+i  # 47,2583,8,11
 Lanari, Amalia, Angestellte. Simonstrasse 21 - Hedw., Lehrerin, Bümplizstr. 182, Bümpliz  # 177,2593,1711,22
-- Herbert, Buchhändler, in Fa. Herbert Lang  # 178,2631,840,25;1108,2623,779,27
-Landeen, Wilh., Missionssekretär, Steinerstrasse 27  # 230,2672,181,24
+Landeen, Wilh., Missionssekretär, SteinerHerbert, Buchhändler, in Fa. Herbert Lang  # 178,2631,840,25;1108,2623,779,27
+strasse 27  # 230,2672,181,24
 Landenberger, Emil, Schneider, Tscharnerstrasse 23  # 178,2706,844,25;231,2745,174,25
 Landert, Aug. H., Monteur, Flurstrasse 12  # 1050,260,775,37
-Landesbibliothek, schweiz., Archivstrasse 24 (Archivgebäude) Bollw. 3337  # 1050,300,814,31;1094,334,294,36;1685,338,196,26
-Landeskirchliche Stellenvermittlung d. Stadt Bern, Abtlg. für Mädchen: Predigerg. 8 Bollw. 2442, Abteilg. für Knaben: Hauensteinstrasse 11 Zähr. 5080  # 1047,373,839,33;1100,411,784,33;1099,448,782,32;1099,487,264,27;1698,486,183,27
-Landestopographie, schweiz., Hallwylstr. 4, Bollw. 1530  # 1051,522,773,35;1684,561,197,25
-- Dieselbe (Sektionen Geodäsie und Topographie), Heinrich Wildstrasse 3 Bw. 1670  # 1102,596,780,33;1099,636,784,28
+Landesbibliothek, schweiz., Archivstrasse 24  # 1050,300,814,31
+- (Archivgebäude)  # 1094,334,294,36
+Bollw. 3337  # 1685,338,196,26
+Landeskirchliche Stellenvermittlung d. Stadt  # 1047,373,839,33
+Bern, Abtlg. für Mädchen: Predigerg. 8  # 1100,411,784,33
+Bollw. 2442, Abteilg. für Knaben: Hauensteinstrasse 11  # 1099,448,782,32;1099,487,264,27
+Zähr. 5080  # 1698,486,183,27
+Landestopographie, schweiz., Hallwylstr. 4  # 1051,522,773,35
+Bollw. 1530  # 1684,561,197,25
+Dieselbe (Sektionen Geodäsie und Topographie), Heinrich Wildstrasse 3 Bw. 1670  # 1102,596,780,33;1099,636,784,28
 Landfreund-Genossenschaft, Breitenrainstr. 97  # 1049,671,836,31
 Landjäger-Hauptwache. Waisenhausstrasse 7  # 1050,711,836,29
 - (Amthaus)  # 1098,745,188,32
 Bollw. 1342  # 1685,747,197,25
 Landis, Rosa Elisabeth, Privatiere, Waldhöheweg 29  # 1048,783,837,31;1097,822,209,29
 Bund», BühlChrist. 6375  # 1638,859,247,28;1679,899,202,25
-Landolf, Gottl., Redaktor am «# 1049,861,540,30
-strasse 51  # 1100,900,174,24
+Landolf, Gottl., Redaktor am strasse 51  # 1049,861,540,30;1100,900,174,24
+«# 1617,874,9,9
 - Bösiger, Ros., Spezereihdlg., Muristr. 57  # 1098,936,767,32
+—  # 1047,953,17,3
 - Christ. 2575  # 1679,974,204,25
 Landolt, Fritz H. R., eidg. Beamter, Steinauweg 33  # 1054,1011,830,36;1100,1059,124,19
 - Olga Herta, Modiste, Niggelerstrasse 7  # 1097,1087,724,30
@@ -22738,7 +22773,8 @@ phil., Willadingweg 38  # 1056,938,407,36
 La Nicca, Richard, Dr. med., Spezialarzt für  # 1007,972,820,42
 - Frauenkrankheiten und Chirurgie, Bernastrasse 6  # 1058,1009,772,43;1057,1050,157,26
 - Christ. 1857  # 1626,1053,205,30
-Lanka-Pozzi, Wenzel, Hotel-Restaurant zum «Ratskeller», Gerechtigkeitsgasse 81  # 1004,1085,822,42;1056,1123,680,43
+Lanka-Pozzi, Wenzel, Hotel-Restaurant zum  # 1004,1085,822,42
+«Ratskeller», Gerechtigkeitsgasse 81  # 1056,1123,680,43
 - Christ. 3477  # 764,1153,203,29
 Bollw. 1771  # 1633,1169,189,27
 Lanter, Joh. Heinr., Versicherungsbeamter, Trechselstrasse 6  # 1009,1191,816,54;1054,1238,303,32
@@ -23112,8 +23148,8 @@ Bollw, 4350  # 840,2196,196,25
 - Ernst, Angestellter, Genfergasse 8  # 1099,2272,648,27
 - Ernst, in Fa. Bähler & Co., Gutenbergstr. 5  # 1123,2309,779,27
 —  # 1069,2327,21,3
-- Christ. 6524  # 1704,2343,201,25
 Bollw. 4663  # 840,2343,198,27
+- Christ. 6524  # 1704,2343,201,25
 - Ernst, Bankangestellter, Simonstrasse 9  # 1126,2384,724,27
 - Chr. 4381  # 876,2419,159,27
 - Ernst, Bereiter, Schützenweg 13  # 1101,2420,613,29
@@ -23238,8 +23274,8 @@ Bollw. 4547  # 760,301,194,25
 - Otto, Kaufmann, Monbijoustrasse 17  # 1035,2232,659,29
 - Paul, Beamter d. B. L. S., Bümplizstr. 177, Bümpliz  # 1018,2270,789,31;1036,2309,143,28
 - Paul, städt. Beamter, Lentulusstrasse 30  # 1036,2347,731,28
-- Christ. 2946  # 745,2384,203,29
 - Paul, Buchdrucker, Tavelweg 35  # 1003,2384,632,30
+- Christ. 2946  # 745,2384,203,29
 - Paul Otto, Beamter d. O. T. D., Laubeckstrasse 57  # 1035,2420,772,28;1034,2463,175,22
 - Christ. 3034  # 1602,2456,202,27
 - Paula Elisabeth, Haushaltungslehrerin, Friedheimweg 24  # 1004,2491,803,37;1036,2533,304,32
@@ -23360,17 +23396,20 @@ Bollw. 3384  # 1704,2401,196,25
 - Christ. 4232  # 828,2479,204,29
 - Fritz, Bahnvisiteur, Kirchbühlstrasse 35  # 1120,2516,744,25
 - Hans, gew. Bäckermeister, Tavelweg 8  # 1119,2552,722,26
-- Christ. 2175  # 826,2588,205,33
 - Hans O., Maschinenmeister, Erikaweg 10  # 1104,2588,780,30
+- Christ. 2175  # 826,2588,205,33
 - Hans, Postangestellter, Junkerngasse 17  # 1120,2625,766,32
 - Hans, Billetteur S. S. B., Metzgergasse 6  # 1121,2661,744,35
 - Joh., Gasarbeiter, Wiesenstrasse 49  # 1104,2702,663,27
 - Joh., Handlanger, Polygonweg 5  # 1122,2737,590,33
 # Date: 1927-12-15 Page: 25907145/335
 - Paul, Magaziner, Scheibenstrasse 32  # 191,287,675,36
+11  # 157,307,37,4
 - & Cie., Garnhandel u.-Fabrikation en gros, Monbijoustrasse 32.  # 186,326,798,34;208,365,370,30
 - -Gassmann, Oskar, Kaufmann in Fa. Leibundgut & Cie., Marienstrasse 26 Bw. 1809  # 179,402,806,29;207,437,776,36
-Leichter-Levy, Emilie, Tuch- u. Massgeschäft, Wallgasse 2  # 158,475,826,34;207,514,220,31
+e  # 0,456,15,17
+Leichter-Levy, Emilie, Tuch- u. Massgeschäft.  # 158,475,826,34
+Wallgasse 2  # 207,514,220,31
 Leidel, Karl R., Buchbinder, Bottigenstr. 49,-R. Maria, Konsumangestellte, Rohrweg 10  # 157,548,1686,37
 Bümpliz  # 207,588,145,30
 Leimbach, Paul, Schriftsetzer, Wintermattweg 14, Bümpliz  # 160,624,826,30;205,663,300,29
@@ -23378,14 +23417,17 @@ Leimgruber, Edm., Wagenvisiteur d. S. B. B., Hallerstrasse 29  # 160,698,825,35;
 - Lydia Marg., in Fa. Leimgruber & Trolliet, Hallerstrasse 29  # 160,772,825,34;210,810,290,27
 - Oskar, Dr., eidgen. Vizebundeskanzler, Schwarztorstrasse 61  # 179,846,808,33;207,886,379,26
 - Paul Lorenz, eidg. Beamter, Breitenrainstrasse 23  # 179,921,806,34;206,962,177,23
-- & Trolliet, Kolonialwarenhandlung, Hallerstrasse 29  # 159,995,826,34;209,1036,182,24
+-& Trolliet, Kolonialwarenhandlung, Hallerstrasse 29  # 159,995,826,34;209,1036,182,24
+t  # 0,1057,14,23
 Leinenhaus A.-G., Bollwerk 15, «Genferhaus»  # 160,1070,823,30
 Leinenweberei Bern A.-G., Bubenbergplatz 7-Gerber, Lina, Spezereihdlg., KirchbühlBollw. 3406, Fabrik: Wylerringstrasse 46/48  # 161,1142,1685,38;208,1180,779,35
 Leinenweberei Langenthal A.-G., Karl SchenkHaus, Spitalgasse 4  # 159,1250,830,45;211,1296,373,33
 Leiser, A. Gottl., Postbeamter, Muesmattstr. 15  # 162,1332,825,28
 - Ernst, Angestellter, Wachtelweg 11  # 164,1370,684,29
 - Fritz, Vorsteher d. Molkereiabtlg. d. Konsumgenossenschaft, Konsumstrasse 20  # 213,1404,775,32;212,1444,696,27
+4  # 0,1427,16,24
 - Joh. Ernst, Handlanger, Brünnackerw. 11, Bümpliz  # 187,1481,801,30;208,1517,147,31
+6  # 0,1537,17,27
 - -Dreier, G., Käse- u. Buttergeschäft, Metzgergasse 49  # 194,1552,795,31;208,1597,207,24
 Leisi, Fr., Bühlstrasse 25a  # 161,1627,485,31
 - Joh., Schreiner, Neufeldstrasse 20  # 179,1665,655,26
@@ -23472,7 +23514,7 @@ Konst. W., Frl., Burgerspital  # 1078,2290,523,31
 - Christ. 4787  # 1644,2473,202,26
 Lerch, Alb., Landarbeiter, Riedbachstr. 350, Bümpliz  # 1028,2516,818,26;1077,2556,143,30
 - Arnold, Bankangestellter, Aegertenstr. 49  # 1025,2590,804,27
-- Ernst, Dr., Vorsteher der Mädchen-Sekundarschule Monbijou, Brügglerweg 24  # 1077,2630,770,25;1076,2665,653,31
+Ernst, Dr., Vorsteher der Mädchen-Sekundarschule Monbijou, Brügglerweg 24  # 1077,2630,770,25;1076,2665,653,31
 - Christ. 3677  # 1642,2700,201,26
 # Date: 1927-12-15 Page: 25907146/336
 - Fritz, Schreiner, Thunstrasse 115  # 195,265,642,39
@@ -23907,8 +23949,8 @@ Bollw. 3802 Gottl. Friedr., Schreiner, Stalden 18  # 813,360,933,49
 - Johanna Lina, Bankangestellte, Gerberg. 40  # 1092,401,771,50
 Lierow & Cie., Buchdruckerei, Waisenhausstrasse 16  # 1043,438,819,47;1091,483,178,24
 - Christ. 3033  # 1660,488,199,29
-- Christ. 2650  # 804,510,200,31
 - Hofmann, August, Buchdrucker, in Fa.  # 1089,510,773,49
+- Christ. 2650  # 804,510,200,31
 Lierow & Cie., Ensingerstrasse 35  # 1086,548,619,49
 - Christ. 5988  # 1660,598,199,31
 Lieser-Berger, Karl, Kellner, Seidenweg 8a  # 1040,622,800,49
@@ -24392,8 +24434,8 @@ Ludi, Alb. W., kant. Beamter, Wattenwylw. 24  # 159,2640,827,25
 - Ferdinand, Wagner, Worblaufenstr. 11a  # 1046,477,759,35
 - Friedr., stud. phil., Junkerngasse 43  # 1070,514,673,35
 - Jakob, Handlanger, Rodtmattstrasse 112  # 1054,552,770,33
-- Jakob, Vertreter, Kanonenweg 18  # 1071,589,610,33
 Bollw. 2686  # 792,589,194,27
+- Jakob, Vertreter, Kanonenweg 18  # 1071,589,610,33
 - Joh., Spez.- u. Holzhdlg., Breitfeldstr. 63  # 1070,626,733,33
 - Johanna Rosa, Bureaulistin, Klaraweg 18  # 1050,661,792,33
 - Klara, Bureaulistin, Effingerstrasse 4  # 1052,695,711,37
@@ -24547,6 +24589,7 @@ weg 37  # 1099,1544,129,17
 - Jules Oskar, Kaufmann, Niggelerstrasse 2  # 1102,1758,786,30
 - Mabel Irene, Handelsangestellte, Hallerstrasse 39  # 1086,1796,803,30;1104,1836,178,22
 - Marie, Bureaulistin, Hügelweg 2  # 1106,1871,602,31
+—  # 1052,1889,20,3
 - Marie E. A., Lehrerin, Engeriedweg 4  # 1106,1907,702,30
 - Max, Bankangestellter, Weissenbühlw. 29a  # 1104,1945,783,26
 - Oskar H., Postangestellter, Junkerng. 23  # 1105,1983,744,28
@@ -24746,8 +24789,8 @@ Bollw. 3863  # 831,622,195,27
 - Karl, Wegmeister, Wylerfeldstrasse 42  # 1114,663,721,38
 - Karl Rud., Hilfsarbeiter, Breitfeldstr. 65  # 1115,702,763,35
 - Karl W., Malervorarbeiter, Allmendstr. 34  # 1116,739,782,37
-- Christ. 1837  # 821,771,206,28
 - Karl, Schneider, Riedbachstrasse 336, 1  # 1084,771,814,46;1058,906,18,3
+- Christ. 1837  # 821,771,206,28
 Bümpliz  # 1113,816,145,31
 - Ludwig, Postangestellter, Zielweg 17  # 1062,851,734,34
 - Ludwig, Arbeiter d. W.-F., Pappelweg 8  # 1111,886,769,39
@@ -24757,8 +24800,8 @@ Bümpliz  # 1113,816,145,31
 - Marg. A., Bureaulistin, Gesellschaftsstr. 14  # 1109,1078,788,34
 Bollw. 1611  # 826,1111,197,30
 - Marie E., Damenschneiderin. Schauplatzgasse 5  # 1111,1112,784,36;1109,1160,130,20
-- Christ. 3694  # 820,1190,205,30
 - Marie, Lehrerin an der Breitfeldschule, Greyerzstrasse 52  # 1092,1190,748,31;1114,1227,315,32
+- Christ. 3694  # 820,1190,205,30
 - Marie, Zigarren- u. Papeteriegeschäft, Spitalackerstrasse 49  # 1064,1264,832,34;1113,1302,322,27
 - Martha, Geschäftsangestellte. Thunstr. 40  # 1112,1338,766,35
 - Martha, Lingere, Schauplatzgasse 4  # 1096,1374,678,38
@@ -24859,8 +24902,8 @@ strasse 2  # 1040,525,160,23
 - Hedwig Gertrud, Bankangestellte, Beundenfeldstrasse 15  # 1047,591,769,44;1047,633,305,31
 —  # 995,686,21,3
 Bollw. 1427 thys, Rabbentalstrasse 70 Christ. 2139  # 765,704,1048,38
-- Christ. 3482  # 757,785,200,25
 Bollw. 2632  # 1620,785,193,26
+- Christ. 3482  # 757,785,200,25
 - -Walter, Lina, Wwe. des Architekten, Seilerstrasse 8  # 1018,819,797,32;1040,854,210,29
 - Lutz, Albert Philipp, Handelsangestellter, Waldheimstrasse 51  # 994,889,822,39;1044,927,357,30
 - Alfred, Mechaniker, Waldheimstrasse 51  # 1043,965,733,31
@@ -25082,7 +25125,7 @@ Maiocchi, Plinio, Postbeamter. Länggassstrasse 102  # 134,2440,826,34;179,2486,
 Maire, Ls. Albert, Magaziner, Burgfeldw. 20  # 133,2522,826,28
 Maisch, L., Dr. jur., Fürspr., Advokaturbureau  # 136,2559,824,25
 u. Sitz d. Brauereiverband. Bern-Solothurn  # 183,2596,775,23
-- (Wabernstr. 30, Landhaus «Sonnenheim»  # 181,2635,772,23
+- (Wabernstr. 30, Landhaus Sonnenheim >  # 181,2635,772,23
 Bollw, 3211), Bubenbergplatz 9 Bw. 4441  # 179,2672,777,29
 Maître, Jules, Portier, Weissenbühlweg 40  # 134,2708,784,26
 Maletz, Anna Marie, Berchtoldstrasse 38  # 983,278,742,31
@@ -26099,7 +26142,7 @@ Mens, Dalmazirain 34  # 189,1840,404,27
 Menshausen-Labriola, Frieda, Sulgenauw. 26  # 142,1879,823,27
 Ment, J. Gottfr., Postangest., Hubelmattstr. 8  # 143,1952,805,28
 Mentha, P. Ernest, eidgen. Beamter, Simonstrasse 21  # 140,1991,827,25;190,2029,174,23
-- Robert A. E., Bankangestellter, Gutenbergstrasse 9  # 190,2061,776,31;189,2103,154,23
+Robert A. E., Bankangestellter, Gutenbergstrasse 9  # 190,2061,776,31;189,2103,154,23
 - Violette, Bankangestellte, Viktoriarain 21  # 191,2137,756,28
 Menti, J., bei Fa. Jb. Lüchinger, Speichergasse 31  # 146,2173,823,30;189,2220,153,17
 Menz, Albert. Privatier, Tavelweg 23  # 145,2247,669,26
@@ -26214,8 +26257,8 @@ Mescher, E. K., Redaktor, Laupenstrasse 5  # 138,1863,767,33
 Meschter, Paul, Maler, Militärstrasse 42  # 138,1938,725,30
 Mesey, Ernst, Sattler- und Tapezierermeister, Seidenweg 8d  # 137,1978,825,33;186,2015,247,31
 - Hans, Bankangestellter, Belpstrasse 73  # 165,2053,730,30
-- Walter Josef, strasse 16  # 185,2088,260,30;185,2128,174,23
 Hilfsmonteur, WaldheimMesmer, s. Messmer  # 487,2088,475,29;141,2163,362,30
+- Walter Josef, strasse 16  # 185,2088,260,30;185,2128,174,23
 Messala, Jean, Privatier, Aegertenstrasse 11  # 132,2200,806,33
 Messer, Adolf, Landwirt, Matzenriedstr. 112, Bümpliz  # 137,2275,825,32;184,2312,146,33
 - Fr., Bäckerei u. Konditorei, Rodtmattstrasse 118  # 187,2348,775,29;185,2387,197,25
@@ -26789,7 +26832,7 @@ Michaël, Emanuel, Beamter d. S. B. B., Länggassstrasse 38  # 176,966,821,41;22
 - Waldemar, Dr., eidgen. Beamter, Liebeggweg 14a  # 208,1077,786,42;220,1123,142,18
 - Veraguth, Emilie, Wwe. d. Pfarrer’s, Liebeggweg 14a  # 220,1151,772,39;217,1198,204,20
 Michaëlsen, Dagmar, Falkenhöheweg 16  # 170,1223,738,42
-- Waldemar, Redaktor des «Adressbuch der Stadt Bern», Falkenhöhew. 16 Christ. 2682  # 219,1302,771,39;219,1340,771,40
+- Waldemar, Redaktor des Adressbuch der Stadt Bern», Falkenhöhew. 16 Christ. 2682  # 219,1302,771,39;219,1340,771,40
 Michaud, Sophie, Wwe. des Professors, Länggassstrasse 25  # 168,1376,823,41;213,1421,252,27
 - Michel, Alfr., Handlanger, Polygonweg 15  # 169,1452,781,41
 - Albert Arnold, Buchbinder, Bottigenstr. 55, Bümpliz  # 216,1488,772,44;214,1529,146,32
@@ -27105,7 +27148,8 @@ Mollet, Alex., Postangestellter, Gesellschaftsstrasse 30  # 1037,1936,825,40;108
 - Walter Hs., Postbeamter, Brückfeldstr. 12a  # 1065,2267,794,39
 Bollw. 3075  # 805,2300,192,35
 Molteni, Arn. P., Maler, Muristrasse 44  # 1038,2302,708,40
-- -Battistolo, B., Tanzinstitut «Perroquet»  # 1032,2339,824,41
+- -Battistolo, B., Tanzinstitut Perroquet >  # 1032,2339,824,41
+«# 1630,2361,10,10
 - (Muristrasse 44), Laupenstrasse 2  # 1085,2378,631,42
 Bollw. 3230  # 1665,2422,192,27
 Mona, Theod. Alph., Versicherungsag., Länggassstrasse 29  # 1036,2448,822,47;1083,2494,255,27
@@ -27365,7 +27409,7 @@ Chs. F., Dr., Abteilungschef d. kant. Eisenbahn-Direktion, Murifeldweg 20 Chr. 5
 - Ernst, Maschinenmeister, Murifeldweg 3 Hermann, Beamter, Luisenstrasse 7  # 190,1196,1531,43
 - Ernst, Pferdewärter, Moritzweg 6  # 162,1232,652,39
 - Ernst, mech. Schmiede, Schwarztorstr. 93-Ida, Telephonistin, Bahnhofplatz 11  # 192,1269,1532,47
-- Ernst, Dr., Staditierarzt, Weststrasse 9  # 212,1348,696,36
+Ernst, Dr., Staditierarzt, Weststrasse 9  # 212,1348,696,36
 - Ernst, Wagenführer d. S. S. B., Stauffacherstrasse 9  # 158,1382,826,40;209,1426,158,25
 - F., Güterschaffner S. B. B., Breitfeldstr. 50  # 188,1459,796,38
 - Ferd. Hans, pens. Rangiermeister S. B. B., Bäckereiweg 17  # 210,1495,775,41;209,1532,280,33
@@ -27404,8 +27448,8 @@ betrifft jeweilen die Privatwohnung.  # 170,2813,777,38
 - Gottfr., Handlanger, Ulmenweg 4  # 1077,501,610,43
 - Gottfr., Münzzähler, Neubrückstrasse 76  # 1034,543,776,31
 - Gottfr., Pferdewärter, Militärstrasse 52  # 1075,577,708,35
-- Christ. 4187  # 785,614,204,27
 - Gottfr., Tramarbeiter, Weissenbühlweg 31  # 1026,614,822,37
+- Christ. 4187  # 785,614,204,27
 - Gottl., Handlanger, Altenbergstrasse 14  # 1078,650,710,40
 - Gottl., Magaziner, Holligenstrasse 13  # 1075,687,658,38
 - Gottl., Schmiedmeister u. Eisenwarenhändler, Bümplizstrasse 111  # 1077,728,771,29;1071,764,426,32
@@ -27564,8 +27608,8 @@ Bollw. 2745  # 820,2141,192,26
 - Chr., Bannwart, Brünnenstr. 102, Bümpliz  # 1101,2209,773,27
 - Christian, Schneidermeister, Metzgerg. 61  # 1099,2246,756,28
 - Elise, Modistin, Schläflirain 7  # 1098,2283,544,24
-- Ernst, Kondukteur, Finkenrain 19  # 1102,2325,617,25
 Bollw. 3657  # 822,2325,192,25
+- Ernst, Kondukteur, Finkenrain 19  # 1102,2325,617,25
 - Ernst, Mechaniker, Bümplizstrasse 115  # 1100,2360,715,24
 - Ernst Emanuel, Schlosser, Cäcilienstr. 9  # 1102,2397,734,24
 - Friedr., Fabrikarb., Tunnelw. 11  # 1079,2435,607,24
@@ -28182,7 +28226,7 @@ Bollw. 3067  # 783,2705,195,28
 Müller-Marcuard, Edg. C., Gutsmolkereibesitzer, Schloss Hofwil 23 (Amthausg. 5  # 255,1729,781,31;259,1766,777,31
 - Christ. 1241); Molkereidepot: Bärenpl. 29  # 262,1803,738,33
 Müllhaupt, Familie des Dr. med., Laupenstrasse 47a  # 217,1877,822,35;265,1920,198,23
-- -Gerlach, Fritz, Kaufmann, Holzikofenweg 20, «Rosenegg»  # 227,1958,809,31;267,1997,374,29
+- -Gerlach, Fritz, Kaufmann, Holzikofenweg 20, Rosenegg >  # 227,1958,809,31;267,1997,374,29
 Mülli, Albert, Beamter d. S. B. B., Schwarzenburgstrasse 14b  # 223,2035,818,25;270,2070,280,29
 - Emilie El., Telephonistin, Schwarzenburgstrasse 14b  # 218,2105,823,31;268,2148,197,22
 Multigraph & Adrema A.-G., Bureaumaschinen, Schanzenstrasse 1  # 220,2182,822,27;268,2223,426,21
@@ -29533,12 +29577,13 @@ Paglia, Anna, Bureaulistin, Beundenfeldstr. 5  # 1010,2015,818,37
 Bollw. 1429  # 1636,2095,190,25
 - Luigi, Maurer, Beundenfeldstrasse 5  # 1038,2130,671,31
 - Rosa, Verkäuferin, Beundenfeldstrasse 5  # 1060,2165,766,31
+—  # 1008,2183,19,3
 Pagnamenta, Maria, Sprachlehrerin, Bärenplatz 2  # 1010,2200,817,41;1055,2244,122,29
 Pährisch, Rud. M., Musiker, Tavelweg 40  # 1009,2278,741,32
 Pahud, Alfr., Kondukteur. Tiefmattstrasse 15  # 1005,2314,818,30
 - André Louis, Postbeamter. Vereinsweg 13  # 1056,2352,769,32
 Bollw. 2160  # 777,2387,193,25
-- Clement, Tramangestellter, Lilienweg 19  # 1054,2388,733,30
+Clement, Tramangestellter, Lilienweg 19  # 1054,2388,733,30
 Pajarola, Giov. Gugl., Kaufmann, Rodtmattstrasse 59  # 1007,2420,818,39;1055,2465,174,23
 Paillard, Henri Constant, Mechaniker, Lorrainestrasse 6  # 1004,2496,822,35;1052,2535,248,29
 - Christ. 2262  # 764,2569,202,27
@@ -29933,8 +29978,8 @@ Pfadfinderheim Berna, Waisenhausstr. 12a  # 178,2244,820,30
 32  # 0,2319,39,24
 Pfaff, Emma Mina, Bankangestellte, Beaumontweg 38  # 181,2321,819,34;224,2360,217,29
 43  # 0,2354,36,27
-- René Willy, Mechaniker, Brunnmattstr. 68  # 221,2395,777,32
 6  # 1,2395,18,25
+- René Willy, Mechaniker, Brunnmattstr. 68  # 221,2395,777,32
 - Rich., kant. Beamter, Beaumontweg 38  # 224,2434,713,33
 er94  # 0,2438,39,17;1,2466,36,26
 - Ulysse Ed., Beamter, Brunnmattstrasse 68  # 225,2470,773,32
@@ -30084,8 +30129,8 @@ Bollw. 2398  # 797,813,193,26
 - H. H., Walker, Tavelweg 6  # 1080,885,497,33
 Zähr. 5128  # 798,887,193,25
 - Hans, Bankangestellter, Seminarstrasse 29  # 1079,922,775,35
-- Christ. 3792 - Hans, —  # 790,958,387,34;1027,977,19,3
 Bureaudiener S. B. B., SchanzenL  # 1219,958,635,34;1031,1569,27,6
+- Christ. 3792 - Hans, —  # 790,958,387,34;1027,977,19,3
 strasse 6  # 1077,998,155,25
 - Hans, Fürsprecher, Direktor d. eidg. Arbeitsamts, Kirchenfeldstrasse 8 Chr. 1079  # 1079,1031,774,32;1076,1070,777,27
 - Hans Gottfr., Schneider, Schönburgstr. 48  # 1079,1104,754,33
@@ -30724,8 +30769,8 @@ Bollw. 1560  # 1632,1463,193,27
 1  # 1000,1585,28,7
 - Rud., Hilfsarbeiter, Freiburgstrasse 121  # 1031,1609,753,32
 - Rud., Schuhmacher, Metzgergasse 62  # 1051,1645,673,34
-- Walter, Fabrikarbeiter, Tannenweg 17  # 1053,1681,710,33
 Bollw. 2635  # 773,1681,193,26
+- Walter, Fabrikarbeiter, Tannenweg 17  # 1053,1681,710,33
 - Walter, Hutmacher, Turnweg 23  # 1053,1719,590,32
 - Werner, Kommis, Standstrasse 11  # 1053,1756,622,29
 Bollw. 1560  # 771,1791,194,26
@@ -31148,8 +31193,8 @@ Rechtsauskunftstelle für Kinder- u. Frauen-Reichle, Magdal., Bureaulistin, Arch
 - Dr. Zehnder, Fürspr., Pre- Reichlin, Marg., Angestellte. Wildermettweg 6  # 180,2625,1630,63
 Die am Schlusse der Adressen aufgeführten halbfetten Zahlen sind die im offiziellen Abonnentenverzeichnis aufgeführten Telephonnummern.  # 339,2761,1449,54;145,2792,1275,58
 - Hel. Hedw., Ladentochter, Muldenstr. 45  # 1048,270,786,43
-- Jak., Maschinenmeister, Muldenstrasse 45  # 1065,307,771,42
 Christ, 4220  # 777,307,199,30
+- Jak., Maschinenmeister, Muldenstrasse 45  # 1065,307,771,42
 Recordon, Chs. Ad., Vertreter, Maulbeerstr. 7  # 1013,343,822,45
 Redard, Arth., Markenregisterführer b. d.  # 1019,381,813,51
 Bollw. 4507  # 782,416,194,31
@@ -31402,22 +31447,26 @@ Bollw. 4544  # 761,1172,208,30
 - Hulda Flora, Bureaulistin, Archivstr. 10  # 1053,1223,733,48
 - Paula Joh., Schneiderin, Brunnhofweg 21  # 1053,1257,749,53
 - Rob., Vertreter der Firma Kurt Demme, Spirituosenfabr., Archivstr. 10 Chr. 2234  # 1056,1297,765,46;1053,1336,768,46
-- -Wellia, Sekretärin, Schauplatzgasse 10, Christ. 6561  # 1005,1401,818,63;1052,1371,710,50;763,1433,199,30
-Renker, Gustav Friedr., Dr., Redaktor am «Berner Tagbl.», Nydeckgasse 19 Chr. 1125  # 1003,1475,821,61;1049,1444,774,50
-Rennefahrt, Herm., Dr. jur., Fürsprech (Jubiläumsstr. 81 Christ. 4031), Schanzenstr. 1 Bollw. 2510  # 1047,1518,772,49;1626,1573,194,30
+Renker, Gustav Friedr., Dr., Redaktor am Wellia, Sekretärin, Schauplatzgasse 10  # 1005,1401,818,63;1052,1371,710,50
+- Christ. 6561  # 763,1433,199,30
+Rennefahrt, Herm., Dr. jur., Fürsprech (Ju«Berner Tagbl.», Nydeckgasse 19 Chr. 1125  # 1003,1475,821,61;1049,1444,774,50
+biläumsstr. 81 Christ. 4031), Schanzenstr. 1  # 1047,1518,772,49
+Bollw. 2510  # 1626,1573,194,30
 - W., Musikdirekt. u. Gesanglehrer, Brückenstrasse 23  # 1051,1593,770,52;1050,1635,176,28
+——  # 1000,1611,31,4
 Renner, Herm., Postbeamter, Mittelstrasse 57  # 1001,1662,819,62
 - -Resch, Kath. Maria, Wwe., Junkerng. 39  # 1012,1706,807,52
 Bollw. 2908  # 763,1732,196,44
 Rentsch, Ad., Schriftenmaler. Waldheimstr. 27  # 995,1738,823,60
 - Bertha Marie, Handarbeiten, Bollwerk 17  # 1045,1784,755,47
 - Christ. 2756  # 1615,1832,200,30
-- Clotilde, Corsets und Kosmetik, Speichergasse 12  # 1045,1857,771,48;1041,1907,152,20
+Clotilde, Corsets und Kosmetik, Speichergasse 12  # 1045,1857,771,48;1041,1907,152,20
 - Ernst, Coiffeur, Wyttenbachstrasse 14  # 1042,1934,685,42
 - E. S., Mechaniker, Chauffeurschule (Rodtmattstrasse 90), Schwarztorstrasse 104  # 1043,1970,773,43;1043,2008,698,43
 - Frieda Klara, Schneiderin. Mattenhofstr. 38  # 1039,2044,775,42
 - Friedr. Aug., Schlosser, Mattenhofstr. 38  # 1041,2081,753,43
 - Hans, Hilfsarbeiter b. Telephon, Tscharnerstrasse 27  # 1024,2118,787,44;1041,2158,235,28
+I  # 989,2134,20,4
 - Joh., gew. Bahnarbeiter, Freiburgstr. 190, Bümpliz  # 1040,2189,771,45;1039,2225,144,38
 - Joh., Maschinist, Brunnhofweg 14  # 1012,2264,632,45
 - Joh., Schuhmacher, Marzilistrasse 13  # 1037,2302,691,40
@@ -31892,8 +31941,8 @@ Beamter der  # 719,1980,240,31
 - Jakob, Bahnarbeiter, Keltenstr. 7. Bümpliz  # 1037,2388,769,39
 - Jakob, Lok.-Heizer, Bundesbahnweg 33  # 1018,2428,711,32
 - Johann, Fabrikarbeiter, Dammweg 23  # 1035,2466,689,32
-- Christ. 1195  # 727,2502,221,25
 - Joh., Mechaniker, Thunstrasse 111  # 1035,2502,629,30
+- Christ. 1195  # 727,2502,221,25
 - Joh., Landarbeiter, Bümplizstrasse 73  # 1018,2538,706,33
 - Joh., Tramführer, Alleeweg 1  # 1034,2574,529,33
 - Joh., Lok.-Heizer, Keltenstr. 7, Bümpliz  # 1003,2608,744,41
@@ -31968,7 +32017,7 @@ Ritter, Alb., Malermeister, Jurastrasse 26  # 1037,959,785,34
 - Alb., Beamter S. B. B., Lorbeerstr. 7, Bümpliz  # 1068,1001,811,34;1087,1039,66,29
 - Anna Bertha, Angest., Blumenbergstr. 51a  # 1087,1075,796,35
 - E., Hilfsarbeiter, Weidmattw. 12, Bümpliz  # 1070,1111,813,40
-- Ernst, Dr., Adjunkt der agrikulturchem.  # 1090,1153,790,33
+Ernst, Dr., Adjunkt der agrikulturchem.  # 1090,1153,790,33
 Anstalt Bern, Thunstrasse 97a  # 1089,1190,563,33
 - Ernst Wilhelm, Ingen. S. B. B., Beundenfeldstrasse 7  # 1091,1229,791,36;1088,1266,228,27
 - Christ. 2065  # 793,1231,206,26
@@ -32000,7 +32049,9 @@ Ritzert, Hs., Bureauangest., Greyerzstr. 19  # 1040,2175,782,38
 - Martha, Telephonistin, Greyerzstrasse 19  # 1038,2212,825,35
 Ritzmann, Ad., Geschäftsführer bei «Ritztours», A.-G., Humboldtstr. 49 Chr. 4975  # 1040,2250,842,34;1087,2291,793,32
 - Christ. 5811  # 794,2293,202,29
-«Ritztours», Reisebureaux u. Wechselstuben, A.-G., Hauptbahnhof, Reisebureau: Bollw. 4785, Bankabteilung: Bollw. 2351  # 1038,2329,844,31;1089,2367,791,32;1088,2406,394,35;1664,2406,215,27
+«Ritztours», Reisebureaux u. Wechselstuben, - A.-G., Hauptbahnhof, Reisebureau: Bollw.  # 1038,2329,844,31;1089,2367,791,32
+4785, Bankabteilung:  # 1088,2406,394,35
+Bollw. 2351  # 1664,2406,215,27
 Riva, Erminea, Schneiderin, Metzgergasse 64  # 1040,2438,842,40
 - Giov., Maurer, Hohgantweg 16  # 1089,2482,568,34
 - Giuseppe, in Fa. Riva & Soldati, Kramg. 66  # 1092,2517,787,32
@@ -33115,7 +33166,7 @@ Wäscherei, Eymattstrasse 156, Bümpliz  # 585,2358,375,38;187,2395,372,34
 - Ernst, Trambilletteur, Steigerweg 16  # 1049,2364,666,35
 - Gottfr., Schreiner, Bühlstrasse 49  # 1046,2403,611,31
 - Hilda Klara, Ladentochter, Steckweg 17  # 1046,2436,733,36
-- Hans Gottfr., Ing., Direktor der «Carba»-Fabriken f. kompr. Gase, A.-G., Friedheimweg 19  # 1047,2476,768,34;1046,2511,769,35;1043,2551,209,30
+- Hans Gottfr., Ing., Direktor der «Carba» Fabriken f. kompr. Gase, A.-G., Friedheimweg 19  # 1047,2476,768,34;1046,2511,769,35;1043,2551,209,30
 - Christ. 1674  # 1611,2549,205,29
 - Lina Lydia, Bureaulistin, Lagerweg 7  # 1043,2583,675,38
 - Marie M., Frl., Marienstrasse 14  # 1043,2619,608,34
@@ -33992,7 +34043,7 @@ Schaltenbrand, A., Schneider, Breitfeldstr. 42  # 152,1798,805,35
 - Guido Max, Maschinenzeichner. Breitfeldstrasse 42  # 180,1873,794,32;199,1915,175,23
 - Joh. Wilh., Heizer, Länggassstrasse 79  # 180,1950,751,31
 - Leo, Kaufmann, Fichtenweg 5  # 184,1984,559,34
-Schandler, A., photogr. Atelier «Favorite», Muesmattstrasse 40  # 152,2020,822,35;201,2059,349,28
+Schandler, A., photogr. Atelier Favorite», Muesmattstrasse 40  # 152,2020,822,35;201,2059,349,28
 Schanz, Karl Gottl., Schriftsetzer, Amthausg. 4  # 154,2095,822,32
 Schär, Ad., Karrer, Belpstrasse 40  # 153,2132,663,34
 - Adolf, Sohn, Vertreter, Mühlemattstr. 22  # 150,2169,786,33
@@ -34471,8 +34522,8 @@ Bollw. 1382  # 1625,448,190,25
 Bümpliz  # 1044,745,147,34
 - Christ. 2389  # 760,750,199,24
 - Fritz, Kaufmann, Gerbergasse 39  # 1032,787,624,27
-- Christ. 4069  # 757,824,200,25
 - Gottfr., Billetteur, Bantigerstrasse 31  # 1019,824,697,26
+- Christ. 4069  # 757,824,200,25
 - Gottfr., Maler, Scheibenstrasse 27  # 1046,861,613,26
 - Gottfr. Ernst, Schlosser. Badgasse 37  # 1047,896,689,29
 - Hans Rud., Schlosser, S. S. B., Könizstr. 63  # 1055,934,761,24
@@ -34879,6 +34930,7 @@ Bollw. 2612  # 823,2587,197,32
 - Ida, Lehrerin, Rudolf Wyssweg 8  # 1110,2630,618,38
 - Ida, Lehrerin d. Sulgenbachschule, Friedheimweg 17  # 1107,2667,791,36;1105,2706,216,34
 - Jb., Lok.-Führer, Seidenweg 2  # 1110,2742,551,36
+>  # 1720,2799,32,31
 # Date: 1927-12-15 Page: 25907243/433
 gasse 49, Bümpliz  # 200,291,326,28
 62  # 0,317,34,25
@@ -35137,7 +35189,7 @@ Schlupp, s. auch Schluep  # 161,681,456,36
 - Paul, Ausläufer, Läuferplatz 5  # 172,864,592,42
 - -Burkhalter, Rosa Marie. Privatklinik  # 160,900,264,38;474,906,505,39
 Engeried, Riedweg 11  # 208,943,384,37
-- -Cadé, G. Ad., Generalagent d. Unfall-Vers.Ges. «Préservatrice» (Paris), (Kirchenfeldstrasse 53 Christ. 4099), Münzgraben 4  # 163,979,818,42;207,1013,769,42;206,1053,770,47
+- -Cadé, G. Ad., Generalagent d. Unfall-Vers.Ges. Préservatrice> (Paris), (Kirchenfeldstrasse 53 Christ. 4099), Münzgraben 4  # 163,979,818,42;207,1013,769,42;206,1053,770,47
 - -Simon, Ed., Subdirektor der Spar- und  # 157,1128,823,41
 Leihkasse, Wabernstr. 38 Christ. 4573  # 205,1168,769,39
 Schlüssel, Hotel, Metzgergasse 72 Bollw. 2946  # 158,1207,818,41
@@ -35425,6 +35477,8 @@ Bollw. 4102  # 794,427,192,26
 Bollw. 1426  # 1650,648,191,25
 - -Schmid, Friedr., Bäckerei, Seidenweg 4  # 1043,686,781,29
 - Christ. 4447  # 1640,725,201,25
+- -Schweizer, Ernst, Zigarrenhaus z. Holländer (Mühlemattstr. 45), SchauplatzChrist. 3147  # 1024,761,818,30;1073,795,771,34;1641,834,200,24
+»  # 1199,810,13,14
 gasse 33  # 1072,847,153,16
 - -Spengler, Luise, Wwe., Optingenstr. 41  # 1026,877,756,28
 - Steiner, A. M. K., Wwe., Pension, Falkenplatz 3  # 1073,911,773,27;1073,952,122,25
@@ -35518,7 +35572,8 @@ Co., Balmweg 25  # 186,1708,312,37
 -& Co., R., Generalvertretg. f. d. Schweiz d.  # 128,2161,850,45
 Lebensversich.-Gesellschaft Norwich-Union, Zeughausgasse 26  # 176,2199,800,42;180,2239,326,36
 -& Co., Rob., Generalvertretg. f. d. Schweiz  # 127,2277,845,42
-d. Unfall-Versich.-Gesellschaften «Vaterländische» u. «Rhenania», Zeughausg. 26  # 177,2315,796,41;174,2352,796,44
+d. Unfall-Versich.-Gesellschaften «Vaterländische u. Rhenania», Zeughausg. 26  # 177,2315,796,41;174,2352,796,44
+>  # 357,2367,12,14
 - -Bäriswyl, Aline M. A., Privat., Thunstr. 96  # 148,2390,822,46
 - Brunnhoff, Elis. A. L., Privat., Fischerweg 3  # 178,2430,793,39;174,2479,107,17
 - -Flohr, A., A.-G., Musikinstrumentenfabrik, Ernst, Patissier, Waisenhausplatz 25  # 157,2505,1592,48
@@ -36009,7 +36064,7 @@ Schläflirain 1  # 182,2257,249,33
 - -Lüthi, Frau, Damenfrisiersalon, Morgenstrasse 70, Bümpliz  # 166,2409,808,40;178,2447,370,36
 Schnell, Alb., Chemiker, Steinauweg 29  # 129,2490,726,39
 - Ernst, Mechaniker, Elisabethenstrasse 22  # 177,2567,776,37
-- Ernst, Fritz, Spengler, Gerechtigkeitsg. 70  # 178,2605,774,46
+Ernst, Fritz, Spengler, Gerechtigkeitsg. 70  # 178,2605,774,46
 - Joh., Friedr., Fabrikarbeiter, Gerechtigkeitsgasse 77  # 177,2646,794,43;174,2685,250,36
 - Julie, Frl., Engestrasse 23  # 127,2722,536,39
 - & Cie., A., Leinen- und Baumwollwarenhandlung, Kapellenstrasse 12  # 1060,345,818,41;1085,385,547,39
@@ -36382,7 +36437,9 @@ Bollw. 5276  # 1634,1205,193,25
 - Frieda, Stickerin, Brückenstrasse 12  # 1063,1612,652,26
 - G. H., Beamter S. B. B., Hauensteinweg 11  # 1014,1648,815,29
 Zähr. 5080  # 1650,1684,178,25
-- Hermann, Verwaltungs- und Revisionsbureau «Veritas» (Humboldtstr. 49), Karl Schenk-Haus, Spitalgasse 4 Bollw. 2407  # 1063,1723,770,27;1177,1759,655,26;1063,1771,75,17;1064,1794,768,35
+- Hermann, Verwaltungs- und Revisionsbu«Veritas» (Humboldtstr. 49), Karl  # 1063,1723,770,27;1177,1759,655,26
+reau  # 1063,1771,75,17
+Schenk-Haus, Spitalgasse 4 Bollw. 2407  # 1064,1794,768,35
 - Joh. Jakob, Monteur, Freiburgstrasse 167  # 1065,1831,768,29
 - Karl, Zahnarzt, Beatusstrasse 26  # 1067,1872,590,24
 - Luise E., Flurstrasse 18  # 1046,1908,450,28
@@ -36461,8 +36518,8 @@ Bümpliz  # 209,2278,150,34
 - Ernst G., Mechaniker, Mattenhofstrasse 32  # 179,2730,821,35
 - Frieda A., Näherin, Theodor-Kocherg. 4  # 1103,269,755,39
 - Friedrich, Karrer. Ladenwandstrasse 88  # 1105,309,754,32
-- Christ. 2350  # 811,347,206,29
 - Friedr., Magaziner, Waffenweg 15  # 1075,347,662,38
+- Christ. 2350  # 811,347,206,29
 - Friedr., Telephonarbeiter, Wylerfeldstr. 40  # 1107,382,789,40
 - Fritz, Unternehmer, Polygonweg 6  # 1107,417,647,43
 - Gottfr., Schreiner, Lentulusrain 7  # 1085,461,635,33
@@ -38493,7 +38550,8 @@ Staudenmann, Emil, Hilfsmonteur, Kesslergasse 16  # 1021,2605,827,29;1069,2655,1
 - Joh., Zuschneider, Tscharnerstrasse 30  # 207,300,720,32
 - Rudolf, Handlanger, Gesellschaftsstr. 35  # 192,338,777,33
 Stauder-Greminger, Louise, Wwe., Optingenstrasse 11  # 159,373,833,36;208,417,181,23
-Stauffer, A., «Aux Elégants», Spitalgasse 9  # 158,451,815,35
+Stauffer, A., Aux Elégants», Spitalgasse 9  # 158,451,815,35
+«# 402,462,16,15
 - A., Hutmanufaktur en gros (Steinerstr. 34  # 186,526,806,34
 Bollw. 2581), Spitalgasse 9 Bollw. 4061  # 209,560,777,38
 - A. H., Direktionssekretär und Prokurist d.  # 206,601,786,28
@@ -40065,7 +40123,8 @@ Süess, s. auch Süss  # 161,1340,348,24
 Sulgenbachschulhaus, Wabernstrasse 10  # 161,1526,731,21
 Sulser, Ed. Fr., Reisender, Schwarzenburgstrasse 19  # 162,1565,831,20;212,1605,184,21
 - Gebhard Wilh., Dr., Gymn.-Lehrer, Weihergasse 11  # 194,1637,796,21;210,1684,148,17
-- Mathias, Dr. phil., Sek.-Lehrer, Redaktor der «Weltchronik», Steinhölzliweg 3  # 161,1712,828,19;212,1749,666,23
+- Mathias, Dr. phil., Sek.-Lehrer, Redaktor  # 161,1712,828,19
+der Weltchronik», Steinhölzliweg 3  # 212,1749,666,23
 Sulzberger, Albert, eidg. Beamter, Herzogstrasse 2  # 165,1824,827,24;213,1865,157,22
 - J. G., Kontrollingenieur beim Eisenbahndepartement, Dählhölzliweg 13  # 187,1899,806,21;215,1936,557,23
 - -Kühni, Lina, Robes, Herzogstrasse 2  # 171,1973,720,23
@@ -40755,7 +40814,7 @@ Trachsel, Ad., Karrer, Schosshaldenstrasse 19  # 159,2641,825,42
 - Ad., Uhrmacher, Gesellschaftsstrasse 18  # 172,2680,775,38
 - Albert, Beamter der kant. Armendirektion, Speichergasse 14  # 1083,269,773,39;1081,307,302,36
 - Albrecht, Bahnarbeiter, Freiburgstr. 163  # 1080,340,740,43
-- Alfred, chem. Produkte, Fabr. d. «Therma»-Bodenwichse, Mittelstr. 12  # 1063,380,793,39;1076,417,469,34
+- Alfred, chem. Produkte, Fabr. d. «Therma» Bodenwichse, Mittelstr. 12  # 1063,380,793,39;1076,417,469,34
 - Christ. 2560  # 1654,425,203,27
 - Anna, Angestellte, Mattenhofstrasse 8.  # 1081,456,699,40
 - Aug., Hilfsarbeiter, Gerbergasse 6  # 1082,493,633,45
@@ -41456,8 +41515,8 @@ strasse 43  # 1081,1088,177,23
 - Marie, Telephonistin, Theodor Kocherg. 5  # 1080,1194,777,38
 - Meyer, Hedwig Emma, Wwe., Zigarrenhandlung, Kesslergasse 21  # 1079,1231,777,38;1080,1270,469,34
 Urech, Alb. Aug., Postbeamter, Beaulieustr. 21  # 1035,1297,817,57
-- Aug. Karl, Mathematiker, Beaulieustr.  # 1082,1346,712,34
 21  # 1816,1346,38,34
+- Aug. Karl, Mathematiker, Beaulieustr.  # 1082,1346,712,34
 - Ernst Edwin, Hilfsarbeiter, Alleeweg 36  # 1082,1382,733,36
 - J. H., Vorstandstellvertreter der Zentralwagenkontr. S. B. B., Thunstr. 24 Chr. 5584  # 1080,1424,775,29;1078,1460,777,32
 - Jacques, Prokurist b. d. Schweiz. Kreditanstalt, Ensingerstrasse 10 Christ. 6267  # 1062,1499,791,32;1075,1535,781,35
@@ -41866,7 +41925,6 @@ strasse 28  # 208,1883,180,25
 - Herm., Hilfsarbeiter, Gerbergasse 12a  # 204,2551,687,32
 - Herm. Rud., Tramangestellter, Parkstr. 7  # 209,2585,775,40
 - J. M., Schneider, Breitfeldstrasse 47  # 206,2627,678,33
-- J. J., techn. Leiter der Buchdr. «Hallwag A.-G.», Greyerzstrasse 40  # 200,2662,1643,36;1067,2700,457,35
 - Joh. Chauffeur, Breitfeldstrasse 48  # 203,2701,660,31
 - Martha, Damenschneiderin, Federnweg 59  # 1084,281,776,44
 - Christ. 4158  # 794,318,205,29
@@ -41924,7 +41982,8 @@ Bollw. 3294  # 1652,2073,192,26
 - Hugo, Vertreter, Monbijoustr. 24 Chr. 4329  # 1070,2554,773,33
 - Ida, Abwartin, Nägeligasse 9  # 1044,2588,552,36
 - Ida Martha, Klavierlehrerin, Hallerstr. 2  # 1043,2628,784,32
-- - Joh., Strassenreiniger, Zähringerstrasse 16  # 1017,2645,37,5
+- - Joh., Strassenreiniger, Zähringerstrasse 16-J. J., techn. Leiter der Buchdr. «Hallwag  # 1017,2645,37,5;200,2662,1643,36
+- A.-G. >, Greyerzstrasse 40  # 1067,2700,457,35
 # Date: 1927-12-15 Page: 25907304/494
 - Max Alb., Techniker S. B. B., Vereinsw. 5  # 196,280,784,25
 - Otto, Buchbinder, Waldheimstrasse 51  # 198,315,691,27
@@ -41932,7 +41991,7 @@ Bollw. 3294  # 1652,2073,192,26
 - Rosa, Lehrerin, Brunnmattstrasse 71  # 194,393,686,24
 - W., Handelsgärtner, Brunnmattstrasse 71  # 194,428,787,28
 - Wilh., Arzt, Brunnmattstrasse 71  # 174,504,637,26
-- & Cie., A., Verwertung u. Vertrieb v., Reklamen, Kursaalstrasse 7 Bollw. 4755  # 181,545,800,27;200,575,781,29
+-& Cie., A., Verwertung u. Vertrieb v., Reklamen, Kursaalstrasse 7 Bollw. 4755  # 181,545,800,27;200,575,781,29
 - -Hildebrand, Rob., Arzt, Bubenbergplatz 7  # 171,616,813,30
 - -Kaiser, Anna, Wwe. d. Oberingenieurs d.  # 171,692,813,26
 - S. B. B., Hallerstrasse 2  # 205,729,437,27
@@ -41948,7 +42007,7 @@ Volkelt, Fritz Bruno, Kleiderfärber, Brunnhofweg 21  # 154,1249,831,31;206,1290
 Volkmann, Amalie, Wwe., Schwanengasse 4  # 155,1325,815,31
 - -Reinhard, M. & B., «Magasin de Modes», Damenhutgesch., Schwaneng. 4 Chr. 3111  # 191,1362,799,31;205,1396,780,33
 Volksbank, Schweiz., Christoffelg. 6, Generaldirektion u. Kreisbank  # 157,1436,835,30;209,1476,412,27
-Volksbibliotheken, s. Rubrik XII «Bibliotheken»  # 159,1514,829,27;210,1555,88,25
+Volksbibliotheken, s. Rubrik XII«Bibliotheken»  # 159,1514,829,27;210,1555,88,25
 Volksbibliothek, schweizer. (öffentl. Stiftung), Haupt- und Kreisstelle Bern, BierhübeliAusleihestunden für Bezug von  # 154,1587,834,31;207,1627,784,28;417,1662,574,32
 weg 11  # 208,1675,123,18
 Berufs- u. Fachliteratur: Montag nachm.  # 208,1701,781,29
@@ -42085,7 +42144,7 @@ Bollw. 4810), Zeitglockenlaube 2 Bw. 1872  # 228,2400,775,33
 Salome Hanna, Sekretärin, Herrengasse 9  # 222,2437,781,37
 - -Baur, M. A. A., Wwe., Privatiere. Finkenhubelweg 8  # 195,2474,809,33;225,2506,262,36
 - -Brunner, Karl, Oberstlt., Rabbentalstr. 87  # 174,2546,830,33
-- («La Pergola»)  # 226,2579,290,35
+- (La Pergola >)  # 226,2579,290,35
 - -Merz, Maria, Dr. med. dent., Zahnärztin  # 202,2623,801,31
 - (Finkenhubelweg 20), Waisenhausplatz 2  # 230,2657,756,40
 - Klara, Lehrerin, Landoltstrasse 54  # 1088,285,618,30
@@ -42557,8 +42616,8 @@ Zähr. 6216  # 1654,307,180,30
 - Margrit, Damenschneiderin, Muristrasse 73  # 1058,447,778,45
 - Martha Elisabeth, Damenschneiderin, Mezenerweg 10  # 1060,486,775,45;1058,530,217,30
 Maxim. Rob., Mechaniker, Mezenerweg 10  # 1058,560,755,46
-- Christ. 4585  # 772,600,204,28
 - Mina, Bureauangestellte, Rodtmattstr. 83  # 1038,600,760,41
+- Christ. 4585  # 772,600,204,28
 - Otto, Schreinermeister, Neufeldstrasse 25  # 1057,636,760,41
 - Otto Jakob, Maschinenmeister, Neufeldstrasse 25  # 1061,673,774,42;1061,714,179,26
 - Paul Ed., Maschinenmstr., Mezenerweg 10  # 1037,746,796,44
@@ -43332,7 +43391,8 @@ Strasse 30  # 199,690,186,30
 - W., Tarifbeamter S. B. B., Freiestrasse 30  # 164,728,794,42
 Wellinger, Emil. Monteur, Turnweg 26  # 147,764,700,43
 Welmer, Franz Xaver, Kassenbote. Altenbergstrasse 13  # 143,798,833,42;196,843,179,26
-«Weltchronik», Redaktion Dr. M. Sulser (Steinhölzliweg 3 Zähr. 5073), Pestalozzistrasse 30  # 153,877,823,39;202,915,776,40;200,957,178,24
+«Weltchronik», Redaktion Dr. M. Sulser  # 153,877,823,39
+- (Steinhölzliweg 3 Zähr. 5073), Pestalozzistrasse 30  # 202,915,776,40;200,957,178,24
 Welti, s. auch Wälti  # 149,991,387,31
 - Elise Anna, Bureaulistin, Zähringerstr. 68  # 144,1024,832,44
 - Erich Rud., Dr. phil., Humboldtstrasse 35  # 192,1065,763,40
@@ -43342,13 +43402,14 @@ Welti, s. auch Wälti  # 149,991,387,31
 - Max Henri, Dr. med., Arzt, Freiburgstr. 18  # 192,1285,781,45
 - S. E., Frau. Bellevuestr. 15 Zähr. 5069  # 196,1324,777,44
 - -Haefelin, Elisa, Wwe., Theodor Kocherg. 5  # 174,1360,799,44
-- -Hossmann, Martha, Wwe., Muldenstr. 39  # 195,1399,779,43
+- Hossmann, Martha, Wwe., Muldenstr. 39  # 195,1399,779,43
 - -Liechti, Frau, Gärtnerei, Stadtbachstr. 36  # 150,1436,803,40
 Weltner, Ernst Adolf, Bauzeichner, Dammweg 9  # 143,1513,829,43;191,1558,103,24
 - Hans Ad., Kommis, Kasernenstrasse 41  # 190,1588,740,40
 - Hans, Musikreferent, Kasernenstrasse 41  # 192,1625,758,40
 - Paul Fr., Sattler, Dammweg 9  # 195,1661,547,41
-Wendelstein, Hans, in Fa. Rob. Schmidt & Co., Sonneggring 9  # 142,1700,827,39;191,1736,346,36
+Wendelstein, Hans, in Fa. Rob. Schmidt &  # 142,1700,827,39
+Co., Sonneggring 9  # 191,1736,346,36
 Wendler. Georg Ch., Maschinen-Techniker, Lentulusrain 16  # 143,1773,830,43;189,1811,287,31
 Wenger, Ad., Grubenarbeiter, Murtenstr. 9  # 139,1848,772,40
 - Ad., Handlanger, Kehrgasse 35, Bümpliz  # 174,1884,773,46
@@ -43776,9 +43837,11 @@ riedweg 14), Murtenstrasse 16  # 215,275,558,28
 - Friedr., Kaufmann, Murtenstrasse 40  # 197,497,706,31
 - F., Leder-Zuschneider, Nägeligasse 5  # 179,535,718,33
 - Fr., pens. Maschinist beim Stadtbauamt, Quartiergasse 25  # 187,577,807,27;214,612,303,30
+—  # 164,591,23,4
 - Fr. Christ., Schuhmacher, Aarbergerg. 48  # 219,651,744,32
 - Frieda Rosalie, Klavierlehrerin, Jungfraustrasse 24  # 187,689,811,33;216,729,179,23
 - Friedr., Restaur. «Zimmermania», Brunngasse 19  # 216,763,780,25;216,808,153,20
+—  # 162,778,29,6
 - Friedr., Faktor, Steinerstrasse 14  # 201,840,622,30
 - Friedr., Mechaniker, Murtenstrasse 40  # 215,875,702,31
 - Fritz, Kaufmann, Neubrückstrasse 127  # 221,909,729,32
@@ -44095,8 +44158,8 @@ Winzeler, Hanna, Geschäftsführerin, Dählhölzliweg 13  # 1035,1798,833,38;108
 - Jakob, Ingenieur, Laupenstrasse 12  # 1088,1945,642,40
 - Jakob, Kaufmann, Kramburgstrasse 8  # 1089,1984,718,37
 —  # 1036,2003,19,3
-- Christ. 5418  # 796,2029,203,30
 Bollw. 4619  # 1672,2029,196,25
+- Christ. 5418  # 796,2029,203,30
 - & Cie., Lebensmittel u. Textilw., Nägeligasse 4  # 1083,2059,783,38;1083,2106,129,21
 Bollw. 3827  # 1671,2102,197,26
 Winzenried, Albert, Kaufmann, Bernastr. 52  # 1037,2137,811,34
@@ -44140,30 +44203,38 @@ Wirth, Alfr., Bahnangestellter S. Z. B., Rossfeldstrasse 9  # 172,591,829,31;222
 - Martha, Bureauangestellte, Bernastrasse 57  # 222,1112,780,33
 - M. Olive, Bureaulistin, Bernastrasse 57  # 195,1150,748,31
 - Rud., Dr., Zahnarzt, Obere Dufourstr. 28  # 196,1187,786,30
+i  # 0,1229,28,52
 - Rud., Dozent am zahnärztl. Institut d. Universität Bern, Ob. Dufourstr. 28 Bw. 1632  # 195,1262,806,26;222,1298,777,29
 - Samuel, Pferdewärter, Breitfeldstrasse 36  # 195,1334,786,30
 - Walter, Karrer, Zieglerstrasse 66  # 218,1372,614,33
-- -Schaffter, Ida, Effingerstr. 38 Chr. 3527  # 220,1405,1641,34
-- -Schürmann, Emilie, Steinauw. 20 Chr. 1831  # 220,1441,1639,35
-- -Wirz, W., A.-G., Tapeten-Etablissement, Christ. 4560 Bundesgasse 36  # 219,1479,1641,29
+7  # 0,1402,18,24
+- Tschanz, Al., Generalagent d. «Helvetia», --Schaffter, Ida, Effingerstr. 38 Chr. 3527  # 220,1405,1641,34
+Schweiz. Unfall- u. Haftpflicht-Vers.-Anst., -Schürmann, Emilie, Steinauw. 20 Chr. 1831  # 220,1441,1639,35
+Bernastrasse 57 Bollw. 2920), Amthausg. 2 -Wirz, W., A.-G., Tapeten-Etablissement, Christ. 4560 Bundesgasse 36  # 219,1479,1641,29;796,1513,575,36
 Wirthensohn, Moritz, mech, Schlosserei, Sei---Zürcher, Albertine Carol., Wwe., Brückdenweg 5  # 171,1558,1692,21;219,1596,171,29
 - -Gerber, Luise, Glätterei. Fellenbergstr. 21  # 167,1634,830,28
+B  # 0,1659,19,25
 Wirthlin, Gust., Mechan., Brunnmattstr. 38  # 169,1671,791,28
 Wirthner-Zürcher, Anna, Verkäuferin, Spitalackerstrasse 28  # 171,1707,827,29;222,1747,282,27
-Wirz, Ad., gew. Chef des Gütertarifbureaus der S. B. B., Moserstrasse 23  # 171,1784,828,25;223,1821,512,27
+Wirz, Ad., gew. Chef des Gütertarifbureaus  # 171,1784,828,25
+der S. B. B., Moserstrasse 23  # 223,1821,512,27
 - Ad., Brandwächter, Breitenrainstrasse 47  # 187,1857,795,29
 - Ad., Kaufmann, Friedeckweg 28  # 171,1932,637,27
 - Alfred, Beamter d. eidg. Gesundheitsamtes, Gotthardweg 5  # 187,1969,811,30;223,2006,255,31
 - Alfred, Neue Berner Leihbibliothek (Effingerstrasse 38 Christ. 3527), Neuengasse 7  # 170,2043,830,26;221,2081,761,31
+G  # 0,2080,30,50
 - Armin Otto, Automechaniker. Effingerstrasse 94  # 222,2118,777,30;221,2161,179,23
+7  # 0,2183,17,27
 - Arthur, Postkommis, Sickingerstrasse 7  # 218,2192,731,27
 - Edwin Werner, Beamter d. S. B. B., Freiburgstrasse 330, Bümpliz  # 224,2232,773,26;219,2267,458,29
 - Emil, Angestellter, Schifflaube 28  # 207,2307,628,28
 - Emil, Tramangestellter, Bahnhöheweg 98, Bümpliz  # 195,2344,804,28;223,2381,146,30
 - Ferdinand Jakob, pens. Postangestellter, Riedernstrasse 146, Bümpliz  # 225,2415,776,36;221,2454,526,33
 - G., Bijouteriefabrik (Herrengasse 34), Helvetiastrasse 1  # 223,2491,774,30;222,2532,243,27
-- G., Spezerei-, Mercerie- und Papeteriehdlg., Thunstrasse 21  # 222,2564,780,31;222,2606,268,26
+- G., Spezerei-, Mercerie- und Papeteriehdlg.,  # 222,2564,780,31
+Thunstrasse 21  # 222,2606,268,26
 - Hans, Architekt, in Fa. Wirz & Möri, A.-G., Jubiläumsstrasse 89  # 224,2643,773,26;218,2681,368,28
+Die am Schlusse der Adressen aufgeführten halbfetten Zahlen sind die im offiziellen Abonnentenverzeichnis aufgeführten Telephonnummern.  # 383,2810,1462,23;190,2846,1286,32
 - Herm. Jost, Lok.-Führer, Simplonweg 5  # 1090,288,736,33
 - Hugo, «Solo» Suppen-Produkte, Kaffee, Konserven, Sirupe en gros (Pestalozzistr.  # 1090,323,775,33;1088,365,776,28
 Bollw. 3861  # 1671,400,191,27
@@ -44188,7 +44259,6 @@ Bollw. 2630  # 1666,1067,194,25
 Bollw. 1632  # 803,1220,197,32
 - Lauener, Hans Georg, Dr. phil., Bibliothekar der Schweiz. Volksbibliothek u. Privatdozent, Zähringerstrasse 26  # 1085,1292,777,29;1085,1328,775,27;1086,1365,493,30
 - Christ. 3158  # 1660,1512,202,25
-- -Tschanz, Al., Generalagent d. «Helvetia», Schweiz. Unfall- u. Haftpflicht-Vers.-Anst., Bernastrasse 57 Bollw. 2920), Amthausg. 2  # 796,1513,575,36
 feldstrasse 27  # 1083,1590,250,27
 - Christ. 2445  # 798,1596,201,25
 Wirzer, M., Marktkrämer, Berchtoldstr. 41  # 1035,1626,765,29
@@ -44628,8 +44698,8 @@ pliz  # 1067,269,68,28
 - Herm. Emil, Kaufmann, Drosselweg 5  # 1076,451,709,40
 - Herm., Lok.-Führer, Pestalozzistrasse 6  # 1054,491,756,37
 - Hermann, Postangestellter, Länggassstr. 37  # 1069,527,784,39
-- Christ. 2363  # 785,566,201,29
 - Ida Klara, Bureaulistin, Länggassstrasse 65  # 1055,566,794,39
+- Christ. 2363  # 785,566,201,29
 - J., Angestellter b. Katasterbureau, Mittelstrasse 54  # 1074,605,775,34;1075,645,177,23
 - Joh., Bankangestellter, Greyerzstrasse 33  # 1071,679,761,33
 - Joh. Friedr., Chemigraph, Lorrainestr. 63  # 1044,715,786,35
@@ -44960,7 +45030,8 @@ brückstrasse 94  # 183,297,280,27
 - Rosina, Bureaulistin, Belpstrasse 53  # 201,2693,664,33
 - Christ. 3260 Rud., Berner Möbelausstellung, Tapeziereru. Dekorationsgeschäft, Murtenstrasse 20  # 763,293,1075,33;1056,333,781,31
 - Christ. 3643  # 1633,372,204,25
-- Rud., Chemiker, Film-Fabrik «Mikrom» (Niggelerstr. 16), Lentulusstr. 23 Chr. 6284  # 1057,408,778,29;1058,448,782,27
+- Rud., Chemiker, Film-Fabrik «Mikrom»  # 1057,408,778,29
+- (Niggelerstr. 16), Lentulusstr. 23 Chr. 6284  # 1058,448,782,27
 - Christ. 6302  # 1635,482,201,27
 u. Pestalozzistrasse 16a  # 1056,484,432,27
 - Rud., Maler, Freiburgstr. 174, Bümpliz  # 1004,520,769,32
@@ -44973,8 +45044,8 @@ L  # 1004,689,29,7
 - Samuel, Hilfsarbeiter, Belpstrasse 53  # 1057,706,686,34
 - Christ. 3596  # 767,708,204,26
 - Werner, Maler, Freiburgstrasse 163  # 1058,746,645,32
-- Werner, Schreiner, Wabernstrasse 3  # 1060,786,665,27
 Bollw. 1753  # 773,786,197,25
+- Werner, Schreiner, Wabernstrasse 3  # 1060,786,665,27
 - Wilhelm, Malermeister, Scheibenstrasse 38  # 1028,821,814,28
 - Wilhelm, Schreiner, Kesslergasse 27  # 1054,856,684,33
 - & Co., J., A.-G., Brennmaterialienhandlg., Schwanengasse 5 Bollw. 1840, Lagerhaus  # 1058,896,782,33;1058,935,782,31
@@ -45172,7 +45243,7 @@ Zaugg, Ad., Heizer S. B. B., Trachselweg 15  # 141,1510,814,29
 - Christ., Handlanger, Moritzweg 24  # 190,2034,631,29
 - Emma, Lehrerin, Stationsweg 23  # 196,2070,591,29
 - Ernst Ed., Ausläufer, Waffenweg 20  # 189,2106,668,26
-- Ernst, Dr., eidg. Beamter, Aegertenstr. 75  # 190,2144,764,29
+Ernst, Dr., eidg. Beamter, Aegertenstr. 75  # 190,2144,764,29
 - Ernst, Kaufmann, Gerechtigkeitsgasse 80  # 191,2182,764,28
 - Ernst, Lokomotivführer, Rohrweg 5.  # 193,2219,651,29
 - Ernst, Mechaniker, Zimmerweg 14  # 175,2259,642,28
@@ -45327,8 +45398,8 @@ Bollw. 1989  # 797,394,197,26
 - E.-Schmid, Joh., Spezierer, Buchenweg 8  # 961,1138,856,38
 - Christ. 3323  # 1653,1182,202,24
 - -Stöckli, Marie, Wwe., Milchhdlg., Schifflaube 30  # 1066,1219,788,30;1079,1260,152,23
-- -Wagner, Hedwig, Agentur d. «Allg. Wegweiser», Holzikofenweg 7  # 1052,1293,802,32;1078,1331,466,31
-- -Wenker, Maria Rosalie, Bureaumaterial.  # 1081,1374,773,26
+- -Wagner, Hedwig, Agentur d. Allg. Wegweiser», Holzikofenweg 7  # 1052,1293,802,32;1078,1331,466,31
+- Wenker, Maria Rosalie, Bureaumaterial.  # 1081,1374,773,26
 - Christ. 4581  # 1654,1409,197,25
 Dapplesweg 11  # 1080,1411,267,31
 - -Zwahlen, Alfred, Möbelhandlung, Zwiebelngässchen 16  # 1051,1449,806,32;1080,1487,285,30
@@ -45353,7 +45424,8 @@ Münzrain 3  # 1647,2239,207,29
 Bollw. 3485  # 1659,2278,193,25
 - -v. Morlot, Gotthold, Dr. jur., Direktor der Allg. Versicherungs-A.-G. in Bern, Kirchenfeldstrasse 88  # 1033,2323,823,19;1082,2359,774,24;1085,2399,330,24
 Bollw. 4219  # 1663,2391,191,25
-- -Revilliod, Amelie, Wwe. des Fürsprechs, Junkerngasse 51, Bollw. 1751  # 1051,2434,803,24;1084,2470,302,32;1662,2465,189,25
+- -Revilliod, Amelie, Wwe. des Fürsprechs, Bollw. 1751  # 1051,2434,803,24;1662,2465,189,25
+Junkerngasse 51  # 1084,2470,302,32
 - -Zeerleder, A., Ing., Junkerngasse 51  # 1028,2507,727,26
 Bollw. 2909  # 1661,2539,193,25
 Zehendermätteli, Wirtschaft. Reichenbachstrasse 161  # 1033,2578,825,30;1083,2622,194,24
@@ -45365,9 +45437,10 @@ Zehnder, Albr., Gipser, Breitfeldstrasse 54  # 1035,2655,763,25
 - E. Ida, gew. Geschäftsführerin, Waisenhausplatz 6  # 202,316,781,25;201,355,202,30
 - Emil, Buchbinder, Münzgraben 5  # 153,389,654,29
 - Ernst, Küfermeister, Polygonweg 23  # 180,428,686,30
+K  # 151,446,28,5
 - Ernst, Sohn, Küfer, Polygonweg 23.  # 201,465,665,31
 - Ernst, Magaziner, Wylerfeldstrasse 53  # 203,503,718,30
-- Fern. André, Chauffeur, Weissensteinstr. 16  # 206,540,780,28
+Fern. André, Chauffeur, Weissensteinstr. 16  # 206,540,780,28
 - Frieda Therese, Bureaulistin, Moserstr. 23  # 181,577,787,29
 - Frieda Martha, Ladentochter, Sulgenbachstrasse 25  # 183,613,805,34;199,657,178,23
 - Friedr., Handlanger, Brunngasse 26  # 171,690,695,35
@@ -45416,16 +45489,18 @@ Zeindler, Aug., Gruppenchef, Birkenweg 9  # 192,2663,789,31
 strasse 52  # 1070,270,179,21
 Zelle, Alb. Max, Photograph, Marktgasse 9  # 1020,302,778,25
 Zeller, Adolf, Mechaniker, Cäcilienstrasse 48  # 1020,340,834,22
-- Annina, Bureaulistin, Diesbachstrasse 9  # 1071,376,743,25
+Annina, Bureaulistin, Diesbachstrasse 9  # 1071,376,743,25
 - E., Beamter S. B. B., Brünigweg 21  # 1043,416,682,31
-- E., Notar, Abtlgs.-Sekretär d. schweiz. Gesundheitsamtes, Oberweg 8 Christ. 3226  # 1071,455,782,25;1651,487,204,26;1073,490,481,28
+- E., Notar, Abtlgs.-Sekretär d. schweiz. GeChrist. 3226  # 1071,455,782,25;1651,487,204,26
+sundheitsamtes, Oberweg 8  # 1073,490,481,28
 - Erich, eidg. Beamter, Niggelerstrasse 8  # 1043,530,755,27
-- Ernst, Einrahmungs- und Glasergeschäft (Kramgasse 11), Kesslergasse 32  # 1074,567,783,28;1076,609,616,26
+- Ernst, Einrahmungs- und Glasergeschäft  # 1074,567,783,28
+- (Kramgasse 11), Kesslergasse 32  # 1076,609,616,26
 - Ernst, Reisender, Holzikofenweg 1  # 1074,643,622,29
 - Christ. 1628  # 1653,677,203,26
 - Gottfr., Handlanger, Freiburgstrasse 149  # 1074,719,764,32
 - Gottl. Alfred, Sekretär der Oberzolldirektion, Wernerstrasse 7  # 1078,758,781,23;1075,798,398,26
-- Guido, Fürsprecher, Ecke Hirschengraben Bollw. 2359  # 1076,834,784,27;1663,870,195,25
+- Guido, Fürsprecher, Ecke HirschengrabenBollw. 2359  # 1076,834,784,27;1663,870,195,25
 Wallgasse 8  # 1077,875,228,30
 - Helene, Lehrerin, Schwarztorstrasse 98  # 1075,912,721,27
 - Hans, Thunstrasse 113  # 1062,951,428,25
@@ -45612,7 +45687,7 @@ Bollw. 1867  # 814,2573,192,25
 - Ernst, Seidenweg 33  # 189,916,400,36
 - Ernst, Kaufmann, Altenbergstrasse 53  # 188,956,726,34
 - Ernst, elektr. Apparate, Werkzeuge, Maschinen, Neuengasse 41  # 211,991,781,35;211,1029,428,36
-- Ernst, Vorsteher der städt. Mädchensekundarschule, Kreis «Laubeck», Höheweg 18  # 171,1068,821,30;210,1104,762,34
+- Ernst, Vorsteher der städt. Mädchensekundarschule, Kreis «Laubeck». Höheweg 18  # 171,1068,821,30;210,1104,762,34
 - Ernst Alfred, gew. Zugführer, Schulweg 7  # 213,1179,760,35
 - Ernst Walter, Tramangestellter, Muldenstrasse 48  # 214,1216,780,35;210,1257,182,24
 - Frieda, Ladentochter, Steinerstrasse 32  # 205,1291,717,26
@@ -46141,8 +46216,8 @@ Zutter, Adolf, Schreiner, Lentulusstrasse 67  # 1033,1080,814,45
 - Arnold, Schriftsetzer, Zimmerweg 10  # 1035,1165,726,32
 - Ernst, Bahnarbeiter, Krippenstrasse 16  # 1063,1202,740,32
 - Friedr., Chauffeur. Ladenwandstrasse 19  # 1081,1239,745,31
-- Gottfr., Bauamtarbeiter. Scheibenstrasse 43  # 1078,1276,787,29
 Bollw. 4987  # 799,1276,197,28
+- Gottfr., Bauamtarbeiter. Scheibenstrasse 43  # 1078,1276,787,29
 —  # 1025,1294,18,3
 - Gottfr., Liegenschaftsvermittlg., Thunstr. 87  # 1077,1311,787,30
 - Gottfr., Spezereihandlung, Karl Staufferstrasse 22  # 1083,1351,780,30;1080,1391,179,24
@@ -46321,8 +46396,8 @@ Länggassstr. 28  # 1583,477,208,23
 Kramg. 21  # 1339,478,143,22
 Thunstrasse 15  # 2584,479,208,22
 - R. Stotzer Burgernz.-Apotheke  # 2336,528,464,42
-- Dr. F. Weil  # 995,530,220,28
 - W. Volz & Co  # 1294,530,224,29
+- Dr. F. Weil  # 995,530,220,28
 1. abends  # 650,531,171,26
 - R. Guhl  # 1608,532,156,27
 0. Zimmermann  # 2088,541,189,30
@@ -46349,8 +46424,8 @@ Lorrainestr. 16  # 2323,671,207,23
 Seftigen str. 23  # 2087,674,201,27
 - Dr. O. Grogg  # 981,717,248,40
 - Dr. Seiler  # 1854,721,181,30
-- Dr. Farner  # 1301,722,217,28
 - W. Knuchel  # 1574,722,224,26
+- Dr. Farner  # 1301,722,217,28
 Spitalacker Apoth. Burgernz.-Apotheke  # 2320,725,482,37
 Christoffelgasse 3  # 983,758,247,27
 21. morgens  # 625,759,229,37
@@ -46374,8 +46449,8 @@ B’rainpl. 40  # 2343,865,165,24
 - Dr. K. Heuberger  # 942,907,324,38
 - H. Miller  # 1319,908,167,37
 Brück’eld-Apotheke  # 1569,910,228,38
-- Dr. Baur  # 2335,916,170,32
 Burger nz.-Apotheke  # 2566,916,238,36
+- Dr. Baur  # 2335,916,170,32
 0. Zimmermann  # 2088,920,187,32
 beim Zeitglocken  # 1289,948,237,30
 Spitalg. 37  # 1029,949,148,25
@@ -46401,8 +46476,8 @@ Seftigenstr. 23  # 2084,1055,199,27
 - J. Münch  # 1008,1098,180,29
 - G. Schmid  # 1308,1100,196,28
 - R. Guhl  # 1605,1105,155,28
-- Dr. Seiler  # 1851,1107,183,27
 - R. Stotzer Burgernz.-Apotheke  # 2332,1107,469,34
+- Dr. Seiler  # 1851,1107,183,27
 18. morgens  # 624,1137,226,39
 Aarbergerg. 39  # 997,1139,208,26
 G’schaftsstr. 36  # 1578,1144,211,22
@@ -46412,8 +46487,8 @@ Belpstr. 61  # 1865,1149,147,24
 2. Ryfflibrunnen  # 947,1191,307,40
 - W. Volz & Co.  # 1290,1194,237,40
 Brückfell-Apotheke  # 1566,1196,229,39
-- Dr. Baur  # 2334,1201,171,32
 - E. Stöckli  # 1851,1201,179,30
+- Dr. Baur  # 2334,1201,171,32
 - O. Schwab  # 2586,1203,193,27
 Ryffligässchen 15  # 981,1234,243,27
 beim Zeitglocken  # 1287,1235,237,29
@@ -46447,8 +46522,8 @@ Nachtdienst-Apotheken  # 2887,1446,-38,407
 Schwanenapotheke  # 990,1478,215,39
 Brückfeld Apotheke  # 1562,1484,229,35
 - W. Otz  # 1338,1485,123,25
-- Dr. Baur  # 2328,1488,173,29
 Burgernz.-Apotheke  # 2560,1488,240,35
+- Dr. Baur  # 2328,1488,173,29
 - Dr. Seiler  # 1842,1490,184,28
 Schwaneng. 11  # 995,1520,206,27
 Neubrückstr. 73  # 1565,1524,222,25
@@ -46549,8 +46624,8 @@ vom 23. abends  # 523,1766,295,24
 bis 30. morgens  # 525,1798,322,43
 - W. Knuchel  # 1552,345,220,28
 Spitalacker-Apoth. W. Volz & Co  # 2283,345,483,34
-- Dr. Seiler  # 1828,346,186,27
 - W. Volz & Co.  # 1269,346,236,29
+- Dr. Seiler  # 1828,346,186,27
 - W. Mosimann  # 950,349,263,26
 5. abends  # 620,351,179,28
 Moserstrasse 23 beim Zeitglocken  # 2284,383,483,28
@@ -46573,8 +46648,8 @@ Belpstr. 26  # 1846,482,148,23
 Aarbergerg. 39  # 981,484,206,24
 8. morgens  # 625,487,207,37
 Brückfeld-Apotheke  # 1548,531,227,38
-- Dr. Baur  # 2301,535,173,28
 Burgernz.- Apotheke  # 2525,535,242,31
+- Dr. Baur  # 2301,535,173,28
 - Dr. Farner  # 1282,537,211,33
 2. Ryfflibrunnen  # 932,540,304,32
 8. abends  # 623,541,176,26
@@ -46620,8 +46695,8 @@ Belpstr. 26  # 1850,869,145,24
 morgens  # 681,869,156,29
 - O. Schwab  # 2547,911,196,29
 Spitalacker-Apoth.  # 2282,912,213,37
-- Dr. O. Grogg  # 970,914,248,38
 0. Zimmermann  # 2055,914,191,37
+- Dr. O. Grogg  # 970,914,248,38
 - W. Knuchel  # 1557,915,224,23
 - G. Schmid  # 1297,917,195,25
 5. abends  # 630,917,175,26
@@ -46634,8 +46709,8 @@ Pestalozzist, 26  # 2046,958,210,22
 533  # 2859,978,-27,59
 - R. Stotzer  # 2298,1004,183,30
 - W. Volz & Co.  # 2529,1004,236,29
-- Dr. B. Studer  # 969,1008,246,31
 - R. Guhl  # 1590,1008,155,26
+- Dr. B. Studer  # 969,1008,246,31
 - W. Volz & Co.  # 1278,1012,237,26
 W’bühlapotheke  # 2060,1014,184,35
 beim Zeitglocken  # 2526,1044,238,25
@@ -46645,9 +46720,9 @@ beim Zeitglocken  # 1277,1048,237,27
 Spitalgasse 57  # 999,1049,197,27
 16. morgens  # 616,1052,223,37
 Seftigenstr. 23  # 2058,1053,198,26
-- Dr. Baur  # 2302,1100,171,28
 - O. Schwab  # 2549,1100,193,28
 Brückfeld-Apotheke  # 1553,1100,226,38
+- Dr. Baur  # 2302,1100,171,28
 - Dr. K. Heuberger  # 931,1103,322,38
 - A. Vatter  # 1306,1104,176,39
 - Dr. Seiler  # 1836,1114,180,29
@@ -46661,8 +46736,8 @@ Belpstr. 61  # 1851,1156,147,24
 chel Bel  # 1717,1161,179,57
 Spitalacker-Apoth. Burgernz.- Apotheke  # 2287,1193,477,40
 - W. Knuchel  # 1557,1198,222,24
-- Dr. Farner  # 1291,1199,216,30
 - W. Mosimann  # 977,1199,268,30
+- Dr. Farner  # 1291,1199,216,30
 - E. Stöckli  # 1837,1209,180,30
 Moserstrasse 23  # 2289,1234,205,24
 Thunstrasse 113  # 2535,1235,223,24
@@ -46725,8 +46800,8 @@ Belpstr. 26  # 1854,1618,146,24
 Hirschengraben 9  # 977,1619,239,25
 - W. Volz & Co. Brückfe’d-Apotheke  # 1285,1664,498,39
 - W. Volz & Co.  # 2529,1665,235,27
-- Dr. Baur  # 2306,1670,169,30
 0. Zimmermann  # 2061,1670,189,27
+- Dr. Baur  # 2306,1670,169,30
 Schwanenapotheke  # 989,1673,214,35
 beim Zeitglocken  # 2528,1704,236,25
 Neubrückstr. 73  # 1563,1706,214,22
@@ -46810,9 +46885,9 @@ Belpstr. 61  # 1820,372,149,24
 7. morgens  # 596,374,203,30
 B’rainpl. 40  # 2306,374,165,24
 Thunstrasse 15  # 2537,374,208,24
+Brückfeld-Apotheke  # 1519,423,229,37
 - Dr. Baur Burgernz.-Apotheke  # 2298,423,461,45
 - Dr. K. Heuberger  # 894,423,325,40
-Brückfeld-Apotheke  # 1519,423,229,37
 - W. Otz  # 1294,425,128,28
 7. abends  # 594,425,176,29
 - E. Stöckli  # 1804,426,182,29
@@ -46906,10 +46981,10 @@ Länggassstr. 28  # 1527,1135,208,25
 1. morgens  # 593,1136,205,34
 Belpstrasse 61  # 1787,1137,208,27
 Moserstrasse 23Tounstrasse 15  # 2275,1137,217,23;2528,1144,209,21
-- Dr. B. Studer  # 919,1189,264,29
 - H. Miller  # 1269,1189,173,28
 - R. Guhl  # 1554,1189,156,28
 1. abends  # 592,1189,174,27
+- Dr. B. Studer  # 919,1189,264,29
 - E. Stöckli  # 1801,1191,180,30
 - R. Stotzer  # 2289,1192,180,28
 H Miller  # 2549,1199,165,28
@@ -46958,8 +47033,8 @@ B’rain pl. 40  # 2293,1518,157,25
 Belpstr. 61  # 1813,1523,149,25
 beim Zeitglocken  # 2513,1524,238,29
 Brückfeld-Apotheke  # 1515,1567,228,44
-- Dr. Baur  # 2287,1569,174,34
 Burgernz.- Apotheke  # 2508,1569,242,34
+- Dr. Baur  # 2287,1569,174,34
 2. Ryfflibrunnen  # 898,1571,304,33
 - A. Vatter  # 1266,1574,177,26
 - E. Stöckli  # 1800,1578,180,29
