@@ -73,6 +73,7 @@ def strip_lines():
     '1941-12-15.txt',
     '1942-12-15.txt',
     '1943-12-15.txt',
+    '1944-12-15.txt',
   ]
   for vol in list_volumes():
     # TODO(otz): remove gate

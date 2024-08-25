@@ -17,6 +17,8 @@ FIXES = [
     (r'««', '«'),
     # »Merkur«
     (r'»([\w]*)«', '«\g<1>»'),
+    # «zum Lütty«
+    (r'«([\w]*)«', '«\g<1>»'),
     # »Agrippina"
     (r'»([\w\s\.]*)"', '«\g<1>»'),
     # * St. Galler Broderie»
@@ -52,6 +54,7 @@ FIXES = [
     (r'Alfred\.', 'Alfred,'),
     (r'Berchtold\.', 'Berchtold,'),
     (r'Luise\.', 'Luise,'),
+    (r'Walter\.', 'Walter,'),
     ('(g|G)ehiilf', '\g<1>ehülf'),
     ('Herrn\.', 'Herm.'),
     ('Job\.', 'Joh.'),
