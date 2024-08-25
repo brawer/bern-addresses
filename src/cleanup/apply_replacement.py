@@ -9,6 +9,7 @@ FIXES = [
     (r'<«[ ]*', '«'),
     (r'[ ]*>>', '»'),
     (r'[ ]*»>', '»'),
+    (r'<([\w\s\.\,]*)>', '«\g<1>»'),
     (r'<([\w\s\.\,]*)»', '«\g<1>»'),
     (r'«([\w\s\.\,]*)>', '«\g<1>»'),
     (r'«\s?(\w*)\s?»', '«\g<1>»'),
@@ -49,6 +50,8 @@ FIXES = [
     (r'Emma\.', 'Emma,'),
     (r'Arnold\.', 'Arnold,'),
     (r'Alfred\.', 'Alfred,'),
+    (r'Berchtold\.', 'Berchtold,'),
+    (r'Luise\.', 'Luise,'),
     ('(g|G)ehiilf', '\g<1>ehülf'),
     ('Herrn\.', 'Herm.'),
     ('Job\.', 'Joh.'),
@@ -156,6 +159,12 @@ FIXES = [
     (r'Anstait', r'Anstalt'),
     # «Genferhaus,»
     (r'«Genferhaus,»', r'«Genferhaus»'),
+    # KarlSchenk-Haus
+    (r'KarlSchenk-Haus', r'Karl-Schenk-Haus'),
+    # Suvahaus>
+    (r'Suvahaus>', r'«Suvahaus»'),
+    # La Genevoise >
+    (r'La Genevoise >', r'«La Genevoise»'),
 ]
 
 
