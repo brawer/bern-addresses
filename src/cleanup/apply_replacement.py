@@ -105,6 +105,7 @@ FIXES = [
     (r'Kommis\.', r'Kommis,'),
     (r'Konditor\.', r'Konditor,'),
     (r'Lithographiebesitzer\.', r'Lithographiebesitzer,'),
+    (r'Maler\. ', r'Maler, '),
     (r'Mechaniker\.', r'Mechaniker,'),
     (r'Monteur\.', r'Monteur,'),
     (r'Oberbriefträger\.', r'Oberbriefträger,'),
