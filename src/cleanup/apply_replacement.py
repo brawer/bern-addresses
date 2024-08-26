@@ -27,7 +27,7 @@ FIXES = [
     (r'[ ]+»', '»'),
     (r'«[ ]+', '«'),
     # '«Diskus,'
-    #(r'«(\w*),', '«\g<1>»,'), -- kills Schweiz, Die
+    (r'«(\w*),(?!.*»)', '«\g<1>»,'),
     # '«Spada»Nahrungsmittel'
     (r'»([A-Za-z])', '» \g<1>'),
 
