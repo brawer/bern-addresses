@@ -1,7 +1,7 @@
 import os
 import re
 
-
+# TODO(random-ao): cleanup, also split into pre-post
 FIXES = [
     (r'Igfr\.', 'Jgfr.'),
     # << Bärag >> --> «Bärag»
@@ -13,8 +13,8 @@ FIXES = [
     (r'<([\w\s\.\,]*)»', '«\g<1>»'),
     (r'«([\w\s\.\,]*)>', '«\g<1>»'),
     (r'«\s?(\w*)\s?»', '«\g<1>»'),
-    (r'»»', '»'),
-    (r'««', '«'),
+    (r'[»]{2,}', '»'),
+    (r'[«]{2,}', '«'),
     # »Merkur«
     (r'»([\w]*)«', '«\g<1>»'),
     # «zum Lütty«
