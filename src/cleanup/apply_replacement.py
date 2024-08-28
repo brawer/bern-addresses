@@ -39,22 +39,6 @@ FIXES = [
     (r',,(\w+)"', '„\g<1>“'),
     (r'\.„', '. „'),
     (r' 0\.', ' O.'),
-    (r'Gertrud\.', 'Gertrud,'),
-    (r'Hans\.', 'Hans,'),
-    (r'Hedwig\.', 'Hedwig,'),
-    (r'Ida\.', 'Ida,'),
-    (r'Jakob\.', 'Jakob,'),
-    (r'Robert\.', 'Robert,'),
-    (r'Rudolf\.', 'Rudolf,'),
-    (r'Ernst\.', 'Ernst,'),
-    (r'Frieda\.', 'Frieda,'),
-    (r'Fritz\.', 'Fritz,'),
-    (r'Emma\.', 'Emma,'),
-    (r'Arnold\.', 'Arnold,'),
-    (r'Alfred\.', 'Alfred,'),
-    (r'Berchtold\.', 'Berchtold,'),
-    (r'Luise\.', 'Luise,'),
-    (r'Walter\.', 'Walter,'),
     ('(g|G)ehiilf', '\g<1>ehülf'),
     ('Herrn\.', 'Herm.'),
     ('Job\.', 'Joh.'),
@@ -66,22 +50,6 @@ FIXES = [
     (r'K\. R,,', r'K. R.,'),
     (r',, ', r'., '),
     (r'\.\., ', r'., '),
-    # re-fix firstnames plus some (see above)
-    (r'Alfred\.,', r'Alfred,'),
-    (r'Anna\.,', r'Anna,'),
-    (r'Arnold\.,', r'Arnold,'),
-    (r'Bernhard\.,', r'Bernhard,'),
-    (r'Ernst\.,', r'Ernst,'),
-    (r'Fritz\.,', r'Fritz,'),
-    (r'Gertrud\.,', r'Gertrud,'),
-    (r'Hans\.,', r'Hans,'),
-    (r'Jakob\.,', r'Jakob,'),
-    (r'Lenhard\.,', r'Lenhard,'),
-    (r'Margaritha\.,', r'Margaritha,'),
-    (r'Marie\.,', r'Marie,'),
-    (r'Martha\.,', r'Martha,'),
-    (r'Olga\.,', r'Olga,'),
-    (r'Otto\.,', r'Otto,'),
     # fix Neuengaffe > Neuengasse
     (r'Neuengaffe', r'Neuengasse'),
     # replace known-good jobnames suffixed
@@ -171,18 +139,40 @@ FIXES = [
     (r'La Genevoise >', r'«La Genevoise»'),
 ]
 
+def fix_givennames(content):
+    gnpath = os.path.join(os.path.dirname(__file__), 'frequent_given_names_nonabbr.txt')
+    # TODO(random-ao): fold frequent_given_names{,_nonabbr_ambig}.txt
+
+    givennames = {name.strip() for name in open(gnpath, 'r')}
+
+    for gn in givennames:
+        # don't check < 3 char names
+        if len(gn) <= 2:
+            continue
+
+        # TODO(random-ao): double replace here is expensive
+        content = content.replace("%s." % gn, "%s," % gn)
+        content = content.replace("%s,," % gn, "%s," % gn)
+    return content
+
 
 def apply_replacements():
+
     dirpath = os.path.join(os.path.dirname(__file__), '..', '..', 'proofread')
-    print(dirpath)
     for filename in sorted(os.listdir(dirpath)):
         if not filename.endswith('.txt'):
             continue
         path = os.path.join(dirpath, filename)
         with open(path, 'r') as f:
             content = f.read()
+
+        # regex replacements
         for (fro, to) in FIXES:
             content = re.sub(fro, to, content)
+
+        # string replacements
+        content = fix_givennames(content)
+
         with open(path, 'w') as f:
             f.write(content)
 
