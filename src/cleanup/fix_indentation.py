@@ -22,6 +22,7 @@ def fix_indentation():
     givennames = {name.strip() for name in open(gnpath, 'r')}
     lastnames = {name.strip() for name in open(lnpath, 'r')}
     for vol in list_volumes():
+        print('Processing indentation fixes for %s' % vol)
         with open(vol + '.tmp', 'w') as out:
             for line in open(vol, 'r'):
                 line = line.strip()

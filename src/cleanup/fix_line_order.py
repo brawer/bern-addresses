@@ -59,4 +59,5 @@ def list_volumes():
 
 if __name__ == "__main__":
     for vol in list_volumes():
+        print('Updating line order in %s' % vol)
         fix_line_order(vol)

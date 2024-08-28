@@ -15,10 +15,10 @@ def strip_lines():
   with open(lut_raw_fn) as fp:
     for line in fp:
        lut[line] = 0
-  print("Loaded %s lines to blackhole." % len(lut))
+  print('Loaded %s lines to blackhole.' % len(lut))
 
   for vol in list_volumes():
-    print("Blackholing lines in %s" % vol)
+    print('Processing blackholes in %s' % vol)
 
     num_blackholes = 0
 
