@@ -34,6 +34,8 @@ FIXES = [
     (r',,([ \w]*)"', '„\g<1>“'),
     # ,PRAXIS"
     (r',([\w]+)"', '„\g<1>“'),
+    # des„Intelligenzblatt“ and 12„Jolimont“
+    (r'(?<![\s(])([A-Za-z0-9]*)„', '\g<1> „'),
     # Alex 0.
     (r' 0\.', ' O.'),
     # Herm
