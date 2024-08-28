@@ -52,79 +52,6 @@ FIXES = [
     (r'\.\., ', r'., '),
     # fix Neuengaffe > Neuengasse
     (r'Neuengaffe', r'Neuengasse'),
-    # replace known-good jobnames suffixed
-    # by '.' w/',' suffix - hack, see below
-    (r'Arzt\.', r'Arzt,'),
-    (r'Ausläufer\.', r'Ausläufer,'),
-    (r'Bäcker\.', r'Bäcker,'),
-    (r'Bäcker-Konditor\.', r'Bäcker-Konditor,'),
-    (r'Bahnarbeiter\.', r'Bahnarbeiter,'),
-    (r'Bautechniker\.', r'Bautechniker,'),
-    (r'Beamter\.', r'Beamter,'),
-    (r'Bureaulistin\.', r'Bureaulistin,'),
-    (r'Chemiker\.', r'Chemiker,'),
-    (r'Coiffeuse\.', r'Coiffeuse,'),
-    (r'Dachdecker\.', r'Dachdecker,'),
-    (r'Förster\.', r'Förster,'),
-    (r'Gymnasiallehrer\.', r'Gymnasiallehrer,'),
-    (r'Handlanger\.', r'Handlanger,'),
-    (r'Hotelexperte\.', r'Hotelexperte,'),
-    (r'Kaufmann\.', r'Kaufmann,'),
-    (r'Kommis\.', r'Kommis,'),
-    (r'Konditor\.', r'Konditor,'),
-    (r'Lithographiebesitzer\.', r'Lithographiebesitzer,'),
-    (r'Maler\. ', r'Maler, '),
-    (r'Mechaniker\.', r'Mechaniker,'),
-    (r'Monteur\.', r'Monteur,'),
-    (r'Oberbriefträger\.', r'Oberbriefträger,'),
-    (r'Polizist\.', r'Polizist,'),
-    (r'Schausteller\.', r'Schausteller,'),
-    (r'Schiosser\.', r'Schiosser,'),
-    (r'Schreiner\.', r'Schreiner,'),
-    (r'Techniker\.', r'Techniker,'),
-    (r'Telegraphist\.', r'Telegraphist,'),
-    (r'Thierarzt\.', r'Thierarzt,'),
-    (r'Verkäuferin\.', r'Verkäuferin,'),
-    (r'Vertreter\.', r'Vertreter,'),
-    (r'Walzenführer\.', r'Walzenführer,'),
-    (r'Wegmeister\.', r'Wegmeister,'),
-    (r'Zimmermann\.', r'Zimmermann,'),
-    # and then replace ',,' ','
-    # TODO(random-ao): nasty, re-impl
-    (r'Arzt,,', r'Arzt,'),
-    (r'Ausläufer,,', r'Ausläufer,'),
-    (r'Bäcker,,', r'Bäcker,'),
-    (r'Bäcker-Konditor,,', r'Bäcker-Konditor,'),
-    (r'Bahnarbeiter,,', r'Bahnarbeiter,'),
-    (r'Bautechniker,,', r'Bautechniker,'),
-    (r'Beamter,,', r'Beamter,'),
-    (r'Bureaulistin,,', r'Bureaulistin,'),
-    (r'Chemiker,,', r'Chemiker,'),
-    (r'Coiffeuse,,', r'Coiffeuse,'),
-    (r'Dachdecker,,', r'Dachdecker,'),
-    (r'Förster,,', r'Förster,'),
-    (r'Gymnasiallehrer,,', r'Gymnasiallehrer,'),
-    (r'Handlanger,,', r'Handlanger,'),
-    (r'Hotelexperte,,', r'Hotelexperte,'),
-    (r'Kaufmann,,', r'Kaufmann,'),
-    (r'Kommis,,', r'Kommis,'),
-    (r'Konditor,,', r'Konditor,'),
-    (r'Lithographiebesitzer,,', r'Lithographiebesitzer,'),
-    (r'Mechaniker,,', r'Mechaniker,'),
-    (r'Monteur,,', r'Monteur,'),
-    (r'Oberbriefträger,,', r'Oberbriefträger,'),
-    (r'Polizist,,', r'Polizist,'),
-    (r'Schausteller,,', r'Schausteller,'),
-    (r'Schiosser,,', r'Schiosser,'),
-    (r'Schreiner,,', r'Schreiner,'),
-    (r'Techniker,,', r'Techniker,'),
-    (r'Telegraphist,,', r'Telegraphist,'),
-    (r'Thierarzt,,', r'Thierarzt,'),
-    (r'Verkäuferin,,', r'Verkäuferin,'),
-    (r'Vertreter,,', r'Vertreter,'),
-    (r'Walzenführer,,', r'Walzenführer,'),
-    (r'Wegmeister,,', r'Wegmeister,'),
-    (r'Zimmermann,,', r'Zimmermann,'),
     # Nealsch > Realsch
     (r'Nealsch', r'Realsch'),
     # Anstait > Anstalt
@@ -143,7 +70,7 @@ def fix_givennames(content):
     gnpath = os.path.join(os.path.dirname(__file__), 'frequent_given_names_nonabbr.txt')
     # TODO(random-ao): fold frequent_given_names{,_nonabbr_ambig}.txt
 
-    givennames = {name.strip() for name in open(gnpath, 'r')}
+    givennames = {name.rstrip() for name in open(gnpath, 'r')}
 
     for gn in givennames:
         # don't check < 3 char names
@@ -151,8 +78,21 @@ def fix_givennames(content):
             continue
 
         # TODO(random-ao): double replace here is expensive
-        content = content.replace("%s." % gn, "%s," % gn)
-        content = content.replace("%s,," % gn, "%s," % gn)
+        content = content.replace('%s.' % gn, '%s,' % gn)
+        content = content.replace('%s,,' % gn, '%s,' % gn)
+    return content
+
+def fix_occupations(content):
+    path = os.path.join(os.path.dirname(__file__), '..', 'occupations.csv')
+
+    occupations = {occ.split(',')[0] for occ in open(path, 'r')}
+
+    for occ in occupations:
+#        occ = occ.split(',')[0]
+
+        # TODO(random-ao): double replace here is expensive
+        content = content.replace('%s.' % occ, '%s,' % occ)
+        content = content.replace('%s,,' % occ, '%s,' % occ)
     return content
 
 
@@ -162,6 +102,7 @@ def apply_replacements():
     for filename in sorted(os.listdir(dirpath)):
         if not filename.endswith('.txt'):
             continue
+        print('Processing replacements in %s' % filename)
         path = os.path.join(dirpath, filename)
         with open(path, 'r') as f:
             content = f.read()
@@ -172,6 +113,7 @@ def apply_replacements():
 
         # string replacements
         content = fix_givennames(content)
+        content = fix_occupations(content)
 
         with open(path, 'w') as f:
             f.write(content)
