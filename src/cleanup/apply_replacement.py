@@ -3,7 +3,6 @@ import re
 
 # TODO(random-ao): cleanup, also split into pre-post
 FIXES = [
-    (r'Igfr\.', 'Jgfr.'),
     # << Bärag >> --> «Bärag»
     (r'<<[ ]*', '«'),
     (r'<«[ ]*', '«'),
@@ -15,6 +14,7 @@ FIXES = [
     (r'«\s?(\w*)\s?»', '«\g<1>»'),
     (r'[»]{2,}', '»'),
     (r'[«]{2,}', '«'),
+
     # »Merkur«
     (r'»([\w]*)«', '«\g<1>»'),
     # «zum Lütty«
@@ -30,26 +30,20 @@ FIXES = [
     (r'«(\w*),(?!.*»)', '«\g<1>»,'),
     # '«Spada»Nahrungsmittel'
     (r'»([A-Za-z])', '» \g<1>'),
-
-    # Willy A,, Vers.-Angestellter --> Willy A., Vers.-Angestellter
-    #(r' ([A-Z]),, ', ' \g<1>., '),
-
-    (r'[ ]?\. \.,? ', '., '),
-
-    (r',,(\w+)"', '„\g<1>“'),
-    (r'\.„', '. „'),
+    # ,,La Pergola"
+    (r',,([ \w]*)"', '„\g<1>“'),
+    # ,PRAXIS"
+    (r',([\w]+)"', '„\g<1>“'),
+    # des„Intelligenzblatt“ and 12„Jolimont“
+    (r'(?<![\s(])([A-Za-z0-9]*)„', '\g<1> „'),
+    # Alex 0.
     (r' 0\.', ' O.'),
-    ('(g|G)ehiilf', '\g<1>ehülf'),
+    # Herm
     ('Herrn\.', 'Herm.'),
+    # Jgfr
+    (r'Igfr\.', 'Jgfr.'),
+    # Job
     ('Job\.', 'Joh.'),
-    (r'£(\d\d+)', '↯\g<1>'),
-    (r'gasse(\d+)', r'gasse \g<1>'),
-    (r'Kirclienfeld|Kirchen-\sIfeld', r'Kirchenfeld'),
-    (r'\\Vildhain'  , r'Wildhain'),
-    (r'R\. B,,', r'R. B.,'),
-    (r'K\. R,,', r'K. R.,'),
-    (r',, ', r'., '),
-    (r'\.\., ', r'., '),
     # fix Neuengaffe > Neuengasse
     (r'Neuengaffe', r'Neuengasse'),
     # Nealsch > Realsch
@@ -64,6 +58,21 @@ FIXES = [
     (r'Suvahaus>', r'«Suvahaus»'),
     # La Genevoise >
     (r'La Genevoise >', r'«La Genevoise»'),
+    # Gehülf
+    ('(g|G)ehiilf', '\g<1>ehülf'),
+    # phone number indicator
+    (r'£(\d\d+)', '↯\g<1>'),
+    # gasse12 > gasse 12
+    (r'gasse(\d+)', r'gasse \g<1>'),
+    # Kirchenfeld
+    (r'Kirclienfeld|Kirchen-\sIfeld', r'Kirchenfeld'),
+    # Wildhain
+    (r'\\Vildhain'  , r'Wildhain'),
+
+    (r'[ ]?\. \.,? ', '., '),
+    (r'\.„', '. „'),
+    (r',, ', r'., '),
+    (r'\.\., ', r'., '),
 ]
 
 def fix_givennames(content):
@@ -88,8 +97,6 @@ def fix_occupations(content):
     occupations = {occ.split(',')[0] for occ in open(path, 'r')}
 
     for occ in occupations:
-#        occ = occ.split(',')[0]
-
         # TODO(random-ao): double replace here is expensive
         content = content.replace('%s.' % occ, '%s,' % occ)
         content = content.replace('%s,,' % occ, '%s,' % occ)
