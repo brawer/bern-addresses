@@ -3,8 +3,11 @@
 
 
 import io
+import math
 import os
 
+# semi-arbitrary value, to optimize indenting detection
+MAX_INDENT_SHIFT = 200
 
 # Returns the file paths to all address book volumes.
 def list_volumes():
@@ -34,9 +37,16 @@ def fix_indentation():
             # so we can look around
             last_prefix = ''
 
+            last_x = 0
+            indent_toggle = False
             for line in open(vol, 'r'):
                 line = line.strip()
                 if not line:
+                    continue
+
+                if line[0] == '#':
+                    last_x = 0 # new page, new luck
+                    out.write(line + '\n')
                     continue
 
                 # skip if indented already
@@ -44,6 +54,29 @@ def fix_indentation():
                     last_prefix = line[:3]
                     out.write(line + '\n')
                     continue
+
+                x = int(line.split('#')[1].split(";")[0].split(",")[0])
+                if last_x == 0: last_x = x
+
+                # col break
+                if abs(last_x - x) > MAX_INDENT_SHIFT: #200:
+                    last_x = x
+
+                # avoid bulging
+                if x < last_x:
+                    last_x = x
+
+                # if we're too close, shift cursor, to follow warped scans
+                if math.isclose(x, last_x, rel_tol=0.2):
+                    indent_toggle = False
+                    last_x = x
+                else: indent_toggle = True
+
+                if indent_toggle:
+                    if (trim(line.split()[0]) in givennames or
+                        trim(line.split(',')[0]) in givennames):
+                        out.write(f'- {line}\n')
+                        continue
 
                 # split by whitespace (original approach)
                 # and by comma, then see if the first
