@@ -38,6 +38,8 @@ FIXES = [
     (r'(?<![\s(])([A-Za-z0-9]*)„', '\g<1> „'),
     # Alex 0.
     (r' 0\.', ' O.'),
+    # Ernsi
+    ('Ernsi', 'Ernst'),
     # Herm
     ('Herrn\.', 'Herm.'),
     # Jgfr
