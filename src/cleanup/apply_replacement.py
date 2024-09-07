@@ -70,6 +70,8 @@ FIXES = [
     (r'Kirclienfeld|Kirchen-\sIfeld', r'Kirchenfeld'),
     # Wildhain
     (r'\\Vildhain'  , r'Wildhain'),
+    # Schiosser
+    (r'Schiosser', r'Schlosser'),
 
     (r'[ ]?\. \.,? ', '., '),
     (r'\.„', '. „'),
