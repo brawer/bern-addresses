@@ -23,7 +23,20 @@ def read_pages():
 # unless the following line starts with a hyphen (that got actually recognized
 # by OCR). The heuristic is not perfect but seems to work pretty well.
 JOIN_WORDS = {
-    'in', 'im', 'auf', 'bei', 'beim', 'der', 'des', 'den', 'um', 'am', 'an', 'u.',
+    'am',
+    'an',
+    'auf',
+    'bei',
+    'beim',
+    'den',
+    'der',
+    'des',
+    'für',
+    'im',
+    'in',
+    'u.',
+    'um',
+    'und',
 }
 
 
@@ -32,6 +45,7 @@ JOIN_WORDS = {
 # a leading hyphen, and insert that missing hyphen programmatically.
 ABBREVS = {
     '&',
+    '& Co',
     'Abl.',
     'Alb.',
     'Chr.',
