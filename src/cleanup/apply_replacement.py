@@ -46,8 +46,8 @@ FIXES = [
     (r'Igfr\.', 'Jgfr.'),
     # Job
     ('Job\.', 'Joh.'),
-    # fix Neuengaffe > Neuengasse
-    (r'Neuengaffe', r'Neuengasse'),
+    # fix .*gaffe > gasse
+    (r'gaffe', r'gasse'),
     # Nealsch > Realsch
     (r'Nealsch', r'Realsch'),
     # Anstait > Anstalt
