@@ -18,7 +18,7 @@ def strip_lines():
   print('Loaded %s lines to blackhole.' % len(lut))
 
   for vol in list_volumes():
-    print('Processing blackholes in %s' % vol)
+    print('Processing blackholes in %s' % vol.split('/')[-1])
 
     num_blackholes = 0
 

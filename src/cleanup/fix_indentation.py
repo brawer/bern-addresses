@@ -30,7 +30,8 @@ def fix_indentation():
     occupations = {occ.split(',')[0] for occ in open(occpath, 'r')}
 
     for vol in list_volumes():
-        print('Processing indentation fixes for %s' % vol)
+        print('Processing indentation fixes for %s' % vol.split('/')[-1])
+
         with open(vol + '.tmp', 'w') as out:
 
             # store first 3 chars of last line
