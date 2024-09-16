@@ -10,28 +10,35 @@ def list_volumes():
 
 def strip_lines():
 
-  lut = {}
-  lut_raw_fn = os.path.join(os.path.dirname(__file__), "..", "blackhole-lines.txt")
-  with open(lut_raw_fn) as fp:
-    for line in fp:
-       lut[line] = 0
-  print('Loaded %s lines to blackhole.' % len(lut))
+    lut = {}
+    lut_raw_fn = os.path.join(os.path.dirname(__file__), "..", "blackhole-lines.txt")
+    with open(lut_raw_fn) as fp:
+        for line in fp:
+            lut[line] = 0
+    print('Loaded %s lines to blackhole.' % len(lut))
 
-  for vol in list_volumes():
-    print('Processing blackholes in %s' % vol.split('/')[-1])
+    for vol in list_volumes():
 
-    num_blackholes = 0
+        env_vl = os.environ.get('PROCESS_VOLUMES', False)
+        if env_vl:
+            vl = env_vl.split(',')
+            if vol.split('/')[-1][:-4] not in vl:
+                continue
 
-    with open(vol + '.tmp', 'w') as out:
-      for line in open(vol, 'r'):
+        print('Processing blackholes in %s' % vol.split('/')[-1])
 
-        if line in lut:
-          num_blackholes += 1
-          continue
+        num_blackholes = 0
+
+        with open(vol + '.tmp', 'w') as out:
+            for line in open(vol, 'r'):
+
+                if line in lut:
+                    num_blackholes += 1
+                    continue
         
-        out.write(line)
-      os.rename(vol + '.tmp', vol)
-      print("%s lines removed" % num_blackholes)
+                out.write(line)
+        os.rename(vol + '.tmp', vol)
+        print("%s lines removed" % num_blackholes)
 
 
 if __name__ == "__main__":

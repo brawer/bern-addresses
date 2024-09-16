@@ -8,6 +8,10 @@ import os
 import re
 
 
+# lines longer than this, featuring '|', have
+# been greedy matched by ocr, so we split them
+LINE_WIDTH_THRESHOLD = 200
+
 def read_pages():
     pages = {}
     with open('src/pages.csv') as csvfile:
@@ -100,7 +104,22 @@ def read_page(date, page_id):
             txt = re.sub(r'\s+(\d{4,})[^\]]', r' ↯\1 ', txt)
         if txt.strip() == '↯':
             continue
-        boxes.append((x, y, w, h, txt))
+        if w > LINE_WIDTH_THRESHOLD and '|' in txt:
+            cols = txt.split('|')
+            count = len(cols)
+            for i, col in enumerate(cols):
+                col = col.strip()
+                # mark up lines we're confident
+                # that they've been split
+                if col.endswith('-'):
+                    col += '@@@GLUE@@@'
+                if col != '':
+                    boxes.append(
+                        (int(x + (i * w / count)), y,
+                        int(w / count), h,
+                        col + '\n'))
+        else:
+            boxes.append((x, y, w, h, txt))
     for x, y, w, h, txt in boxes:
         yield f"{txt}  # {x},{y},{w},{h}"
 
@@ -123,11 +142,9 @@ def convert_page(date, page_id, page_label):
         elif line.startswith('('):
             line = '- ' + line
         cur, cur_pos = [x.strip() for x in line.split('#')]
+        # TODO(random-ao): worth moving to fix_conjunctions.py?
         if last.endswith('-'):
             last = last[:-1] + cur
-            last_pos += ';' + cur_pos
-        elif last.endswith(','):
-            last = last + ' ' + cur
             last_pos += ';' + cur_pos
         elif any(last.endswith(' ' + x) for x in JOIN_WORDS) and not cur.startswith('-'):
             last = last + ' ' + cur
@@ -141,6 +158,14 @@ def convert_page(date, page_id, page_label):
 if __name__ == "__main__":
     for date, pages in sorted(read_pages().items()):
         if date <= '1862': continue
+
+        env_vl = os.environ.get('PROCESS_VOLUMES', False)
+        if env_vl:
+            vl = env_vl.split(',')
+            if date not in vl:
+                continue
+
+        print('Converting %s' % date)
         with open(f'proofread/{date}.txt', 'w') as out:
             for page_id, page_label in pages:
                 for line in convert_page(date, page_id, page_label):
