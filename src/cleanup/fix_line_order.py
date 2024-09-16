@@ -7,6 +7,11 @@ import io
 import os
 
 
+# defines what offset to use for col identification
+#
+# note: all current pages are 2000 wide
+COL_X_MIN_WIDTH = 850
+
 # Helper that collects the entries on the same page,
 # and writes them out in sorted order.
 class Page(object):
@@ -16,7 +21,7 @@ class Page(object):
     def add_entry(self, line):
         text, pos = [x.strip() for x in line.split("#")]
         x, y, width, height = [int(x) for x in pos.split(";")[0].split(",")]
-        if x <= 560:
+        if x <= COL_X_MIN_WIDTH:
             column = 1
         else:
             column = 2
@@ -59,5 +64,12 @@ def list_volumes():
 
 if __name__ == "__main__":
     for vol in list_volumes():
+
+        env_vl = os.environ.get('PROCESS_VOLUMES', False)
+        if env_vl:
+            vl = env_vl.split(',')
+            if vol.split('/')[-1][:-4] not in vl:
+                continue
+
         print('Updating line order in %s' % vol.split('/')[-1])
         fix_line_order(vol)

@@ -30,6 +30,13 @@ def fix_indentation():
     occupations = {occ.split(',')[0] for occ in open(occpath, 'r')}
 
     for vol in list_volumes():
+
+        env_vl = os.environ.get('PROCESS_VOLUMES', False)
+        if env_vl:
+            vl = env_vl.split(',')
+            if vol.split('/')[-1][:-4] not in vl:
+                continue
+
         print('Processing indentation fixes for %s' % vol.split('/')[-1])
 
         with open(vol + '.tmp', 'w') as out:

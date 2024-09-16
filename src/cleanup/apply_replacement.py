@@ -113,7 +113,15 @@ def apply_replacements():
     for filename in sorted(os.listdir(dirpath)):
         if not filename.endswith('.txt'):
             continue
+
+        env_vl = os.environ.get('PROCESS_VOLUMES', False)
+        if env_vl:
+            vl = env_vl.split(',')
+            if filename.split('/')[-1][:-4] not in vl:
+                continue
+
         print('Processing replacements in %s' % filename)
+
         path = os.path.join(dirpath, filename)
         with open(path, 'r') as f:
             content = f.read()
