@@ -4350,9 +4350,9 @@ Brielmaier, J., Wirt z. Krone, Gerechtigkeitsgasse 66  # 1052,1416,806,29;1096,1
 - (1489  # 1774,1450,86,26
 Brientini, Arturo, Schreiner, Zielweg 5.  # 1052,1489,685,26
 Briess, Erwin, Dr. phil., Redaktor, Pavillonweg 11  # 1053,1524,807,27;1102,1568,118,19
-Briggen, Luise, Ladentochter, Brückfeldstr. 8a  # 1052,1596,805,24
-Brignoni, Giacomo, Kaufmann, BümplizGiacomo, strasse 115  # 1054,1618,158,47;1261,1630,596,30;1260,1622,150,47;1100,1671,191,22
-Giulia, Schneiderin, Nordweg 12  # 1100,1703,569,28
+Brignoni, Briggen, Luise, Ladentochter, Brückfeldstr. 8a  # 1054,1618,158,47;1052,1596,805,24
+- Giacomo, Kaufmann, BümplizGiacomo, strasse 115  # 1261,1630,596,30;1260,1622,150,47;1100,1671,191,22
+- Giulia, Schneiderin, Nordweg 12  # 1100,1703,569,28
 12967  # 929,1728,85,29
 - Romeo, Beamter der Oberpostdirektion, Wagnerstrasse 25  # 1076,1739,782,28;1100,1777,314,27
 Briketierwerke A.-G. Aarberg, Neuengasse 37  # 1055,1801,806,51
@@ -10293,7 +10293,8 @@ Wildstrasse 14  # 1050,2476,262,25
 Amt f. Wasserwirtschaft, Gutenbergstr. 10  # 295,293,766,45
 Ghielmetti, Carlo Renzo, Bautechn., Thunstrasse 83  # 252,332,801,44;298,374,172,26
 - Giov., Steinhauer, Freie Strasse 24  # 297,408,612,40
-Gius., Baumeister, Hoch-, Tief- u. Eisenbetonbau, Thunstrasse 83  # 297,444,758,42;293,481,448,35
+1  # 246,424,10,3
+- Gius., Baumeister, Hoch-, Tief- u. Eisenbetonbau, Thunstrasse 83  # 297,444,758,42;293,481,448,35
 - Ignazio, Maurer, Flurstrasse 3  # 268,517,564,40
 - -Gaggione, B., Reisender, Seidenweg 8d  # 244,552,761,43
 - -Muntwyler, Franz, Ingenieur, Schillingstrasse 34  # 272,625,776,47;290,668,175,26
@@ -18784,8 +18785,9 @@ strasse 78  # 240,938,180,23
 - & Kästli, Buchdruckerei, Beundenfeldstr. 17 Landorf, Rettungsanstalt bei Köniz  # 248,2563,1435,36
 $2220 Spitalacker Landtwing, K., gew. Metzger, Bundesrain 16  # 713,2600,1141,31
 Lafranchi, A., Beamter d. Oberkriegskomm., Rütlistrasse 22  # 1037,281,806,43;1084,322,260,28
-Enrico, Postkommis, Zähringerstr. 53  # 1086,356,662,33
-Romeo, Postbeamter, Neufeldstrasse 27e  # 1085,394,742,33
+- Enrico, Postkommis, Zähringerstr. 53  # 1086,356,662,33
+- Romeo, Postbeamter, Neufeldstrasse 27e  # 1085,394,742,33
+2240  # 927,430,76,33
 Lage, Detlef W. H. M., Schaufensterdekorateur, Kesslergasse 23  # 1034,430,811,33;1074,465,375,33
 Laibel, Anna Frieda, Ladentochter, Brunnhofweg 18  # 1035,500,807,33;1084,546,122,19
 - Eduard, Vorarbeiter, Flurstrasse 29  # 1087,573,644,33
@@ -27994,7 +27996,7 @@ Sartorio, A., Maurer, Flurstrasse 1a  # 978,2637,651,32
 Sartory, Maria, Bureaulistin, Forstweg 67  # 977,2671,767,35
 # Date: 1921-12-15 Page: 25901889/378
 strasse 68  # 244,293,175,23
-Elvezio, Postbeamter, Freiestrasse 24  # 245,326,673,30
+- Elvezio, Postbeamter, Freiestrasse 24  # 245,326,673,30
 Satek, Zdenko, Apotheker, Zähringerstr. 52  # 194,361,786,34
 Sátora, Frantisek, Attaché b. d. tschechoslow.  # 196,395,824,35
 Gesandtschaft, Florastrasse 19  # 244,436,550,31
