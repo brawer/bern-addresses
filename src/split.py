@@ -11,6 +11,7 @@ import zipfile
 import openpyxl
 import PIL
 
+from validator import Validator
 
 FAMILY_NAMES = {
     line.strip()
@@ -134,7 +135,7 @@ def is_valid_address(addr):
     return False
 
 
-def split(vol):
+def split(vol, validator):
     outpath = os.path.basename(vol).split(".")[0] + ".zip"
     zip_file = zipfile.ZipFile(outpath, "w")
     font = openpyxl.styles.Font(name="Calibri")
@@ -147,8 +148,9 @@ def split(vol):
     page_re = re.compile(r"^# Date: (\d{4}-\d{2}-\d{2}) Page: (\d+)/(.*)")
     sheet, date, page_id, lemma, name, row = None, None, None, "-", "", 0
     workbook, image = None, None
-    for line in open(vol):
+    for nline, line in enumerate(open(vol)):
         line = line.strip()
+        input_pos = (os.path.basename(vol), nline + 1)
         if m := page_re.match(line):
             save_workbook(workbook, page_id, zip_file)
             date, page_id, page_num = m.groups()
@@ -184,6 +186,22 @@ def split(vol):
         other = ", ".join(p)
         row = row + 1
 
+        entry = {
+            "Scan": str(page_id),
+            "ID": pos,
+            "Name": name,
+            "Vorname": givenname,
+            "Ledigname": maidenname,
+            "Adelsname": "",
+            "Titel": title,
+            "Beruf": occupation,
+            "Beruf 2": "",
+            "Adresse": address,
+            "Adresse 2": address2,
+            "Bemerkungen": other,
+        }
+        bad = validator.validate(entry, input_pos)
+
         name_ok = name in COMPANIES if company else is_valid_family_name(name)
         given_name_ok = (not givenname) or is_valid_given_name(givenname)
         maiden_name_ok = (not maidenname) or (maidenname in FAMILY_NAMES)
@@ -202,6 +220,17 @@ def split(vol):
             and address2_ok
             and other_ok
         )
+
+        assert name_ok == ("Name" not in bad), entry
+        assert given_name_ok == ("Vorname" not in bad), entry
+        assert maiden_name_ok == ("Ledigname" not in bad), entry
+        assert title_ok == ("Titel" not in bad), entry
+        assert occupation_ok == ("Beruf" not in bad), entry
+        assert address2_ok == ("Adresse 2" not in bad), entry
+        if address not in validator.pois:
+            assert address_ok == ("Adresse" not in bad), entry
+        if address2 not in validator.pois:
+            assert address2_ok == ("Adresse 2" not in bad), entry
 
         # id
         cell = sheet.cell(row, 1)
@@ -469,7 +498,8 @@ def crop_image(img, pos):
 
 
 if __name__ == "__main__":
+    validator = Validator()
     for vol in list_volumes():
         year = int(os.path.basename(vol)[:4])
         if 1860 <= year <= 1860:
-            split(vol)
+            split(vol, validator)
