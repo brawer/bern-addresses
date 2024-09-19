@@ -78,7 +78,7 @@ def fix_conjunctions():
                 # pagebreak, abandon stash
                 if line.startswith('#'):
                     if line_stash != '':
-                        out.write(line_stash)
+                        out.write(line_stash.replace('@@@GLUE@@@', ''))
                         line_stash = ''
                     out.write(line)
                     continue
@@ -126,7 +126,7 @@ def fix_conjunctions():
                         line_stash = ''
                 else:
                     # no luck
-                    out.write(line_stash)
+                    out.write(line_stash.replace('@@@GLUE@@@', ''))
                     line_stash = ''
 
                 out.write(line)

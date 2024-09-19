@@ -18,6 +18,7 @@ git restore proofread/
 python3 src/convert_hocr_to_plaintext.py
 python3 src/cleanup/blackhole_lines.py
 python3 src/cleanup/fix_line_order.py
+python3 src/cleanup/sanitize.py
 python3 src/cleanup/fix_conjunctions.py
 python3 src/cleanup/apply_replacement.py
 python3 src/cleanup/fix_indentation.py
