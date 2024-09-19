@@ -959,9 +959,8 @@ $5075  # 894,1842,81,24
 - Albert, Hilfsmechaniker, Steigerweg 14  # 1053,1870,690,29
 - Alb., Wagner b. Hrn. Hirter, Murtenstr. 125  # 1059,1905,740,28
 - Alb., Vorarbeiter, Waffenweg 6  # 1060,1940,534,29
-- Alfred, Inspektor b. eidg. Eisenbahndep.,  # 1058,1974,739,29
 - (4034  # 1713,2008,83,26
-Beaulieustrasse 72  # 1058,2012,314,25
+- Alfred, Inspektor b. eidg. Eisenbahndep., Beaulieustrasse 72  # 1058,1974,739,29;1058,2012,314,25
 - Charles Rob., Uhrenmacher, Seidenweg 8  # 1057,2042,722,32
 - Christ., Postbeamter, Waisenhausstrasse 7  # 1039,2082,761,27
 - E., Billetteur d. S. S. B., Murifeldweg 42  # 1059,2116,684,27
@@ -2270,9 +2269,8 @@ $1196  # 890,626,84,27
 - -Häni, Walter, Lehrer an der Brunnmattschule, Cäcilienstrasse 49  # 1027,761,768,27;1055,799,439,25
 - (2774  # 893,802,83,25
 Bergeon, Fr. J., eidg. Angest., Luisenstr. 46  # 1008,830,747,32
-Berger, Ad., Bautechniker u. Tapetenhandlg.,  # 1009,869,785,35
 - (3198  # 1710,904,82,26
-Zielweg 5  # 1057,906,159,29
+Berger, Ad., Bautechniker u. Tapetenhandlg., Zielweg 5  # 1009,869,785,35;1057,906,159,29
 - Adolf, Bankangestellter, Nordweg 6  # 1055,942,620,27
 - Adolf, Sager, Länggassstrasse 30  # 1055,976,570,30
 - Adolf Ferd., Telephonmonteur, Kesslerg. 30  # 1054,1010,739,29
@@ -2524,9 +2522,8 @@ Bernet, Anton, Kommis, Viktoriarain 3  # 1010,1012,690,29
 - & Cie., Patentanwaltsbureau, Spitalg. 17  # 1060,1779,745,30
 13623  # 1721,1815,83,26
 - -Bögli, Hans Rud., Bureaulist, Gerechtigkeitsgasse 21  # 1048,1849,756,34;1066,1886,218,30
-- Kehr, Hans, Ing., i. Fa. Bernhard & Cie.,  # 1064,1921,740,25
 - (6023  # 1722,1955,83,25
-Gerechtigkeitsgasse 79  # 1065,1956,385,29
+- Kehr, Hans, Ing., i. Fa. Bernhard & Cie., Gerechtigkeitsgasse 79  # 1064,1921,740,25;1065,1956,385,29
 - (3901  # 903,1958,81,27
 ter, Steigerweg 19  # 1066,2027,311,28
 - -Steffen, Jakob, Bureauangestellter, Weihergasse 17  # 1017,2058,788,31;1062,2098,202,26
@@ -9025,9 +9022,7 @@ Gammeter, Ad., gew. Schreinermstr., Neufeldstrasse 30  # 1041,1043,783,34;1086,1
 Gamp, Walter, Maler, Mezenerweg 8  # 1044,1394,635,32
 Gamper, Albert, Chauffeur, Mattenhofstr. 29  # 1043,1428,768,35
 - Arthur Alphons, Schreiner, Pappelweg 6  # 1068,1464,744,31
-- Fritz, Beamter der Obertelegraphendirek.,  # 1086,1498,742,33
-13448  # 927,1502,83,27
-tion, Seidenweg 4  # 1074,1532,303,31
+13448 Fritz, Beamter der Obertelegraphendirek., tion, Seidenweg 4  # 927,1502,83,27;1086,1498,742,33;1074,1532,303,31
 - J., Dr. phil., Redaktor, Seidenweg 4  # 1071,1568,664,32
 Moses, Reisender, Klösterlistutz 10  # 1089,1604,606,28
 Gander, Arn., Schriftsetzer, Rodtmattstr. 112  # 1043,1638,785,28
@@ -21526,8 +21521,7 @@ Gotl., Schlosser, Lerchenweg 31  # 311,2071,591,39
 - Rudolf, Schlossermeister, Grabenpromenade 13 und Brunngasse 56  # 305,2543,778,44;306,2581,530,36
 - Rud. Aug., Schreiner, Bremgartenstr. 63  # 306,2619,739,38
 - Karlen, Susanna, Wwe., Bühlstrasse 35  # 306,2655,738,34
-- -Wittwer, Karl, Bureauchef der B. L. S.,  # 1129,299,799,42
-Meisenweg 20  # 1179,335,242,39
+- -Wittwer, Karl, Bureauchef der B. L. S., Meisenweg 20  # 1129,299,799,42;1179,335,242,39
 Minerva, Pension, Bühlstrasse 16  # 1130,370,620,41
 $5364  # 1859,384,70,34
 Mingard, Samuel, Wagner, Gerbergasse 6  # 1133,409,750,42
@@ -21590,8 +21584,7 @@ $5866  # 1853,1434,69,28
 - Rud., Mechaniker, Scheibenstrasse 39  # 1146,2620,688,36
 - Samuel, Karrer, Bubenbergplatz 10  # 1164,2660,649,35
 # Date: 1919-12-15 Page: 25881219/311
-- S.,  # 1,300,32,28
-- -Morgenegg, Alfred, Kaufmann, Seftigen- Mollet, Alex., Postangest., Gesellschaftsstr. 30  # 151,310,1641,36
+- S., - -Morgenegg, Alfred, Kaufmann, Seftigen- Mollet, Alex., Postangest., Gesellschaftsstr. 30  # 1,300,32,28;151,310,1641,36
 strasse 26  # 196,351,168,22
 Mischon-Richner, Georg Jos., Verbandssekretär (Wabernstr. 14), Monbijoustr. 20 ↯1446  # 152,381,802,34;195,419,759,32
 Misteli, Joh., Billetteur S. S. B., Zimmerw. 12  # 153,455,800,32
@@ -23300,8 +23293,7 @@ Kil., Telegr.-Angest., Zähringerstrasse 45  # 1024,1897,737,34
 - Otto Fr., Telegraphist, Zähringerstr. 45  # 1027,1970,688,32
 - (3315  # 861,1972,82,27
 - Paul Hans, Aktuar, Diesbachstrasse 9  # 1028,2003,677,32
-- Wilhelm, Abwart bei Marcuard & Cie.,  # 1030,2039,749,32
-Christoffelgasse 4  # 1030,2077,302,30
+- Wilhelm, Abwart bei Marcuard & Cie., Christoffelgasse 4  # 1030,2039,749,32;1030,2077,302,30
 Nussberger, Joh. Konr., Stallmstr., Grüneckweg 10  # 984,2111,796,33;1030,2158,119,15
 - (1611  # 863,2150,85,27
 - Karl, Ingenieur, Thunstrasse 101  # 1030,2181,589,33
@@ -23751,8 +23743,7 @@ Pache, s. auch Pasche  # 1007,1017,395,36
 - Charles, Hilfsarbeiter, Steckweg 17  # 1052,1055,601,32
 Padel, Bruno, Architekt, i. Fa. Nigst & Padel, 14869  # 1007,1091,793,34;886,1127,85,25
 Eichholz, Wabern  # 1053,1128,304,28
-- -Sommer, Max, Dir. d. Lebensmittel A.-G.,  # 1012,1164,788,28
-Anshelmstrasse 8  # 1049,1198,302,30
+- -Sommer, Max, Dir. d. Lebensmittel A.-G., Anshelmstrasse 8  # 1012,1164,788,28;1049,1198,302,30
 - (1247  # 1714,1199,87,27
 Padovani, Giovanni, Reisender, Seidenw. 4a  # 1005,1233,795,32
 Pagan, Fritz, Mechaniker, Obstweg 8  # 1007,1271,656,30
@@ -30681,8 +30672,7 @@ $3608  # 859,944,89,27
 - Bertha, Ladentochter, Schönburgstrasse 28  # 1007,1018,789,33
 - B., Lehrerin der Breitenrainschule, Waldhöheweg 9  # 1031,1053,763,33;1029,1093,182,28
 13524  # 858,1089,90,26
-- Eduard, Direktor der Eidg. Bank, A.-G.,  # 1029,1125,763,31
-16428  # 861,1162,86,26
+- Eduard, Direktor der Eidg. Bank, A.-G., 16428  # 1029,1125,763,31;861,1162,86,26
 - (2286  # 1707,1163,86,29
 Monbijoustrasse 80  # 1030,1164,336,30
 - Elise, Ladentochter, Brunngasse 44  # 1030,1198,641,32
@@ -33451,11 +33441,9 @@ dent, Schanzeneckstrasse 13  # 1156,1422,512,21
 - («La Pergola»)  # 1163,1565,269,30
 - -Lindt, Lina, Wwe., Neubrückstr. 29 (23  # 1140,1605,783,17
 Wach, A. H. R., Bankbeamter, unt. Dufourstrasse 12  # 1115,1639,809,19;1164,1680,180,23
-Wächli,  # 1112,1712,139,33
-bergstrasse 10a  # 1162,1750,285,26
+Wächli, bergstrasse 10a  # 1112,1712,139,33;1162,1750,285,26
 - G., Schreiner, Bubenbergstrasse 10a  # 1131,1788,681,20
-- Konrad, gew. Chef d. städt. Steuerbureaus,  # 1166,1825,761,16
-Egghölzliweg 40  # 1167,1860,284,29
+- Konrad, gew. Chef d. städt. Steuerbureaus, Egghölzliweg 40  # 1166,1825,761,16;1167,1860,284,29
 - Klara, Lehrerin, Wabernstrasse 93a  # 1139,1898,671,17
 - -Jenni, Albert, Sattler- und Tapezierermstr.  # 1150,1934,778,18
 - (Wiesenstrasse 53), Stockernweg 4 ↯1446  # 1171,1970,757,19
