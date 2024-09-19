@@ -48,6 +48,8 @@ FIXES = [
     ('Job\.', 'Joh.'),
     # fix .*gaffe > gasse
     (r'gaffe', r'gasse'),
+    # fix Framg*
+    (r'Framg', r'Kramg'),
     # Nealsch > Realsch
     (r'Nealsch', r'Realsch'),
     # Anstait > Anstalt
