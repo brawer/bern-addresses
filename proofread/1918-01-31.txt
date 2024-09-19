@@ -191,8 +191,7 @@ $2329  # 1736,2037,88,27
 $3510  # 899,2037,87,26
 ter O. Zaugg, Theaterplatz 4  # 1063,2037,510,31
 - & Hilfiker, Eisenwaren- u. Werkzeughdlg., Aarbergergasse 13  # 1043,2072,781,33;1063,2106,319,30
-- Schwestern (Elise u. Marie), Wirtschaft z.,  # 1064,2143,762,32
-Klötzlikeller, Gerechtigkeitsgasse (6) 62  # 1063,2179,710,34
+- Schwestern (Elise u. Marie), Wirtschaft z., Klötzlikeller, Gerechtigkeitsgasse (6) 62  # 1064,2143,762,32;1063,2179,710,34
 - -Haller, Alb., Beamt. S. B. B., Kyburgstr. 9  # 1018,2214,807,34
 - Schwob, Anna, Wwe., in Firma Affolter  # 1061,2245,760,36
 - & Hilfiker, Wyttenbachstrasse 8  # 1063,2285,578,33
@@ -1461,8 +1460,7 @@ u. Korbwarenhdlg., Kesslergasse 46 4810  # 253,441,757,28
 weg 13  # 265,1342,120,15
 - Aebi, A. M., Wwe., Kesslergasse 46  # 263,1364,643,25
 - -Augsburger, E., Koch, Kl. Muristalden 3  # 236,1402,784,23
-- Benker, W., Import- und Exportgeschäft,  # 265,1437,755,27
-Gutenbergstrasse 20  # 265,1473,348,28
+- Benker, W., Import- und Exportgeschäft, Gutenbergstrasse 20  # 265,1437,755,27;265,1473,348,28
 - Berger, A., Kontrollgehilfe, Allmendstr. 26  # 265,1506,756,25
 - -Bigler, Marie Luise, Witwe des Baumeisters, Greyerzstrasse 61  # 227,1544,794,24;266,1581,423,27
 - -Bondeli, Joh. Karl, Hundehandlung, Neue  # 235,1614,788,28
@@ -1988,12 +1986,11 @@ $2604 Berneralpen-Milchgesellschaft, Stalden i. E., Delegierter des Verwaltungsr
 - (182  # 1752,2256,67,27
 Berner Chocoladefabrik, Tobler & Cie., A.-G., Länggassstrasse 49  # 1014,2217,802,33;1062,2258,335,31
 Berner Handelsbank, Bundesg. 14 (721 u. 752  # 1015,2291,804,32
-14702,  # 1722,2359,98,31
 Berner Intelligenzblatt, Redaktion -4703, Verlag und Administration  # 1015,2327,804,32;1063,2363,469,30
 Ecke Breitenrainstrasse-Viktoriarain  # 1062,2399,639,26
 Berner Kochkurse f. Frauen u. Töchter (Kursleiter A. Buchhofer, Chef), Junkerng. 34  # 1017,2432,803,33;1060,2469,720,30
 Berner Kunstsalon (Fr. Brand), Bahnhofplatz 7  # 1015,2502,804,32;1062,2546,118,25
-$4874  # 1731,2540,89,27
+14702, $4874  # 1722,2359,98,31;1731,2540,89,27
 Berner Möbelhalle (Friedrich Pfister), Speichergasse 14 und 16  # 1016,2574,801,33;1063,2615,362,24
 12449  # 1734,2612,84,24
 # Date: 1918-01-31 Page: 25879553/128
@@ -2628,8 +2625,7 @@ Blank, Bertha Marie, Ladentochter, Platanenweg 12  # 169,2118,802,32;217,2165,11
 - Friedrich, Hilfsmonteur, Zaunweg 20  # 200,2225,676,31
 - Gottfried, Handlanger, Morillonweg 40  # 218,2260,679,32
 - Gottlieb, Mandatträger, Platanenweg 12  # 218,2296,696,32
-- Hs., Spezerei-, Papeterie- u. Merceriehdlg.,  # 217,2328,755,34
-Kasernenstrasse 34  # 218,2367,337,29
+- Hs., Spezerei-, Papeterie- u. Merceriehdlg., Kasernenstrasse 34  # 217,2328,755,34;218,2367,337,29
 - Joh., Handlanger, Jurastrasse 47  # 170,2404,632,30
 - Joh. Rud., Magaziner, Polygonweg 13  # 220,2437,659,33
 - Karl, Bahnarbeiter, Holligenstrasse 13  # 219,2471,678,34
@@ -4995,8 +4991,7 @@ $2398  # 885,1754,85,26
 $3849  # 883,1823,85,33
 Courtot, Lucie, Lehrerin, Seidenweg 2a  # 1001,1823,705,33
 Cousin, E., Musiklehrer, Engestrasse 44  # 1001,1860,708,33
-Craigie, R. L., Sekretär d. kgl. grossbritan.,  # 1001,1896,810,33
-Gesandtschaft, Florastrasse 13  # 1046,1930,540,30
+Craigie, R. L., Sekretär d. kgl. grossbritan., Gesandtschaft, Florastrasse 13  # 1001,1896,810,33;1046,1930,540,30
 Creditreform, schweizer. Verband, Theaterplatz 2  # 1002,1967,803,34;1046,2006,120,24
 $3025  # 1717,2003,84,28
 Crescitz, Aristide Albert, Vizedirektor des intern. Bureaus der Telegr.-Union, Monbijoustrasse 43  # 1001,2037,802,29;1049,2073,752,33;1047,2110,262,29
@@ -14610,8 +14605,7 @@ gasse 39  # 231,2202,146,17
 - -Wahli, Hs., Akt. d. Richteramts III, Muri  # 202,2372,782,33
 Krentel, Álb., Fürsprech, Marzilistr. 16a (1104  # 186,2401,799,39
 - Henri Rud., Geometer, Marzilistrasse 16a  # 232,2443,753,32
-Kressmann, Eug., i. Fa. Gebr. Kressmann,  # 186,2475,795,43
-Philosophenweg 5  # 232,2509,310,42
+Kressmann, Eug., i. Fa. Gebr. Kressmann, Philosophenweg 5  # 186,2475,795,43;232,2509,310,42
 - Friedr., i. Fa. Gebr. Kressmann, Mayw. 16  # 204,2547,777,39
 Gerechtigkeits- Joh. G., Bäckermeister,  # 734,2158,251,35;215,2151,468,46
 - Gebr., Mützen- u. Mützenfourniturenfabrik,  # 214,2582,766,37
@@ -24181,8 +24175,7 @@ Matth., Zuschneider, Effingerstrasse 13  # 1141,1219,706,33
 - -Delvaux, Constant, Sekretär d. Kaiserl.  # 1133,2406,777,22
 Deutschen Gesandtschaft, Manuelstr. 70  # 1146,2441,705,23
 - -Fetscherin, A., Witwe, Erlachstr. 20 (107  # 1130,2475,779,27
-- -Fetscherin, Walter, Inspektor d. schweiz.,  # 1134,2513,780,27
-Mobiliar-Vers.-Ges., Länggassstrasse 27  # 1149,2546,698,30
+- -Fetscherin, Walter, Inspektor d. schweiz., Mobiliar-Vers.-Ges., Länggassstrasse 27  # 1134,2513,780,27;1149,2546,698,30
 - -Flückiger, Fr., Vater, Dessert- u. Bretzelnfabrikat., Konfiserie, Schützenweg 10 ↯1243  # 1123,2585,788,26;1148,2620,763,26
 # Date: 1918-01-31 Page: 25879752/323
 - -Keller, P., Vorsteher der Bächtelenanstalt  # 155,290,802,32
@@ -26754,9 +26747,7 @@ Stuber, Alb., Schreinermeister, Sodweg 3  # 1008,1992,709,31
 - -Friedli, Luise, Wäscherei, Weihergasse 19  # 1019,2242,794,32
 Stuck, Ernst, Sattler, Neuengasse 17  # 1008,2277,636,33
 Stückelberger, E., Wwe., Kramgasse 56  # 1009,2312,689,34
-- Joh., Schneiderfurnituren- u. Merceriehdlg.,  # 1039,2348,773,32
-14142  # 889,2351,86,25
-- (Vennerweg 1 (3797), Kramgasse 56 3759  # 1056,2385,750,32
+14142 - Joh., Schneiderfurnituren- u. Merceriehdlg., - (Vennerweg 1 (3797), Kramgasse 56 3759  # 889,2351,86,25;1039,2348,773,32;1056,2385,750,32
 Stucker, Cecile Johanna, Frl., Aarbergerg. 34  # 1007,2419,791,33
 - Ernst, Sattlermeister, Kasernenstrasse 21  # 1054,2456,731,32
 - Fritz, i. Fa. Stucker & Zesiger, Muri  # 1027,2491,672,32
@@ -26920,9 +26911,7 @@ Stuhner, Ernst, Kaufmann, Holzikofenweg 3  # 183,2099,784,47
 Stulz, Fr., Schreiner, Lenzweg 7  # 183,2138,574,37
 Stump, El., Frl., Postangestellte, Ländteweg 1  # 182,2172,799,43
 - (Aarzielehof)  # 229,2211,223,31
-lige.,  # 576,2226,85,26
-- Jak., Seminarlehrer, Brückenstrasse 3  # 229,2246,661,37
-- Jos., Feinmechaniker, Mattenhofstr. 19  # 208,2281,699,38
+- Jak., Seminarlehrer, Brückenstrasse 3 lige., - Jos., Feinmechaniker, Mattenhofstr. 19  # 229,2246,661,37;576,2226,85,26;208,2281,699,38
 - Paul, Postbureauchef, Bubenbergstrasse 49  # 229,2316,753,41
 Stumpf, Georg Leop., Gerant, Herrengasse 25 Sunier, Alfred, Bankangest., Brunnhofweg 4  # 180,2351,1604,53
 - W., Techniker der schweizerischen Landes--J. W., Waffenkontrolleur, Standstrasse 3  # 205,2385,1570,55
@@ -27072,8 +27061,7 @@ Syndikat d. Importeure d. Automobil- u. Fahrradbranche in der Schweiz (S. I. S. 
 Sekretariat, Spitalgasse 27  # 1090,2187,477,27
 Syndikat schweiz. Handels-Importeure en gros  # 1047,2225,805,21
 der Comestibles-Branche, Marktgasse 50  # 1091,2259,717,25
-schäftsführer: Ernst Meyer, Metzgermstr.,  # 1091,2332,764,22
-Neuengasse 11  # 1095,2371,256,27
+schäftsführer: Ernst Meyer, Metzgermstr., Neuengasse 11  # 1091,2332,764,22;1095,2371,256,27
 Szeemann, Etienne, Damen- und HerrenCoiffeur, Bundesgasse 20  # 1047,2405,811,21;1096,2441,437,25
 GeSyndikat stadtbern. Metzgermeister, - (2553  # 1797,2287,60,21;1043,2297,693,22;1772,2431,87,22
 Tagblatt, Berner, Administration und Buchdruckerei: Zeughausgasse 14 ↯1137 Redak- (1140  # 1049,2584,813,14;1098,2618,764,18;1777,2641,86,27
@@ -30039,8 +30027,7 @@ Wyser, Eugen, Buchhalter, Thunstrasse 41  # 1008,1217,743,29
 - Eugen, Postkommis, Thunstrasse 41  # 1057,1256,622,25
 - (3927  # 894,1259,85,26
 Wyss, s. auch Weiss  # 1010,1292,360,26
-- A., Notar, Verwalter der Hypothekarkasse,  # 1035,1326,773,24
-Brunnadernweg 61  # 1059,1359,322,32
+- A., Notar, Verwalter der Hypothekarkasse, Brunnadernweg 61  # 1035,1326,773,24;1059,1359,322,32
 - Adolf, Handlanger, Stalden 12  # 1058,1397,527,26
 FinkenWyrsch, Louis, Beamter der S. B. B.,  # 1673,1002,132,24;1007,1005,648,29
 - Adolf, Lehrer, Weihergasse 11  # 1037,1432,549,29
