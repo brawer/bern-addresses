@@ -10,6 +10,58 @@ import os
 import re
 
 
+# Performs validity checks on an address book entry. Usage:
+#
+#   val = Validator()
+#   bad = val.validate({"Name": "Meier", "Vorname": "Klcra", "Beruf": "xyz"})
+#   val.report()
+#
+# validate() returns a set of keys whose values look suspicious, such as
+# {"Vorname", "Beruf"}. If the passed entry passes all checks, the result
+# is an empty sety.
+#
+# report() prints overall validation statistics to standard output, such as
+# the number of bad records, or a list of encountered unknown family names.
+# Unknown names (and occuptations, streets, etc.) might either be  OCR errors,
+# or they are missing from the one of the lists of known names (duh).
+#
+# is_company() tells if a record is a company, based on the "Title" field.
+#
+# normalize_person() and normalize_company() expand abbreviations,
+# look up statistical codes for occupations, etc. The resulting dictionary
+# contains additional attributes. Although this isn't strictly a validation
+# task, it uses the same tables, so we decided to put this functionality
+# into the Validator class.
+#
+# The following keys are recognized in the dictionary passed to validate(),
+# normalize_person() and normalize_company().
+#
+# * "Scan": An e-rara.ch page ID, such as "1395972" for the scanned page
+#   at https://www.e-rara.ch/bes_1/periodical/pageview/1395972
+#
+# * "ID": Pixel position on that page as string "x,y,width,height",
+#   which uniquely identifies the record on the page.
+#
+# * "Name": Family or company name, such as
+#   "Müller", "von Wurstemberger" or "Ciolina & Comp.".
+#
+# * "Vorname": Given name, such as "Klara" or "Joh.".
+#
+# * "Ledigname": Unmarried family name, such as "Meier".
+#
+# * "Adelsname": Nobilty family name, for example "von Burgistein"
+#   in a record for "von Graffenried (von Burgistein)".
+#
+# * "Titel": Title, such as "Frl." or "Prof." The title "[Firma]"
+#   indicates a record for a company.
+#
+# * "Beruf" and "Beruf 2": Occupation, such as "Schnd." or "Calligraph".
+#
+# * "Adresse" and "Adresse 2": Possibly abbreviated treet address,
+#   such as "Metzgg. 96".
+#
+# * "Bemerkungen": General remarks and annotations, no specific
+#   interpretation, ignored (not flagged) by validation.
 class Validator:
     def __init__(self):
         self.pages = self.read_csv("pages.csv", "PageID")
