@@ -9,6 +9,23 @@ import csv
 import os
 import re
 
+# Recognized columns in input entries for validation/normalization.
+# See below for description.
+COLUMNS = [
+    "ID",
+    "Scan",
+    "Name",
+    "Vorname",
+    "Ledigname",
+    "Adelsname",
+    "Titel",
+    "Beruf",
+    "Beruf 2",
+    "Adresse",
+    "Adresse 2",
+    "Bemerkungen",
+]
+
 
 # Performs validity checks on an address book entry. Usage:
 #
@@ -64,6 +81,7 @@ import re
 #   interpretation, ignored (not flagged) by validation.
 class Validator:
     def __init__(self):
+        self.columns = set(COLUMNS)
         self.pages = self.read_csv("pages.csv", "PageID")
         self.family_names = self.read_lines("family_names.txt")
         self.given_names = self.read_lines("givennames.txt")
@@ -112,6 +130,7 @@ class Validator:
         return "[Firma]" in entry["Titel"]
 
     def validate(self, entry, pos):
+        assert all(key in self.columns for key in entry.keys()), entry
         bad = set()
         if not self.validate_given_name(entry, pos):
             bad.add("Vorname")

@@ -11,19 +11,7 @@ import zipfile
 import openpyxl
 import PIL
 
-from validator import Validator
-
-FAMILY_NAMES = {
-    line.strip()
-    for line in open(os.path.join(os.path.dirname(__file__), "family_names.txt"))
-}
-
-
-GIVEN_NAMES = {
-    line.strip()
-    for line in open(os.path.join(os.path.dirname(__file__), "givennames.txt"))
-}
-
+from validator import Validator, COLUMNS
 
 GIVEN_NAME_ABBREVS = {
     line.strip()
@@ -47,90 +35,11 @@ COMPANY_ABBREVS = {
 }
 
 
-def read_companies():
-    result = set()
-    filepath = os.path.join(os.path.dirname(__file__), "companies.csv")
-    with open(filepath) as stream:
-        for row in csv.DictReader(stream):
-            result.add(row["Name"])
-    return result
-
-
-def read_titles():
-    result = set()
-    filepath = os.path.join(os.path.dirname(__file__), "titles.csv")
-    with open(filepath) as stream:
-        for row in csv.DictReader(stream):
-            result.add(row["Title"])
-    return result
-
-
-def read_occupations():
-    occ = {}
-    filepath = os.path.join(os.path.dirname(__file__), "occupations.csv")
-    with open(filepath) as stream:
-        for row in csv.DictReader(stream):
-            occ[row["Occupation"]] = row["CH-ISCO-19"]
-    return occ
-
-
-def read_streets():
-    result = set()
-    filepath = os.path.join(os.path.dirname(__file__), "streets.csv")
-    with open(filepath) as stream:
-        for row in csv.DictReader(stream):
-            result.add(row["Street"])
-    return result
-
-
-def read_street_abbrevs(streets):
-    result = {}
-    filepath = os.path.join(os.path.dirname(__file__), "street_abbrevs.csv")
-    with open(filepath) as stream:
-        for row in csv.DictReader(stream):
-            s = row["Street"]
-            assert s in streets, f"not in streets.csv: {s}"
-            result[row["Abbreviation"]] = s
-    return result
-
-
-def read_pois():
-    result = set()
-    filepath = os.path.join(os.path.dirname(__file__), "pois.csv")
-    with open(filepath) as stream:
-        for row in csv.DictReader(stream):
-            result.add(row["PointOfInterest"])
-    return result
-
-
-COMPANIES = read_companies()
-TITLES = read_titles()
-OCCUPATIONS = read_occupations()
-POIS = read_pois()
-STREETS = read_streets()
-STREET_ABBREVS = read_street_abbrevs(STREETS)
-
-
-def is_valid_family_name(name):
-    if name is None:
-        return False
-    name = name.replace("V. ", "von ").replace("v. ", "von ")
-    name = name.replace("De ", "de ")
-    return name in FAMILY_NAMES
-
-
-def is_valid_given_name(name):
-    for n in name.split():
-        if (n in GIVEN_NAMES) or (n in GIVEN_NAME_ABBREVS):
-            return True
-    return False
-
-
-def is_valid_address(addr):
+def is_valid_address(addr, validator):
     if m := re.match(r"^(.+) (\d+[a-t]?)$", addr):
         street, num = m.groups()
-        return (street in STREET_ABBREVS) or (street in STREETS)
-    if addr in POIS:
+        return (street in validator.street_abbrevs) or (street in validator.streets)
+    if addr in validator.pois:
         return True
     return False
 
@@ -179,10 +88,10 @@ def split(vol, validator):
         if company:
             title = "[Firma]"
         else:
-            title, p = split_title(p)
-        address, address2, p = split_address(p)
-        givenname, p = split_givenname(p)
-        occupation, p = split_occupation(p)
+            title, p = split_title(p, validator)
+        address, address2, p = split_address(p, validator)
+        givenname, p = split_givenname(p, validator)
+        occupation, p = split_occupation(p, validator)
         other = ", ".join(p)
         row = row + 1
 
@@ -201,116 +110,26 @@ def split(vol, validator):
             "Bemerkungen": other,
         }
         bad = validator.validate(entry, input_pos)
+        if other:
+            # In the output of the splitting phase, but not elsewhere,
+            # we consider the existence of remarks as "bad", leading
+            # to human review of the entry.
+            bad.add("Bemerkungen")
 
-        name_ok = name in COMPANIES if company else is_valid_family_name(name)
-        given_name_ok = (not givenname) or is_valid_given_name(givenname)
-        maiden_name_ok = (not maidenname) or (maidenname in FAMILY_NAMES)
-        title_ok = (not title) or (title == "[Firma]") or (title in TITLES)
-        occupation_ok = (not occupation) or (occupation in OCCUPATIONS)
-        address_ok = (not address) or is_valid_address(address)
-        address2_ok = (not address2) or is_valid_address(address2)
-        other_ok = not other
-        all_ok = (
-            name_ok
-            and given_name_ok
-            and maiden_name_ok
-            and title_ok
-            and occupation_ok
-            and address_ok
-            and address2_ok
-            and other_ok
-        )
+        for column_index, column in enumerate(COLUMNS):
+            cell = sheet.cell(row, column_index + 1)
+            cell.value = entry[column]
+            cell.font = font
+            if column in bad:
+                cell.fill = red_fill
+            elif len(bad) > 0:
+                cell.fill = light_red_fill
 
-        assert name_ok == ("Name" not in bad), entry
-        assert given_name_ok == ("Vorname" not in bad), entry
-        assert maiden_name_ok == ("Ledigname" not in bad), entry
-        assert title_ok == ("Titel" not in bad), entry
-        assert occupation_ok == ("Beruf" not in bad), entry
-        assert address2_ok == ("Adresse 2" not in bad), entry
-        if address not in validator.pois:
-            assert address_ok == ("Adresse" not in bad), entry
-        if address2 not in validator.pois:
-            assert address2_ok == ("Adresse 2" not in bad), entry
-
-        # id
-        cell = sheet.cell(row, 1)
-        cell.value, cell.font = pos, font
-        if not all_ok:
-            cell.fill = light_red_fill
-
-        # scan
-        cell = sheet.cell(row, 2)
-        cell.value, cell.font = "", font
-        if not all_ok:
-            cell.fill = light_red_fill
         if True:  # set to False for speed-up in development
             cropped = crop_image(image, pos)
             sheet.add_image(cropped, f"B{row}")
             sheet.row_dimensions[row].height = cropped.height + 5
 
-        # name
-        cell = sheet.cell(row, 3)
-        cell.value, cell.font = name, font
-        if not name_ok:
-            cell.fill = red_fill
-        elif not all_ok:
-            cell.fill = light_red_fill
-
-        # given name
-        cell = sheet.cell(row, 4)
-        cell.value, cell.font = givenname, font
-        if not given_name_ok:
-            cell.fill = red_fill
-        elif not all_ok:
-            cell.fill = light_red_fill
-
-        # maiden name
-        cell = sheet.cell(row, 5)
-        cell.value, cell.font = maidenname, font
-        if not maiden_name_ok:
-            cell.fill = red_fill
-        elif not all_ok:
-            cell.fill = light_red_fill
-
-        # title
-        cell = sheet.cell(row, 6)
-        cell.value, cell.font = title, font
-        if not title_ok:
-            cell.fill = red_fill
-        elif not all_ok:
-            cell.fill = light_red_fill
-
-        # occupation
-        cell = sheet.cell(row, 7)
-        cell.value, cell.font = occupation, font
-        if not occupation_ok:
-            cell.fill = red_fill
-        elif not all_ok:
-            cell.fill = light_red_fill
-
-        # address
-        cell = sheet.cell(row, 8)
-        cell.value, cell.font = address, font
-        if not address_ok:
-            cell.fill = red_fill
-        elif not all_ok:
-            cell.fill = light_red_fill
-
-        # address2
-        cell = sheet.cell(row, 9)
-        cell.value, cell.font = address2, font
-        if not address2_ok:
-            cell.fill = red_fill
-        elif not all_ok:
-            cell.fill = light_red_fill
-
-        # other
-        cell = sheet.cell(row, 10)
-        cell.value, cell.font = other, font
-        if not other_ok:
-            cell.fill = red_fill
-        elif not all_ok:
-            cell.fill = light_red_fill
     save_workbook(workbook, page_id, zip_file)
     zip_file.close()
 
@@ -351,10 +170,10 @@ def split_family_name(n):
     return (" ".join(words[: pos + 1]), " ".join(words[pos + 1 :]))
 
 
-def split_givenname(p):
+def split_givenname(p, validator):
     if len(p) == 0:
         return ("", [])
-    if all(n in GIVEN_NAMES for n in p[0].split()):
+    if all(n in validator.given_names for n in p[0].split()):
         return (p[0], p[1:])
     else:
         return ("", p)
@@ -371,19 +190,19 @@ def split_maidenname(n):
     return ("", n)
 
 
-def split_title(p):
-    if len(p) > 0 and p[0] in TITLES:
+def split_title(p, validator):
+    if len(p) > 0 and p[0] in validator.titles:
         return (p[0], p[1:])
     else:
         return ("", p)
 
 
-def split_address(p):
+def split_address(p, validator):
     if len(p) == 0:
         return ("", "", [])
-    if is_valid_address(p[0]):
+    if is_valid_address(p[0], validator):
         return (p[0], "", p[1:])
-    if is_valid_address(p[-1]):
+    if is_valid_address(p[-1], validator):
         return (p[-1], "", p[0:-1])
     last = p[-1].removesuffix(".")
     if m := re.match(r"(.+\d+) ([a-t])", last):
@@ -401,15 +220,15 @@ def split_address(p):
     return (addr, "", rest)
 
 
-def split_occupation(p):
+def split_occupation(p, validator):
     if len(p) == 0:
         return ("", p)
     occ = p[0]
     occ = {"Nent.": "Rent."}.get(occ, occ)
-    if occ in OCCUPATIONS:
+    if occ in validator.occupations:
         return (occ, p[1:])
     # Sometimes OCR (or the typesetter) missed a final dot, as in "Schneid"
-    if not occ.endswith(".") and occ + "." in OCCUPATIONS:
+    if not occ.endswith(".") and occ + "." in validator.occupations:
         return (occ + ".", p[1:])
     return ("", p)
 
@@ -433,20 +252,7 @@ def create_sheet(workbook, page_id, page_num):
     cell.font = font
     cell.fill = gray_fill
     sheet.merge_cells("A1:J1")
-    for i, col in enumerate(
-        [
-            "ID",
-            "Scan",
-            "Name",
-            "Vorname",
-            "Ledigname",
-            "Titel",
-            "Beruf",
-            "Addresse",
-            "Addresse 2",
-            "Unklar",
-        ]
-    ):
+    for i, col in enumerate(COLUMNS):
         cell = sheet.cell(2, i + 1)
         cell.value = col
         cell.font = font
@@ -503,3 +309,4 @@ if __name__ == "__main__":
         year = int(os.path.basename(vol)[:4])
         if 1860 <= year <= 1860:
             split(vol, validator)
+    validator.report()
