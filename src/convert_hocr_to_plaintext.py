@@ -154,6 +154,12 @@ def convert_page(date, page_id, page_label):
         elif any(last.endswith(' ' + x) for x in JOIN_WORDS) and not cur.startswith('-'):
             last = last + ' ' + cur
             last_pos += ';' + cur_pos
+        elif line.startswith('u.') and not any(x in line for x in ['Comp', 'Cie']):
+            last = last + ' ' + cur
+            if last_pos != '':
+                last_pos += ';' + cur_pos
+            else:
+                last_pos = cur_pos
         else:
             if last or last_pos: yield f'{last}  # {last_pos}'
             last, last_pos = cur, cur_pos
