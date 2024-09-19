@@ -1,6 +1,7 @@
 # SPDX-FileCopyrightText: 2023 Sascha Brawer <sascha@brawer.ch>
 # SPDX-License-Identifier: MIT
 
+import argparse
 import csv
 import io
 import os
@@ -11,7 +12,7 @@ import zipfile
 import openpyxl
 import PIL
 
-from validator import Validator, COLUMNS
+from validator import COLUMNS, Validator
 
 GIVEN_NAME_ABBREVS = {
     line.strip()
@@ -73,6 +74,8 @@ def split(vol, validator):
         pos = ",".join([str(x) for x in simplify_pos(pos)])
         p = [x.strip() for x in p.split(",")]
         p = [x for x in p if x != ""]
+        if len(p) == 0:
+            continue
         if p[0].startswith("-"):
             p[0] = lemma + " " + p[0][1:].strip()
         name, rest = split_family_name(p[0])
@@ -303,10 +306,30 @@ def crop_image(img, pos):
     return openpyxl.drawing.image.Image(out)
 
 
+# Parse the string passed as the --years command-line argument.
+# For example, "1880-1883,1905" --> {1880, 1881, 1882, 1883, 1905}.
+def parse_years(years):
+    result = set()
+    for s in years.split(','):
+        s = s.strip()
+        if '-' in s:
+            if m := re.match(r'(\d{4})\-(\d{4})', s):
+                for year in range(int(m.group(1)), int(m.group(2)) + 1):
+                    result.add(year)
+            else:
+                raise ValueError(f'not in YYYY-YYYY format: {s}')
+        else:
+            result.add(int(s))
+    return result
+
+
 if __name__ == "__main__":
+    ap = argparse.ArgumentParser()
+    ap.add_argument('--years', default='1860', type=parse_years)
+    args = ap.parse_args()
     validator = Validator()
     for vol in list_volumes():
         year = int(os.path.basename(vol)[:4])
-        if 1860 <= year <= 1860:
+        if year in args.years:
             split(vol, validator)
     validator.report()
