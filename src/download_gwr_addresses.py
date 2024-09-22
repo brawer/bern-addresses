@@ -5,7 +5,7 @@
 # (Gebäude- und Wohnungsregister, GWR) and extract addresses
 # relevant for our project.
 #
-# This script generates the data file in data/gws_addresses.csv.
+# This script generates the data file in data/gwr_addresses.csv.
 # To refresh that data file, which is probably never needed,
 # re-run the script like this:
 #
