@@ -26,18 +26,27 @@ def read_pages():
 # If any of these words are last on a line, we join that line with the next one,
 # unless the following line starts with a hyphen (that got actually recognized
 # by OCR). The heuristic is not perfect but seems to work pretty well.
+#
+# Also: If a line starts with any of these words, join it with the previous
+# one, unless it's followed by Comp|Cie
 JOIN_WORDS = {
+    'a.',
     'am',
     'an',
     'auf',
     'bei',
     'beim',
     'd.',
+    'del',
     'dem',
     'den',
     'der',
     'des',
+    'durch',
     'eidg.',
+    'en gros',
+    'et',
+    'etc.',
     'für',
     'im',
     'in',
@@ -154,12 +163,16 @@ def convert_page(date, page_id, page_label):
         elif any(last.endswith(' ' + x) for x in JOIN_WORDS) and not cur.startswith('-'):
             last = last + ' ' + cur
             last_pos += ';' + cur_pos
-        elif line.startswith('u.') and not any(x in line for x in ['Comp', 'Cie']):
+        elif (any(line.startswith(x) for x in JOIN_WORDS) and
+                not any(x in line for x in ['Comp', 'Cie'])):
             last = last + ' ' + cur
             if last_pos != '':
                 last_pos += ';' + cur_pos
             else:
                 last_pos = cur_pos
+        elif any(line.startswith(x) for x in JOIN_WORDS) and any(x in line for x in ['Comp', 'Cie']):
+            if last or last_pos: yield f'{last}  # {last_pos}'
+            last, last_pos = '-' + cur, cur_pos
         else:
             if last or last_pos: yield f'{last}  # {last_pos}'
             last, last_pos = cur, cur_pos
