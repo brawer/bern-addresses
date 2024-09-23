@@ -5,9 +5,10 @@ import re
 
 # this module fixes up split lines
 #
-# we currently do two passes:
+# we currently do three passes:
 # 1. known/hyphenated words/lines
 # 2. lines ending with ',' (comma)
+# 3. lines starting with a street/abbrev
 #
 # the phases are split, to avoid collision,
 # even though they share the same approach
@@ -48,6 +49,14 @@ COMMA_GLUE_REORDER_OFFSET = 30
 # (1l +/-70px)
 ABANDON_STASH_AFTER_LINES = 6
 
+# street x/y offsets
+GLUE_STREET_WITHIN = 62
+
+STREETS_PATH = os.path.join(os.path.dirname(__file__), '..', 'streets.csv')
+STREETS = {street.strip() for street in open(STREETS_PATH, 'r')}
+
+STREET_ABBREVS_PATH = os.path.join(os.path.dirname(__file__), '..', 'street_abbrevs.csv')
+STREET_ABBREVS = {street_abbrevs.split(',')[0] for street_abbrevs in open(STREET_ABBREVS_PATH, 'r')}
 
 def list_volumes():
     path = os.path.join(os.path.dirname(__file__), '..', '..', 'proofread')
@@ -206,6 +215,49 @@ def fix_conjunctions():
                     line_stash = ''
 
                 out.write(line)
+        os.rename(vol + '.tmp', vol)
+
+        # reattach streets
+        line_buffer = [line.strip() for line in open(vol, 'r')]
+        known_street_frags = ['gasse', 'strasse']
+        for k, line in enumerate(line_buffer):
+
+            if line.startswith('#'): continue
+            if line_buffer[k-1].startswith('#'): continue
+            if line_buffer[k-1] == '': continue
+
+            first_line_seg = line.split()[0].strip()
+            if (first_line_seg in STREETS or
+                    first_line_seg in STREET_ABBREVS or
+                    first_line_seg in known_street_frags):
+
+                prev_line_txt, prev_line_pos = [x.strip() for x in line_buffer[k-1].split('#')]
+                prev_x, prev_y, _w, _h = [int(x) for x in prev_line_pos.split(';')[0].split(',')]
+
+                cur_line_txt, cur_line_pos = [x.strip() for x in line.split('#')]
+                cur_x, cur_y, _w, _h = [int(x) for x in cur_line_pos.split(';')[0].split(',')]
+
+                # note: 'e' and 's' seem bad-ocr'ed '='
+                # we fix them in apply_replacements.py
+                JOIN_CHARS = [':', '-', '=']
+
+                if (abs(prev_x-cur_x) < GLUE_STREET_WITHIN or
+                    abs(prev_y-cur_y) < GLUE_STREET_WITHIN):
+
+                    # trim trailing chars
+                    while any(prev_line_txt.endswith(x) for x in JOIN_CHARS):
+                        prev_line_txt = prev_line_txt[:-1]
+
+                    sep = '' if any(line.startswith(x) for x in known_street_frags) else ', '
+
+                    # mint brand new line
+                    minted_line = f'{prev_line_txt.title()}{sep}{cur_line_txt}  # {prev_line_pos};{cur_line_pos}'
+                    line_buffer[k-1] = minted_line
+                    line_buffer[k] = ''
+
+        with open(vol + '.tmp', 'w') as out:
+            for line in line_buffer:
+                if line != '': out.write(line + '\n')
         os.rename(vol + '.tmp', vol)
 
 
