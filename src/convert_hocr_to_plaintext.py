@@ -34,6 +34,7 @@ JOIN_WORDS = {
     'am',
     'an',
     'auf',
+    'b.',
     'bei',
     'beim',
     'd.',
@@ -55,6 +56,7 @@ JOIN_WORDS = {
     'u.',
     'um',
     'und',
+    'zum',
 }
 
 

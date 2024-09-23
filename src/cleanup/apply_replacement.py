@@ -74,6 +74,17 @@ FIXES = [
     (r'\\Vildhain'  , r'Wildhain'),
     # Schiosser
     (r'Schiosser', r'Schlosser'),
+    # Pau!
+    (r'Pau!', r'Paul'),
+    # Längegasse
+    (r'Längegasse', r'Länggasse'),
+    # Schauplaggasse
+    (r'Schauplaggasse', r'Schauplatzgasse'),
+    # Längsgasse
+    (r'Längsgasse', r'Länggasse'),
+    # Meggergasse/Meßgerg
+    (r'Meggerg', r'Metzgerg'),
+    (r'Meßgerg', r'Metzgerg'),
 
     (r'[ ]?\. \.,? ', '., '),
     (r'\.„', '. „'),
