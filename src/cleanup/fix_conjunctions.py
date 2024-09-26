@@ -50,13 +50,16 @@ COMMA_GLUE_REORDER_OFFSET = 30
 ABANDON_STASH_AFTER_LINES = 6
 
 # street x/y offsets
-GLUE_STREET_WITHIN = 62
+GLUE_STREET_WITHIN = 75
 
 STREETS_PATH = os.path.join(os.path.dirname(__file__), '..', 'streets.csv')
 STREETS = {street.strip() for street in open(STREETS_PATH, 'r')}
 
 STREET_ABBREVS_PATH = os.path.join(os.path.dirname(__file__), '..', 'street_abbrevs.csv')
 STREET_ABBREVS = {street_abbrevs.split(',')[0] for street_abbrevs in open(STREET_ABBREVS_PATH, 'r')}
+
+LASTNAME_PATH = os.path.join(os.path.dirname(__file__), '..', 'family_names.txt')
+LASTNAMES = {name.strip() for name in open(LASTNAME_PATH, 'r')}
 
 def list_volumes():
     path = os.path.join(os.path.dirname(__file__), '..', '..', 'proofread')
@@ -226,13 +229,23 @@ def fix_conjunctions():
             if line_buffer[k-1].startswith('#'): continue
             if line_buffer[k-1] == '': continue
 
+            # if first line segment is a street, street_abbrev
+            # or a known street frag: glue, unless it's also
+            # a lastname
             first_line_seg = line.split()[0].strip()
-            if (first_line_seg in STREETS or
+            if ((first_line_seg in STREETS or
                     first_line_seg in STREET_ABBREVS or
-                    first_line_seg in known_street_frags):
+                    first_line_seg in known_street_frags) and
+                    first_line_seg not in LASTNAMES):
 
                 prev_line_txt, prev_line_pos = [x.strip() for x in line_buffer[k-1].split('#')]
                 prev_x, prev_y, _w, _h = [int(x) for x in prev_line_pos.split(';')[0].split(',')]
+
+                # use max y for gluing decision
+                prev_ys = []
+                for pos in prev_line_pos.split(';'):
+                    prev_ys.append(int(pos.split(',')[1]))
+                prev_y = max(prev_ys)
 
                 cur_line_txt, cur_line_pos = [x.strip() for x in line.split('#')]
                 cur_x, cur_y, _w, _h = [int(x) for x in cur_line_pos.split(';')[0].split(',')]
@@ -241,8 +254,10 @@ def fix_conjunctions():
                 # we fix them in apply_replacements.py
                 JOIN_CHARS = [':', '-', '=']
 
-                if (abs(prev_x-cur_x) < GLUE_STREET_WITHIN or
-                    abs(prev_y-cur_y) < GLUE_STREET_WITHIN):
+                # glue if within bounds, and prev_y < cur_y
+                if ((abs(prev_x-cur_x) < GLUE_STREET_WITHIN or
+                    abs(prev_y-cur_y) < GLUE_STREET_WITHIN) and
+                    prev_y < cur_y):
 
                     # trim trailing chars
                     while any(prev_line_txt.endswith(x) for x in JOIN_CHARS):
@@ -251,7 +266,7 @@ def fix_conjunctions():
                     sep = '' if any(line.startswith(x) for x in known_street_frags) else ', '
 
                     # mint brand new line
-                    minted_line = f'{prev_line_txt.title()}{sep}{cur_line_txt}  # {prev_line_pos};{cur_line_pos}'
+                    minted_line = f'{prev_line_txt}{sep}{cur_line_txt}  # {prev_line_pos};{cur_line_pos}'
                     line_buffer[k-1] = minted_line
                     line_buffer[k] = ''
 

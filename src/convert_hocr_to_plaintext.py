@@ -12,6 +12,19 @@ import re
 # been greedy matched by ocr, so we split them
 LINE_WIDTH_THRESHOLD = 200
 
+# only try to glue up until this threshold
+MAX_GLUE_OFFSET = 100
+
+LASTNAME_PATH = os.path.join(os.path.dirname(__file__), 'family_names.txt')
+LASTNAMES = {name.strip() for name in open(LASTNAME_PATH, 'r')}
+
+GIVENNAME_PATH = os.path.join(os.path.dirname(__file__), 'givennames.txt')
+GIVENNAMES = {name.strip() for name in open(GIVENNAME_PATH, 'r')}
+
+STREET_ABBREVS_PATH = os.path.join(os.path.dirname(__file__), 'street_abbrevs.csv')
+STREET_ABBREVS = {street_abbrevs.split(',')[0] for street_abbrevs in open(STREET_ABBREVS_PATH, 'r')}
+
+
 def read_pages():
     pages = {}
     with open('src/pages.csv') as csvfile:
@@ -160,8 +173,38 @@ def convert_page(date, page_id, page_label):
         cur, cur_pos = [x.strip() for x in line.split('#')]
         # TODO(random-ao): worth moving to fix_conjunctions.py?
         if last.endswith('-'):
-            last = last[:-1] + cur
-            last_pos += ';' + cur_pos
+            _x, cur_y, _w, _h = [int(x) for x in cur_pos.split(';')[0].split(',')]
+            _x, last_y, _w, _h = [int(x) for x in last_pos.split(';')[0].split(',')]
+
+            # track movement on y, only attempt
+            # gluing up to threshold offset
+            last_ys = []
+            for pos in last_pos.split(';'):
+                last_ys.append(int(pos.split(',')[1]))
+            last_y = int(max(last_ys))
+            if abs(cur_y - last_y) > MAX_GLUE_OFFSET:
+                yield f'{last}  # {last_pos}'
+                last, last_pos = cur, cur_pos
+                continue
+
+            # don't glue lines that are rather
+            # clearly invalid fragments
+            cur_segs = cur.replace(',',' ').split()
+            if cur_segs[0] in GIVENNAMES:
+                yield f'{cur}  # {cur_pos}'
+                continue
+            elif cur_segs[0] in LASTNAMES:
+                yield f'{cur}  # {cur_pos}'
+                continue
+            elif cur_segs[0] in STREET_ABBREVS:
+                yield f'{cur}  # {cur_pos}'
+                continue
+            elif cur_segs[0] in ['-', 'gasse']:
+                yield f'{cur}  # {cur_pos}'
+                continue
+            else:
+                last = last[:-1] + cur
+                last_pos += ';' + cur_pos
         elif any(last.endswith(' ' + x) for x in JOIN_WORDS) and not cur.startswith('-'):
             last = last + ' ' + cur
             last_pos += ';' + cur_pos
