@@ -76,6 +76,10 @@ FIXES = [
     (r'Megg', r'Metzg'),
     (r'Mgg', r'Mtzg'),
     (r'Meßg', r'Metzg'),
+    # Elife
+    (r'Elife', r'Elise'),
+    # Nud.
+    (r'Nud\.', r'Rud.'),
 
     (r'[ ]?\. \.,? ', '., '),
     (r'\.„', '. „'),
