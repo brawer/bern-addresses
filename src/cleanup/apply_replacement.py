@@ -70,6 +70,12 @@ FIXES = [
     (r'Längegasse', r'Länggasse'),
     # Längsgasse
     (r'Längsgasse', r'Länggasse'),
+    # Schauplag/gasse
+    (r'Schauplagg', r'Schauplatzg'),
+    # Meggergasse/Meßgerg
+    (r'Megg', r'Metzg'),
+    (r'Mgg', r'Mtzg'),
+    (r'Meßg', r'Metzg'),
 
     (r'[ ]?\. \.,? ', '., '),
     (r'\.„', '. „'),

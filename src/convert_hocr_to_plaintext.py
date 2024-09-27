@@ -190,6 +190,7 @@ def convert_page(date, page_id, page_label):
             # don't glue lines that are rather
             # clearly invalid fragments
             cur_segs = cur.replace(',',' ').split()
+            if len(cur_segs) < 1: continue
             if cur_segs[0] in GIVENNAMES:
                 yield f'{cur}  # {cur_pos}'
                 continue
