@@ -61,6 +61,9 @@ STREET_ABBREVS = {street_abbrevs.split(',')[0] for street_abbrevs in open(STREET
 LASTNAME_PATH = os.path.join(os.path.dirname(__file__), '..', 'family_names.txt')
 LASTNAMES = {name.strip() for name in open(LASTNAME_PATH, 'r')}
 
+OCCUPATIONS_PATH = os.path.join(os.path.dirname(__file__), '..', 'occupations.csv')
+OCCUPATIONS = {occ.split(',')[0] for occ in open(OCCUPATIONS_PATH, 'r')}
+
 def list_volumes():
     path = os.path.join(os.path.dirname(__file__), '..', '..', 'proofread')
     path = os.path.normpath(path)
@@ -220,7 +223,7 @@ def fix_conjunctions():
                 out.write(line)
         os.rename(vol + '.tmp', vol)
 
-        # reattach streets
+        # reattach streets and occupations
         line_buffer = [line.strip() for line in open(vol, 'r')]
         known_street_frags = ['gasse', 'strasse']
         for k, line in enumerate(line_buffer):
@@ -235,6 +238,26 @@ def fix_conjunctions():
 
             prev_line_txt, prev_line_pos = [x.strip() for x in line_buffer[k-1].split('#')]
             cur_line_txt, cur_line_pos = [x.strip() for x in line.split('#')]
+
+            # take last segment of previous line and
+            # first segment of current line, glue and
+            # check if the result is a known occupation
+            prev_first_line_seg = prev_line_txt.replace(',', ' ').split()[-1]
+            cur_first_line_seg = cur_line_txt.replace(',', ' ').split()[0].strip() 
+            if prev_first_line_seg + cur_first_line_seg in OCCUPATIONS:
+                minted_line = f'{prev_line_txt}{cur_line_txt}  # {prev_line_pos};{cur_line_pos}'
+                line_buffer[k-1] = minted_line
+                line_buffer[k] = ''
+                continue
+
+            # occupations like Fournier-Sager want to keep their hyphen
+            if prev_first_line_seg.endswith('-'):
+                prev_first_line_seg = prev_first_line_seg[:-1]
+            if prev_first_line_seg + cur_first_line_seg in OCCUPATIONS:
+                minted_line = f'{prev_line_txt[:-1]}{cur_line_txt}  # {prev_line_pos};{cur_line_pos}'
+                line_buffer[k-1] = minted_line
+                line_buffer[k] = ''
+                continue
 
             # take last segment of previous line and
             # first segment of current line, glue and
