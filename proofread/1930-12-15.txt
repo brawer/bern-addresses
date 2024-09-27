@@ -1022,8 +1022,8 @@ Anderfuhren, Friedr., Schlosser, Wachtelw. 13  # 198,1183,783,30
 Anderhub, Anna, Bureaulistin Murtenstr. 155g  # 197,1254,784,32
 - Jos., Schuhmacher, Brunngasse 8  # 232,1286,588,34
 - Rob., Maschinenschlosser, Murtenstr. 155g  # 219,1323,763,33
-Anders, O., Coiffeurgeschäft, GerechtigkeitsAndersen, H. Chr., Chefmonteur, Fabrikstrasse 31  # 199,1365,782,30;199,1435,782,27;246,1473,163,22
-gasse 6  # 248,1399,120,30
+Anders, O., Coiffeurgeschäft, Gerechtigkeitsgasse 6  # 199,1365,782,30;248,1399,120,30
+Andersen, H. Chr., Chefmonteur, Fabrikstrasse 31  # 199,1435,782,27;246,1473,163,22
 - E. Johanna, Klavierlehrerin, Fabrikstr. 31  # 219,1504,758,28
 Anderwert, Rosa M., Bureaulistin, Langmauerweg 15  # 199,1541,780,35;249,1587,218,21
 Andina, Flavio, Maler, Schwarztorstrasse 11  # 201,1621,759,29
@@ -1461,7 +1461,7 @@ Autor, Anna, Redaktorin, Steinerstrasse 25  # 220,2028,739,30
 Autotrakt A.-G., Bureau u. Ausstellungsraum, Moserstrasse 52, Werkstatt: Stauffacherstrasse 17  # 218,2094,777,40;264,2133,733,30;263,2174,165,21
 Bollw. 7355  # 811,2170,183,25
 Aversano, Chr., Ladentochter, Berchtoldstr. 7  # 215,2205,784,27
-Edoardo, Kapellmeister, Berchtoldstr. 7  # 263,2241,676,26
+- Edoardo, Kapellmeister, Berchtoldstr. 7  # 263,2241,676,26
 d’Avila, Mme Alonso, Kalcheckweg 9  # 214,2276,647,30
 Ayres de Magalhaes, Rodrigo, Sekretär der portugiesischen Gesandtschaft, Spitalg. 30, Bollw. 1773  # 212,2311,782,30;259,2346,735,29;809,2382,183,25
 Babic Gjalski, Ivan, Attaché der jugoslawischen Gesandtschaft, Schiferliweg 2, Bollw. 2823  # 210,2470,786,33;256,2506,616,30;808,2541,185,24
@@ -4333,7 +4333,7 @@ Bizzozzero, Ad., Asphalter, Burgunderstr. 102, Bümpliz  # 1054,1435,754,32;1098
 - Arrigo, Maler, Seidenweg 21  # 1067,1503,497,30
 - B., Asphaltgeschäft, Keltenstr. 6, Bümpliz  # 1078,1538,730,28
 Zähr. 6126  # 1640,1572,166,23
-Edoardo, Asphalter, Aarbergergasse 42  # 1100,1604,649,31
+- Edoardo, Asphalter, Aarbergergasse 42  # 1100,1604,649,31
 Massimo, Velos, Motorräder, Reparaturwerkstätte, Länggassstrasse 83 Bw. 4432  # 1098,1637,710,30;1102,1672,707,29
 Björnstad, Gunvor, Egelgasse 26  # 1054,1707,537,27
 - Paula, Wwe., Egelgasse 26 (Hohlinden), Bollw. 3329  # 1087,1740,683,27;1631,1773,178,23
@@ -33436,9 +33436,8 @@ Lorbeerstrasse 2, Bümpliz  # 1121,272,448,34
 Preiswerk-Bischoff, H., Dr. phil., Muristr. 72  # 1074,310,750,30
 - Christ. 5421  # 1661,345,174,30
 - Esther, Muristrasse 72strasse 89  # 1122,380,387,24;1119,450,165,22
-RodtmattPrélaz, François César. Bereiter, Bollw. 2908  # 1691,411,151,33;1074,411,587,33;1671,518,167,29
-- -Geissbühler, Frieda, Kolonialwarenhdlg., Rodtmattstrasse 89  # 1074,482,766,37;1121,519,324,25
-- -Lehmann, Ida, Wwe., Rosenweg 18  # 1082,553,675,31
+RodtmattPrélaz, François César. Bereiter, Bollw. 2908, Rodtmattstrasse 89  # 1691,411,151,33;1074,411,587,33;1671,518,167,29;1121,519,324,25
+- -Geissbühler, Frieda, Kolonialwarenhdlg., - -Lehmann, Ida, Wwe., Rosenweg 18  # 1074,482,766,37;1082,553,675,31
 Premoselli, Luigi Onorato, Maurerpolier, Beundenfeldstrasse 5  # 1071,584,772,39;1120,625,356,25
 - Rita A., Bureaulistin, Standstrasse 15  # 1123,660,654,30
 Prescott-Harris, Helen M., Wwe., Tiefmattstrasse 10  # 1074,697,768,30;1121,736,164,21
