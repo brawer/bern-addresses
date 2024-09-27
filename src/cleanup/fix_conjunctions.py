@@ -229,16 +229,35 @@ def fix_conjunctions():
             if line_buffer[k-1].startswith('#'): continue
             if line_buffer[k-1] == '': continue
 
+            # TODO(otz): cleanup/unify once
+            # done w/occ/name gluing
+            first_line_seg = line.split()[0].strip()
+
+            prev_line_txt, prev_line_pos = [x.strip() for x in line_buffer[k-1].split('#')]
+            cur_line_txt, cur_line_pos = [x.strip() for x in line.split('#')]
+
+            # take last segment of previous line and
+            # first segment of current line, glue and
+            # check if they are a known street/street-abbrev
+            if prev_line_txt.endswith('-'):
+                prev_line_txt = prev_line_txt[:-1]
+            prev_first_line_seg = prev_line_txt.replace(',', ' ').split()[-1]
+            cur_first_line_seg = cur_line_txt.replace(',', ' ').split()[0].strip() 
+            if (prev_first_line_seg + cur_first_line_seg in STREETS or
+                prev_first_line_seg + cur_first_line_seg in STREET_ABBREVS):
+                minted_line = f'{prev_line_txt}{cur_line_txt}  # {prev_line_pos};{cur_line_pos}'
+                line_buffer[k-1] = minted_line
+                line_buffer[k] = ''
+                continue
+
             # if first line segment is a street, street_abbrev
             # or a known street frag: glue, unless it's also
             # a lastname
-            first_line_seg = line.split()[0].strip()
             if ((first_line_seg in STREETS or
                     first_line_seg in STREET_ABBREVS or
                     first_line_seg in known_street_frags) and
                     first_line_seg not in LASTNAMES):
 
-                prev_line_txt, prev_line_pos = [x.strip() for x in line_buffer[k-1].split('#')]
                 prev_x, prev_y, _w, _h = [int(x) for x in prev_line_pos.split(';')[0].split(',')]
 
                 # use max y for gluing decision
@@ -247,7 +266,6 @@ def fix_conjunctions():
                     prev_ys.append(int(pos.split(',')[1]))
                 prev_y = max(prev_ys)
 
-                cur_line_txt, cur_line_pos = [x.strip() for x in line.split('#')]
                 cur_x, cur_y, _w, _h = [int(x) for x in cur_line_pos.split(';')[0].split(',')]
 
                 # note: 'e' and 's' seem bad-ocr'ed '='
