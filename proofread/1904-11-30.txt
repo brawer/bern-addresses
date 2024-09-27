@@ -587,6 +587,7 @@ sekundarschule, Lgg., Hallerstr. 37 d. Alpes, Lgg., Zähringerstr. 15 85  # 305,
 - Charles,Kommis, Gerechtigkeitsg. 10 hausgasse 6  # 308,1701,1062,41
 - Chr., Kuttler, Lorrainestr. 60 b  # 304,1744,617,33
 - El., Glätterin, Herreng. 20  # 308,1788,517,40
+- Eml., Schrifts., Lorr., Quartierg. 7  # 307,1828,673,41
 - Friedr., Zimmermeister, Breitenrain, Turnweg 24  # 311,1869,702,41;305,1917,245,37
 - Jak., Kommis, Lorraine, Quartierhof7  # 304,1959,707,31
 - Joh., Schreinerm. (Obstbergw. 10), Postgasse 10  # 305,1996,709,43;309,2045,259,38
@@ -621,8 +622,7 @@ Bakteriologisches Institut, Holligen, Friedbühlstrasse 22  # 1068,1275,767,45;1
 Bakteriologisches Laboratorium der landw. Versuchs- u. Untersuchungsanstalt Liebefeld  # 1069,1361,766,44;1128,1402,706,37;1131,1447,332,32
 - S. B. B., Monbijoustrasse 39  # 1131,1531,563,41
 Balli, J. F., Kaufmann, Wylerstr. 10  # 1047,1745,721,34
-Ballif, Anna, Frl., Privatiere, RabbenEml., Schrifts., Lorr., Quartierg. 7  # 1048,1786,785,35;307,1828,673,41
-tal, Nischenweg 11 a  # 1129,1826,419,41
+Ballif, Anna, Frl., Privatiere, Rabbental, Nischenweg 11 a  # 1048,1786,785,35;1129,1826,419,41
 - Jenner, Eduard, Spitalgasse 5  # 1130,1869,625,41
 - Kurz, M., Wwe. des Grossrats, Schänzlistrasse 89  # 1130,1909,703,43;1131,1956,359,30
 Ballmann, F. A., Monteur b. J. H. Pfeifer, Lorrainestr. 48  # 1046,1996,787,43;1130,2041,296,29
@@ -1095,7 +1095,7 @@ Erben, Weissenb., Graffenriedw. 2  # 1154,1550,702,30
 - Joh., Schuhmacher, Metzgergasse 58  # 1100,2688,759,35
 # Date: 1904-11-30 Page: 25799515/144
 - M., Buchbinder, Längg., Zähringerstrasse 47  # 252,279,730,52;251,330,275,30
-Mich., Meister der Waffenfabrik, Wyler, Standweg 4  # 253,366,728,48;254,410,412,50
+- Mich., Meister der Waffenfabrik, Wyler, Standweg 4  # 253,366,728,48;254,410,412,50
 - N. F., Bahnangest., Aarbergerg. 24  # 255,453,727,55
 - Nikl., Camionneur, Postgasse 30  # 253,496,679,53
 - Paul, Techniker, Wyler, Scheibenweg 32  # 258,543,722,49;248,597,151,23
@@ -1522,7 +1522,7 @@ bergstrasse 20  # 1108,2245,287,32
 - J. P., Zimmermeister, Holligen, Fischermätteliweg 19  # 1109,2662,701,37;1110,2706,429,38
 # Date: 1904-11-30 Page: 25799521/150
 - Rud., Lehrer an der Lorraineschule, Wyler, Stockernweg 10  # 284,296,727,46;286,341,498,45
-Sim., Maschinenmeister, Länggasse, Zähringerstrasse 61  # 282,383,729,49;281,428,408,44
+- Sim., Maschinenmeister, Länggasse, Zähringerstrasse 61  # 282,383,729,49;281,428,408,44
 - Ulr., Milchhändl., Osterm., Breitw. 22  # 284,472,728,45
 - Ulr., Schreiner, Lgg., Magazinw. 2  # 283,515,729,50
 - Bigler, Joh., Sattler u. Tapezierer  # 282,556,728,53
@@ -5133,7 +5133,7 @@ Griessen, Hs., Vorsteher des städt. 1297  # 173,1189,839,51;933,353,98,30
 Arbeitsamts, Lorrainestrasse 6  # 262,1235,660,49
 Grigoleit, Emma El. und Ida Math., Schwestern, Schneiderinnen, Gerechtigkeitsgasse 74  # 174,1278,839,55;262,1323,748,53;258,1371,439,46
 Grimbühler, Henri Kasp., Tramangest., Postgasse 26  # 171,1409,837,62;258,1463,275,38
-Mich., Kommis, Altenbergstrasse 50  # 262,1505,748,52
+- Mich., Kommis, Altenbergstrasse 50  # 262,1505,748,52
 Grimm, Alb., Rev. d. eidg. Finanzkontrolle, Schwarztorstrasse 57  # 168,1548,839,52;255,1594,596,48
 - Alfr., Angestellter d. Fa. Kehrli &  # 256,1640,747,49
 Oeler, Länggasse, Finkenrain 5  # 256,1684,688,49
@@ -6211,7 +6211,7 @@ Heri, E., Bautechniker, Mattenh., Besenscheuerweg 18  # 225,2229,839,42;314,2273
 Herking-Bailat, Ch., Apoth., Marktg. 25  # 224,2318,841,45
 - Hermann, s. auch Herrmann  # 223,2363,600,37
 - Ernst Alf., Mechaniker, Lorraine, Polygonweg 7  # 314,2404,747,48;312,2454,308,43
-Eml., Kaffee- u. Küchliwirtschaft, Bärenplatz 13 u. Käfiggässchen 14  # 314,2496,749,43;313,2542,752,45
+- Eml., Kaffee- u. Küchliwirtschaft, Bärenplatz 13 u. Käfiggässchen 14  # 314,2496,749,43;313,2542,752,45
 - Eman., Schreinermeister in d. Lehrwerkstätten, Breitenrain, Turnw. 31  # 316,2584,744,46;311,2633,752,41
 - Ernst H., Bühnenarb. am Stadttheater, Lgg., Schwalbenw. 34  # 316,2674,746,44;312,2722,664,41
 - Fr., Privatier, Junkerngasse 57  # 315,2765,680,46
@@ -7597,7 +7597,7 @@ Jörg, Albert, Typograph, Kramgasse 51  # 1082,2668,797,44
 Jörin-Bieri, Joh., Buchbinder, Expedient, Junkerngasse 27  # 1085,2802,794,42;1178,2852,361,41
 # Date: 1904-11-30 Page: 25799612/233
 - Peter, Schneider, Aarbergerg. 27  # 245,267,692,42
-Ther., Fran, Glätt., Aarbergerg. 27  # 244,311,726,38
+- Ther., Fran, Glätt., Aarbergerg. 27  # 244,311,726,38
 Joss, A. L., Klavierlehrerin, Wallgasse 4  # 170,354,800,41
 - Chr., Mechaniker, Metzgerg. 16  # 248,399,654,42
 - Fr., Lehrer am Fr. Gymnas., Kirchenfeld, Helvetiastr. 33  # 219,441,751,42;245,486,500,30
@@ -7953,7 +7953,7 @@ weg 12), Schützenmattstr. 12  # 1136,856,606,31
 - Paul., Frau, Schneiderin, Matte, Schifflaube 24  # 1139,1979,728,38;1141,2019,291,35
 - R., Kaufmann, Lgg., Gesellschaftsstrasse 16  # 1141,2067,730,38;1143,2112,203,28
 - S., Prokurist, Kirchenfeld, Marienstrasse 14  # 1083,2153,786,32;1143,2200,201,27
-Sim., Zimmermann, Lorr., Waldw. 2  # 1145,2240,724,34
+- Sim., Zimmermann, Lorr., Waldw. 2  # 1145,2240,724,34
 - W. A. A., Fürspr., Stadtb., Terrassenweg 18  # 1144,2283,722,38;1143,2336,216,26
 - W., Schreiner, Lgg., Seidenw. 42  # 1145,2369,695,39
 - & Eggemann, Baumaterialienhandlung, Hirschengraben 5 487; Lagerhäuser Effingerstr. 92 u. 63  # 1142,2410,728,41;1143,2455,728,38;1144,2498,598,40
@@ -13221,7 +13221,7 @@ tonschemik., Sulgenb., Könizstr. 44  # 1111,2314,717,40
 - M., Frl., Klavierlehrerin, SchwanenRuffner, G., Chirurg-Masseur, Hühneraugenoperateur  # 1111,2355,713,38;1026,2443,800,37;1111,2489,316,34
 278), gasse 9  # 897,2357,95,32;1111,2407,154,28
 Mattenhof, Cäcilienstrasse 32  # 1111,2524,601,36
-Mich., Beamter d. S. B. B., Wyler, Wiesenstrasse 32  # 1110,2568,717,41;1111,2609,353,37
+- Mich., Beamter d. S. B. B., Wyler, Wiesenstrasse 32  # 1110,2568,717,41;1111,2609,353,37
 121174), Bureau: Laupenstr. 1 431  # 1112,2740,714,43
 Krankenwärter,  # 1510,2483,315,33
 # Date: 1904-11-30 Page: 25799698/311
@@ -17561,7 +17561,7 @@ Bankangestellter, Kirchenfeld, Thunstrasse 34  # 1241,1196,563,43;1102,1239,408,
 - - Art., - Chr., Polisseur in der Waffenfabrik, Lorraine, Quartierh. 3  # 1019,1197,176,44;1104,1282,698,40;1101,1324,440,36
 - Chr., Zimmermann, Lorraine, Randweg 9  # 1103,1368,694,39;1102,1416,125,25
 - Em., Beamter der Ausgabenkontrolle der S. B. B., Stadtbachstr. 36  # 1103,1447,699,42;1101,1488,701,41
-Eml., Oberlehrer, Laubeckstrasse 23  # 1102,1532,700,39
+- Eml., Oberlehrer, Laubeckstrasse 23  # 1102,1532,700,39
 - Em. Fr., Kommis, Lgg., Vereinsw. 18  # 1098,1578,706,41
 - Ernst, Bäckermeister, Stalden 27  # 1102,1620,663,40
 - F., Zuschneider, Zähringerstrasse 49  # 1099,1661,703,41
