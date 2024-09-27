@@ -4,6 +4,24 @@ import re
 FIXES = [
     # '[\w]=  #'
     (r'(\w+)=  #', r'\g<1> @@@GLUE@@@  #'),
+    # Schauplag/gasse
+    (r'Schauplagg', r'Schauplatzg'),
+    # Meggergasse/Meßgerg
+    (r'Megg', r'Metzg'),
+    (r'Mgg', r'Mtzg'),
+    (r'Meßg', r'Metzg'),
+    # fix .*gaffe > gasse
+    (r'gaffe', r'gasse'),
+    # fix Framg*
+    (r'Framg', r'Kramg'),
+    # fix Narbg
+    (r'Narbg', r'Aarbg'),
+    # gasse12 > gasse 12
+    (r'gasse(\d+)', r'gasse \g<1>'),
+    # Kirchenfeld
+    (r'Kirclienfeld|Kirchen-\sIfeld', r'Kirchenfeld'),
+    # Wildhain
+    (r'\\Vildhain'  , r'Wildhain'),
 ]
 
 def sanitize():

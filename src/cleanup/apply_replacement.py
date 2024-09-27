@@ -46,10 +46,6 @@ FIXES = [
     (r'Igfr\.', 'Jgfr.'),
     # Job
     ('Job\.', 'Joh.'),
-    # fix .*gaffe > gasse
-    (r'gaffe', r'gasse'),
-    # fix Framg*
-    (r'Framg', r'Kramg'),
     # Nealsch > Realsch
     (r'Nealsch', r'Realsch'),
     # Anstait > Anstalt
@@ -66,25 +62,14 @@ FIXES = [
     ('(g|G)ehiilf', '\g<1>ehülf'),
     # phone number indicator
     (r'£(\d\d+)', '↯\g<1>'),
-    # gasse12 > gasse 12
-    (r'gasse(\d+)', r'gasse \g<1>'),
-    # Kirchenfeld
-    (r'Kirclienfeld|Kirchen-\sIfeld', r'Kirchenfeld'),
-    # Wildhain
-    (r'\\Vildhain'  , r'Wildhain'),
     # Schiosser
     (r'Schiosser', r'Schlosser'),
     # Pau!
     (r'Pau!', r'Paul'),
     # Längegasse
     (r'Längegasse', r'Länggasse'),
-    # Schauplaggasse
-    (r'Schauplaggasse', r'Schauplatzgasse'),
     # Längsgasse
     (r'Längsgasse', r'Länggasse'),
-    # Meggergasse/Meßgerg
-    (r'Meggerg', r'Metzgerg'),
-    (r'Meßgerg', r'Metzgerg'),
 
     (r'[ ]?\. \.,? ', '., '),
     (r'\.„', '. „'),
