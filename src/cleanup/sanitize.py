@@ -21,9 +21,11 @@ FIXES = [
     # Kirchenfeld
     (r'Kirclienfeld|Kirchen-\sIfeld', r'Kirchenfeld'),
     # Wildhain
-    (r'\\Vildhain'  , r'Wildhain'),
+    (r'\\Vildhain', r'Wildhain'),
     # Junterng
-    (r'Junterng'  , r'Junkerng'),
+    (r'Junterng', r'Junkerng'),
+    # gåßlein
+    (r'gåßlein', r'gäßlein'),
 ]
 
 def sanitize():
