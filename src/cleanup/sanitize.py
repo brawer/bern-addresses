@@ -26,6 +26,17 @@ FIXES = [
     (r'Junterng', r'Junkerng'),
     # gåßlein
     (r'gåßlein', r'gäßlein'),
+    # various Z fixes
+    (r'3wicky', r'Zwicky'),
+    (r'3ybach', r'Zybach'),
+    (r'3yffet', r'Zysset'),
+    (r'3weili', r'Zweili'),
+    (r'Burlinden', r'Zurlinden'),
+    (r'3ürni', r'Zürni'),
+    (r'Büttel', r'Züttel'),
+    (r'3wahlen', r'Zwahlen'),
+    (r'3weyacker', r'Zweyacker'),
+    (r'3yro', r'Zyro'),
 ]
 
 def sanitize():
