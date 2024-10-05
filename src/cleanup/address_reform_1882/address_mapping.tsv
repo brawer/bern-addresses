@@ -427,8 +427,8 @@ Rothes Quartier	425	4	Waisenhausplatz	251		22		Waisenhausplatz	11
 Rothes Quartier	426	4	Waisenhausplatz	252		22		Waisenhausplatz	11	
 Rothes Quartier	427	4	Waisenhausplatz	253		24		Waisenhausplatz	11	
 Rothes Quartier	428	4	Waisenhausplatz	253		1		Aarbergergasse	11	
-Rothes Quartier	429	4	Waisenhausplatz	254		110 bis		Langmauerweg	11	Doubt in record
-Rothes Quartier	430	4	Waisenhausplatz	254		110	e	Langmauerweg	11	Doubt in record
+Rothes Quartier	429	4	Waisenhausplatz	254		110 	Langmauerweg	11	Doubt in record
+Rothes Quartier	430	4	Waisenhausplatz	254		110	a-e	Langmauerweg	11	Doubt in record
 Rothes Quartier	431	5	Waisenhausplatz	255	a	32		Waisenhausplatz	12	
 Rothes Quartier	432	5	Waisenhausplatz	255	b	6		Waisenhausstr	12	
 Rothes Quartier	433	5	Waisenhausstrasse	255	c	22		Waisenhausstr	12	
@@ -1123,7 +1123,7 @@ Grünes Quartier	1121	12	Herrengasse	300		28		Herrengasse	19
 Grünes Quartier	1122	12	Herrengasse	301		26		Herrengasse	19	
 Grünes Quartier	1123	12	Herrengasse	302		24		Herrengasse	19	
 Grünes Quartier	1124	12	Herrengasse	303		22		Herrengasse	19	
-Grünes Quartier	1125	12	Herrengasse	30+		20		Herrengasse	19	
+Grünes Quartier	1125	12	Herrengasse	304		20		Herrengasse	19	
 Grünes Quartier	1126	12	Herrengasse	305		18		Herrengasse	19	
 Grünes Quartier	1127	12	Herrengasse	306		16		Herrengasse	19	
 Grünes Quartier	1128	12	Herrengasse	307		14		Herrengasse	19	
@@ -1166,7 +1166,7 @@ Grünes Quartier	1164	12	Kesslergasse	337	c	7		Polizeigasse	19
 Grünes Quartier	1165	12	Kesslergasse	338		7		Kirchgasse	19	
 Grünes Quartier	1166	12	Kesslergasse	338		1		Münsterplatz	19	
 Grünes Quartier	1167	12	Kesslergasse	339		9		Kirchgasse	19	
-Grünes Quartier	1168	12	Kesslergasse	340			m	Kirchgasse	19	
+Grünes Quartier	1168	12	Kesslergasse	340		11		Kirchgasse	19	
 Weisses Quartier	1169	12	Stalden	1		9		Läuferplatz	19	
 Weisses Quartier	1170	12	Stalden	1		2		Stalden	19	
 Weisses Quartier	1171	12	Stalden	2		11		Läuferplatz	19	
@@ -1792,7 +1792,7 @@ Stadtbezirk obenaus	1790	1	Aarzieledrittel	13	g	10		Taubenstrasse	28
 Stadtbezirk obenaus	1791	1	Aarzieledrittel	13	h	12		Taubenstrasse	28	
 Stadtbezirk obenaus	1792	1	Aarzieledrittel	13	i	8		Taubenstrasse	28	
 Stadtbezirk obenaus	1793	1	Aarzieledrittel	14	a	14		Taubenstrasse	28	
-Stadtbezirk obenaus	1794	1	Aarzieledrittel	14	b-d	14 a-c		Taubenstrasse	28	Doubt in record
+Stadtbezirk obenaus	1794	1	Aarzieledrittel	14	b-d	14	a-c	Taubenstrasse	28	Doubt in record
 Stadtbezirk obenaus	1795	1	Aarzieledrittel	15	a	7		Sulgeneckstrasse	28	
 Stadtbezirk obenaus	1796	1	Aarzieledrittel	15	b	5		Sulgeneckstrasse	28	
 Stadtbezirk obenaus	1797	1	Aarzieledrittel	15	d	5	b	Sulgeneckstrasse	28	
@@ -2438,8 +2438,8 @@ Stadtbezirk obenaus	2436	6	Holligen-Drittel	303	g	51		Belpstrasse	33
 Stadtbezirk obenaus	2437	6	Holligen-Drittel	303	h	53	a	Belpstrasse	33	
 Stadtbezirk obenaus	2438	6	Holligen-Drittel	303	i	53		Belpstrasse	33	
 Stadtbezirk obenaus	2439	6	Holligen-Drittel	304	a	55		Belpstrasse	33	
-Stadtbezirk obenaus	2440	6	Holligen-Drittel	304	b	abgebrochen		Belpstrasse	33	Doubt in record
-Stadtbezirk obenaus	2441	6	Holligen-Drittel	304	c	abgebrochen		Belpstrasse	33	Doubt in record
+Stadtbezirk obenaus	2440	6	Holligen-Drittel	304	b			abgebrochen	33	Doubt in record
+Stadtbezirk obenaus	2441	6	Holligen-Drittel	304	c			abgebrochen	33	Doubt in record
 Stadtbezirk obenaus	2442	6	Holligen-Drittel	304	f	57		Belpstrasse	33	
 Stadtbezirk obenaus	2443	6	Holligen-Drittel	304	g	61		Belpstrasse	33	
 Stadtbezirk obenaus	2444	6	Holligen-Drittel	304	h	59		Belpstrasse	33	
@@ -2505,8 +2505,8 @@ Stadtbezirk obenaus	2503	6	Länggass-Drittel	175	a	2		Laupenstrasse	33
 Stadtbezirk obenaus	2504	6	Länggass-Drittel	175	b	20		Laupenstrasse	33	
 Stadtbezirk obenaus	2505	6	Länggass-Drittel	175	b	20	a	Laupenstrasse	33	
 Stadtbezirk obenaus	2506	6	Länggass-Drittel	175	b	20	b	Laupenstrasse	33	
-Stadtbezirk obenaus	2507	6	Länggass-Drittel	175	h	abgebrochen		Laupenstrasse	33	
-Stadtbezirk obenaus	2508	6	Länggass-Drittel	175	i	20	c	Stadtbachstrasse	33	
+Stadtbezirk obenaus	2507	6	Länggass-Drittel	175	h			abgebrochen		33	
+Stadtbezirk obenaus	2508	6	Länggass-Drittel	175	i	20	c	Laupenstrasse	33	
 Stadtbezirk obenaus	2509	6	Länggass-Drittel	175	f	11		Stadtbachstrasse	33	
 Stadtbezirk obenaus	2510	6	Länggass-Drittel	175	t	13		Stadtbachstrasse	33	
 Stadtbezirk obenaus	2511	6	Länggass-Drittel	175	d	19	a	Stadtbachstrasse	33	
@@ -3082,7 +3082,7 @@ Stadtbezirk obenaus	3080	10	Länggass-Drittel	267		1		Bierhübelistrasse	37
 Stadtbezirk obenaus	3081	10	Länggass-Drittel	267		1	a	Bierhübelistrasse	37	
 Stadtbezirk obenaus	3082	10	Länggass-Drittel	268	a	22		Schlachthausweg	37	
 Stadtbezirk obenaus	3083	10	Länggass-Drittel	268	c	22	a	Schlachthausweg	37	
-Stadtbezirk obenaus	3084	10	Länggass-Drittel	268	b	abgebrochen		Schlachthausweg	37	
+Stadtbezirk obenaus	3084	10	Länggass-Drittel	268	b			abgebrochen	37	
 Stadtbezirk obenaus	3085	10	Länggass-Drittel	268	d	48		Schlachthausweg	37	
 Stadtbezirk obenaus	3086	10	Länggass-Drittel	268	e	51		Schlachthausweg	37	
 Stadtbezirk obenaus	3087	10	Länggass-Drittel	268	f	49		Schlachthausweg	37	
