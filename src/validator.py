@@ -115,9 +115,6 @@ class Validator:
         print("%s:%s:%s: %s" % (pos[0], pos[1], entry["Scan"], message))
 
     def report(self):
-        for occ in self.occupations:
-            if occ not in self._occupation_counts:
-                print('src/occupatons.csv: unused entry "%s"' % occ)
         if self._missing_family_names:
             print("Missing family names")
             print("--------------------")
