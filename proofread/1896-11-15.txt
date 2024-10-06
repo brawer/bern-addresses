@@ -110,7 +110,8 @@ Aktienspinnerei Felsenau, Felsenaustrasse 17  # 1119,1328,750,57;1179,1376,190,3
 la Ménagère (G. Lauterburg-Jäggi), Haus- und Küchengerätehandlung, Marktgasse 9  # 1147,1410,722,58;1179,1451,689,57;1178,1497,263,43
 A la Tricoteuse (Ingold-Dürger), Strickerei- u. Damenkonf.-Geschäft, Marktgasse 16  # 1093,1534,774,55;1176,1576,690,53;1175,1629,166,24
 - Albrecht, s. auch Olbrecht u. Obrecht  # 1091,1656,755,53
-- -Gosteli, L. R., Schriftsetzer, LängAlchenberger, Fr. Johann, Schneider, gasse, Zähringerstr. 45, Marzilistrasse 9  # 1113,1699,754,52;1090,1779,773,59;1173,1744,455,43;1173,1824,306,37
+- -Gosteli, L. R., Schriftsetzer, Länggasse, Zähringerstr. 45  # 1113,1699,754,52;1173,1744,455,43
+Alchenberger, Fr. Johann, Schneider, Marzilistrasse 9  # 1090,1779,773,59;1173,1824,306,37
 Alder, Joh. Kasp., Schneider, Neueng. 15  # 1088,1865,776,52
 Aliverti, G., Maurer, Breitenr., Turnw. 26  # 1087,1908,777,46
 Alkoholverwaltung, eidg., Bundesg. 12  # 1113,1941,747,62
@@ -353,8 +354,7 @@ Aeschlimann, Adele, Broderiehandlung  # 924,2362,787,51
 - E., Gehülfe der Oberpostdirektion, Aeuss. Bollwerk 21  # 1009,2699,697,52;1008,2745,385,35
 # Date: 1896-11-15 Page: 3015358/6
 Mittelstrasse 28  # 385,272,303,37
-- Fr., Notar, Kanzlist auf d. eidgen.  # 382,309,672,55
-Finanzbureau, Münzgraben 13  # 382,349,577,56
+- Fr., Notar, Kanzlist auf d. eidgen. Finanzbureau, Münzgraben 13  # 382,309,672,55;382,349,577,56
 - Gottfr., Postangestellter, Längg., Zähringerstrasse 18  # 382,390,670,57;378,430,377,48
 - Jak., Privatier, Längg., Schreinerweg 7  # 377,474,674,52;376,521,121,28
 - Joh., Droschkenhalter, Könizstr. 26  # 377,546,652,59
@@ -373,8 +373,8 @@ Au Bon marché (Alb. Lauterburg-Käser), Merceriehandlung, Marktgasse 52  # 300,
 Au Dock (K. Hoch), Schuhwarenhandlg., Bachmann, Fr., Abwart beim pharm.  # 298,1518,1521,71
 Auber, Fr., Schuhmacher, Aarbergergasse 53  # 276,1594,757,58;355,1653,168,24
 Auchlin, Th., Maler, Postgasse 26  # 275,1678,658,54
-Auer, Hs., Prof., Architekt, BundesHch., Postangestellt., Murtenstr. 42  # 275,1719,757,54;355,1797,675,56
-gasse 40  # 354,1773,164,22
+Auer, Hs., Prof., Architekt, Bundesgasse 40  # 275,1719,757,54;354,1773,164,22
+- Hch., Postangestellt., Murtenstr. 42  # 355,1797,675,56
 Aufenast, Karl, Handelsgärtner (Nachf.  # 272,1839,756,57
 von J. Hofmann), Fricktreppe 3  # 353,1882,615,55
 Augenklinik, im Inselspital  # 291,1923,514,50
@@ -1484,8 +1484,7 @@ Boss, Albr., Küfer, Lorrainestrasse 26  # 1047,2100,752,59
 - Schlapbach, J. G., Büreauchef der  # 269,362,692,57
 - J. S., Längg., Bühlstr. 38  # 268,406,501,47
 Bossard, Fr., Amtsnotar (Amthausg. 1), Neuengasse 8  # 187,445,771,56;267,488,267,46
-- Fried., Vicedirektor der schweiz.  # 268,528,690,48
-Mobiliar-Assekuranz, Kirchenfeld, Luisenstrasse 16  # 266,569,688,54;263,613,324,38
+- Fried., Vicedirektor der schweiz. Mobiliar-Assekuranz, Kirchenfeld, Luisenstrasse 16  # 268,528,690,48;266,569,688,54;263,613,324,38
 - Gottfr., Schneidermstr., Stalden 12  # 263,653,692,50
 - Joh., Büchsenmacher, Mattenhof, Schwarzthorstrasse 25  # 234,693,720,53;262,735,436,41
 Bossert, Fr. Alb., Steindrucker, Lorraine, Centralweg 19  # 178,774,774,56;258,817,416,48
@@ -2130,8 +2129,7 @@ Carey-Bay, M., Frau, Lingerie- u. Broderiehandlung, Kramgasse 74  # 970,1126,780
 Carlin-de Weisseneck, Mad., Schanzenbühl, Kanonenweg 14  # 988,1204,762,52;1053,1251,434,40
 Carnal, P. E., Privat., Lgg., Erlachstr. 3  # 969,1287,782,52
 - Schaffter, A., Privat., Könizstr. 55  # 1053,1337,699,41
-Carrière, Henri, Adjunkt des schweiz.  # 970,1373,779,51
-Gesundheitsamtes, Längg., Hallerstrasse 26  # 1054,1419,693,42;1054,1466,191,25
+Carrière, Henri, Adjunkt des schweiz. Gesundheitsamtes, Längg., Hallerstrasse 26  # 970,1373,779,51;1054,1419,693,42;1054,1466,191,25
 Cartier, Jos., Schlosser, Lorr., Jurastr. 59  # 971,1499,779,47
 Cartonfabrik Deisswyl b. Stettlen  # 993,1546,672,41
 Casanova, Rosa, Frau, Kostgeberin, Lorrainestrasse 46  # 971,1585,777,46;1054,1630,360,33
@@ -3816,8 +3814,7 @@ Gfeller, Lorrainestr. 15 a  # 1132,667,476,39
 Könizstrasse 50  # 271,287,300,32
 - Rindlisbacher, J., Kostgeberei und Küchliwirtschaft, Neuengasse 10  # 272,327,681,41;272,367,641,41
 - Schweizer, Ros., Wwe. d. Gipsers, Längg., Gesellschaftsstrasse 10  # 269,405,684,44;269,449,604,36
-- Wermuth, Frau, Modiste, Längg., Gilomen, G., Schneider, Brunngasse 28  # 269,490,1460,42
-Wyderrain 13  # 271,533,267,34
+- Wermuth, Frau, Modiste, Längg., Gilomen, G., Schneider, Brunngasse 28, Wyderrain 13  # 269,490,1460,42;271,533,267,34
 Giacometti-Danté, Malergeselle, Matte, Gerbergasse 6  # 190,571,762,41;272,613,275,37
 - -Stooss, R., Witwe, Privatière, Herrengasse 17  # 209,653,744,42;268,694,296,34
 de Giacomi, Joach., Dr. med., Arzt und Privatdocent, Bärenplatz 4  # 212,735,740,43;268,773,534,38
@@ -3877,8 +3874,7 @@ Gisel, J. Jak., Beamter des Eisenbahndepartem., Längg., Zähringerstr. 17  # 98
 Gisiger-Aeberhard, E., Wwe., Weissenbühl, Seftigenstr. 99 (Schönegg)  # 981,2198,763,49;1064,2242,628,45
 Giskra, Sekretär der österreichischen  # 980,2275,766,48
 Gesandtschaft, Kanonenweg 18 Nextining  # 1062,2313,839,69
-Gisler, G., Schreiner, Lorraine, Schmid  # 980,2366,752,45
-weg 6  # 1063,2418,121,24
+Gisler, G., Schreiner, Lorraine, Schmidweg 6  # 980,2366,752,45;1063,2418,121,24
 - G., Cementer, Lorr., Quartierg. 27  # 1061,2448,684,41
 - Rudolf, Pferdewärter, Lorr., Jurastrasse 28  # 1060,2484,684,47;1059,2534,195,26
 Glade, Joh. Karl, Spengler, Marktg. 61  # 979,2569,762,45
@@ -4132,8 +4128,7 @@ Grosshans, Georg Friedr., Drechsler, Langmauerweg 17  # 178,1558,760,49;258,1604
 Grossheim-Jester, M., Frau, Lehrerin, Junkerngasse 55  # 178,1641,762,50;256,1684,327,44
 Grossmann, Aug. Math., Privatière, Mattenhof, Brunnmattstrasse 30  # 175,1722,514,47;736,1729,204,40;254,1761,620,46
 - Konr., Detailablage in Fournituren für Herrenkleider, Neuengasse 23, Eingang Ryffligässchen  # 253,1805,684,48;252,1841,684,53;255,1889,465,40
-- Hug, A., Beamter beim Oberkriegskommissariat, Mattenhof, Besen-  # 253,1927,682,49;252,1967,683,45
-scheuerweg 12  # 249,2009,287,42
+- Hug, A., Beamter beim Oberkriegskommissariat, Mattenhof, Besenscheuerweg 12  # 253,1927,682,49;252,1967,683,45;249,2009,287,42
 Groux, Ed. Frz., Angestellter der J. S., Lorraine, Platanenweg 8  # 171,2048,763,51;250,2093,488,45
 Gruber, Chr., Angest. bei Hrn. Haaf, Lorr., Haldenweg 8  # 169,2132,764,48;248,2175,383,41
 - Chr. Friedr., Zimmermann, Länggasse, Muesmattstrasse 42  # 250,2212,542,49;818,2221,114,40;249,2259,512,34
@@ -4426,8 +4421,7 @@ buchsee  # 253,1464,151,30
 - Tännler, Postwagenmeister, Kramgasse 15  # 244,2530,693,49;243,2584,169,22
 - Wüthrich, M., Witwe, Speicherg. 31  # 242,2612,692,48
 - Wyler, M., Witwe., Länggasse, Zähringerstrasse 38  # 245,2655,689,52;242,2697,389,41
-Häberlin - Simmen, Wwe., Kirchenfeld, anstalt, Sandrain 35  # 969,265,787,49;264,309,394,34
-Luisenstr. 14  # 1068,314,250,33
+Häberlin - Simmen, Wwe., Kirchenfeld, anstalt, Sandrain 35, Luisenstr. 14  # 969,265,787,49;264,309,394,34;1068,314,250,33
 - Friedr., Kaufmann, Kirchenfeld, Thunstrasse 14  # 1069,396,684,39;1068,435,291,33
 - Fried., Schlosser, Postgasse 52  # 1068,476,606,45
 - Robert, Kaufmann, in Firma Lauterburg und Haberstich, Kirchenfeld, Thunstrasse 14  # 1066,518,687,37;1065,552,686,50;1065,600,292,33
@@ -5763,8 +5757,7 @@ Chalet Erica), Christoffelgasse 7  # 268,2566,639,44
 - -Dirks, J., gew. Direktor, Ostermundigen  # 236,2612,712,37;268,2654,187,37
 - Röthlisberger, Gottf., i. F. Röthlisberger & Cie., Kirchenfeld, Thunstrasse 7  # 1055,292,681,32;1056,330,679,35;1056,376,170,27
 - Rubli, A. M., Feinwascherin, Brunngasse 9  # 1056,412,680,41;1056,463,143,24
-- Widmer, J. J., Sekretär d. kanton.  # 1056,494,680,37
-Armendirektion, Junkerng. 43  # 1057,534,593,39
+- Widmer, J. J., Sekretär d. kanton. Armendirektion, Junkerng. 43  # 1056,494,680,37;1057,534,593,39
 Jester-Jungen, M., Witwe, Länggasse, Magazinweg 2  # 976,575,760,43;1057,614,283,40
 Jeuch, Rob. Ernst, Angestellter d. eidg. topographischen Bureau, Längg., Falkenweg 9  # 976,655,762,42;1058,695,679,42;1058,738,248,36
 Joder, Friedr., Baumeister, Länggasse, Lerchenweg 28  # 974,777,764,41;1056,819,300,37
@@ -7568,8 +7561,7 @@ gasse, Neufeldstrasse 19  # 1048,2468,471,33
 - Alph., Maler, Kesslergasse 35  # 1048,2541,571,52
 - Emil, Maschinenm., Lorr., Polygonweg 7  # 1049,2582,669,54;1050,2636,118,23
 # Date: 1896-11-15 Page: 3015456/104
-- Käser, Frau, Abwart der kanton.  # 346,263,669,43
-Brandversich.-Anstalt, Amthausg. 1  # 345,300,663,51
+- Käser, Frau, Abwart der kanton. Brandversich.-Anstalt, Amthausg. 1  # 346,263,669,43;345,300,663,51
 Liniger, Bend., Schmiedmeister, Seftigenstrasse 99  # 267,341,744,52;344,385,288,37
 - Chr., Steinhauer, Lorr., Quartierh. 11  # 344,422,661,51
 - Fried., Angestellter d. städtischen  # 343,459,667,48
@@ -7997,8 +7989,7 @@ Martig, Eman., Angestellter d. S. C. B., Mattenhof, Schwarzthorstrasse 25  # 964
 Martignoni, Rob., Maler, Stalden 20  # 962,1723,667,53
 Martin, Aug., Kanzleigehülfe d. Centralamtes f. d. intern. Eisenb.-Transport, Wyler, Allmendweg 25  # 961,1767,758,46;1040,1803,674,53;1040,1848,456,45
 - L., Sekretär d. Mat.-Bureau d. eidg. Telegr.-Verwltg., Wyler, Allmendweg 25  # 1038,1887,678,48;1038,1928,680,46;1037,1980,138,19
-- Burri, El., Wwe., Privatière, Wyler, Allmendweg 25  # 1037,2008,677,50;1040,2047,299,39
-Niesenweg 10  # 1034,2130,266,38
+- Burri, El., Wwe., Privatière, Wyler, Allmendweg 25, Niesenweg 10  # 1037,2008,677,50;1040,2047,299,39;1034,2130,266,38
 - Gehrig, Witwe des Schreiners, Ob. Villette, Bühlstrasse 6  # 1035,2169,661,50;1035,2210,508,38
 Marzohl, Jos., Privatier, Kirchenfeld, Luisenstrasse 7  # 954,2250,758,50;1031,2294,295,31
 Maschinenstrickschule, Bernische (Geschäftsführer: Hr. E. Ruef), Matte, Wasserwerkg. 14; Detailmagazin, Gerbergasse 40  # 953,2331,758,49;1032,2370,677,49;1031,2411,678,51;1032,2455,298,38
@@ -8594,8 +8585,7 @@ Christoph, Landwirt und Lohnwascher, Tiefenaustr. 91  # 1090,1419,670,45;1088,14
 - F., Bahnarbeiter, Wyler, Scheibenweg 4a  # 1080,1859,666,52;1079,1911,138,22
 - Fr. E., Droschkenhalter, Schänzlistrasse 63  # 1077,1938,668,52;1078,1983,188,30
 - G., Steinhauer, Matte, Wasserwerkgasse 10  # 1078,2020,665,49;1075,2071,160,22
-- Gottfr., Steinhauer, Wyler, Flur-  # 1076,2097,668,53
-weg 19  # 1074,2148,138,28
+- Gottfr., Steinhauer, Wyler, Flurweg 19  # 1076,2097,668,53;1074,2148,138,28
 - G., Sekretär d. Buchhaltung d. J. S., Längg., Mittelstr. 44  # 1073,2178,666,55;1072,2222,393,40
 - G., Bannwart, Wankdorfweg 10 b  # 1013,2256,697,54
 - H., Chef der Güterexpedition der S.  # 1070,2296,665,55
@@ -8888,15 +8878,13 @@ Gerechtigkeitsgasse 71  # 1107,313,432,48
 - Theilkäs, Anna, Wwe., Schossh., Laubeggstrasse 44  # 1092,908,664,57;1087,952,359,43
 Mumprecht, J., Möbelschreiner, Murtenstrasse (35 a) 39  # 1010,988,748,55;1088,1031,303,46
 - R., Schlosser, Weissenbühl, Morillonweg 40  # 1027,1069,728,53;1085,1111,238,43
-Münch, Max, Architekt bei der eidgen.  # 1008,1146,746,60
-Baudirektion, Weissenbühl, Oberer, Beaumontweg 6  # 1084,1189,670,54;1085,1228,308,49
+Münch, Max, Architekt bei der eidgen. Baudirektion, Weissenbühl, Oberer, Beaumontweg 6  # 1008,1146,746,60;1084,1189,670,54;1085,1228,308,49
 - Rüfenacht, Witwe, Schosshalde, Höheweg 4  # 1082,1271,666,54;1082,1313,216,41
 Münger, Ad., Söhne, Seifen- u. Krystallsodafabrik, Friedheimweg 9  # 1025,1350,725,56;1081,1391,537,51
 - Chr., Schneidermstr., Kesslerg. 46  # 1079,1431,670,52
 - Christ., Zimmermann, Matte, Gerbergasse 24  # 1081,1471,666,52;1078,1513,224,37
 - E., in Firma Ad. Münger Söhne, Weissenbühl, Friedheimweg 9  # 1080,1547,666,60;1079,1589,576,55
-- Friedr., Angestellter des eidgen.  # 1078,1630,668,54
-Sanitätsmagazins, Herrengasse 28  # 1075,1671,650,52
+- Friedr., Angestellter des eidgen. Sanitätsmagazins, Herrengasse 28  # 1078,1630,668,54;1075,1671,650,52
 - Hans, Sohn, Gipser u. Maler, Spitalgasse 16  # 1075,1711,671,55;1075,1756,210,36
 - J., Vater, Tapetenhdlr. (Marzilistrasse 15), Spitalgasse 16  # 1071,1789,673,57;1073,1841,505,53
 - (siehe Inseratenteil, pag. 25)  # 1152,1881,441,44
@@ -9225,8 +9213,7 @@ Obrist, Hans, Beamter d. Telegraphendirektion, Kirchenf., Luisenstr. 16  # 273,5
 Observatorium, Grosse Schanze  # 291,812,590,27
 Ochs, Jak., Schneider, Metzgergasse 4  # 272,850,732,34
 Ochsen, Herberge mit Rest. (E. Lenzin), Metzgergasse 23  # 272,891,731,29;347,930,314,34
-Ochsenbein, Chr., Direktor der schweiz.  # 273,969,729,30
-Zeitungsdepeschenagent., Junkerngasse 47  # 347,1009,657,31;350,1060,162,18
+Ochsenbein, Chr., Direktor der schweiz. Zeitungsdepeschenagent., Junkerngasse 47  # 273,969,729,30;347,1009,657,31;350,1060,162,18
 - E. G., Büchsenmacher, Breitenrain, Zaunweg 20  # 352,1083,652,33;350,1126,227,36
 - Fr., Techniker beim eidgenössischen  # 350,1166,654,32
 Geniebureau, Weissenb., Seftigenstrasse 32  # 352,1202,653,34;349,1247,176,25
@@ -10152,8 +10139,8 @@ Rösch, s. auch Resch  # 1013,707,407,40
 Roschi, F., Gasanzünder der S. C. B., Langgasse, Buchenweg 10  # 1008,1144,753,43;1087,1189,511,38
 Rosen, C., Frau, Knabenschneiderin, Stadtbach, Terassenweg 10  # 1007,1225,753,42;1088,1265,529,45
 - Jak., Schuhmacher, Stadtb., Terrassenweg 10  # 1087,1307,671,40;1085,1352,258,34
-Rosenbaum, E. L. A., Musiker, JunkernRosenfeld, Ad., Schriftsetzer, Längg., gasse 27  # 1008,1383,751,42;1006,1464,752,44;1086,1439,162,19
-Forstweg 57  # 1087,1508,237,37
+Rosenbaum, E. L. A., Musiker, Junkerngasse 27  # 1008,1383,751,42;1086,1439,162,19
+Rosenfeld, Ad., Schriftsetzer, Längg., Forstweg 57  # 1006,1464,752,44;1087,1508,237,37
 - A., Damen-Friseurin, Länggasse, Forstweg 57  # 1085,1543,672,46;1085,1588,241,32
 Roseng, Ed., Polizeidiener, Lorrainestrasse 31  # 1007,1624,749,42;1086,1667,184,29
 Rosenmund, D. M., Topograph b. eidg. topogr. Bureau, Bundesgasse 16  # 1005,1703,750,47;1084,1746,624,40
@@ -10340,8 +10327,7 @@ Rüd, s. auch Rüdt  # 221,897,352,32
 Rudrauff-Schnyder, M. Charl., Wwe. d. Stadtkassiers, Aeuss. Bollwerk 15  # 217,1291,751,49;301,1333,648,44
 Rüdt, s. auch Rüd  # 216,1376,349,35
 - Ed., Ingenieur b. eidg. EisenbahnDepart., Gerechtigkeitsgasse 64  # 297,1415,669,46;295,1455,616,49
-Rüede, J. E., Buchhalter der schweiz.  # 213,1491,754,45
-Vereinsbk., Längg., Zähringerstr. 18  # 295,1536,673,49
+Rüede, J. E., Buchhalter der schweiz. Vereinsbk., Längg., Zähringerstr. 18  # 213,1491,754,45;295,1536,673,49
 Rüedi, Ferd., Angest. b. d. Polizeidirekt., Gryphenhübeli, Grüneckweg 10 a  # 213,1573,755,49;296,1616,644,48
 - J. Fr., Kanzlist b. Obergericht u. Offizial der Anklage- und Polizeikammer, Postgasse 50  # 296,1653,671,51;295,1696,670,48;294,1737,428,41
 - Jak., gew. Kleiderhändler, Wyler, Scheibenweg 5  # 293,1776,672,50;294,1810,283,51
@@ -10506,8 +10492,7 @@ Rybi, s. auch Ribi  # 188,2430,349,37
 - Rohr & Cie., Gesellsch. für Holzindustrie, Längg., Fabrikstr. 12  # 209,2551,733,39;267,2592,615,46
 - F., Mechaniker, Hôtelg. 8 und Sulgeneckstrasse 38  # 1080,276,672,44;1080,319,327,36
 - Fr., Sohn, Metzgermeister (Metzgergasse 26), Grosse Schal  # 1044,355,706,49;1079,401,452,32
-- J. E., Büchsenmacher, Matte, Mühle-  # 1080,433,670,47
-platz 2  # 1075,481,135,31
+- J. E., Büchsenmacher, Matte, Mühleplatz 2  # 1080,433,670,47;1075,481,135,31
 - Sam., Schuhmacher, Brunng. 56  # 1078,513,614,46
 Rychner, s. auch Richner u. Rychener  # 998,556,752,46
 - Gross, K. B., Wwe. Lorr., Centralweg 23  # 1077,599,671,43;1075,642,205,32
@@ -10551,8 +10536,7 @@ Jurastrasse 35  # 308,280,268,28
 Rytz, s. auch Ritz  # 229,558,344,33
 - Anna, Hebamme, Längg., Falkenweg 7  # 310,597,664,40;306,645,119,21
 - Otto, Revisor d. Schw. Mob.-Vers.Gesellsch., Gerechtigkeitsg. 75  # 309,675,665,38;307,712,585,46
-- Grünig, Gust., Kanzlist d. eidgen.  # 307,752,667,42
-Oberfeldarztes, Altenbergstrasse 5  # 309,791,670,47
+- Grünig, Gust., Kanzlist d. eidgen. Oberfeldarztes, Altenbergstrasse 5  # 307,752,667,42;309,791,670,47
 Saal-Richard, Ch., Coiffeur (Spitalg. 5), Schauplatzg. 24  # 228,992,744,43;306,1036,300,34
 Saam, A., Bedienter u. Kutscher, Pension, Ryffligässchen 6  # 227,1073,746,38;307,1115,310,36
 Sacchi, Ed., Maler, Längg., Forstw. 49  # 228,1149,718,45
@@ -11452,8 +11436,7 @@ Schörlin, Leop., Schuster, Postgasse 60  # 1004,2575,744,46
 Schosshalden-Friedhof (M. Zimmermann, Gärtner), Ostermundigenstrasse 60  # 1003,2615,761,49;1082,2660,683,42
 # Date: 1896-11-15 Page: 3015508/156
 Schosshaldenschulhaus, Laubeggstr. 23  # 236,267,765,40
-Schott-Erbeau, Sam. Rob., Architekt  # 262,309,722,30
-Finkenhubelweg 22  # 317,388,376,34
+Schott-Erbeau, Sam. Rob., Architekt, Finkenhubelweg 22  # 262,309,722,30;317,388,376,34
 Schouvey, Luise, Damenschneiderin, Kornhausplatz 14  # 238,428,745,37;315,467,335,35
 Schrag, Joh. Ed., Spengler, Sulgenb., Könizstrasse 39  # 238,506,745,41;318,548,297,29
 - Leonh., Schriftsetzer, Metzgerg. 5  # 315,585,647,35
@@ -11582,8 +11565,7 @@ Schützengesellschaft, Verein., Schiessstand Wyler  # 1030,1136,749,53;1091,1179
 Schützenstube, Schweiz., im hist. Museum, Kirchenfeld, Helvetiaplatz 5  # 1008,1218,770,50;1090,1260,688,52
 Schwaar, A. A., Coiffeur, Papiermühlestrasse 16  # 1007,1299,768,55;1088,1348,189,27
 - Joh., Milch- u. Ankenverkauf, Matte, Schifflaube 38  # 1088,1382,685,54;1086,1423,276,36
-- Wwe. & Sohn, Droschkenhalter, Junkerngasse 24  # 1087,1464,686,52;1084,1504,327,45
-Oberweg 3  # 1085,1588,216,43
+- Wwe. & Sohn, Droschkenhalter, Junkerngasse 24, Oberweg 3  # 1087,1464,686,52;1084,1504,327,45;1085,1588,216,43
 - Fr., Verwalter d. kant. Brandvers.-  # 1083,1670,686,44
 - G. A., gew. Pfarrer, Marktg. 49  # 1083,1751,622,48
 - Jak., Abwart d. Alkoholverwaltg., Bundesgasse 12  # 1081,1787,687,55;1080,1831,306,46
@@ -12213,8 +12195,7 @@ Stauffer, Alb., Commis, Altenbergstr. 86  # 1019,888,754,65
 Witwe des Schuhmachermeisters, Metzgergasse 64  # 1046,2634,677,60;1044,2679,321,48
 # Date: 1896-11-15 Page: 3015518/166
 metzger, Wyler, Scheibenw. 41  # 303,292,609,28
-- Karlen, Ed., Prokurist d. eidgen.  # 304,329,679,38
-Bank, Waisenhausplatz 27  # 305,369,516,41
+- Karlen, Ed., Prokurist d. eidgen. Bank, Waisenhausplatz 27  # 304,329,679,38;305,369,516,41
 - Lüscher, Ver., Privatière, Länggassstrasse 42  # 306,410,678,40;307,457,274,28
 - Pflugshaupt, W., Angest. d. Sparu. Leihkasse, Längg., Gesellschafts- Steiger, s. auch Gsteigerstrasse 12  # 307,494,678,38;305,530,1203,40;306,580,187,24
 - Zimmerli, Wwe., Privat., Mattenh., Effingerstrasse 51  # 308,616,675,36;308,657,344,35
@@ -12749,8 +12730,7 @@ Suter, siehe auch Sutter u. Zutter  # 191,746,668,52
 - C., Kondukteur der S. C. B., Aarbergergasse 43  # 267,908,678,55;265,951,288,43
 - C., Chef des Telephonnetzes Bern, Wyler, Allmendweg 19  # 265,990,676,58;262,1030,450,51
 - Elise, Witwe, Näherin, Anatomiegasse 9  # 263,1072,680,57;260,1122,146,29
-- H., Buchhalter, Schosshalde, Ban-  # 259,1153,682,58
-tigerstrasse 14  # 257,1195,288,40
+- H., Buchhalter, Schosshalde, Bantigerstrasse 14  # 259,1153,682,58;257,1195,288,40
 - Herm., Oberzollsekretär und Abteilungschef der Oberzolldirektion, Mattenhof, Zieglerstrasse 31  # 257,1234,677,50;254,1274,680,57;256,1314,547,53
 - Joh., Musiker, Kramgasse 78  # 256,1355,561,57
 - Kasp., Journalist, Mattenh., Belpstrasse 38  # 254,1397,680,62;255,1443,190,31
@@ -12864,8 +12844,7 @@ Teuscher, s. auch Tüscher  # 1003,1430,522,41
 - Joh., Commis, Marktgasse 55  # 1084,1842,574,40
 - Joh. Fr., Schreinermeister, Murtenstrasse 38  # 1083,1879,682,45;1081,1926,193,27
 - Ludw. Rud., Angestellter d. städt. Polizeidir., Schauplatzgasse 26  # 1082,1963,680,40;1081,2002,602,46
-- Rud., Portier, Zwiebelngässchen 20  # 1080,2046,686,39
-Lindenrain 3  # 1082,2128,248,30
+- Rud., Portier, Zwiebelngässchen 20, Lindenrain 3  # 1080,2046,686,39;1082,2128,248,30
 - Wilh., Oberrichter, Obere Villette, Lindenrain 3  # 1082,2167,679,40;1081,2208,250,35
 - Wenger, M., Witwe des Amtschr., Schwaneng. 6  # 1080,2249,682,41;1081,2285,263,46
 Thaler, Alb., Schneider, Marktg. 41  # 997,2327,699,48
@@ -14020,8 +13999,7 @@ Windler, Heinr., Beamter der Telegr.Direktion, Mattenhofstr. 13  # 241,2440,750,
 - J., Schuhmacher, Aarbergerg. 38  # 260,2520,681,38
 Wingenbach, Lorenz, Kurzwarenhändl., Metzgergasse 72  # 240,2564,754,34;322,2601,317,40
 Erlachstrasse 20  # 1093,288,313,30
-Winkler, Chr., Weinhändler, Zwiebeln-  # 1010,325,754,34
-gässchen 14  # 1091,370,227,29
+Winkler, Chr., Weinhändler, Zwiebelngässchen 14  # 1010,325,754,34;1091,370,227,29
 - Joh., Schuhmacher, Metzgerg. 10  # 1093,401,658,41
 - Lse., Frau, Schneiderin, Brunng. 46  # 1091,444,673,37
 Winnewisser, Fr., Schreiner, Matte, BadWinter, G., Farbwarenhandlung, Länggasse 29  # 1011,484,753,38;1013,563,753,38;1090,535,169,20
@@ -14374,8 +14352,7 @@ Wyttenbach, Alb., Ausläufer, Aarbergergasse 61  # 1095,2519,759,41;1177,2572,16
 # Date: 1896-11-15 Page: 3015547/195
 halde, Burgernzielweg 13  # 228,292,521,50
 - J., Oberzugführer d. J. S., Länggasse, Zähringerstrasse 18  # 227,334,708,54;227,382,538,42
-- K., Handelsmann, Schosshalde, Bur-  # 227,420,709,53
-gernzielweg 13  # 225,465,305,39
+- K., Handelsmann, Schosshalde, Burgernzielweg 13  # 227,420,709,53;225,465,305,39
 - Ludw. F., Postangestellter, Kirchgasse 6  # 224,499,710,58;223,554,150,30
 - Math., Frl., Privatière, Schosshalde, Burgernzielweg 13  # 222,589,709,50;223,632,382,44
 - M. A. E., Fürsprecher, Hirschengr. 7  # 222,671,707,56
@@ -14510,8 +14487,7 @@ Zeindler, Alb. Eug., Buchhalter, Länggassstrasse 65  # 1074,1352,751,45;1156,14
 - Kasp., Marchand-Taill., Länggasse, Bühlstrasse 53 b  # 1154,1514,670,44;1157,1556,310,32
 Zeller, Alex., Schuhmachermeister, Metzgergasse 18  # 1072,1596,751,38;1152,1648,230,21
 - E., Wwe., gew. Kostgeberin, Kesslergasse 27  # 1153,1677,671,41;1151,1717,214,38
-- Em. Ad., Notar, Kanzlist b. schweiz.  # 1153,1758,669,33
-Gesundheitsamt, Marzili, Aarstr. 106  # 1154,1797,667,36
+- Em. Ad., Notar, Kanzlist b. schweiz. Gesundheitsamt, Marzili, Aarstr. 106  # 1153,1758,669,33;1154,1797,667,36
 - E. F., Schlosser, Käfiggässchen 12  # 1154,1837,668,40
 - H. R., Sek.-Lehrer, Schwaneng. 11  # 1151,1876,668,38
 - Joh. Jos. Kasp., Chef d. Eilgutexpedition, Längg., Frohbergweg 10  # 1151,1915,669,41;1150,1956,669,40
