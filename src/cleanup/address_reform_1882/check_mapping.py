@@ -16,6 +16,7 @@ class Street(object):
 
 def check(path):
     gwr_streets = read_gwr_streets()
+    names_2024 = read_street_names_2024()
     fp = open(path, "r")
     old_streets = Counter()
     new_streets = Counter()
@@ -27,8 +28,9 @@ def check(path):
         new_streets[new_street] += 1
         old = expand_addresses(id, old_street, rec["old_number"], rec["old_letter"])
         new = expand_addresses(id, new_street, rec["new_number"], rec["new_letter"])
-        if new_street not in gwr_streets:
-            missing_streets.setdefault(new_street, []).append(id)
+        name_2024 = names_2024.get(new_street, new_street)
+        if name_2024 not in gwr_streets:
+            missing_streets.setdefault(name_2024, []).append(id)
     ctr = Counter()
     for name, ids in missing_streets.items():
         ctr[name] += len(ids)
@@ -95,6 +97,19 @@ def read_gwr_streets():
                 streets[street_name] = street
             street.housenumbers.add(rec["Hausnummer"])
     return streets
+
+
+def read_street_names_2024():
+    updates = {}
+    src_path = os.path.dirname(__file__)
+    csv_path = os.path.join(src_path, "street_names_2024.csv")
+    with open(csv_path) as fp:
+        for rec in csv.DictReader(fp):
+            name_1882 = rec["Strassenname 1882"]
+            name_2024 = rec["Strassenname 2024"]
+            assert name_1882 not in updates, name_1882
+            updates[name_1882] = name_2024
+    return updates
 
 
 if __name__ == "__main__":
