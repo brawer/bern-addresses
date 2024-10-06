@@ -2,28 +2,38 @@
 # 1882 address reform.
 
 
+from collections import Counter
 import csv
 import os
 import re
 
 
+class Street(object):
+    def __init__(self, name):
+        self.name = name
+        self.housenumbers = set()
+
+
 def check(path):
+    gwr_streets = read_gwr_streets()
     fp = open(path, "r")
-    hoods = {}
+    old_streets = Counter()
+    new_streets = Counter()
+    missing_streets = {}
     for rec in csv.DictReader(fp, delimiter="\t"):
         id = rec["ID"]
-        hood = rec["neighborhood"]
-        hoods.setdefault(rec["old_streetname"], set()).add(hood)
-        hoods.setdefault(rec["new_streetname"], set()).add(hood)
-        old = expand_addresses(
-            id, rec["old_streetname"], rec["old_number"], rec["old_letter"]
-        )
-        new = expand_addresses(
-            id, rec["new_streetname"], rec["new_number"], rec["new_letter"]
-        )
-    for street, h in hoods.items():
-        if len(h) > 1:
-            print(street, h)
+        old_street, new_street = rec["old_streetname"], rec["new_streetname"]
+        old_streets[old_street] += 1
+        new_streets[new_street] += 1
+        old = expand_addresses(id, old_street, rec["old_number"], rec["old_letter"])
+        new = expand_addresses(id, new_street, rec["new_number"], rec["new_letter"])
+        if new_street not in gwr_streets:
+            missing_streets.setdefault(new_street, []).append(id)
+    ctr = Counter()
+    for name, ids in missing_streets.items():
+        ctr[name] += len(ids)
+    for street, count in ctr.most_common():
+        print(street, count, ",".join(sorted(missing_streets[street])))
 
 
 def expand_addresses(id, street, numbers, letters):
@@ -34,6 +44,8 @@ def expand_addresses(id, street, numbers, letters):
     if numbers == "":
         assert letters == "", id
         return [""]
+    if "-" in numbers:
+        assert "-" not in letters, id
     addrs = []
     for num in expand_numbers(id, numbers):
         if letters == "":
@@ -66,6 +78,23 @@ def expand_letters(id, letters):
         return [letters]
     else:
         assert "unespected letters", id
+
+
+def read_gwr_streets():
+    src_path = os.path.dirname(__file__)
+    project_root = os.path.join(src_path, "..", "..", "..")
+    gwr_path = os.path.join(project_root, "data", "gwr_addresses.csv")
+    streets = {}
+    with open(gwr_path) as fp:
+        for rec in csv.DictReader(fp):
+            street_name = rec["Strasse"]
+            if street_name in streets:
+                street = streets[street_name]
+            else:
+                street = Street(street_name)
+                streets[street_name] = street
+            street.housenumbers.add(rec["Hausnummer"])
+    return streets
 
 
 if __name__ == "__main__":
