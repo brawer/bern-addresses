@@ -5,10 +5,11 @@ import re
 
 # this module fixes up split lines
 #
-# we currently do three passes:
+# we currently do four passes:
 # 1. known/hyphenated words/lines
 # 2. lines ending with ',' (comma)
 # 3. lines starting with a street/abbrev
+# 4. lines ending w/conjunction (see JOIN_WORDS)
 #
 # the phases are split, to avoid collision,
 # even though they share the same approach
@@ -64,6 +65,72 @@ LASTNAMES = {name.strip() for name in open(LASTNAME_PATH, 'r')}
 OCCUPATIONS_PATH = os.path.join(os.path.dirname(__file__), '..', 'occupations.csv')
 OCCUPATIONS = {occ.split(',')[0] for occ in open(OCCUPATIONS_PATH, 'r')}
 
+# If any of these words are last on a line, we join that
+# line with the next one, unless the following line starts
+# with a hyphen (that got actually recognized by OCR).
+# The heuristic is not perfect but works pretty well.
+#
+# Also: If a line starts with any of these words,
+# join it with the previous one, unless it's
+# followed by Comp|Cie
+JOIN_WORDS = {
+    'Schweiz.',
+    'a.',
+    'alle',
+    'aller',
+    'am',
+    'an',
+    'auch',
+    'auf',
+    'b.',
+    'bei',
+    'beim',
+    'bern.',
+    'd.',
+    'das',
+    'del',
+    'dem',
+    'den',
+    'der',
+    'des',
+    'die',
+    'durch',
+    'eidg',
+    'eidg.',
+    'eidgen.',
+    'en gros',
+    'et',
+    'etc.',
+    'f.',
+    'franz.',
+    'für',
+    'geist.',
+    'i.',
+    'im',
+    'in',
+    'intern.',
+    'internat',
+    'kant.',
+    'kanton.',
+    'mit',
+    'nach',
+    'pens',
+    'schweiz.',
+    'schweizer.',
+    'städt.',
+    'statist.',
+    'u.',
+    'um',
+    'und',
+    'vom',
+    'vorm.',
+    'vormals',
+    'zu',
+    'zum',
+    'zur',
+}
+
+
 def list_volumes():
     path = os.path.join(os.path.dirname(__file__), '..', '..', 'proofread')
     path = os.path.normpath(path)
@@ -81,7 +148,7 @@ def fix_conjunctions():
 
         print('Processing conjunction fixes for %s' % vol.split('/')[-1])
 
-        # this glues segments split in convert_hocr_to_plaintext.py
+        # 1. this glues segments split in convert_hocr_to_plaintext.py
         # back together
         #
         # see below for comma-gluing, which is split out
@@ -148,7 +215,7 @@ def fix_conjunctions():
         os.rename(vol + '.tmp', vol)
 
 
-        # the following attempts to glue lines with
+        # 2. the following attempts to glue lines with
         # trailing commas back together
         with open(vol + '.tmp', 'w') as out:
             line_stash = ''
@@ -223,7 +290,7 @@ def fix_conjunctions():
                 out.write(line)
         os.rename(vol + '.tmp', vol)
 
-        # reattach streets and occupations
+        # 3. reattach streets and occupations
         line_buffer = [line.strip() for line in open(vol, 'r')]
         known_street_frags = ['gasse', 'strasse']
         for k, line in enumerate(line_buffer):
@@ -310,6 +377,35 @@ def fix_conjunctions():
                     minted_line = f'{prev_line_txt}{sep}{cur_line_txt}  # {prev_line_pos};{cur_line_pos}'
                     line_buffer[k-1] = minted_line
                     line_buffer[k] = ''
+
+        with open(vol + '.tmp', 'w') as out:
+            for line in line_buffer:
+                if line != '': out.write(line + '\n')
+        os.rename(vol + '.tmp', vol)
+
+        # 4. fix lines with conjunction at the end
+        line_buffer = [line.strip() for line in open(vol, 'r')]
+        for k, line in enumerate(line_buffer):
+
+            if line.startswith('#'): continue
+            if line_buffer[k-1].startswith('#'): continue
+            if line_buffer[k-1] == '': continue
+
+            prev_line_txt, prev_line_pos = [x.strip() for x in line_buffer[k-1].split('#')]
+            cur_line_txt, cur_line_pos = [x.strip() for x in line.split('#')]
+
+            first_line_seg = cur_line_txt.split()[0].strip().replace(',', '')
+            last_line_seg = prev_line_txt.split()[-1].strip()
+
+            # ends in join-word and next line doesn't
+            # start with either '-' or known lastname
+            if (last_line_seg in JOIN_WORDS and
+                not first_line_seg == '-' and
+                not first_line_seg in LASTNAMES):
+
+                minted_line = f'{prev_line_txt} {cur_line_txt}  # {prev_line_pos};{cur_line_pos}'
+                line_buffer[k-1] = minted_line
+                line_buffer[k] = ''
 
         with open(vol + '.tmp', 'w') as out:
             for line in line_buffer:

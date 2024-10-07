@@ -7,6 +7,7 @@ import csv
 import os
 import re
 
+from cleanup.fix_conjunctions import JOIN_WORDS
 
 # lines longer than this, featuring '|', have
 # been greedy matched by ocr, so we split them
@@ -34,49 +35,6 @@ def read_pages():
             page_id, page_label = int(row["PageID"]), row["PageLabel"]
             pages.setdefault(date, []).append((page_id, page_label))
     return pages
-
-
-# If any of these words are last on a line, we join that line with the next one,
-# unless the following line starts with a hyphen (that got actually recognized
-# by OCR). The heuristic is not perfect but seems to work pretty well.
-#
-# Also: If a line starts with any of these words, join it with the previous
-# one, unless it's followed by Comp|Cie
-JOIN_WORDS = {
-    'a.',
-    'am',
-    'an',
-    'auch',
-    'auf',
-    'b.',
-    'bei',
-    'beim',
-    'd.',
-    'del',
-    'dem',
-    'den',
-    'der',
-    'des',
-    'durch',
-    'eidg.',
-    'eidgen.',
-    'en gros',
-    'et',
-    'etc.',
-    'für',
-    'i.',
-    'im',
-    'in',
-    'kant.',
-    'kanton.',
-    'schweiz.',
-    'städt.',
-    'u.',
-    'um',
-    'und',
-    'zum',
-}
-
 
 # Abbreviations (and full words) that are definitely not family names.
 # If they start a new line, we assume that OCR has missed to recognize
@@ -211,7 +169,9 @@ def convert_page(date, page_id, page_label):
             else:
                 last = last[:-1] + cur
                 last_pos += ';' + cur_pos
-        elif any(last.endswith(' ' + x) for x in JOIN_WORDS) and not cur.startswith('-'):
+        elif (any(last.endswith(' ' + x) for x in JOIN_WORDS) and
+                not cur.startswith('-') and
+                not cur.split()[0].strip().replace(',', '') in LASTNAMES):
             last = last + ' ' + cur
             last_pos += ';' + cur_pos
         elif (any(line.startswith(x) for x in JOIN_WORDS) and
