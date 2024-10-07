@@ -32,13 +32,22 @@ def check(path):
         new_streets[new_street] += 1
         new = expand_addresses(id, new_street, rec["new_number"], rec["new_letter"])
         name_2024 = names_2024.get(new_street, new_street)
-        if name_2024 not in gwr_streets:
+        if name_2024 not in gwr_streets and name_2024 not in {
+            "",
+            "abgebrochen",
+            "Abgebrochen",
+        }:
             missing_streets.setdefault(name_2024, []).append(id)
     ctr = Counter()
     for name, ids in missing_streets.items():
         ctr[name] += len(ids)
-    # for street, count in ctr.most_common():
-    #    print(street, count, ",".join(sorted(missing_streets[street])))
+    print("Folgende Strassen sind in der Adressreform 1882 als neue Strassennamen")
+    print("aufgeführt, sind aber nicht im Eidg. Gebäude- und Wohnungsregister (GWR)")
+    print("erfasst. Die Zahlen sind die Anzahl der Gebäude in der Liste von 1882,")
+    print("die an der jeweiligen Strasse liegen.")
+    print("-" * 78)
+    for street, count in ctr.most_common():
+        print(count, street)
 
 
 def expand_addresses(id, street, numbers, letters):
