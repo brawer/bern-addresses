@@ -9,10 +9,10 @@ Aargst.,Aargauerstalden
 Aargstld.,Aargauerstalden
 Aarstr.,Aarstrasse
 Aarz.,Aarziele
-Aarzieledrittel,Aarziele
 Aarzhl.,Aarziele
 Aarzhle,Aarziele
 Aarziehle,Aarziele
+Aarzieledrittel,Aarziele
 Aarzl.,Aarziele
 Abg.,Aarbergergasse
 a. Bllw.,Äußeres Bollwerk
@@ -21,6 +21,7 @@ a. Bollw.,Äußeres Bollwerk
 a. Bollwerk,Äußeres Bollwerk
 Aebistr.,Aebistrasse
 Aegertenstr.,Aegertenstrasse
+Aeusseres Bollwerk,Äußeres Bollwerk
 Ag.,Aarbergergasse
 a. Holzm.,Alter Holzmarkt
 Allmendstr.,Allmendstrasse
@@ -45,8 +46,8 @@ Amthausgässchen,Amthausgasse
 Anatg.,Anatomiegäßchen
 Anatomg.,Anatomiegäßchen
 Anatomieg.,Anatomiegäßchen
-Anatomiegasse,Anatomiegäßchen
 Anatomiegässchen,Anatomiegäßchen
+Anatomiegasse,Anatomiegäßchen
 Ankenl.,Ankenlaube
 Arbg.,Aarbergergasse
 Archivstr.,Archivstrasse
@@ -57,7 +58,6 @@ Arziele-Drittel,Aarziele
 Attinghausenstr.,Attinghausenstrasse
 äuß. Bollw.,Äußeres Bollwerk
 äuß. Bollwerk,Äußeres Bollwerk
-Aeusseres Bollwerk,Äußeres Bollwerk
 äußeres Bollwerk,Äußeres Bollwerk
 äußere Villette,Äußere Villette
 Az.,Aarziele
@@ -69,8 +69,8 @@ Bärenpl.,Bärenplatz
 b. Casino,Beim Casino
 b. d. Schanze,Bei der Schanze
 b. d. Sch.,Bei der Schanze
-b. d. Schuzmühle,Bei der Schutzmühle
 B. d. Schutzmühle,Bei der Schutzmühle
+b. d. Schuzmühle,Bei der Schutzmühle
 Beaulieustr.,Beaulieustrasse
 Beaumontw.,Beaumontweg
 bei der kl. Schanze,Bei der kleinen Schanze
@@ -161,6 +161,7 @@ Fellenbergstr.,Fellenbergstrasse
 Felsenaustr.,Felsenaustrasse
 Felsen.,Felsenau
 Ferd.-Hodlerstrasse,Hodlerstrasse
+Fischerw.,Fischerweg
 Florastr.,Florastrasse
 Flurstr.,Flurstrasse
 Freiburgstr.,Freiburgstrasse
@@ -283,6 +284,7 @@ Keßlergasse,Keßlergasse
 Kesslerg.,Keßlergasse
 Keßlerg.,Keßlergasse
 Keßlg.,Keßlergasse
+Keßlg.,Keßlergasse
 Kfchg.,Käfichgäßlein
 Kfg.,Käfichgäßlein
 Kfichg.,Käfichgäßlein
@@ -322,8 +324,8 @@ Kursaalstr.,Kursaalstrasse
 Kyburgstr.,Kyburgstrasse
 Ladenwandstr.,Ladenwandstrasse
 Landoltstr.,Landoltstrasse
-Länggaß,Länggasse
 Länggass-Drittel,Länggasse
+Länggaß,Länggasse
 Länggassstr.,Länggassstrasse
 Längg.,Länggasse
 Läng,Länggasse
@@ -340,10 +342,10 @@ Lg.,Länggasse
 Lgm.,Längmauer
 Lngg.,Länggasse
 Loraine,Lorraine
-Lorraine-Quartier,Lorraine
 Lorbeerstr.,Lorbeerstrasse
-Lorrainestr.,Lorrainestrasse
+Lorraine-Quartier,Lorraine
 Lorraine-Strasse,Lorrainestrasse
+Lorrainestr.,Lorrainestrasse
 Lorr.,Lorraine
 Luisenstr.,Luisenstrasse
 Marienstr.,Marienstrasse
@@ -376,9 +378,6 @@ Monbijoustr.,Monbijoustrasse
 Morgenstr.,Morgenstrasse
 Morillonstr.,Morillonstrasse
 Moserstr.,Moserstrasse
-Müllerl.,Müllerlaube
-Müllerläublein,Müllerlaube
-Müllerläubli,Müllerlaube
 Mrkg.,Marktgasse
 Mrktgasse,Marktgasse
 Mrktg.,Marktgasse
@@ -390,6 +389,9 @@ Muesmattstr.,Muesmattstrasse
 Muesm.,Muesmatte
 Mühlemattstr.,Mühlemattstrasse
 Muldenstr.,Muldenstrasse
+Müllerläublein,Müllerlaube
+Müllerläubli,Müllerlaube
+Müllerl.,Müllerlaube
 Müllerl.,Müllerlaube
 Mülll.,Müllerlaube
 Münsterpl.,Münsterplatz
@@ -398,6 +400,7 @@ Münzgr.,Münzgraben
 Murifeldw.,Murifeldweg
 Muristr.,Muristrasse
 Murtenstr.,Murtenstrasse
+Museumstr.,Museumstrasse
 Neub.,Neubrücke
 Neubrückstr.,Neubrückstrasse
 Neueng.,Neuengasse
@@ -414,6 +417,7 @@ Obstb.,Obstberg
 ob. Sulgenbach,Oberer Sulgenbach
 Ob. Th.,Oberes Thor
 Optingenstr.,Optingenstrasse
+Ostermundigenstr.,Ostermundigenstrasse
 Papiermühlestr.,Papiermühlestrasse
 Parkstr.,Parkstrasse
 Pelikan,Pelikan
@@ -474,8 +478,8 @@ Schlßl.,Schlößli
 Schönburg,Schönburg
 Schönburgstr.,Schönburgstrasse
 Schöneckweg,Schöneggweg
-Schosshaldenstr.,Schosshaldenstrasse
 Schosshalden-Drittel,Schosshalde
+Schosshaldenstr.,Schosshaldenstrasse
 Schoßhalde,Schosshalde
 Schoß-Halde,Schosshalde
 Schoßhld.,Schosshalde
@@ -490,8 +494,8 @@ Schplzg.,Schauplatzgasse
 Schrfrg.,Scharfrichtergasse
 Schßh.,Schosshalde
 Schtzm.,Schutzmühle
-Schulg.,Schulgasse
 Schulgässchen,Schulgasse
+Schulg.,Schulgasse
 Schützeng.,Schützengäßlein
 Schützengßl.,Schützengäßlein
 Schützenmattstr.,Schützenmattstrasse
@@ -538,6 +542,7 @@ Storcheng.,Storchengäßli
 St.,Stalden
 Südbahnhofstr.,Südbahnhofstrasse
 Sulgb,Sulgenbach
+Sulgenauw.,Sulgenauweg
 Sulgenbachstr.,Sulgenbachstrasse
 Sulgenb.,Sulgenbach
 Sulgeneckstr.,Sulgeneckstrasse
@@ -572,6 +577,8 @@ Waldheimstr.,Waldheimstrasse
 Wallg.,Wallgasse
 Wangenstr.,Wangenstrasse
 Wasserwerkg.,Wasserwerkgasse
+Wattenwylw.,Wattenwylweg
+Weidmattw.,Weidmattweg
 Weiherg.,Weihergasse
 Weingartstr.,Weingartstrasse
 Weißenbühl,Weissenbühl
