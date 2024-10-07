@@ -15,6 +15,7 @@ class Street(object):
 
 
 def check(path):
+    whitelist = read_street_names_whitelist()
     gwr_streets = read_gwr_streets()
     names_2024 = read_street_names_2024()
     fp = open(path, "r")
@@ -24,9 +25,11 @@ def check(path):
     for rec in csv.DictReader(fp, delimiter="\t"):
         id = rec["ID"]
         old_street, new_street = rec["old_streetname"], rec["new_streetname"]
-        old_streets[old_street] += 1
-        new_streets[new_street] += 1
+        assert old_street in whitelist, old_street
         old = expand_addresses(id, old_street, rec["old_number"], rec["old_letter"])
+        old_streets[old_street] += 1
+        new_street = rec["new_streetname"]
+        new_streets[new_street] += 1
         new = expand_addresses(id, new_street, rec["new_number"], rec["new_letter"])
         name_2024 = names_2024.get(new_street, new_street)
         if name_2024 not in gwr_streets:
@@ -34,8 +37,8 @@ def check(path):
     ctr = Counter()
     for name, ids in missing_streets.items():
         ctr[name] += len(ids)
-    for street, count in ctr.most_common():
-        print(street, count, ",".join(sorted(missing_streets[street])))
+    # for street, count in ctr.most_common():
+    #    print(street, count, ",".join(sorted(missing_streets[street])))
 
 
 def expand_addresses(id, street, numbers, letters):
@@ -80,6 +83,21 @@ def expand_letters(id, letters):
         return [letters]
     else:
         assert "unespected letters", id
+
+
+def read_street_names_whitelist():
+    streets = set()
+    src_path = os.path.dirname(__file__)
+    streets_path = os.path.join(src_path, "..", "..", "streets.csv")
+    with open(streets_path) as fp:
+        for rec in csv.DictReader(fp):
+            streets.add(rec["Street"])
+    abbrevs_path = os.path.join(src_path, "..", "..", "street_abbrevs.csv")
+    with open(abbrevs_path) as fp:
+        for rec in csv.DictReader(fp):
+            assert rec["Street"] in streets, rec["Street"]
+            streets.add(rec["Abbreviation"])
+    return streets
 
 
 def read_gwr_streets():
