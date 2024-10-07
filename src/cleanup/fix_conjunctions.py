@@ -74,6 +74,7 @@ OCCUPATIONS = {occ.split(',')[0] for occ in open(OCCUPATIONS_PATH, 'r')}
 # join it with the previous one, unless it's
 # followed by Comp|Cie
 JOIN_WORDS = {
+    'Fa.',
     'Schweiz.',
     'a.',
     'alle',
