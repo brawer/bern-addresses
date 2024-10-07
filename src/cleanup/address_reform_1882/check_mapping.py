@@ -4,6 +4,7 @@
 
 from collections import Counter
 import csv
+import io
 import os
 import re
 
@@ -18,19 +19,36 @@ def check(path):
     whitelist = read_street_names_whitelist()
     gwr_streets = read_gwr_streets()
     names_2024 = read_street_names_2024()
+    abbrevs = read_abbrevs()
     fp = open(path, "r")
     old_streets = Counter()
     new_streets = Counter()
     missing_streets = {}
+    missing_buildings = []
+
+    report = io.StringIO()
+    writer = csv.writer(report)
+    writer.writerow(
+        [
+            "Strasse vor 1882",
+            "Nummer vor 1882",
+            "Strasse",
+            "Nummer",
+            "Scan",
+            "ID",
+            "Status",
+        ]
+    )
+
     for rec in csv.DictReader(fp, delimiter="\t"):
-        id = rec["ID"]
+        id = str(int(rec["ID"]))
+        assert rec["PDF Page"], rec
+        scan_id = 3012646 + int(rec["PDF Page"])
         old_street, new_street = rec["old_streetname"], rec["new_streetname"]
         assert old_street in whitelist, old_street
-        old = expand_addresses(id, old_street, rec["old_number"], rec["old_letter"])
         old_streets[old_street] += 1
         new_street = rec["new_streetname"]
         new_streets[new_street] += 1
-        new = expand_addresses(id, new_street, rec["new_number"], rec["new_letter"])
         name_2024 = names_2024.get(new_street, new_street)
         if name_2024 not in gwr_streets and name_2024 not in {
             "",
@@ -38,35 +56,63 @@ def check(path):
             "Abgebrochen",
         }:
             missing_streets.setdefault(name_2024, []).append(id)
+        old = expand_addresses(id, old_street, rec["old_number"], rec["old_letter"])
+        new = expand_addresses(id, new_street, rec["new_number"], rec["new_letter"])
+        for old_street, old_num in old:
+            old_street = abbrevs.get(old_street, old_street)
+            for new_street, new_num in new:
+                new_street = names_2024.get(new_street, new_street)
+                if new_street in abbrevs:
+                    new_street = abbrevs[new_street]
+                gwr_street = gwr_streets.get(new_street)
+                if gwr_street == None:
+                    status = "Unbekannte Strasse"
+                elif new_num not in gwr_street.housenumbers:
+                    status = "Unbekannte Hausnummer"
+                else:
+                    status = "OK"
+                writer.writerow(
+                    [old_street, old_num, new_street, new_num, scan_id, id, status]
+                )
+    with open("address_reform_1882.csv", "w") as fp:
+        fp.write(report.getvalue())
+
     ctr = Counter()
     for name, ids in missing_streets.items():
         ctr[name] += len(ids)
-    print("Folgende Strassen sind in der Adressreform 1882 als neue Strassennamen")
-    print("aufgeführt, sind aber nicht im Eidg. Gebäude- und Wohnungsregister (GWR)")
-    print("erfasst. Die Zahlen sind die Anzahl der Gebäude in der Liste von 1882,")
-    print("die an der jeweiligen Strasse liegen.")
-    print("-" * 78)
-    for street, count in ctr.most_common():
-        print(count, street)
+    with open("address_reform_1882_streets.txt", "w") as out:
+        out.write(
+            """Folgende Strassen sind in der Adressreform 1882 als neue Strassennamen
+aufgeführt, sind aber nicht im Eidg. Gebäude- und Wohnungsregister (GWR)
+erfasst. Die Zahlen sind die Anzahl der Gebäude in der Liste von 1882,
+die an der jeweiligen Strasse liegen.
+
+"""
+        )
+        for street, count in ctr.most_common():
+            out.write(f"{count},{street}\n")
 
 
 def expand_addresses(id, street, numbers, letters):
+    street = street.strip()
+    numbers = numbers.strip()
+    letters = letters.strip()
     if street in ("", "abgebrochen", "Abgebrochen"):
         assert numbers == "", id
         assert letters == "", id
-        return [""]
+        return [("", "")]
     if numbers == "":
         assert letters == "", id
-        return [""]
+        return [("", "")]
     if "-" in numbers:
         assert "-" not in letters, id
     addrs = []
     for num in expand_numbers(id, numbers):
         if letters == "":
-            addrs.append(f"{street} {num}".strip())
+            addrs.append((street, str(num)))
         else:
             for let in expand_letters(id, letters):
-                addrs.append(f"{street} {num}{let}".strip())
+                addrs.append((street, f"{num}{let}".strip()))
     return addrs
 
 
@@ -92,6 +138,18 @@ def expand_letters(id, letters):
         return [letters]
     else:
         assert "unespected letters", id
+
+
+def read_abbrevs():
+    abbrevs = {}
+    src_path = os.path.dirname(__file__)
+    csv_path = os.path.join(src_path, "street_abbrevs.csv")
+    with open(csv_path) as fp:
+        for rec in csv.DictReader(fp):
+            a = rec["Abbreviation"]
+            assert a not in abbrevs, a
+            abbrevs[a] = rec["Street"]
+    return abbrevs
 
 
 def read_street_names_whitelist():
