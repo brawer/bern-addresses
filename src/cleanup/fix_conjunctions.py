@@ -62,6 +62,9 @@ STREET_ABBREVS = {street_abbrevs.split(',')[0] for street_abbrevs in open(STREET
 LASTNAME_PATH = os.path.join(os.path.dirname(__file__), '..', 'family_names.txt')
 LASTNAMES = {name.strip() for name in open(LASTNAME_PATH, 'r')}
 
+GIVENNAME_PATH = os.path.join(os.path.dirname(__file__), '..', 'givennames.txt')
+GIVENNAMES = {name.strip() for name in open(GIVENNAME_PATH, 'r')}
+
 OCCUPATIONS_PATH = os.path.join(os.path.dirname(__file__), '..', 'occupations.csv')
 OCCUPATIONS = {occ.split(',')[0] for occ in open(OCCUPATIONS_PATH, 'r')}
 
@@ -407,7 +410,8 @@ def fix_conjunctions():
             # start with either '-' or known lastname
             if (last_line_seg in JOIN_WORDS and
                 not first_line_seg == '-' and
-                not first_line_seg in LASTNAMES):
+                not first_line_seg in LASTNAMES and
+                not first_line_seg in GIVENNAMES):
 
                 minted_line = f'{prev_line_txt} {cur_line_txt}  # {prev_line_pos};{cur_line_pos}'
                 line_buffer[k-1] = minted_line
