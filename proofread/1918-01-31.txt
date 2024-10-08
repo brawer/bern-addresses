@@ -450,8 +450,7 @@ Amstutz, Anna, Privatiere, Murtenstrasse 30  # 236,1657,795,26
 - Glauser, Ida, Wwe., Pension, Zeughaus-Hans, Pfarrer an der Johanneskirche, Jägasse 20  # 283,1935,1574,22;284,1982,144,16
 - -Häfliger, Pauline Rosa, Maulbeerstr. 17  # 259,2009,736,29
 - -Meister, Emma, Milch- und Käsehandlung, Aarbergergasse 61  # 259,2044,772,28;286,2080,313,31
-Amt, schweiz., für geistiges Eigentum, Bollwerk 8 (alte Post)  # 241,2113,793,30;289,2148,312,32
-Wildstrasse 3  # 290,2287,236,28
+Amt, schweiz., für geistiges Eigentum, Bollwerk 8 (alte Post), Wildstrasse 3  # 241,2113,793,30;289,2148,312,32;290,2287,236,28
 - schweiz., für Sozialversicherung, Effinger---Steiner, Marg., Wwe., Thunstrasse 11strasse 1  # 239,2321,1541,24;291,2360,146,22
 Amthaus, Waisenhausstrasse 7  # 242,2393,552,27
 Amtsblattdruckerei, Thunstrasse 8 u. 8a 1810  # 242,2428,792,28
@@ -27698,8 +27697,7 @@ Wagner A.-G., Verlagsanstalt, siehe unt. A.-G.  # 218,2260,817,30
 - Ferdinand, Schneider, Bühlstrasse 41  # 227,2404,698,27
 - G. Herm., Buchbinder, Wiesenstrasse 47  # 268,2442,741,25
 - Hugo, kunstgewerbl. Werkstätten für Wohnungseinrichtung., Kunstschreinerei, feine  # 269,2476,766,29;268,2515,768,23
-Bauarbeiten (Wohnung und Hauptbureau:  # 267,2549,768,29
-Hochbühlweg 7), Niesenweg 10  # 270,2584,561,32
+Bauarbeiten (Wohnung und Hauptbureau, Hochbühlweg 7), Niesenweg 10  # 267,2549,768,29;270,2584,561,32
 - Jakob, Berner Möblierungshaus (Bollwerk 41). Laupenstrasse 8  # 270,2617,764,34;270,2657,475,32
 - Karl, Maler, Lorrainestrasse 71  # 1102,275,554,30
 - Leo, Postangestellter, Engestrasse 47  # 1082,310,686,33
@@ -30318,8 +30316,8 @@ Gerechtigktsg. 53, Schwaneng. 11  # 1148,727,224,23;888,732,196,21
 Steck  # 1734,772,90,30
 - R. Guhl  # 1453,776,149,25
 - H. Miller beim Zeitglocken  # 1177,779,162,26;1150,817,223,27
-- Dr. B. Studer, Lorrainestr. 16, Belpstr. 26  # 861,783,252,26;2410,804,198,20;1705,812,143,22
-G’schaftsstr. 36, Spitalg. 57  # 1424,813,199,21;917,823,140,22
+- Dr. B. Studer, Lorrainestr. 16, Belpstr. 26, G’schaftsstr. 36  # 861,783,252,26;2410,804,198,20;1705,812,143,22;1424,813,199,21
+Spitalg. 57  # 917,823,140,22
 - J. Suess  # 2190,865,149,25
 - A. Knuchel  # 1427,867,202,24
 - Dr. Haller  # 1916,867,194,23
@@ -30336,8 +30334,8 @@ Kramg. 21, Aarbergerg. 39  # 1197,1000,139,22;893,1001,196,24
 - C. Daut  # 2440,1032,145,27
 Steck  # 1735,1046,91,29
 - R. Guhl  # 1458,1048,147,25
-- Dr. Heuberger J. Hermann, Lorrainestr. 16  # 866,1055,511,30;2415,1071,194,18
-G’schaftsstr. 36, Belpstr. 26, Kramg. 2, Spitalg. 37  # 1429,1085,199,22;1711,1087,141,21;1203,1093,123,18;923,1094,141,22
+- Dr. Heuberger J. Hermann, Lorrainestr. 16, G’schaftsstr. 36, Belpstr. 26  # 866,1055,511,30;2415,1071,194,18;1429,1085,199,22;1711,1087,141,21
+Kramg. 2, Spitalg. 37  # 1203,1093,123,18;923,1094,141,22
 - J. Suess  # 2194,1127,147,27
 - Dr. Haller  # 1920,1132,193,26
 - A. Knuchel  # 1432,1140,200,24
@@ -30373,8 +30371,8 @@ Aeuss. Bollwerk 19  # 874,1542,252,16
 Steck  # 1743,1585,89,29
 - R. Guhl  # 1463,1588,149,25
 - G. Schmid  # 1183,1593,185,25
-- J. Münch, Lorrainestr. 16  # 914,1595,167,25;2419,1617,197,18
-G’schaftsstr. 36, Belpstr. 26, Aarbergerg. 39  # 1440,1624,198,21;1718,1627,139,19;904,1632,197,23
+- J. Münch, Lorrainestr. 16, G’schaftsstr. 36, Belpstr. 26  # 914,1595,167,25;2419,1617,197,18;1440,1624,198,21;1718,1627,139,19
+Aarbergerg. 39  # 904,1632,197,23
 Kramg. 21  # 1205,1632,136,19
 - J. Suess  # 2199,1670,149,28
 - Dr. Haller  # 1927,1675,182,25
@@ -30420,9 +30418,8 @@ Wyler  # 2265,273,99,35
 - R. Guhl  # 1495,364,145,25
 - Dr. F Weil  # 914,364,212,24
 Steck  # 1773,365,97,27
-- C. Daut  # 2492,369,149,26
-G’schaftsstr. 36, Marktg. 44, Hirschengraben 9, Belpstr. 26  # 1468,400,198,25;1227,401,144,23;903,402,234,25;1749,404,142,23
-Lorrainestr. 16  # 2465,407,200,20
+- C. Daut, G’schaftsstr. 36, Marktg. 44, Hirschengraben 9  # 2492,369,149,26;1468,400,198,25;1227,401,144,23;903,402,234,25
+Belpstr. 26, Lorrainestr. 16  # 1749,404,142,23;2465,407,200,20
 - J. Suess  # 2247,445,144,27
 - Dr. Haller  # 1961,445,188,26
 - A. Vatter  # 1216,454,168,27
@@ -30440,8 +30437,7 @@ Spitalg. 57, Belpstr. 61  # 949,585,144,23;1749,592,142,24
 - R. Guhl  # 1492,639,149,25
 - C. Daut  # 2491,643,147,26
 Steck  # 1771,644,95,27
-Aeuss. Bollwerk 19  # 891,666,258,36
-G’schaftsstr. 36, Lorrainestr. 16, Belpstr. 26  # 1467,677,203,21;2465,680,200,23;1748,681,142,24
+Aeuss. Bollwerk 19, G’schaftsstr. 36, Lorrainestr. 16, Belpstr. 26  # 891,666,258,36;1467,677,203,21;2465,680,200,23;1748,681,142,24
 - Dr. Haller  # 1960,718,185,25
 - J. Suess  # 2238,719,154,26
 - G. Schmid  # 1205,725,186,28
@@ -30455,8 +30451,8 @@ Neubrückstr. 11, Belpstr. 61  # 1461,858,210,22;1748,864,141,23
 - C. Daut  # 2491,907,146,28
 Bécheraz& Cie.  # 892,907,256,30
 - R. Guhl  # 1490,913,150,24
-Steck, Waisenhauspl. 21, Lorrainestr. 16  # 1772,916,93,28;901,947,234,25;2463,948,200,20
-G’schaftsstr. 36, Belpstr. 26  # 1466,950,202,21;1747,955,142,22
+Steck, Waisenhauspl. 21, Lorrainestr. 16, G’schaftsstr. 36  # 1772,916,93,28;901,947,234,25;2463,948,200,20;1466,950,202,21
+Belpstr. 26  # 1747,955,142,22
 - Dr. Haller  # 1959,990,186,25
 - J. Suess  # 2240,991,151,25
 - Dr. F Weil  # 918,1000,207,25
@@ -30473,8 +30469,8 @@ Neubrückstr. 11, Belpstr. 61  # 1460,1133,207,21;1747,1137,140,22
 - Dr. B. Studer  # 894,1181,250,30
 - H. Miller beim Zeitglocken  # 1213,1185,165,27;1182,1219,229,32
 - R. Guhl  # 1491,1185,150,25
-Steck, Lorrainestr. 16, Spitalg. 57  # 1771,1187,96,29;2462,1219,199,21;949,1221,139,23
-G’schaftsstr. 36, Belpstr. 26  # 1466,1223,201,20;1748,1226,141,24
+Steck, Lorrainestr. 16, Spitalg. 57, G’schaftsstr. 36  # 1771,1187,96,29;2462,1219,199,21;949,1221,139,23;1466,1223,201,20
+Belpstr. 26  # 1748,1226,141,24
 - J. Suess  # 2236,1264,152,28
 - Dr. Haller  # 1958,1270,185,25
 - W. Mosimann  # 894,1273,253,30
@@ -30494,8 +30490,7 @@ Nachtdienst-Apotheken  # 2760,1410,-36,387
 - J. Hermann  # 1181,1457,228,35
 Steck  # 1773,1458,93,28
 - R. Guhl  # 1491,1459,150,25
-- C. Daut, Spitalg. 37  # 2488,1462,147,25;946,1495,141,24
-G’schaftsstr. 36  # 1467,1498,203,19
+- C. Daut, Spitalg. 37, G’schaftsstr. 36  # 2488,1462,147,25;946,1495,141,24;1467,1498,203,19
 Kramg. 2, Belpstr. 26, Lorrainestr. 16  # 1231,1498,124,21;1747,1499,142,22;2461,1500,197,20
 - J. Suess  # 2236,1544,151,26
 - Dr. Haller  # 1961,1544,185,25
@@ -30576,8 +30571,8 @@ Stauffacherstr. 2, Belpstr. 61, Neubrückstr. 11  # 2132,583,210,20;1676,589,142
 Steck  # 1702,639,92,28
 - R. Guhl  # 1423,644,148,23
 - G. Schmid  # 1139,646,184,27
-- J. Münch, Lorrainestr. 16, Belpstr. 26  # 867,648,167,28;2383,676,194,20;1676,680,141,22
-G’schaftsstr. 36, Aarbergerg. 39, Kramg. 21  # 1400,681,201,21;855,687,200,24;1160,688,137,20
+- J. Münch, Lorrainestr. 16, Belpstr. 26, G’schaftsstr. 36  # 867,648,167,28;2383,676,194,20;1676,680,141,22;1400,681,201,21
+Aarbergerg. 39, Kramg. 21  # 855,687,200,24;1160,688,137,20
 - J. Suess  # 2161,726,150,28
 - Dr. Haller  # 1888,731,183,23
 - A. Knuchel, Moserstr. 23, Balmweg 11, Länggassstr. 28  # 1399,734,198,26;2151,765,163,18;1900,770,165,21;1399,773,203,22
@@ -30589,8 +30584,7 @@ Steck  # 1704,911,93,28
 - C. Daut  # 2413,913,143,28
 - R. Guhl  # 1426,916,151,25
 - Dr. Farner  # 1133,919,200,26
-- Dr. F. Weil, Belpstr. 26  # 852,924,211,23;1681,952,140,21
-G’schaftsstr. 36  # 1404,953,198,19
+- Dr. F. Weil, Belpstr. 26, G’schaftsstr. 36  # 852,924,211,23;1681,952,140,21;1404,953,198,19
 Lorrainestr. 16, Marktg. 44  # 2388,953,193,18;1164,958,143,21
 - J. Suess  # 2167,998,140,28
 - A. Knuchel  # 1402,1005,201,25
@@ -30606,8 +30600,7 @@ Stauffacherstr. 2, Belpstr. 61, Neubrückstr. 11, Spitalg. 57  # 2134,1126,212,1
 Steck  # 1708,1183,91,29
 - R. Guhl  # 1429,1187,150,26
 - W. Volz beim Zeitglocken  # 1166,1191,142,25;1126,1225,225,27
-Lorrainestr. 16, Belpstr. 26  # 2388,1213,195,20;1684,1223,140,19
-G’schaftsstr. 36  # 1407,1224,199,21
+Lorrainestr. 16, Belpstr. 26, G’schaftsstr. 36  # 2388,1213,195,20;1684,1223,140,19;1407,1224,199,21
 - J. Suess  # 2167,1270,140,27
 - Dr. Haller  # 1893,1270,183,24
 - A. Knuchel  # 1404,1276,200,26
@@ -30620,8 +30613,8 @@ Kramg. 2, Spitalg. 37  # 1180,1411,121,21;898,1415,140,21
 - C. Daut  # 2416,1453,144,26
 Steck  # 1710,1454,93,26
 - R. Guhl  # 1434,1457,148,28
-Nachtdienst-Apotheken, Lorrainestr. 16, Belpstr. 26  # 2685,1477,-35,384;2392,1492,192,19;1686,1493,141,21
-G’schaftsstr. 36, Waisenhauspl. 21  # 1411,1494,198,22;853,1503,232,23
+Nachtdienst-Apotheken, Lorrainestr. 16, Belpstr. 26, G’schaftsstr. 36  # 2685,1477,-35,384;2392,1492,192,19;1686,1493,141,21;1411,1494,198,22
+Waisenhauspl. 21  # 853,1503,232,23
 - J. Suess  # 2176,1535,140,26
 - Dr. Haller  # 1896,1544,182,25
 - A. Knuchel  # 1409,1547,199,24
@@ -30638,8 +30631,7 @@ Stauffacherstr. 2, Gerechtigktsg. 53, Schwaneng. 11  # 2140,1674,208,19;1134,167
 Steck  # 1715,1723,94,27
 - R. Guhl  # 1437,1725,148,28
 - H. Miller beim Zeitglocken  # 1163,1730,163,26;1133,1767,225,25
-Lorrainestr. 16, Belpstr. 26  # 2392,1750,195,19;1689,1760,141,22
-G’schaftsstr. 36, Spitalg. 57  # 1414,1763,199,20;903,1771,140,24
+Lorrainestr. 16, Belpstr. 26, G’schaftsstr. 36, Spitalg. 57  # 2392,1750,195,19;1689,1760,141,22;1414,1763,199,20;903,1771,140,24
 - J. Suess  # 2171,1805,142,24
 - Dr. Haller  # 1899,1809,183,24
 - A. Knuchel  # 1411,1815,197,26
@@ -30699,8 +30691,7 @@ Stauffacherstr. 2, Hirschengraben 9, Marktg. 44  # 2208,691,213,21;908,695,232,2
 Steck  # 1773,743,93,31
 - R. Guhl  # 1492,747,153,24
 - A. Vatter  # 1213,748,169,28
-- Ch. Bornand, Lorrainestr. 16  # 909,749,233,26;2464,777,201,20
-G’schaftsstr. 36, Belpstr. 26  # 1471,782,201,21;1749,783,143,25
+- Ch. Bornand, Lorrainestr. 16, G’schaftsstr. 36, Belpstr. 26  # 909,749,233,26;2464,777,201,20;1471,782,201,21;1749,783,143,25
 Gerechtigktsg. 53, Schwaneng. 11  # 1189,783,227,29;925,788,197,24
 - J. Suess  # 2243,835,143,28
 - Dr. Haller  # 1961,835,187,29
@@ -30719,8 +30710,7 @@ Steck  # 1773,1016,93,28
 - C. Daut  # 2492,1019,145,27
 - R. Guhl  # 1495,1019,151,27
 - G. Schmid  # 1209,1022,186,27
-- J. Münch  # 936,1023,171,27
-G’schaftsstr. 36, Belpstr. 26  # 1472,1056,202,21;1752,1057,140,24
+- J. Münch, G’schaftsstr. 36, Belpstr. 26  # 936,1023,171,27;1472,1056,202,21;1752,1057,140,24
 Lorrainestr. 16, Aarbergerg. 39  # 2463,1057,200,20;927,1062,198,24
 Kramg. 21  # 1230,1062,139,22
 - J. Suess  # 2239,1107,150,27
