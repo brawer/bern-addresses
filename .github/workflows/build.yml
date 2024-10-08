@@ -10,11 +10,11 @@ jobs:
   Build:
     runs-on: ubuntu-24.04
     steps:
-      - name: Setup Python
+      - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: 3.12
-    - name: Check out sources
-      uses: actions/checkout@v4
-    - name: Build release files
-      run: python3 src/build_release.py
+      - name: Check out sources
+        uses: actions/checkout@v4
+      - name: Build release files
+        run: python3 src/build_release.py
