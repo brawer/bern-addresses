@@ -1505,7 +1505,8 @@ $2142  # 952,1529,93,29
 $5076  # 952,2097,87,27
 - Ernst, Spengler, Marktgasse 56  # 1125,2132,586,40
 - Fr., Monteur, Neuengasse 23  # 1126,2170,536,42
-- Friedr., Geschäftsführer der Firma BurgerKehl & Co., Viktoriarain 4  # 1125,2210,777,34;1125,2250,494,31
+- Friedr., Geschäftsführer der Firma Burger-  # 1125,2210,777,34
+Kehl & Co., Viktoriarain 4  # 1125,2250,494,31
 - Fritz, Angestellter der Stadtkanzlei, Junkerngasse 32  # 1124,2285,779,36;1123,2323,241,36
 - (2072  # 1832,2325,71,26
 - Gottfried, Lehrer an der städt. Mädchensekundarschule, Eichmattweg 8  # 1125,2362,778,34;1124,2399,587,37
@@ -6543,7 +6544,8 @@ Zieglerstrasse 35  # 256,286,303,30
 Frey, Liebeggweg 16  # 257,1103,373,34
 - -Wolf, Marie, Weissnäherin, Käfiggässchen 1  # 206,1140,833,33;256,1181,116,25
 Freya, Hotel-Pension, Schwanengasse  # 209,1214,684,33
-Freyenmuth-Schaub, A. Rosa, Falkenhöhe- - Karl, i. Fa. Gerber & Cie., Maschinenfabr., weg 16, Frick und Frik  # 209,1252,1673,28;257,1300,121,16;211,1328,271,26
+Freyenmuth-Schaub, A. Rosa, Falkenhöhe- - Karl, i. Fa. Gerber & Cie., Maschinenfabr., weg 16  # 209,1252,1673,28;257,1300,121,16
+Frick und Frik  # 211,1328,271,26
 - Karl, Archivstrasse 12  # 207,1364,456,31
 - Rosa, Damenschneiderin, Kramgasse 62  # 238,1399,759,38
 - -Grossenbacher, Anna Elisab., Wwe., Zieglerstrasse 66  # 240,1434,798,38;259,1475,228,28
@@ -11676,8 +11678,8 @@ Kaar, Joseph, Schuhmacher, Brunnhofw. 21  # 1029,672,828,34
 Käch, Albert, Maler, Höheweg 10  # 1029,707,634,36
 - Jakob, Wegaufseher, Sulgeneckstrasse 60  # 1023,742,837,37
 - Jakob, gew. Sekundarlehrer, Archivstr. 10  # 1074,781,785,36
-Kächele, Martha, Verkäuferin, GerechtigkeitsKachelhofer, Charlotte, Postgehilfin, Könizstrasse 36  # 1027,817,831,38;1027,888,830,44;1075,933,182,25
-gasse 64  # 1075,865,160,19
+Kächele, Martha, Verkäuferin, Gerechtigkeitsgasse 64  # 1027,817,831,38;1075,865,160,19
+Kachelhofer, Charlotte, Postgehilfin, Könizstrasse 36  # 1027,888,830,44;1075,933,182,25
 - K., Sekr.-Bureauchef der Bundeskanzlei, Könizstrasse 36  # 1075,967,783,34;1074,1004,288,29
 Kadaververnichtungsanstalt, städtische, Thor2241  # 1026,1037,831,40;1776,1081,78,27
 mannmätteli  # 1071,1080,222,26
@@ -13888,10 +13890,10 @@ ag d., 20  # 0,2244,65,26;8,2642,58,22
 - Rudolf, Coiffeurgeschäft (Hirschengr. 8), Bollwerk 17  # 187,2426,762,40;187,2462,203,32
 - Werner, Coiffeur, Neuengasse 6  # 187,2497,566,40
 - -Gautier, Ernst, Eisenwarenfabr., Wasserwerkgasse 25  # 146,2534,802,40;189,2573,222,34
-- -Spahr, Lina Berta, Spezialgeschäft für Leemann, s. auch Lehmann  # 152,2607,797,40;995,281,499,35
-Naturheilkunde, Fabrikstrasse 35  # 191,2644,592,41
+- -Spahr, Lina Berta, Spezialgeschäft für Naturheilkunde, Fabrikstrasse 35  # 152,2607,797,40;191,2644,592,41
 - -Thomi, M., Gehilfin b. d. Postwertzeichenkontrolle, Berchtoldstrasse 25  # 178,2679,769,40;191,2716,512,40
 Soieries E. Jucker & C. Place du Théâtre  # 195,2773,1568,92
+Leemann, s. auch Lehmann  # 995,281,499,35
 - Ad., Beamter S. B. B., Waldheimstr. 74  # 1043,320,709,33
 - Alb., Oberinspekt. u. Prokurist d. schweiz. Mob.-Vers.-Ges., Beundenfeldstrasse 45  # 1041,357,771,33;1039,392,700,30
 - A. Marie, Damenschneiderin, Muristr. 11a  # 1040,428,752,33
@@ -21515,8 +21517,8 @@ Scholl, Alfred, Postangest., Zähringerstr. 31  # 994,369,795,34
 Geschw., Spezereihdlg., Bubenbergpl. 7 401  # 1043,660,772,34
 Schölly-Zehnder, Ed., Mechaniker d. S. S. B., Erikaweg 3  # 994,694,826,37;1044,734,201,33
 Scholtz, G. O. Fr., Maler, i. Fa. Ernst Müller, Scholtz & Ledermann, Weissensteinstr. 38  # 995,772,826,32;1042,805,778,36
-Schön, Jos., Schneidermeister, GerechtigkeitsSchönauer, Felix A., Kutscher, Platanenweg 3  # 994,845,825,36;994,917,825,34
-gasse 54  # 1042,890,149,18
+Schön, Jos., Schneidermeister, Gerechtigkeitsgasse 54  # 994,845,825,36;1042,890,149,18
+Schönauer, Felix A., Kutscher, Platanenweg 3  # 994,917,825,34
 - Friedr., Coiffeur, Beundenfeldstrasse 21  # 1021,954,732,33
 - Fritz, Schriftsetzer und Spezereihandlung, Berchtoldstrasse 11  # 1041,987,779,38;1044,1026,341,31
 - Hans, Herren- und Damenfrisiersalon, Marktgasse 55  # 1044,1065,711,30;1044,1103,253,30

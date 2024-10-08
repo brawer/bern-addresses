@@ -81,7 +81,8 @@ Adam, Joh., Polizist, Predigergasse 3  # 255,1640,747,57
 - Rudolf, Milchhändler, Marzilistr. 15  # 333,1802,664,47
 - Sl. G., Arbeiter der Waffenfabrik, Spitalacker, Moserstrasse 24  # 331,1838,663,51;334,1880,546,49
 Adamina, J., I. Sekretär der Oberzolldirektion, Kirchenfeld, Thunstr. 19  # 250,1921,746,48;331,1959,663,49
-Adelmeyer, August, Coiffeur (Längg., Freie Strasse 24 b) Bärenplatz 11Adler, Goldener (F. Balz-Gerber), Gasthaus, Gerechtigkeitsgasse 7  # 248,1999,742,54;328,2040,747,56;263,2079,726,52;327,2120,531,49
+Adelmeyer, August, Coiffeur (Längg., Freie Strasse 24 b) Bärenplatz 11haus, Gerechtigkeitsgasse 7  # 248,1999,742,54;328,2040,747,56;327,2120,531,49
+Adler, Goldener (F. Balz-Gerber), Gast-  # 263,2079,726,52
 - Gysi, Jos., Arb. d. Waffenfabrik, Wylerstrasse 16  # 325,2161,663,50;327,2201,304,40
 - Adrian, Paul, Verwalter d. eidg. Münz-Ahlvers, F., Stallmeister, Neue Reitstätte, Schosshalde, Bantigerstr. 4 schule, Engestrasse 8  # 243,2237,1526,67;322,2279,1192,62
 Affeltranger, Alb., Kunstmaler, Kirchen- Akeret, Joh., Zuschneider bei d. eidg. Kriegsmaterialverwaltung, Breiten-  # 239,2314,1527,70;1098,2376,670,48
@@ -1613,8 +1614,8 @@ Boss, Albr., Kellermeister im Bahnhofbuffet, Metzgergasse 8  # 203,1145,755,26;2
 - R., Frau, Damenschneiderin, Aarbergergasse 31  # 287,1909,677,35;291,1954,287,32
 - Fankhauser, Witwe d. Schreinermeisters, Längg., Mittelstrasse 4  # 291,1994,675,28;289,2037,629,32
 - Schlapbach, J. G., Büreauchef der  # 289,2074,676,38
-- J. S., Längg., Bühlstr. 38Bossard, Fr., Amtsnotar (Amthausg. 1), Neuengasse 8  # 291,2116,498,33;211,2151,753,40;291,2196,261,34
-- Fried., Vicedirektor der schweiz. Mobiliar-Assekuranz, Kirchenfeld, Luisenstrasse 16  # 293,2233,671,37;293,2275,673,37;292,2314,318,30
+- J. S., Längg., Bühlstr. 38Neuengasse 8  # 291,2116,498,33;291,2196,261,34
+Bossard, Fr., Amtsnotar (Amthausg. 1), Fried., Vicedirektor der schweiz. Mobiliar-Assekuranz, Kirchenfeld, Luisenstrasse 16  # 211,2151,753,40;293,2233,671,37;293,2275,673,37;292,2314,318,30
 - Gottfr., Zuschneider im Zeughaus, Matte, Gerberg. 1  # 293,2353,674,40;293,2398,341,35
 Bosshard, Erh., Magazinier, Länggasse, Mittelstr. 15  # 213,2436,756,39;294,2480,225,28
 - Rud., Sekretär des Kursbureau der Oberpostdirektion, Längg., Haller-strasse 35  # 293,2519,678,28;295,2557,760,39;295,2603,187,25
@@ -2461,8 +2462,8 @@ Cortie-Kohler, J., Pensionshalter, Spitalgasse 28  # 199,266,758,49;279,320,170,
 Cottier, s. auch Gottier  # 197,347,455,36
 - J. J., Schneider, Längg., Magazinweg 8  # 278,387,677,52;275,439,121,26
 - Rosa, Wäscherin und Glätterin, Länggasse, Zeltweg 15  # 276,470,682,40;275,515,454,38
-- --Rösly, F. G., Weinhandlung (WallCouchoud, Louis, Kondukteur d. S. C. B., gasse 8), Bundesgasse 14  # 244,550,713,49;194,628,762,46;275,595,494,34
-Marzili, Weihergasse 8.  # 276,676,456,38
+- --Rösly, F. G., Weinhandlung (Wallgasse 8), Bundesgasse 14  # 244,550,713,49;275,595,494,34
+Couchoud, Louis, Kondukteur d. S. C. B., Marzili, Weihergasse 8.  # 194,628,762,46;276,676,456,38
 Courant, Emil, Schlossermstr., i. Fa. Gebr.  # 193,713,762,42
 Courant, Mattenhof, Besenscheuerweg 32  # 275,754,679,39;269,808,142,20
 - Rud., Schlossermeister, i. Fa. Gebr.  # 272,837,681,38
@@ -6112,7 +6113,8 @@ Schule, Längg., Falkenhöheweg 16  # 330,506,673,44
 - Rud., Sattler, Nydeckhof 45  # 311,1346,548,51
 - Ursula, Frl., Priv., Grosse Schanze, Falkenplatz 8  # 309,1385,674,48;310,1427,264,44
 - Stegmann, S. El., Wwe., Käfiggch. 8  # 305,1468,678,48
-Jaquerod, Arth., Hülfsübersetzer beim Jaquet, Arthur, Bankangestellter, Marzilistrasse 18 a  # 225,1506,756,47;222,1626,759,49;304,1668,277,37
+Jaquerod, Arth., Hülfsübersetzer beim  # 225,1506,756,47
+Jaquet, Arthur, Bankangestellter, Marzilistrasse 18 a  # 222,1626,759,49;304,1668,277,37
 - Boëx, Eug. Heinr., Commis, Predigergasse 4  # 304,1708,673,48;302,1749,238,38
 - Ehrler, C. S., Kanzlist der Bundeskanzlei, Lorraine, Platanenweg 1  # 300,1787,676,46;300,1828,633,48
 Järmann, Gottl. Sam., Holzhauer, Stald. 9  # 216,1866,757,49
