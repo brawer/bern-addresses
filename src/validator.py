@@ -94,6 +94,8 @@ class Validator:
         self.pois = self.read_csv("pois.csv", "PointOfInterest")
         self.street_abbrevs = self.read_csv("street_abbrevs.csv", "Abbreviation")
         self.streets = self.read_csv("streets.csv", "Street")
+        self.address_reform_1882 = self.read_address_reform_1882()
+        self.unknown_addresses_before_1882 = {}
         for abbr, s in self.street_abbrevs.items():
             street = s["Street"]
             message = 'unknown street "%s" for street_abbrev "%s"' % (street, abbr)
@@ -120,8 +122,36 @@ class Validator:
             print("--------------------")
             for name in sorted(self._missing_family_names):
                 print(name)
-        print()
+            print()
+        num_ua_before_1882 = len(self.unknown_addresses_before_1882)
+        if num_ua_before_1882 > 0:
+            print("%d unclear addresses before 1882" % num_ua_before_1882)
         print("%d warnings" % self._num_warnings)
+
+    def report_unknown_addresses_before_1882(self, out):
+        writer = csv.writer(out, quoting=csv.QUOTE_MINIMAL)
+        writer.writerow(
+            [
+                "Unbekannte Adresse",
+                "Häufigkeit",
+                "Erstes Jahr",
+                "Letztes Jahr",
+                "Beispiel-Eintrag",
+                "Beispiel-Seite",
+            ]
+        )
+        for _, ua in sorted(self.unknown_addresses_before_1882.items()):
+            page_id = int(ua.sample_scan["PageID"])
+            writer.writerow(
+                [
+                    ua.address,
+                    ua.count,
+                    ua.min_year,
+                    ua.max_year,
+                    ua.sample,
+                    f"https://www.e-rara.ch/bes_1/periodical/pageview/{page_id}",
+                ]
+            )
 
     def is_company(self, entry):
         return "[Firma]" in entry["Titel"]
@@ -214,8 +244,18 @@ class Validator:
 
     def normalize_person(self, entry):
         assert not self.is_company(entry)
+        scan = self.pages[entry["Scan"]]
+        date = scan["Date"]
         _, addr_1 = self._normalize_address(entry["Adresse"])
         _, addr_2 = self._normalize_address(entry["Adresse 2"])
+        if int(date[:4]) < 1882:
+            addr_1_before_1882 = addr_1
+            addr_1 = self._modernize_address_1882(addr_1_before_1882, entry)
+            addr_2_before_1882 = addr_2
+            addr_2 = self._modernize_address_1882(addr_2_before_1882, entry)
+        else:
+            addr_1_before_1882 = ""
+            addr_2_before_1882 = ""
         occ_1 = self.occupations.get(entry["Beruf"], {}).get("CH-ISCO-19")
         occ_2 = self.occupations.get(entry["Beruf 2"], {}).get("CH-ISCO-19")
         occ_1_male, occ_1_female, occ_2_male, occ_2_female = "", "", "", ""
@@ -234,7 +274,6 @@ class Validator:
         pos_x, pos_y, pos_w, pos_h = "", "", "", ""
         if pos := entry["ID"]:
             [pos_x, pos_y, pos_w, pos_h] = [str(int(n.strip())) for n in pos.split(",")]
-        scan = self.pages[entry["Scan"]]
         return {
             "Name": self._normalize_name(entry["Name"]),
             "Vorname": entry["Vorname"],
@@ -256,6 +295,8 @@ class Validator:
             "Titel (Rohtext)": entry["Titel"],
             "Adresse 1 (Rohtext)": entry["Adresse"],
             "Adresse 2 (Rohtext)": entry["Adresse 2"],
+            "Adresse 1 (bereinigt, vor Adressreform 1882)": addr_1_before_1882,
+            "Adresse 2 (bereinigt, vor Adressreform 1882)": addr_2_before_1882,
             "Beruf 1 (Rohtext)": entry["Beruf"],
             "Beruf 2 (Rohtext)": entry["Beruf 2"],
             "Bemerkungen": entry["Bemerkungen"],
@@ -270,12 +311,23 @@ class Validator:
 
     def normalize_company(self, entry):
         assert self.is_company(entry)
-        _, addr_1 = self._normalize_address(entry["Adresse"])
-        _, addr_2 = self._normalize_address(entry["Adresse 2"])
         pos_x, pos_y, pos_w, pos_h = "", "", "", ""
         if pos := entry["ID"]:
             [pos_x, pos_y, pos_w, pos_h] = [str(int(n.strip())) for n in pos.split(",")]
         scan = self.pages[entry["Scan"]]
+        date = scan["Date"]
+
+        _, addr_1 = self._normalize_address(entry["Adresse"])
+        _, addr_2 = self._normalize_address(entry["Adresse 2"])
+        if int(date[:4]) < 1882:
+            addr_1_before_1882 = addr_1
+            addr_1 = self._modernize_address_1882(addr_1_before_1882, entry)
+            addr_2_before_1882 = addr_2
+            addr_2 = self._modernize_address_1882(addr_2_before_1882, entry)
+        else:
+            addr_1_before_1882 = ""
+            addr_2_before_1882 = ""
+
         noga_code_1, noga_label_1, noga_code_2, noga_label_2 = "", "", "", ""
         if activity_1 := self.economic_activities.get(entry["Beruf"]):
             noga_code_1 = activity_1["NOGA-Code"]
@@ -295,6 +347,8 @@ class Validator:
             "Name (Rohtext)": entry["Name"],
             "Adresse 1 (Rohtext)": entry["Adresse"],
             "Adresse 2 (Rohtext)": entry["Adresse 2"],
+            "Adresse 1 (bereinigt, vor Adressreform 1882)": addr_1_before_1882,
+            "Adresse 2 (bereinigt, vor Adressreform 1882)": addr_2_before_1882,
             "Branche 1 (Rohtext)": entry["Beruf"],
             "Branche 2 (Rohtext)": entry["Beruf 2"],
             "Bemerkungen": entry["Bemerkungen"],
@@ -354,6 +408,37 @@ class Validator:
             return True, abbrev["Street"]
         return False, ""
 
+    def _modernize_address_1882(self, addr, entry):
+        if addr == "":
+            return ""
+        if a := self.address_reform_1882.get(addr):
+            return a
+        if a := self.address_reform_1882.get(addr.replace("ß", "ss")):
+            return a
+
+        scan = self.pages[entry["Scan"]]
+        year = int(scan["Date"][:4])
+        if ua := self.unknown_addresses_before_1882.get(addr):
+            ua.count += 1
+            ua.min_year = min(ua.min_year, year)
+            ua.max_year = max(ua.max_year, year)
+            return ""
+
+        # Build a sample, so humans can follow up on unknown addresses.
+        name = self._normalize_name(entry["Name"])
+        givenname = entry["Vorname"]
+        sample = f"{name} {givenname}".strip()
+        ua = UnknownAddress()
+        ua.address = addr
+        ua.count = 1
+        ua.sample = sample
+        ua.sample_scan = scan
+        ua.min_year = year
+        ua.max_year = year
+        self.unknown_addresses_before_1882[addr] = ua
+
+        return ""
+
     def read_lines(self, filename):
         path = os.path.join(os.path.dirname(__file__), filename)
         lines = set()
@@ -369,3 +454,44 @@ class Validator:
                 assert row[key] not in result, "duplicate entry: %s" % row[key]
                 result[row[key]] = row
         return result
+
+    def read_address_reform_1882(self):
+        data_path = os.path.join(os.path.dirname(__file__), "..", "data")
+        path = os.path.join(data_path, "address_reform_1882.csv")
+        result = {}
+        # Keys as printed in "Die Häuser-Nummerirung in Bern 1882"
+        # and thus as "Strasse vor 1882" in data/address_reform_1882.csv;
+        # values as in src/streets.csv.
+        old_street_subst = {
+            "Aarzieledrittel": "Aarziele",
+            "Arziele-Drittel": "Aarziele",
+            "Aarziele-Drittel": "Aarziele",
+            "Altenberg-Drittel": "Altenberg",
+            "Brunnadern-Drittel": "Brunnadern",
+            "Holligen-Drittel": "Holligen",
+            "Länggass-Drittel": "Länggasse",
+            "Lorraine-Drittel": "Lorraine",
+            "Lorraine-Strasse": "Lorrainestrasse",
+            "Schosshalden-Drittel": "Schosshalde",
+            "Zwiebelngässchen": "Zwiebelngässlein",
+        }
+        with open(path, "r") as stream:
+            for r in csv.DictReader(stream):
+                old_street = r["Strasse vor 1882"]
+                old_street = old_street_subst.get(old_street, old_street)
+                old_num = r["Nummer vor 1882"]
+                new_street = r["Strasse"]
+                new_num = r["Nummer"]
+                old_addr = f"{old_street} {old_num}".strip()
+                new_addr = f"{new_street} {new_num}".strip()
+                if old_addr and new_addr:
+                    result[old_addr] = new_addr
+        return result
+
+
+class UnknownAddress(object):
+    def __init__(self):
+        self.address = None
+        self.count = 0
+        self.sample = ""
+        self.sample_scan = None
