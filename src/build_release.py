@@ -34,6 +34,8 @@ PEOPLE_FIELDS = [
     "Titel (Rohtext)",
     "Adresse 1 (Rohtext)",
     "Adresse 2 (Rohtext)",
+    "Adresse 1 (bereinigt, vor Adressreform 1882)",
+    "Adresse 2 (bereinigt, vor Adressreform 1882)",
     "Beruf 1 (Rohtext)",
     "Beruf 2 (Rohtext)",
     "Bemerkungen",
@@ -58,6 +60,8 @@ COMPANY_FIELDS = [
     "Name (Rohtext)",
     "Adresse 1 (Rohtext)",
     "Adresse 2 (Rohtext)",
+    "Adresse 1 (bereinigt, vor Adressreform 1882)",
+    "Adresse 2 (bereinigt, vor Adressreform 1882)",
     "Branche 1 (Rohtext)",
     "Branche 2 (Rohtext)",
     "Bemerkungen",
@@ -94,11 +98,16 @@ if __name__ == "__main__":
                 else:
                     if norm := validator.normalize_person(row):
                         people_writer.writerow(norm)
+
     validator.report()
+    unknown_before_1882 = io.StringIO()
+    validator.report_unknown_addresses_before_1882(unknown_before_1882)
+
     with zipfile.ZipFile("Berner_Adressbuch.zip", "w") as zf:
         for name, buf in [
             ("Personen.csv", people_buffer),
             ("Firmen.csv", company_buffer),
+            ("Unklare Adressen vor 1882.csv", unknown_before_1882),
         ]:
             content = buf.getvalue()
             zf.writestr(name, buf.getvalue(), compress_type=zipfile.ZIP_DEFLATED)
