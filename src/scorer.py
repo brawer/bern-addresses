@@ -3,7 +3,7 @@ import re
 import statistics
 import csv
 
-from difflib import SequenceMatcher
+from difflib import SequenceMatcher, get_close_matches
 from cleanup.fix_conjunctions import JOIN_WORDS
 
 # slider to decide how many unknown fragments we
@@ -14,6 +14,11 @@ ACCEPT_MAX_UNKNOWN_FRAGS = 0
 
 # accept lines which are this much similar to original line
 SEQUENCE_MATCH_THRESHOLD = .95
+
+# match occupations at least this long
+# lazily up to that threshold
+MIN_OCCUPATION_LAZY_MATCH_LENGH = 10
+MIN_OCCUPATION_LAZY_MATCH_THRESHOLD = .93
 
 # print some debug information to stdout
 DEBUG_TO_STDOUT = False
@@ -89,12 +94,21 @@ def isgivenname(frag):
 
     return False
 
-# TODO(random-ao): use closest matches via difflib
 def isoccupation(frag):
     # first check in occupations.csv
     # then in companies.csv
     if frag in OCCUPATIONS: return True
     if frag in COMPANIES: return True
+
+    # then lazy match against companies.csv again
+    # to allow for small variations in writing
+    if len(frag) > MIN_OCCUPATION_LAZY_MATCH_LENGH:
+        matches = get_close_matches(frag, COMPANIES, n=1, cutoff=MIN_OCCUPATION_LAZY_MATCH_THRESHOLD)
+        if len(matches) > 0:
+            if DEBUG_TO_STDOUT:
+                print("frag: %s, matches: %s" % (frag, matches))
+            return True
+
     return False
 
 # TODO(random-ao): split out locations,
