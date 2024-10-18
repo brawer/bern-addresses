@@ -563,7 +563,7 @@ With., Poste., Speichg. 6  # 319,1451,592,56
 - Friedr., Abw. b. Postdep., Zähringerstraße 365  # 316,1501,591,56;313,1559,454,47
 Blattner R., Sekr. im Mater.Bureau der Generalpostdirektion, Mattenhof 314d.  # 204,1609,705,52;311,1658,597,57;312,1716,596,49
 Blau, Alb., gew. Gutsbesiger, Krang. 165  # 203,1766,702,60;309,1825,280,39
-- Friedrich, Substitut der Stadtpolizei, Matte 118  # 310,1877,594,51;312,1931,594,48
+-, Friedrich, Substitut der Stadtpolizei, Matte 118  # 310,1877,594,51;312,1931,594,48#s=1
 - Joh., Schlosser, Sternengäßlein 35  # 227,1981,676,56;306,2039,238,46
 - U., Schlosser, Schplg. 207  # 254,2084,647,60
 -, Rud., Sohn Schlosser, Schauplatzg. 207  # 305,2136,585,64;308,2195,400,54#s=1
@@ -1037,7 +1037,7 @@ Christen, geb. Aeschlimann, Negot., Kornhauspl. 147  # 1075,343,716,64;1208,404,
 - Joh. Jak., Revis. d. Oberkriegskom., Frickstiege  # 1206,611,583,49;1204,662,500,57
 - geb. Künsch, Elise, Wwe., Altenberg 170  # 1160,715,620,54;1202,772,319,48#s=0.95
 - Kropf, Joh., gew. Wirth, Mattenhof 309  # 1202,814,583,61;1203,873,339,44#s=1
-- Ulrich, Steinhauermeister b. Station Ostermundigen  # 1201,921,582,56;1202,972,578,59
+-, Ulrich, Steinhauermeister b. Station, Ostermundigen  # 1201,921,582,56;1202,972,578,59#s=1
 - Jak., Zimmermann bei’r, Linde 155e  # 1199,1030,584,50;1200,1080,261,41
 - I., Schuhm., Kramg. 180 und 201  # 1127,1134,656,56;1199,1185,186,38
 -, Karl, Zugführer, Gerbernlaube 62  # 1196,1238,583,50;1195,1288,193,41#s=1
@@ -3085,7 +3085,7 @@ Jobann, Holzhauer und Gasanzünder, Stald. 5  # 237,965,601,46;234,1020,570,45
 -, R., Posamenter, Postgasse 68  # 235,1240,605,52;229,1305,193,38#s=1
 - J. J, Schreinermeister, Metzgerg. 102 u. 109  # 232,1345,607,54;231,1409,518,44
 Kilian, alt-Reg.-Rath, Kreuzgasse 105  # 118,1460,718,56;233,1521,219,43
-Kindler, K. Fr., Kassier d. Berner Handelsbank, Marziele 7  # 116,1563,721,60;229,1629,607,42;226,1685,162,43
+Kindler, K. Fr., Kassier d. Berner Handelsbank, Marziele 7  # 116,1563,721,60;229,1629,607,42;226,1685,162,43#s=1
 - N., Mehlhndl. u. Spezier.  # 231,1736,603,52
 Gerechg 140  # 229,1793,303,46
 -, S. G., Kaufm., Marktgasse 45  # 187,1847,648,51;224,1907,190,43#s=1
@@ -3322,7 +3322,7 @@ Küenzi, Jh. Jak., Zeugschm., Schifflaube 51 b u. Hammerschmiede 99  # 868,335,7
 - Joh., Schneider, Sandrain Schönau 41 e  # 986,1675,604,54;981,1726,463,53
 Frig, Gärtner, Holligen  # 983,1781,576,65
 Kuenß-Freydig, P., Nevisor, Länggaßdr. 249(Tiefenau)  # 868,1834,716,71;978,1887,609,70
-- G., Sigrist a. d. franz. Kirche, Marktg. 45  # 935,1942,650,70;977,2002,448,56
+-, G., Sigrist a. d. franz. Kirche, Marktg. 45  # 935,1942,650,70;977,2002,448,56#s=1
 - gb. Brand, Wwe. d. Zuckerbäckers, Marktg. 75  # 904,2055,680,64;975,2109,458,62
 - Th., Sekr. d. Oberwaisenkammer, Pelikan u. Bundesa. 225 (Bureau Jäggi)  # 973,2162,607,65;972,2222,604,52;969,2271,611,71
 Kuenz-Lüthi, Sophie, Corsetschneiderin, Gerberngr. 142  # 860,2324,713,71;963,2383,616,65
@@ -4785,7 +4785,7 @@ Reißmann, Paul, Kaufmann, Bundesg. 187 c u. Marktgasse 34  # 395,2550,712,28;50
 Nellstab J. A., Getreidehdl., Stadtbach 178 c  # 1068,384,737,17;1212,415,373,37
 -, Joh., Sekretär d. Direkt. d. Innern, Gerechtg. 98  # 1209,471,601,30;1210,524,574,39#s=1
 Nenaud, Fürsprecher u. Üeberseger, Lorr. 14  # 1104,581,709,39;1211,635,363,32
-- R. A., Direkt. d. Handelsbank, Bundesg. 228  # 1216,686,600,32;1214,742,486,39
+-, R. A., Direkt. d. Handelsbank, Bundesg. 228  # 1216,686,600,32;1214,742,486,39#s=1
 Renfer, Ed., Postcommis, Falfenegg 218  # 1110,796,708,38;1219,852,257,44
 Nentsch, J. G., Schriftseter, Aarbergg. 21  # 1112,898,707,46;1223,958,315,45
 Stallknecht, Aarbg. 23  # 1227,1010,533,43
@@ -5933,7 +5933,7 @@ Stengel, Rud., Sohn, Kerzenfabr., Schütte254(Narhof) u. Brunngasse 24  # 946,15
 Sohn) Schütte 254 (Narhof)  # 1051,1725,590,54;1050,1774,97,55
 -, G. F., Büchsenschmied, Brunngasse 24  # 996,1824,643,62;1046,1888,343,46#s=1
 - Adolf, Arzt, Kramg. 202  # 1046,1940,589,47
-- geb. Stauffer, Wittwe, Modes u. Lingerie, Christoffelg. 235 b  # 1045,1989,593,55;1044,2039,590,59;1045,2099,323,45
+- geb. Stauffer, , Wittwe Modes u. Lingerie, Christoffelg. 235b  # 1045,1989,593,55;1044,2039,590,59;1045,2099,323,45#s=0.95
 Stenz, Jb., Schneidermst., Gerechtigtg. 121  # 939,2149,694,51;1044,2197,374,54
 Sterchi, J. G., Schriftseter, Sulgenbach 105 d  # 938,2253,689,57;1045,2305,417,48
 - Jak., Oberlehrer, Neuengasse 87 (Schulhaus)  # 1042,2362,596,44;1044,2414,499,51
@@ -6784,7 +6784,7 @@ v. Wurstemberger--v. Bach, H.  # 114,373,382,34
 - Abl. b. Haudenschild, Bäck, Grchtg. 103, Bureau Junkerng. 164  # 235,700,618,39;238,759,621,38;241,818,259,40
 - -Steiger Rud., gw. Stadtlehenskommissär, Krg. 172  # 154,877,708,25;247,927,617,34
 - geb. Stettler, d. Pfr. Ww., Gerechtg. 69  # 246,976,616,43;251,1037,307,43
-- Franz, Commis d. Handelsbank, Gerechtg. 69  # 249,1093,622,29;248,1146,558,39
+-, Franz, Commis d. Handelsbank, Gerechtg. 69  # 249,1093,622,29;248,1146,558,39#s=1
 - G., Buchhalt. d. Mob.-Assek., Kramg. 172  # 250,1203,621,34;245,1262,429,34
 - geb. v. Steiger, Marie, Kramgasse 172  # 257,1315,618,33;259,1371,356,35
 Wyder, Rud., Zimmermeister, Lorraine 51b  # 144,1426,735,32;257,1478,341,31#s=1

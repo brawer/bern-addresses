@@ -35,8 +35,8 @@ WRITE_UNKNOWN_FRAGMENT_LIST = True
 AFFIXES_PATH = os.path.join(os.path.dirname(__file__), 'affixes.txt')
 AFFIXES = {affix.rstrip() for affix in open(AFFIXES_PATH, 'r')}
 
-COMPANIES_PATH = os.path.join(os.path.dirname(__file__), 'companies.csv')
-COMPANIES = {c.split(',')[0].strip() for c in open(COMPANIES_PATH, 'r')}
+WORKPLACES_PATH = os.path.join(os.path.dirname(__file__), 'workplaces.csv')
+WORKPLACES = {c.split(',')[0].strip() for c in open(WORKPLACES_PATH, 'r')}
 
 GIVENNAME_PATH = os.path.join(os.path.dirname(__file__), 'givennames.txt')
 GIVENNAMES = {name.strip() for name in open(GIVENNAME_PATH, 'r')}
@@ -96,14 +96,14 @@ def isgivenname(frag):
 
 def isoccupation(frag):
     # first check in occupations.csv
-    # then in companies.csv
+    # then in workplaces.csv
     if frag in OCCUPATIONS: return True
-    if frag in COMPANIES: return True
+    if frag in WORKPLACES: return True
 
-    # then lazy match against companies.csv again
+    # then lazy match against workplaces.csv again
     # to allow for small variations in writing
     if len(frag) > MIN_OCCUPATION_LAZY_MATCH_LENGH:
-        matches = get_close_matches(frag, COMPANIES, n=1, cutoff=MIN_OCCUPATION_LAZY_MATCH_THRESHOLD)
+        matches = get_close_matches(frag, WORKPLACES, n=1, cutoff=MIN_OCCUPATION_LAZY_MATCH_THRESHOLD)
         if len(matches) > 0:
             if DEBUG_TO_STDOUT:
                 print("frag: %s, matches: %s" % (frag, matches))
