@@ -80,6 +80,10 @@ FIXES = [
     (r'Elife', r'Elise'),
     # Nud.
     (r'Nud\.', r'Rud.'),
+    # Schriftseger
+    (r'Schriftseger', r'Schriftsetzer'),
+    # Nentiere
+    (r'Nentier', r'Rentier'),
 
     (r'[ ]?\. \.,? ', '., '),
     (r'\.„', '. „'),

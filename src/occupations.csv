@@ -59,6 +59,7 @@ Apotheker,42103003
 Arbeiter,47101003
 Arbeiterin,47101003
 Arbeitslehrerin,44604013
+Arbeitsmann,47101003
 Arch.,29101001
 Archit.,29101001
 Architekt,29101001
@@ -108,6 +109,7 @@ Bahnangestellter d. SBB,34108017
 Bahnarb.,34108027
 Bahnarbeiter,34108027
 Bahnbeamter,34101044
+Bahnhofarbeiter,34108026
 Bahnhof-Inspekt.,34101020
 Bahnvorarbeiter,34104025
 Bahnwärter,34102002
@@ -147,6 +149,7 @@ Baumw.-Handlung,31109171
 Bäurisch-Schn.,22201006
 Bäurischschn.,22201006
 Bäurisch-Schneid.,22201006
+Bäurischschneiderin,22201006
 Bauschlosser,25306013
 Bauschreiner,26104014
 Bautechniker,29203006
@@ -166,6 +169,7 @@ Behb.,*
 Bereiter,11301002
 Bergführer,32302007
 Besenb.,46105021
+Betriebs-Insp.,46106088
 Betriebsleiter,33101016
 Bettfedernh.,31109078
 Betthdl.,31109078
@@ -324,6 +328,7 @@ Condt.,21103016
 Condukt.,34105001
 Condukteur,34105001
 Confis.,21103039
+Controlgehülfe,47101094
 Controll. d. Kantonalbank,33203060
 Corsetm.,22201055
 Corsetmach.,22201055
@@ -374,6 +379,7 @@ Dr. Med.,42101107
 Dr. Medicinæ,42101107
 Drog.,31105001
 Drogist,31105001
+Droschkenführer,34503017
 Droschkenhalt.,34503017
 Droschkenhalter,34503017
 Dr. Prof.,44101001
@@ -503,6 +509,7 @@ Gastwirthin zum Affen,39101001
 Gastwirth z. Zimmerl.,39101001
 Gastwrth z. Schmieden,39101001
 Gefangenwärter,36102031
+Geh.,47101024
 Gehilfe,47101024
 Gehilfin,47101024
 Gehülfe,47101024
@@ -674,6 +681,7 @@ Hammerschmied,25305006
 Hamschm.,25305006
 Handarb.,22202062
 Handelm.,31109001
+Handelsagent,32501028
 Handelsgärtner,11401003
 Handelslehrer,44201010
 Handelsm.,31109001
@@ -697,6 +705,7 @@ Hausierer,31107010
 Hausknecht,11102019
 Hausmeister,51103037
 Hausmstr. im hintern Spital,51103037
+Haustochter,39202021
 Hauswart,51101322
 Hbam.,51103313
 Hdlsm.,31109001
@@ -723,6 +732,7 @@ Hilfsarbeiterin,47101059
 Hilfsmonteur,25405001
 Hlzschuhm.,22302075
 Holzer,11502002
+Holzh.,11502003
 Holzhändler,31109052
 Holzhauer,11502021
 Holzhdl.,31109052
@@ -734,6 +744,7 @@ Hotelexperte,51102034
 Hotelier,39101003
 Hufschm.,51101867
 Hufschmied,51101867
+Huthdl.,31109154
 Hutm.,22204001
 Hutmacher,22204001
 Ing.,29112007
@@ -776,6 +787,7 @@ Kammmacher,28201002
 Kammmch.,28201002
 kant. Beamter,33201081
 Kantonsbaumeister,33102160
+Kantonsschullehrer,44201003
 Kanzl.,33202006
 Kanzleiläufer,33202099
 Kanzleisekretär,33202133
@@ -812,10 +824,12 @@ Kerzenfabr.,28104001
 Kerzenfabrik.,28104001
 Kerzenfabrikant,28104001
 Kettelim.,38401003
+Kfm.,51102218
 kfm Angestellter,33201001
 Kindergärtnerin,44501001
 Klaßhl.,*
 Klavierhdl.,31102202
+Klavierhdlr.,31102202
 Klavierlehrerin,44603004
 Klavierm.,38406001
 Klaviermach.,38406001
@@ -859,6 +873,7 @@ Korber,26106002
 Körber,26106002
 Korbflecht.,26106004
 Korbm.,26106007
+Korbmacher,26106007
 Korrektor,37102002
 Korrespondent,33201043
 Korrespondentin,33201043
@@ -915,6 +930,7 @@ Kutsch.,34503015
 Kutscher,34503015
 Laborantin,28101010
 Lackirer,25705009
+Ladendiener,31102105
 Ladengeh.,31107032
 Ladentochter,31102105
 Landarbeiter,11102008
@@ -1123,6 +1139,7 @@ Nudlem.,21104030
 Nudlemacherin,21104030
 Oberbibliothekar,37201005
 Oberbriefträger,35103002
+Oberfeldarzt,42101001
 Oberf. Stadtb.,11501002
 Obergerichtspräsident,36201028
 Obergerichtsschr.,36202002
@@ -1131,6 +1148,7 @@ Obergerichtswbl.,33202154
 Oberl.,44401004
 Oberlehrer,44401004
 Ober-Postcontrll.,35105056
+Oberpostcontrolleur,35105056
 Oberpost-Rev.,35101016
 Oberpostsekret.,35105043
 Oberr.,36201014
@@ -1195,13 +1213,16 @@ Pianist,38101036
 Pianistin,38101036
 Pintenw.,39101051
 Pintenwirth,39101051
+Planton,46101038
 Polier,23107095
 Polierer,25203035
 Polizeid.,36101048
+Polizeidien.,36101048
 Polizeidiener-Corpor.,36101047
 Polizeidiener-Wachtm.,36101027
 Polizeidn.,36101048
 Polizeigefreiter,36101040
+Polizei-Korporal,36101047
 Polizeikorporal,36101047
 Polizist,36101011
 Portier,39102001
@@ -1226,6 +1247,7 @@ Postchauffeur,34201014
 Postcom.,35105051
 Postcomm.,35105051
 Postcommis,35105051
+Postcond.,35105052
 Postcondukt.,35105052
 Postdir.,33102222
 Postem.,*
@@ -1250,6 +1272,7 @@ Präsident d. Burgerraths,33102010
 Pred.,43202010
 Prediger,43202010
 Primarlehrer,44401006
+Primarschullehrerin,44401006
 Priv.,*
 Privat.,*
 Privatdoz.,44101003
@@ -1273,6 +1296,7 @@ Prokurist,33101009
 Prokuristin,33101009
 Pulvercontroll.,25404088
 Pulverw.,31109200
+Pußmacherin,*
 Quartieramtschef,51103486
 Quartieraufs.,36102014
 Quartieraufseher,36102014
@@ -1320,6 +1344,7 @@ Reparateur,29405065
 Revis.,32401012
 Revisionsgehülfe,32401007
 Revisor,32401012
+Richter,36201019
 Rittm.,44605047
 Rnt.,*
 Robes,22201067
@@ -1512,6 +1537,7 @@ Spitzenmach.,22204106
 Splwrnhdl.,31109073
 Sprachl.,51103216
 Sprachleh.,51103216
+Sprachlehr.,51103216
 Sprachlehrer,51103216
 Sprachlehrerin,51103216
 Spsew.,39101001
@@ -1527,6 +1553,7 @@ Standeswbl.,33202107
 Standesweibel,33202107
 Stationsbeamter,34101003
 Stationsgehilfe,34101040
+Stationsvorsteh.,34101025
 Statistiker,45304015
 Steinbrech.,24102004
 Steinbrecher,24102004
@@ -1551,6 +1578,8 @@ Strickwhandlung,31109047
 Strickwhdl.,31109047
 Strohflech.,22204068
 Strohhfb.,22204039
+Strohhutausrüster,22204039
+Strohhutausrüsterin,22204039
 Strohhutfabr.,22204039
 Strohhutfabrikant,22204039
 Strumpfstuhlschlssr.,*
@@ -1612,6 +1641,7 @@ Thurmwächter,36102034
 Tiefbautechniker,29203005
 Tierarzt,42401012
 Todtengr.,41201003
+Todtengräber,41201003
 Träg. d. Intelligenzblattes,34502019
 Train-Insp.,34101017
 Tramangest.,34503037
@@ -1659,6 +1689,7 @@ Versicherungsbeamter,32103029
 Vertr.,31108005
 Vertreter,31108005
 Vertreterin,31108005
+Verwalt.,33105156
 Verwalter,33105156
 Verwaltungsrat,33101013
 Verw. d. Deposito-Cas.,32103058
@@ -1722,6 +1753,7 @@ Weißn.,22202063
 Weißnäh.,22202063
 Weißnäher,22202063
 Weissnäherin,22202063
+Weißnäherin,22202063
 Werkführer,29403015
 Werkmeist.,51101078
 Werkmeister,51101078
