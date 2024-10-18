@@ -1,6 +1,5 @@
 # Date: 1871-05-30 Page: 3010140/113
-VIII. Alphabetisches Berzeichniß der ständigen Einwohner, mit Angabe ihres Wohnorts.  # 326,390,1332,81;595,472,799,79;539,563,904,67
-Waishspl. Waisenhausplaß. Weymh. Weyermannshaus. Beitgl. 3eitglockenthurm. 3ghg. = 3eughausgasse. 3wgß. 3wiebelngäßlein. 3w. d. Th. 3wischen den Thoren.  # 248,1479,1448,49;247,1519,1446,49;250,1559,191,37
+ständigen Einwohner, mit Angabe ihres Wohnorts.  # 595,472,799,79;539,563,904,67
 Abderhalden, Wwe., Rabishbl., Aarbergerg. 44  # 245,1726,690,56;351,1784,345,48
 - Rosa, Bettm., Aarbg. 44  # 340,1837,554,54
 Schuster, Joh., Matte 94  # 339,1888,571,47
@@ -11,6 +10,7 @@ Abt, Manf., Commis, Käfg. 98  # 237,2260,692,52
 Abys, Frau, Modhdl., Bärenplatz 241 u. Spitalg. 125  # 237,2313,693,49;342,2360,587,58
 Ackermann, Ed., Telegr., bei der tl. Schanze 185 a  # 234,2419,693,52;347,2467,511,53
 Acollas, Dr., Emil, Professor, Mattenhof 302  # 233,2520,689,56;340,2578,348,52
+Schifflaube. Schßh. den Thoren.  # 1180,1330,527,39;250,1559,191,37
 Adam, Schwest., Schneiderinnen, Spitalg. 168  # 1001,1626,694,55;1106,1681,410,53
 Adelmann, Marg. Cath., Lehrerin, Metzgerg. 130  # 996,1732,685,56;1102,1789,480,53
 Aeberhard gb. Schmid, Nng. 93  # 993,1837,695,61
@@ -362,10 +362,7 @@ Lederhdlr., Storcheng. 160  # 446,1166,564,55
 - Peter, Schneider, Brg. 18  # 443,1365,559,59
 | | |  # 414,1384,-49,124
 - Joh. Jb., Trödler, Abg. 28  # 443,1413,558,61
-- Joh. Friedrich, Zimmermann, Matte 127  # 440,1464,562,59;438,1528,396,32
-- Nikl. Friedr., Hutmacher, Bernhardt Gottl. Fr., BahnBrückfeld 235 a  # 439,1566,1272,69;436,1618,336,46
-- Friedr. Eman., Bureau-Berri Christ., Holzh., Corr. 133  # 434,1667,1279,71
-Angestellter, Stalden 3 Bernheim, Salom., Handelsmann, Christoffelg. 179, eidg. Bank  # 431,1717,1280,67;1148,1781,561,55;1146,1832,244,46
+- Joh. Friedrich, Zimmermann, Matte 127, Brückfeld 235 a  # 440,1464,562,59;438,1528,396,32;436,1618,336,46
 - Karl Friedr., Zimmerm., Längg. 215 d  # 432,1764,557,61;430,1820,281,49
 - Alb., Telegr., Lorr. 155  # 432,1865,559,62
 Bergmann F. C., Schriftgieß., Matte 14  # 328,1913,658,66;431,1970,191,39
@@ -389,6 +386,7 @@ Berner Cäsar, Spielwaarenhandlung, Spitalg. 165  # 1074,623,659,62;1169,677,536
 - Friedr. Jakob, Zimmerm., Holligen 141  # 1159,1376,556,62;1157,1432,275,45
 - Chr. Friedr., Zimmerm., Altenb. 110  # 1157,1470,553,69;1155,1529,261,43
 wärter, Altenb. 140  # 1151,1636,431,41
+mann, Christoffelg. 179, eidg. Bank  # 1148,1781,561,55;1146,1832,244,46
 Berseth J. J. M., Gutsbesizer, Schoßh. 43 (Melchenbühl)  # 1044,1876,660,64;1147,1924,557,65
 Beßmer C. J. Th., Fabrikaufseher, Felsenau  # 1042,1975,662,62;1138,2031,329,50
 Bessire 2., Angest. d. Staatsbahnbureau, Keßlerg. 277  # 1040,2081,664,57;1141,2134,561,59
@@ -546,7 +544,6 @@ Spital zw. d. Thor. 276  # 342,1303,560,49
 - Sam., gew Not., Mtte. 118  # 320,2159,604,53
 - geb. Schmig, Elise, Stgarrenhandl., Käfichg. 99  # 331,2208,594,56;329,2267,574,55
 - gb. Geißbühler, Elis. Cath., Aarbergerg. 37  # 315,2314,604,60;326,2374,346,50
-Blauner C., Kleiderfärber, Ge-Blünier, Kaminf., Brunng. 39  # 220,2419,1456,66
 rechtigkeitsg. 120  # 327,2482,401,48
 Cec., Privat., Spitg. 149  # 329,2532,592,56
 Bleuel, Viktor, Lithograph, Käfichgäßlein 95  # 218,2582,700,62;323,2636,378,58
@@ -598,7 +595,7 @@ Bohren, Wittwe, Kostgeberin, Porr. 211  # 339,1311,688,58;441,1367,223,37
 - geb. Grüneisen, Wittwe, Neuengasse 94  # 436,1728,587,58;436,1779,328,59
 Bolanz, Fr., Sattler, Gerechtigkeitsgasse 113  # 333,1833,690,53;435,1889,364,47
 Boll geb. Schmalz, Wwe. des Pfarrers, Neuengasse 89  # 330,1939,688,56;437,1988,559,60
-Bolliger A., Bäcker, Aarbg. 75 v. Bonstetten geb. de Vigneulle, - N., Mechaniker, Abwärt d. Gewerbeschule, Postg. 22  # 329,2039,1432,69;424,2098,590,45;434,2149,557,56
+- N., Mechaniker, Abwärt d. Gewerbeschule, Postg. 22  # 424,2098,590,45;434,2149,557,56
 - Coiffeur, Neuengasse 86 u. Spitalg. 128  # 366,2204,649,50;433,2255,284,51
 Bollin F., Kassengehülfe der Kantonalbank, Postg. 40  # 328,2300,688,65;429,2357,567,59
 - A. C., Bureauangestellter, Brunng. 36  # 428,2409,584,59;430,2464,265,50
@@ -909,7 +906,7 @@ Busch Jos., Musiklehrer, Aarbergergusse 42  # 920,2337,709,64;1026,2397,322,51
 Buser M. E., Modiste, Krg. 144  # 915,2549,714,65
 Buß, Geisendorf & Comp., Parfümeriehdl., Kramg. 212  # 912,2607,716,65;1019,2669,576,56
 # Date: 1871-05-30 Page: 3010157/130
-Bütigkofer, Anna Maria, Fär-Chard, Wwe. d. Postcondukt., berin, Spitalg. 144"  # 360,331,1428,65;464,386,480,53
+berin, Spitalg. 144"  # 464,386,480,53
 - J. J., Buchbind., Marz. 23  # 451,437,603,55
 - M., Schröpferin, Myg. 76  # 453,485,599,62
 - Ant. Gottl., Sesselmacher, Brunngasse 6 u. 7  # 453,539,600,62;462,597,441,51
@@ -1014,9 +1011,8 @@ Cueni-Meley, Gaum- und Arlette 166 a  # 350,331,722,66;459,442,242,39
 Curti Xav., Telegraphist, Kaufhausplat 49  # 348,489,696,67;447,543,289,54
 Cuttaz, Sekr. d. EisenbahnDir., Längg. 208 f beitsschullehrerin,  # 347,596,697,55;450,652,461,50;450,386,425,56
 Dägg gb. Augstburger, Cravattenmach., Schauplg. 218  # 341,1018,695,52;443,1072,560,53
-Dähler Christ., march.-taill., - (Associé v. Arn u. Däh-Dättwyler, And., Eisenbahnler), Spitalgasse 152  # 340,1121,690,54;439,1173,1343,65;438,1228,499,52
-- J., Schreiner, Sulgb. 86 A. B., Näherin, Mtt. 91  # 437,1276,1341,63
-- J. C., Architekt, Alten- Nos., Schneiderin, Käfichbergdr. 215 (Rabbenthal). gäßlein 27 u. Lorr. 212  # 441,1326,1337,69;438,1380,987,64;437,1439,300,34
+Dähler Christ., march.-taill., ler), Spitalgasse 152  # 340,1121,690,54;438,1228,499,52
+bergdr. 215 (Rabbenthal). gäßlein 27 u. Lorr. 212  # 438,1380,987,64;437,1439,300,34
 - Jakob, Schuhmachermstr., Aarbergergasse 6S  # 437,1487,582,58;434,1543,404,49
 - J., Droschkenh., Holligendrittel 99 (Salzbüchsli)  # 427,1593,595,57;432,1636,552,69
 Dällenbach J., Schreiner, Lindenhof 184 e  # 330,1696,689,59;430,1752,296,47
@@ -1105,8 +1101,7 @@ von Pruntrut, Frl. Maria  # 1069,2450,609,48
 - Jul., Kirchg. 274  # 1080,2503,416,53
 - v. Liebegg, Fr., Privat., Junkerngasse 195  # 996,2553,681,59;1079,2610,410,55
 # Date: 1871-05-30 Page: 3010161/134
-Diethelm, geb. Schrag, Kräm., Dietiker J., Schuhm. Gchtg. 100 Storcheng. 159  # 378,294,706,91;374,395,1181,85
-- G., Schneider, Krg. 141  # 465,451,587,65
+Diethelm, geb. Schrag, Kräm., - G., Schneider, Krg. 141  # 378,294,706,91;465,451,587,65
 - Frau, Sesselflecht., Kramgasse 141  # 473,500,579,65;470,559,200,40
 - Mar., Brodeuse, Krg. 165  # 470,607,581,64
 - Herm., Handlungsreisend., Länggaß 208 f  # 455,652,590,74;469,712,324,50
@@ -1208,7 +1203,7 @@ Töcht., Weißnäh. u. Schneiderinnen, Spitalg. 136  # 1062,2038,601,57;1071,208
 Eggimann J. gw. eidg. Staatskassier, Christoffelg. 186f  # 962,2403,693,58;1068,2454,594,57
 - geb. Steiner, Modistin, Spitalg. 141  # 1057,2507,594,58;1071,2561,296,52
 # Date: 1871-05-30 Page: 3010163/136
-Eggimann, Karl, Angest. a. der, Eichenberger U., SchuhmacherBundeskasse, Rabbenthal  # 367,300,1414,85;466,352,581,67
+Bundeskasse, Rabbenthal  # 466,352,581,67
 - August, Architekt, Nabbenthal 220  # 460,458,585,58;461,510,189,39
 - Ulrich, Zeughausarbeiter, Lorr. 143  # 461,558,578,69;460,612,218,42
 - Johann, Müller, Gerbernlaube Matte 22 a  # 455,663,582,60;457,715,397,48
@@ -1368,7 +1363,6 @@ Fetscherin C. 2., Not., PolizeiCaffier, Kramg. 185  # 1028,2123,683,69;1132,2181
 - --Lichtenhahn G. W., V. D.  # 1049,2492,649,53
 - M., Lehrer, Junkerng. 177  # 1118,2543,583,59
 # Date: 1871-05-30 Page: 3010166/139
-Fetscherin, J. F., V. D. M., v. Fischer (v. Reichenbach) Ldw.  # 287,321,1424,83
 Bibliothekar, Stadtb. 181  # 390,375,577,56
 - Fr., Dr., Sekundararzt in der Waldau (Ablage beim Inselgärtner)  # 336,427,630,63;388,479,573,71;385,531,314,58
 - Maria Cath. Elis., gewes.  # 374,578,588,75
@@ -1527,7 +1521,6 @@ Fuchs L. M., eidg. Ober-Postcontrolleur, Bundesg. 227  # 314,1109,689,49;416,116
 - P., Bannw., Längg. 249  # 419,1262,582,58
 - Friedr. N., Schuhmacher, Lorr. 146  # 414,1304,583,64;414,1369,216,35
 Kupferdr., Mattenh. 320 b  # 413,1421,584,44
-Fuchser Jak., Schreinergeselle, Gaberel Johann, Droschkenhalter, Stalden 14  # 311,1470,1424,56;1154,1526,441,42
 Beugbausg. 13  # 418,1525,345,46
 Fues geb. Benteli, Leichenbitt. u. Schäßzer., Brunng. 17  # 314,1575,680,51;415,1629,583,51
 - G., Schreiber, Brunng. 17  # 400,1679,597,52
@@ -1555,6 +1548,7 @@ Füri J. J., Kasster der Strafanstalt  # 1058,1005,686,55;1165,1059,145,50
 - K., Schrifts., Längg. 275  # 1149,1114,549,51
 - Karl Friedr., Angest. der Oberg.-Kanzlei, gg. 275  # 1159,1164,584,54;1160,1216,577,52
 - R., Steinh., Aarbg. 21  # 1094,1269,568,52
+halter, Stalden 14  # 1154,1526,441,42
 - geb. Hug, Zimmerverleih., Metzgergasse 88  # 1150,1575,582,58;1157,1631,345,52
 - A., Mechan., Storchg. 198  # 1152,1684,582,47
 Gafner, Chr., Lehenm.,Brunnadern 27  # 1052,1733,683,51;1157,1785,203,43
@@ -1579,7 +1573,6 @@ Mädchenschule.  # 338,681,337,43
 Garraux geb. Gfeller, Bäurischschneiderin, Gerechtg. 131  # 234,725,700,64;335,785,599,57
 - Alb., Angest. d. Gasanstalt, Neuengasse 113 b  # 325,835,608,62;337,894,396,49
 - Rud., Ladendien., Marz. 20  # 328,946,605,52
-Gaschard, Anna, Morcheln-Gehrig, Fisch-, Wild- u. Ge-  # 230,994,1472,70
 handlung, Kramg. 192  # 332,1048,549,64
 Gaschen R., Angest. d. Direkt. des Innern, Aarbg. 33  # 227,1101,704,62;333,1158,535,59
 - Rud., Angestellter d. Eidg. Bank, Aarbg. 33  # 327,1209,602,66;333,1268,395,55
@@ -1740,7 +1733,7 @@ Glanzmann J., Strumpfwb., Längg. 209 g  # 950,2546,712,79;1059,2604,314,65
 Glättli H., Hafner, Hollig. 139  # 949,2654,712,81
 # Date: 1871-05-30 Page: 3010173/146
 Glag G., Bäcker, Längg. 252b  # 291,369,736,31
-Glauser geb. Urfer, Junkern- -Jb., Asphaltl., Klappl. 19gasse 185  # 290,421,1473,33;397,480,214,35
+gasse 185  # 397,480,214,35
 - Chr., Metzger, Zeughausplatz 249  # 404,530,599,40;398,587,214,37
 - Joh., Baumeister, Altenbergdr. 127  # 405,632,597,46;401,690,271,40
 - Friedr., Bankangestellter, Junkerng. 185  # 402,738,602,46;403,795,345,41
@@ -1947,7 +1940,6 @@ Gurtner Chr., Zimmermann, Matte 126  # 965,2459,716,63;1075,2519,235,43
 - Joh., Zimmerm., Länggasse 282  # 1076,2628,606,58;1070,2689,216,34
 # Date: 1871-05-30 Page: 3010177/150
 Gurtner, Dan., eidg. Bibliothefar, Längg. 208 k  # 298,312,705,55;400,370,492,49
-- Jos., Salzmagazingehülfe, Haaf- Haller, Carl, chemisches b. Linde 185i  # 391,419,1373,65;402,472,315,45
 - Joh., Zimmerm., gg. 282  # 390,527,613,58
 - Joh., Zimmerm., Sohn, Länggasse 282  # 406,575,592,60;399,633,324,53
 - Marie, geb. Schwarz, Feinwascherin, Lorr. 209  # 400,685,598,62;400,739,605,52
@@ -1973,6 +1965,7 @@ Gyger F., Thierarzt, Spchg. 6a  # 279,2181,709,56
 - Julie, Lehrer, Aarbg. 36  # 374,2397,588,53
 Gygi Joh., Eisenbahnkondukt., Käfichgäßlein 99  # 277,2443,705,61;384,2504,381,50
 Gylam R., Abwart d. Baudir., Kirchpl. 314 (Stift)  # 276,2554,703,56;381,2612,461,52
+$. b. Linde 185i  # 1378,324,79,59;402,472,315,45
 Laborator. u. Drogueriegeschäft, Marktgasse 39;  # 1168,475,595,63;1168,532,594,58
 Wohn. Länggaßdr. 184 c  # 1167,583,595,60
 - (Lindenhof).  # 1165,638,283,52
@@ -2225,7 +2218,7 @@ Herbort, Frln., Spitalg. 131  # 216,1078,666,65
 Herbst, Pet. Aug., Commis, Gerechtigkeitsg. 82  # 215,1130,710,65;331,1188,442,58
 Hermann Schwest., Brunng. 29  # 216,1241,713,64
 - G., Fürsp., Sekr. d. Einw.Polizei, Gerechtg. 133  # 272,1294,657,59;325,1352,539,58
-- C. F. A., Zeichner u. Ma-Herzig Chr., Silberarbeiter u. ler, Käfichg. 108  # 311,1405,1379,73;321,1463,390,51
+ler, Käfichg. 108  # 321,1463,390,51
 - Schwestern, Erzieherinn., Reßlerg. 281  # 311,1511,610,64;323,1569,299,54
 - Emma, Lehrerin, Jkg. 175  # 320,1623,602,59
 - Nikl. Em., Steinh.,Lor. 143  # 309,1670,616,60
@@ -2287,12 +2280,10 @@ Hiltbrunner-Oppliger, Hebam., Aarbergg. 28  # 360,1160,687,65;463,1217,296,53
 Hiltbold, J. F., Negt., Kramg.  # 347,1683,689,62
 - geb. Strittmatter, Krämerin, Metzge g. 97  # 457,1790,580,54;451,1842,472,54
 Hinni, Rud., Schreiner, Länggasse 284  # 346,1891,691,64;451,1953,210,39
-Hirs Casp., Gypser u. Maler, Aarbergerg. 39 u. Spei-Hirt, A., Lehrer, Lorraine 40  # 346,1996,685,61;448,2053,1306,60
-chergasse 6 g  # 448,2104,271,55
+Hirs Casp., Gypser u. Maler, chergasse 6 g  # 346,1996,685,61;448,2104,271,55
 Hirsbrunner Chr., Flachmaler, Holligen 159 (Lindenegg)  # 344,2155,690,59;445,2207,588,64
 - Casp., Drechsler, Linden-  # 403,2260,629,56
 hof 184 g (Magaz. Spitalgasse 166)  # 445,2315,668,62;444,2368,232,48
-- F. R., Steinhauer, Mar-Hirter J., Schiffmstr., Mtt. 42  # 447,2417,1331,65
 ziele 46  # 439,2474,178,41
 - Metzger, Schifflaube 43  # 406,2522,570,55
 Hirsbrunner-Kohler, Sekr., derin, Brunng. 9/10, Metzgerg. 135  # 1087,324,715,70;473,380,479,56;1221,392,313,49
@@ -2499,8 +2490,6 @@ Hummel C., Buchbind. u. Papeteriehdl., Marktg. 36  # 919,2430,713,66;1025,2482,5
 - G., Metzg., Keßlg. 282  # 1016,2597,508,60
 - Ferd., Sohn, Metzger, Keßlergasse 282  # 1022,2644,605,72;1020,2701,278,55
 # Date: 1871-05-30 Page: 3010187/160
-Hummel, 2., Uhrenm., Mtzg. 67 Jacot, Fürspr., Kirchg. 274  # 350,319,1424,73
-Hünerwadel G., alt-Staats-Jacot, Emil, Associé d. Firma  # 350,370,1456,75
 schreiber, Schauplg. 235 a  # 454,429,597,59
 Hungerbühler, J., Wagenw. d. Oronbahn, Marz. 64  # 346,477,692,66;453,533,553,55
 Hunsperger, Dachd., Metzg. 97  # 343,583,705,66
@@ -2559,7 +2548,6 @@ Jahn-Wurstemberger, Dr. A., eidg. Biblioth. u. Dozent a. d. Hochschule, Lorr. 12
 - Jakob J., Strumpfwb. u. Wollenwhdl., Brunng. 22  # 1067,2505,702,59;1170,2566,513,52
 - A. E., Schneiderin, Ag. 35  # 1134,2618,633,60
 # Date: 1871-05-30 Page: 3010188/161
-- Jakob, Friedr., Steinhauer, 1v. Jenner, Em. Fried., Hauptmann, Kramg. 190  # 236,305,1465,112;1100,401,455,59
 Altenberg 179  # 339,371,328,55
 - Ferd., Lehrer d. Lorraineschule, Altenb. 140 c  # 328,421,604,66;333,475,491,61
 Jakobi P. J., Eisengieß., Sulgenbach 88  # 226,520,705,83;331,583,234,54
@@ -2584,6 +2572,7 @@ Jegerlehner Joh., gew. Bannwart, Schoßhalde 53  # 156,2354,704,78;258,2416,492,
 v. Jenner, geb. Lutz, Wittwe, Hirschengraben 171 h  # 150,2463,704,80;253,2526,493,62
 - -Marcuard C. D. F., Bnq., Judengasse 125  # 212,2570,639,79;252,2631,362,60
 Adreffalender für 1871.  # 182,2711,389,44
+mann, Kramg. 190  # 1100,401,455,59
 - N. G. E., Abwart, Keßlergasse 335, Stadtbibliothekgebäude.  # 1089,446,607,73;1095,501,599,74;1094,559,193,50
 - J. E. F., Papierhandlung u. Buchbd., Gerechtg. 91  # 1050,600,636,85;1089,662,568,80
 - Sophie, Bettm., Grchtg. 91  # 1032,711,654,84
@@ -2632,8 +2621,7 @@ Jester Arn., Papiernegotiant, Kramg. 159 u. 166  # 292,2173,701,54;397,2228,458,
 Imboden, J., Vater, Weinhändi., Schauplatzg. 235 a  # 292,2280,703,53;392,2330,603,58
 - A., Sohn, Weinhändler, Rabbenthal 224  # 324,2379,668,63;397,2437,362,49
 - Johann, Lumpensammler, 139 a  # 386,2493,605,51;614,2544,119,45
-Imhof Chr., Uhrm., Brg. 15 Jöhr, Frau, Nudlenmacherin,  # 279,2593,1470,10
-Imhoof, J. L., Sesselflechter., Speicherg. 4  # 1073,315,694,58;1177,370,290,55
+Imhoof, J. L., Sesselflechter, Speicherg. 4  # 1073,315,694,58;1177,370,290,55
 - C., Gypser, Herreng. 306  # 1096,421,671,57
 - J., Schreiner, Stald. 10  # 1110,479,611,40
 - F. H., Negt., Hotell. 233  # 1136,529,578,49
@@ -2803,7 +2791,7 @@ Keller Kasp., Spengl. Myg. 122  # 244,1151,710,55
 - Heinr., Holzh., Matte 117  # 353,2016,597,39
 - J. H., Schreinerg., Mt. 113  # 306,2067,647,55
 - David, Privat., Metzg. 101  # 347,2119,600,56
-Friz, Banquier (v. Graf-Kilchenmann, Wwe., Lingere, fenried & Sp.), Länggaßdrittel 184 c (Linde)  # 344,2173,1372,53;352,2224,598,60;355,2276,478,55
+fenried & Sp.), Länggaßdrittel 184 c (Linde)  # 352,2224,598,60;355,2276,478,55
 - G., Schlosser, (Linde) 184f  # 304,2334,654,54
 | | | a. d. Gewerbsch., Grchg. 124  # 322,2355,-51,132;1122,1042,596,53
 - P., gw Uhrenm., Hl. 143  # 356,2393,596,43
@@ -2895,9 +2883,7 @@ Knopf, Gypser u. Maler, Käfichgasse 25 u. Spitalg 153  # 1018,2529,695,66;1121,
 Knör geb. Wagner, Grtg. 222  # 1012,2633,694,73
 # Date: 1871-05-30 Page: 3010194/167
 Knör Carl, Commis, Grtg. 222  # 244,351,730,0
-Knöri, J. J., Vater, BrunnKofmehl, Ad., Telegr., b. d. kl. Schanze 185 a  # 246,404,1454,-2;244,351,1460,0;246,404,1454,-2
 meister, Hollig. 119  # 358,460,469,29
-- C. F., Schreiber, Postg. 41 Kohler J., Schneider, Nng. 86  # 307,510,1397,2
 - J., Lehrer und Organist, Holligen 144  # 302,559,651,33;360,619,307,31
 - Chr., Sohn, Brunnmeister, Holligen 140  # 302,664,651,35;361,724,299,35
 - Fr., Brungrb., Hollig. 141  # 354,775,603,29
@@ -3191,8 +3177,7 @@ Lamarche C. F. W., Vater, Lithograph zw. d. Thor. 182  # 386,865,685,74;488,921,
 - Alb., Sohn, Lithograph, Schauplatzg. 221  # 486,968,577,82;484,1024,383,65
 Lambelet C., Drog., gg. 217  # 380,1071,682,80
 Landolt Tit., Angest. d. Hyp.  # 380,1121,658,80
-Kasse, Marktg. 46  # 477,1182,408,62
-Landolf Chr., Dienstm., Post-Lasche, Lehrer, Neueng. 113 agasse 41  # 371,1225,1424,105;475,1289,175,47
+Kasse, Marktg. 46gasse 41  # 477,1182,408,62;475,1289,175,47
 v. Landten, M., Wirth in der Felfenau  # 368,1334,682,67;470,1390,197,51
 Lang A., Krankenw. Kirchg. 269  # 363,1438,684,74
 - Frau Elise, Weißnäherin, Kirchg. 269  # 457,1494,585,70;463,1549,254,52
@@ -3302,7 +3287,7 @@ Lenz C. A., Schn., Brung. 26  # 947,2561,714,58
 Zeitungsträger, Gerberngraben 141  # 1058,2615,610,53;1056,2676,264,42
 # Date: 1871-05-30 Page: 3010201/174
 Lenz E., Lehrerin, Kramg. 147  # 372,281,702,92
-ma: J. Lenzinger), Negt., Spitalgasse 176  # 469,387,572,67;472,442,353,52
+Spitalgasse 176  # 472,442,353,52
 - Jecker B. Nikl., Negot., Marktg. 44  # 453,488,587,67;463,548,247,46
 - Leonhard Rosalie, Lehrerin, Brunnad. 28  # 360,581,678,80;461,642,285,50
 - geb. Wahren, Glätterin, Brunnad. 28  # 461,696,568,69;460,743,288,52
@@ -3326,8 +3311,7 @@ Leu F., Kanzlist, Brunng. 18  # 314,2084,650,70
 - Fr., Postangest., Nng. 100  # 398,2190,592,68
 - Anna Barb., Küchliwirth, - Johann, Schneidermeister, Judeng. 112 a  # 395,2241,661,95;352,2338,631,79;410,2399,313,53
 - Friedr., Controllgeh. im Bahnhof, Aarbg. 64  # 404,2449,571,67;404,2496,458,70
-Leu Sl., Weißmüller, Küchli-Lenzinger Jak. u. Adalb. (Fir- wirth, Gerechtg. 116  # 1074,281,702,92;368,333,1303,86
-- Fr., Spez., Mattenh. 306  # 1202,410,572,65
+Leu Sl., Weißmüller, Küchli-Lenzinger Jak. u. ma: J. Lenzinger), Negt., - Fr., Spez., Mattenh. 306  # 1074,281,702,92;469,387,572,67;1202,410,572,65
 Leuch geb. Henzi, Wwe. d. Apothekers, Speicherg. 6 h  # 1096,457,676,71;1198,511,503,66
 - A. G. R., Arzt u. gewes.  # 1119,556,646,77
 Quart.-Auff., Junkg. 158  # 1197,614,571,72
@@ -3549,7 +3533,7 @@ Maisch, L., Direkt. d. Pfandleihanstalt, Spitalg. 177a u. Schaupl. 177 b  # 411,
 Mallet, L., Kupferschmied, Zwiebelng. 138  # 406,1105,679,55;510,1158,353,52
 Mani geb. Kloßner, Blondenm., Aarbg. 63  # 405,1209,676,56;504,1262,227,50
 - J. G., Arzt, Gerechtigkeitsgasse 96  # 489,1311,591,55;501,1367,185,39
-Mann E. G., Schreiner, Lin-Maring U. Em., Schreinermst., - C., Verlagsbuchhdlr., Läufferpl. 227 c, I. u. II. Etage  # 398,1404,1407,81;422,1514,650,62;495,1570,576,54
+- C., Verlagsbuchhdlr., Läufferpl. 227 c, I. u. II. Etage  # 422,1514,650,62;495,1570,576,54
 1 denhof 184 b Müller, Friedr., Negot., Spitalg. 129  # 418,1644,29,6;497,1468,285,41;514,1618,555,59;494,1674,288,47
 - Gottl., Controllgehülfe d. Staatsbahn, Marz. 20 a  # 494,1719,573,63;492,1777,551,51
 Manuel-v. Wattenwyl, 2. G., Priv., Junkerng. 168  # 387,1821,676,64;487,1882,493,51
@@ -3725,8 +3709,7 @@ Menzi J. M., Wirth, Käfichgäßlein 106  # 262,1238,698,49;371,1298,261,37
 - G., Speisew., Sptg. 158  # 375,1345,588,46
 Merlach Johann, Schriftseter, Schauplatzg. 216  # 264,1398,698,47;373,1457,385,45
 Merz-Gaudard, Knabenpension, Gerechtg. 117  # 264,1504,696,49;376,1560,305,45
-- J. A. R., Subst. d. Ginw.Polizei, Schoßh. 106 b  # 358,1615,609,37;374,1666,535,41
-- J. R., Schreiner u. Glaser v. Mestral- v. Wurstemberger, Matte 115  # 366,1716,1353,46;373,1774,238,37
+- J. A. R., Subst. d. Ginw.Polizei, Schoßh. 106 b, Matte 115  # 358,1615,609,37;374,1666,535,41;373,1774,238,37
 - Heinr., Mehl- u. Brodhl., Keßlerg. 257  # 318,1827,644,42;371,1884,300,44
 Messer, N. G., Polizeidiener, Spitalg. 136  # 270,1934,695,48;376,1989,301,47
 - Frau, Kabishobl., Spitalgasse 136  # 367,2039,602,45;372,2099,206,34
@@ -3838,7 +3821,6 @@ Minnig N., Subst. d. Staatskanzlei, Aarbg. 76  # 261,1643,694,34;369,1694,433,45
 Mögli, Ludw. Heinr., Zimmermann, schwarz. Thor 100  # 262,1746,693,40;365,1807,590,26
 - J. Friedr., Schuhmacher, Käfichgäßl. 101  # 364,1854,593,39;365,1906,351,42
 Moll Gottl., Schlosserg., Ag. 55  # 261,1957,695,49
-Mollet Mar. Car., Privatiere, v. Morlot, Med. Dr., Jfg. 150  # 260,2016,1444,18
 Metzgergaß 115  # 368,2067,346,43
 Molz F., gew. Zuchthauspred., Bollwerk 265  # 264,2117,692,46;368,2172,308,35
 de Moncorvo, Attaché d. brasil.  # 263,2225,696,38
@@ -3987,7 +3969,6 @@ Christoph, Schreinermstr., Kramg, 188  # 1056,2097,596,48;1064,2153,264,42
 - Chr. Fr., Schuhmacher, Gerechtg. 67  # 1065,2574,591,46;1064,2627,277,46
 # Date: 1871-05-30 Page: 3010213/186
 Müller gb. Wälti, Ww., Schauplatzg. 235 a  # 341,366,704,60;443,425,286,40
-- -Behrens Friedr., Com-Münger Jb., Gypser u. Flachmaler, Spitalg. 136  # 365,467,1383,67;1175,529,459,51
 missionär u. Waarenagent, Marktgasse 36  # 446,520,568,58;448,579,312,42
 - Behrens, Frau M., Bettmacherin, Marktg. 36  # 435,628,581,46;444,680,494,52
 - geb. Frey, Commission., Epitalg. 162  # 446,731,567,48;449,783,295,45
@@ -4012,6 +3993,7 @@ Wwe, Trödlerin, Metzg. 92  # 433,1038,580,53
 Mullet Jak., Metzger, Krzg. 104  # 325,2469,677,64
 Mumprecht J. J., Spengler, Marz. 39 b  # 326,2520,671,63;429,2582,243,43
 Mumprecht Jos., Schreiner, Holligendr. 155 (b. Linde)  # 1045,366,704,60;1178,427,571,51
+maler, Spitalg. 136  # 1175,529,459,51
 - Bend., Turbenhdl., Gerberngraben 142  # 1108,577,642,54;1174,632,338,44
 - Friedr., Inselpörtner  # 1174,682,482,48
 - A., Turbenhdl., Längg. 222  # 1132,734,615,54
@@ -4151,7 +4133,7 @@ Nyffenegger Johann, PolizeiWachtmeister, Stalden 5  # 214,850,694,43;316,904,564
 - A., Näherin, Brunng, 25  # 311,959,597,35
 Oberholzer C., Schuhmacher, Brunng. 17  # 215,1271,696,40;321,1323,270,46
 Oberli Kath., Näh., Altb. 179  # 216,1380,698,34
-Obrist J. Fr., Angest. d. Ohm-Ooster Wilh. Alex., Privatier, geldverwalt., Altenb. 183  # 217,1431,1450,29;325,1485,595,31
+geldverwalt., Altenb. 183  # 325,1485,595,31
 Ochs F., eidg. Nevis., Hrng. 305  # 219,1536,698,45
 - I. I., Flachm., Brg. 28  # 323,1591,595,40
 - Jb., Schneid., Postg. 26  # 319,1641,554,42
@@ -4467,7 +4449,6 @@ Rhyner A. F., Com., 3hg. 18 a  # 1134,2309,669,52
 Nibi D., Reallehr., Sptlg. 134  # 1134,2462,671,51
 Nickli J., Instrukt., Metzg. 75  # 1157,2507,645,65
 # Date: 1871-05-30 Page: 3010222/195
-Nickli J., Schuhm., Stalden12, Riesen J., Vater, gew. Schuh-  # 229,318,1454,54
 - geb. Kräuchi Christ., Priv., Zeughausgasse 11  # 329,373,596,55;336,431,408,44
 - Richard Fr., Quincailleriehdl., Kramg. 162.  # 226,483,701,44;337,539,285,37
 - E. F. A., Abwart d. eidg. Kaffe, Marz. 33 b  # 338,585,586,51;339,642,411,40
@@ -4521,7 +4502,6 @@ Nifold J. F., Schrn., Aarbg. 72  # 984,2280,694,46
 - Ed., Polizeisubst., Theatergasse 229  # 1090,2438,588,46;1087,2494,274,42
 Nitter E., Bäurischschneiderin, Stalden 18  # 984,2541,692,49;1096,2598,263,39
 # Date: 1871-05-30 Page: 3010223/196
-Nitter Ad., Wirth i. d. Schön-Rohr K., Kant.: Geom., Stadtbach 178  # 406,311,1413,74;1246,381,195,37
 egg, Marzieledr. 43 a  # 509,373,496,45
 Riz geb. Mettler, Wascherin, Brunngasse 3  # 403,418,678,63;506,469,306,55
 Robert Jul., Kantonsschullehrer, Stadtbach 178  # 401,516,678,63;502,575,441,41
@@ -4547,6 +4527,7 @@ Rohr Alb., Bettmacher, Altenberg 173. Ablage KramChristoffelgasse 186 fgasse 224
 - S., Negistr., Neueng. 92  # 475,2381,573,59
 - Alb., Bäcker, Keßlerg. 238  # 436,2432,612,60
 - Fr., Vergold., Gerbg. 141 u. Kramg. 224  # 414,2481,630,62;470,2540,327,46
+bach 178  # 1246,381,195,37
 - Ed., Confiseur, Waisenhauspl. 251  # 1243,430,574,57;1237,483,272,45
 - geb. Gruner, Dr. Wittwe, Junkerng. 153  # 1238,533,578,60;1240,586,333,50
 - Marie Sophie, gew. Lehrerin, Gerechtg. 93  # 1238,629,576,73;1236,688,423,54
@@ -4897,7 +4878,7 @@ Scheurmeister J. L., Uhrenm., Aarbergerg. 40  # 1059,2242,674,61;1159,2298,343,4
 Schick Franz, Krämer, Keßlergasse 237  # 1057,2345,679,58;1156,2403,214,40
 - geb. Brawand, Schneid., Marktgasse 93  # 1158,2450,577,59;1159,2504,316,52
 # Date: 1871-05-30 Page: 3010230/203
-Schieferdecker Jakob, Privat., Schieß J. U., Bundeskanzler, Elise, Schneid., Hrng. 300, Bundesrathhaus  # 225,375,731,42;224,472,1466,54;334,533,376,41
+Schieferdecker Jakob, Privat., Bundesrathhaus  # 225,375,731,42;334,533,376,41
 v. Schiferli C. M., Dr. Med., Jkg. 169 u. Schoßh. 69 u. 70  # 224,588,703,48;333,641,595,43
 Schiffmann R., Postcommis, Kreuzgasse 104  # 226,695,700,47;330,755,341,41
 - Mathilde, Lorr. 45  # 331,805,452,36
@@ -4951,7 +4932,6 @@ Schlumpf gb. Pasteur, Leichenbitterin, Kirchg. 270  # 991,2674,702,45;1090,2724,
 Schlunegger K., Uhrenmacher, Linde 184 c  # 252,348,724,56;357,401,263,38
 - Chr., Uhrenm, Hollig. 150  # 359,455,590,48
 Schlupp Elis., Näherin, Stalden 205  # 257,503,691,46;359,561,184,35
-Schmalz, Büchsenm., Juden-Schmidlin, Karl Theod., Kanzlist d. Verwaltung d. eidg. Kriegsmaterials, Breitenrain 143 a  # 253,609,1446,54;1108,663,588,55;1106,716,592,48;1104,770,243,42
 gasse 113 c  # 354,667,249,39
 - gb. Stämpfli, Wirthin zur 3immermannia", Metzgergasse 82  # 359,712,586,58;382,765,562,55;351,827,255,39
 Schmid: Sprüngli, Wittwe, Gurteng. 231  # 251,867,691,56;360,926,310,47
@@ -4978,6 +4958,7 @@ lergasse 256  # 351,1719,278,42
 Schmid Joh., Schlossermstr., Marziele 28  # 976,348,724,56;1112,404,282,39
 - Joh., Brenner, Lorr. 144  # 1111,455,589,44
 - Frz. Ad., Mechanikerg., Holligen 150  # 1108,506,590,55;1108,558,295,47
+list d. Verwaltung d. eidg. Kriegsmaterials, Breitenrain 143 a  # 1108,663,588,55;1106,716,592,48;1104,770,243,42
 Schmidt-Flohr, Claviermach., Monbijou 94  # 999,823,696,51;1105,878,306,44
 - J., Sdriftseger, Schauplatzg. 194  # 1107,927,589,52;1101,985,252,43
 - Ant. Jb., Graveur, Mt. 59  # 1095,1033,601,45
@@ -5282,8 +5263,7 @@ Specht, Joh., Abwart, Stift.  # 368,1348,669,53
 Spengler J. H., Schuhmacher, Marktg. 90  # 366,1400,671,50;467,1453,241,43
 Spereisen Jos., Drechslerm., Gerechtigkeitsg. 137  # 367,1502,669,55;471,1551,439,48
 Spiegelberg, Wittwe, Condit., Marktgasse 92  # 366,1605,668,48;468,1658,300,42
-Spielmann, Speditor, Juden-Stäheli Jakob, Ellenwaarengasse 130b  # 370,1703,1394,52;473,1762,242,38
-- Heinr., Schneidermeister, Stähli Joh., Schreinerg., LorBrunngasse 32  # 468,1806,1296,54;470,1861,329,46
+gasse 130b, Brunngasse 32  # 473,1762,242,38;470,1861,329,46
 Spieß geb. Scheidegger, Krämerin, Lorraine 146  # 375,1910,666,51;469,1963,460,38
 Spillmann Cath. E., 3wbg. 58  # 370,2009,670,53
 Spittler Abrah., Hafner und Fümist, Lorraine 163  # 370,2062,668,48;469,2114,485,41
@@ -6071,7 +6051,7 @@ Weiler Schwestern, Medist. u. Ling., Aarbg. 45  # 1112,2175,673,46;1217,2227,379
 - Guggenheim, Ellenwaarenhandlung, Brg. 1  # 1207,2376,582,48;1214,2430,476,49
 Weill-Lewy, J., Weinhändler, Aarbergerg. 71  # 1109,2479,676,54;1216,2533,339,48
 # Date: 1871-05-30 Page: 3010252/225
-Weingart A., Buchdr., ä. Boll-, Wenger G., Schuhm., Gerberwerk 263  # 164,357,1440,26;267,412,195,32
+werk 263  # 267,412,195,32
 - Joh., Lehrer, Neueng. 88  # 272,463,584,40
 Weiß Jb. F., Vater, KBlg. 280  # 163,516,694,39
 - Wwe., Wirthin z. Bären, Schauplatzg. 200 d  # 271,566,584,41;274,622,437,39

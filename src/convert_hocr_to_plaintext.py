@@ -13,6 +13,11 @@ from cleanup.fix_conjunctions import JOIN_WORDS
 # been greedy matched by ocr, so we split them
 LINE_WIDTH_THRESHOLD = 200
 
+# lines longer than this are written to
+# src/collage/ so they can be manually
+# split. nobody ever needs more than 1k pixels.
+MAX_ALLOWED_LINE_WIDTH = 1000
+
 # only try to glue up until this threshold
 MAX_GLUE_OFFSET = 100
 
@@ -110,6 +115,31 @@ def read_page(date, page_id):
                         (int(x + (i * w / count)), y,
                         int(w / count), h,
                         col + '\n'))
+        # remove lines longer than MAX_ALLOWED_LINE_WIDTH,
+        # since they are (mostly) bad ocrs; then save them
+        # to src/collage/${pos}.raw.txt for human splitting
+        #
+        # if a src/collage/${pos}.txt (no .raw suffix) file
+        # is available, use its contents to replace the
+        # current line
+        elif w > MAX_ALLOWED_LINE_WIDTH:
+            fn = f'{date}-{page_id}-{x}-{y}-{w}-{h}'
+            path = 'src/collage'
+            if os.path.isfile('%s/%s.txt' % (path, fn)):
+                with open('%s/%s.txt' % (path, fn), 'r') as f:
+                    c = f.read().splitlines()
+                    num_lines = len(c)
+                    w_per_line = int(w / num_lines)
+                    x_offset = 0
+                    for patch_line in c:
+                        boxes.append(
+                            (int(x + x_offset), y,
+                            w_per_line, h,
+                            patch_line + '\n'))
+                        x_offset += w_per_line
+            else:
+                with open('%s/%s.raw.txt' % (path, fn), 'w') as o:
+                    o.write(txt)
         else:
             boxes.append((x, y, w, h, txt))
     for x, y, w, h, txt in boxes:
