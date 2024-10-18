@@ -58,7 +58,7 @@ def split(vol, validator):
     page_re = re.compile(r"^# Date: (\d{4}-\d{2}-\d{2}) Page: (\d+)/(.*)")
     sheet, date, page_id, lemma, name, row = None, None, None, "-", "", 0
     workbook, image = None, None
-    for nline, line in enumerate(open(vol)):
+    for nline, line in enumerate(open(vol.replace('/proofread/', '/proofread/stage/'))):
         line = line.strip()
         input_pos = (os.path.basename(vol), nline + 1)
         if m := page_re.match(line):
@@ -70,32 +70,38 @@ def split(vol, validator):
             row = 2
             image = fetch_jpeg(page_id)
             continue
-        p, pos = line.split("#", 1)
+        p, pos, *score = line.split("#", 2)
         pos = ",".join([str(x) for x in simplify_pos(pos)])
-        p = [x.strip() for x in p.split(",")]
-        p = [x for x in p if x != ""]
-        if len(p) == 0:
-            continue
-        if p[0].startswith("-"):
-            p[0] = lemma + " " + p[0][1:].strip()
-        name, rest = split_family_name(p[0])
-        # After "von Goumoens-von Tavel", the new lemma is "von Goumoens".
-        lemma = name.split("-")[0].strip()
-        company, rest = split_company(name, rest)
-        if company:
-            name = company
-            maidenname = None
+        if score:
+            #score = float(score[0].split('=')[1])
+            name, givenname, occupation, address = [x.strip() for x in p.split(',')]
+            if name == '-': name = lemma
+            other = None
         else:
-            maidenname, rest = split_maidenname(rest)
-        p = [rest] + p[1:] if rest else p[1:]
-        if company:
-            title = "[Firma]"
-        else:
-            title, p = split_title(p, validator)
-        address, address2, p = split_address(p, validator)
-        givenname, p = split_givenname(p, validator)
-        occupation, p = split_occupation(p, validator)
-        other = ", ".join(p)
+            p = [x.strip() for x in p.split(",")]
+            p = [x for x in p if x != ""]
+            if len(p) == 0:
+                continue
+            if p[0].startswith("-"):
+                p[0] = lemma + " " + p[0][1:].strip()
+            name, rest = split_family_name(p[0])
+            # After "von Goumoens-von Tavel", the new lemma is "von Goumoens".
+            lemma = name.split("-")[0].strip()
+            company, rest = split_company(name, rest)
+            if company:
+                name = company
+                maidenname = None
+            else:
+                maidenname, rest = split_maidenname(rest)
+            p = [rest] + p[1:] if rest else p[1:]
+            if company:
+                title = "[Firma]"
+            else:
+                title, p = split_title(p, validator)
+            address, address2, p = split_address(p, validator)
+            givenname, p = split_givenname(p, validator)
+            occupation, p = split_occupation(p, validator)
+            other = ", ".join(p)
         row = row + 1
 
         entry = {
@@ -112,7 +118,11 @@ def split(vol, validator):
             "Adresse 2": address2,
             "Bemerkungen": other,
         }
-        bad = validator.validate(entry, input_pos)
+        # if line has been preprocessed by scorer.py
+        # it's considered to be good, don't revalidate
+        if not score:
+            bad = validator.validate(entry, input_pos)
+        else: bad = []
         if other:
             # In the output of the splitting phase, but not elsewhere,
             # we consider the existence of remarks as "bad", leading

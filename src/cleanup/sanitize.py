@@ -37,6 +37,18 @@ FIXES = [
     (r'3wahlen', r'Zwahlen'),
     (r'3weyacker', r'Zweyacker'),
     (r'3yro', r'Zyro'),
+    # Beughausg > Zeughausg
+    (r'Beughausg', r'Zeughausg'),
+    # Narbergergasse > Aarbergergasse
+    (r'Narbergergasse', r'Aarbergergasse'),
+    # Junferng > Junkerng
+    (r'Junferng', r'Junkerng'),
+    # Waisenhausplag, Kornhausplag, Bahnhofplag, Bärenplag,..
+    (r'plag', r'platz'),
+    (r'play', r'platz'),
+    (r'Waisenhausplat ', r'Waisenhausplatz '),
+    # Schriftseger > Schriftsetzer
+    (r'Schriftseger', r'Schriftsetzer'),
     # remove phone numbers
     (r'\[ ?\d+\.?\:?-? ?\d+\.?-? *\d*\]?\)?', ''),
 ]
