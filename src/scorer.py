@@ -127,6 +127,16 @@ def isstreet(frag):
     if frag in STREET_ABBREVS: return True
     if frag in POIS: return True
 
+    if frag.endswith('w.'):
+        frag = frag.replace('w.', 'weg')
+        if frag in STREETS: return True
+        if frag in STREET_ABBREVS: return True
+
+    if frag.endswith('str.'):
+        frag = frag.replace('str.', 'strasse')
+        if frag in STREETS: return True
+        if frag in STREET_ABBREVS: return True
+
     return False
 
 def ishousenumber(frag):

@@ -284,7 +284,7 @@ Georgine, Bureaulistin, Hochfeldweg 3a  # 980,1199,725,37
 - -Wägli, Ed. Rudolf, Bücherexperte und Geschäftsführer von Aelligs Kontor Debora  # 954,2266,804,35;972,2303,784,35
 - A.-G., Handelslehrer, Schwaneng. 5 B. 4383  # 972,2339,781,37
 Aemmer, Ernst Alfred, Handlanger, Badg. 43  # 922,2376,831,40
-Aeppli, Jakob, Beamter d. S. B. B., Heinrich, Wildstrasse 4  # 921,2417,832,36;971,2455,257,32
+Aeppli, Jakob, Beamter d. S. B. B., HeinrichWildstrasse 4  # 921,2417,832,36;971,2455,257,32
 - Marie, Bureaulistin, Heinr. Wildstrasse 4  # 949,2495,785,32
 - -Baumgartner, Jakob, Heinrich Wildstr. 4  # 917,2528,834,38
 - -Heitz, Wilh., Bankdirektor, Schwarztorstrasse 55  # 948,2565,806,39;967,2609,183,26
@@ -602,8 +602,7 @@ Alpines Museum, im alten Standesrathaus, Zeughausgasse 17  # 101,453,827,51;148,
 Alt, Albert, Magaziner b. Konsum, Mattenhofstrasse 4  # 101,526,824,52;146,575,158,24
 - Joh., Handlanger, Zähringerstrasse 27  # 98,606,765,43
 Bollw. 2560  # 727,691,196,28
-Altenburger, Aug., Maschinenmeister, Karl  # 97,720,829,42
-Staufferstrasse 25  # 146,759,318,31
+Altenburger, Aug., Maschinenmeister, KarlStaufferstrasse 25  # 97,720,829,42;146,759,318,31
 - Aug., Schuhmachermeister, Scheuerrain 6  # 143,794,762,41
 - Julius, Fuhrmann, Wabernstrasse 36  # 143,831,693,39
 Alter, Stiftung für das, Kl. Muristalden 26  # 94,873,786,33
@@ -770,7 +769,7 @@ Gust, Ludw., Postkommis, Monbijoustr. 39  # 1140,822,763,29
 Amt, eidg., für Arbeitslosenfürsorge, Effingerstrasse 6  # 1086,1271,838,35;1140,1317,162,24
 Bollw. 61  # 1769,1310,150,27
 - eidg., für geistiges Eigentum, Blumenbergstrasse  # 1089,1345,834,35;1139,1392,123,25
-Bollw. 4961, Bollw. 3908 eidg., für Mass und Gewicht, Heinrich, Wildstrasse 3 Bollw. 3563, Hausmeister  # 1731,1385,189,27;1733,1463,190,26;1140,1505,779,25;1142,1546,783,28
+Bollw. 4961, Bollw. 3908 eidg., für Mass und Gewicht, HeinrichWildstrasse 3 Bollw. 3563, Hausmeister  # 1731,1385,189,27;1733,1463,190,26;1140,1505,779,25;1142,1546,783,28
 - Christ. 4998, Bollw. 61, Bollw. 1221  # 1725,1583,201,26;1771,1656,149,28;1732,1731,188,27
 Amthaus, Waisenhausstrasse 7  # 1094,1765,584,38
 Amtsblattdruckerei, Thunstr. 8 u. 8a B. 1810  # 1094,1808,831,31
@@ -2422,8 +2421,7 @@ Christ, 5424, Viktoriarain 21 Christ. 3042  # 158,1736,757,23
 - Hilda, Damenschneiderin, Studerstr. 66a  # 1023,1481,762,30
 - J. Friedr., Handlanger, Hopfenweg 30  # 1019,1518,721,33
 - Jakob B. A., Schuhmacher, Gerechtigkeitsgasse 8  # 1022,1561,783,31;1018,1606,136,23
-- Jakob Friedrich, Schreiner, Brünnacker-  # 1021,1636,786,29
-weg 27, Bümpliz  # 1021,1676,302,28
+- Jakob Friedrich, Schreiner, Brünnackerweg 27, Bümpliz  # 1021,1636,786,29;1021,1676,302,28
 - Jakob, Vers.-Angestellter, Steigerweg 15  # 998,1710,769,29
 - Jakob, Zimmermeister, Studerstrasse 66a  # 1002,1746,789,29
 - Christ. 3343  # 1601,1785,204,25
@@ -4577,8 +4575,7 @@ Heimann, Bäckermeister, Läuferplatz 7  # 227,2407,749,39
 - Samuel, Bahnarbeiter, Mattenhofstrasse 3  # 1115,830,768,39
 - ---  # 1064,847,40,4
 Samrel, Drogist, Krippenstrasse 34  # 1113,866,663,44
-Werner Friedrich, städt. Beamter, Karl  # 1113,902,784,42
-Staufferstrasse 20  # 1113,941,325,32
+Werner Friedrich, städt. Beamter, KarlStaufferstrasse 20  # 1113,902,784,42;1113,941,325,32
 - Wilhelm, Angestellter, Brünnenstrasse 121, Bümpliz  # 1083,979,816,43;1114,1019,147,31
 - -Braillard, eidg. Beamter, Vereinsweg 11  # 1059,1051,818,43
 - -Läderach, Anna, Wwe., Mattenhofstr. 7  # 1083,1090,762,41
@@ -6719,7 +6716,7 @@ Bernard, Kaufmann, Gerechtigkeitsg. 31  # 975,2464,741,46
 - Robert, Reisender, Gerechtigkeitsgasse 31  # 974,2540,760,46
 - -Wallach, J., Pferdehändler, Gerechtigkeitsgasse 31  # 958,2576,801,47;972,2623,151,23
 - Christ. 3127  # 1550,2625,203,32
-Dietler, Alice Elsa, Gesanglehrerin, Heinrich, Wildstrasse 11  # 925,2648,829,48;973,2685,262,35
+Dietler, Alice Elsa, Gesanglehrerin, HeinrichWildstrasse 11  # 925,2648,829,48;973,2685,262,35
 # Date: 1925-12-15 Page: 25905183/194
 rich Wildstrasse 11  # 270,285,367,27
 Dietliker, K. H., Schlosser, Moserstrasse 20  # 223,321,803,33
@@ -16459,7 +16456,7 @@ Kaffee- u. Teestube, A.-G., Marktgasse 23  # 226,951,775,37
 - Erika, Kunstmalerin (Junkern-  # 432,991,626,34
 v. Kager, gasse 17), Schänzlistrasse 75 Christ. 2423  # 222,992,159,32;272,1028,784,28
 - -Potier, Hermance, Rentiere, Junkerng. 17  # 243,1065,818,34
-Kägi, Gottfr. Jak., eidg. Beamter, Heinrich, Wildstrasse 2  # 225,1101,833,35;276,1138,251,33
+Kägi, Gottfr. Jak., eidg. Beamter, HeinrichWildstrasse 2  # 225,1101,833,35;276,1138,251,33
 - Heinrich, Fabrikarbeiter, Tunnelweg 6  # 278,1177,702,34
 - Jakob, Beamter der Landestopographie, Rodtmattstrasse 75  # 275,1209,782,39;270,1249,344,31
 - Jakob, Monteur, Wittigkofenweg 23  # 251,1289,674,33
@@ -19899,8 +19896,7 @@ Lenzinger, s. auch Leuzinger  # 864,1938,525,40
 - Jakob Arn., Handel und Vertretungen in der Genuss- und Lebensmittelbranche, Seilerstrasse 12, Bollw. 1691  # 884,2127,805,52;910,2168,779,47;906,2210,227,31;1492,2218,194,30
 - Marie, Seilerstrasse 12  # 908,2242,411,37
 - -Ruesch, Paul, Vertretungen und Versichtrungen, Hirschengraben 4 Christ. 4497  # 876,2283,811,48;902,2320,782,43
-Leonhardt, Franz, Ingenieur, Thunstrasse 20  # 854,2360,812,49
-Sternwartstrasse 5  # 899,2437,342,34
+Leonhardt, Franz, Ingenieur, Thunstrasse 20, Sternwartstrasse 5  # 854,2360,812,49;899,2437,342,34
 Leoni, Alf., Schuhmachermeister, Länggassstrasse 37  # 852,2471,834,52;900,2514,179,28
 - Margr., Damenschneiderin, Länggassstr. 37, Zentralweg 27  # 882,2586,799,51;901,2664,257,38
 Lepp-Spahn, Marie K., Wwe., Seminarstr. 5  # 851,2699,809,43
@@ -27802,8 +27798,7 @@ Rubin, Alb. Emil, Polizist, Länggassstr. 38a  # 77,1118,808,35
 - Ed., Massschneiderei, Kleider-Reinigungsgeschäft, Kramgasse 49  # 92,1263,814,41;123,1308,433,35
 - Christ. 5542  # 700,1310,202,26
 - Ferd., Dr. rer. pol., Sekretär d. kant.-bern.  # 84,1344,823,35
-Handels- und Gewerbekammer, Rudolf  # 127,1378,780,38
-Wyssweg 2  # 127,1421,201,31
+Handels- und Gewerbekammer, Rudolf, Wyssweg 2  # 127,1378,780,38;127,1421,201,31
 - Frieda, Coiffeuse, Belpstrasse 71  # 129,1455,584,35
 - Hedwig u. Marie Ida, Belpstrasse 71  # 128,1490,676,36
 - Ida, Inspektorin, Belpstrasse 71  # 127,1529,591,36
@@ -37321,8 +37316,7 @@ Winteler, Karl Emil, Reisender, Junkerng. 36  # 953,2698,828,30
 - Martha, Ladentochter, Birkenweg 34  # 258,376,683,32
 - Otto, Reise-Vertreter, Altenbergstrasse 132  # 255,414,786,33
 - -Grolimund, H. E., Angestellter der Kant.Bank, Bubenbergstrasse 12a  # 212,448,833,38;260,489,521,31
-Winterberger, Gottl., städt. Beamter, Karl  # 209,525,833,33
-Staufferstrasse 20  # 260,564,323,28
+Winterberger, Gottl., städt. Beamter, KarlStaufferstrasse 20  # 209,525,833,33;260,564,323,28
 - Kaspar, Wagner, Weissensteinstrasse 68  # 258,601,762,30
 Winterfeld, Franz A., Postbeamter, Beundenfeldstrasse 48  # 208,634,836,36;258,676,249,28
 - Fritz, pens. Beamter d. S. B. B., Eschenweg 19  # 228,712,814,28;260,758,127,20

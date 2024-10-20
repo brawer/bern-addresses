@@ -49,6 +49,8 @@ FIXES = [
     (r'Waisenhausplat ', r'Waisenhausplatz '),
     # Schriftseger > Schriftsetzer
     (r'Schriftseger', r'Schriftsetzer'),
+    # RudolfWyssweg > Rudolf-Wyssweg
+    (r'RudolfWyssweg', r'Rudolf-Wyssweg'),
     # remove phone numbers
     (r'\[ ?\d+\.?\:?-? ?\d+\.?-? *\d*\]?\)?', ''),
 ]

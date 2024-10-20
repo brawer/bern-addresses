@@ -739,7 +739,7 @@ Amstutz, Anna, Privatiere, Murtenstrasse 30  # 204,955,862,22
 Amt, eidg., für Arbeitslosenfürsorge, Effingerstrasse 6  # 213,1537,859,42;264,1585,161,28
 - eidg., für geistiges Eigentum, Blumenbergstrasse  # 235,1622,840,32;271,1665,123,25
 - eidg., für Gold- und Silberwaren 1908  # 230,1699,846,31
-- eidg., für Mass und Gewicht, Heinrich, Wildstrasse 3 (3563 Hausmeister 4998  # 222,1738,851,33;274,1779,803,31
+- eidg., für Mass und Gewicht, HeinrichWildstrasse 3 (3563 Hausmeister 4998  # 222,1738,851,33;274,1779,803,31
 - eidg., für Sozialversicherung, Effingerstrasse 1  # 251,1818,824,37;270,1860,160,26
 - eidg., für Wasserwirtschaft, Bellwerk 27  # 223,1896,815,32
 Amthaus, Waisenhausstrasse 7  # 225,1975,590,33
@@ -3661,8 +3661,7 @@ IIITI  # 1980,2019,-18,172
 - Karl, Kommis, Zielweg 17  # 1123,2448,518,40
 - Karl Gottfr., Handlanger, Bümplizstr. 116  # 1119,2486,771,40
 - M. Heinrich, Kaufmann, Thunstrasse 12  # 1120,2524,757,41
-- Theophil Samuel, Schriftsetzer, Gottlieb  # 1118,2570,785,34
-Kuhnweg 12  # 1120,2611,238,34
+- Theophil Samuel, Schriftsetzer, Gottlieb, Kuhnweg 12  # 1118,2570,785,34;1120,2611,238,34
 - -König, Aug., Prokurist d. Baukontor Bern  # 1092,2652,808,30
 12291  # 1835,2682,67,24
 - A.-G., Cäcilienstrasse 40  # 1116,2688,476,36
@@ -10776,7 +10775,7 @@ betrifft jeweilen die Privatwohnung. angegebene  # 107,2870,613,89;259,2862,623,
 wirtschaft (Wildermettweg 2 (7306), Bärenplatz 21 u. Käfiggässchen 22  # 982,1028,811,36;983,1067,553,35
 $4329  # 1699,1069,93,29
 - Roth, Ernst, Heizer der S. B. B., Murten-  # 982,1106,810,31
-- Schmid, Hermann, Kaufmann, Heinrich, Wildstrasse 14  # 980,1186,805,32;983,1228,281,28
+- Schmid, Hermann, Kaufmann, HeinrichWildstrasse 14  # 980,1186,805,32;983,1228,281,28
 - -Streit, M., Wwe., Privatiere, Vereinsweg 5  # 944,1262,848,35
 - -Treulin, R., Unterkleider, Wollwaren- und Bonneteriehdlg. (Thunstrasse 6), Hotelg. 1  # 948,1305,840,30;980,1341,808,37
 11506  # 1697,1379,93,28
@@ -16747,7 +16746,7 @@ Kaffee-Spezial-Geschäft «Merkur», Schweizer Chocoladen- u. Colonialhaus, Laup
 Kaffeerösterei Mattenhof (Aeberhard, Otto), Schwarztorstrasse 79  # 965,1116,873,51;1017,1159,403,38
 - (4089  # 1747,1172,94,28
 Kaffee- u. Teestube, A.-G., Marktgasse 23  # 962,1199,811,46
-Kägi, Gottfr. Jak., eidg. Beamter, Heinrich, Wildstrasse 2  # 965,1316,870,47;1015,1356,259,34
+Kägi, Gottfr. Jak., eidg. Beamter, HeinrichWildstrasse 2  # 965,1316,870,47;1015,1356,259,34
 - Heinrich, Fabrikarbeiter, Tunnelweg 6  # 962,1389,784,51
 - Jakob, Gehilfe der Landestopographie, Rodtmattstrasse 75  # 1010,1435,118,32;1182,1433,650,47;1008,1474,357,32
 - Joh., Dr. jur., Kaufmann, Freiestrasse 16  # 962,1511,852,43
@@ -28004,8 +28003,7 @@ tion der S. B. B., Gümligen  # 1018,2286,505,34
 15542  # 1723,2365,89,26
 Esphir, Sek.-Lehrerin, Spitalgasse 37  # 1017,2402,695,35
 - Ferd., Dr. rer. pol., Sekretär d. kant.-bern.  # 995,2439,816,31
-Handels- und Gewerbekammer, Rudolf  # 1016,2474,798,34
-Wyssweg 2  # 1018,2518,204,29
+Handels- und Gewerbekammer, Rudolf, Wyssweg 2  # 1016,2474,798,34;1018,2518,204,29
 - Frieda, Coiffeuse, Belpstrasse 71  # 1021,2555,597,34
 - Hedwig u. Marie Ida, Belpstrasse 71  # 1000,2595,709,35
 - Ida, Inspektorin, Belpstrasse 71  # 1017,2636,604,34
@@ -28797,8 +28795,7 @@ riarain 8), Zeitglocken 4  # 155,1172,435,38
 - Rud. Arm., Elektrotechniker, Steinerstr. 11  # 115,1248,815,33
 $5061  # 844,1291,86,29
 tr. 31  # 1,1293,52,27
-Sandoz, Cecile, Gehilfin der S. B. B., Rudolf  # 114,1326,820,34
-Wyssweg 12  # 154,1365,204,32
+Sandoz, Cecile, Gehilfin der S. B. B., Rudolf, Wyssweg 12  # 114,1326,820,34;154,1365,204,32
 - Charles, Beamter bei der eidg. Staatskasse, Gewerbestrasse 31  # 116,1397,820,44;154,1438,313,32
 - J. A., Postbeamter, Waldheimstrasse 82  # 123,1477,754,34
 - Paul Aug., Kondukteur S. B. B., Kapellenstrasse 12  # 115,1512,818,42;153,1556,161,23
@@ -29183,8 +29180,7 @@ Schärer, Alb., Lithograph (Weihergasse 20), Münzrain 14  # 179,2222,870,41;233
 - Joh., Lok.-Führer, Freiestrasse 28a  # 1137,1394,664,32
 - Joh., Maschinist, Langmauerweg 17  # 1135,1434,685,35
 - Johannes, Revisor, Gutenbergstrasse 23.  # 1139,1474,748,31
-- Johanna Martha, Sek.-Lehrerin, Rudolf  # 1112,1515,795,29
-Wyssweg 4  # 1133,1556,212,30
+- Johanna Martha, Sek.-Lehrerin, Rudolf, Wyssweg 4  # 1112,1515,795,29;1133,1556,212,30
 Lebensmitteln und —  # 1594,1628,311,33;1081,1728,24,4
 - J., & Cie., Agentur und Kommission in Haushaltungsartikeln, Werkzeugen, Muristrasse 47  # 1118,1595,785,27;1134,1633,410,32;1136,1673,545,29
 - Jul., Bureauchef d. Abteilg. f. Infanterie d. schweiz. Militärdep., Morellweg 9  # 1108,1710,795,28;1136,1747,635,35
