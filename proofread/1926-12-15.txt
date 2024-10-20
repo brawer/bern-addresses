@@ -1032,7 +1032,8 @@ Nägeligasse  # 189,1003,208,33
 Armen-Kasse Bümpliz  # 138,1039,410,31
 Zähr. 6077  # 780,1039,182,27
 Armen-Krankenpflege des Sulgenbach-MarSchwester Elise  # 134,1073,486,35;663,1073,301,35;664,1108,300,38
-ziliquartiers, Pflegerin, Bollw. 4794  # 183,1108,437,38;769,1153,195,23
+ziliquartiers, Pflegerin:  # 183,1108,437,38
+Treuberg, Burgerspital, Bollw. 4794  # 185,1151,415,33;769,1153,195,23
 Armen-Krankenpflege der Süd- und Westquartiere; Armenpflegerin: Schw. Hannie  # 139,1183,485,38;662,1183,301,38;185,1221,780,37
 Keller, Cäcilienstrasse 25 Christ. 3154  # 186,1255,778,38
 Arn, s. auch Arm  # 141,1300,312,28
@@ -1078,8 +1079,7 @@ House), Thunstrasse 2, Bollw. 4168  # 1048,556,420,36;1625,563,192,27
 - -Graf, Johanna C., Wwe., Falkenplatz 22  # 1020,997,763,40
 - Guala, Cam., Bankkassier, Mittelstrasse 56  # 1050,1030,769,42
 - Sutter, L. M., Wwe., Scheibenstrasse 17  # 1048,1070,733,40
-Aronowsky, Seb. Sam., Dr., Fürspr., AdvoTreuberg, Burgerspital  # 997,1108,823,38;185,1151,415,33
-katurbureau, Laupenstr. 6 Bollw. 3191  # 1048,1147,768,40
+Aronowsky, Seb. Sam., Dr., Fürspr., Advokaturbureau, Laupenstr. 6 Bollw. 3191  # 997,1108,823,38;1048,1147,768,40
 Arpagaus, Lorenz, Postfaktor, Amselweg 21  # 999,1183,799,38
 - Arrigo, Dom., Schreiner, Quartiergasse 15  # 1000,1221,759,37
 Arrigoni, Carlo, Maurer, Länggassstrasse 44  # 1000,1256,798,42
@@ -21868,8 +21868,8 @@ Mahler, Paul Emil, Trambilletteur, Eggimannstrasse 21  # 151,1990,815,42;196,203
 - Rudolf, Pferdewärter, Polygonweg 25  # 176,2065,709,37
 Mähler, Jakob, Bildhauer, Gerechtigkeitsg. 42  # 149,2101,815,39
 Mahr, Joh. Herm., Kaufmann, Elisabethenstrasse 11  # 150,2139,816,35;196,2178,172,28
-- -Schwarz, O., Posamenteriegeschäft (KramMai, Georg Aug., Buchbinder, Hohgantw. 14  # 163,2211,803,41;148,2286,798,41
-gasse 48), Kesslergasse 3 Christ. 5881  # 193,2252,767,30
+- -Schwarz, O., Posamenteriegeschäft (Kramgasse 48), Kesslergasse 3 Christ. 5881  # 163,2211,803,41;193,2252,767,30
+Mai, Georg Aug., Buchbinder, Hohgantw. 14  # 148,2286,798,41
 - Gottfr., eidg. Beamter, Bernstr. 92, Bümpliz  # 146,2322,819,40
 - Julius, Prof. Dr., Dozent an der Universität, Kapellenstrasse 7  # 197,2363,767,32;194,2402,390,32
 Maibach, s. auch Maybach  # 150,2431,482,39

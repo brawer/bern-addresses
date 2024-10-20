@@ -25244,7 +25244,8 @@ Kliebenschädel, Anton, Färber, Rodtmattstr. 91  # 1092,954,758,18
 Kliese, J. (Keller), Wwe., Gemüse- u. Früchtehandlung, Gerechtigkeitsgasse 45  # 1095,991,762,19;1137,1024,549,24
 Klima, Arthur Jos., Monteur, Magazinweg 4  # 1095,1056,766,25
 Klingele, Karl, Coiffeurgeschäft, Parfumerieu. Toilettenartikel, Länggassstr. 34   # 1093,1093,763,20;1139,1128,715,24
-Klingelfuss, Gustav Alfred, Ing., Direktor der Bell Telephone Mfg. Co., Brunnadernstr. 36  # 1098,1167,757,22;1139,1201,715,21
+Klingelfuss, Gustav Alfred, Ing., Direktor der  # 1098,1167,757,22
+Bell Telephone Mfg. Co., Brunnadernstr. 36  # 1139,1201,715,21
 Klingler, F. W., Architekt, bautechn. Vertretungen, Jungfraustrasse 20  # 1096,1269,760,20;1140,1305,458,21
 - Magdalena, Frau, Lentulusstrasse 67  # 1142,1336,613,23
 - Rolf Kurt, Angestellter, Jungfraustr. 20  # 1126,1370,682,22
@@ -40823,9 +40824,10 @@ Ryter, Alfred (Grünenwald), Brauereiarbeiter, Monbijoustrasse 51  # 1098,1838,7
 - Arnold, Spengler, Kasthoferstrasse 16  # 1126,1905,656,31
 - Gottfr., Chauffeur, Güterstrasse 36  # 1128,1942,603,30
 - Hans, Postangestellter, Melchtalstrasse 25  # 1115,1980,724,29
-- Rytz, A. M. Martha, Oberin d. kt.-bern. Säuglings- und Mütterheims, Elfenauweg 98  # 1094,1994,28,4;1096,2093,760,31;1142,2129,665,31
 - Klara E., Bureaulistin, Effingerstrasse 89  # 1127,2018,728,31
 - Willy Otto, Ausläufer, Sandrainstrasse 18  # 1126,2054,712,28
+Rytz, A. M. Martha, Oberin d. kt.-bern. Säug-  # 1096,2093,760,31
+lings- und Mütterheims, Elfenauweg 98  # 1142,2129,665,31
 - A., Hebamme, Bubenbergplatz 4  # 1093,2162,584,30
 - Anna Fanny, Privat., Bogenschützenstr. 6  # 1142,2201,698,31
 - Emma, Schneiderin, Postgasse 52  # 1141,2235,560,30
@@ -52162,7 +52164,8 @@ Gabr. Aug., städt. Beamter, Vereinsweg 6  # 148,1969,698,39
 - Gottl., Beamter S. B. B., Lentulusstr. 19  # 1034,278,680,32
 - Gottl., Schreiner, Wylerringstrasse 72  # 1035,310,625,40
 - Hans Alfr., Angestellter, Rosenweg 15  # 1035,345,634,39
-- Hans Walter (Mauch), in Fa. WeberMauch & Co., Gryphenhübeliweg 47  # 1034,382,716,37;1032,414,607,39
+- Hans Walter (Mauch), in Fa. Weber-  # 1034,382,716,37
+Mauch & Co., Gryphenhübeliweg 47  # 1032,414,607,39
 - Hans Karl, Konditor, Gewerbestrasse 32  # 1036,484,677,36
 - Hans Otto, Bankbeamter, Steinauweg 30  # 1033,518,673,36
 - Hans, Masch.-Schlosser, Engehaldenstr. 199  # 1032,553,717,36
@@ -56444,7 +56447,7 @@ Telephon 238 49  # 838,2643,273,26
 - Ernst (Tschannen), kaufm. Angestellter, Kasernenstrasse 41  # 1158,467,730,36;1176,501,316,31
 - Friedr. Rudolf, Elektromonteur, Maulbeerstrasse 9  # 1147,538,742,34;1176,576,145,23
 - Friedr., Schneidermeister, Buchenweg 12  # 1150,607,721,37
-- Friedrich (Dubach), städt. Feueraufseher., Niggelerstrasse 14  # 1175,644,716,33;1174,679,302,31
+- Friedrich (Dubach), städt. Feueraufseher, Niggelerstrasse 14  # 1175,644,716,33;1174,679,302,31
 - Fritz (Platzner), Vertreter, Mattenenge 7  # 1147,714,724,35
 - Gottlieb Paul, Ausläufer, Industrieweg 12  # 1170,749,700,35
 - Ida Klara, Ladentochter, Murtenstrasse 3  # 1149,786,720,33
