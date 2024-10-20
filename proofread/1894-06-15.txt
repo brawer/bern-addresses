@@ -452,7 +452,8 @@ Balli, Gottl., Mechaniker, Wylerstr. 16  # 215,2030,731,42
 Ballif, Anna, Rabbenthal, Nischenw. 11  # 216,2191,748,37
 - Karl Ed., Handelsm., in Fa. Ballif  # 291,2229,679,38
 - & Comp., Spitalgasse 5  # 294,2271,450,39
-- & Comp., Teigwaren- und KaffeeExtrakt - Fabrik, im Schermen bei Bolligenstrasse 89 und Sauerkrautfabrikation, SulgenBallmann, F. A., Monteur b. Hrn. Pfeifer, Lorraine, Jurastrasse 24  # 231,2310,733,38;292,2344,672,43;292,2386,231,37;290,2472,185,25;1075,2470,675,46;211,2507,753,39;290,2547,464,36
+- & Comp., Teigwaren- und KaffeeExtrakt - Fabrik, im Schermen bei Bolligenstrasse 89 und Sauerkrautfabrikation, Sulgenrain 22  # 231,2310,733,38;292,2344,672,43;292,2386,231,37;290,2472,185,25;1075,2470,675,46;1078,2517,134,23
+Ballmann, F. A., Monteur b. Hrn. Pfeifer, Lorraine, Jurastrasse 24  # 211,2507,753,39;290,2547,464,36
 Ballmoos, Fr., Schneider, Metzgerg. 62  # 211,2584,732,45
 Balmer, Ernst, Angestellter d. Steuerbureau, Matte; Schifflaube 30  # 998,281,770,48;1091,328,570,31
 - E. Fr., Zinkograph, Weissenbühl, Seftigenstrasse 32  # 1092,368,672,41;1095,407,347,35
@@ -490,7 +491,6 @@ Balsiger, A., Damenschneiderin, Kesslergasse 11  # 1005,1156,743,49;1083,1212,16
 - R. A., Schreiner, Längg., Muesmattstrasse 38  # 1078,2234,675,43;1079,2278,189,27
 - Hirt, Rud., Schreiner, Metzgerg. 60  # 1079,2314,674,42
 - Kaderli, Rud., Schreiner, Längg., Schreinerweg 6  # 1077,2347,675,49;1078,2392,297,38
-rain 22  # 1078,2517,134,23
 - -Zurbuchen, Marie, Wwe., Kesslergasse 11  # 1036,2553,715,42;1075,2603,163,21
 # Date: 1894-06-15 Page: 1396436/8
 Mühlemattstrasse 8  # 366,283,372,33
@@ -3589,8 +3589,8 @@ Giacometti-Stooss, R., Wwe., Privatière, Herrengasse 17  # 286,1886,746,32;366,
 de Giacomi, Joach., Dr. med., Arzt und Privatdocent, Bärenplatz 4  # 310,1967,722,24;365,2002,519,37
 Gicot, Paul, Revisor beim Oberkriegskommiss., Marktgasse 15  # 292,2047,742,28;368,2085,474,32
 Giesbrecht, R., Glasmaler u. Glasätzer, Kirchenfeld, Helvetiastrasse 17  # 313,2123,722,30;370,2163,596,31
-- Rud., Sattler u. Tapezierer (KreuzGiger, s. auch Geiger und Gyger  # 369,2205,669,30;296,2285,635,27
-gasse 3), Gerechtigkeitsgasse 43  # 371,2246,629,27
+- Rud., Sattler u. Tapezierer (Kreuzgasse 3), Gerechtigkeitsgasse 43  # 369,2205,669,30;371,2246,629,27
+Giger, s. auch Geiger und Gyger  # 296,2285,635,27
 - Jb. Leonz, Abwart b. HH. Marcuard  # 372,2326,668,22
 - & Comp., Marktg. 51  # 373,2366,400,32
 - Jos., Direktor d. Schweiz. Unif.Fabrik, Längg., Gesellschaftsstr. 3  # 379,2400,664,29;376,2444,668,26
@@ -3874,7 +3874,8 @@ Gross, Ed., Kaufmann, Weissenbühl, Seftigenstrasse 9  # 289,962,744,28;368,1005
 - Karl, Schlosser, Matte, Gerberg. 24  # 368,1125,663,27
 - Luise, Frl., Schneiderin, Lorraine, Randweg 13  # 369,1161,664,30;370,1205,235,35
 - V., gew. frz. Pfarrer, Weissenbühl, Seftigenstrasse 9  # 370,1245,663,27;372,1283,320,29
-v. Gross-Marcuard, H., Amthausg. 5 u. Gunten am Thunersee  # 291,1322,745,34;373,1362,415,26
+v. Gross-Marcuard, H., Amthausg. 5 u.  # 291,1322,745,34
+Gunten am Thunersee  # 373,1362,415,26
 Grosse, Franz Al. Eug., Schriftsetzer, Aarbergerg. 52  # 295,1404,741,28;373,1443,288,32
 Grossen, Elise, Schneid., Marktgasse 20  # 296,1483,741,28
 - G., Schuhmachermst., Beundenfeld, Militärstrasse 36  # 376,1516,659,33;377,1564,309,25
@@ -3961,8 +3962,8 @@ Balth., Schuhmacher, Zwiebelngässchen 10  # 292,1540,645,43;292,1579,218,33
 Grützner, Karl, Cigarren- u. Tabakhdlg., Marktgasse (32) 21  # 209,1847,723,51;285,1890,350,40
 - L., Bibliothekabwart, Sigrist der franz. Kirche, Marktg. 22  # 283,1923,650,48;284,1963,471,47
 Gschwend, Wwe. d. Schlossermeisters, Metzgerg. 4  # 207,2002,723,48;283,2043,218,39
-Gschwind, E., Messerschmied, Metzger-Gsell, A., Schriftsetzer, Kramgasse 48  # 206,2079,805,53;203,2157,706,49
-gasse (64) 68  # 280,2130,239,27
+Gschwind, E., Messerschmied, Metzgergasse (64) 68  # 206,2079,805,53;280,2130,239,27
+Gsell, A., Schriftsetzer, Kramgasse 48  # 203,2157,706,49
 - M., Schneiderin, Kramgasse 48  # 278,2194,572,49
 Gsteiger, Chr., Apotheker-Magazinier, Altenbergstr. 14  # 201,2235,725,51;281,2276,305,39
 Gubler, Heinr., Fabrikaufseher, Längg., Conradweg 13  # 201,2308,724,51;280,2355,262,38
@@ -4177,8 +4178,8 @@ Hadorn, Ad. Jak., Dr. phil, Speicherg. 13  # 263,1516,746,33
 - Frau M. u. Frl. E., Herren-, Damenu. Kinderlingerie, Speicherg. 13  # 346,1918,670,24;346,1958,612,32
 Häfele, s. auch Häfeli u. Häfelin  # 270,1997,625,24
 - J. M., I. Kanzlist b. eidg. Justiz- u. Polizeidepart., Käfiggässchen 12  # 349,2039,671,28;352,2079,622,32
-Häfelfinger, J. J., Privatière, AarbergerHäfeli, s. auch Häfele u. Häfelin  # 272,2120,749,26;271,2199,628,23
-gasse 32  # 349,2171,161,17
+Häfelfinger, J. J., Privatière, Aarbergergasse 32  # 272,2120,749,26;349,2171,161,17
+Häfeli, s. auch Häfele u. Häfelin  # 271,2199,628,23
 - Joh. Gottl., Zuckerbäck., Spitalg. 42  # 352,2237,668,31
 - J. U., Lokomotivführer, Länggasse, Muesmattstr. 38  # 289,2275,729,33;352,2319,298,26
 - Ludwig, Fabrikaufseher, Felsenaustrasse 16  # 351,2360,671,25;353,2403,184,23
@@ -8606,8 +8607,9 @@ Nobs, Alfr., Ellenwarenhandlung, Aarbergergasse 11  # 1006,2437,736,48;1082,2479
 Nordmann, Isak, Vve. et fils, Mercerie  # 258,271,765,42
 - Sam. (Nachfolger v. Theod. Nordmann), Seidenwarenhandlg., Kramgasse 33 u. Spitalgasse 36  # 338,431,664,40;334,473,671,35;336,511,503,36
 - Mayer, L., Negt., Schauplatzg. 33  # 336,550,671,41
-- Menes, Jules, Kaufm., SchauplatzPicard, Pauline, Frau, SchauplatzNotfallstube, Neuengasse 28 a  # 340,586,666,45;350,666,657,46;260,747,569,44
-gasse 33gasse 33  # 336,642,167,20;336,721,163,22
+- Menes, Jules, Kaufm., Schauplatzgasse 33  # 340,586,666,45;336,642,167,20
+Picard, Pauline, Frau, Schauplatzgasse 33  # 350,666,657,46;336,721,163,22
+Notfallstube, Neuengasse 28 a  # 260,747,569,44
 Noth, Edm., Kanzlist des Justiz- u. Polizeidept., Sulgenb., Könizstrasse 63  # 259,788,748,38;339,830,669,37
 Nöth, Mich., Schuhmachermstr. (Stadtbachstr. 8), Aarbergergasse 30  # 260,868,746,39;338,906,588,44
 Nötinger, Adele, Frl., Privat., Mattenh., Brunnmattstrasse 36  # 261,950,745,40;340,987,389,34
@@ -10803,7 +10805,7 @@ Schulz, Wilhelm, Schneider, Gerechtigkeitsgasse 66  # 947,2438,738,49;1025,2486,
 Schumacher, s. auch Schuhmacher  # 947,2523,650,38
 - A., Oberst, Waffenchef der Artillerie, Längg., Eigerweg 5  # 964,2563,721,39;1023,2602,530,44
 # Date: 1894-06-15 Page: 1396576/148
-Schumacher, Aug., Sohn, Angest. beim Schütz, G., Schneider, Mattenh., GartenKriegskommissar., Waisenhauspl. 22  # 273,276,753,17;1026,276,753,17;352,316,657,27
+Schumacher, Aug., Sohn, Angest. beim Kriegskommissar., Waisenhauspl. 22  # 273,276,753,17;352,316,657,27
 - El., Wwe., Privat., Brunngasse 2  # 354,355,626,30
 - Friedr., Drechsler (Spec. Fischereiartikel), Kesslergasse 16  # 352,394,660,28;352,433,459,31
 - Luise, Frl., Privatière, Länggasse, Eigerweg 5  # 352,468,660,34;354,514,220,33
@@ -10844,7 +10846,7 @@ Schütz, Arn. Fr., Maler, Waisenhpl. 20  # 300,2328,736,25
 - Ernst Rud., Postpacker, Brunng. 14  # 382,2482,656,30
 - Fr., Wirt, Tiefenau, Steinibach  # 383,2523,586,26
 dorfweg 67  # 386,2603,209,33
-strasse 1  # 1118,305,163,24
+Schütz, G., Schneider, Mattenh., Gartenstrasse 1  # 1026,276,753,17;1118,305,163,24
 - Hans, Metzgermstr., Aarbergg. 27  # 1121,340,638,31
 - H. G. E., Magazinier, Postgasse 44  # 1121,376,660,34
 - Jak., Gold- und Silberarb., Matte, Schifflaube 18  # 1122,417,664,33;1123,460,258,27
@@ -11531,8 +11533,8 @@ keitsgasse 18  # 1057,305,251,33
 - Schüpbach, El., Wwe., Rainmattstrasse 7  # 1064,1800,665,30;1065,1841,162,26
 Steinhauer, J., Holzhauer, Gerechtigkeitsgasse 51  # 987,1878,737,29;1067,1919,251,32
 - Rud., Schreinermeister, Murtenstrasse 11  # 1066,1956,662,30;1068,1999,180,24
-- -Wenger, K., Weinhändler, JunkernSteinhauser, J., Spezierer, Kramg. (7) 5  # 1035,2038,692,28;989,2114,740,36
-gasse 27  # 1068,2086,161,19
+- -Wenger, K., Weinhändler, Junkerngasse 27  # 1035,2038,692,28;1068,2086,161,19
+Steinhauser, J., Spezierer, Kramg. (7) 5  # 989,2114,740,36
 Steinhölzli, Bierbrauerei (Alb. Hess)  # 1011,2152,685,36
 - Anstalt, Ablage bei HH. Kocher  # 1070,2194,657,30
 - & Ludwig, Marktgasse 61  # 1071,2230,489,36

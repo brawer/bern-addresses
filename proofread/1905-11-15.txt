@@ -57,7 +57,8 @@ Wattenwylw. 8), Altenbergstr. 36  # 258,277,705,50
 - Ferd., Angestellter d. Hypothekarkasse, Brückfeldstrasse 24  # 248,319,746,51;257,367,564,39
 - F., Wirt zur Neubrück, Neubrückstrasse 95  # 191,409,804,46;253,459,207,27
 - Fr., städt. Lebensmittelexperte II, Herrengasse 17  # 254,493,741,51;252,543,325,40
-werkstätte, Mattenhof, LentulusAckermann, B., Schmied, Länggasse, strasse 40, Mittelstrasse 21  # 250,624,743,54;1026,631,820,56;250,677,211,30;252,760,331,38
+werkstätte, Mattenhof, LentulusSchreinerweg 3  # 250,624,743,54;1115,677,329,45
+strasse 40, Mittelstrasse 21  # 250,677,211,30;252,760,331,38
 - Hans, Reisender, Zeughausg. 16  # 252,804,737,51
 - J. F., Sohn, Wirt, Neubrückstr. 95 27  # 251,851,741,41
 - J. G., Camionneur, Könizstr. 24.  # 254,894,677,42
@@ -88,8 +89,7 @@ Nouveautés-Geschäft (Bundesg. 36), Spitalgasse 38  # 1120,277,730,60;1120,328,
 Achermann, Lz., Krämer, Matte, Aarstr. 2  # 1029,370,823,49
 Ackeret, s. auch Akeret  # 1030,412,517,46
 - Joh., Kontrollgeh. d. Kriegsmater.Verw., Wylerstrasse 16  # 1119,454,731,58;1117,506,496,42
-- Karl, Kondukteur der S. B. B., Schreinerweg 3  # 1118,545,733,51;1115,677,329,45
-- Hotz, E. L., Wwe., Schwarztorstr. 30  # 1112,764,735,46
+- Karl, Kondukteur der S. B. B., Ackermann, B., Schmied, Länggasse, - Hotz, E. L., Wwe., Schwarztorstr. 30  # 1118,545,733,51;1026,631,820,56;1112,764,735,46
 Adam, Elise, Mercerie-, Posamenterie-, Baumwollenwarenhandlg., Kirchenfeld, Thunstrasse 18  # 1025,809,822,51;1116,853,729,51;1110,899,428,37
 - Gottfr., Bureaulist, Lgg., Seidenw. 26  # 1114,943,732,48
 - Jak., Milchhändler, Mattenenge 18  # 1113,983,734,52
@@ -4737,7 +4737,7 @@ Gfeller, A., Zigarrenhandlung (Falkenhöhew. 19), Falkenpl., Hallerstr. 1  # 209
 - J., Steinhauer, Schossh., Burgernzielweg 27  # 284,1915,741,48;283,1961,227,34
 - J. C. E., Kohlenhändler, Lorraine, Jurastrasse 60  # 285,2002,740,53;287,2047,302,42
 - Jak., Bureaulist, Rathausplatz 5  # 285,2093,688,49
-- Jak., gew. Käsehändler., Kirchenf., Thunstrasse 39  # 284,2137,740,49;285,2181,318,37
+- Jak., gew. Käsehändler, Kirchenf., Thunstrasse 39  # 284,2137,740,49;285,2181,318,37
 - Joh., Dienstmann, Lorr., Jurastr. 14  # 285,2223,741,47
 - Joh., Telephonarb., Aeuss. Bollw. 23  # 284,2265,742,48
 - K. Fr., Kanzlist der Bundeskanzlei, Breitenrain, Jägerweg 12  # 284,2307,741,53;285,2354,538,51
@@ -10464,8 +10464,8 @@ Mollet, Fr., Metzgermstr., Rathausg. 6  # 1046,2269,768,50
 - Lina, Privatiere, Rathausg. 6  # 1134,2450,608,43
 - Luise, Privatiere, Rathausg. 6  # 1132,2495,630,40
 Molteni, Carlo, Gipsermeister, Kirchenfeld. Helvetiastrasse 29  # 1045,2533,791,51;1133,2584,495,34
-Monhaupt, C., Musiklehrer, ZeughausMonnard, Danjel, Kutscher, Sulgeneckstrasse 44  # 1047,2623,789,49;1045,2708,794,55;1133,2766,208,26
-gasse 14  # 1131,2683,182,22
+Monhaupt, C., Musiklehrer, Zeughausgasse 14  # 1047,2623,789,49;1131,2683,182,22
+Monnard, Danjel, Kutscher, Sulgeneckstrasse 44  # 1045,2708,794,55;1133,2766,208,26
 - -Kuster, E., Wwe., Gehilfin der Ober-Postdir., Längg., Druckereiw. 1  # 1106,2808,726,32;1134,2848,705,41
 # Date: 1905-11-15 Page: 25804804/281
 Waisenhausplatz 11  # 246,283,407,43
@@ -16329,8 +16329,9 @@ Volksbibliotheken, siehe Rubrik „Bibliotheken“, Seite 129  # 1071,331,784,55
 Volkshaus, Zeughausgasse 9  # 1095,419,598,53
 Volksküche Länggasse, Neufeldstrasse 5  # 1067,460,790,56
 Weissenbühl, Neuhäuserweg 8  # 1156,505,625,53
-Volksmagazin Bern (F. Klay-Ryser), Tuchhandlg., Theaterpl. 3, EngrosVollenweider, Adolph, Postbureauchef, Lager Hotelgasse 6  # 1066,551,786,56;1152,592,703,60;1064,678,788,58;1154,640,410,48
-Kirchenfeld, Tillierstrasse 1  # 1153,726,577,48
+Volksmagazin Bern (F. Klay-Ryser), Tuchhandlg., Theaterpl. 3, Engros-  # 1066,551,786,56;1152,592,703,60
+Lager Hotelgasse 6  # 1154,640,410,48
+Vollenweider, Adolph, Postbureauchef, Kirchenfeld, Tillierstrasse 1  # 1064,678,788,58;1153,726,577,48
 - Adolf, Kassagehilfe d. eidg. Staatskasse, Beundenfeld, Breitenrainpl. 24  # 1152,771,701,49;1152,814,699,53
 - Emil, Photograph, Postg. 68 1476  # 1153,860,700,50
 - Gust., Kunstmaler, Postg. 68 1476  # 1150,903,702,50
@@ -16953,7 +16954,8 @@ Wepf, Fried., Kanzlist d. eidg. Oberbauinspektorates, Münsterplatz 10  # 1049,2
 Werchmann, Adolf, Monteur, Langmauerweg 19  # 1061,2491,773,46;1138,2547,277,28
 Werder, Arn., Buchhändler, Kramg. 34  # 1030,2575,808,48
 Bühler &  # 1685,2617,152,38
-- Arn., Buchdrucker in Fa. Werder, Kirchenfeld, Thunstr. 87  # 1139,2625,510,33;1139,2668,679,35
+- Arn., Buchdrucker in Fa.  # 1139,2625,510,33
+Werder, Kirchenfeld, Thunstr. 87  # 1139,2668,679,35
 - Alfred, Ingenieur, Felsenau, Spinnereiweg 4  # 1140,2712,695,38;1138,2756,232,38
 - Julius, Schriftsetzer, Kirchenfeld, Thunstrasse 87  # 1140,2800,695,33;1140,2844,308,31
 # 1921,682,15,29
@@ -17566,8 +17568,8 @@ v. Wyss, Friedr. L., Dr. phil., Kirchenf., Jungfraustr. 32  # 146,1689,808,40;22
 Wyssbrod, Emil, Reisender in Fa. von  # 150,1907,803,41
 Tobel & Cie., Gesellschaftsstr. 31  # 225,1952,689,36
 Wyssen, F. J, Schreiner, Brunnhofw. 25  # 149,1996,807,37
-- -Bigler, E., Frau, Schneiderin, KramWyssenbach, s. auch Weissenbach  # 195,2042,758,36;149,2126,696,38
-gasse 65  # 229,2094,176,23
+- -Bigler, E., Frau, Schneiderin, Kramgasse 65  # 195,2042,758,36;229,2094,176,23
+Wyssenbach, s. auch Weissenbach  # 149,2126,696,38
 - Fr., Büchsenm., Lorr., Polygonw. 23  # 230,2168,727,46
 - Fr., Tapezier.,Lgg., Fellenbergstr. 13  # 225,2211,729,43
 - J. J., Arbeiter der Waffenfabrik, Lorraine, Polygonweg 6  # 226,2257,726,37;226,2298,500,49

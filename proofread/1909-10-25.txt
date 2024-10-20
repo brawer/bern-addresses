@@ -2045,8 +2045,8 @@ Ostbau, Inselgasse 9  # 203,2072,410,45
 - Frida, Kinderwagen- und Rohrmöbelhandlung (Lorrainestrasse 8), Schwanengasse 13  # 203,2115,700,44;203,2155,700,44;203,2197,365,44
 - J. F., Buchdr., Längg., Mittelstr. 6 a  # 202,2237,702,49
 - Pius, Postangest., Gesellschaftsstrasse 18b  # 204,2281,699,44;203,2323,221,31
-Brossin, P. E., Schriftsetzer, SchauplatzBrosy, siehe auch Brosi  # 124,2359,776,54;124,2447,480,41
-gasse 25  # 203,2414,169,22
+Brossin, P. E., Schriftsetzer, Schauplatzgasse 25  # 124,2359,776,54;203,2414,169,22
+Brosy, siehe auch Brosi  # 124,2447,480,41
 - Arn. Otto, Sekretär d. eidg. Alkoholverwaltung, Zähringerstrasse 29  # 206,2488,695,49;202,2530,643,49
 - Gustav, Kommis, Untere Villettenmattstrasse 7  # 205,2572,695,44;203,2617,266,32
 Brotbek-Grimm, Hs. Emil, Beamter der  # 124,2652,776,50
@@ -3115,9 +3115,8 @@ Döbeli, E., Dr. med., Arzt, Wallg. 2 2491  # 339,2627,774,43
 - Fr., Milchträger, Herrengasse 8  # 402,2750,645,49
 Döbeli, Gottl., Maler, Lentulusstrasse 67  # 1130,264,794,42
 - Jb., Postangest., Fischermätteliw. 5  # 1180,309,740,38
-- Joh. Friedr., Reisender, SchauplatzDobler, A., Sohn, Kaufmann, Watten-  # 1244,347,681,44;1158,431,766,47
-gasse 5  # 1242,401,150,29
-wylweg 7  # 1243,481,197,35
+- Joh. Friedr., Reisender, Schauplatzgasse 5  # 1244,347,681,44;1242,401,150,29
+Dobler, A., Sohn, Kaufmann, Wattenwylweg 7  # 1158,431,766,47;1243,481,197,35
 - N., gew. Sigrist an der Dreifaltigkeitskirche, Gutenbergstr. 9  # 1244,520,681,34;1242,560,668,42
 - Locher, J. J. A., Agentur- und schweiz. Placierungsbureau, Wattenwylweg 7  # 1242,601,681,45;1242,645,682,43;1241,691,263,34
 Dodel, Adalbert, Buchhandlungsgehilfe, Wallgasse 4  # 1158,720,764,53;1243,773,247,35
@@ -3265,7 +3264,8 @@ Dutoit, Eug. J. Berta, Schwarztorstr. 36  # 1169,627,756,46
 Duvoisin-Dasen, L., Kaufm., Allmend3072strasse 26  # 1168,752,755,48;1855,717,68,29;1251,801,198,28
 Dworak, Joh., Monteur, Mattenhofstr. 23  # 1168,840,757,38
 Dworschak, Alois, Coiffeurgeschäft und Zigarrenhandlung, Kramgasse 48  # 1168,878,756,49;1250,926,652,43
-- Eberhard, siehe auch Aeberhard und Aeberhardt  # 1167,1087,757,43;1248,1137,229,29
+- Eberhard, siehe auch Aeberhard und  # 1167,1087,757,43
+Aeberhardt  # 1248,1137,229,29
 - Céc., Frl., Schauplatzgasse 1  # 1252,1175,577,46
 - F., Postbeamter, Kirchenfeld, Dittlingerweg 14  # 1251,1219,670,42;1246,1264,267,38
 - Fr., Prokurist, in Fa. F. A. Véron, Spitalackerstrasse 49  # 1252,1302,668,41;1250,1346,426,39
@@ -5333,7 +5333,7 @@ Gubser, J., Agentur in Kolonialwaren, Wein und Spirituosen (Kirchenfeldstrasse 1
 - Jos. M., Dr. phil., Journ., Rabbentalstrasse 83  # 1009,2725,762,47;1067,2773,249,30
 # Date: 1909-10-25 Page: 25807531/210
 Güdel, Ad., Beamter der Oberpostdir., Länggasse, Waldheimstrasse 58  # 344,298,788,37;428,344,652,27
-- Fr., Zugführer d. S. B. B., LängGuggisberg, Gottfried, Wasserleitungsunternehmer, Zähringerstrasse 18 und 18 a  # 428,384,706,35;1191,289,741,38;1250,332,683,38;1250,375,172,30
+- Fr., Zugführer d. S. B. B., Längunternehmer, Zähringerstrasse 18 und 18 a  # 428,384,706,35;1250,332,683,38;1250,375,172,30
 gasse, Seidenweg 32  # 427,430,417,32
 - Künzli, Gottfried, Bäckermeister, Kirchenfeldstrasse 40 a  # 432,464,703,36;431,510,467,30
 - Ziegler, Elise, Frau, Damenschneiderin, Spitalgasse 12  # 429,553,706,29;431,594,418,40
@@ -5364,6 +5364,7 @@ Guggisberg, Ad., Bundesweibel, Längg., Mittelstrasse 9  # 350,2070,790,41;433,2
 v. Gebrüder Guggisberg, Klösterlistutz 4  # 436,2581,706,40;435,2629,137,26
 - Gottfr., Gipser- und Malermeister, Langmauerweg 15  # 395,2667,745,35;437,2708,366,45
 - Gottl., Büchsenmacher, Scheibenweg 17  # 440,2750,701,38;439,2805,149,21
+Guggisberg, Gottfried, Wasserleitungs-  # 1191,289,741,38
 - Hans, Dr. med., Spezial-Arzt für  # 1191,419,740,33
 - Frauenkrankheiten und Geburtshilfe, Bubenbergplatz 9 1025  # 1252,459,683,27;1255,499,679,40
 - Joh. Ad., Amtsnotar, Wylerstr. 42  # 1255,543,679,32
@@ -13147,7 +13148,8 @@ Scheitlin, B. A., Frl., i. Fa. Scheitlin, Spring & Cie., Kirchenf., Thunstr. 4  
 - Mina Joh., Frl., i. Fa. Scheitlin, - Spring & Cie., Buchdruckerei, Thunstrasse 8  # 1031,1188,707,45;968,1273,765,43;1030,1319,176,29
 Schelble-Blau, Theodor, Hafnermstr., Lorraine, Talweg 12’  # 967,1353,769,50;1031,1398,429,44
 Schelker, Math., Schuhmacher, Gerechtigkeitsgasse 3  # 948,1443,787,41;1032,1486,305,39
-Schellenberg, Ad., Geschäftsleiter d. Fa. Gassmann & Widmer, Elisabethenstrasse 20  # 947,1520,791,48;1046,1569,690,39;1033,1616,196,26
+Schellenberg, Ad., Geschäftsleiter d. Fa.  # 947,1520,791,48
+Gassmann & Widmer, Elisabethenstrasse 20  # 1046,1569,690,39;1033,1616,196,26
 - Ed., Direktor d. Seidenfabr., Könizstrasse 51  # 972,1655,762,41;1032,1700,197,25
 - Eug., Angestellter, Wylerstrasse 28  # 1035,1738,702,43
 Schellhaas, Gebr., Bijouteriegeschäft, Marktgasse 15  # 968,1780,765,42;1031,1824,291,36
@@ -13278,8 +13280,8 @@ Schild, s. auch Schilt  # 943,521,432,44
 - Adr., Tuchfabrik (Matte, Schiffl. 12), Wasserwerkstrasse 17  # 965,563,772,41;1031,608,443,33
 - E., Coiffeurgeschäft, Herzogstr. 5  # 1028,649,672,37
 Schill, Ferd. Aug., Depotarbeiter b. Tramway, Cäcilienstrasse 28  # 945,688,794,44;1029,736,478,32
-Schiller, Friedr., Buchhändler, JunkernSchilling, E., in Firma J. Lütolf & E.  # 946,772,790,44;965,857,779,41
-gasse 25  # 1029,829,171,22
+Schiller, Friedr., Buchhändler, Junkerngasse 25  # 946,772,790,44;1029,829,171,22
+Schilling, E., in Firma J. Lütolf & E.  # 965,857,779,41
 Schilling, Muristrasse 47 3215  # 1030,900,710,35
 - Joh., Schuhmachermeister u. Schuhhandlung, Mattenhof, Belpstr. 67  # 1030,942,708,34;1029,985,675,40
 - Jul., Mechaniker, Lorrainestrasse 8a  # 1030,1025,708,37
@@ -16748,8 +16750,8 @@ Walthard & Wildbolz, Kirchenfeld, Elfenstrasse 4  # 1212,1186,652,27;1190,1224,2
 - Schütterle, Alb., Coiff.-Posticheur, Kramgasse 84strasse 4  # 1192,1355,671,26;1192,1401,283,32;1192,1483,167,29
 teur, Möbelhandlung, Monbijou-2750strasse 23 u. Installationen, Mattenhof, Monbijoustrasse 6  # 1194,1567,672,26;1195,1612,197,25;368,1664,708,29;368,1707,280,33
 - E., Tuch- und Massgeschäft, Zeughausgasse 27  # 1195,1648,672,29;1195,1695,261,31
-Wildenmann, Gasthaus m. Café (RothenGafner, M.), Aarbergergasse 41 558  # 1126,1729,742,32;1195,1775,679,28
-Wildermuth-Staudenmann, Karl, Geschäftsführer, Kirchenfeld, Helvetiastrasse 27  # 1110,1811,758,34;1196,1862,675,21;1195,1910,200,23
+Wildenmann, Gasthaus m. Café (RothenWildermuth-Staudenmann, Karl, Geschäftsführer, Kirchenfeld, Helvetiastrasse 27  # 1126,1729,742,32;1110,1811,758,34;1196,1862,675,21;1195,1910,200,23
+Gafner, M.), Aarbergergasse 41 558  # 1195,1775,679,28
 Wildhaber, A. F., Beamter der S. B. B., Neubrückstrasse 25  # 1110,1945,754,19;1195,1988,392,25
 Wildi, Elise, Frl., Privatiere, Gerechtigkeitsgasse 36  # 1112,2032,757,20;1199,2073,270,34
 - Gottl., Vertretung in Weinen und 2144  # 1134,2105,740,38;987,2160,94,43
@@ -17475,8 +17477,9 @@ Auerlicht, Beleuchtungsartik., Wasserleitungen, Bad- u. Wascheinrichtungen, Mark
 1910 an Inselgässchen 3)  # 1221,851,496,41
 - -Müller, F., Hutfedern- u. Handschuhwascherei, Unterricht i. Stickereien, Marktgasse 8  # 1159,893,737,47;1221,939,674,35;1220,981,401,41
 - -Schwarz, M., Hebamme, Alpenstrasse 17  # 1158,1022,734,42;1218,1065,199,31
-Zryd, E., Vertreter, Pension, SpeicherZuber, A., Papierhandlung en gros et en détail, Zeughausgasse 18 1135  # 1136,1100,757,55;1155,1189,733,49;1221,1233,671,42
-gasse 39  # 1221,1157,171,23
+Zryd, E., Vertreter, Pension, Speichergasse 39  # 1136,1100,757,55;1221,1157,171,23
+Zuber, A., Papierhandlung en gros  # 1155,1189,733,49
+et en détail, Zeughausgasse 18 1135  # 1221,1233,671,42
 - Fr. Bautechniker, Wylerstrasse 6  # 1221,1274,649,41
 - G., Beamter d. S. B. B., Neufeldstr. 24  # 1222,1319,667,35
 - Karl Emil, Kaufm., Hirschengrab. 16  # 1221,1359,664,41

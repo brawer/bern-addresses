@@ -2188,8 +2188,8 @@ Berna, Pension, Schanzeneckstrasse 19 ↯  # 142,1925,823,28
 Bernard, Cécile, Frl., Grüner Weg 9  # 142,1963,652,34
 - Ch. Arm., Bankangestellter, Kyburgstr. 1  # 186,2002,757,33
 - Helene, Frl., Grüner Weg 9  # 192,2038,491,31
-Bernardi, Jean, Schuhmacher, GerechtigkeitsBernasconi, A., Mosaikgeschäft, Neufeldstrasse 27d  # 141,2073,824,32;142,2142,822,38;190,2186,196,25
-gasse 25  # 189,2122,150,16
+Bernardi, Jean, Schuhmacher, Gerechtigkeitsgasse 25  # 141,2073,824,32;189,2122,150,16
+Bernasconi, A., Mosaikgeschäft, Neufeldstrasse 27d  # 142,2142,822,38;190,2186,196,25
 - A. W. Karl, Angestellter, Daxelhoferstr. 9  # 136,2220,827,31
 - Carlo Costante, Bautechniker, Muesmattstrasse 34  # 163,2258,802,29;187,2298,180,22
 - C., A.-G. Terrazzo-Kunst-Hartsteinwerke u. Bauunternehmung, Muesmattstrasse 40  # 175,2330,790,28;190,2369,712,28
@@ -5000,8 +5000,8 @@ Caflisch, R. F., Schreinervorarbeiter, Könizstrasse 46  # 1040,299,827,23;1090,
 $2648  # 1783,405,86,27
 Cagna, E. R., Schuhmacher, Sandrainstr. 18  # 1042,447,799,24
 Caille, Ls. Ed., Gymn.-Lehrer, Allmendstr. 2  # 1042,482,809,25
-Caisse Paternelle, Lebens-Versicherungs-Gesellschaft in Paris, Inspektor: J. KisslingFuhrer, Militärstrasse 46  # 1039,520,830,23;1090,554,780,26;1092,593,457,26
-$3263  # 1785,588,86,27
+Caisse Paternelle, Lebens-Versicherungs-Gesellschaft in Paris, Inspektor: J. Kissling$3263  # 1039,520,830,23;1090,554,780,26;1785,588,86,27
+Fuhrer, Militärstrasse 46  # 1092,593,457,26
 Calame, André, Beamter d. Obertelegr.-Dir., Birkenweg 9  # 1041,629,830,26;1092,665,220,31
 - Charles, Bereiter, Waffenweg 8  # 1093,704,556,24
 - Georges, Beamter S. B. B., Hochfeldweg 23  # 1094,738,779,26
@@ -14379,7 +14379,8 @@ Josessiphidis, Georges, Angest., Steigerweg 20  # 143,784,805,28
 r. 77  # 2,802,74,23
 Joset, Alex. J., Beamter d. Obertelegr.-Direktion, Beaumontweg 30  # 145,823,804,26;183,861,389,26
 Josi, Christ., Handlanger, Stöckacker  # 144,894,664,27
-- Peter, Schneider, Aarbergergasse 37Joss, Anna, Klavierlehrerin, Gutenbergstr. 15  # 145,929,704,28;147,969,804,28
+- Peter, Schneider, Aarbergergasse 37-  # 145,929,704,28
+Joss, Anna, Klavierlehrerin, Gutenbergstr. 15  # 147,969,804,28
 - A. Ida, Privatlehrerin, Vereinsweg 40  # 155,1004,716,27
 - Christ., Elektromonteur, Rütlistrasse 12  # 144,1041,765,23
 - Christ., Privatier, Tavelweg 33  # 148,1080,586,27
@@ -16826,8 +16827,8 @@ Greyerz1710 b. Bümpliz  # 855,581,148,28;1787,614,63,29;220,693,197,32
 - -Schenk, Joh. Jak., i. Fa. Kunz & Cie., Eisenhandlung, Holzikofenweg 11  # 1062,981,790,26;1090,1018,617,30
 - -Spinner, E., Direktor der Verein. Mineralwasserfabriken Bern, A.-G., Friedheimw. 18  # 1071,1056,782,26;1087,1090,766,30
 $2434  # 1778,1128,77,26
-- -Vetter, Herm., Damenschneiderin, BrunnKünzi, s. auch Küenzi  # 1059,1165,795,27;1043,1240,397,27
-gasse 62  # 1088,1211,152,16
+- -Vetter, Herm., Damenschneiderin, Brunngasse 62  # 1059,1165,795,27;1088,1211,152,16
+Künzi, s. auch Küenzi  # 1043,1240,397,27
 - Alb., Brenner u. Hauswart, Balmweg 18  # 1088,1275,733,28
 - Alex. Friedr., Grubenarb., Stöckacker 618b  # 1091,1312,763,27
 - Chr., Trambilletteur, Rosenweg 9b  # 1090,1345,609,31
@@ -31504,7 +31505,7 @@ Ulrich, Adolf, Ausläufer, Schwarzenburgstrasse 8a  # 83,2142,829,40;124,2182,18
 - Adolf, Knecht, Riedern bei Bümpliz  # 99,2216,692,36
 - A. G., Bereiter, Rütlistrasse 16  # 99,2253,594,34
 - Eduard, Polizist, Herzogstrasse 19  # 124,2289,632,38
-- Friedr., Käsehändler. Stöckacker  # 82,2328,665,32
+- Friedr., Käsehändler, Stöckacker  # 82,2328,665,32
 - Friedr., Schlosser, Scheibenstrasse 53  # 123,2366,704,32
 - Friedr., Wegmeister, Bahnhofstr. 535c, Bümpliz  # 125,2399,786,39;126,2440,146,33
 - Fritz, Schlosser, Dorf, Bümpliz  # 100,2477,606,33
@@ -33585,8 +33586,9 @@ CITCHE  # 1479,1341,107,20
 Wissbrun, Henr. Frieda, Ladentochter, Kornhausplatz 12  # 1044,1490,828,33;1096,1531,227,28
 12445  # 925,1491,88,36
 22 seass  # 1505,1522,153,31
-- Gustav, Dr. phil., Bibliothekar, Gryphenhübeliweg 2100  # 1098,1602,779,33;1098,1643,292,29
-- Wissler, Ed., Schneider, Scheibenstrasse 32  # 1050,1617,39,13;1047,1568,779,25
+Wissler, Ed., Schneider, Scheibenstrasse 32  # 1047,1568,779,25
+- Gustav, Dr. phil., Bibliothekar, Gryphen-  # 1098,1602,779,33
+- hübeliweg 2100  # 1050,1617,39,13;1098,1643,292,29
 2015-Joh. Wilhelm, Zuckerbäcker, Breitenrainstrasse 11  # 936,1679,938,24;1097,1719,176,23
 - Otto, Architekt bei der eidg. Baudirektion, Werdtweg 9  # 1099,1751,777,28;1100,1792,219,30
 - Walter, Coiffeur, Eigerweg 9  # 1099,1827,530,29

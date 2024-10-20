@@ -4164,7 +4164,7 @@ $2887 Spitalackerstrasse 135  # 616,2165,319,36;162,2228,170,37
 13538  # 19,2291,57,19
 - Louis, Dr. phil., Beamter, Neubrückstr. 49  # 130,2299,803,59
 - Lattmann, Berta, Arbeitslehrerin, Murtenstrasse 135  # 160,2339,773,56;161,2379,168,36
-- -Lattmann, Jul. Emil, Chauffeur, MurtenBoss, Ad., Bankangestellter, Aegertenstr. 47strasse 135  # 132,2413,801,64;970,2351,821,58;162,2453,167,41
+- -Lattmann, Jul. Emil, Chauffeur, Murtenstrasse 135  # 132,2413,801,64;162,2453,167,41
 - -Savoie, Ernest, Sekretär d. eidg. Steuerverwaltung, Muristrasse 47a  # 131,2488,803,61;162,2532,489,51
 Bornhauser, Albert, Architekt, Rehhagstr. 10, 14977  # 132,2560,796,72;21,2632,55,17
 - Jean Otto, Beamter, Myrthenweg 8, Bümpliz  # 161,2640,772,66;161,2677,46,35
@@ -4215,6 +4215,7 @@ Bösiger, Alfred, Handlanger, Mühleplatz 10  # 980,1435,821,46
 $5998  # 1740,2177,91,29
 - -Hunkeler, Charles, Wyttenbachstrasse 33  # 1002,2240,812,46
 - -Spring, Joh., gew. Oberbriefträger, Zähringerstrasse 45  # 988,2278,845,49;1019,2321,301,34
+Boss, Ad., Bankangestellter, Aegertenstr. 47  # 970,2351,821,58
 - Albrecht, Oberküfer, Breitfeldstrasse 47  # 1021,2398,751,41
 - Alfred Otto, Goldschmied, Thunstrasse 38  # 1020,2434,792,43
 - Chr., Bahnarbeiter S. B. B., Kirchbergerstrasse 63  # 1018,2474,812,44;1018,2517,183,26
@@ -6778,7 +6779,8 @@ Dellsperger, Friedr., Bahnarbeiter, Wangenstrasse 29, Bümpliz  # 102,2729,801,6
 - Samuel Ernst, Maurer, Weidmattweg 12, Bümpliz  # 1011,348,804,46;1009,391,150,31
 -& Cie., Apotheke Béchéraz, Waisenhausplatz 21 ↯1155 Flaschenverschlussfabrik, Bubenbergstrasse 20  # 989,429,826,39;1008,466,808,38;1007,504,382,37
 - -Aberegg, Rud., Apotheker in Fa. Dellsperger & Cie., Neubrückstrasse 47 ↯1537  # 978,545,836,37;1007,583,805,35
-- -Umbehr, Friedr., Medizinaldrogist in Fa. Dellsperger & Cie., Bubenbergstrasse 20  # 990,620,823,39;1011,658,763,40
+- -Umbehr, Friedr., Medizinaldrogist in Fa.  # 990,620,823,39
+Dellsperger & Cie., Bubenbergstrasse 20  # 1011,658,763,40
 $4669  # 1720,703,92,29
 Delmenico, Alfredo, Postkommis, Breitfeldstrasse 44  # 958,739,855,36;1007,781,184,25
 Delmotte, Aline, Modistin, Frohbergweg 11  # 956,818,812,40
@@ -9955,7 +9957,7 @@ Bümpliz  # 984,842,150,34
 - Friedr., Handlanger, Zaunweg 21  # 967,1347,631,41
 - Friedr., Magaziner, Bäckereiweg 15  # 957,1389,157,36;1139,1390,508,37
 - Friedr., Mechaniker, Weissensteinstr. 18  # 986,1427,761,37
-- Friedr., Sanitätspolizist. Breitfeldstr. 34  # 981,1462,747,41
+- Friedr., Sanitätspolizist, Breitfeldstr. 34  # 981,1462,747,41
 HEURE  # 1943,1483,-8,29
 - Fritz, Postkommis, Kramgasse 17  # 981,1501,641,42
 - Fritz H., Sohn, Tapezierermeister, Kesslergasse 17  # 982,1543,808,44;981,1592,157,20
@@ -10080,8 +10082,9 @@ Gebelein, Curt, Beamter der B. L. S. /B. N, Seftigenstrasse 29  # 1119,2739,802,
 Gebhard, Frieda, Glätterin, Bärengasse  # 1118,2843,764,31
 Bümpliz  # 1170,2888,158,33
 # Date: 1923-12-15 Page: 25903422/219
-tensia (Marzilistrasse 10b (6793), KramGeelhaar, Christ. Renatus, Ingen., Lagerweg 7  # 126,274,774,43;90,355,810,47
+tensia (Marzilistrasse 10b (6793), Kram-  # 126,274,774,43
 - (3770gasse 13  # 810,326,91,28;122,328,133,13
+Geelhaar, Christ. Renatus, Ingen., Lagerweg 7  # 90,355,810,47
 - Hans, Kaufmann, Thunstrasse 7  # 89,398,624,33
 - -Künze, Wilh., Weisswarengeschäft, AnferThunstrasse 7  # 85,437,815,41;119,518,234,28
 ou761  # 3,445,29,20;1,477,32,26
@@ -19089,8 +19092,8 @@ Bümpliz  # 229,2104,150,37
 - -Glauser, Margrit, Steinweg 11  # 189,2767,614,50
 - -Meier, Marie, Wwe., Lentulusstrasse 53  # 206,2805,781,47
 - -Scheidegger, Fritz, Wirt, Lorrainestr. 9  # 1112,280,753,45
-- -Vetter, Maria, Damenschneiderin, BrunnKünzi, s. auch Küenzi  # 1077,317,821,46;1081,412,420,30
-gasse 62  # 1130,370,161,21
+- -Vetter, Maria, Damenschneiderin, Brunngasse 62  # 1077,317,821,46;1130,370,161,21
+Künzi, s. auch Küenzi  # 1081,412,420,30
 - Alb., Fabrikarbeiter, Schwarztorstrasse 55  # 1108,447,790,42
 - (3312  # 953,482,90,30
 - Alb., Nachtwächter im Bundeshaus, Neufeldstrasse 5  # 1100,490,798,44;1129,533,240,28
@@ -39499,10 +39502,10 @@ geöffnet  # 426,302,28,-78
 Sonntags  # 392,306,30,-89
 - August  # 236,875,101,47
 9. morgens vom bis vom bis 9. abends  # 623,905,217,37;496,873,77,19;495,904,55,29;496,971,78,19;494,1002,55,29;621,960,183,30
-16. morgens vom 16. abends bis 23. morgens vom 23. abends bis 30. morgens vom 30. abends bis vom 6. morgens 6. abends bis 13. morgens vom 13. abends bis 20. morgens vom 20. abends bis 27. morgens vom 27. abends bis 4. morgens 4. abends vom bis 11. morgens vom 11. abends bis 18. morgens Dellsperger & Cie.  # 603,1004,237,35;493,1064,310,23;494,1102,54,29;599,1102,241,36;493,1162,310,26;491,1199,342,43;491,1261,311,25;491,1298,54,31;492,1366,78,20;619,1300,216,38;619,1355,182,31;490,1393,345,45;490,1460,309,24;489,1497,347,37;490,1559,307,24;489,1595,348,40;491,1656,310,26;491,1694,55,30;617,1700,219,31;618,1751,184,28;496,1759,77,20;496,1786,344,39;500,1841,305,21;501,1871,53,23;609,1873,234,29;942,363,339,40
-Sept.  # 232,1372,74,46
+16. morgens vom 16. abends bis 23. morgens vom 23. abends bis 30. morgens vom 30. abends bis vom 6. morgens 6. abends bis 13. morgens vom 13. abends bis 20. morgens vom 20. abends bis 27. morgens vom 27. abends bis 4. morgens 4. abends vom bis 11. morgens vom 11. abends bis 18. morgens Sept.  # 603,1004,237,35;493,1064,310,23;494,1102,54,29;599,1102,241,36;493,1162,310,26;491,1199,342,43;491,1261,311,25;491,1298,54,31;492,1366,78,20;619,1300,216,38;619,1355,182,31;490,1393,345,45;490,1460,309,24;489,1497,347,37;490,1559,307,24;489,1595,348,40;491,1656,310,26;491,1694,55,30;617,1700,219,31;618,1751,184,28;496,1759,77,20;496,1786,344,39;500,1841,305,21;501,1871,53,23;609,1873,234,29;232,1372,74,46
 Oktober  # 231,1756,112,38
 Wyler  # 2426,273,103,40
+Dellsperger & Cie.  # 942,363,339,40
 - J. Suess  # 2401,365,161,32
 - R. Guhl  # 1631,365,162,27
 - A. Vatter  # 1336,366,184,27

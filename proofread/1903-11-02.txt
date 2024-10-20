@@ -129,7 +129,8 @@ Aichberger & Mühlethaler, Schuhmachermeister, Mattenhof, Hopfenweg 28  # 256,10
 Akert, G. E., Tarifbeamter d. T. S. B., Lgg., Neufeldstr. 27 d  # 254,1104,782,44;339,1149,441,38
 Aktienbrauerei Basel, Vertreter: Hr.  # 277,1189,760,43
 - C. Hofstetter, Weissenb., Seftigenstrasse 18  # 340,1233,693,47;338,1277,196,27
-Aktienbrauerei zum Gurten, vormals Juker, Wabern b. Bern (Bureau in Wabern)  # 277,1314,754,42;336,1355,694,40;336,1399,171,33
+Aktienbrauerei zum Gurten, vormals  # 277,1314,754,42
+Juker, Wabern b. Bern (Bureau in Wabern)  # 336,1355,694,40;336,1399,171,33
 Aktiengesellschaft d. Ofenfabrik Sursee, -vormals Weltert & Cie., Filiale Bern, Wallgasse 8  # 270,1439,762,48;333,1481,700,45;334,1523,240,42
 Aktiengesellschaft Rooschüz, Heuberger & Cie., Fabrikation u. Verkauf  # 270,1563,763,42;332,1609,704,37
 v. Zuckerwaren, Waffeln, Biskuits etc., kohlensauren Getränken etc. ;  # 331,1652,700,38;333,1687,698,48
@@ -423,7 +424,8 @@ Strasse 28 a  # 314,1329,237,31
 - Jörg, Joh. Ernst, Buchhalter der Kantonalbank, Lgg.,Zähringerstr. 31  # 306,2079,699,36;303,2117,699,44
 - Lehmann, Rosa, Marg., Frau, Glasund Geschirrhandlung (Anatomiegasse 9), Neuengasse 4  # 305,2161,696,42;303,2200,697,44;304,2248,448,29
 - Lüdi, Elisabeth, Witwe, Privatiere, Länggasse, Donnerbühlweg 1  # 306,2287,697,39;305,2328,591,40
-- Schüpbach, M. El., Witwe, LängAeschimann, Christ., Schuhmachermstr., gasse, Vereinsweg 14, Gerechtigkeitsgasse 26  # 305,2369,698,42;217,2450,785,42;302,2414,438,35;304,2494,457,38
+- Schüpbach, M. El., Witwe, Länggasse, Vereinsweg 14  # 305,2369,698,42;302,2414,438,35
+Aeschimann, Christ., Schuhmachermstr., Gerechtigkeitsgasse 26  # 217,2450,785,42;304,2494,457,38
 Aeschlimann, Adele, Broderiehandlung, Kramgasse 87  # 216,2532,787,44;301,2580,272,35
 Bahnangest., Weyermannshaus, Murtenstrasse 133  # 438,2617,563,41;300,2660,483,34
 - Alb.,  # 301,2618,91,43
@@ -2623,7 +2625,8 @@ Danz, J., Schreinermstr. (Postgasse 60), Postgasshalde 47  # 1017,1708,777,50;10
 Dänzer, G., Landw., Schossh., Kalcheggweg 12  # 995,1879,797,45;1078,1935,147,24
 - Sus., Wwe., Priv., Linde, Murtenstr. 40  # 1080,1966,712,41
 Däpp, Marie Lse., Bureauangestellte, Aarbergergasse 50  # 993,2006,798,47;1081,2050,387,44
-- -Widmer, Ver., Wwe., AarbergerDäppen, Chr. Landjäger b. Richteramt I, gasse 50, Anatomiegasse 4  # 1044,2090,746,47;993,2174,797,49;1077,2147,174,21;1077,2220,345,43
+- -Widmer, Ver., Wwe., Aarbergergasse 50  # 1044,2090,746,47;1077,2147,174,21
+Däppen, Chr. Landjäger b. Richteramt I, Anatomiegasse 4  # 993,2174,797,49;1077,2220,345,43
 - F., Briefträger, Linde, Murtenstr. 26  # 1075,2263,714,37
 - Fr., Depeschenträger, Länggasse, Mittelstrasse 17  # 1078,2304,708,48;1075,2347,318,34
 - Gottl., Tramangestellter, Länggasse, Seidenweg 24  # 1075,2388,713,47;1074,2433,280,37
@@ -8963,7 +8966,9 @@ Mani, G., Schriftsetzer, Neueng. 5  # 179,340,698,39
 Mann, Emilie, Frl., Bureaulistin, Länggasse, Sennweg 12  # 177,469,796,40;262,518,382,29
 - Karl H., Angest. d. Staatskanzlei, Sandrain, Dorngasse 8  # 263,557,712,35;263,599,464,39
 - Gerber, Anna, Wwe., Länggasse, Bühlstrasse 49  # 260,642,717,41;262,687,287,30
-- Oechslin, Wwe., Sandrain, DornMannhart, Fr., Südfrüchte- u. Gemüsehandlung (Brunngasshalde 63), gasse 8, Kramgasse 63  # 262,729,715,33;181,815,796,33;262,856,713,40;263,778,153,25;264,900,288,37
+- Oechslin, Wwe., Sandrain, Dorngasse 8  # 262,729,715,33;263,778,153,25
+Mannhart, Fr., Südfrüchte- u. Gemüse-  # 181,815,796,33
+handlung (Brunngasshalde 63), Kramgasse 63  # 262,856,713,40;264,900,288,37
 - Franz,Flaschenbierdepot d. Brauerei  # 201,941,775,38
 Choquard, Mattenhof, Effingerstrasse 67  # 265,985,709,41;263,1032,204,28
 Manuel, Ernst, Dr. jur., Oberrichter, Oberrichter, Könizstrasse 32  # 179,1071,796,39;738,1068,237,42;263,1113,320,35
@@ -9656,8 +9661,8 @@ Mollet, Fr., Metzgermstr., Rathausg. 6  # 199,817,766,39
 - Luise, Ladentochter, Rathausg. 6  # 284,987,692,36
 - Robert, Gerber, Marzilistrasse 28  # 282,1033,719,30
 Monge, Fr, Schirmhändler, Metzgerg. 69  # 199,1072,801,41
-Monhaupt, C., Musiklehrer, ZeughausMonnard, Daniel, Kutscher, Sulgeneckstrasse 44  # 200,1118,801,34;201,1203,800,34;286,1252,202,24
-gasse 14  # 282,1172,177,18
+Monhaupt, C., Musiklehrer, Zeughausgasse 14  # 200,1118,801,34;282,1172,177,18
+Monnard, Daniel, Kutscher, Sulgeneckstrasse 44  # 201,1203,800,34;286,1252,202,24
 - E., Wwe., Gehilfin der Ober-Post, Länggasse, Druckereiweg 1  # 286,1286,715,39;286,1336,574,31
 - Karl, gew. Sekretär d. Direktion d. Landwirtschaft, Linde, Murtenstr. 30Monner, P., Privatier, Waghausgasse 10  # 285,1376,717,26;287,1417,792,32;206,1460,799,37
 Monney, Julien, Telephon - Monteur, Wyler, Scheibenweg 26  # 206,1503,798,34;288,1543,487,41
@@ -15113,8 +15118,9 @@ Volksbibliotheken, siehe Rubrik „Bibliotheken“  # 1016,1291,770,39;1099,1334
 Volkshaus, Zeughausgasse 9  # 1041,1374,560,40
 Volksküche Länggasse, Neufeldstrasse 5  # 1018,1412,770,47
 Weissenbühl, Neuhäuserweg 8  # 1100,1454,590,37
-Volksmagazin Bern (F. Klay-Ryser), Tuchhandlg., Theaterpl. 3, EngrosVollenweider, Adolph, Postbureauchef, Lager Kirchenf., Bubenbergstr. 8  # 1018,1495,766,46;1100,1537,688,43;1018,1623,766,40;1099,1581,658,35
-Kirchenfeld, Bubenbergstrasse 16  # 1100,1663,654,36
+Volksmagazin Bern (F. Klay-Ryser), Tuchhandlg., Theaterpl. 3, Engros-  # 1018,1495,766,46;1100,1537,688,43
+Lager Kirchenf., Bubenbergstr. 8  # 1099,1581,658,35
+Vollenweider, Adolph, Postbureauchef, Kirchenfeld, Bubenbergstrasse 16  # 1018,1623,766,40;1100,1663,654,36
 - Adolf, Kassagehilfe d. eidg. Staatskasse, Beundenfeld, Breitenrainpl. 24  # 1099,1706,687,34;1100,1747,686,35
 - Anna, Wwe., Privatiere, Gerechtigkeitsgasse 16  # 1102,1791,683,31;1100,1830,315,37
 - Emil, Photograph, Postg. 68 1476  # 1103,1872,681,34

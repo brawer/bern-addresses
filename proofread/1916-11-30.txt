@@ -3233,8 +3233,9 @@ $2368  # 1830,1180,63,26
 - Stalder, Walter, Angestellter der Schweiz. Mobiliarvers.-Gesellschaft, Morellweg 4  # 1130,1472,764,35;1134,1507,716,38
 - -v. Tobel, Gottfr., i. Fa. R. v. Tobel & Cie., Effingerstrasse 15  # 1084,1547,809,34;1136,1583,321,32
 $3792  # 1827,1587,65,26
-- Wenger, O., Postangestellt., WasserwerkBrühlmann, Jak., Hauptbuchhalter u. Prok. d. Schweiz. Nationalbank, Liebeggweg 8  # 1132,1622,763,36;1085,1696,802,34;1132,1730,720,39
-gasse 29  # 1132,1668,154,19
+- Wenger, O., Postangestellt., Wasserwerkgasse 29  # 1132,1622,763,36;1132,1668,154,19
+Brühlmann, Jak., Hauptbuchhalter u. Prok.  # 1085,1696,802,34
+d. Schweiz. Nationalbank, Liebeggweg 8  # 1132,1730,720,39
 Brüll, O. E. M., Frl., Bureaulist, Friedeckw. 18  # 1083,1770,808,36
 Brüllhard und Brüllhardt  # 1085,1804,477,39
 - Johann, Polizist, Stauffacherstrasse 80  # 1133,1847,705,32
@@ -4074,7 +4075,8 @@ Caflisch, R. F., Schreinervorarbeiter, Könizstrasse 46  # 212,1359,825,35;262,1
 - -Büchi, Rich., Fabrikdir., Weststrasse 17  # 236,1435,783,33
 Cagna, E. R., Schuhmacher, Schönauweg 10  # 213,1507,805,41
 Caille, Ls. Ed., Gymn.-Lehrer, Allmendstr. 2  # 212,1542,806,41
-Caisse Paternelle, Lebens-Versicherungs-Gesellschaft in Paris, Inspektor: J. KisslingFuhrer, Militärstrasse 46  # 211,1582,826,39;261,1618,776,42;262,1657,451,33
+Caisse Paternelle, Lebens-Versicherungs-Gesellschaft in Paris, Inspektor: J. Kissling$3263  # 211,1582,826,39;261,1618,776,42;947,1664,91,26
+Fuhrer, Militärstrasse 46  # 262,1657,451,33
 Calame, Charles, Bereiter, Waffenweg 8  # 211,1692,732,38
 - Georges, amter S. B. B., Hochfeldweg 23  # 242,1727,796,46
 - Henri, Beamter S. B. B., Hochfeldweg 23  # 236,1765,762,40
@@ -4125,7 +4127,6 @@ Cassani, Ad., Direktor der Schweiz. Volksbank, Kirchenfeldstrasse 55  # 1070,135
 $3269  # 1817,1551,70,26
 Casserini, Francesco, Kaufmann, Waldheimstrasse 10a  # 1069,1582,818,39;1120,1627,200,25
 - Paul, Konfiseur, Waldheimstrasse 10a  # 1104,1662,712,32
-$3263  # 947,1664,91,26
 - Iseli, R., Wwe., Neufeldstrasse 27  # 1117,1699,639,33
 de Castello-Challande, Kunstmaler, Privatunterricht in Malerei u. Liebhaberkünsten, Monbijoustrasse 26  # 1069,1733,818,36;1118,1772,768,34;1119,1813,350,31
 Castelnuovo & Co., Cesare, Mailand, Filiale  # 1069,1843,818,40
@@ -4882,7 +4883,8 @@ Dübi, s. auch Düby  # 216,769,344,29
 - Max, Dr. med., Spezialarzt f. innere Krankheiten, Marktgasse 37  # 266,1137,781,26;265,1176,388,26
 Dubied, M., Registrator b. eidg. Justizdepartebachstrasse 2  # 218,1245,829,36;1126,1242,251,31
 ment, Liebeggweg 15  # 267,1287,367,31
-- Gut, L. Ph., kant. Beamter, Aegertenstr. 81Dubler, Albert, Küfer, Rodtmattstrasse 90  # 265,1319,842,32;220,1360,751,26
+- Gut, L. Ph., kant. Beamter, Aegertenstr. 81-  # 265,1319,842,32
+Dubler, Albert, Küfer, Rodtmattstrasse 90  # 220,1360,751,26
 - Alfred, Ausläufer, Falkenplatz 11  # 270,1394,602,34
 - Arnold, Monteur, Berchtoldstrasse 45  # 271,1435,676,26
 - Ed., Fahnen- und Schildermalerei (Kasernenstrasse 36), Münzrain 10  # 270,1469,778,31;271,1508,506,31

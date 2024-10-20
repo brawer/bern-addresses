@@ -24760,7 +24760,7 @@ Nüssli, Alb., Ausläufer, Seidenweg 38  # 1033,1288,704,40
 - H., Fabrikarbeiter, Tunnelweg 2  # 1086,1403,582,37
 - Heinrich Emil, Nachtportier, Aarbergergasse 12  # 1087,1438,770,43;1081,1487,154,19
 - Julius, eidg. Beamter, Zeigerweg 10  # 1084,1515,653,40
-Ottilia Frieda, Laborant., Gerechtigkeitsg. 35  # 1082,1552,772,46
+Ottilia Frieda, Laborant, Gerechtigkeitsg. 35  # 1082,1552,772,46
 - Rud., Fabrikarbeiter, Felsenaustrasse 26  # 1063,1592,757,38
 - Rud., Spinner, Felsenaustrasse 28  # 1082,1626,619,38
 - Theodor, Packer, Zähringerstrasse 57  # 1062,1663,713,43
@@ -38375,7 +38375,7 @@ gasse 3  # 1132,352,137,20
 - St., Schneider, Allmendstrasse 50  # 1083,568,678,34
 - Tullio, Beamter des Bundesamts f. Sozialversicherung, Tavelweg 8  # 1107,607,800,37;1132,644,465,34
 Zangerlé, Jules P. Léon, Schneider, Viktoriastrasse 98  # 1086,685,820,35;1133,729,187,24
-Zaninetti, Lily Elise, Zeichnerin. Bühlstr. 39  # 1079,760,814,36
+Zaninetti, Lily Elise, Zeichnerin, Bühlstr. 39  # 1079,760,814,36
 Zangger, Herm. Emil, Wärter, Zieglerstr. 62  # 1083,798,823,48
 - Jakob, Kutscher, Lorrainestrasse 14  # 1107,846,713,32
 Zanker, Carl Friedr., Angestellter, Breitenrainplatz 37  # 1081,883,825,37;1131,926,228,31
@@ -39690,8 +39690,7 @@ Pestalozzist, 26, Lorrainestr. 16.  # 2061,1841,212,22;2581,1844,208,20
 # Date: 1924-12-15 Page: 25904595/513
 geöffnet  # 439,265,28,-78
 Sonntags  # 407,266,30,-83
-Oktober 18. vom 17. abends bis 24. morgens vom 24. abends bis 31. morgens vom 31. abends bis 7. morgens vom 7. abends bis Dellsperger & Cie.  # 265,349,200,35;512,340,302,26;512,379,52,27;615,379,228,37;511,432,303,22;511,468,334,38;509,520,303,25;509,556,329,40;508,613,301,23;507,649,53,27;934,516,329,36
-14. morgens vom 14. abends bis 21. morgens vom 21. abends bis 28. morgens vom 28. abends bis 5. morgens 5. abends  # 614,650,226,39;507,702,301,24;508,735,331,47;506,792,301,25;504,829,330,38;504,882,301,26;505,917,49,32;625,922,210,37;626,969,177,29
+Oktober 18. vom 17. abends bis 24. morgens vom 24. abends bis 31. morgens vom 31. abends bis 7. morgens vom 7. abends bis 14. morgens vom 14. abends bis 21. morgens vom 21. abends bis 28. morgens vom 28. abends bis 5. morgens 5. abends  # 265,349,200,35;512,340,302,26;512,379,52,27;615,379,228,37;511,432,303,22;511,468,334,38;509,520,303,25;509,556,329,40;508,613,301,23;507,649,53,27;614,650,226,39;507,702,301,24;508,735,331,47;506,792,301,25;504,829,330,38;504,882,301,26;505,917,49,32;625,922,210,37;626,969,177,29
 25. bis 12. morgens vom 12. abends bis 19. morgens vom 19. abends bis 24. morgens vom 24. abends bis 26. morgens vom 26. abends bis 31. morgens 27.  # 386,1253,62,33;504,1005,330,48;502,1063,301,26;505,1097,331,45;502,1154,300,24;502,1192,53,27;604,1191,228,40;500,1244,288,24;501,1277,314,46;499,1334,290,24;497,1373,53,25;597,1371,217,43;384,1344,63,34
 - J. Münch  # 1007,336,178,28
 - W. Volz & Co. beim Zeitglocken  # 1290,336,238,30;1288,374,240,31
@@ -39707,6 +39706,7 @@ Stotzer, Christoffelgasse 3, Belpstr. 61  # 2369,431,128,30;979,463,246,31;1859,
 Länggassstr. 28, Breitenrainpl. 40  # 1578,470,216,26;2313,471,239,27
 - Dr. Baur  # 2598,513,174,29
 - A. Vatter  # 1320,516,168,32
+Dellsperger & Cie.  # 934,516,329,36
 - R. Guhl  # 1606,517,152,32
 - E. Stöckli, Lorrainestr. 16, Gerechtigktsg. 53  # 1845,519,183,28;2582,552,215,24;1287,557,238,28
 Waisenhauspl. 21, G’schaftsstr. 36, Belpstr. 26  # 974,557,250,26;1573,558,212,27;1859,561,150,23
