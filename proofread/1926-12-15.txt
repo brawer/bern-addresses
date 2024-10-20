@@ -1033,8 +1033,7 @@ Armen-Kasse Bümpliz  # 138,1039,410,31
 Zähr. 6077  # 780,1039,182,27
 Armen-Krankenpflege des Sulgenbach-MarSchwester Elise  # 134,1073,486,35;663,1073,301,35;664,1108,300,38
 ziliquartiers, Pflegerin, Bollw. 4794  # 183,1108,437,38;769,1153,195,23
-Armen-Krankenpflege der Arpagaus, Lorenz, Postfaktor, Amselweg 21  # 139,1183,485,38;999,1183,799,38
-Süd- und Westquartiere; Armenpflegerin: Schw. Hannie  # 662,1183,301,38;185,1221,780,37
+Armen-Krankenpflege der Süd- und Westquartiere; Armenpflegerin: Schw. Hannie  # 139,1183,485,38;662,1183,301,38;185,1221,780,37
 Keller, Cäcilienstrasse 25 Christ. 3154  # 186,1255,778,38
 Arn, s. auch Arm  # 141,1300,312,28
 tors, Bahnhofplatz 4a  # 186,1374,392,28
@@ -1081,6 +1080,7 @@ House), Thunstrasse 2, Bollw. 4168  # 1048,556,420,36;1625,563,192,27
 - Sutter, L. M., Wwe., Scheibenstrasse 17  # 1048,1070,733,40
 Aronowsky, Seb. Sam., Dr., Fürspr., AdvoTreuberg, Burgerspital  # 997,1108,823,38;185,1151,415,33
 katurbureau, Laupenstr. 6 Bollw. 3191  # 1048,1147,768,40
+Arpagaus, Lorenz, Postfaktor, Amselweg 21  # 999,1183,799,38
 - Arrigo, Dom., Schreiner, Quartiergasse 15  # 1000,1221,759,37
 Arrigoni, Carlo, Maurer, Länggassstrasse 44  # 1000,1256,798,42
 v. Arx, Arth. Oskar, Bildhauer, Murtenstr. 29  # 997,1295,820,38
@@ -1691,9 +1691,9 @@ Bären, Hotel (Herm. Marbach), SchauplatzBärenhöfli, Kaffeehalle, Zeughausgass
 Bollw. 3367gasse 4, Bollw. 1160  # 1628,1489,198,26;1048,1497,130,19;1629,1563,197,26
 Bärfuss, Ernst Rud., Bureaulist, Breitew. 28  # 1001,1601,824,25
 - Joh., Bäcker, Konsumstrasse 11  # 1019,1639,608,27
-- Barfuss, F. René, Fürsprecher, Tannackerstrasse 24  # 996,1653,33,6;1002,1706,821,37;1050,1753,179,22
+- strasse 24  # 996,1653,33,6;1050,1753,179,22
 - Johann, Bahnarbeiter, Seftigenstrasse 75  # 1052,1672,738,32
-Bollw. 2092  # 1629,1747,196,26
+Barfuss, F. René, Fürsprecher, Tannacker, Bollw. 2092  # 1002,1706,821,37;1629,1747,196,26
 - Friedr., Billetteur der S. S. B., Seftigenstrasse 75  # 997,1781,832,32;1046,1825,174,24
 - Gottl., Maschinist, Forstweg 64  # 1057,1859,553,29
 - -Wälti, Frieda, Wwe., Engestrasse 9  # 1036,1895,686,29
@@ -2291,7 +2291,8 @@ Beckert, Georg Alb., Kaufmann, Hallerstrasse 24  # 1017,922,823,42;1065,967,182,
 Hellmuth, Verkäufer, Laupenstrasse 4  # 1065,996,696,44
 - Martha Maria, Bureaulistin, Schlösslistrasse 43  # 1064,1035,773,40;1061,1077,182,24
 Becky, Heinrich, Goldschmied, Schosshaldenstrasse 23  # 1016,1101,821,61;1062,1151,182,27
-Beeler, Jos. Karl, Chemigraph, WyttenbachBedert, Alexander, Kaufm., Muesmattstr. 34strasse 37  # 1013,1215,820,62;1013,1187,806,42;1059,1269,182,24
+Bedert, Alexander, Kaufm., Muesmattstr. 34  # 1013,1187,806,42
+Beeler, Jos. Karl, Chemigraph, Wyttenbachstrasse 37  # 1013,1215,820,62;1059,1269,182,24
 Beer, Berta, Lingère, Bantigerstrasse 20  # 1011,1291,759,67
 - Christ. 4276  # 1632,1349,200,30
 - Emil, Beleuchtungswart, Berchtoldstr. 2  # 1039,1415,736,43

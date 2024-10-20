@@ -2713,8 +2713,8 @@ Bollinger, Hans, Wirt, Restaurant Viktoriahall, Effingerstr. 51  # 1095,1961,755
 - Konrad, Hafner, Gesellschaftsstr. 16  # 1160,2166,691,30
 - Marie Alice, Bureaulistin, Gesellschaftsstrasse 16  # 1162,2207,691,34;1162,2250,327,28
 - Olga, Ladentochter, Gesellschaftsstrasse 16  # 1163,2292,697,28;1161,2335,189,26
-Bollmann, Alph., Marktkrämer, MarktBolz, Ernst, Tramangestellter, Schosshaldenstrasse 31  # 1080,2370,776,39;1082,2451,773,37;1165,2497,324,30
-gasse 18 a  # 1161,2426,200,18
+Bollmann, Alph., Marktkrämer, Marktgasse 18 a  # 1080,2370,776,39;1161,2426,200,18
+Bolz, Ernst, Tramangestellter, Schosshaldenstrasse 31  # 1082,2451,773,37;1165,2497,324,30
 - Fritz, Magaziner, Freiburgstr. 163  # 1165,2536,693,35
 - Gottl., Magaziner, Altenbergstr. 28  # 1166,2578,690,36
 - Joh., Fabrikarbeiter, Junkern gasse 3  # 1165,2604,692,58;1162,2670,143,22
@@ -2817,8 +2817,8 @@ Böschenstein, Karl, Dr. phil., Adjunkt beim eidgenössischen Amt für Mass u. G
 - Konr., Küfermstr., Hallerstrasse 20  # 372,1917,715,38
 - --Ingold, Konr., Sek.-Lehrer, Moserstrasse 18  # 338,1957,747,39;398,2003,196,28
 - Mäder, Otto, Kanzlist der kant. Direktion d. Innern, Cäcilienstr. 36a  # 399,2041,687,35;400,2080,687,39
-Böse, Reinh., Schneidermeister, KesslerBösiger, Alfr., Privatier, Steigerweg 24  # 320,2122,768,37;322,2204,770,40
-gasse 34  # 399,2170,167,23
+Böse, Reinh., Schneidermeister, Kesslergasse 34  # 320,2122,768,37;399,2170,167,23
+Bösiger, Alfr., Privatier, Steigerweg 24  # 322,2204,770,40
 - Ed., Schmied, Belpstrasse 30 a  # 408,2246,602,38
 - Elisabeth, Speziererin, Gerechtigkeitsgasse 77  # 404,2287,685,41;402,2328,254,37
 - Ernst, Kutscher, Neuengasse 9  # 406,2368,613,38
@@ -10040,7 +10040,7 @@ Hubmann, Franz, Stereotypeur, Militärstrasse 46  # 187,1374,769,40;269,1417,195
 Hübner, Friedr., Ingenieur, Lentulusstrasse 53  # 187,1536,769,41;267,1580,197,29
 Hübscher, Hans, Prokurist der Schweiz. Kindermehlfabrik, Unt. Beaumontweg 2 astrasse 8  # 185,1619,771,36;267,1660,690,37;269,1710,154,22;267,1784,173,29
 - Jos. Ant., Schneider, Allmendstr. 34  # 269,1823,690,35
-Mart., Prokurist d. Schweiz. Volksbank, Kasernenstrasse 45  # 268,1864,688,33;266,1907,493,34
+- Mart., Prokurist d. Schweiz. Volksbank, Kasernenstrasse 45  # 268,1864,688,33;266,1907,493,34
 - Dürr, Jules, Beamter der S. B. B., Waldheimstrasse 36  # 268,1946,690,38;268,1984,395,37
 Hubschmid, Eugen, Beamter der S. B. B., Waldheimstrasse 64  # 190,2028,768,40;267,2068,397,34
 Huck-Schenk, Adolf Emil, Hilfsmonteur, Quartiergasse 9  # 186,2109,773,43;271,2152,309,35
@@ -15786,7 +15786,7 @@ Näf, Emil, Schriftsetzer, Neufeldstr. 23  # 1003,2002,802,44
 - Josef, Schneider, Turnweg 29  # 1086,2345,617,40
 - K. Otto, Kommis, Drosselweg 9  # 1084,2387,658,41
 - Peter, Bundesbeamter, Könizstr. 36  # 1084,2429,716,39
-Stanisl., Rentier, Thunstrasse 49  # 1085,2472,661,39
+- Stanisl., Rentier, Thunstrasse 49  # 1085,2472,661,39
 Nafzger, Friedr., Fabrikarbeiter, Tunnelweg 7  # 999,2511,800,48;1083,2565,125,23
 Nagel, Ernst, Schuhmachermstr., Thunstrasse 113  # 999,2595,801,49;1083,2647,223,26
 - Hilty, Konrad, Beamter der S. B. B., Neufeldstrasse 26 a  # 1082,2686,716,37;1083,2729,384,33
@@ -16796,7 +16796,7 @@ Portmann, Aug. C., Buchhalter, Scheibenweg 11 a  # 1028,1673,801,47;1112,1720,25
 - J. A., Polizeikorporal, Bundesgasse 6  # 1114,1756,716,49
 - Karl Alfr., Bankangestellter, Steigerweg 14  # 1113,1802,714,43;1109,1853,221,29
 - Louis, Postbureaudiener, Felsenaustrasse 45  # 1111,1881,720,46;1112,1935,193,26
-Mart. Heinr., Beamter d. Oberpostdirektion, Altenbergstrasse 120  # 1114,1969,713,47;1113,2012,646,46
+- Mart. Heinr., Beamter d. Oberpostdirektion, Altenbergstrasse 120  # 1114,1969,713,47;1113,2012,646,46
 - Dennler, Anna Maria, Liebeggweg 13  # 1110,2055,720,47
 Portner, Chr., Milchhändler, Standweg 6  # 1025,2099,803,43
 - Christ., Bereiter, Papiermühlestr. 13  # 1112,2140,715,43
@@ -19644,7 +19644,7 @@ Schönauer, Felix A., Kutscher, Platanenweg 3  # 229,1522,810,43;315,1577,134,23
 Schönemann, s. auch Schönmann  # 230,1914,681,38
 - A., Dr. med., Arzt, Prof., Spezialist f. Ohren-, Nasen-, Hals- u. Lungenkrankheiten, Privatklinik, Schanzenbergstrasse 7, Waisenhausplatz 14 u. 16  # 314,1956,727,47;314,2000,725,46;316,2045,724,40;315,2085,342,38;316,2302,517,46
 Schönenberger, Felix, eidg. Forstinspektor, Waldhöheweg 11 3606  # 251,2347,789,43;316,2390,723,42
-Gilg., Vertreter, Elisabethenstr. 29  # 317,2431,723,43
+- Gilg., Vertreter, Elisabethenstr. 29  # 317,2431,723,43
 - J., Sohn, elektr. Installat. (Muldenstrasse 17), Monbijoustrasse 21 210  # 256,2475,784,45;318,2517,722,50
 - Jakob, Lok.-Heizer, Gesellschaftsstrasse 4  # 319,2563,723,42;319,2606,175,33
 Schönholzer, Fr., Kommissionär u. Musiker, Länggasse, Zähringerstr. 16  # 235,2646,803,50;321,2688,719,52

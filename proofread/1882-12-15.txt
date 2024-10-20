@@ -601,8 +601,8 @@ Metzger, Schütte 3  # 1023,1016,392,40
 - S., Negotiant, Neueng. 13  # 1014,1608,527,50
 - Ulrich, Wärter in der Waldau  # 1015,1651,625,45
 - Schwestern, Bettwaarenhandlung, Kornhauspl. 11 und Brunng. 72  # 1013,1692,717,57;1013,1736,648,52
-Geschw., Färber, GerechtigkeitsBietenhard, Chr., Fuhrmann, Lorraine  # 1011,1776,719,57;925,1861,804,55
-gasse 50 und Matte Gerberg. 19, Sagerweg 13  # 1010,1819,666,53;1009,1909,265,41
+Geschw., Färber, Gerechtigkeitsgasse 50 und Matte Gerberg. 19  # 1011,1776,719,57;1010,1819,666,53
+Bietenhard, Chr., Fuhrmann, Lorraine, Sagerweg 13  # 925,1861,804,55;1009,1909,265,41
 Bigler, Frau, Anatomiegasse 7  # 924,1946,623,53
 - Chr., Tabakfabrikant, Bärenwärter, Nydeckbrücke  # 1009,1988,717,58;1006,2033,295,41
 - Chr., Milchhändler, Aarbergerg. 34  # 1013,2071,715,61
@@ -725,7 +725,7 @@ Blinden-Anstalt, Rabbenthal  # 77,1438,560,47
 Bloch, Bernh., Weinhandlg., Zeughausgasse 14  # 75,1477,794,62;155,1535,171,25
 - E., March.-Tailleur, Kramg. 72  # 156,1561,624,58
 Mor., March.-Tailleur, Kramg. 72  # 153,1607,673,55
-Gustil, Uhrenhändler, Schauplg. 28  # 152,1650,715,58
+- Gustil, Uhrenhändler, Schauplg. 28  # 152,1650,715,58
 Rebecca, Wittwe, Schauplatzg. 28  # 150,1690,696,60
 - Götschet, S., Lehrer der isr. Cult.Gen., Speicherg. 39  # 149,1735,716,54;149,1781,396,45
 - Martin, Schuhmacher, Aarberg. 47  # 147,1819,714,58
@@ -1232,8 +1232,9 @@ Büttikofer, Rosa, Rohr- u. Strohsesselflechterin, Postgasse 34  # 951,732,800,3
 - Johann, Handlanger, Sulgenb., Seftigenstr. 19  # 1033,942,720,43;1030,988,229,33
 - Frz. Frd., Photograph, Spitalg. 19  # 1036,1026,717,45
 - Nikl., Angest. d. Amtsschreiberei, Postgasse 65  # 1034,1069,714,41;1031,1115,259,34
-Bützberger, Oberrichter, GerechtigkeitsBützer, Joh., Kaminfeger und Feueraufseher, Brunng. 26  # 950,1154,802,44;948,1240,802,45;1032,1283,421,41
-gasse 52  # 1029,1207,177,19
+Bützberger, Oberrichter, Gerechtigkeitsgasse 52  # 950,1154,802,44;1029,1207,177,19
+Bützer, Joh., Kaminfeger und Feuer-  # 948,1240,802,45
+aufseher, Brunng. 26  # 1032,1283,421,41
 - Ch., Schuhmacher, Länggasse, Zähringerstrasse 27  # 1030,1325,723,44;1027,1370,322,32
 - Friedr., Schuhmacher, Sulgenbach, Könizstrasse 8  # 1030,1408,717,45;1032,1453,300,32
 - Joh., Schuhmacher, Mattenh., Belpstrasse 49  # 1030,1490,721,47;1030,1542,198,26
@@ -2481,7 +2482,7 @@ Gross, Arm., Kassier der Basler Handelsbank-Filiale, Junkerng. 27. 10  # 976,129
 - Emil, Schlosser, Aarzielestrasse 2  # 1056,1581,671,46
 v. Gross-Marcuard, A., Amtshausg. 5  # 969,1619,736,54
 Grossen, Anna, Schneid., Zwiebelng. 12  # 973,1664,775,50
-Gilg., Schuhmacher, Lorraine, Randweg 11  # 1054,1708,698,48;1051,1757,141,25
+- Gilg., Schuhmacher, Lorraine, Randweg 11  # 1054,1708,698,48;1051,1757,141,25
 Grossenbacher, F. E., Korbmach., Matte, Gerbergasse 42  # 970,1787,777,55;1052,1831,301,41
 - Joh., Postkondukteur, Kramg. 74  # 1051,1873,667,47
 - Joh., Schneider, Brunngasse 463  # 1050,1914,692,51
@@ -2822,7 +2823,7 @@ strasse 6  # 328,307,172,29
 - -Strasser, Karl, Wirth im Schweizerhof, Bahnhofplatz  # 284,345,746,49;327,386,354,47
 - Gebrüder Karl und Theodor, Gastwirthe z. Schweizerhof  # 329,424,702,52;325,470,456,39
 - Ehrensperger, Frau, Chemisière, Käfichgässchen 12  # 327,513,702,45;327,555,365,43
-Mart., Telegr., Gerechtigkeitsg. 59  # 326,596,702,53
+- Mart., Telegr., Gerechtigkeitsg. 59  # 326,596,702,53
 - Nikl., Einzieher d. Gasanstalt  # 326,638,597,43
 Häusler, Karl, Polizeidiener, Längg., Zähringerstrasse 47  # 241,677,783,53;325,719,386,43
 Hausmann, K., Schlosser, Brunng. 21  # 243,760,733,53
@@ -5328,7 +5329,7 @@ Mundweiler, Gottfr., Heizer bei Jent &  # 252,415,780,54
 Gassmann, Matte, Gerberg. 24  # 335,460,605,45
 Münger, A. F., Seifen- u. Krystallsodafabrik, Seftigenstr. 9, Abl. Spezer.Handlg. Häberli, Neueng. 20  # 249,500,783,50;330,541,701,53;332,584,576,49
 - J., Gypser u. Flachmaler, Spitalg. 16  # 330,626,702,49
-Jak, Korbflechter, Freiburgerstr. 56  # 331,666,700,52
+- Jak, Korbflechter, Freiburgerstr. 56  # 331,666,700,52
 - F. N., Schuhmacher u. Gasanzünder, Kesslerg. 27  # 330,707,701,47;328,749,243,40
 Munsch-Perret, G., Dentiste, Hirschengraben 7  # 246,791,784,50;328,839,179,34
 Munter, R., Gärtner, Kramgasse 49 und Stiftgarten  # 246,875,783,50;328,920,208,42
