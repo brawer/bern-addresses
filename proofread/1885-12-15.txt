@@ -3600,8 +3600,8 @@ Jarretout, Jean, Schneider bei HH.  # 1029,1097,733,44
 Blum-Javal, Längg., Hochfeldweg 9  # 1108,1136,651,52
 - Rosa, Lingère, Mattenhof, Brunnhofweg 9.  # 1106,1178,643,44;1104,1214,186,36
 Jasselin, J., Eisen- u Antiquitätenhdlg., Kramg. 37  # 1027,1250,729,53;1105,1296,192,32
-Jauch, Frau, Damenschneiderin, BrunnJaussi, Rud., Reisender, Könizstr. 58  # 1025,1326,733,50;1025,1403,689,51
-gasse 46  # 1102,1379,162,22
+Jauch, Frau, Damenschneiderin, Brunngasse 46  # 1025,1326,733,50;1102,1379,162,22
+Jaussi, Rud., Reisender, Könizstr. 58  # 1025,1403,689,51
 - Rud., Schreiner, Altenbergstr. 20  # 1102,1443,618,48
 - Sam., Handelsgärtner, Bierhübeliweg 13  # 1102,1483,655,45;1101,1534,134,18
 - Frau, Lingère, Postgasse 50  # 1100,1559,527,46
@@ -5761,8 +5761,10 @@ Niklaus, E., Negt. Fa. Hemmerling-Heim  # 289,625,725,34
 Nikles, J., Bauführer bei Hrn. Ingold, Neuengasse 10  # 286,776,731,37;368,818,274,34
 Nil, Th., Zuckerbäcker, Kramg. 34  # 287,852,653,38
 Nissen-Schneiter, J., Quincaill.-, Spielu. Korbwaarenhdlg., Marktg. (10) 19  # 286,892,730,39;370,929,648,42
-Nobs, Alfr., Commis bei Hrn. RahmMeley, Käfichgässchen 6  # 292,969,725,33;366,1006,457,38
-- Joh., Ellenwaarenhandlung (Käfichgässchen 6), Schauplatzgasse 1  # 367,1045,650,38;367,1084,577,36
+Nobs, Alfr., Commis bei Hrn. Rahm-  # 292,969,725,33
+Meley, Käfichgässchen 6  # 366,1006,457,38
+- Joh., Ellenwaarenhandlung (Käfich-  # 367,1045,650,38
+gässchen 6), Schauplatzgasse 1  # 367,1084,577,36
 - Nussbaum, Fr., Vieh-, Haber- und Heuhändler, Längg., Magazinw. 6  # 368,1122,648,33;367,1162,627,40
 Nordmann, Isac, Band- u. Merceriehdlg., Schauplatzgasse 33  # 287,1198,730,38;368,1239,352,35
 - Jul., Negt., Schauplatzgasse 33  # 366,1278,580,36
@@ -7075,8 +7077,8 @@ Schmied, s. auch Schmid und Schmidt  # 994,1179,716,36
 - Bigler, K., Kostgeberin, Lorraine, Quartierhof 9  # 1073,1804,656,39;1074,1842,255,29
 Schmieden-Zunft, Marktg. 12.  # 1016,1878,555,36
 Schminke, F., Schuhmach., Beundenw. 26  # 995,1917,737,36
-Schmithauser, J., Schneider, SchauplatzSchmitter, Anna, Lehrerin, Lorr., Quartiergasse 13  # 995,1957,736,37;994,2035,740,38;1072,2078,226,31
-gasse 15  # 1073,2007,159,20
+Schmithauser, J., Schneider, Schauplatzgasse 15  # 995,1957,736,37;1073,2007,159,20
+Schmitter, Anna, Lehrerin, Lorr., Quartiergasse 13  # 994,2035,740,38;1072,2078,226,31
 - B., Schreiner u. Glaser (Münzgr. 13), Ryffligässchen 13  # 1073,2109,661,44;1073,2153,333,34
 - G. A., Angest. d. Pass- u. Fremdenpolizei-Bureau, Metzgergasse 6  # 1076,2191,658,33;1073,2229,593,41
 - Joh., Bureauchefd. Kreispostdirekt., Länggasse 49 a  # 1076,2265,657,43;1072,2309,287,33
@@ -8116,7 +8118,8 @@ Trachsel, Ch., Restaur. Rebstock, Gesellschaftsstrasse 38  # 1018,1167,741,49;10
 Trächsel, G., Prof. Dr., Münsterplatz 6  # 1008,1637,745,51
 Trachsler-Neumann, Dr., Sekretär des eidg. Justizdepart., Dalmaziweg 69  # 1009,1678,747,49;1089,1716,666,50
 - Wetli, Joh. M., Schreiner, Nydecktreppe 7  # 1086,1756,666,50;1084,1804,160,29
-Traffelet, Fr., Spezierer u. Waagmeister, Kinderspielwaarenhandlg., KesslerTreuberg, B., gewes. Schneidermeister, gasse 40, Marktg. 26  # 1007,1835,745,53;1084,1877,666,50;1005,1954,744,54;1082,1926,160,23;1082,1994,205,43
+Traffelet, Fr., Spezierer u. Waagmeister, Kinderspielwaarenhandlg., Kesslergasse 40  # 1007,1835,745,53;1084,1877,666,50;1082,1926,160,23
+Treuberg, B., gewes. Schneidermeister, Marktg. 26  # 1005,1954,744,54;1082,1994,205,43
 - Frau, Gallerichverkäuf., Marktg. 26  # 1083,2033,665,52
 Treulin - Kolesch, Ad., Zuckerbäcker, Kramgasse 40  # 1004,2069,740,57;1079,2113,263,41
 Treuthardt, Jak., Sekundarlehrer, Lorr., Haldenweg 12  # 1002,2149,744,54;1081,2188,266,44
@@ -8411,8 +8414,9 @@ Wälti, Ad., Schreiner, Lorr., Haldenw. 18  # 987,262,763,55
 - Sam., Mehl- u. Fruchthdl., Postg. 58  # 1074,939,669,42
 - Kunz, Marie, Wittwe, Gerechtigkeitsg. 41  # 1074,978,667,46;1074,1020,188,35
 - Messerli, Fr., Milch- und Ankenhandlung, Gerechtigkeitsgasse 13  # 1071,1057,668,41;1069,1096,644,44
-Wamister-Steiner, Güterschaffner d. S.Wander, G., Dr., chem.-techn. u. analyt.  # 993,1135,746,50;1012,1215,724,45
+Wamister-Steiner, Güterschaffner d. S.-  # 993,1135,746,50
 - C.-B., Murtenstrasse 40  # 1073,1179,439,34
+Wander, G., Dr., chem.-techn. u. analyt.  # 1012,1215,724,45
 Laboratorium, Fabr. künstl. Mineralwasser, Stadtbachstrasse 38  # 1069,1256,668,41;1067,1296,531,32
 Wanner, Herm., Hauptkassier d. Schw.  # 987,1331,749,45
 Mobiliar-Vers. gesellsch., Gerechtigkeitsgasse 31  # 1066,1368,668,52;1067,1416,251,36
