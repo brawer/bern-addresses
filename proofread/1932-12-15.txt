@@ -115,7 +115,7 @@ Adrema A.-G., Adressiermaschinen, Schanzenstrasse 1  # 97,1956,791,43;144,2000,1
 Adressbuch der Stadt Bern, Redaktion und Verlag, Breitenrainstrasse 97   # 98,2030,792,41;143,2067,745,42
 Adressen- u. Werbezentrale des Vereins zur Unterstützung durch Arbeit, Gerechtigkeitsgasse 60  # 96,2101,791,41;143,2137,743,44;754,2182,132,31;141,2183,143,19
 - Adrian, Paul, gew Direktor der eidg. Münzstätte, Heinrich-Wildstrasse 11   # 100,2210,787,44;141,2249,744,38
-- Waiter, Dr. phil., Journalist, Heinrich, Wildstrasse 11  # 128,2280,757,46;144,2320,251,31
+- Waiter, Dr. phil., Journalist, HeinrichWildstrasse 11  # 128,2280,757,46;144,2320,251,31
 Aeberhard u. Aeberhardt, s. auch Eberhard  # 95,2354,753,39
 - A. (Hofer), gewes. Wagenkontrolleur der  # 116,2389,772,43
 - S. B. B., Dalmaziweg 57  # 142,2425,407,38
@@ -793,8 +793,7 @@ Alpines Museum, im alten Standesrathaus, Zeughausgasse 17  # 1035,1781,800,41;10
 Alt, Albert, Elektrotechniker, Greyerzstr. 82  # 1030,1851,764,41
 - Albert, Magaziner b. Konsum. Mattenhofstrasse 4  # 1081,1888,754,41;1080,1927,155,25
 - Joh., Handlanger, Zähringerstrasse 27  # 1032,1956,741,43
-Altenburger, Aug., Maschinenmeister, Karl  # 1033,1995,799,40
-Staufferstrasse 25  # 1082,2032,309,29
+Altenburger, Aug., Maschinenmeister, KarlStaufferstrasse 25  # 1033,1995,799,40;1082,2032,309,29
 - J., Fuhrmann, Weyermannsstrasse 28  # 1063,2067,691,40
 Alter, Stiftung für das, Kl. Muristalden 26  # 1031,2102,761,40
 Alterini, Domenico, Maurer, Weidmattweg 1, Bümpliz  # 1030,2171,802,43;1078,2209,140,35
@@ -5980,8 +5979,7 @@ Butter- und Käsehandlung, Lorrainestrasse 59  # 1697,525,222,33;1163,566,603,29
 - Walter, Angestellter, Rodtmattstrasse 91  # 200,1254,720,37
 - Walter (Jung), Hilfsarbeiter, Brunnhofweg 11  # 199,1291,758,41;217,1336,112,19
 - Werner, Bankangest., Breitenrainstr. 19  # 216,1363,707,39
-- Werner Friedrich, städt. Beamter, Karl  # 217,1401,743,39
-Staufferstrasse 20  # 218,1436,304,31
+- Werner Friedrich, städt. Beamter, KarlStaufferstrasse 20  # 217,1401,743,39;218,1436,304,31
 - Wilh., Verbandssekretär, Morgenstrasse 62, Bümpliz  # 167,1469,794,41;216,1507,138,31
 Broscheck, Arth., kaufm. Angestellter, Schwanengasse 5  # 170,1542,790,42;218,1585,181,23
 Brosi, s. auch Brosy  # 170,1616,359,34
@@ -8721,7 +8719,7 @@ Dietisheim, Benj., gew. Viehhändler, Monbijoustrasse 67  # 192,812,786,28;236,8
 - Maurice, Schlosser, Haldenweg 18  # 224,990,618,28
 - Moritz, Hilfsmonteur, Haldenweg 18  # 240,1023,628,32
 - Rob., Kaufmann, Monbijoustrasse 87  # 211,1061,662,27
-Dietler, Alice Elsa, Gesanglehrerin, Heinrich, Wildstrasse 11  # 195,1133,781,29;242,1169,250,26
+Dietler, Alice Elsa, Gesanglehrerin, HeinrichWildstrasse 11  # 195,1133,781,29;242,1169,250,26
 - Alice (Huber), Wwe. des Obersten, Heinrich-Wildstrasse 11  # 238,1202,742,29;237,1240,331,25
 - Eug. Max, Techniker, Hch.-Wildstrasse 11  # 220,1274,758,27
 - Werner, Kaufmann, Schwarztorstrasse 95  # 211,1306,769,32
@@ -33941,8 +33939,7 @@ Ausserholligen, Eggimannstr. 17  # 171,2147,559,38
 Bahnhof  # 172,2184,142,26
 - Berchtoldstrasse 58, Elfenauweg 40  # 148,2217,358,32;171,2252,251,32
 - Enge-Felsenau, Studerstrasse 58  # 148,2289,589,31
-- Erlacherhof, Junkerngasse 47  # 147,2322,537,35
-Ferdinand-Hodlerstrasse 16  # 174,2356,480,31
+- Erlacherhof, Junkerngasse 47, Ferdinand-Hodlerstrasse 16  # 147,2322,537,35;174,2356,480,31
 - Fischermätteli, Weissensteinstr. 18   # 149,2391,764,37
 - Freiestrasse 50  # 148,2428,281,29
 - Joliette, Laubeckstrasse 1  # 147,2464,460,29
@@ -36652,7 +36649,7 @@ Rubin, Alb. Emil, Polizist, Laubeckstrasse 1  # 1055,924,777,27
 - Alfred, eidg. Beamter, Seftigenstrasse 10  # 1085,962,735,33
 - Anna Lina (Chatelain), Wwe., Elisabethenstrasse 38  # 1084,1032,767,32;1103,1072,168,22
 - Ernst, Walzenführ., Rehhagstr. 17, Bümpliz  # 1075,1102,778,39
-- Ferd., Dr. rer. pol., Vorsteher der kant. Handels- und Gewerbekammer, RudolfWyssweg 2  # 1076,1139,777,33;1101,1171,749,38;1101,1213,193,31
+- Ferd., Dr. rer. pol., Vorsteher der kant. Handels- und Gewerbekammer, Rudolf-Wyssweg 2  # 1076,1139,777,33;1101,1171,749,38;1101,1213,193,31
 - Frieda, Seftigenstrasse 10  # 1086,1249,472,34
 - Gust. Rob., Gärtner, Gruberstrasse 14  # 1086,1288,677,29
 - Hedwig, Seftigenstrasse 10  # 1105,1326,476,33
@@ -38266,8 +38263,7 @@ Luchsinger & Cie., Speichergasse 8  # 1316,2775,453,38
 - Jakob, Tramführer, Brunnmattstrasse 53  # 1091,518,760,28
 - Jean J., Handlanger, Dammweg 23  # 1091,554,660,29
 - Joh., Lok.-Führer, Gesellschaftsstrasse 39  # 1099,589,769,28
-- Johanna Martha, Sek.-Lehrerin, Rudolf  # 1125,628,744,27
-Wyssweg 4  # 1125,666,195,30
+- Johanna Martha, Sek.-Lehrerin, Rudolf, Wyssweg 4  # 1125,628,744,27;1125,666,195,30
 - Julius, Sektionschef der Abteilung für Infanterie des eidg. Militärdepartements, Kirchbühlweg 55  # 1127,700,744,27;1125,735,743,33;1125,774,294,29
 - K. J., Schlosser, Sulgenbachstrasse 28  # 1091,809,725,29
 - Karol. Marg., Sekundarlehrerin, Aegertenstrasse 1  # 1128,841,739,35;1129,884,153,23
@@ -39010,8 +39006,7 @@ KAISER A.-G. Amthausgasse  # 1219,2712,562,82
 - Friedr., pens. Telephonarb. Schreinerw 13  # 171,963,776,29
 - Friedrich R., Gipser u. Maler, Freiburgstrasse 147  # 170,998,775,34;201,1039,190,22
 - Fritz Hilfsarbeiter Jurastrasse 57  # 170,1071,633,28
-- Fritz (Köhli), Materialchef, Kirchacker-  # 170,1107,278,30;486,1107,463,29
-weg 7, Bümpliz  # 195,1143,267,29
+- Fritz (Köhli), Materialchef, Kirchackerweg 7, Bümpliz  # 170,1107,278,30;486,1107,463,29;195,1143,267,29
 - Gustav Ad., Schlosser, Grundweg 14  # 199,1177,634,32
 - H. Walter, Angestellter, Grundweg 14.  # 163,1214,723,33
 - Hans Dreher Freiburgstr 341 Bümpliz  # 181,1250,731,31
@@ -49848,8 +49843,7 @@ Woodtli, Alfr., Mechaniker, Pestalozzistr. 40  # 1090,1049,773,25
 - Hermine, Kanzlistin, Schönbergweg 16  # 1140,1256,666,31
 - Jakob Emil, Glaser, Cedernstr. 9, Bümpliz  # 1115,1291,764,31
 - Otto, kaufm. Angestellter, Gerechtigkeitsgasse 37  # 1138,1324,742,33;1137,1372,145,16
-- Walter, Techniker der S. B. B., Burkhart-  # 1138,1397,743,25
-weg 7, Bümpliz  # 1140,1436,268,26
+- Walter, Techniker der S. B. B., Burkhartweg 7, Bümpliz  # 1138,1397,743,25;1140,1436,268,26
 - Werner, kaufm. Angest., Brunnhofweg 20  # 1124,1467,754,31
 - & Co., H., Möbelfabrik Aarau, Sickingerstrasse 3  # 1115,1500,764,33;1139,1541,151,23
 Woog, Gaston Georges, Bankprokurist, Gutenbergstrasse 13  # 1093,1576,788,28;1139,1613,241,25

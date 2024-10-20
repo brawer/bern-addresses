@@ -541,7 +541,7 @@ Amstutz, Anna, Privatiere, Murtenstrasse 30  # 197,446,825,38
 - Meister, Emma, Aarbergergasse 61  # 241,961,653,41
 Amt, schweiz., für geistiges Eigentum, Bollwerk 8 (alte Post)  # 195,999,821,41;244,1034,322,38
 - schweiz., für Gold- u. Silberwaren, Hauptpostgebäude  # 195,1069,820,41;240,1112,209,26
-- schweiz., für Mass und Gewicht, Heinrich, Wildstrasse 3  # 224,1145,790,38;241,1182,244,29
+- schweiz., für Mass und Gewicht, HeinrichWildstrasse 3  # 224,1145,790,38;241,1182,244,29
 - schweiz., für Sozialversicherung, Effingerstrasse 1  # 223,1216,789,43;241,1255,151,29
 - städt., für Brennstoffversorgung Bern, Bundesgasse 17  # 189,1290,824,39;241,1329,207,30
 Amthaus, Waisenhausstrasse 7  # 190,1364,572,34
@@ -6296,8 +6296,7 @@ eckstrasse 14  # 203,1056,238,25
 Strasse 24a  # 206,1275,207,26
 - -Herter, B., Feldeckweg 15  # 171,1309,536,32
 - -Scheuner, Arthur, Buchhalter - Kassier, Steinauweg 28  # 179,1347,804,27;208,1384,259,31
-Eggimann, s. auch Eggemann und Eggmann  # 163,1420,822,28
-Benjaminweg  # 633,1454,235,33
+Eggimann, s. auch Eggemann und Eggmann, Benjaminweg  # 163,1420,822,28;633,1454,235,33
 - Adolf, Angestellter, Bümpliz  # 210,1455,370,33;209,1493,146,33
 - Alfr., Vers.-Beamt., Grüneckweg 3 $5777  # 208,1530,774,27
 - Andreas, Bahnarb., am Bach, Bümpliz  # 188,1566,732,30
@@ -7634,8 +7633,7 @@ $2682  # 1723,866,89,26
 Forstamt, burgerliches, Bundesgasse 6 3173  # 993,1072,819,49
 Forstdirektion d. Kant. Bern, Herrengasse 1  # 990,1110,800,42
 - (Annex des Stiftgebäudes)  # 1038,1145,487,39
-Forster, A., Dr. phil., Prof. der Physik u. Meteorologie, Observatorium, Gr. Schanze, 14004  # 992,1180,818,51;1039,1222,773,38;866,1258,90,27
-Sternwartstrasse 5  # 1039,1259,332,32
+Forster, A., Dr. phil., Prof. der Physik u. Meteorologie, Observatorium, Gr. Schanze, 14004, Sternwartstrasse 5  # 992,1180,818,51;1039,1222,773,38;866,1258,90,27;1039,1259,332,32
 - Eug. N., Privatiere, Sternwartstr. 5  # 1039,1294,653,35
 - Joh. Albert, Mechaniker, Murifeldweg 85  # 1012,1330,781,40
 - Karl, Dr. med., Arzt und Spezialarzt für  # 1013,1368,800,38
