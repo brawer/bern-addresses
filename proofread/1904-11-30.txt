@@ -2637,8 +2637,8 @@ Cifka, Ant., Privatier, Kirchenfeld, Thunstrasse 24  # 1055,534,789,46;1142,581,
 Ciglia, M., Gipser, Mattenhofstr. 7  # 1056,622,706,40
 Ciolina, Alfons, i. Fa. J. B. Ciolinas Söhne, Waghausgasse 1  # 1056,665,786,45;1143,710,344,43
 - Oskar, gewes. Negt., Rabbentalstrasse 37  # 1142,756,697,38;1143,801,199,29
-- Söhne, J. B. (Inhaber: Romeo u. Alf. Ciolina), Manufaktur u. Konfektion, Marktgasse 60 u. WaghausRomeo, in Fa. J. B. Ciolinas Söhne, gasse 1 (Eckhaus)  # 1079,840,761,46;1144,882,696,42;1141,925,699,48;1143,1013,695,40;1144,974,376,34
-Kirchenf., Hallwilstr. 28  # 1144,1061,499,32
+- Söhne, J. B. (Inhaber: Romeo u. Alf. Ciolina), Manufaktur u. Konfektion, Marktgasse 60 u. Waghausgasse 1 (Eckhaus)  # 1079,840,761,46;1144,882,696,42;1141,925,699,48;1144,974,376,34
+- Romeo, in Fa. J. B. Ciolinas Söhne, Kirchenf., Hallwilstr. 28  # 1143,1013,695,40;1144,1061,499,32
 - & Cie., Konfektionsgesch., Markt1650gasse 51  # 1147,1102,692,45;1769,1151,68,27;1145,1156,177,22
 Civelli, Dom., Maurer, Längg., Muesmattstrasse 36  # 1058,1189,777,46;1145,1236,294,29
 Civilstandsamt, Münsterplatz 12 890  # 1083,1277,753,45
@@ -4606,7 +4606,7 @@ weg 18  # 1151,1662,154,19
 - J., Steinhauer, Schossh., Burgernzielweg 27  # 1152,2500,720,41;1150,2548,231,35
 946 für Arbeitersäle und Kaffeehallen - J. C. E., Kohlenhändler, Lorraine, Jurastrasse 60  # 956,2594,70,29;276,2723,752,34;1153,2586,719,41;1155,2637,305,31
 - Jak., Bureaulist, Rathausplatz 5  # 1155,2678,675,44
-- Jak., gew. Käsehändler., Kirchenf., Thunstrasse 39  # 1154,2723,717,39;1154,2770,320,32
+- Jak., gew. Käsehändler, Kirchenf., Thunstrasse 39  # 1154,2723,717,39;1154,2770,320,32
 - Joh., Dienstmann, Lorr., Jurastr. 14  # 1153,2814,719,38
 - Joh., Telephonarb., Aeuss. Bollw. 23  # 1153,2859,718,33
 # Date: 1904-11-30 Page: 25799574/195
@@ -5278,7 +5278,8 @@ Gurtner, Ad., Bankbeamter, Spitalackerstrasse 74  # 1031,2259,785,28;1117,2304,3
 Weissenbühl, Chuzenstr. 30  # 300,493,590,48
 - Saml., Aufseher beim Gaswerk, im Lochgut bei Köniz  # 300,538,749,51;299,585,404,41
 kanzlei, Kirchenf., Justingerw. 16  # 298,669,731,62
-- -Kernen, Wilhelm, Besitzer des Grand Hôtel des Alpes" in Mürren.  # 232,718,818,50;321,760,726,58
+- -Kernen, Wilhelm, Besitzer des  # 232,718,818,50
+Grand Hôtel des Alpes" in Mürren.  # 321,760,726,58
 Mattenhof, Effingerstrasse 58 1197  # 296,806,753,55
 Gusset, Fried., Pferdewärter, Wyler, Standweg 32  # 207,847,840,60;296,900,278,40
 - Jak., Mont., Lgg., Bremgartenstr. 73  # 296,943,754,51
@@ -9490,7 +9491,8 @@ Luraschi, Franc. Rin., Bildhauer, Stadtbach, Mauerrain 3  # 1066,1093,789,51;115
 Lüscher, Ad., Schriftsetzer, Stalden 30  # 1066,1187,789,43
 - Ad., Heizungstechniker, Ostermund., Breiteweg 20  # 1156,1229,696,53;1154,1274,282,46
 - Alb., Rektor des Progymnasiums, Länggasse, Mittelstr. 46  # 1156,1315,694,57;1154,1366,508,35
-- A., Fürsprech in Fa. Spreng &  # 1155,1409,481,49;1688,1412,163,47
+- A., Fürsprech in Fa.  # 1155,1409,481,49
+Spreng &  # 1688,1412,163,47
 Lüscher, Lgg., Mittelstr. 46  # 1154,1457,587,42
 - Ada, Fri., Lehrerin d. engl. Sprache, Lgg., Mittelstr., 46  # 1156,1498,696,48;1152,1546,405,40
 - Anna M., Gehilfin der S. B. B., Mattenhof, Hopfenweg 17  # 1154,1587,697,48;1152,1631,553,53
@@ -10458,8 +10460,8 @@ Mollet, Fr., Metzgermstr., Rathausg. 6  # 1082,1182,761,45
 - Kath., Privatiere, Rathausgasse 6  # 1172,1315,678,45
 - Luise, Ladentochter, Rathausg. 6  # 1172,1363,678,38
 - Rob., Gerber, Marz., Weiherg. 8  # 1170,1408,665,38
-Monhaupt, C., Musiklehrer, ZeughausMonnard, Daniel, Kutscher, Sulgeneckstrasse 44  # 1082,1453,783,43;1082,1544,783,38;1171,1596,211,22
-gasse 14  # 1169,1511,184,19
+Monhaupt, C., Musiklehrer, Zeughausgasse 14  # 1082,1453,783,43;1169,1511,184,19
+Monnard, Daniel, Kutscher, Sulgeneckstrasse 44  # 1082,1544,783,38;1171,1596,211,22
 - -Kuster, E., Wwe., Gehilfin der Ober-Post, Längg., Druckereiw. 1  # 1131,1636,736,35;1174,1681,692,34
 Monner, P., Privatier, Waghausgasse 10  # 1085,1724,784,37
 Monnerat, P. F. A., Bureaul., Kirchenf., Helvetiastrasse 19 a  # 1086,1768,782,35;1177,1814,416,31
@@ -15127,7 +15129,7 @@ v. Steiger, Alex., Ingenieur b. eidg. Oberbauinspektorat, Kirchenfeld, Marienstr
 - H. S., Buchhltr., Lgg., Neufeldstr. 10  # 1160,715,687,42
 - Kurt H., Arzt, Längg., Bierhübeliweg 11  # 1157,758,688,43;1158,813,147,22
 - R. Th., Kieslief., Laupenstr. 7 277  # 1162,845,689,42
-Tr. Fr. R., Landwirt, Schosshalde, Kalcheggweg 14  # 1159,882,687,50;1158,928,343,48
+- Tr. Fr. R., Landwirt, Schosshalde, Kalcheggweg 14  # 1159,882,687,50;1158,928,343,48
 - -v. Effinger, G. T. A., Gutsbesitzer in Kirchdorf, Münsterplatz 8  # 1094,974,752,37;1157,1013,596,45
 - v. Fellenberg, L., Waldeck b. Zollikofen  # 1159,1059,688,41;1156,1101,115,32
 bühl, Friedheimweg 22  # 1160,1186,476,43
@@ -16356,8 +16358,9 @@ Volksbibliotheken, siehe Rubrik „Bibliotheken", Seite 126  # 1053,1687,787,28;
 Volkshaus, Zeughausgasse 9  # 1081,1768,572,38
 Volksküche Länggasse, Neufeldstrasse 5  # 1054,1811,789,31
 Weissenbühl, Neuhäuserweg 8  # 1139,1853,604,35
-Volksmagazin Bern (F. Klay-Ryser), Tuchhandlg., Theaterpl. 3, EngrosVollenweider, Adolph, Postbureauchef, Lager Hotelgasse 6  # 1055,1895,785,34;1138,1937,706,35;1056,2023,789,32;1139,1982,396,29
-Kirchenfeld, Bubenbergstrasse 16  # 1141,2064,672,33
+Volksmagazin Bern (F. Klay-Ryser), Tuchhandlg., Theaterpl. 3, Engros-  # 1055,1895,785,34;1138,1937,706,35
+Lager Hotelgasse 6  # 1139,1982,396,29
+Vollenweider, Adolph, Postbureauchef, Kirchenfeld, Bubenbergstrasse 16  # 1056,2023,789,32;1141,2064,672,33
 - Adolf, Kassagehilfe d. eidg. Staatskasse, Beundenfeld, Breitenrainpl. 24  # 1142,2110,705,25;1142,2151,706,29
 - Emil, Photograph, Postg. 68 1476  # 1145,2195,700,26
 - Gust., Kunstmaler, Postg. 68 1476  # 1143,2233,702,24
@@ -17577,8 +17580,8 @@ gergasse 5  # 1104,848,221,36
 Wyssbrod, Emil, Reisender vom Hause  # 1000,1954,802,57
 - Ls. Berthoud & Cie., Länggasse, Gesellschaftsstrasse 31  # 1086,1994,713,63;1086,2041,468,44
 Wyssen, F. J., Schreiner, Zwiebelng. 12  # 998,2085,803,55
-- Bigler, E., Frau, Schneiderin, KramWyssenbach, s. auch Weissenbach  # 1084,2129,718,50;999,2212,699,55
-gasse 65  # 1086,2183,175,24
+- Bigler, E., Frau, Schneiderin, Kramgasse 65  # 1084,2129,718,50;1086,2183,175,24
+Wyssenbach, s. auch Weissenbach  # 999,2212,699,55
 - Fr., Büchsenm., Lorr., Polygonw. 23  # 1086,2257,717,54
 - Fr., Tapezier.,Lgg., Fellenbergstr. 13  # 1084,2298,718,56
 - Joh. Fr., Holzhauer, Matte, Badg. 27  # 1083,2343,717,51

@@ -6470,7 +6470,8 @@ Dellsperger, Albert, Landjäger, Bühlstr. 16  # 217,1595,786,40
 - Rudolf, gew. Wirt, Mayweg 16  # 248,1781,588,39
 - Samuel Ernst, Maurer, Matzenriedstr. 8, Bümpliz, Bubenbergstrasse 20  # 267,1819,774,40;265,1860,144,30;266,1968,366,36
 - Aberegg, Rud., Apotheker in Fa. Dellsperger & Cie., Neubrückstrasse 47 5376  # 266,2003,778,42;265,2043,780,39
-- -Umbehr, Friedr., Medizinaldrogist in Fa. Dellsperger & Cie., Bubenbergstr. 20 4669  # 228,2076,818,44;266,2112,780,44
+- -Umbehr, Friedr., Medizinaldrogist in Fa.  # 228,2076,818,44
+Dellsperger & Cie., Bubenbergstr. 20 4669  # 266,2112,780,44
 Delmotte, Aline, Modistin, Gerechtigkeitsg. 44  # 218,2149,828,46
 - J. J., Wwe., Schneiderin, Gerechtigkeitsgasse 44  # 267,2186,778,44;264,2233,157,19
 Delonti, Franc., Maurer, Schwalbenweg 20a  # 215,2259,811,42
@@ -9304,9 +9305,9 @@ weg 10, Bümpliz  # 1050,1371,299,30
 - -Weber, Julia, Wwe., Egghölzliweg 40  # 1030,1555,748,33
 Fürsorgeamt, eidg., Spitalacker  # 1001,1588,556,38
 - (5900  # 1732,1593,87,27
-Fürsorgestelle für tuberkulöse Kranke der Fürst, Emil, städt. Beamter, Nordweg 10  # 1003,1629,817,29;1004,1682,779,60
-Stadt Bern, Hotelgasse 4  # 1052,1662,449,34
+Fürsorgestelle für tuberkulöse Kranke der Stadt Bern, Hotelgasse 4  # 1003,1629,817,29;1052,1662,449,34
 13779  # 1732,1666,86,27
+Fürst, Emil, städt. Beamter, Nordweg 10  # 1004,1682,779,60
 - F., Kaufmann, Monbijoustrasse 18 (367  # 1052,1733,768,36
 - Friedr., Bankangest., Zentralweg 23  # 1030,1769,686,37
 - Fried., Magaziner, Metzgergasse 69  # 1029,1806,668,35
@@ -18634,8 +18635,8 @@ Christian’s Wwe., Privatiere, Riedern, Bümpliz  # 201,619,756,68;199,670,142,
 - Meier, Marie, Wwe., Lentulusstrasse 53  # 198,813,721,39
 - -Schenk, Joh. Jak., i. Fa. Kunz & Cie., Eisenhandlung, Holzikofenweg 11 1787  # 164,845,791,52;199,885,756,40
 - -Scheidegger, Fritz, Wirt, Lorrainestr. 9  # 156,925,741,41
-- -Vetter, Maria, Damenschneiderin, BrunnKünzi, s. auch Küenzi  # 171,960,782,43;156,1042,382,31
-gasse 62  # 197,1006,148,17
+- -Vetter, Maria, Damenschneiderin, Brunngasse 62  # 171,960,782,43;197,1006,148,17
+Künzi, s. auch Küenzi  # 156,1042,382,31
 - Alb., Fabrikarbeiter, Schwarztorstrasse 55  # 171,1077,782,40
 - Alb., Nachtwächter im Bundeshaus, Neufeldstrasse 5  # 198,1112,755,42;197,1149,220,29
 - Albrecht, Weichenwärter, Sodweg 3  # 151,1180,682,41
@@ -31526,6 +31527,7 @@ Spielmann, s. auch Spillmann  # 217,1918,532,31
 - Theodor, Bahnarbeiter S. B. B., Fabrikstrasse 34  # 267,2099,767,31;268,2138,178,23
 - Vikt., Pferdewärter, Länggassstrasse 55  # 217,2170,760,34
 schaftsstrasse 39  # 269,2241,302,30
+Spiess, Alois J., Mechaniker, Seidenweg 17  # 220,2315,782,34
 - Hans Werner, Bankbeamter, Schläflistr. 6  # 273,2353,765,31
 - Jak., Schneider, Könizstrasse 61a  # 270,2388,600,32
 - Jos., Postangestellter, Bubenbergstrasse 2  # 272,2425,748,33
@@ -31578,7 +31580,7 @@ Sprenger, Alphons, Bureaulist, Metzgerg. 66  # 1067,2057,779,32
 - Emil, Giesser, Gewerbestrasse 14  # 1083,2094,615,28
 - Heinr., Dr. jur., Gutsbesitzer in Wabern  # 1118,2130,749,28
 - Luise, Bureaulistin, Mattenhofstrasse 22  # 1098,2164,750,29
-Spreuermann-Flury, Rud., Kaufmann, MitSpiess, Alois J., Mechaniker, Seidenweg 17  # 1069,2242,815,31;220,2315,782,34
+Spreuermann-Flury, Rud., Kaufmann, Mit-  # 1069,2242,815,31
 Spring, Anna, Prokuristin, Klösterlistutz 4  # 1069,2317,760,29
 - Arnold, Vorsteher für das kant. Zivilstandswesen, Armandweg 4  # 1083,2353,801,26;1118,2389,488,32
 - Bend. Chr., gew. Stadt-Dachdecker, Länggassstrasse 89  # 1122,2425,766,29;1119,2465,251,24
@@ -37459,7 +37461,7 @@ Zanetti, Basilio, Bundesbeamter, Maulbeerstrasse 11  # 264,1397,822,28;313,1438,
 - St., Schneider, Allmendstrasse 50  # 316,1506,610,28
 Tullio, Beamter des Bundesamts f. Sozialversicherung, Tavelweg 8  # 315,1542,772,27;316,1579,448,31
 Zangerlé, Jules P. Léon, Schneider, Spitalackerstrasse 26  # 267,1616,822,28;318,1654,269,26
-Zaninetti, Lily Elise, Zeichnerin. Bühlstr. 39  # 268,1689,802,27
+Zaninetti, Lily Elise, Zeichnerin, Bühlstr. 39  # 268,1689,802,27
 Zangger, Jak., Kutscher, Nordweg 6  # 271,1723,648,31
 Zäpfel, Karl, Reisender, Viktoriastrasse 89  # 270,1759,784,30
 Zaugg, Ad., Heizer S. B. B., Trachselweg 15  # 269,1798,803,33

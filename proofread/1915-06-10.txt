@@ -1407,8 +1407,8 @@ bureau, Marktgasse 31/33  # 298,2059,509,46
 - Susanna, Zähringerstrasse 46  # 297,2230,585,42
 - v. Aesch, Rosa, Wwe., Mineral-  # 298,2272,700,42
 wasserfabrikation, Gutenbergstr. 15  # 298,2313,701,47
-- Beeguer, Antoinette, - Wwe., PriBohnenblust, Elise, Wwe., Moserstrasse 32  # 298,2354,433,48;775,2356,222,47;298,2437,699,51;297,2485,195,29
-vatiere, Fabrikstrasse 41  # 297,2399,499,39
+- Beeguer, Antoinette, - Wwe., Privatiere, Fabrikstrasse 41  # 298,2354,433,48;775,2356,222,47;297,2399,499,39
+Bohnenblust, Elise, Wwe., Moserstrasse 32  # 298,2437,699,51;297,2485,195,29
 - Vogel, A., Wwe., Priv., Mittelstr. 9  # 297,2522,700,45
 - Weibel, Max, Dr. jur., Kontrolleur der Obertelegraphen - Direktion, Brückfeldstrasse 23  # 296,2563,703,50;298,2604,700,50;299,2648,388,35
 - -Wyss, C., Pavillonweg 3  # 236,2689,575,45
@@ -4921,7 +4921,8 @@ Dütsch, Rud., eidg. Beamter, Aegertenstrasse 53  # 237,2533,767,38;318,2579,196
 Duvoisin-Dasen, L., Kaufm., Optingenstrasse 42  # 238,2616,766,35;318,2661,192,25
 Dworschak, Alois, Coiffeurgeschäft u. Zigarrenhdlg., Kramgasse 48 4862  # 1055,272,744,39;1114,313,685,41
 Dysli, Alfr., Monteur, Münzgraben 3  # 1033,351,720,43
-- Eberhard, siehe auch Aeberhard und Aeberhardt  # 1034,474,763,38;1115,520,222,30
+- Eberhard, siehe auch Aeberhard und  # 1034,474,763,38
+Aeberhardt  # 1115,520,222,30
 - Céc., Frl., Bühlstrasse 44  # 1119,559,495,33
 Coiffeurgeschäft, Schift-  # 1293,599,508,41
 - Ernst, laube 50  # 1118,600,122,42;1112,644,168,29
@@ -8237,8 +8238,9 @@ Hadorn, Berta, Verwalterin d. Gesellsch. für Kaffeehallen, Volksbibliotheken u.
 - Wilhelm, Professor Dr., Pfarrer am 2168  # 1185,708,695,36;1803,753,83,29
 Münster, Herrengasse 9  # 1185,750,480,39
 - (Ob. Dufourstr. 35), Marktg. 39 3020  # 1188,838,696,36
-- Urfer, Marie El., Priv., AarbergerHäfeli, Fr., Beamter der techn. Abtlg. d. Telegr.-Dir., Gutenbergstrasse 15  # 1140,876,743,43;1105,963,777,34;1190,1006,695,36
-gasse 3  # 1187,931,162,25
+- Urfer, Marie El., Priv., Aarbergergasse 3  # 1140,876,743,43;1187,931,162,25
+Häfeli, Fr., Beamter der techn. Abtlg.  # 1105,963,777,34
+d. Telegr.-Dir., Gutenbergstrasse 15  # 1190,1006,695,36
 - J. R., Schriftsetzer, Belpstrasse 49  # 1191,1044,697,43
 - J. U., Lokom.-Führer, Gewerbestr. 12  # 1191,1090,692,33
 - Joh., Handlanger, Bremgartenstr. 43  # 1191,1133,695,37
@@ -15216,8 +15218,8 @@ Motta, Giuseppe Bundespräsident, Bernastrasse 16  # 246,2266,759,44;304,2312,32
 Mottaz, H. F., Techniker, Seidenweg 45  # 225,2351,784,41
 Mottet, A., Kaufmann, Kanonenw. 18  # 226,2391,782,38
 Mouttet, Henri, Dr., Fürspr., Oberrichter, Länggassstrasse 23  # 226,2437,783,39;309,2478,389,38
-Muger, J. S., Schneidermeister, SpeicherMuggli, Alfr., Kaufm., Beundenfeldstr. 39  # 226,2515,783,43;226,2603,784,36
-gasse 39  # 307,2568,173,23
+Muger, J. S., Schneidermeister, Speichergasse 39  # 226,2515,783,43;307,2568,173,23
+Muggli, Alfr., Kaufm., Beundenfeldstr. 39  # 226,2603,784,36
 - Meyer, A., Wwe., Kirchenfeld, Helvetiastrasse 35  # 310,2642,696,41;309,2685,368,32
 auweg 36  # 1113,308,190,26
 tionsgeschäft, Bau elektr. Anlagen, Thormannstrasse 56  # 1112,385,688,41;1117,428,396,31
@@ -16303,8 +16305,8 @@ Patentamt, internationales, Kirchenf., Helvetiastrasse 7  # 263,998,754,47;322,1
 Patentanwaltsbureau Ingenieur Kandyba, Bollwerk 21/23  # 260,1081,754,50;321,1125,418,40
 Patent-Börse, Schweiz, Reitschulw. 3  # 241,1163,772,47
 errei  # 0,1180,44,20;1,1253,44,30
-Paternelle, caisse, LebensversicherungsGesellschaft Paris. Insp. J. KisslingFuhrer, Postfach ↯15826 Kornhaus.  # 239,1202,773,55;317,1246,695,51;313,1289,699,45
-Pathologisches Institut, beim Inselspital  # 236,1328,774,53
+Paternelle, caisse, LebensversicherungsGesellschaft Paris. Insp. J. KisslingPathologisches Institut, beim Inselspital  # 239,1202,773,55;317,1246,695,51;236,1328,774,53
+Fuhrer, Postfach ↯15826 Kornhaus.  # 313,1289,699,45
 Patocchi, L., Sekretär-Adjunkt beim Internat. Bureau der TelegraphenUnion, Spitalackerstrasse 62  # 235,1366,774,56;312,1409,694,55;311,1456,574,46
 Patria, vormals Schweiz. Sterbe- und Alterskasse, Amthausgasse 20 506  # 252,1494,756,45;308,1538,701,47
 Patru, Aug. Ant., Ingen., in Fa. Patru, Rundzieher & Cie., Breitenrain, Greyerzstrasse 77  # 251,1577,755,53;306,1617,698,53;308,1663,353,42
@@ -16756,7 +16758,8 @@ Prada, Arturo, Beamter S. B. B., NeuenPrahl, Friedr., Buchbinder, Weissenbühlwe
 Prati, Eug., Maurer, Wyler, Scheibenweg 31  # 228,1615,777,37;309,1667,145,22
 - -Gusset, M., Spezereihdl., Scheibenweg 31  # 252,1701,752,33;308,1750,144,21
 Prato, Christofero, Gipsermeister (Belpstrasse 37), Scheibenweg 23  # 229,1779,776,43;310,1822,568,41
-- Jos., Gipser- u. Malermeister, i. Fa. Fink & Prato, Stadtbachstrasse 38 b  # 251,1864,755,36;312,1901,692,38
+- Jos., Gipser- u. Malermeister, i. Fa.  # 251,1864,755,36
+Fink & Prato, Stadtbachstrasse 38 b  # 312,1901,692,38
 Preisig, Otto, Maschinenmeister, Steiger-weg 26  # 229,1988,865,36;312,2040,144,19
 Pre4833  # 8,2061,69,26;0,2101,79,25
 Preiswerk-Bischoff, H., Dr. phil., Rektor des Freien Gymnasiums, Schosshalde, Muristrasse 72  # 252,2069,754,37;312,2110,695,39;312,2152,425,32
@@ -17037,8 +17040,8 @@ Strasse 41  # 293,926,201,32
 - -Willi, P., Beamter des Gaswerks, Sandrain, Schöneggweg 16  # 260,1129,724,50;291,1172,526,46
 Rebholz, Fid., Büchsenmacher, Breitenr., Turnweg 39  # 214,1215,772,45;291,1257,238,39
 Rebleuten, Apotheke, Gerechtigkeits1737gasse 55  # 232,1297,753,47;902,1344,84,43;288,1349,169,24
-Café - Restaurant, GerechtigkeitsRebmann, Eduard, Dr., Beamter, Falkenplatz 24  # 292,1377,691,53;210,1463,775,46;284,1509,161,33
-gasse 51  # 289,1432,167,24
+Café - Restaurant, Gerechtigkeitsgasse 51  # 292,1377,691,53;289,1432,167,24
+Rebmann, Eduard, Dr., Beamter, Falkenplatz 24  # 210,1463,775,46;284,1509,161,33
 Rebold, Ed., Kassier der Konsumgenossenschaft, Hopfenweg 15  # 210,1545,773,47;287,1587,562,48
 - Jul., Chef des eidg. Bureaus für Festungsbauten, Wabernstr. 14 4487  # 228,1626,758,48;287,1672,700,43
 Rechsteiner, G. Aug., Sattler u. Tapez., Sulgeneckstrasse 4  # 207,1710,778,52;288,1754,381,41
@@ -17738,7 +17741,8 @@ Rothen, Alb., Bäcker u. Zuckerbäcker, Seftigenstrasse 23  # 1070,962,748,39;11
 - Rud., Kondukteur, Pestalozzistr. 10  # 1087,2220,752,27
 - Ulrich, Tapezierer, Bettfedernreinigung, Desinfektionsanstalt, Weiher4616gasse 19  # 1155,2261,685,27;1149,2301,691,24;1759,2335,82,28;1149,2357,174,20
 Rothenbach, A., sen., Ing., i. Fa. Rothenbach & Co. K. A.-G., Monbijou941strasse 91  # 1089,2382,751,37;1150,2426,691,32;1783,2459,58,26;1153,2476,190,23
-- Alfr. Emil, jun., Ingenieur, i. Fa. Rothenbach & Co. K. A-G., Mon941  # 1153,2510,689,34;1177,2550,665,32;1782,2582,60,29
+- Alfr. Emil, jun., Ingenieur, i. Fa.  # 1153,2510,689,34
+Rothenbach & Co. K. A-G., Mon941  # 1177,2550,665,32;1782,2582,60,29
 bijoustrasse 95  # 1154,2593,298,36
 593 - Ernst, Ingenieur, in Fa. Rothenbach & Co. K. A-G., Monbijoustr. 97  # 968,2642,876,22;1156,2674,691,33
 # Date: 1915-06-10 Page: 25878274/393
@@ -19137,8 +19141,8 @@ Kellenberg Theaterplatz  # 1142,2760,658,52
 # Date: 1915-06-10 Page: 25878293/412
 Schmidli, Alois, Schuhinachermeister, Mattenhofstrasse 29  # 226,265,333,40;600,265,416,40;308,307,401,33
 - Gustav, Bankangest., Belpstr. 69  # 314,346,683,46
-- H., Schuhmachermeister, GenferSchmidlin, Albert, Kaufmann, Bundesgasse 20  # 309,391,707,38;249,475,765,38;311,518,238,37
-gasse 5  # 308,443,152,20
+- H., Schuhmachermeister, Genfergasse 5  # 309,391,707,38;308,443,152,20
+Schmidlin, Albert, Kaufmann, Bundesgasse 20  # 249,475,765,38;311,518,238,37
 - Anton, Revisor der Obertelegr.Dir., Fichtenweg 1  # 312,557,703,41;313,597,382,44
 - Leon, Schlosser, Marktgasse 50  # 311,641,641,38
 - T. Josef, Angestellter, Herzogstr. 21  # 311,683,704,40
@@ -21719,7 +21723,7 @@ v. Tavel-v. Erlach, Albert, Fürsprech, Burgerratsschreiber, Junkerng. 49  # 150
 Tavernier, Eugen, Kontrolleur der eidg. Waffenfabrik, Lorrainestrasse 27  # 130,1899,773,50;211,1945,652,41
 - E. F., Kontrollgehilfe, Zeigerweg 10  # 212,1983,691,48
 Tavernini, Jakob, Reisender, Mattenhofstrasse 16  # 129,2029,773,41;210,2068,254,34
-v. Techtermann, E. Theod., gew. Adjunkt d. Vorstand. d. Personentarif bureaus d. S. B. B., Steinerstrasse 33  # 127,2106,774,48;211,2146,689,49;211,2191,568,39
+v. Techtermann, E. Theod., gew. Adjunkt d. Vorstand, d. Personentarif bureaus d. S. B. B., Steinerstrasse 33  # 127,2106,774,48;211,2146,689,49;211,2191,568,39
 - Fernand, Beamter der Nationalbank, Steinerstrasse 33  # 211,2234,687,42;209,2275,460,35
 e, u. Metzgergasse 82  # 2,2311,31,31;3,2560,31,19;221,272,325,38
 Telegraphenbureau (Chef), Postgebäude  # 144,2315,754,45

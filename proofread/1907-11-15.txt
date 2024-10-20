@@ -563,8 +563,8 @@ höheweg 7 b  # 240,282,258,37
 - Otto H., Kanzlist, Lorrainestrasse 38  # 247,1394,718,42
 - Iselin, Osk., Revisor d. Handelsstatistik, Schosshalde, Klaraweg 10  # 244,1438,721,32;250,1480,713,41
 - Schmid, S., Witwe, Privatiere, Junkerngasse 41  # 247,1523,715,42;248,1567,342,43
-- -Wenger, D., Bahnarbeit., SpeicherBachofner, Anna Elisabeth, Speziererin, gasse 23  # 182,1609,780,40;166,1695,800,42;246,1664,179,23
-Längg., Bäckereiweg 1  # 250,1740,480,38
+- -Wenger, D., Bahnarbeit., Speichergasse 23  # 182,1609,780,40;246,1664,179,23
+Bachofner, Anna Elisabeth, Speziererin, Längg., Bäckereiweg 1  # 166,1695,800,42;250,1740,480,38
 - Chr., Steinhauer, Langmauerw. 19a  # 253,1781,714,40
 - Chr., Samenhandlg., Speichergasse 3  # 252,1823,716,42
 - Ernst, Landwirt, Schossh., Melchenbühlweg 36  # 253,1868,713,37;252,1912,236,37
@@ -4450,7 +4450,7 @@ Gfeller, A., Zigarren- u. Tabakhandlg., Länggassstrasse 8  # 990,2109,797,51;10
 - Gottl., Ansichtskartenhdlg., Marktgasse 27  # 260,428,741,39;285,484,176,18
 - Hans, Postkommis, Lgg., Gesellschaftsstrasse 37  # 289,513,711,40;288,559,339,30
 - J. C. E., Kohlenhändler, Lorraine, Jurastrasse 60  # 289,598,713,38;290,642,293,34
-- Jak., gewes. Käsehändler., Spitalackerstrasse 70  # 290,685,713,35;290,729,311,30
+- Jak., gewes. Käsehändler, Spitalackerstrasse 70  # 290,685,713,35;290,729,311,30
 - Joh., Dienstmann, Lorr., Jurastr. 14  # 295,771,707,29
 - Joh., Telephonarb., Holligenstr. 78  # 292,814,712,38
 - Joh., Milchhandlg., Mattenenge 18  # 291,855,712,41
@@ -5153,7 +5153,8 @@ genIde, Paul, Kaufmann, Predigergasse 2  # 0,678,67,30;3,753,57,44;287,707,688,4
 Haberer, Ernst, i. Fa. Ernst Haberer &  # 208,1182,789,38
 - Cie., Monbijoustrasse 71  # 293,1225,484,43
 - Ernst & Cie., Stuckfabrik, Dekorationsmalerei und Gipserei, Monbijoustrasse 71  # 224,1265,775,42;288,1310,709,40;288,1354,305,34
-- Richard, i. Fa. Otto HabererSinner, Gümligen, Wallgasse 4  # 288,1394,711,36;290,1438,625,42
+- Richard, i. Fa. Otto Haberer-  # 288,1394,711,36
+Sinner, Gümligen, Wallgasse 4  # 290,1438,625,42
 Häberli, s. auch Häberlin  # 208,1480,505,34
 - A., Sohn, Kommission in Getreideund Mehlprodukten, Bubenbergplatz 7  # 228,1524,771,34;292,1566,705,40;288,1612,148,32
 - A., Buchbinder u. Papetier, Spezialgesch. f. Kartonnage, Kramg. 54 2363  # 228,1649,771,44;288,1696,713,37
@@ -12255,7 +12256,8 @@ Scheitlin, B. A., Frl., i. Fa. Scheitlin, Spring & Cie., Kirchenf., Thunstr. 4  
 - Spring & Cie., Buchdruckerei u. Verlag, Kirchenf., Thunstr. 8 1810  # 1016,563,788,48;1080,608,723,48
 Schelble-Blau, Theodor, Hafnermstr., Lorraine, Talweg 12  # 1015,649,788,54;1081,694,421,50
 Schelker, Math., Schuhmacher, Gerechtigkeitsgasse 3  # 995,733,804,60;1078,781,315,43
-Schellenberg, Ad., Geschäftsleiter d. Fa. Gassmann & Widmer, Elisabethenstrasse 20  # 993,822,809,50;1094,867,706,48;1079,915,201,29
+Schellenberg, Ad., Geschäftsleiter d. Fa.  # 993,822,809,50
+Gassmann & Widmer, Elisabethenstrasse 20  # 1094,867,706,48;1079,915,201,29
 - Ed., Direktor d. Seidenfabr., Köniz3059  # 1079,951,720,55;1707,1007,94,31
 strasse 51  # 1078,1002,201,29
 Schelling, Albert, Beamter der S. B. B., Längg., Frohbergweg 5  # 990,1037,808,53;1077,1081,493,51
@@ -12363,8 +12365,8 @@ Schild, s. auch Schilt  # 152,1826,442,38
 - Adr., Tuchfabrik (Matte, Schiffl. 12), Wasserwerkstrasse 17  # 171,1868,788,45;237,1916,452,31
 - Th. & Cie., Velofabr. Cosmos, Filiale u. Reparaturwerkstätte, Falkenpl. 5  # 235,1952,725,51;234,1997,724,46
 Schill, Ferd. Aug.,Billetteur b. Tramway, Cäcilienstrasse 28  # 153,2040,805,50;234,2083,367,38
-Schiller, Friedr., Buchhändler, JunkernSchilling, Fr. Ernst, Vertret. d. National  # 152,2128,805,43;151,2214,811,45
-gasse 49  # 236,2181,176,24
+Schiller, Friedr., Buchhändler, Junkerngasse 49  # 152,2128,805,43;236,2181,176,24
+Schilling, Fr. Ernst, Vertret. d. National  # 151,2214,811,45
 Cash Register Cie., Dayton, Ensingerstrasse 37  # 234,2258,725,47;234,2303,328,41
 - Joh., Schuhmachermeister u. Schuhhandlung, Mattenhof, Belpstr. 61 a  # 233,2345,725,37;232,2386,730,48
 - Jul., Mechaniker, Flurweg 16  # 233,2430,616,45
@@ -15574,8 +15576,8 @@ Walthard & Wildbolz, Schossh., Egelgasse 30 (Les Lilas)  # 317,401,694,52;295,44
 - -Stengel, Rob., Fabrikant, Egelgasse 26 (Hohlinden)  # 229,660,870,51;290,705,432,40
 Wildeisen, A., Tapezierer u. Dekorat., Möbelhandlg, Monbijoustr. 23 2750  # 224,744,784,50;289,789,720,51
 - E., Tuch- u. Massgeschäft (Kapellenstrasse 6), von Werdt-Passage  # 290,828,714,55;288,874,636,47
-Wildenmann, Gasthaus m. Café (RothenGafner, M.), Aarbergergasse 41 558  # 219,918,788,45;289,961,722,49
-Wildermuth-Staudenmann, Karl, Geschäftsführer, Helvetiastrasse 27  # 202,1001,804,47;286,1042,674,49
+Wildenmann, Gasthaus m. Café (RothenWildermuth-Staudenmann, Karl, Geschäftsführer, Helvetiastrasse 27  # 219,918,788,45;202,1001,804,47;286,1042,674,49
+Gafner, M.), Aarbergergasse 41 558  # 289,961,722,49
 Wildhaber, A. F., Beamter der S. B. B., Neubrückstrasse 25  # 202,1086,800,54;286,1132,396,36
 Wildi, Elise, Frl., Privatiere, Gerechtigkeitsgasse 36  # 201,1175,804,49;288,1220,277,41
 - Gottl., Vertretung in Weinen und Likörs, Effingerstrasse 65  # 224,1262,780,45;286,1304,533,47

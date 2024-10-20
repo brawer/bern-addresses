@@ -2319,7 +2319,7 @@ gasse 7  # 1085,1512,132,19
 - & Cie., elektr. Anlagen, Brünnenstr. 111, Bümpliz Zähr. 6041 u. Spitalackerstr. 60, Bollw. 4328  # 1087,1692,778,33;1085,1731,739,29;1669,1767,193,24
 Bécheraz, Emma, Privatiere, Muristrasse 35  # 1040,1809,804,24
 - Marguerite, Privatiere, Helvetiastrasse 19a  # 1088,1846,775,25
-- Robert Iwan, Vers.-Direktor. Hubelmattstrasse 30  # 1070,1883,796,23;1088,1923,175,23
+- Robert Iwan, Vers.-Direktor, Hubelmattstrasse 30  # 1070,1883,796,23;1088,1923,175,23
 - Christ. 2327  # 1663,1916,203,25
 Bechler, Germaine Adele, Bureaulistin, Monbijoustrasse 11  # 1040,1956,825,31;1076,1993,272,31
 - Christ. 1323  # 1665,1989,201,25
@@ -2934,8 +2934,8 @@ strasse 75  # 209,300,177,21
 Bertinat, Hans, Prokurist, Wyttenbachstr. 6  # 164,484,828,25
 Bertossa, Leon, Postbeamter, Gurtengasse 3  # 163,524,790,24
 Bertram, Marg. Al., Ladentochter, Kramg. 74  # 165,564,807,29
-Bertsch, Christ. Aug., Café Central, SpitalBertschi, s. auch Bärtschi  # 163,605,829,23;169,683,476,26
-Bollw. 2022gasse 25  # 797,638,195,26;213,652,152,15
+Bertsch, Christ. Aug., Café Central, Spital, Bollw. 2022gasse 25  # 163,605,829,23;797,638,195,26;213,652,152,15
+Bertschi, s. auch Bärtschi  # 169,683,476,26
 - Erwin, Bäcker, Metzgergasse 18  # 218,721,579,28
 - F. K., Zeichner, Münsterplatz 4  # 187,757,615,29
 - Fritz Willy, Elektriker, Dammweg 23  # 199,794,713,29
@@ -9983,7 +9983,7 @@ Bollw. 3878  # 1643,2410,193,30
 Fuhrimann, Ernst, Postillon, Dietlerstr. 36  # 174,821,772,37
 - Gottfr., Telegr.-Angestellter, Breitenrainplatz 33  # 187,860,818,39;223,899,147,28
 - R., Zeughausarbeiter, Wiesenstrasse 55  # 174,932,770,39
-Füllemann-Schärer, A., Direktor. Effingerstrasse 61  # 173,968,833,41;220,1011,178,24
+Füllemann-Schärer, A., Direktor, Effingerstrasse 61  # 173,968,833,41;220,1011,178,24
 - Christ. 2373  # 801,1012,203,31
 Fumagalli, Laura, Damenschneiderin, Gutenbergstrasse 15  # 173,1050,831,33;222,1086,259,32
 Fund, Alfred, Handlanger, Cäcilienstr. 21b  # 173,1124,793,34
@@ -11195,7 +11195,7 @@ Bollw. 4329  # 1640,1663,193,25
 - Rindlisbacher, Johann, Privatier, Wildermettweg 22  # 1062,1699,771,30;1061,1739,200,27
 - Christ. 1943  # 1634,1736,200,29
 - -Schiffmann, L., Wwe., Murtenstrasse 137  # 1035,1773,781,31
-- Schmid, Herm., Direktor. Heinr. Wildstrasse 14  # 1063,1810,771,29;1062,1850,178,21
+- Schmid, Herm., Direktor, Heinr. Wildstrasse 14  # 1063,1810,771,29;1062,1850,178,21
 - Christ. 1173  # 1628,1848,203,29
 - -Weber, Emma, Wwe. des Notars, Keltenstrasse 93, Bümpliz  # 1036,1884,798,31;1062,1920,352,33
 Gfrörer, Adr., Kaufm., Gasstr. 11 Chr. 6472  # 1015,1960,816,29
@@ -12446,7 +12446,9 @@ Gugelmann, Jak., Heizer, Monbijoustrasse 99  # 151,1506,843,35
 - -Bosshardt, Frau, Burgernzielweg 33, Bollw. 1460  # 146,1583,747,33;793,1622,200,29
 Guggenbühl, Bertha, Klavierlehrerin, Brunnadernrain 8  # 150,1660,843,32;198,1699,220,26
 - Ernst, Handelsgärtnerei. Herrengasse 19, Bollw. 1421, Blumenhaus «Zytglogge», Zeitglockenlaube 6, Bollw. 1421  # 200,1735,774,34;199,1772,794,38;197,1813,270,28;792,1815,196,26
-- Kaspar, Angestellter der städt. FeuerGuggenheim, Camille, Fürsprecher, Advokat,Bureau Dr. H. Trüeb, C. Guggenheim &  # 146,1849,845,36;149,1927,841,36;198,1963,791,39
+- Kaspar, Angestellter der städt. Feuer-  # 146,1849,845,36
+Guggenheim, Camille, Fürsprecher, Advokat,-  # 149,1927,841,36
+Bureau Dr. H. Trüeb, C. Guggenheim &  # 198,1963,791,39
 - H. Käser (Rabbentaltreppe 10), Laupenstrasse 2  # 199,2000,792,41;197,2043,161,25
 Bollw. 3826  # 788,2043,201,29
 Gugger, Abraham, Gärtner, Brunnadernstr. 40  # 148,2081,842,34
@@ -12485,8 +12487,8 @@ fenaustrasse 80  # 1092,275,284,34
 - -Bessire, J. E., Wwe., Unt. Dufourstr. 14  # 1035,1105,823,38
 - Christ. 3373  # 1666,1148,206,29
 - -Christen, Rudolf, Elektromonteur, Aebistrasse 16  # 1070,1178,803,40;1084,1222,182,25
-- -Müller, Lina, Spezerei- u. MerceriewarenGuggisberg, Adolf, Bundesweibel, Mittelstr. 9  # 1069,1255,804,38;1034,1314,818,63
-handlung, Bubenbergstr. 42 Christ. 4789  # 1082,1293,788,39
+- -Müller, Lina, Spezerei- u. Merceriewarenhandlung, Bubenbergstr. 42 Christ. 4789  # 1069,1255,804,38;1082,1293,788,39
+Guggisberg, Adolf, Bundesweibel, Mittelstr. 9  # 1034,1314,818,63
 - Alb., Lohnkutscherei, Nachf. von A. Mory, Dählhölzliweg 3, Bollw. 2146  # 1051,1367,821,38;1081,1405,287,36;1673,1410,195,27
 - Alb., Magaz., Fischermätteliweg 11  # 1084,1443,637,39
 - Alfred, Installateur, Fischermätteliweg 11  # 1082,1481,768,37
@@ -28464,8 +28466,8 @@ Rickenbacher, Ernst, Mechaniker, Justingerweg 16  # 1015,764,822,49;1062,814,125
 - Joh. Karl, Schlosser, Turnweg 23  # 1036,839,643,45
 - Otto, Bahnangestellter S. B. B., Bridelstr. 96  # 1060,877,773,45
 - Roland, Telegraphist, Gesellschaftsstr. 17a  # 1041,915,774,45
-Rickenmann, Ernst Eug., Eisendreher, SchulRickli, s. auch Rikli  # 1011,950,824,49;1016,1017,356,46
-weg 5  # 1057,995,102,25
+Rickenmann, Ernst Eug., Eisendreher, Schulweg 5  # 1011,950,824,49;1057,995,102,25
+Rickli, s. auch Rikli  # 1016,1017,356,46
 - Alfred, Fandlanger. Güterstrasse 8  # 1061,1062,633,45
 - Alfred, Kaufmann, Moserstrasse 48  # 1061,1099,626,42
 - Arnold, in Fa. Fr. Rickli Söhne, Moserstrasse 48  # 1059,1135,772,45;1057,1177,183,28
@@ -31104,7 +31106,7 @@ Schenkel, Alice, Angestellte, Konsumstr. 14c  # 189,1909,823,34
 - Ernst Rud., Postangest., Pestalozzistr. 20  # 238,2136,792,35
 - Friedr., Handlanger, Aarbergergasse 13  # 240,2171,748,45
 - Hans W., Buchbinder, Konsumstrasse 14c  # 238,2211,792,38
-- Heinr., Sanitätspolizist. Frikartweg 23  # 237,2247,711,38
+- Heinr., Sanitätspolizist, Frikartweg 23  # 237,2247,711,38
 - Herm. Friedr., Zeichner, Aarbergerg. 13  # 239,2285,749,42
 - Karl, Gärtner, Brunnhofweg 24  # 239,2324,590,36
 - K., pens. Bahnangestellter, Konsumstr. 14c  # 235,2366,794,34
@@ -31573,8 +31575,8 @@ Schlotterbeck, C., Basel, Zweigniederlassung  # 1060,1667,842,41
 Bein, Automobile u. Bestandteile, Garage u. Reparaturwerkstätte, Murtenstrasse 17, Bollw. 3741  # 1111,1707,792,34;1109,1745,775,33;1703,1785,195,27
 - Max Ernst, Kaufmann, Monbijoustrasse 15  # 1058,1819,843,35
 Schlub, Lina, Angestellte, Forstweg 38  # 1058,1859,709,36
-Schluchter, Hans, Bauamtarbeiter, ZeughausSchluep, s. auch Schlupp  # 1057,1896,846,33;1059,1972,465,34
-gasse 24  # 1107,1942,155,18
+Schluchter, Hans, Bauamtarbeiter, Zeughausgasse 24  # 1057,1896,846,33;1107,1942,155,18
+Schluep, s. auch Schlupp  # 1059,1972,465,34
 - Edm. Léon, Beamter d. O. P. D., Länggassstrasse 34a  # 1058,2006,843,39;1111,2051,205,24
 - E. Georg, Hilfsarbeiter, Murtenstrasse 72  # 1110,2085,769,34
 - Ernst, Chauffeur, Heimstr. 34a, Bümpliz  # 1109,2121,754,34
@@ -33931,7 +33933,7 @@ Soltermann, Christ., Hilfsarbeiter, Bümplizstrasse 75  # 1010,2028,826,25;1060,
 - Rosa, Pension, Kapellenstr. 10 Bollw. 4376  # 205,312,794,41
 - Moser, Fritz, mech. Bauschlosserei (Marzilistrasse 20a), Weihergasse 19 Bw. 2044  # 203,352,795,39;203,388,794,43
 - -Roth, Fr., Bankbeamter, Jubiläumsstr. 70  # 168,427,830,39
-- -Spycher, Anna, Wwe., Speziererin, WeiherSommerhalder, Hans, Maschinist, Pestalozzistrasse 15, Bollw. 2044gasse 17  # 172,463,825,44;1034,395,846,43;1083,439,176,24;798,513,198,26;204,514,151,21
+- -Spycher, Anna, Wwe., Speziererin, Weiherstrasse 15, Bollw. 2044gasse 17  # 172,463,825,44;1083,439,176,24;798,513,198,26;204,514,151,21
 - -Zurbuchen, Lina, Wwe., Marzilistr. 20a  # 156,539,841,44
 - Christ. 3576  # 788,586,206,30
 Somazzi, Carlo, Postangestellter, Strandw. 42  # 153,617,843,42
@@ -33988,6 +33990,7 @@ Bümpliz  # 186,2245,149,37
 - -Weil, H., Frau, Monbijoustr. 51 Chr. 5927  # 1066,283,814,42
 - -Weill, Pauline, Privat., Wyttenbachstr. 2  # 1064,316,816,48
 - Christ. 4608  # 1672,367,204,29
+Sommerhalder, Hans, Maschinist, Pestalozzi-  # 1034,395,846,43
 Sommerweck, Ernestine, Tanzlehrerin, Gutenbergstrasse 4  # 1036,470,841,44;1085,511,240,33
 Sonderegger, Emil, Oberstdivisionär, Gryphenhübeliweg 16  # 1037,545,844,45;1084,588,237,34
 - Christ. 4563  # 1671,597,206,28
@@ -36099,7 +36102,7 @@ Sutter, s. auch Sut und Zutter  # 169,1267,593,36
 - Flora Lse., Ladentochter, Murtenstr. 153e  # 194,1798,802,38
 - Frieda, Bureaulistin, Lorrainestr. 36  # 188,1837,723,37
 - Fritz Emil, Automechaniker, Belpstrasse 57  # 212,1871,785,42
-- Friedr., Direktor. Predigerg. 4 Bollw. 4777  # 214,1912,784,43
+- Friedr., Direktor, Predigerg. 4 Bollw. 4777  # 214,1912,784,43
 - Gottl. Paul, Kaufmann, Thunstrasse 4  # 198,1948,719,44
 - Hans G. E., Metallarbeiter. Primelweg 5  # 215,1988,740,45
 - Herm., kant. Angestellter, Steinauweg 18  # 189,2024,766,45

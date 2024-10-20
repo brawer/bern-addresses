@@ -1894,7 +1894,8 @@ Holliger Wildi (Marienstrasse 16), Hotelgasse 6  # 390,2226,683,44;393,2265,247,
 - Felix, Magaziner, Jurastrasse 69  # 395,2551,631,42
 - F. K., Zeichner, Höheweg 11  # 397,2590,551,49
 - Friedr., Maschinentechniker, Depotstrasse 16  # 394,2626,678,51;394,2678,189,26
-Geschäftsvermittlungen durch Bertschi, s. auch Bärtschi  # 319,2754,887,102;1117,263,510,32
+Geschäftsvermittlungen durch  # 319,2754,887,102
+Bertschi, s. auch Bärtschi  # 1117,263,510,32
 - Gottl. Friedr., Bahnarb., Turnw. 33  # 1199,304,689,39
 - J. E., Abwart, Muristrasse 11 a  # 1155,346,655,37
 - Joh. Jos., Handlanger, Jurastr. 77  # 1134,385,731,40
@@ -3174,8 +3175,8 @@ Ostbau, Theodor Kocher-Gasse 9  # 267,672,664,37
 - J. F., Buchdr., Länggasse, Mittelstrasse 6 a  # 265,714,701,42;264,758,206,27
 - Pius, Postangest., Gesellschaftsstrasse 18b  # 267,799,699,38;267,842,224,29
 Brossard, Maurice, Bankangestellter, Mittelstrasse 58  # 187,877,777,46;267,920,303,40
-Brossin, P. E., Schriftsetzer, SchauplatzBrosy, siehe auch Brosi  # 189,965,775,40;192,1049,477,37
-gasse 25  # 266,1018,174,20
+Brossin, P. E., Schriftsetzer, Schauplatzgasse 25  # 189,965,775,40;266,1018,174,20
+Brosy, siehe auch Brosi  # 192,1049,477,37
 - Arn. Otto, Revisor I. Kl. der eidg. Alkoholverwaltung, Zähringerstr. 29  # 270,1091,698,39;267,1131,703,45
 - Jules G., Beamter d. eidg. Auswanderungsamtes, Lentulusstrasse 46  # 269,1174,698,41;267,1220,615,27
 - Paula, Frl., Bureaulistin, Belpstr. 73  # 267,1255,703,42
@@ -4990,7 +4991,8 @@ Duvoisin-Dasen, L., Kaufm., Optingenstrasse 42  # 1067,1283,782,49;1149,1334,195
 Dworak, Joh., Monteur, Belpstrasse 24  # 1064,1369,785,45
 Dworschak, Alois, Coiffeurgeschäft und Zigarrenhandlung, Kramgasse 48  # 1065,1409,782,47;1146,1453,668,46
 Dysli, Alfr., Monteur, Münzgraben 3  # 1064,1494,736,51
-- Eberhard, siehe auch Aeberhard und Aeberhardt  # 1064,1623,782,36;1144,1666,224,27
+- Eberhard, siehe auch Aeberhard und  # 1064,1623,782,36
+Aeberhardt  # 1144,1666,224,27
 - Céc., Frl., Bühlstrasse 44  # 1146,1705,507,36
 - E., i. Fa. Gebr. Steffen, Effingerstrasse 16  # 1144,1743,697,47;1143,1792,194,27
 Coiffeurgeschäft, SchiffVerlag, Ostermundigen  # 1322,1829,523,43;323,1908,463,43
@@ -7349,7 +7351,7 @@ Glur, Ad., Küfer (Gerechtigkeitsgasse 3), Kramgasse 7  # 1055,979,769,46;1137,1
 - Oskar, Huf- u. Wagenschmiedmstr., Linde, Murtenstrasse 16  # 1070,1721,753,40;1134,1760,462,37
 - Rosa, gew. Lehrerin, Thunstr. 33  # 1134,1803,659,38
 - Rosa Martha, Lehrerin i. Mädchenwaisenhaus, Effingerstrasse 31  # 1133,1844,688,34;1133,1882,600,43
-Tr., Architekt, Tavelweg 33  # 1133,1926,566,39
+- Tr., Architekt, Tavelweg 33  # 1133,1926,566,39
 - T., Steinhauerpolier, Tavelweg 23  # 1133,1963,691,47
 - Walter Paul, Dr. med., Arzt, Jubiläumsstrasse 52  # 1132,2005,689,44;1130,2050,309,30
 - Werner, V. D. M.,Almosner u. Säckelmeister der Zunft zu Kaufleuten, Thunstrasse 13  # 1066,2090,756,38;1132,2128,688,37;1131,2173,298,30
@@ -11123,7 +11125,8 @@ iS 988gausdim A  # 573,1713,359,37
 - Jb., Pferdewärter, Schönburgstr. 40  # 284,1794,731,60
 - Joh., Dienstmann, Rodtmattstr. 81  # 282,1839,708,53
 - L. Herm., Beamter der S. B. B., 20 Tscharnerstrasse 12 brated-  # 281,1883,732,54;195,1925,732,47
-- Half, Leopold, Tuchhandlung, Gerechtigkeitsgasse 772 sbtKämpfer, Ernst, Bäcker, Metzgergasse 66  # 280,1970,729,54;278,2017,652,45;193,2052,816,61
+- Half, Leopold, Tuchhandlung, Gerechtigkeitsgasse 772 sbtAmthausgasse 7 stevido1/1640  # 280,1970,729,54;278,2017,652,45;1135,1987,713,40
+Kämpfer, Ernst, Bäcker, Metzgergasse 66  # 193,2052,816,61
 10anoBazodod  # 276,2278,469,36
 aitak  # 793,2282,126,33
 bergstrasse 18 rol A sloteKirchenfeld, Bubenbergstrasse 18  # 275,2361,650,49;275,2442,701,62
@@ -11158,8 +11161,7 @@ Haus Adolf, Postangestellter, Mattenhofstrasse 35  # 1151,938,706,61;1149,984,34
 - Rupp, L. E., Witwe, Coiffeuse, Spitalgasse 29 olshodlA dosk  # 1139,1768,712,50;1138,1809,710,47
 Kantonalbank von Bern, Bärenplatz 8  # 1071,1853,775,49
 707 und 2850  # 1582,1903,266,33
-Kantonale Brandversicherungs-Anstalt, Amthausgasse 7 stevido1/1640  # 1072,1938,776,55;1135,1987,713,40
-Kantonsbauamt, Münsterpl. 3(Stift) 441  # 1072,2024,772,54
+Kantonale Brandversicherungs-Anstalt, Kantonsbauamt, Münsterpl. 3(Stift) 441  # 1072,1938,776,55;1072,2024,772,54
 Kantonsbuchhalterei, Münsterplatz 3b  # 1073,2064,773,61
 feld, Papiermühlestrasse 17 1517, Kramgasse 24 demsnsd do 4254  # 1130,2290,716,44;1128,2378,716,41
 Kanziger, Alb., Fuhrmann der K. G. B., Konsumstrasse 11aastaise  # 1041,2413,800,60;1126,2465,574,36
@@ -15302,8 +15304,8 @@ Mottaz, H. F., Techniker, Seidenweg 45  # 159,2105,789,46
 Mottet, A., Kaufmann, Kanonenw. 18  # 160,2147,791,44
 Motz,Chs. A., Schriftsetzer, Hopfenweg 43  # 161,2191,790,49
 Mouttet, Henri, Dr., Fürspr., Oberrichter, Länggassstrasse 23  # 160,2235,788,48;226,2283,396,40
-Muger, J. S., Schneidermeister, SpeicherMuggli, Alfr., Kaufm., Beundenfeldstr. 39  # 160,2320,788,49;159,2408,789,43
-gasse 39  # 226,2378,168,24
+Muger, J. S., Schneidermeister, Speichergasse 39  # 160,2320,788,49;226,2378,168,24
+Muggli, Alfr., Kaufm., Beundenfeldstr. 39  # 159,2408,789,43
 - Meyer, A., Wwe., Kirchenfeld, Helvetiastrasse 35  # 228,2455,718,42;228,2497,372,40
 - Müller, R. M., Wwe., Kornhauspl. 17  # 228,2544,725,42
 Muheim, Charles, Elektrotechn. Installa-  # 169,2668,780,46
@@ -17115,8 +17117,8 @@ Strasse 41  # 255,1156,206,30
 - -Niklaus, Hans, Bäckerei n. Konditorei, Willadingweg 42 4507  # 187,1284,789,40;253,1324,724,46
 - Willi, P., Beamter des Gaswerks, Sandrain, Schöneggweg 16  # 257,1366,718,49;255,1413,549,46
 Rebholz, Fid., Büchsenmacher, Breitenr., Turnweg 39  # 170,1454,806,48;257,1502,246,37
-Rebleuten, Apotheke, GerechtigkeitsCafé Restaurant, GerechtigkeitsRebmann, Ed., Dr., Beamter, Falkenpl. 24  # 193,1544,784,48;255,1623,718,53;165,1715,810,46
-gasse 55gasse 51  # 251,1596,173,21;248,1684,176,21
+Rebleuten, Apotheke, GerechtigkeitsCafé Restaurant, Gerechtigkeitsgasse 55gasse 51  # 193,1544,784,48;255,1623,718,53;251,1596,173,21;248,1684,176,21
+Rebmann, Ed., Dr., Beamter, Falkenpl. 24  # 165,1715,810,46
 Rebold, Ed., Kassier der Konsumgenossenschaft, Mattenhof, Hopfenweg 15  # 166,1757,806,48;250,1800,723,51;249,1858,147,22
 - Jul., Chef des eidg. Bureaus für Festungsbauten, Wabernstr. 14 4487  # 188,1887,782,47;250,1932,725,42
 Rechsteiner, G. Aug, Sattler u. Tapez., Sulgeneckstrasse 4  # 168,1973,806,50;251,2019,391,41
@@ -17863,9 +17865,11 @@ haldenstrasse 9  # 1124,306,328,32
 - Luise Bertha, Schneiderin, Weissensteinstrasse 10  # 1126,693,710,41;1126,739,298,30
 - Luise, Glätterin, Balmweg 20  # 1126,781,616,40
 - Rud., Kondukt., Ob. Beaumontw. 14  # 1127,823,707,38
-- Ulrich, Tapezierer, Bettfedernreinigung, Desinfektionsanstalt, WeiherRothenbach, A., sen., Ing., i. Fa. Rothenbach & Co. K. A.-G., Monbijoustrasse 91  # 1128,868,710,37;1125,908,712,37;1063,996,774,44;1125,1039,712,42;1127,1088,195,28
-gasse 19  # 1125,967,178,21
-- Alfr. Emil, jun., Ingenieur, i. Fa. Rothenbach & Co. K. A-G., Monbijoustrasse 95  # 1128,1126,711,44;1151,1170,684,41;1129,1217,307,32
+- Ulrich, Tapezierer, Bettfedernreinigung, Desinfektionsanstalt, Weihergasse 19  # 1128,868,710,37;1125,908,712,37;1125,967,178,21
+Rothenbach, A., sen., Ing., i. Fa. Rothen-  # 1063,996,774,44
+bach & Co. K. A.-G., Monbijoustrasse 91  # 1125,1039,712,42;1127,1088,195,28
+- Alfr. Emil, jun., Ingenieur, i. Fa.  # 1128,1126,711,44
+Rothenbach & Co. K. A-G., Monbijoustrasse 95  # 1151,1170,684,41;1129,1217,307,32
 bach & Co. K. A-G., Monbijoustr. 95  # 1128,1298,710,43
 - Max Paul, Architekt, Monbijoustr. 91  # 1128,1385,707,43
 - & Co. K. A.-G., Ingenieurbureau, Bau und Betrieb von Gaswerken, Monbijoustrasse 91  # 1128,1427,707,44;1128,1472,708,34;1130,1519,396,34
