@@ -1216,8 +1216,7 @@ Dienstmann, Lorr. 149  # 449,1075,537,57
 - Jakob, Speisewirth, Metzgergasse 63  # 437,1120,584,77;443,1182,247,47
 - geb. Schwab, Gremplerin, Herren asse 302  # 435,1229,581,63;440,1281,361,57
 - Joh. Fr. Sohn, Schreiner, Brunngasse 25  # 367,1327,642,70;433,1383,324,57
-Eglin Alex., Sekr. d. Evang.  # 334,1432,673,70
-Gesellschaft, Nydeckg. 199  # 452,1481,556,73
+Eglin Alex., Sekr. d. Evang. Gesellschaft, Nydeckg. 199  # 334,1432,673,70;452,1481,556,73
 Egloff J. J., Schweinmetzger, Metzgergasse 90  # 329,1532,674,76;429,1591,341,55
 Ehrbar Joh., Zugführer, inn., Bollwerk 14.  # 324,1638,676,69;429,1692,290,48
 Ehrhardt Jakob, Buchhalter, der Spar- und Leihkasse, Schaupltg. 221  # 322,1739,675,70;424,1789,572,78;422,1846,363,61
@@ -2542,7 +2541,7 @@ Rosau. Charl., Krmg. 189  # 1192,1499,595,61
 - Chariatte, Schneiderin, Marktgasse 44  # 1184,1655,599,63;1192,1714,322,52
 - K., 2. Pfr. a. d. H.-G.  # 1181,1765,580,54
 Kirche, Aarbg. 54  # 1182,1821,420,50
-Luc., Schneid., Hotell. 229  # 1169,1871,611,52
+- Luc., Schneid., Hotell. 229  # 1169,1871,611,52
 - Carol., gew. Pensionshalterin, Hirschengr. 171 h  # 1186,1920,594,67;1182,1977,593,57
 - Sophie Carol., Schneid., Lorraine 65  # 1172,2027,604,61;1180,2081,276,45
 Jäggli Joh. Jakob, Mechan. im Zeughaus, Anatg. 11  # 1074,2130,699,63;1179,2191,566,59
@@ -3210,7 +3209,8 @@ Lanz, J. H., Bäcker, Spitg. 168  # 1144,374,686,71
 - L. A. Lehrerin, Postg. 28  # 1234,790,579,73
 n. Glättli, Commissionsgeschäft, Bundesg. 224  # 1235,841,577,70;1231,899,534,63
 Largin J. J., Buchhalt. Brückfeld 230  # 1120,940,687,77;1228,1002,178,41
-Generaldirektor der Eidg. Läser Jak. Joh. Rud., CigarrenBank, Christoffelg. 179 a  # 1229,1049,572,73;1114,1148,686,81;1225,1104,577,70
+Generaldirektor der Eidg.  # 1229,1049,572,73
+Läser Jak. Joh. Rud., CigarrenBank, Christoffelg. 179 a  # 1114,1148,686,81;1225,1104,577,70
 macher, Längg. 208 h  # 1220,1210,481,60
 Latour Karoline, Schneiderin, Spitalg. 141  # 1108,1302,684,75;1217,1362,282,58
 Lauber S. L., Abwart, Anatomiegäßlein 11  # 1105,1408,685,74;1209,1468,359,61
@@ -3507,7 +3507,7 @@ Lutstorf g. Vögeli, We., Mktg. 89  # 939,953,711,60
 Lug, E. A., Amtsnt., Corr. 93 a  # 935,1222,710,52
 - (Friedau), Bureau Nyffligäßchen 114  # 1042,1279,604,58;1040,1336,280,44
 - F. W., Hafner, Lgg. 215 g  # 1025,1385,613,63
-Theoph., Hafner, Aarbg. 31  # 1026,1439,607,61
+- Theoph., Hafner, Aarbg. 31  # 1026,1439,607,61
 - Sophie, Privat., Rfichg. 95  # 1035,1491,600,61
 - S. R., Geom., gg. 208 a, Ablage b. Posam. Henzi, Gerbernlaube  # 1042,1546,592,62;1035,1597,599,64;1038,1654,307,44
 - G., Hdlsm. Aargstld. 128 d  # 1027,1709,606,55
@@ -3636,7 +3636,7 @@ Maurberg J. U., Gärtn., Länggasse 215 h  # 1005,2539,711,64;1112,2602,257,40
 Maurberg Joh. S., Krmg. 118  # 410,351,661,78
 Maure Al., Schleifer, Myg. 65  # 406,402,665,77
 Maurer D., Buchhalter der Kantonalbank, Judg. 123  # 405,453,666,72;504,508,565,67
-Ldw. Joh., Spengler, Keßlerg. 286  # 491,556,576,75;500,614,196,44
+- Ldw. Joh., Spengler, Keßlerg. 286  # 491,556,576,75;500,614,196,44
 - J. Fr. G., Spengler, Neuengaß 113 a  # 501,659,561,74;498,710,348,57
 - Joh., Gärtner, Längg. 211  # 488,763,569,69
 - N., gew. Kondukt., Abg. 22  # 484,814,575,68
@@ -3809,7 +3809,7 @@ Miéville L., Kantonsschullehrer, Gerechtg. 100  # 242,373,693,36;347,424,311,42
 - Jgfr., Lehrerin d. N.  # 352,478,586,30
 Mädchensch., Grchtg. 101  # 349,529,585,40
 Milliet J. F., Kanzl.,Gchtg. 102  # 244,583,693,40
-Lis., Privat., Grchtg. 102  # 349,636,589,39
+- Lis., Privat., Grchtg. 102  # 349,636,589,39
 Minder, Schirmfabr., Schauplatzg. 212  # 244,684,697,47;351,746,244,39
 - gb. Horrisberger, Grempl., Schauplg. 212  # 275,795,666,40;357,850,331,42
 - Marie, Schneid., Altenb. b. d. Fußbrücke.  # 344,900,600,34;353,949,365,47
@@ -3965,7 +3965,7 @@ Gastwirthz. Wildenmann, Aarbergerg. 69  # 1068,1409,587,47;1065,1464,354,47
 - (Neubrügg)  # 1060,1829,271,56
 - Wittwe des Landökonoms, Schoßhalde 101  # 1052,1880,602,49;1065,1939,361,45
 - Rud., Tapez. u. Möbelhdl., Keßlerg. 283  # 1052,1990,601,47;1062,2047,291,43
-Christoph, Schreinermstr., Kramg, 188  # 1056,2097,596,48;1064,2153,264,42
+- Christoph, Schreinermstr., Kramg, 188  # 1056,2097,596,48;1064,2153,264,42
 - Karl Joh., Lumpensamml. und Trödler, Aarbera. 32  # 1056,2200,603,49;1064,2257,570,36
 - Nikl., Pächter und Kaffeewirth, Brunnadern 11a  # 1067,2309,592,44;1063,2363,557,39
 - Julie geb. Meyer, Wwe., u. Tochter Caroline, Broderiehandlung, Bollw. 265  # 1056,2416,597,46;1064,2470,592,40;1062,2521,594,44
@@ -4482,7 +4482,7 @@ macher, Längg. 208 b  # 1086,378,476,40
 - F., Gärtn., Hollig. 142  # 1056,530,561,52
 - J., Schneider, Sptlg. 177  # 1075,584,609,51
 - Elis., Näherin, Metzg. 69  # 1082,634,574,55
-- Christ., Lohnwascher., Altenberg 165 b  # 1089,690,592,47;1085,746,306,39
+- Christ., Lohnwascher, Altenberg 165 b  # 1089,690,592,47;1085,746,306,39
 - Albr., Hutmacher, Lorr. 29  # 1079,798,600,40
 - Christ., Steinhauerg., b. Linde 158 b  # 1089,847,591,55;1086,902,272,38
 - Ferd. Alex., Commis, Marziele 2  # 1087,955,593,47;1088,1010,254,43
@@ -4567,7 +4567,7 @@ Rösch, Amtsgerichtsschrb., Altenberg 128  # 220,741,697,48;326,797,270,39
 - M., Krämerin, Jfg. 193  # 290,850,590,39
 - Frz., Schrifts., Sptlg. 161  # 328,900,584,42
 Roseng J. Jakob, Schneider, Brunngasse 22  # 223,947,691,56;326,1005,332,42
-- C. A., Polizeidiener. Aar:  # 318,1053,598,52
+- C. A., Polizeidiener, Aar:  # 318,1053,598,52
 bergergasse 59  # 325,1112,315,43
 Röser, Musiker, Metzg. 130  # 222,1163,641,44
 Rosselet-Veillon F., gew. Spitaleinzieher, Kramg. 186  # 224,1213,695,49;328,1270,535,43
@@ -4762,7 +4762,7 @@ Santschi Joh. Gottl., Lohnkutscher, Schwarzth. 101  # 1068,758,678,54;1173,811,5
 - - Hurni, Johann, Wascher, Lorr. 10  # 1129,963,612,62;1164,1021,195,35
 Sarbach Friedr., Schreinerg., Mattenhof 312  # 1061,1056,680,76;1164,1120,334,49
 Sayer F. E., gew. Rothfärb., Altenberg 165  # 1061,1170,661,60;1158,1227,313,50
-Tob., Küfer, Spitalg. 172  # 1151,1277,588,55
+- Tob., Küfer, Spitalg. 172  # 1151,1277,588,55
 - F. G. L., Angest., Altb. 165  # 1110,1326,627,57
 - E. J. L., Vorsteherin der Spinnanstalt, Altenb. 165  # 1160,1379,578,52;1162,1428,572,54
 Schädeli, Samuel, Schlosser, Schüßengäßl. 10 b  # 1057,1478,674,62;1159,1538,429,51
@@ -4874,7 +4874,7 @@ Scheurer J., gew. Gypser, Marktg. 77  # 1068,1516,676,64;1170,1577,246,47
 - C. A., Amtsnotar, Postgasse 43 b  # 1170,1622,569,60;1165,1680,222,42
 - Emil, Postcommis, Postgasse 43 b  # 1112,1727,628,54;1165,1786,223,38
 - Frau, Schneiderin, Herrengasse 308  # 1151,1830,590,58;1165,1888,203,40
-Ldw., Drahtflechter und Chabloniers, Herreng. 308  # 1165,1934,572,50;1166,1984,575,58
+- Ldw., Drahtflechter und Chabloniers, Herreng. 308  # 1165,1934,572,50;1166,1984,575,58
 - Rud., Maler, Postg. 43 b  # 1156,2037,551,54
 - J. G. N., Zuckerbäcker, Aarbg. 19  # 1162,2087,575,59;1160,2144,230,46
 - J. L., Steinhg., Altb. 181  # 1152,2195,581,51
@@ -5751,7 +5751,8 @@ Tschanz, Niklaus, Kaminfeger, Brunng. 1 c  # 218,1356,695,55;331,1414,291,42
 - Chr., Metzger, Mattenhof  # 320,2100,602,46
 312 a  # 332,2153,117,41
 - Joh., Bäcker, Längg. 208r  # 324,2207,596,44
-- Gottl., Kostpferdhalter, b. Schlüssel, Metzgerg. 68  # 326,2257,592,49;335,2312,533,47
+- Gottl., Kostpferdhalter, b.  # 326,2257,592,49
+Schlüssel, Metzgerg. 68  # 335,2312,533,47
 v. Tscharner-v. Erlach (v. Amfoldingen) Gutsbesizer, Spitalg. 125 a  # 223,2362,699,50;329,2416,590,54;335,2471,343,48
 - K. E. (v. Lohn), Krmg. 154  # 316,2525,606,49
 - v. Wurstemberger, Ñ. A., Kramg. 177  # 322,2574,596,51;334,2635,263,40
