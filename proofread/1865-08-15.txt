@@ -841,8 +841,7 @@ Eggimann J., eidgen. Staatskassier, Christoffelg. 186f  # 368,1053,667,52;468,11
 - geb. Steiner, Modistin, Spitalg. 141  # 460,1152,575,49;470,1209,285,42
 - geb. Nohrer, Kostgb., Metgergasse 94  # 400,1256,634,51;466,1315,237,38
 - Gottl., Sattler u. Tapez., Schauplatzg. 195  # 458,1353,576,52;468,1410,368,48
-Eglin Alex., Sekr. d. Evang.  # 364,1457,671,55
-Gesellschaft, Nydeckg. 199  # 487,1511,548,43
+Eglin Alex., Sekr. d. Evang. Gesellschaft, Nydeckg. 199  # 364,1457,671,55;487,1511,548,43
 - J. F., Schrn., Brunng. 30  # 453,1564,576,41
 - M., Giletmach., Neueng. 9  # 454,1612,552,46
 - Chr., Wagner, Lorraine 58  # 455,1666,575,38
@@ -2417,8 +2416,10 @@ Lobfiger-Hoffmann, Frau, Metzgergasse 99  # 995,603,665,46;1097,663,248,25
 - J., Stroh- u. Filzhutausrüster, Metzg. 99  # 1090,697,569,46;1097,751,378,47
 Igf., Schnd., Kirchg. 265  # 1092,803,568,42
 Locher Erbsch., Spez., Krg. 176  # 996,853,665,43
-+1866.Lohner und Wander, Mineralwasserfabr., Kirchg. 273  # 1576,950,246,38;997,996,670,43;1102,1056,512,41
++1866.-  # 1576,950,246,38
 Loder, Ch. Wwe., Feinwasch., Lorraine 134  # 997,902,661,44;1103,955,279,33
+Lohner und Wander, Mineral-  # 997,996,670,43
+wasserfabr., Kirchg. 273  # 1102,1056,512,41
 Löhrer J. J., Sattl., Gchtg. 88  # 1002,1104,660,43
 Kaffee- und Küchliwirth, Gerbernl. 144  # 1104,1152,560,46;1109,1204,294,37
 - Wtw., Abwart, Hochschule  # 1090,1255,574,41
@@ -3278,7 +3279,7 @@ Rüttimeyer Arnold, Commis, Kramg. 175  # 971,1749,655,45;1069,1805,254,38
 Ruug-Haller, H., Negt., Läng-  # 972,1899,658,51
 Rychener, Standeswbl., Zeughausg. 14 u. Marktg. 47  # 973,2000,656,51;1071,2052,511,47
 - J. J., Prof. d. Thierheilkunde, im Thierspital  # 1073,2102,557,44;1074,2152,456,46
-Fd., Metzger, Metzg. 117  # 1075,2205,555,43
+- Fd., Metzger, Metzg. 117  # 1075,2205,555,43
 Nyf J. Jb., Speisew., 3ghg. 6  # 974,2251,653,49
 Ryser J., Schuhm., Matte 34  # 973,2303,631,48
 - J., Schuhm., Lorr. 24  # 1064,2353,486,43
@@ -3402,7 +3403,7 @@ Scheurer J. G. R., Zuckerbäck, IOS 3wiebg. 39  # 970,1645,655,54;961,1701,345,4
 - C. A., Amtsn., Postg. 43  # 1027,1797,563,51
 - Alex., Tuchneg. Marktg. 69  # 1052,1848,575,52
 - Frau, Schneid., Junkg. 146  # 1054,1898,573,51
-Ldw., Siebmach. u. Drahtflechter, Spitalg. 153  # 1054,1945,572,50;1066,2002,457,43
+- Ldw., Siebmach. u. Drahtflechter, Spitalg. 153  # 1054,1945,572,50;1066,2002,457,43
 Scheurmeister J. E., Uhrenm., Schauplg. 196  # 969,2047,655,55;1068,2103,305,42
 Schieß J. U., Bundeskanzler, Bundesrathhaus  # 968,2149,657,52;1067,2205,353,39
 Brunng. 17  # 1067,2405,262,47
@@ -3715,7 +3716,8 @@ Blumenmacher., Schtg. 106  # 381,1295,574,40
 Stang 2., Dr. M., Falkenp. 224  # 295,1349,663,38
 Ablage Marktg. 49  # 394,1397,410,42
 Stapfer J. D, Musiklehrer, Schauplg. 220  # 296,1443,659,46;396,1496,308,43
-- J., Bureauchef auf dem Ost eidg. Kriegskommissariat, Postg. 56  # 319,1552,633,33;271,1601,685,37;395,1652,207,39
+- J., Bureauchef auf dem  # 319,1552,633,33
+Ost eidg. Kriegskommissariat, Postg. 56  # 271,1601,685,37;395,1652,207,39
 - Alex., Schreiber, Postg. 24  # 317,1702,643,38
 - S.,Damenschneid., Pstg. 56  # 382,1750,578,40
 Stark, Kaminfeger, Aarbg. 62  # 297,1801,660,41
@@ -4208,7 +4210,7 @@ Regierungsr., Altenb. 161  # 1069,1046,571,43
 - Jost, eidg. Zollrevisor, Gerechtg. 70  # 1034,1546,608,49;1081,1601,202,41
 - Jak., Baumwollenw.- u. Cigarrenhdlg., Aarbg. 26  # 1069,1648,572,42;1081,1700,561,47
 - Bernh., Fürspr., Metzg. 69  # 1071,1749,571,49
-Sigm. Schrein. u. Pressenmacher, Aarbg. 73  # 1075,1799,567,48;1082,1851,395,44
+- Sigm. Schrein. u. Pressenmacher, Aarbg. 73  # 1075,1799,567,48;1082,1851,395,44
 - A., Gürtl. u. Gelbgießer, nd Schauplatzg. 217  # 1073,1899,566,53;1011,1947,438,50
 Tapezierer, Aarbg. 17  # 1072,1999,479,46
 - Jb., Abwart der Berner  # 1083,2049,557,40

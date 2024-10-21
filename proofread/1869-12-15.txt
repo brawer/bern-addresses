@@ -191,7 +191,7 @@ Ballif Vikt., gew. Kantonskas., Kramgasse 179  # 203,368,711,73;308,434,348,50
 Balmer J., Schuhm., Keßlergasse 288  # 193,812,719,70;296,877,215,46
 - Fried., Stalden 11  # 303,929,460,49
 - Gottl., Angest., Grchg. 141  # 298,982,607,63
-Sigm., Gärtner, Stald. 11  # 287,1041,620,52
+- Sigm., Gärtner, Stald. 11  # 287,1041,620,52
 - Frau, Kunstwascherin, Lorraine 38  # 296,1092,580,64;295,1148,281,45
 - Friedr., Angest. d. Hyp.Kaffe, Aarbergerg. 59  # 295,1201,612,64;293,1262,534,56
 Balsiger B., Müller u. Fuhrmann, Marz. 171  # 184,1311,719,63;291,1380,423,37
@@ -1255,8 +1255,7 @@ Gerberngraben 140  # 1195,317,455,59
 - Jakob, Speisewirth, Metzgergasse 63  # 1142,369,648,65;1192,430,254,45
 - geb. Schwab, Gremplerin, Herren asse 302  # 1123,477,665,64;1190,535,377,50
 - Joh. Fr. Sohn, Schreiner, Brunngasse 25  # 1128,582,656,62;1188,640,334,58
-Eglin Alex., Sekr. d. Evang.  # 1077,692,706,63
-Gesellschaft, Nydeckg. 199  # 1205,745,579,65
+Eglin Alex., Sekr. d. Evang. Gesellschaft, Nydeckg. 199  # 1077,692,706,63;1205,745,579,65
 Egloff J. J., Schweinmetzger, Metzgergasse 90  # 1074,796,702,69;1182,855,356,56
 Ehrbar Joh., Zugführer, inn., Bollwerk 14.  # 1071,903,705,68;1182,963,300,44
 Ehrhardt Jakob, Buchhalter, Sulgenbach 106  # 1066,1011,708,66;1176,1070,367,51
@@ -1822,7 +1821,8 @@ Gosset Karl, Marktg. 42  # 204,992,593,65
 Gosteli Elise, Schneiderin, Zeughausgasse 13  # 204,1045,354,60;614,1051,313,59;312,1110,428,55
 - Schwest., Ling., zw. den Thoren 184  # 316,1161,613,63;312,1220,283,44
 Gottschal R., gew. Färber, Postgasse 37  # 201,1267,720,76;312,1329,298,52
-- Jk. Rud., Angest. d. Krim.Kammer, Lorraine 67  # 224,1384,701,62;308,1441,518,48
+- Jk. Rud., Angest. d. Krim.-  # 224,1384,701,62
+Kammer, Lorraine 67  # 308,1441,518,48
 - Friedrich, Wagenwärter, Speichergasse 11  # 308,1494,611,65;310,1547,395,63
 Göz, Wwe. u. Sohn, Caféw., Kramg. 161  # 196,1597,719,73;303,1663,274,51
 v. Goumoëns, Luise, Mrktg. 93  # 192,1713,728,65
@@ -2936,8 +2936,8 @@ Klögli N., Vater, Conditor u. Kellerwirth, Gerechtg. 95  # 1099,1680,706,50;120
 - J. Gottl., Sohn, Zuckerbäcker, Gerechtg. 95  # 1160,1785,645,55;1203,1843,462,50
 Kloßner Elise, Blondenfabr., Altenb. 171  # 1096,1889,705,63;1203,1948,259,41
 - C. A., Marmorarbeiter, Marz. 28  # 1205,1998,594,58;1201,2059,223,45
-- C. A., Vergolder, Taxat. d. Pfandleihanst., MarktKnaus, Prof. Dr., Rabbth. 202  # 1205,2110,589,55;1200,2164,598,50;1094,2264,701,62
-gasse 33 u. Spitalg. 177  # 1204,2218,567,56
+- C. A., Vergolder, Taxat. d. Pfandleihanst., Marktgasse 33 u. Spitalg. 177  # 1205,2110,589,55;1200,2164,598,50;1204,2218,567,56
+Knaus, Prof. Dr., Rabbth. 202  # 1094,2264,701,62
 Knecht-Wyß, Strohhutfabrik., Käfichg. 28  # 1093,2318,698,63;1201,2380,249,46
 Kneubühl, Chr., Schneider, Marktg. 86.  # 1090,2423,700,67;1196,2484,271,55
 Kneubühler Joh. Jak., Negt., Kramg. 146  # 1087,2534,700,63;1195,2595,267,43
@@ -3684,7 +3684,7 @@ Maurberg J. U., Gärtn., Länggasse 215 h  # 253,1311,725,85;360,1377,261,48
 - Joh. Sam., Kramg. 118  # 342,1476,581,79
 Maure Al., Schleifer, Myg. 65  # 242,1524,720,92
 Maurer D., Buchalter der Kantonalbank, Bundesgasse 225  # 242,1584,722,80;348,1647,615,67;346,1704,219,53
-Ldw. Joh., Spengler, Keßlerg. 286  # 330,1753,627,82;339,1814,218,53
+- Ldw. Joh., Spengler, Keßlerg. 286  # 330,1753,627,82;339,1814,218,53
 - J. Fr. G., Spengler, Lorraine156, Werkstatt Neuengaß 113 a  # 268,1866,685,75;336,1921,616,70;334,1981,219,48
 - geb. Tschanen, Frau, Modiste, Lorr 156 u. Ng. 113 a  # 271,2031,675,71;331,2086,612,74
 - Joh., Gärtner, Längg. 211  # 321,2140,617,76
@@ -3855,7 +3855,7 @@ Mieville L., Kantonsschullehrer, Gerechtg. 100  # 219,1482,747,53;340,1546,328,4
 Migy P., Reg.-Rath, Kreuzg.  # 221,1605,746,45
 162 a  # 338,1659,137,45
 Milliet J. F., Kanzl., Gchtg. 102  # 223,1714,745,50
-Lis., Privat, Grchtg. 102  # 337,1770,631,51
+- Lis., Privat, Grchtg. 102  # 337,1770,631,51
 Minder, Schirmfabr., Schauplatzg. 212  # 225,1827,748,49;338,1891,263,44
 - gb. Horrisberger, Grempl., Schauplg. 212  # 267,1943,706,49;346,2000,353,47
 - Marie, Schneid., Altenb. b. d. Fußbrücke.  # 332,2057,643,46;342,2108,391,57
@@ -4016,7 +4016,7 @@ Müller, Gastwirth z. Wildenmann, Aarbergerg. 69  # 298,295,745,68;405,359,524,5
 - (Neubrügg)  # 401,785,272,59
 - Wittwe des Landökonoms, Schoßhalde 101  # 391,834,616,60;406,897,367,46
 - Rud., Tapez. u. Möbelhdl., Keßlerg. 283  # 391,942,613,61;402,1004,296,49
-Christoph, Schreinermstr., Kramg. 188  # 394,1054,611,61;402,1115,268,48
+- Christoph, Schreinermstr., Kramg. 188  # 394,1054,611,61;402,1115,268,48
 - Karl Joh., Lumpensamml. und Trödler, Aarbera. 32  # 400,1162,604,58;403,1217,583,50
 - Nikl., Pächter und Kaffeewirth, Brunnadern 11 a  # 405,1273,598,54;402,1330,567,47
 - Karl Gottl., Gutsbesizer, Schoßhalden 43  # 391,1378,614,57;404,1437,375,47
@@ -4511,7 +4511,7 @@ Riesen J., Vater, gew. Schuhmacher, Längg. 208 b  # 174,1371,755,56;284,1434,51
 - F., Gärtn., Hollig. 142  # 224,1603,639,52
 - J., Schneider, Sptlg. 177  # 242,1658,693,55
 - Elis., Näherin, Metzg. 69  # 238,1716,669,53
-- Christ., Lohnwascher., Altenberg 165 b  # 292,1773,643,52;288,1836,332,43
+- Christ., Lohnwascher, Altenberg 165 b  # 292,1773,643,52;288,1836,332,43
 - Albr., Hutmacher, Lorr. 29  # 282,1888,653,50
 - Christ., Steinhauerg., b. Linde 158 b  # 293,1947,642,54;291,2006,297,41
 - Ferd. Alex., Commis, Marziele 2  # 292,2062,642,50;293,2124,279,41
@@ -4767,7 +4767,8 @@ Wirth, Länggaß 207 b  # 1074,2247,570,50
 - A. Ch., Zeughausarbeiter, Metzgergasse 97  # 1067,2300,650,56;1078,2360,390,53
 - C. Ch., Buchbindergesell, Länggasse 215 h eidg. Militärdepart.  # 1077,2415,642,52;1077,2476,396,49;1078,2705,495,50
 Saillet, Josephine, Privatlehrerin, Kramg 156  # 987,2536,732,48;1077,2594,449,47
-Salequin S. A., Sekretär d. Salm H., Buchbindg., Mt. 52  # 966,2645,755,46;965,2763,755,54
+Salequin S. A., Sekretär d.  # 966,2645,755,46
+Salm H., Buchbindg., Mt. 52  # 965,2763,755,54
 # Date: 1869-12-15 Page: 3009856/192
 Salvisberg S., Amtsschaffner, Kramgasse 206  # 284,297,735,67;397,358,360,52
 - S., Kantonsbaumstr., Holligendr. 308 (Mattenheim)  # 320,406,701,65;397,464,623,65
@@ -4902,7 +4903,7 @@ Scheurer I., gew. Gypser, Marktg. 77  # 275,2628,740,64;388,2691,265,53
 Scheurer C. A., Amtsnotar, Postgasse 43 b  # 1077,277,737,57;1191,336,337,48
 - Emil, Postcommis, Postgasse 43 b  # 1175,388,640,57;1182,453,248,40
 - Frau, Schneiderin, Herrengasse 308  # 1172,497,644,61;1188,564,222,38
-Ldw., Siebmach. u. Drahtflechter, Herrengasse 308  # 1172,614,641,53;1186,670,594,58
+- Ldw., Siebmach. u. Drahtflechter, Herrengasse 308  # 1172,614,641,53;1186,670,594,58
 - Rud., Maler, Postg. 43 b  # 1179,728,602,58
 - J. G. R., Zuckerbäcker, Zwiebg. 39  # 1185,777,625,68;1186,841,265,50
 - J. L., Steinhg., Altb. 181  # 1178,896,632,55
@@ -5769,7 +5770,8 @@ Burkhardt, J., Schuhmacher, kl. Schanze 184  # 1234,1765,583,58;1202,1824,574,51
 - Chr., Metzger, Mattenhof  # 1144,2153,678,60
 312 a  # 1201,2209,128,42
 - Joh., Bäcker, Längg. 208r  # 1197,2264,625,57
-- Gottl., Kostpferdhalter, b. Schlüssel, Metzgerg. 68  # 1195,2319,623,55;1204,2373,559,57
+- Gottl., Kostpferdhalter, b.  # 1195,2319,623,55
+Schlüssel, Metzgerg. 68  # 1204,2373,559,57
 foldingen)  # 1200,2481,252,62
 Gutsbesizer, Spitalg. 125 a  # 1512,2484,308,61;1204,2538,360,55
 - K. E. (v. Lohn), Krmg. 154  # 1142,2594,680,58
@@ -6039,7 +6041,7 @@ Conr., Wirth, Mezg. 84  # 1112,1795,603,56
 - Jost, eidgen. Zollrevisor, Marktg. 63  # 1118,2195,634,48;1120,2255,282,47
 - Jak., Baumwollenw.- u. Cigarrenhdlg., Aarbg. 26  # 1108,2308,647,41;1124,2367,633,44
 - Bernh., Fürspr., Mezg. 69  # 1111,2424,647,44
-Sigm. Schrein. u. Pressenmacher, Mattenhof 320  # 1119,2480,641,42;1125,2537,565,35
+- Sigm. Schrein. u. Pressenmacher, Mattenhof 320  # 1119,2480,641,42;1125,2537,565,35
 - Abr., Tapezier., Aarbg. 17  # 1116,2593,645,43
 - Jb., Abwart der Berner  # 1133,2650,635,36
 Handelsbank, Bundg. 228°  # 1126,2709,670,37

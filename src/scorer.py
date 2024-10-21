@@ -75,7 +75,6 @@ def explode(line):
 
 def islastname(frag):
     # allow (Schmitter)
-    # TODO: allow Wüterich-Gaudard
     frag = re.sub('[()]', '', frag)
     if not frag: return False
 
@@ -85,6 +84,15 @@ def islastname(frag):
 
     # check in family_names.txt
     if frag in LASTNAMES: return True
+
+    # allow Wüterich-Gaudard
+    if '-' in frag:
+        found_count = 0
+        lname_frags = frag.split('-')
+        for ln_frag in lname_frags:
+            if ln_frag in LASTNAMES:
+                found_count += 1
+        if found_count == len(lname_frags): return True
 
     return False
 
