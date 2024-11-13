@@ -149,7 +149,7 @@ def isstreet(frag):
 
 def ishousenumber(frag):
     # allow 12d
-    if re.match('^\d{1,3}[a-z]{0,1}$', frag): return True
+    if re.match(r'^\d{1,3}[a-z]{0,1}$', frag): return True
 
     # and single letter frags (we'll only re-attach them,
     # if they are at the correct offset)
