@@ -18,28 +18,13 @@ import os
 import re
 import zipfile
 
-
-# Which columns we support.
-KNOWN_COLUMNS = [
-    "Scan",
-    "ID",
-    "Name",
-    "Vorname",
-    "Ledigname",
-    "Adelsname",
-    "Titel",
-    "Beruf",
-    "Beruf 2",
-    "Addresse",
-    "Addresse 2",
-    "Bemerkungen",
-]
+from validator import COLUMNS, Validator
 
 
 # Known typos in column names; we fix them here instead of editing the data.
 COLUMN_TYPOS = {
     "Addresse": "Adresse",
-    "Adresse 2": "Adresse 2",
+    "Addresse 2": "Adresse 2",
     "Bemerkung": "Bemerkungen",
     "Bermerkungen": "Bemerkungen",
 }
@@ -53,7 +38,7 @@ IGNORED_COLUMNS = {
 
 def process_zip(path):
     volume_pattern = re.compile(r"^(\d{4}-\d{2}-\d{2})_reviewed\.zip$")
-    if m := volume_pattern.match(path.rsplit("/", 1)[1]):
+    if m := volume_pattern.match(path.rsplit("/", 1)[-1]):
         volume = m.group(1)
     else:
         assert "filename should be like YYYY-MM-DD_reviewed.zip", path
@@ -63,12 +48,16 @@ def process_zip(path):
         r"^https://www.e-rara.ch/bes_1/periodical/pageview/(\d+)$"
     )
     pattern = re.compile(r"^.*/([0-9]+)_reviewed.*\.xlsx$")
-    with zipfile.ZipFile(path) as zf, open(outpath, "w") as outfile:
-        writer = csv.writer(outfile)
-        writer.writerow(KNOWN_COLUMNS)
+    with zipfile.ZipFile(path) as zf:
         for info in zf.infolist():
             if m := pattern.match(info.filename):
                 files.append((int(m.group(1)), info.filename))
+        if len(files) == 0:
+            print('No files in ZIP file match "*/{pageid}_reviewed.xlsx"')
+            return
+    with zipfile.ZipFile(path) as zf, open(outpath, "w") as outfile:
+        writer = csv.writer(outfile)
+        writer.writerow(COLUMNS)
         for _, filename in sorted(files):
             wb = openpyxl.load_workbook(filename=zf.open(filename, mode="r"))
             sheets = [s for s in wb]
@@ -83,7 +72,7 @@ def process_zip(path):
                 if title := sheet.cell(row=2, column=i).value:
                     title = COLUMN_TYPOS.get(title, title)
                     if title not in IGNORED_COLUMNS:
-                        assert title in KNOWN_COLUMNS, (title, filename)
+                        assert title in COLUMNS, (title, filename)
                         col[title] = i
             for row in sheet.iter_rows(min_row=3, values_only=True):
                 entry = {}
@@ -91,11 +80,18 @@ def process_zip(path):
                     if value := row[col_index - 1]:
                         entry[col_title] = value
                 entry["Scan"] = page_id
-                outrow = [""] * len(KNOWN_COLUMNS)
-                for i, col_title in enumerate(KNOWN_COLUMNS):
+                outrow = [""] * len(COLUMNS)
+                for i, col_title in enumerate(COLUMNS):
                     if value := entry.get(col_title):
                         outrow[i] = value
                 writer.writerow(outrow)
+    validator = Validator()
+    with open(outpath) as fp:
+        line = 0
+        for row in csv.DictReader(fp):
+            line += 1
+            validator.validate(row, pos=(outpath, line))
+    validator.report()
 
 
 if __name__ == "__main__":
