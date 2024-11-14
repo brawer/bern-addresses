@@ -58,7 +58,7 @@ def split(vol, validator):
     page_re = re.compile(r"^# Date: (\d{4}-\d{2}-\d{2}) Page: (\d+)/(.*)")
     sheet, date, page_id, lemma, name, row = None, None, None, "-", "", 0
     workbook, image = None, None
-    for nline, line in enumerate(open(vol.replace('/proofread/', '/proofread/stage/'))):
+    for nline, line in enumerate(open(vol.replace("/proofread/", "/proofread/stage/"))):
         line = line.strip()
         input_pos = (os.path.basename(vol), nline + 1)
         if m := page_re.match(line):
@@ -71,11 +71,12 @@ def split(vol, validator):
             image = fetch_jpeg(page_id)
             continue
         p, pos, *score = line.split("#", 2)
-        pos = ",".join([str(x) for x in simplify_pos(pos)])
+        pos = ",".join([str(x) for x in simplify_pos(int(page_id), pos)])
         if score:
-            #score = float(score[0].split('=')[1])
-            name, givenname, occupation, address = [x.strip() for x in p.split(',')]
-            if name == '-': name = lemma
+            # score = float(score[0].split('=')[1])
+            name, givenname, occupation, address = [x.strip() for x in p.split(",")]
+            if name == "-":
+                name = lemma
             other = None
         else:
             p = [x.strip() for x in p.split(",")]
@@ -122,7 +123,8 @@ def split(vol, validator):
         # it's considered to be good, don't revalidate
         if not score:
             bad = validator.validate(entry, input_pos)
-        else: bad = []
+        else:
+            bad = []
         if other:
             # In the output of the splitting phase, but not elsewhere,
             # we consider the existence of remarks as "bad", leading
@@ -275,7 +277,18 @@ def create_sheet(workbook, page_id, page_num):
     return sheet
 
 
-def simplify_pos(pos):
+# {page_id: [(x, y, width, height), ...], ...}
+page_columns = None
+
+
+def simplify_pos(page_id, pos):
+    global page_columns
+    if page_columns is None:
+        page_columns = read_page_columns()
+    columns = page_columns.get(page_id, [])
+    if not columns:
+        columns = [(200, 150, 900, 2500), (980, 150, 900, 2500)]
+
     left, top, right, bottom = 2000, 2977, 0, 0
     for p in pos.split(";"):
         x, y, w, h = [int(x) for x in p.split(",")]
@@ -285,7 +298,33 @@ def simplify_pos(pos):
         top, bottom = min(y, top), max(y + h, bottom)
     left, right = (300, 1050) if left < 600 else (1000, 1750)
     top, bottom = max(top - 5, 0), min(bottom + 5, 2977)
+
+    # Align to column boundaries detected with Computer Vision,
+    # but only if the column does not span the entire page width.
+    if right - left < 1200:
+        mid_x = left + (right - left) // 2
+        mid_y = top + (bottom - top) // 2
+        for x, y, w, h in columns:
+            if x <= mid_x <= x + w and y <= mid_y <= y + h:
+                if x + w + 150 < 2000:
+                    w += 150
+                return (x, top, w, bottom - top)
+
+    # Fallback for text boxes spanning both columns.
     return (left, top, right - left, bottom - top)
+
+
+# Load the content of data/page_columns.csv into memory.
+def read_page_columns():
+    result = {}
+    data_path = os.path.join(os.path.dirname(__file__), "..", "data")
+    with open(os.path.join(data_path, "page_columns.csv"), "r") as fp:
+        for row in csv.DictReader(fp):
+            page_id = int(row["PageID"])
+            x, y = int(row["X"]), int(row["Y"])
+            w, h = int(row["Width"]), int(row["Height"])
+            result.setdefault(page_id, []).append((x, y, w, h))
+    return result
 
 
 # Fetch the JPEG image for a single page from e-rara.ch.
@@ -320,14 +359,14 @@ def crop_image(img, pos):
 # For example, "1880-1883,1905" --> {1880, 1881, 1882, 1883, 1905}.
 def parse_years(years):
     result = set()
-    for s in years.split(','):
+    for s in years.split(","):
         s = s.strip()
-        if '-' in s:
-            if m := re.match(r'(\d{4})\-(\d{4})', s):
+        if "-" in s:
+            if m := re.match(r"(\d{4})\-(\d{4})", s):
                 for year in range(int(m.group(1)), int(m.group(2)) + 1):
                     result.add(year)
             else:
-                raise ValueError(f'not in YYYY-YYYY format: {s}')
+                raise ValueError(f"not in YYYY-YYYY format: {s}")
         else:
             result.add(int(s))
     return result
@@ -335,7 +374,7 @@ def parse_years(years):
 
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
-    ap.add_argument('--years', default='1860', type=parse_years)
+    ap.add_argument("--years", default="1860", type=parse_years)
     args = ap.parse_args()
     validator = Validator()
     for vol in list_volumes():
