@@ -31,8 +31,8 @@ def count_parents(hierarchy, i):
     return num_parents
 
 
-def find_columns(page_num, debug_image_path=None):
-    image = fetch_jpeg(page_num)
+def find_columns(page_id, debug):
+    image = fetch_jpeg(page_id)
     page = numpy.asarray(image)
     blurred = cv2.bilateralFilter(page, 9, 75, 75)
     gray = cv2.cvtColor(blurred, cv2.COLOR_BGR2GRAY)
@@ -43,6 +43,8 @@ def find_columns(page_num, debug_image_path=None):
     contours, hierarchy = cv2.findContours(
         bw, cv2.RETR_TREE, cv2.CHAIN_APPROX_TC89_KCOS
     )
+    boxes = []
+    large_box = None
     for c, contour in enumerate(contours):
         x, y, w, h = cv2.boundingRect(contour)
         white = (count_parents(hierarchy, c) % 2) == 0
@@ -51,13 +53,19 @@ def find_columns(page_num, debug_image_path=None):
             y = y - 5
             w = w + 10
             h = h + 10
-            yield (x, y, w, h)
-            if debug_image_path is not None:
-                cv2.rectangle(
-                    blurred, (x, y), (x + w, y + h), color=(0, 0, 255), thickness=3
-                )
-    if debug_image_path is not None:
-        cv2.imwrite(debug_image_path, blurred)
+            boxes.append((x, y, w, h))
+        if not white and w > 1200:
+            large_box = (x, y, w, h)
+    if len(boxes) == 0 and large_box is not None:
+        x, y, w, h = large_box
+        boxes = [(x, y, w // 2, h), (x + w // 2, y, w // 2, h)]
+    if debug:
+        rgb = cv2.cvtColor(page, cv2.COLOR_BGR2RGB)
+        for x, y, w, h in boxes:
+            cv2.rectangle(rgb, (x, y), (x + w, y + h), color=(0, 0, 255), thickness=4)
+        cv2.imwrite(f"{page_id}.png", rgb)
+        cv2.imwrite(f"{page_id}.bw.png", bw)
+    return boxes
 
 
 def list_all_pages():
