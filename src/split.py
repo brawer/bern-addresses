@@ -119,12 +119,18 @@ def split(vol, validator):
             "Adresse 2": address2,
             "Bemerkungen": other,
         }
+
+        # TODO: This makes a lot of garbage pass without anyone noticing.
+        # Disabling for now.
+        #
         # if line has been preprocessed by scorer.py
         # it's considered to be good, don't revalidate
-        if not score:
-            bad = validator.validate(entry, input_pos)
-        else:
-            bad = []
+        #
+        # if not score:
+        #    bad = validator.validate(entry, input_pos)
+        # else:
+        #    bad = []
+        bad = validator.validate(entry, input_pos)
         if other:
             # In the output of the splitting phase, but not elsewhere,
             # we consider the existence of remarks as "bad", leading
@@ -306,8 +312,8 @@ def simplify_pos(page_id, pos):
         mid_y = top + (bottom - top) // 2
         for x, y, w, h in columns:
             if x <= mid_x <= x + w and y <= mid_y <= y + h:
-                if x + w + 150 < 2000:
-                    w += 150
+                if x + w + 30 < 2000:
+                    w += 30
                 return (x, top, w, bottom - top)
 
     # Fallback for text boxes spanning both columns.
