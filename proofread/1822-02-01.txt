@@ -186,7 +186,7 @@ Künsch, Johann, Matten 103  # 269,1747,642,48;1431,1745,162,39
 # NOGA-2008: 204200 CH-ISCO-19: 33101064 Category: Fabrikanten von Puder (Haar-)
 Hug, Metzgerngaße 71  # 268,1962,483,53;1540,1960,53,43
 # NOGA-2008: 139903 CH-ISCO-19: 22101048 Category: Fabrikanten von Roßhaar
-Lemp, Durs, Altenberg. 176  # 270,2184,615,51;1514,2179,78,38
+Lemp, Durs, Altenberg 176  # 270,2184,615,51;1514,2179,78,38
 Pfister, Aarberggaße 33  # 274,2256,533,48;1542,2251,54,37
 # NOGA-2008: 132003 CH-ISCO-19: 33101253 Category: Fabrikanten von Seiden
 Jonquiere, Johann Georg, Zeughausplaz 244  # 276,2482,1068,54;1512,2480,83,40
@@ -538,7 +538,7 @@ Eichelberger, Samuel, Spitalgaße 167  # 459,2063,958,45;1745,2053,84,38
 Freudenreich, Kramgaße 145  # 461,2130,710,52;1748,2117,88,40
 Gaudin, Ludw., Gerechtigkeitgaße 139  # 460,2196,1000,46;1744,2189,90,39
 Gautschi, Melchior, Kreuzgaße 104  # 462,2266,833,45;1746,2254,91,38
-Genton, Kramgaße 1. 167  # 462,2319,576,74;1748,2319,85,41
+Genton, Kramgaße 167  # 462,2319,576,74;1748,2319,85,41
 Herrenschwand, Christian, Marktgaße 85  # 462,2396,1033,47;1776,2390,61,36
 Jeanin, Abraham Ludw., Kramgaße 184  # 464,2467,961,45;1746,2456,89,39
 Imhoof von Villeneuve, Hotelläube 233  # 464,2536,917,44;1683,2529,148,31
@@ -578,7 +578,7 @@ Schibli, Johann, Marktgaße 41  # 189,2599,767,51;1495,2592,60,38
 # Date: 1822-02-01 Page: 1757541/22
 # NOGA-2008: 475100 CH-ISCO-19: 31109109 Category: Handlung von Wollen
 Simon, Emanuel, und Söhne, Sulgenbach 79  # 472,416,1154,64;1767,429,55,44
-Wild, Geschwister, Gerechtigkeitgaße. 111  # 469,485,1003,63;1737,500,84,35
+Wild, Geschwister, Gerechtigkeitgaße 111  # 469,485,1003,63;1737,500,84,35
 # NOGA-2008: 462300 CH-ISCO-19: 31106010 Category: Pferdehaͤndler
 Läubli, Levi, Bollwerk 82  # 464,974,617,50;1766,989,58,35
 Schwob, Aaron, Spitalgaße 177  # 464,1041,759,58;1735,1052,90,40
@@ -695,7 +695,7 @@ Kriegs-Canzley, Hotellaube 230  # 453,525,656,64;1719,550,87,38
 Landsassen-Schreiberen, Aarberggaße 55  # 450,590,895,70;1744,614,58,39
 Musterungs-Commissariat, Hotellaube 230  # 450,658,900,66;1716,685,89,37
 # NOGA-2008: 842301 Category: Schreibereyen
-Ober-Ehegerichtsschreiberey, Kirchgaße. 264  # 452,721,1004,78;1715,746,89,40
+Ober-Ehegerichtsschreiberey, Kirchgaße 264  # 452,721,1004,78;1715,746,89,40
 # NOGA-2008: 841100 Category: Schreibereyen
 Staats-Canzley, Postgaße 49  # 450,788,630,68;1743,812,54,44
 Stadt-Canzley, Kramgaße 168  # 449,856,641,69;1715,879,86,41
@@ -871,8 +871,8 @@ Buri, Keßlergaße 254  # 416,929,456,64;1674,940,90,40
 Dellenbach, Johann Ulrich, Holligen-Drittel 46  # 410,997,1184,63;1705,1005,56,41
 Feucht, Michael, Neuengaße 103  # 412,1064,745,63;1675,1077,87,35
 Flükiger, Johann, Metzgerngaße 77  # 411,1130,860,67;1701,1139,62,46
-Frank, Christian, Marktgaße, . 33  # 411,1196,817,65;1702,1211,57,36
-Gaßmann, Gabriel, Matten. 118  # 409,1265,759,57;1673,1279,88,34
+Frank, Christian, Marktgaße 33  # 411,1196,817,65;1702,1211,57,36
+Gaßmann, Gabriel, Matten 118  # 409,1265,759,57;1673,1279,88,34
 Gfeller, Johann, Schauplakgaße 219  # 410,1327,872,69;1671,1344,87,37
 Gräf, E. F., Metzgerngaße 136  # 411,1394,696,68;1672,1412,87,35
 Grauwinkel, Schauplaßgaße 206  # 410,1457,765,71;1670,1480,88,32
@@ -1088,7 +1088,7 @@ Lüthi, Wittwe, Judengaße 117  # 253,1899,714,45;1536,1883,92,42
 Schenk, Johann, Metzgerngaße 102  # 254,1970,826,41;1419,1958,202,32
 Schlegel, Conrad, Gerechtigkeitgaße 98  # 257,2036,951,41;1567,2023,60,40
 Scheidegger, Andreas, Zeughausgaße 13  # 255,2106,1019,37;1571,2091,56,35
-Schwitzer, Sebastian, Zeughausgaße, ECR. 59  # 258,2173,983,39;1371,2152,256,44
+Schwitzer, Sebastian, Zeughausgaße ECR. 59  # 258,2173,983,39;1371,2152,256,44
 Stegmann, Andreas, Zeughausgaße 19  # 260,2242,961,37;1572,2224,57,39
 Strahm, Jakob, Schützengäßlein 11  # 261,2309,872,38;1573,2289,55,35
 Studer, Christian, Postgase 23  # 268,2375,751,40;1571,2360,59,32
@@ -1432,7 +1432,7 @@ Hoffmann, Johann, Matten 79  # 458,2499,762,39;1752,2473,57,41
 Hubacher, Jakob, Neuengaße 116  # 189,379,770,50;1455,372,81,40
 Huber, Johann Rudolf, Gerechtigkeitgaße 69  # 187,445,1071,47;1483,440,57,42
 Jegerlehner, Niklaus, Schauplatzgaße 233  # 187,515,1029,46;1455,511,85,34
-Ischi, Johann, Junkerngaße. 175  # 187,583,820,48;1458,575,85,39
+Ischi, Johann, Junkerngaße 175  # 187,583,820,48;1458,575,85,39
 Kilian, Johann David, Stalden 217  # 188,651,861,44;1459,641,86,41
 Kneubühler, Jakob, Aarberggaße 47  # 188,713,904,54;1487,710,59,37
 Lehmann, Johann Jakob, Gerechtigkeitgaße 95  # 185,785,1143,47;1488,774,57,43
