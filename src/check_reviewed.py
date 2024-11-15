@@ -64,7 +64,6 @@ if __name__ == "__main__":
     val = validator.Validator()
     line = 3
     for entry in read_reviewed_excel(args.file):
-        print(entry)
         val.validate(entry, (args.file, line))
         line += 1
     val.report()
