@@ -10,7 +10,7 @@ Koch, Carl, Gerechtigkeitgaße 79  # 284,1739,707,60;1510,1755,51,47
 Lüthardt, Friedrich, Doktor der Rechten, Judengaße 112  # 278,1796,1186,81;384,1871,102,44;1475,1884,87,36
 Meßmer, Beat Ludwig, Gerechtigkeitgaße 78  # 279,1922,1005,73;1503,1945,56,41
 Schnell, Samuel Ludwig, Professor und Doktor der Rechte, Inselgaße 135  # 280,1988,1167, 71;381,2050,506,65;1471,2071,81,35
-Wildbolz, Nudolf, Kramgaße 195  # 278,2116,740,63;1469,2136,82,36
+Wildbolz, Rudolf, Kramgaße 195  # 278,2116,740,63;1469,2136,82,36
 # NOGA-2008: 862100 CH-ISCO-19: 42101001 Category: Aerzte
 Benoit, Daniel Gottlieb, Keßlergaße 262  # 274,2332,1268,80
 Brunner, Professor, Gerechtigkeitgaße 130  # 274,2400,933,65;1460,2423,81,34
@@ -336,7 +336,7 @@ Tessaro, Dominicus, Gerechtigkeitgaße 102  # 279,1376,988,51;1523,1374,86,32
 Weibel, Maler, Spitalgaße 165  # 279,1440,727,54;1524,1437,84,35
 Wisard, Gebrüder, Kramgaße 176  # 279,1511,782,48;1526,1499,82,36
 # NOGA-2008: 477202 CH-ISCO-19: 31109064 Category: Lederhandlung
-Hauser, J. ST., Kramgaße 219  # 284,1792,694,48;1529,1787,84,37
+Hauser, J. J., Kramgaße 219  # 284,1792,694,48;1529,1787,84,37
 Kreis, Conrad, Matten 113  # 284,1862,619,36;1530,1853,83,33
 Lüthardt, Christian, Gerwerngraben 143  # 281,1926,941,41;1530,1914,83,37
 Münger, Gerwerngraben 139  # 286,1990,646,48;1532,1983,81,38
@@ -471,7 +471,7 @@ Gfeller, Emanuel, Spitalgaße 145  # 450,658,812,62;1718,668,89,41
 Henzi, Carl, Marktgaße 60  # 448,726,635,59;1745,735,60,41
 Jenner, Frau, Aarberggaße 68  # 448,792,749,61;1745,802,62,43
 Imhoof, Frau, Aarberggaße 78  # 449,859,765,62;1745,870,60,42
-Lamy, Jobann, Stalden 213  # 446,930,652,49;1716,942,88,35
+Lamy, Johann, Stalden 213  # 446,930,652,49;1716,942,88,35
 Morgenthaler, Marktgaße 38  # 447,996,731,58;1745,1010,60,37
 Offenhäuser, Rudolf, Gerwernlaube 145  # 447,1064,1008,51;1716,1075,85,36
 Puppelin, Frau, Aarberggaße 62  # 445,1128,807,59;1742,1139,62,42
@@ -621,7 +621,7 @@ Spiegel-Magazin von Carl Albr. Diwy, Bildhauer und Vergolder, Gerwerngraben 139 
 [Spiegel-Magazin von] David Wenger, Marktgaße 38  # 731,1985,691,57;1494,1989,58,53
 # NOGA-2008: 691001 CH-ISCO-19: 36203002 Category: (Amts-)Notarien
 Bizius, Albrecht Emanuel, Kefichgäßlein 95  # 202,2226,1067,57;1492,2238,58,38
-Gerster, Bater, Samuel, Judengaße 115  # 201,2295,955,54;1463,2302,85,35
+Gerster, Vater, Samuel, Judengaße 115  # 201,2295,955,54;1463,2302,85,35
 Gerster, Sohn, Samuel Ludw., Judengaße 115  # 204,2362,1129,54;1463,2368,87,39
 Hartmann, Siegmund Albrecht, Metzgerngaße 120  # 202,2428,1177,57;1463,2438,80,36
 Kaufmann, Samuel, Meşgerngaße 127  # 204,2498,922,56;1460,2504,88,39
@@ -629,7 +629,7 @@ Krähenbühl, Johann Emanuel, Marktgaße 39  # 204,2564,1131,55;1490,2571,55,40
 # Date: 1822-02-01 Page: 1757543/24
 # NOGA-2008: 691001 CH-ISCO-19: 36203002 Category: (Amts-)Notarien
 Küpfer, Johann Samuel, zu Worblauffen 72  # 453,419,1091,62;1738,434,83,38
-Niehans, Bater, Jakob Emanuel, Matten 57  # 451,494,1092,55;1737,499,65,38
+Niehans, Vater, Jakob Emanuel, Matten 57  # 451,494,1092,55;1737,499,65,38
 Niehans, Gottlieb, Matten 57  # 452,560,716,46;1739,561,76,42
 Niehans, Johann Emanuel, Zeughausgafe 5  # 451,608,1093,77;1763,633,57,32
 Schnell, Carl Rudolf, Kirchgaße 252  # 449,687,873,62;1708,701,104,33
@@ -734,7 +734,7 @@ Eyen, Carl, Spitalgaße 170  # 236,2003,637,59;1513,2012,88,37
 Eyen, Carl, Aarberggaße 57  # 234,2073,671,59;1543,2078,58,40
 Frank, Spitalgaße 175  # 234,2140,513,59;1516,2146,84,43
 Hartmann, Carl, Gerechtigkeitgaße 103  # 231,2209,939,58;1514,2217,84,38
-Hemmann, Bater, Stalden 208  # 233,2276,732,50;1513,2287,89,35
+Hemmann, Vater, Stalden 208  # 233,2276,732,50;1513,2287,89,35
 Hemmann, Franz, Sohn, Marktgaße 75  # 230,2325,992,81;1540,2350,60,43
 Henzi, Spitalgaße 163  # 234,2414,495,56;1511,2419,90,41
 Hermann, Rudolf, Keßlergaße 281  # 234,2479,799,65;1510,2491,86,34
@@ -1312,7 +1312,7 @@ Blaser, Spitalgaße 152  # 211,1368,520,54;1489,1358,91,36
 Blaser, Johann, Aarberggaße 76  # 210,1437,793,49;1517,1422,57,44
 Christen, Johann, Kefichgäßlein 20  # 210,1503,853,50;1515,1495,65,34
 Glur, Stalden 209  # 208,1576,401,41;1489,1566,89,37
-Gouzy, Jatob, Kefichgäßlein 102  # 208,1638,768,52;1492,1634,85,33
+Gouzy, Jakob, Kefichgäßlein 102  # 208,1638,768,52;1492,1634,85,33
 Hotz, Stalden 9  # 211,1708,372,44;1546,1699,30,37
 Hug, Johann, Stalden 18  # 211,1775,613,46;1519,1766,60,36
 Martin, Jakob, Stalden 4  # 210,1844,671,41;1548,1832,36,38
@@ -1447,7 +1447,7 @@ Müller, Jakob, Brunngaße 9  # 190,1321,725,49;1516,1317,30,40
 Ochsner, Jakob, Stalden 10  # 189,1389,689,44;1490,1383,54,34
 Oesch, Jakob, Brunngaße 31  # 189,1455,677,49;1486,1450,57,34
 Peter, Jost, Postgaße 25  # 189,1521,582,51;1487,1516,57,35
-Ranspach, Jobann, Vater, Postgafe 32  # 188,1584,980,53;1489,1584,55,34
+Ranspach, Johann, Vater, Postgafe 32  # 188,1584,980,53;1489,1584,55,34
 Ranspach, Johann, Sohn, Postgaße 32  # 188,1656,965,48;1488,1651,57,35
 Rellstab, Caspar, Kirchhöflein 210  # 189,1719,799,54;1458,1718,86,36
 Roschi, Jakob, Gerechtigkeitgaße 139  # 190,1786,847,55;1459,1786,83,36
@@ -1574,7 +1574,7 @@ Schuwey, Bendicht, Spitalgaße 144  # 263,1626,808,68;1476,1656,83,36
 Till, Johann, Musikus, Schulgaße 310  # 261,1688,871,75;1478,1724,81,35
 # NOGA-2008: 433303 CH-ISCO-19: 23204039 Category: Tapezirer
 Jaquet, Carl, Gerechtigkeitgaße 80  # 258,1901,793,69;1500,1939,55,33
-Luz, Ludwig Nudolf, Zeughausplaz 246  # 256,1966,871,75;1471,1996,80,40
+Luz, Ludwig Rudolf, Zeughausplaz 246  # 256,1966,871,75;1471,1996,80,40
 Nüller, Postgaße 43  # 257,2027,436,69;1497,2062,56,36
 Rappold, A., Kramgaße 153  # 258,2094,635,64;1469,2127,82,37
 Schär, Jakob, Altenberg 177  # 257,2158,621,66;1467,2189,88,41
