@@ -105,6 +105,7 @@ class Validator:
             if code == "*":
                 continue
             code = code.removesuffix("-EX")
+            code = code.removesuffix("-WI")
             assert code in self.isco, "code %s not in CH-ISCO-19 codelist" % code
         self._occupation_counts = Counter()
         self._num_warnings = 0
