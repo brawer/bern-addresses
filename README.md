@@ -27,3 +27,10 @@ python3 src/cleanup/fix_indentation.py
 
 ### Processing specific volumes
 Use `PROCESS_VOLUMES='1862-07-31,1877-03-31'` to only process a subset of volumes.
+
+## Check a single Excel spreadsheet (before import)
+
+```sh
+git pull
+venv/bin/python3 src/check_reviewed.py NAME.xlsx
+```
