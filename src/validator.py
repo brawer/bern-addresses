@@ -109,6 +109,8 @@ class Validator:
         self._occupation_counts = Counter()
         self._num_warnings = 0
         self._missing_family_names = set()
+        self._missing_given_names = set()
+        self._missing_occupations = set()
         self._re_split_addr = re.compile(r"^(.+) (\d+[a-t]?)$")
         self._re_von = re.compile(r"\b(v\.)")  # eg. "v. Bonstetten-de Vigneule"
 
@@ -122,6 +124,18 @@ class Validator:
             print("--------------------")
             for name in sorted(self._missing_family_names):
                 print(name)
+            print()
+        if self._missing_given_names:
+            print("Missing given names")
+            print("-------------------")
+            for name in sorted(self._missing_given_names):
+                print(name)
+            print()
+        if self._missing_occupations:
+            print("Missing occupations")
+            print("-------------------")
+            for occ in sorted(self._missing_occupations):
+                print(occ)
             print()
         num_ua_before_1882 = len(self.unknown_addresses_before_1882)
         if num_ua_before_1882 > 0:
@@ -220,6 +234,10 @@ class Validator:
         given_names = entry["Vorname"].split()
         ok = all(g in self.given_names for g in given_names)
         if not ok:
+            for n in given_names:
+                if n not in self.given_names:
+                    self._missing_given_names.add(n)
+        if not ok:
             message = 'unknwn given name "%s"' % entry["Vorname"]
             self.warn(message, entry, pos)
         return ok
@@ -233,6 +251,7 @@ class Validator:
                 else:
                     self.warn('unknown occupation "%s"' % occ, entry, pos)
                     bad.add(p)
+                    self._missing_occupations.add(occ)
         return bad
 
     def validate_title(self, entry, pos):
