@@ -284,11 +284,13 @@ class Validator:
         if occ_2 == "*":
             occ_2 = ""
         if occ_1:
-            labels = self.isco[occ_1.removesuffix("-EX")]["Name_de"].split(" | ")
+            occ_1_key = occ_1.removesuffix("-EX").removesuffix("-WI")
+            labels = self.isco[occ_1_key]["Name_de"].split(" | ")
             occ_1_male = labels[0]
             occ_1_female = labels[1] if len(labels) > 1 else labels[0]
         if occ_2:
-            labels = self.isco[occ_2.removesuffix("-EX")]["Name_de"].split(" | ")
+            occ_2_key = occ_2.removesuffix("-EX").removesuffix("-WI")
+            labels = self.isco[occ_2_key]["Name_de"].split(" | ")
             occ_2_male = labels[0]
             occ_2_female = labels[1] if len(labels) > 1 else labels[0]
         pos_x, pos_y, pos_w, pos_h = "", "", "", ""
