@@ -57,6 +57,9 @@ def read_reviewed_excel(filename):
             value = row[col_index - 1] or ""
             entry[col_title] = value
         entry["Scan"] = page_id
+        for c in ("Beruf 3", "Adresse 3"):
+            if not entry.get(c):
+                entry[c] = ""
         yield entry
 
 
