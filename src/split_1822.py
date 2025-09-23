@@ -125,10 +125,12 @@ def read_1822(validator):
                 "Adelsname": "",
                 "Adresse": address,
                 "Adresse 2": address_2,
+                "Adresse 3": "",
                 "Bemerkungen": remarks,
                 "Titel": title,
                 "Beruf": category,
                 "Beruf 2": "",
+                "Beruf 3": "",
                 "Bemerkungen": remarks,
             }
             yield entry

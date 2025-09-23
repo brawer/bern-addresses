@@ -115,8 +115,10 @@ def split(vol, validator):
             "Titel": title,
             "Beruf": occupation,
             "Beruf 2": "",
+            "Beruf 3": "",
             "Adresse": address,
             "Adresse 2": address2,
+            "Adresse 3": "",
             "Bemerkungen": other,
         }
 
