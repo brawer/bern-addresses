@@ -24,6 +24,7 @@ COLUMNS = [
     "Beruf 3",
     "Adresse",
     "Adresse 2",
+    "Adresse 3",
     "Bemerkungen",
 ]
 
@@ -76,8 +77,8 @@ COLUMNS = [
 # * "Beruf", "Beruf 2", and "Beruf 3": Occupation, such as "Schnd."
 #   or "Calligraph".
 #
-# * "Adresse" and "Adresse 2": Possibly abbreviated treet address,
-#   such as "Metzgg. 96".
+# * "Adresse", "Adresse 2" and "Adresse 3": Possibly abbreviated
+#   street address, such as "Metzgg. 96".
 #
 # * "Bemerkungen": General remarks and annotations, no specific
 #   interpretation, ignored (not flagged) by validation.
@@ -203,7 +204,10 @@ class Validator:
         if entry["Adresse 2"] and not entry["Adresse"]:
             self.warn("empty address #1", entry, pos)
             bad.add("Adresse")
-        for p in ("Adresse", "Adresse 2"):
+        if entry["Adresse 3"] and not entry["Adresse 2"]:
+            self.warn("empty address #2", entry, pos)
+            bad.add("Adresse 2")
+        for p in ("Adresse", "Adresse 2", "Adresse 3"):
             if addr := entry[p]:
                 ok, _normalized = self._normalize_address(addr)
                 if not ok:
@@ -270,14 +274,18 @@ class Validator:
         date = scan["Date"]
         _, addr_1 = self._normalize_address(entry["Adresse"])
         _, addr_2 = self._normalize_address(entry["Adresse 2"])
+        _, addr_3 = self._normalize_address(entry["Adresse 3"])
         if int(date[:4]) < 1882:
             addr_1_before_1882 = addr_1
             addr_1 = self._modernize_address_1882(addr_1_before_1882, entry)
             addr_2_before_1882 = addr_2
             addr_2 = self._modernize_address_1882(addr_2_before_1882, entry)
+            addr_3_before_1882 = addr_3
+            addr_3 = self._modernize_address_1882(addr_3_before_1882, entry)
         else:
             addr_1_before_1882 = ""
             addr_2_before_1882 = ""
+            addr_3_before_1882 = ""
         occ_1 = self.occupations.get(entry["Beruf"], {}).get("CH-ISCO-19")
         occ_2 = self.occupations.get(entry["Beruf 2"], {}).get("CH-ISCO-19")
         occ_3 = self.occupations.get(entry["Beruf 3"], {}).get("CH-ISCO-19")
@@ -316,6 +324,7 @@ class Validator:
             "Titel": self._normalize_title(entry["Titel"]),
             "Adresse 1": addr_1,
             "Adresse 2": addr_2,
+            "Adresse 3": addr_3,
             "Beruf 1 (CH-ISCO-19)": occ_1,
             "Beruf 1 (CH-ISCO-19, männliche Bezeichnung)": occ_1_male,
             "Beruf 1 (CH-ISCO-19, weibliche Bezeichnung)": occ_1_female,
@@ -332,8 +341,10 @@ class Validator:
             "Titel (Rohtext)": entry["Titel"],
             "Adresse 1 (Rohtext)": entry["Adresse"],
             "Adresse 2 (Rohtext)": entry["Adresse 2"],
+            "Adresse 3 (Rohtext)": entry["Adresse 3"],
             "Adresse 1 (bereinigt, vor Adressreform 1882)": addr_1_before_1882,
             "Adresse 2 (bereinigt, vor Adressreform 1882)": addr_2_before_1882,
+            "Adresse 3 (bereinigt, vor Adressreform 1882)": addr_3_before_1882,
             "Beruf 1 (Rohtext)": entry["Beruf"],
             "Beruf 2 (Rohtext)": entry["Beruf 2"],
             "Beruf 3 (Rohtext)": entry["Beruf 3"],
@@ -357,14 +368,18 @@ class Validator:
 
         _, addr_1 = self._normalize_address(entry["Adresse"])
         _, addr_2 = self._normalize_address(entry["Adresse 2"])
+        _, addr_3 = self._normalize_address(entry["Adresse 3"])
         if int(date[:4]) < 1882:
             addr_1_before_1882 = addr_1
             addr_1 = self._modernize_address_1882(addr_1_before_1882, entry)
             addr_2_before_1882 = addr_2
             addr_2 = self._modernize_address_1882(addr_2_before_1882, entry)
+            addr_3_before_1882 = addr_3
+            addr_3 = self._modernize_address_1882(addr_3_before_1882, entry)
         else:
             addr_1_before_1882 = ""
             addr_2_before_1882 = ""
+            addr_3_before_1882 = ""
 
         noga_code_1, noga_label_1  = "", ""
         noga_code_2, noga_label_2 = "", ""
@@ -384,6 +399,7 @@ class Validator:
             "Name": self._normalize_company_name(entry["Name"]),
             "Adresse 1": addr_1,
             "Adresse 2": addr_2,
+            "Adresse 3": addr_3,
             "Branche 1 (NOGA-Code)": noga_code_1,
             "Branche 1 (NOGA-Bezeichnung)": noga_label_1,
             "Branche 2 (NOGA-Code)": noga_code_2,
@@ -393,8 +409,10 @@ class Validator:
             "Name (Rohtext)": entry["Name"],
             "Adresse 1 (Rohtext)": entry["Adresse"],
             "Adresse 2 (Rohtext)": entry["Adresse 2"],
+            "Adresse 3 (Rohtext)": entry["Adresse 3"],
             "Adresse 1 (bereinigt, vor Adressreform 1882)": addr_1_before_1882,
             "Adresse 2 (bereinigt, vor Adressreform 1882)": addr_2_before_1882,
+            "Adresse 3 (bereinigt, vor Adressreform 1882)": addr_3_before_1882,
             "Branche 1 (Rohtext)": entry["Beruf"],
             "Branche 2 (Rohtext)": entry["Beruf 2"],
             "Branche 3 (Rohtext)": entry["Beruf 3"],
@@ -439,7 +457,7 @@ class Validator:
 
     def _normalize_address(self, addr):
         # Some POIs such as "Kaserne 1" look like street + number,
-        # so we need to check for POIS before anything else.
+        # so we need to check for POIs before anything else.
         if poi := self.pois.get(addr):
             return True, poi["Normalized"]
         if m := self._re_split_addr.match(addr):
