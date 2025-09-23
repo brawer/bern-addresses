@@ -21,6 +21,7 @@ COLUMNS = [
     "Titel",
     "Beruf",
     "Beruf 2",
+    "Beruf 3",
     "Adresse",
     "Adresse 2",
     "Bemerkungen",
@@ -72,7 +73,8 @@ COLUMNS = [
 # * "Titel": Title, such as "Frl." or "Prof." The title "[Firma]"
 #   indicates a record for a company.
 #
-# * "Beruf" and "Beruf 2": Occupation, such as "Schnd." or "Calligraph".
+# * "Beruf", "Beruf 2", and "Beruf 3": Occupation, such as "Schnd."
+#   or "Calligraph".
 #
 # * "Adresse" and "Adresse 2": Possibly abbreviated treet address,
 #   such as "Metzgg. 96".
@@ -223,7 +225,7 @@ class Validator:
             if entry[p]:
                 self.warn("%s should not be set on companies" % p, entry, pos)
                 bad.add(p)
-        for p in ("Beruf", "Beruf 2"):
+        for p in ("Beruf", "Beruf 2", "Beruf 3"):
             if activity := entry[p]:
                 if activity not in self.economic_activities:
                     message = 'unknown economic activity "%s"' % activity
@@ -245,7 +247,7 @@ class Validator:
 
     def validate_occupations(self, entry, pos):
         bad = set()
-        for p in ("Beruf", "Beruf 2"):
+        for p in ("Beruf", "Beruf 2", "Beruf 3"):
             if occ := entry[p]:
                 if occ in self.occupations:
                     self._occupation_counts[occ] += 1
@@ -278,11 +280,16 @@ class Validator:
             addr_2_before_1882 = ""
         occ_1 = self.occupations.get(entry["Beruf"], {}).get("CH-ISCO-19")
         occ_2 = self.occupations.get(entry["Beruf 2"], {}).get("CH-ISCO-19")
-        occ_1_male, occ_1_female, occ_2_male, occ_2_female = "", "", "", ""
+        occ_3 = self.occupations.get(entry["Beruf 3"], {}).get("CH-ISCO-19")
+        occ_1_male, occ_1_female  = "", ""
+        occ_2_male, occ_2_female = "", ""
+        occ_3_male, occ_3_female = "", ""
         if occ_1 == "*":
             occ_1 = ""
         if occ_2 == "*":
             occ_2 = ""
+        if occ_3 == "*":
+            occ_3 = ""
         if occ_1:
             occ_1_key = occ_1.removesuffix("-EX").removesuffix("-WI")
             labels = self.isco[occ_1_key]["Name_de"].split(" | ")
@@ -293,6 +300,11 @@ class Validator:
             labels = self.isco[occ_2_key]["Name_de"].split(" | ")
             occ_2_male = labels[0]
             occ_2_female = labels[1] if len(labels) > 1 else labels[0]
+        if occ_3:
+            occ_3_key = occ_3.removesuffix("-EX").removesuffix("-WI")
+            labels = self.isco[occ_3_key]["Name_de"].split(" | ")
+            occ_3_male = labels[0]
+            occ_3_female = labels[1] if len(labels) > 1 else labels[0]
         pos_x, pos_y, pos_w, pos_h = "", "", "", ""
         if pos := entry["ID"]:
             [pos_x, pos_y, pos_w, pos_h] = [str(int(n.strip())) for n in pos.split(",")]
@@ -310,6 +322,9 @@ class Validator:
             "Beruf 2 (CH-ISCO-19)": occ_2,
             "Beruf 2 (CH-ISCO-19, männliche Bezeichnung)": occ_2_male,
             "Beruf 2 (CH-ISCO-19, weibliche Bezeichnung)": occ_2_female,
+            "Beruf 3 (CH-ISCO-19)": occ_3,
+            "Beruf 3 (CH-ISCO-19, männliche Bezeichnung)": occ_3_male,
+            "Beruf 3 (CH-ISCO-19, weibliche Bezeichnung)": occ_3_female,
             "Name (Rohtext)": entry["Name"],
             "Vorname (Rohtext)": entry["Vorname"],
             "Ledigname (Rohtext)": entry["Ledigname"],
@@ -321,6 +336,7 @@ class Validator:
             "Adresse 2 (bereinigt, vor Adressreform 1882)": addr_2_before_1882,
             "Beruf 1 (Rohtext)": entry["Beruf"],
             "Beruf 2 (Rohtext)": entry["Beruf 2"],
+            "Beruf 3 (Rohtext)": entry["Beruf 3"],
             "Bemerkungen": entry["Bemerkungen"],
             "Datum": scan["Date"],
             "Seite": scan["PageLabel"],
@@ -350,7 +366,9 @@ class Validator:
             addr_1_before_1882 = ""
             addr_2_before_1882 = ""
 
-        noga_code_1, noga_label_1, noga_code_2, noga_label_2 = "", "", "", ""
+        noga_code_1, noga_label_1  = "", ""
+        noga_code_2, noga_label_2 = "", ""
+        noga_code_3, noga_label_3 = "", ""
         if activity_1 := self.economic_activities.get(entry["Beruf"]):
             noga_code_1 = activity_1["NOGA-Code"]
             noga_label_1 = self.noga[noga_code_1]["Name_de"]
@@ -358,6 +376,10 @@ class Validator:
         if activity_2 := self.economic_activities.get(entry["Beruf 2"]):
             noga_code_2 = activity_2["NOGA-Code"]
             noga_label_2 = self.noga[noga_code_2]["Name_de"]
+        activity_3 = self.economic_activities.get(entry["Beruf 3"])
+        if activity_3 := self.economic_activities.get(entry["Beruf 3"]):
+            noga_code_3 = activity_3["NOGA-Code"]
+            noga_label_3 = self.noga[noga_code_2]["Name_de"]
         return {
             "Name": self._normalize_company_name(entry["Name"]),
             "Adresse 1": addr_1,
@@ -366,6 +388,8 @@ class Validator:
             "Branche 1 (NOGA-Bezeichnung)": noga_label_1,
             "Branche 2 (NOGA-Code)": noga_code_2,
             "Branche 2 (NOGA-Bezeichnung)": noga_label_2,
+            "Branche 3 (NOGA-Code)": noga_code_3,
+            "Branche 3 (NOGA-Bezeichnung)": noga_label_3,
             "Name (Rohtext)": entry["Name"],
             "Adresse 1 (Rohtext)": entry["Adresse"],
             "Adresse 2 (Rohtext)": entry["Adresse 2"],
@@ -373,6 +397,7 @@ class Validator:
             "Adresse 2 (bereinigt, vor Adressreform 1882)": addr_2_before_1882,
             "Branche 1 (Rohtext)": entry["Beruf"],
             "Branche 2 (Rohtext)": entry["Beruf 2"],
+            "Branche 3 (Rohtext)": entry["Beruf 3"],
             "Bemerkungen": entry["Bemerkungen"],
             "Datum": scan["Date"],
             "Seite": scan["PageLabel"],
