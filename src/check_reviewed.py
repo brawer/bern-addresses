@@ -18,7 +18,13 @@ IGNORED_COLUMNS = {
 
 
 def read_reviewed_excel(filename):
-    wb = openpyxl.load_workbook(filename=filename)
+    wb = openpyxl.load_workbook(
+        data_only=True,
+        filename=filename,
+        keep_links=False,
+        keep_vba=False,
+        read_only=True,
+    )
     sheets = [s for s in wb]
     if len(sheets) != 1:
         print(f'file "{filename}" should have only 1 sheet')

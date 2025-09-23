@@ -58,8 +58,15 @@ def process_zip(path):
     with zipfile.ZipFile(path) as zf, open(outpath, "w") as outfile:
         writer = csv.writer(outfile)
         writer.writerow(COLUMNS)
+        fatal_errors = False
         for _, filename in sorted(files):
-            wb = openpyxl.load_workbook(filename=zf.open(filename, mode="r"))
+            wb = openpyxl.load_workbook(
+                data_only=True,
+                filename=zf.open(filename, mode="r"),
+                keep_links=False,
+                keep_vba=False,
+                read_only=True,
+            )
             sheets = [s for s in wb]
             assert len(sheets) == 1, filename
             sheet = sheets[0]
@@ -72,7 +79,10 @@ def process_zip(path):
                 if title := sheet.cell(row=2, column=i).value:
                     title = COLUMN_TYPOS.get(title, title)
                     if title not in IGNORED_COLUMNS:
-                        assert title in COLUMNS, (title, filename)
+                        if title not in COLUMNS:
+                            print(f'{filename}: unknown column "{title}"')
+                            fatal_errors = True
+                            continue
                         col[title] = i
             for row in sheet.iter_rows(min_row=3, values_only=True):
                 entry = {}
@@ -85,6 +95,8 @@ def process_zip(path):
                     if value := entry.get(col_title):
                         outrow[i] = value
                 writer.writerow(outrow)
+    if fatal_errors:
+        return
     validator = Validator()
     with open(outpath) as fp:
         line = 0
