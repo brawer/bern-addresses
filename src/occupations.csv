@@ -1,4 +1,5 @@
 Occupation,CH-ISCO-19
+Aarwanger-Balsam-Fabrikant,33101148
 Ankenhdl.,31109071
 Aasbeseitiger,41203005
 Ablagehalterin,31109049
@@ -7,6 +8,7 @@ Abw.,41103022
 Abwart,41103022
 Abwart d. Baudir.,41103022
 Abwart der Dalp’schen Buchhandl.,41103022
+Abwart der Entbindungsanstalt auf d. gr. Schanze,41103022
 Abwärterin,41103022
 Abwartin,41103022
 Abwarts,41103022
@@ -20,15 +22,15 @@ Advokat,36203005
 Affichenaufseher,32201004
 Aktuar,51101819
 Almos.,43101014
-alt Amtsstatthalter,33102068
+alt Amtsstatthalter,33102068-EX
 Alt-Dekan,43201039-EX
-alt-Landam.,33102027
-alt-Oberrichter,36201014
+alt-Landam.,33102027-EX
+alt-Oberrichter,36201014-EX
 Alt-Reg.,33102120-EX
-alt-Reg.-Rath,33102120
+alt-Reg.-Rath,33102120-EX
 Alt-Reg. Rath,33102120-EX
 Alt-Schulth.,33102006-EX
-alt-Ständer.,33102216
+alt-Ständer.,33102216-EX
 Amtsgerichtschrb.,36202017
 Amtsgerichtswbl.,33202150
 Amtsn.,36203002
@@ -194,6 +196,7 @@ Bierbrauer im Maulbeerbaum,21201027
 Bierwirth,39101051
 Bildh.,38301001
 Bildhauer,38301001
+"Bildhauer, Firma: Menz",38301001
 Bildschntz.,38403010
 Billettdrucker,27201069
 Billetteur,46106068
@@ -227,6 +230,7 @@ Broderie u. Ressorts-Jüpons,31109047
 Brodeuse,22203001
 Brungrb.,23107007
 Brunneng.,23107007
+Brunnengräb.,23107007
 Brunnengräber,23107007
 Brunnenmstr.,51103135
 Brunnmst.,51103135
@@ -352,6 +356,7 @@ Dachdeckermeister,23202018
 Dachdeckermstr,23202018
 Damenschn.,22201012
 Damenschneid.,22201012
+Damenschneider.,22201012
 Damenschneiderin,22201012
 Damenschneiderinnen,22201012
 Dekatier.,22103056
@@ -421,6 +426,7 @@ Eisennegt.,31109068
 Eisentröd.,31109069
 Eisentrödl.,31109069
 Eisentrödler,31109069
+Eisenwaarenhandlung,31109068
 Eisenwaarenhdl.,31109068
 Elektriker,23210033
 Elektromechaniker,25502001
@@ -466,6 +472,7 @@ Feilenhauer,25401047
 Feinmechaniker,25402031
 Feinw.,41102022
 Feinwasch.,41102022
+Feinwascher.,41102022
 Feinwascherin,41102022
 Feinwsch.,41102022
 Feldkassaverwalter,32103058
@@ -571,9 +578,11 @@ gew. Buchhändl.,31104006-EX
 gew. Buchhändler,31104006-EX
 gew. Caffeewirth.,39101006-EX
 gew. Eisennegt.,31109068-EX
+gew. Lehrer.,44401007-EX
 gewesener Hptm. in Frankr.,51101872-EX
 gewesen. Kantonsbaumeister,33102160-EX
 gewes. Kaufm. bei’r Linde.,51102218-EX
+gewes. Lehrerin,44401007-EX
 gewes. Oberrichter,36201014-EX
 gewes. Oberst,36104021-EX
 gewes. Offiz. in Oesterr.,36104026-EX
@@ -679,6 +688,7 @@ gw. Brodbäck,21103005-EX
 gw. Drag.-Maj.,51101872-EX
 gw. Eisennegt.,31109068-EX
 gw. Offiz. in Württemberg,36104026-EX
+gw. Reg.-Rath,33102120-EX
 gw. Schirrmst.,22303012-EX
 gw. Waisenvater,43103021-EX
 Gymnasiallehrer,44201006
@@ -687,6 +697,7 @@ Gyps.,23203018
 Gypser,23203018
 Gypshdl.,31109123
 Gyps- u. Kalkhändler,31109123
+Gypsmüller,24103029
 Gypsreiber,24103029
 Haarflch.,41301023
 Haarflechterin,41301023
@@ -765,6 +776,7 @@ Hotelangestellter,39106031
 Hotelexperte,51102034
 Hotelier,39101003
 Hufschm.,51101867
+Hufschmd.,51101867
 Hufschmied,51101867
 Huthdl.,31109154
 Hutm.,22204001
@@ -810,6 +822,7 @@ Kammmacher,28201002
 Kammmch.,28201002
 kant. Beamter,33201081
 Kantonsbaumeister,33102160
+Kantonsschullehr.,44201003
 Kantonsschullehrer,44201003
 Kanzl.,33202006
 Kanzleichef,*
@@ -871,6 +884,7 @@ Kleidertrödler,31109047
 Kleinkinderlehrerin,44501002
 Klösterliw.,39101051
 Knabenschneiderin,22201006
+Knabenschneid.,22201006
 Knecht,11102001
 Knochens.,28104142
 Knopffabr.,28201027
@@ -889,6 +903,7 @@ Kommiss.,47101047
 Kommission.,47101047
 Kond.,21103016
 Konditor,21103016
+Konditorei,21103016
 Kondkt.,34105001
 Kondukt.,34105001
 Kondukteur,34105001
@@ -1008,6 +1023,7 @@ Lhnbed.,39202012
 Lhnktsch.,34503015
 Lhr.,44401007
 Liegenschverwlt.,33204005
+Lieut.,36104015
 Lieutenant,36104015
 Limonadefbr.,21203001
 Ling.,41102031
@@ -1224,6 +1240,7 @@ Pastetenb.,21103074
 Patentanwalt,36203010
 Patissier,51101346
 Pelzhdl.,31109155
+Pensionshlt.,39101010
 Pensionshalterin,39101010
 Pfarrer,43201027
 Pfarrer am Münster,43201027
@@ -1265,7 +1282,7 @@ Polizei-Korporal,36101047
 Polizeikorporal,36101047
 Polizist,36101011
 Portier,39102001
-Pörtner,*
+Pörtner,41103060
 Pörtn. im Burgersp.,41103060
 Porträtmaler,38302002
 Posam.,22102010
@@ -1366,6 +1383,7 @@ Rechtsagent,36204016
 Redakt.,37101027
 Redakteur,37101027
 Redaktor,37101027
+Redakt. d. «Bund»,37101027
 Regensch.-Fabr.,22204010
 Regierungsr.,33102120
 Regierungsrat,33102120
@@ -1388,7 +1406,9 @@ Rentière,*
 Reparateur,29405065
 Revis.,32401012
 Revisionsgehülfe,32401007
+Revis. im eidg. statist. Bureau,32401012
 Revisor,32401012
+Revisor d. Steuerverwaltung,32401012
 Richter,36201019
 Rittm.,44605047
 Rnt.,*
@@ -1528,6 +1548,7 @@ Sek.-Lehrer,44301002
 Sek.-Lehrerin,44301002
 Sekr.,33201053
 Sekr. d. Direkt. d. Innern,33201176
+Sekret. d. Militärdirektion,33201176
 Sekretär der evangel. Gesellschaft,33201053
 Sekr. der Evang. Gesellschaft,33201053
 Sekr. d. Tel.-Direkt.,33201176
@@ -1545,6 +1566,7 @@ Seminarlehrerin,44201005
 Senator,*
 Sesselfl.,26106006
 Sesselflcht.,26106006
+Sesselflechterin,26106006
 Sesselm.,26106006
 Sesselmach.,26106006
 Siebmach.,25209079
@@ -1601,6 +1623,8 @@ Stadtbannwart,11502012
 Stadtbuchhalt.,33203029
 Stadtforstmstr.,11501011
 Stadtobförst.,11501004
+Stallknecht,11102005
+Stallk.,11102005
 Standeswbl.,33202107
 Standesweibel,33202107
 Stationsbeamter,34101003
