@@ -88,7 +88,7 @@ def process_zip(path):
                 entry = {}
                 for col_title, col_index in col.items():
                     if value := row[col_index - 1]:
-                        entry[col_title] = value
+                        entry[col_title] = str(value).strip()
                 entry["Scan"] = page_id
                 outrow = [""] * len(COLUMNS)
                 for i, col_title in enumerate(COLUMNS):
