@@ -16,6 +16,7 @@ COLUMNS = [
     "Scan",
     "Name",
     "Vorname",
+    "Vorname Person 2",
     "Ledigname",
     "Adelsname",
     "Titel",
@@ -64,7 +65,11 @@ COLUMNS = [
 # * "Name": Family or company name, such as
 #   "Müller", "von Wurstemberger" or "Ciolina & Comp.".
 #
-# * "Vorname": Given name, such as "Klara" or "Joh.".
+# * "Vorname": Given names, such as "Klara" or "Joh. Friedrich".
+#
+# * "Vorname Person 2": Given name of _another_ person, such as
+#   "Emma" in "Johann und Emma". Not used for multiple given
+#   names of the same person.
 #
 # * "Ledigname": Unmarried family name, such as "Meier".
 #
@@ -177,8 +182,9 @@ class Validator:
     def validate(self, entry, pos):
         assert all(key in self.columns for key in entry.keys()), entry
         bad = set()
-        if not self.validate_given_name(entry, pos):
-            bad.add("Vorname")
+        for key in ("Vorname", "Vorname Person 2"):
+            if not self.validate_given_name(entry, key, pos):
+                bad.add(key)
         bad.update(self.validate_addresses(entry, pos))
         if self.is_company(entry):
             bad.update(self.validate_company(entry, pos))
@@ -237,15 +243,15 @@ class Validator:
                     bad.add(p)
         return bad
 
-    def validate_given_name(self, entry, pos):
-        given_names = entry["Vorname"].split()
+    def validate_given_name(self, entry, key, pos):
+        given_names = entry[key].split()
         ok = all(g in self.given_names for g in given_names)
         if not ok:
             for n in given_names:
                 if n not in self.given_names:
                     self._missing_given_names.add(n)
         if not ok:
-            message = 'unknwn given name "%s"' % entry["Vorname"]
+            message = 'unknwn given name "%s"' % entry[key]
             self.warn(message, entry, pos)
         return ok
 
@@ -319,6 +325,7 @@ class Validator:
         return {
             "Name": self._normalize_name(entry["Name"]),
             "Vorname": entry["Vorname"],
+            "Vorname Person 2": entry["Vorname Person 2"],
             "Ledigname": self._normalize_name(entry["Ledigname"]),
             "Adelsname": self._normalize_nobility_name(entry["Adelsname"]),
             "Titel": self._normalize_title(entry["Titel"]),
@@ -336,6 +343,7 @@ class Validator:
             "Beruf 3 (CH-ISCO-19, weibliche Bezeichnung)": occ_3_female,
             "Name (Rohtext)": entry["Name"],
             "Vorname (Rohtext)": entry["Vorname"],
+            "Vorname Person 2 (Rohtext)": entry["Vorname Person 2"],
             "Ledigname (Rohtext)": entry["Ledigname"],
             "Adelsname (Rohtext)": entry["Adelsname"],
             "Titel (Rohtext)": entry["Titel"],

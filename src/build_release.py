@@ -16,6 +16,7 @@ from validator import Validator
 PEOPLE_FIELDS = [
     "Name",
     "Vorname",
+    "Vorname Person 2",
     "Ledigname",
     "Adelsname",
     "Titel",
@@ -33,6 +34,7 @@ PEOPLE_FIELDS = [
     "Beruf 3 (CH-ISCO-19, weibliche Bezeichnung)",
     "Name (Rohtext)",
     "Vorname (Rohtext)",
+    "Vorname Person 2 (Rohtext)",
     "Ledigname (Rohtext)",
     "Adelsname (Rohtext)",
     "Titel (Rohtext)",

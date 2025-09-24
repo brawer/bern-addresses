@@ -27,6 +27,7 @@ COLUMN_TYPOS = {
     "Addresse 2": "Adresse 2",
     "Bemerkung": "Bemerkungen",
     "Bermerkungen": "Bemerkungen",
+    "Vorname 2": "Vorname Person 2",
 }
 
 
