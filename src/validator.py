@@ -25,7 +25,7 @@ COLUMNS = [
     "Adresse",
     "Adresse 2",
     "Adresse 3",
-    "Bemerkungen",
+    "nicht zuweisbar",
 ]
 
 
@@ -79,9 +79,6 @@ COLUMNS = [
 #
 # * "Adresse", "Adresse 2" and "Adresse 3": Possibly abbreviated
 #   street address, such as "Metzgg. 96".
-#
-# * "Bemerkungen": General remarks and annotations, no specific
-#   interpretation, ignored (not flagged) by validation.
 class Validator:
     def __init__(self):
         self.columns = set(COLUMNS)
@@ -357,7 +354,6 @@ class Validator:
             "Beruf 1 (Rohtext)": entry["Beruf"],
             "Beruf 2 (Rohtext)": entry["Beruf 2"],
             "Beruf 3 (Rohtext)": entry["Beruf 3"],
-            "Bemerkungen": entry["Bemerkungen"],
             "Datum": scan["Date"],
             "Seite": scan["PageLabel"],
             "Scan": entry["Scan"],
@@ -425,7 +421,6 @@ class Validator:
             "Branche 1 (Rohtext)": entry["Beruf"],
             "Branche 2 (Rohtext)": entry["Beruf 2"],
             "Branche 3 (Rohtext)": entry["Beruf 3"],
-            "Bemerkungen": entry["Bemerkungen"],
             "Datum": scan["Date"],
             "Seite": scan["PageLabel"],
             "Scan": entry["Scan"],
