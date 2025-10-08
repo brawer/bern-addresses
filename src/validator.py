@@ -16,7 +16,6 @@ COLUMNS = [
     "Scan",
     "Name",
     "Vorname",
-    "Vorname Person 2",
     "Ledigname",
     "Adelsname",
     "Titel",
@@ -66,10 +65,6 @@ COLUMNS = [
 #   "Müller", "von Wurstemberger" or "Ciolina & Comp.".
 #
 # * "Vorname": Given names, such as "Klara" or "Joh. Friedrich".
-#
-# * "Vorname Person 2": Given name of _another_ person, such as
-#   "Emma" in "Johann und Emma". Not used for multiple given
-#   names of the same person.
 #
 # * "Ledigname": Unmarried family name, such as "Meier".
 #
@@ -182,7 +177,7 @@ class Validator:
     def validate(self, entry, pos):
         assert all(key in self.columns for key in entry.keys()), entry
         bad = set()
-        for key in ("Vorname", "Vorname Person 2"):
+        for key in ("Vorname",):
             if not self.validate_given_name(entry, key, pos):
                 bad.add(key)
         bad.update(self.validate_addresses(entry, pos))
@@ -325,7 +320,6 @@ class Validator:
         return {
             "Name": self._normalize_name(entry["Name"]),
             "Vorname": entry["Vorname"],
-            "Vorname Person 2": entry["Vorname Person 2"],
             "Ledigname": self._normalize_name(entry["Ledigname"]),
             "Adelsname": self._normalize_nobility_name(entry["Adelsname"]),
             "Titel": self._normalize_title(entry["Titel"]),
@@ -343,7 +337,6 @@ class Validator:
             "Beruf 3 (CH-ISCO-19, weibliche Bezeichnung)": occ_3_female,
             "Name (Rohtext)": entry["Name"],
             "Vorname (Rohtext)": entry["Vorname"],
-            "Vorname Person 2 (Rohtext)": entry["Vorname Person 2"],
             "Ledigname (Rohtext)": entry["Ledigname"],
             "Adelsname (Rohtext)": entry["Adelsname"],
             "Titel (Rohtext)": entry["Titel"],
