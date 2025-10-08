@@ -177,6 +177,7 @@ class Validator:
     def validate(self, entry, pos):
         assert all(key in self.columns for key in entry.keys()), entry
         bad = set()
+        bad.update(self.validate_name(entry, pos))
         for key in ("Vorname",):
             if not self.validate_given_name(entry, key, pos):
                 bad.add(key)
@@ -198,6 +199,13 @@ class Validator:
                     bad.add(p)
         bad.update(self.validate_title(entry, pos))
         bad.update(self.validate_occupations(entry, pos))
+        return bad
+
+    def validate_name(self, entry, pos):
+        bad = set()
+        if not entry["Name"].strip():
+            self.warn("missing name", entry, pos)
+            bad.add("Name")
         return bad
 
     def validate_addresses(self, entry, pos):
