@@ -119,7 +119,7 @@ def split(vol, validator):
             "Adresse": address,
             "Adresse 2": address2,
             "Adresse 3": "",
-            "Bemerkungen": other,
+            "nicht zuweisbar": other,
         }
 
         # TODO: This makes a lot of garbage pass without anyone noticing.
@@ -134,10 +134,7 @@ def split(vol, validator):
         #    bad = []
         bad = validator.validate(entry, input_pos)
         if other:
-            # In the output of the splitting phase, but not elsewhere,
-            # we consider the existence of remarks as "bad", leading
-            # to human review of the entry.
-            bad.add("Bemerkungen")
+            bad.add("nicht zuweisbar")
 
         for column_index, column in enumerate(COLUMNS):
             cell = sheet.cell(row, column_index + 1)
@@ -282,6 +279,7 @@ def create_sheet(workbook, page_id, page_num):
         cell.fill = gray_fill
     sheet.column_dimensions["A"].width = 3  # ID
     sheet.column_dimensions["B"].width = 35  # Scan
+    sheet.column_dimensions["N"].width = 20  # nicht zuweisbar
     return sheet
 
 

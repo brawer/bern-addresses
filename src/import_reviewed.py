@@ -25,15 +25,12 @@ from validator import COLUMNS, Validator
 COLUMN_TYPOS = {
     "Addresse": "Adresse",
     "Addresse 2": "Adresse 2",
-    "Bemerkung": "Bemerkungen",
-    "Bermerkungen": "Bemerkungen",
-    "Vorname 2": "Vorname Person 2",
 }
 
 
 IGNORED_COLUMNS = {
     "Scan",  # scan image in review Excels; scan ID in our output
-    "Unklar",  # input for human reviewers before reviewing
+    "nicht zuweisbar",  # input for human reviewers before reviewing
 }
 
 
