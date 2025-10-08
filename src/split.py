@@ -58,7 +58,7 @@ def split(vol, validator):
     page_re = re.compile(r"^# Date: (\d{4}-\d{2}-\d{2}) Page: (\d+)/(.*)")
     sheet, date, page_id, lemma, name, row = None, None, None, "-", "", 0
     workbook, image = None, None
-    for nline, line in enumerate(open(vol.replace("/proofread/", "/proofread/stage/"))):
+    for nline, line in enumerate(open(vol, "r")):
         line = line.strip()
         input_pos = (os.path.basename(vol), nline + 1)
         if m := page_re.match(line):
