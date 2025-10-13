@@ -22,6 +22,7 @@ PEOPLE_FIELDS = [
     "Adresse 1",
     "Adresse 2",
     "Adresse 3",
+    "Arbeitsort",
     "Beruf 1 (CH-ISCO-19)",
     "Beruf 1 (CH-ISCO-19, männliche Bezeichnung)",
     "Beruf 1 (CH-ISCO-19, weibliche Bezeichnung)",

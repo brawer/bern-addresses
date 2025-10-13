@@ -119,6 +119,7 @@ def split(vol, validator):
             "Adresse": address,
             "Adresse 2": address2,
             "Adresse 3": "",
+            "Arbeitsort": "",
             "nicht zuweisbar": other,
         }
 
@@ -279,7 +280,7 @@ def create_sheet(workbook, page_id, page_num):
         cell.fill = gray_fill
     sheet.column_dimensions["A"].width = 3  # ID
     sheet.column_dimensions["B"].width = 35  # Scan
-    sheet.column_dimensions["N"].width = 20  # nicht zuweisbar
+    sheet.column_dimensions["O"].width = 20  # nicht zuweisbar
     return sheet
 
 
