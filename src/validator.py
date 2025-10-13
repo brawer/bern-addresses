@@ -231,7 +231,7 @@ class Validator:
                 pos,
             )
             bad.add("Titel")
-        for p in ("Adelsname", "Ledigname"):
+        for p in ("Vorname", "Adelsname", "Ledigname"):
             if entry[p]:
                 self.warn("%s should not be set on companies" % p, entry, pos)
                 bad.add(p)
@@ -251,7 +251,7 @@ class Validator:
                 if n not in self.given_names:
                     self._missing_given_names.add(n)
         if not ok:
-            message = 'unknwn given name "%s"' % entry[key]
+            message = 'unknown given name "%s"' % entry[key]
             self.warn(message, entry, pos)
         return ok
 
