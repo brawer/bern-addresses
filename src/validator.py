@@ -25,6 +25,7 @@ COLUMNS = [
     "Adresse",
     "Adresse 2",
     "Adresse 3",
+    "Arbeitsort",
     "nicht zuweisbar",
 ]
 
@@ -79,6 +80,8 @@ COLUMNS = [
 #
 # * "Adresse", "Adresse 2" and "Adresse 3": Possibly abbreviated
 #   street address, such as "Metzgg. 96".
+#
+# * "Arbeitsort": Work place, typically a company name.
 class Validator:
     def __init__(self):
         self.columns = set(COLUMNS)
@@ -237,7 +240,7 @@ class Validator:
                 pos,
             )
             bad.add("Titel")
-        for p in ("Vorname", "Adelsname", "Ledigname"):
+        for p in ("Vorname", "Adelsname", "Ledigname", "Arbeitsort"):
             if entry[p]:
                 self.warn("%s should not be set on companies" % p, entry, pos)
                 bad.add(p)
@@ -337,6 +340,7 @@ class Validator:
             "Adresse 1": addr_1,
             "Adresse 2": addr_2,
             "Adresse 3": addr_3,
+            "Arbeitsort": entry["Arbeitsort"],
             "Beruf 1 (CH-ISCO-19)": occ_1,
             "Beruf 1 (CH-ISCO-19, männliche Bezeichnung)": occ_1_male,
             "Beruf 1 (CH-ISCO-19, weibliche Bezeichnung)": occ_1_female,
