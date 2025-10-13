@@ -254,6 +254,9 @@ class Validator:
 
     def validate_given_name(self, entry, key, pos):
         given_names = entry[key].split()
+        if 'VDM' in given_names or 'V. D. M.' in " ".join(given_names):
+            self.warn('VDM is an occupation, not a given name', entry, pos)
+            return False
         ok = all(g in self.given_names for g in given_names)
         if not ok:
             for n in given_names:
