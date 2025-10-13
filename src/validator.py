@@ -215,10 +215,16 @@ class Validator:
             bad.add("Adresse 2")
         for p in ("Adresse", "Adresse 2", "Adresse 3"):
             if addr := entry[p]:
+                if any(a in addr for a in ('Abl.', 'Ablage')):
+                    message = '“Ablage” should not be part of address'
+                    self.warn(message, entry, pos)
+                    bad.add(p)
+                    continue
                 ok, _normalized = self._normalize_address(addr)
                 if not ok:
                     self.warn('unknown address "%s"' % addr, entry, pos)
                     bad.add(p)
+                    continue
         return bad
 
     def validate_company(self, entry, pos):
