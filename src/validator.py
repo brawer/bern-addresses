@@ -87,7 +87,7 @@ class Validator:
         self.columns = set(COLUMNS)
         self.pages = self.read_csv("pages.csv", "PageID")
         self.family_names = self.read_lines("family_names.txt")
-        self.given_names = self.read_lines("givennames.txt")
+        self.given_names = self.read_csv("givennames.txt", "Name")
         self.nobility_names = self.read_csv("nobility_names.csv", "Adelsname (Rohtext)")
         self.titles = self.read_csv("titles.csv", "Title")
         self.occupations = self.read_csv("occupations.csv", "Occupation")
@@ -178,9 +178,8 @@ class Validator:
         assert all(key in self.columns for key in entry.keys()), entry
         bad = set()
         bad.update(self.validate_name(entry, pos))
-        for key in ("Vorname",):
-            if not self.validate_given_name(entry, key, pos):
-                bad.add(key)
+        _given_names_gender, bad_given_name_columns = self.validate_given_names(entry, pos)
+        bad.update(bad_given_name_columns)
         bad.update(self.validate_addresses(entry, pos))
         if self.is_company(entry):
             bad.update(self.validate_company(entry, pos))
@@ -252,12 +251,27 @@ class Validator:
                     bad.add(p)
         return bad
 
-    def validate_given_name(self, entry, key, pos):
+    def validate_given_names(self, entry, pos):
+        genders, bad = set(), set()
+        for key in ("Vorname",):
+            gender, ok = self._validate_given_name(entry, key, pos)
+            if gender:
+                genders.add(gender)
+                if len(genders) > 1:
+                    self.warn('inconsistent gender across given names', entry, pos)
+                    ok = False
+            if not ok:
+                bad.add(key)
+        single_gender = genders.pop() if len(genders) == 1 else ""
+        return single_gender, bad
+
+    def _validate_given_name(self, entry, key, pos):
         given_names = entry[key].split()
         if 'VDM' in given_names or 'V. D. M.' in " ".join(given_names):
             self.warn('VDM is an occupation, not a given name', entry, pos)
-            return False
-        ok = all(g in self.given_names for g in given_names)
+            return "", False
+        gn = [self.given_names.get(g) for g in given_names]
+        ok = all(g != None for g in gn)
         if not ok:
             for n in given_names:
                 if n not in self.given_names:
@@ -265,7 +279,13 @@ class Validator:
         if not ok:
             message = 'unknown given name "%s"' % entry[key]
             self.warn(message, entry, pos)
-        return ok
+        genders = set(g['Gender'] for g in gn if g != None and g['Gender'])
+        if len(genders) > 1:
+            message = 'inconsistent gender in %s "%s"' % (key, entry[key])
+            self.warn(message, entry, pos)
+            ok = False
+        gender = genders.pop() if len(genders) == 1 else ""
+        return gender, ok
 
     def validate_occupations(self, entry, pos):
         bad = set()
