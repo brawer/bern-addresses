@@ -257,7 +257,7 @@ class Validator:
 
     def validate_given_names(self, entry, pos):
         genders, bad = set(), set()
-        for key in ("Vorname",):
+        for key in ("Vorname",):  # When adding more keys, also change _infer_gender()
             gender, ok = self._validate_given_name(entry, key, pos)
             if gender:
                 genders.add(gender)
@@ -330,39 +330,20 @@ class Validator:
             addr_1_before_1882 = ""
             addr_2_before_1882 = ""
             addr_3_before_1882 = ""
-        occ_1 = self.occupations.get(entry["Beruf"], {}).get("CH-ISCO-19")
-        occ_2 = self.occupations.get(entry["Beruf 2"], {}).get("CH-ISCO-19")
-        occ_3 = self.occupations.get(entry["Beruf 3"], {}).get("CH-ISCO-19")
-        occ_1_male, occ_1_female  = "", ""
-        occ_2_male, occ_2_female = "", ""
-        occ_3_male, occ_3_female = "", ""
-        if occ_1 == "*":
-            occ_1 = ""
-        if occ_2 == "*":
-            occ_2 = ""
-        if occ_3 == "*":
-            occ_3 = ""
-        if occ_1:
-            occ_1_key = occ_1.removesuffix("-EX").removesuffix("-WI")
-            labels = self.isco[occ_1_key]["Name_de"].split(" | ")
-            occ_1_male = labels[0]
-            occ_1_female = labels[1] if len(labels) > 1 else labels[0]
-        if occ_2:
-            occ_2_key = occ_2.removesuffix("-EX").removesuffix("-WI")
-            labels = self.isco[occ_2_key]["Name_de"].split(" | ")
-            occ_2_male = labels[0]
-            occ_2_female = labels[1] if len(labels) > 1 else labels[0]
-        if occ_3:
-            occ_3_key = occ_3.removesuffix("-EX").removesuffix("-WI")
-            labels = self.isco[occ_3_key]["Name_de"].split(" | ")
-            occ_3_male = labels[0]
-            occ_3_female = labels[1] if len(labels) > 1 else labels[0]
+
+        gender = self._infer_gender(entry)
+        occupations = [
+            self._normalize_occupation(entry["Beruf"], gender),
+            self._normalize_occupation(entry["Beruf 2"], gender),
+            self._normalize_occupation(entry["Beruf 3"], gender),
+        ]
         pos_x, pos_y, pos_w, pos_h = "", "", "", ""
         if pos := entry["ID"]:
             [pos_x, pos_y, pos_w, pos_h] = [str(int(n.strip())) for n in pos.split(",")]
         return {
             "Name": self._normalize_name(entry["Name"]),
             "Vorname": entry["Vorname"],
+            "Geschlecht": gender,
             "Ledigname": self._normalize_name(entry["Ledigname"]),
             "Adelsname": self._normalize_nobility_name(entry["Adelsname"]),
             "Titel": self._normalize_title(entry["Titel"]),
@@ -370,15 +351,12 @@ class Validator:
             "Adresse 2": addr_2,
             "Adresse 3": addr_3,
             "Arbeitsort": entry["Arbeitsort"],
-            "Beruf 1 (CH-ISCO-19)": occ_1,
-            "Beruf 1 (CH-ISCO-19, männliche Bezeichnung)": occ_1_male,
-            "Beruf 1 (CH-ISCO-19, weibliche Bezeichnung)": occ_1_female,
-            "Beruf 2 (CH-ISCO-19)": occ_2,
-            "Beruf 2 (CH-ISCO-19, männliche Bezeichnung)": occ_2_male,
-            "Beruf 2 (CH-ISCO-19, weibliche Bezeichnung)": occ_2_female,
-            "Beruf 3 (CH-ISCO-19)": occ_3,
-            "Beruf 3 (CH-ISCO-19, männliche Bezeichnung)": occ_3_male,
-            "Beruf 3 (CH-ISCO-19, weibliche Bezeichnung)": occ_3_female,
+            "Beruf 1 (bereinigt)": occupations[0][0],
+            "Beruf 1 (CH-ISCO-19)": occupations[0][1],
+            "Beruf 2 (bereinigt)": occupations[1][0],
+            "Beruf 2 (CH-ISCO-19)": occupations[1][1],
+            "Beruf 3 (bereinigt)": occupations[2][0],
+            "Beruf 3 (CH-ISCO-19)": occupations[2][1],
             "Name (Rohtext)": entry["Name"],
             "Vorname (Rohtext)": entry["Vorname"],
             "Ledigname (Rohtext)": entry["Ledigname"],
@@ -409,7 +387,6 @@ class Validator:
             [pos_x, pos_y, pos_w, pos_h] = [str(int(n.strip())) for n in pos.split(",")]
         scan = self.pages[entry["Scan"]]
         date = scan["Date"]
-
         _, addr_1 = self._normalize_address(entry["Adresse"])
         _, addr_2 = self._normalize_address(entry["Adresse 2"])
         _, addr_3 = self._normalize_address(entry["Adresse 3"])
@@ -469,6 +446,29 @@ class Validator:
             "Position (Höhe)": pos_h,
         }
 
+    def _infer_gender(self, entry):
+        genders = set()
+        if g := self.titles.get(entry["Titel"], {}).get("Gender"):
+            genders.add(g)
+        for key in ("Vorname",):  # keep in sync with validate_given_names()
+            for name in entry[key].split():
+                if g := self.given_names.get(name, {}).get("Gender", ""):
+                    genders.add(g)
+        for key in ("Beruf", "Beruf 2", "Beruf 3"):
+            occ_label = entry["Beruf"]
+            if occ := self.occupations.get(occ_label, {}):
+                code = occ["CH-ISCO-19"]
+                labels = self.isco.get(code, {}).get("Name_de", "").split(" | ")
+                if len(labels) == 2 and labels[0] != labels[1]:
+                    if occ_label == labels[0]:
+                        genders.add("M")
+                    elif occ_label == labels[1]:
+                        genders.add("F")
+                if code.endswith("-WI"):
+                    genders.add("F")  # "Witwe" = Widow
+                
+        return genders.pop() if len(genders) == 1 else ""
+
     def _normalize_name(self, name):
         return self._re_von.sub("von", name)
 
@@ -491,6 +491,35 @@ class Validator:
             return entry["Adelsname (bereinigt)"]
         else:
             return name
+
+    def _normalize_occupation(self, occupation, gender):
+        occ = self.occupations.get(occupation, {})
+        code = occ.get("CH-ISCO-19", "")
+        if code == "*" or code == "":
+            return "", ""
+        isco_code = code.removesuffix("-EX").removesuffix("-WI")
+        labels = self.isco[isco_code]["Name_de"].split(" | ")
+        male_label = labels[0]
+        female_label = labels[1] if len(labels) > 1 else male_label
+        is_former = code.endswith("-EX")
+        if code.endswith("-WI"):
+            return male_label + "-Witwe", code
+
+        if gender == "M":
+            prefix = "ehemaliger " if is_former else ""
+            return prefix + male_label, code
+
+        if gender == "F":
+            prefix = "ehemalige " if is_former else ""
+            return prefix + female_label, code
+
+        prefix = "ehemalige:r " if is_former else ""
+        if male_label == female_label:
+            return prefix + female_label, code
+        elif female_label.endswith("in"):
+            return prefix + female_label[:-2] + ":in", code
+        else:
+            return prefix + f"{male_label} / {female_label}", code
 
     def _normalize_title(self, title):
         if t := self.titles.get(title):
