@@ -178,7 +178,7 @@ class Validator:
         assert all(key in self.columns for key in entry.keys()), entry
         bad = set()
         bad.update(self.validate_name(entry, pos))
-        _given_names_gender, bad_given_name_columns = self.validate_given_names(entry, pos)
+        given_names_gender, bad_given_name_columns = self.validate_given_names(entry, pos)
         bad.update(bad_given_name_columns)
         bad.update(self.validate_addresses(entry, pos))
         if self.is_company(entry):
@@ -196,8 +196,12 @@ class Validator:
                     message = '%s "%s" not a known family name' % (p, name)
                     self.warn(message, entry, pos)
                     bad.add(p)
-        bad.update(self.validate_title(entry, pos))
+        title_gender, bad_title_columns = self._validate_title(entry, pos)
+        bad.update(bad_title_columns)
         bad.update(self.validate_occupations(entry, pos))
+        genders = set(g for g in (title_gender, given_names_gender) if g)
+        if len(genders) > 1:
+            self.warn('inconsistent gender between title and given name', entry, pos)
         return bad
 
     def validate_name(self, entry, pos):
@@ -299,12 +303,14 @@ class Validator:
                     self._missing_occupations.add(occ)
         return bad
 
-    def validate_title(self, entry, pos):
+    def _validate_title(self, entry, pos):
         title = entry["Titel"]
-        if title == "" or title in self.titles:
-            return set()
+        if title == "":
+            return "", set()
+        if t := self.titles.get(title):
+            return t["Gender"], set()
         self.warn('unknown title "%s"' % title, entry, pos)
-        return {"Titel"}
+        return "", {"Titel"}
 
     def normalize_person(self, entry):
         assert not self.is_company(entry)
