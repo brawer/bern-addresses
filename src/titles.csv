@@ -1,102 +1,120 @@
-Title,Normalized
-älter,älter
-Baron,Baron
-Cand. jur.,Candidatus juris
-Chef,Chef
-Chevalier,Chevalier
-chirurg.,chirurgisch.
-dent.,dentariae
-der ältere,der ältere
-d. gew. Pfarr. Sohn u. Töchter,des gewesenen Pfarrers Sohn und Töchter
-dipl.,diplomiert.
-diplom.,diplomiert.
-Doktor der Rechten,Doktor der Rechte
-Dr,Doktor
-Dr.,Doktor
-Dr. jur.,Doctor juris
-Dr. J.,Doctor juris
-Dr. M.,Doctor medicinae
-Dr. Med.,Doctor medicinae
-Dr. Prof.,Doktor Professor
-elektr.,elektrisch
-Erben,Erben
-Erbschaft,Erbschaft
-Frau Doktor,Frau Doktor
-Frauen,Frauen
-Frau,Frau
-Frau Wittwe,Frau Witwe
-Frau Wwe.,Frau Witwe
-Fräulein,Fräulein
-Fräul.,Fräulein
-Frau Oberst,Frau Oberst
-Frau Oberst.,Frau Oberst
-Frau Pfarr. u. Töchtern,Frau des Pfarrers und Töchter
-Frau u. Tochter,Frau und Tochter
-Frau u. Tocht.,Frau und Tochter
-Frl.,Fräulein
-Frln.,Fräulein
-Gebr.,Gebrüder
-Gebrüder,Gebrüder
-Geschw.,Geschwister
-Geschwister,Geschwister
-graph.,graphisch
-Herren,Herren
-Hrn.,Herrn
-Jgf.,Jungfer
-Jgfr.,Jungfer
-Jgfrn.,Jungfern
-jgr.,Jungfer
-jünger,jünger
-Jungfer,Jungfer
-Jungfern,Jungfern
-jun.,Junior
-jur.,juris
-kaufm,kaufmännisch.
-kaufm.,kaufmännisch.
-kfm.,kaufmännisch.
-Madame,Madame
-mechan.,mechanisch
-mech.,mechanisch
-med.,medicinae
-Med.,medicinae
-Miß,Miß
-Nachf.,Nachfolger
-phil.,philosophiae
-pol.,politicarum
-prakt.,praktizierend
-Professor,Professor
-Prof. Dr. Med.,Professor Doctor Medicinae
-Professor und Doktor der Rechte,Professor und Doktor der Rechte
-rer.,rerum
-Ritter,Ritter
-Schw.,Schwester/n
-Schwestern,Schwestern
-Schwestern.,Schwestern
-Schwester,Schwester
-Schwest.,Schwester
-Söhne,Söhne
-Sohn,Sohn
-stud.,studiosus
-techn.,technisch
-Techn.,Technisch.
-theol.,theologie
-Töchtern,Töchter
-Töchter,Töchter
-Töcht.,Töchter
-"Vater, Med. Dr.","Vater, Med. Dr."
-Vater,Vater
-Vat.,Vater
-vet.,veterinarius
-Vicomte,Vicomte
-Vt.,Vater
-We.,Witwe
-Wittwe,Witwe
-Wittwe.,Witwe
-Witwe,Witwe
-Wiw.,Witwe
-Wttw.,Witwe
-Wtw. und Sohn,Witwe und Sohn
-Wtw.,Witwe
-Wwe,Witwe
-Wwe.,Witwe
-Ww.,Witwe
+Title,Gender,Normalized
+älter,,älter
+Baron,M,Baron
+Cand. jur.,,Candidatus juris
+Chef,M,Chef
+Chevalier,M,Chevalier
+chirurg.,,chirurgisch.
+dent.,,dentariae
+der ältere,M,der ältere
+d. gew. Pfarr. Sohn u. Töchter,,des gewesenen Pfarrers Sohn und Töchter
+dipl.,,diplomiert.
+diplom.,,diplomiert.
+Doktor der Rechten,,Doktor der Rechte
+Dr,,Doktor
+Dr.,,Doktor
+Dr. jur.,,Doctor juris
+Dr. med.,,Doctor medicinae
+Dr. J.,,Doctor juris
+Dr. M.,,Doctor medicinae
+Dr. Med.,,Doctor medicinae
+Dr. Prof.,,Doktor Professor
+Dr. Professor,,
+Dr. phil.,,Doctor philosophiae
+Dr. theol.,,Doctor theologiae
+elektr.,,elektrisch
+Erben,,Erben
+Erbschaft,,Erbschaft
+Frau Doktor,F,Frau Doktor
+Frauen,F,Frauen
+Frau,F,Frau
+Frau Dr.,F,Frau Doktor
+Frau Wittwe,F,Frau Witwe
+Frau Wwe.,F,Frau Witwe
+Fräulein,F,Fräulein
+Fräul.,F,Fräulein
+Frau Oberst,F,Frau Oberst
+Frau Oberst.,F,Frau Oberst
+Frau Pfarr. u. Töchtern,F,Frau Pfarrer und Töchter
+Frau Pfr.,F,Frau Pfarrer
+Frau Pfarrer,F,Frau Pfarrer
+Frau Prof.,F,Frau Professor
+Frau u. Fräul.,F,Frau und Fräulein
+Frau u. Tochter,F,Frau und Tochter
+Frau u. Tocht.,F,Frau und Tochter
+Frl.,F,Fräulein
+Frln.,F,Fräulein
+Gebr.,M,Gebrüder
+Gebrüd.,M,Gebrüder
+Gebrüder,M,Gebrüder
+Geschw.,,Geschwister
+Geschwister,,Geschwister
+graph.,,graphisch
+Herren,M,Herren
+Hrn.,M,Herrn
+Jgf.,F,Jungfer
+Jgfr.,F,Jungfer
+Jgfrn.,F,Jungfern
+jgr.,F,Jungfer
+jünger,,jünger
+Jungfer,F,Jungfer
+Jungfern,F,Jungfern
+jun.,,Junior
+jur.,,juris
+kaufm,,kaufmännisch.
+kaufm.,,kaufmännisch.
+kfm.,,kaufmännisch.
+Madame,F,Madame
+Mag.,,Magister
+mechan.,,mechanisch
+mech.,,mechanisch
+med.,,medicinae
+Med.,,medicinae
+Miß,F,Miß
+Nachf.,,Nachfolger
+phil.,,philosophiae
+pol.,,politicarum
+prakt.,,praktizierend
+Prof.,M,Professor
+Professor,M,Professor
+Prof. Dr.,M,Professor Doktor
+Professor Dr.,M,Professor Doktor
+Prof. Dr. Med.,M,Professor Doctor Medicinae
+Professor und Doktor der Rechte,M,Professor und Doktor der Rechte
+rer.,,rerum
+Ritter,M,Ritter
+Schw.,F,Schwester/n
+Schwestern,F,Schwestern
+Schwestern.,F,Schwestern
+Schwester,F,Schwester
+Schwest.,F,Schwester
+Söhne,M,Söhne
+Sohn,M,Sohn
+stud.,,studiosus
+techn.,,technisch
+Techn.,,Technisch.
+theol.,,theologie
+Töchtern,F,Töchter
+Töchter,F,Töchter
+Töcht.,F,Töchter
+"Vater, Med. Dr.",M,"Vater, Med. Dr."
+Vater,M,Vater
+Vat.,M,Vater
+vet.,,veterinarius
+Vicomte,M,Vicomte
+Vt.,M,Vater
+We.,F,Witwe
+Wittwe,F,Witwe
+Wittwe.,F,Witwe
+Witwe,F,Witwe
+Wittwe u. Fräul.,F,Witwe und Fräulein
+Wittwe u. Sohn,,Witwe und Sohn
+Wiw.,F,Witwe
+Wttw.,F,Witwe
+Wtw. und Sohn,,Witwe und Sohn
+Wtw.,F,Witwe
+Wwe,F,Witwe
+Wwe.,F,Witwe
+Wwe. u. Sohn,,Witwe und Sohn
+Wwe. und Tochter,Witwe und Tochter
+Ww.,F,Witwe
