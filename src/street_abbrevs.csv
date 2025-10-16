@@ -8,6 +8,7 @@ Aarberggaße,Aarbergergasse
 Aarbergg.,Aarbergergasse
 Aarbg.,Aarbergergasse
 Aarbgg.,Aarbergergasse
+Aarbrgrg.,Aarbergergasse
 Aarestrasse,Aarstrasse
 Aargauerstald.,Aargauerstalden
 Aargst.,Aargauerstalden
@@ -27,6 +28,7 @@ a. Bollwerk,Äußeres Bollwerk
 Aebistr.,Aebistrasse
 Aegertenstr.,Aegertenstrasse
 Aeusseres Bollwerk,Äußeres Bollwerk
+Aeuß. Bollwerk,Äußeres Bollwerk
 Ag.,Aarbergergasse
 a. Holzm.,Alter Holzmarkt
 Allmendstr.,Allmendstrasse
@@ -51,6 +53,7 @@ alt. Viehmarkt,Alter Viehmarkt
 Amthausg.,Amthausgasse
 Amthausgässchen,Amthausgasse
 Amthausgchn.,Amthausgässchen
+Amthg.,Amthausgasse
 Amthsg.,Amthausgasse
 Anatg.,Anatomiegäßchen
 Anatomg.,Anatomiegäßchen
@@ -77,6 +80,7 @@ auf dem Falkenplätzlein,Falkenplätzli
 Az.,Aarziele
 Badg.,Badgasse
 Badl.,Badlaube
+Badlb.,Badlaube
 Bahnhofpl.,Bahnhofplatz
 Bahnstr.,Bahnstrasse
 Bantigerstr.,Bantigerstrasse
@@ -161,6 +165,7 @@ Buchdrukkerweg,Buchdruckerweg
 Bühlstr.,Bühlstrasse
 Bümplizstr.,Bümplizstrasse
 Bundesg.,Bundesgasse
+Bundsg.,Bundesgasse
 Burgunderstr.,Burgunderstrasse
 Burkhardtweg,Burkhartweg
 Burkhardweg,Burkhartweg
@@ -171,6 +176,11 @@ B. Zeitglockenth.,Beim Zeitglockenthurm
 Cäcilienstr.,Cäcilienstrasse
 Casinopl.,Casinoplatz
 Centralw.,Centralweg
+Christg.,Christoffelgasse
+Christffg.,Christoffelgasse
+Christfflg.,Christoffelgasse
+Christoffg.,Christoffelgasse
+Chrstffg.,Christoffelgasse
 Christoffelg.,Christoffelgasse
 Christoffelpl.,Christoffelplatz
 Chrstfflg.,Christoffelgasse
@@ -244,10 +254,12 @@ Gerberngr.,Gerberngraben
 Gerbernl.,Gerbernlaube
 Gerbg.,Gerberngraben
 Gerbgr.,Gerberngraben
+Grbrngr.,Gerberngraben
 Gerbl.,Gerbernlaube
 Gerchg.,Gerechtigkeitsgasse
 Gerchtg.,Gerechtigkeitsgasse
 Gerechg.,Gerechtigkeitsgasse
+Gerechtsg.,Gerechtigkeitsgasse
 Gerechtg.,Gerechtigkeitsgasse
 Gerechtgkg.,Gerechtigkeitsgasse
 Gerechtig.,Gerechtigkeitsgasse
@@ -264,12 +276,14 @@ Gerwerngraben,Gerberngraben
 Gerwernlaube,Gerbernlaube
 Gesellschaftsstr.,Gesellschaftsstrasse
 Gesellschaftstrasse,Gesellschaftsstrasse
+Gesellschaftstr.,Gesellschaftsstrasse
 Gewerbestr.,Gewerbestrasse
 Gotthelfstr.,Gotthelfstrasse
 Gottl.-Kuhnweg,Gottlieb-Kuhnweg
 Gottl.Kuhnweg,Gottlieb-Kuhnweg
 Graben-Prom.,Grabenpromenade
 Graffenriedw.,Graffenriedweg
+Gr. Schanze,Grosse Schanze
 Grbg.,Gerberngraben
 Grcbtg.,Gerechtigkeitsgasse
 Grcg.,Gerechtigkeitsgasse
@@ -286,10 +300,13 @@ Grossackerstr.,Grossackerstrasse
 Grypenhübeliweg,Gryphenhübeliweg
 Gryphenhübeliw.,Gryphenhübeliweg
 G’schaftsstr.,Gesellschaftsstrasse
+Grtng. 232,Gurtengasse
+Gurtg.,Gurtengasse
 Gurteng.,Gurtengasse
 Gutenbergstr.,Gutenbergstrasse
 Güterstr.,Güterstrasse
 Habsburgstr.,Habsburgstrasse
+Hallerst.,Hallerstrasse
 Hallerstr.,Hallerstrasse
 Hallwylstr.,Hallwylstrasse
 Haspg.,Haspelgasse
@@ -311,7 +328,10 @@ Herrng.,Herrengasse
 Herzogstr.,Herzogstrasse
 Hg.,Herrengasse
 hinter den Speichern,Hinter den Speichern
+Hirscheng.,Hirschengraben
 Hirschengr.,Hirschengraben
+Hirschngr.,Hirschengraben
+Hirschgr.,Hirschengraben
 Hllg.,Holligen
 Hllig.,Holligen
 Hlzm.,Holzmarkt
@@ -334,6 +354,7 @@ Hotll.,Hotellaube
 Hrch.-Wildstrasse,Heinrich-Wildstrasse
 Hrg.,Herrengasse
 Hrng.,Herrengasse
+Hrrng.,Herrengasse
 Htl.,Hotellaube
 Htll.,Hotellaube
 Hubelmattstr.,Hubelmattstrasse
@@ -346,6 +367,7 @@ in. Bollwerk,Inneres Bollwerk
 in. Bollw.,Inneres Bollwerk
 In der Enge,Enge
 in der Schoßhalden,Schosshalde
+Inn. Bollwerk,Inneres Bollwerk
 Inselg.,Inselgasse
 Inselgaße,Inselgasse
 Insg.,Inselgasse
@@ -353,6 +375,8 @@ ir Längg.,Länggasse
 Jdg.,Judengasse
 Jkg,Junkerngasse
 Jkg.,Junkerngasse
+Jkrg.,Junkerngasse
+Jkrng.,Junkerngasse
 Jnkg.,Junkerngasse
 Jubiläumsstr.,Jubiläumsstrasse
 Jubiläumstrasse,Jubiläumsstrasse
@@ -366,14 +390,15 @@ Junkerngaße,Junkerngasse
 Junkg.,Junkerngasse
 Jurastr.,Jurastrasse
 Kädereggenweg,Kädereckenweg
-Käfg.,Käfichgäßlein
-Käfichgässchen,Käfichgäßlein
-Käfichgäßchen,Käfichgäßlein
-Käfichgäßch.,Käfichgäßlein
-Käfichgässlein,Käfichgäßlein
-Käfichg.,Käfichgäßlein
-Käfigg.,Käfichgäßlein
-Käfig.,Käfichgäßlein
+Käfg.,Käfichgässlein
+Käfichgässchen,Käfichgässlein
+Käfichgäßchen,Käfichgässlein
+Käfichgäßch.,Käfichgässlein
+Käfichgässlein,Käfichgässlein
+Käfichg.,Käfichgässlein
+Käfigg.,Käfichgässlein
+Käfig.,Käfichgässlein
+Käfchg.,Käfichgässlein
 Kalcheckweg,Kalcheggweg
 Kapellenstr.,Kapellenstrasse
 KarlHiltystrasse,Karl-Hiltystrasse
@@ -384,23 +409,25 @@ KarlSpittelerstrasse,Spittelerstrasse
 KarlStaufferstrasse,Karl-Staufferstrasse
 Karl-Staufferstr.,Karl-Staufferstrasse
 Kasernenstr.,Kasernenstrasse
+Kasinopl.,Kasinoplatz
 Kasthoferstr.,Kasthoferstrasse
 Kchg.,Kirchgasse
-Kefichgäßlein,Käfichgäßlein
+Kefichgäßlein,Käfichgässlein
 Kehrg.,Kehrgasse
 Keltenstr.,Keltenstrasse
-Keßg.,Keßlergasse
-Keßlergaße,Keßlergasse
-Kesslergasse,Keßlergasse
-Keßlergasse,Keßlergasse
-Kesslerg.,Keßlergasse
-Keßlerg.,Keßlergasse
-Kesslg.,Keßlergasse
-Keßlg.,Keßlergasse
-Kfchg.,Käfichgäßlein
-Kfg.,Käfichgäßlein
-Kfichg.,Käfichgäßlein
-Kfig.,Käfichgäßlein
+Keßg.,Kesslergasse
+Keßlergaße,Kesslergasse
+Kesslergasse,Kesslergasse
+Keßlergasse,Kesslergasse
+Kesslerg.,Kesslergasse
+Keßlerg.,Kesslergasse
+Kesslg.,Kesslergasse
+Keßlg.,Kesslergasse
+Kfchg.,Käfichgässlein
+Kächfichg.,Käfichgässlein
+Kfg.,Käfichgässlein
+Kfichg.,Käfichgässlein
+Kfig.,Käfichgässlein
 Kilg.,Kirchgasse
 Kirchbergerstr.,Kirchbergerstrasse
 Kirchenfeldstr.,Kirchenfeldstrasse
@@ -408,6 +435,7 @@ Kirchenf.,Kirchenfeldstrasse
 Kirchgaß,Kirchgasse
 Kirchgaße,Kirchgasse
 Kirchg.,Kirchgasse
+Kirchpl.,Kirchplatz
 Klapperl.,Klapperläubli
 Klapplb.,Klapperläubli
 Klappl.,Klapperläubli
@@ -435,8 +463,11 @@ Krippenstr.,Krippenstrasse
 Krmg.,Kramgasse
 Krnhpl.,Kornhausplatz
 Krzg.,Kreuzgasse
-Kßg.,Keßlergasse
-Kßlg.,Keßlergasse
+Kshpl.,Kornhausplatz
+Ksslg.,Kesslergasse
+Kßg.,Kesslergasse
+Kßlg.,Kesslergasse
+Kßlr.,Kesslergasse
 Kursaalstr.,Kursaalstrasse
 Kyburgstr.,Kyburgstrasse
 Ladenwandstr.,Ladenwandstrasse
@@ -444,7 +475,9 @@ Lagerw.,Lagerweg
 Landoltstr.,Landoltstrasse
 Langgaße,Länggasse
 Langgaß-Drittel,Länggasse
+Länggassdrittel,Länggasse
 Längassstrasse,Länggassstrasse
+Länggassdr.,Länggasse
 Länggass-Drittel,Länggasse
 Länggass,Länggasse
 Länggaß,Länggasse
@@ -461,6 +494,7 @@ Längm.,Längmauer
 Laubeckstr.,Laubeckstrasse
 Laubeggstr.,Laubeggstrasse
 Läuferpl.,Läuferplatz
+Laupenst.,Laupenstrasse
 Laupenstr.,Laupenstrasse
 Lentulusstr.,Lentulusstrasse
 Lgg.,Länggasse
@@ -474,6 +508,7 @@ Lorraine-Strasse,Lorrainestrasse
 Lorrainestr.,Lorrainestrasse
 Lorrainstrasse,Lorrainestrasse
 Lorr.,Lorraine
+Lorrnhf.,Lorrainehof
 Ludw.-Forrerstrasse,Ludwig-Forrerstrasse
 LudwigForrerstrasse,Ludwig-Forrerstrasse
 Luisenstr.,Luisenstrasse
@@ -521,6 +556,7 @@ Mtt.,Matte
 Mtzg.,Metzgergasse
 Muesmattstr.,Muesmattstrasse
 Muesm.,Muesmatte
+Mueßmatt,Muesmatte
 Mühlemattstr.,Mühlemattstrasse
 Mühlenpl.,Mühlenplatz
 Muldenstr.,Muldenstrasse
@@ -530,8 +566,10 @@ Müllerl.,Müllerlaube
 Mülll.,Müllerlaube
 Münsterpl.,Münsterplatz
 Münsterplz.,Münsterplatz
+Münstrpl.,Münsterplatz
 Münzgr.,Münzgraben
 Murifeldw.,Murifeldweg
+Muristald.,Muristalden
 Muristr.,Muristrasse
 Murtenstr.,Murtenstrasse
 Museumsstrasse,Museumstrasse
