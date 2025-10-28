@@ -92,7 +92,7 @@ class Validator:
         self.titles = self.read_csv("titles.csv", "Title")
         self.occupations = self.read_csv("occupations.csv", "Occupation")
         self.economic_activities = self.read_csv("economic_activities.csv", "Branche")
-        self.isco = self.read_csv("HCL_CH_ISCO_19_PROF_1_2_1_level_6.csv", "Code")
+        self.isco = self.read_csv("HCL_CH_ISCO_19_PROF_1_2_2_level_6.csv", "Code")
         self.noga = self.read_csv("HCL_NOGA_level_5.csv", "Code")
         self.pois = self.read_csv("pois.csv", "PointOfInterest")
         self.street_abbrevs = self.read_csv("street_abbrevs.csv", "Abbreviation")
