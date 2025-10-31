@@ -14,6 +14,7 @@ from validator import Validator
 
 
 PEOPLE_FIELDS = [
+    "ID",
     "Name",
     "Vorname",
     "Geschlecht",
@@ -55,6 +56,7 @@ PEOPLE_FIELDS = [
 
 
 COMPANY_FIELDS = [
+    "ID",
     "Name",
     "Adresse 1",
     "Adresse 2",
