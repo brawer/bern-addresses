@@ -14,6 +14,7 @@ import re
 COLUMNS = [
     "ID",
     "Scan",
+    "Position",
     "Name",
     "Vorname",
     "Ledigname",
@@ -56,10 +57,12 @@ COLUMNS = [
 # The following keys are recognized in the dictionary passed to validate(),
 # normalize_person() and normalize_company().
 #
+# * "ID": A unique string ID for the entry, such as "BAE-472".
+#
 # * "Scan": An e-rara.ch page ID, such as "1395972" for the scanned page
 #   at https://www.e-rara.ch/bes_1/periodical/pageview/1395972
 #
-# * "ID": Pixel position on that page as string "x,y,width,height",
+# * "Position": Pixel position on that page as string "x,y,width,height",
 #   which uniquely identifies the record on the page.
 #
 # * "Name": Family or company name, such as
@@ -112,6 +115,7 @@ class Validator:
             assert code in self.isco, "code %s not in CH-ISCO-19 codelist" % code
         self._occupation_counts = Counter()
         self._num_warnings = 0
+        self._seen_ids = set()
         self._missing_family_names = set()
         self._missing_given_names = set()
         self._missing_occupations = set()
@@ -177,6 +181,7 @@ class Validator:
     def validate(self, entry, pos):
         assert all(key in self.columns for key in entry.keys()), entry
         bad = set()
+        bad.update(self._validate_id(entry, pos))
         bad.update(self.validate_name(entry, pos))
         given_names_gender, bad_given_name_columns = self.validate_given_names(entry, pos)
         bad.update(bad_given_name_columns)
@@ -303,6 +308,18 @@ class Validator:
                     self._missing_occupations.add(occ)
         return bad
 
+    def _validate_id(self, entry, pos):
+        m = re.match(r"^BAE-([0-9]+)$", entry["ID"])
+        if not m:
+            self.warn('bad ID "%s"' % entry["ID"], entry, pos)
+            return set("ID")
+        entry_id = int(m.group(1))
+        if entry_id in self._seen_ids:
+            self.warn('bad ID "%s"' % entry["ID"], entry, pos)
+            return set("ID")
+        self._seen_ids.add(entry_id)
+        return set()
+
     def _validate_title(self, entry, pos):
         title = entry["Titel"]
         if title == "":
@@ -338,9 +355,10 @@ class Validator:
             self._normalize_occupation(entry["Beruf 3"], gender),
         ]
         pos_x, pos_y, pos_w, pos_h = "", "", "", ""
-        if pos := entry["ID"]:
+        if pos := entry["Position"]:
             [pos_x, pos_y, pos_w, pos_h] = [str(int(n.strip())) for n in pos.split(",")]
         return {
+            "ID": entry["ID"],
             "Name": self._normalize_name(entry["Name"]),
             "Vorname": entry["Vorname"],
             "Geschlecht": gender,
@@ -383,7 +401,7 @@ class Validator:
     def normalize_company(self, entry):
         assert self.is_company(entry)
         pos_x, pos_y, pos_w, pos_h = "", "", "", ""
-        if pos := entry["ID"]:
+        if pos := entry["Position"]:
             [pos_x, pos_y, pos_w, pos_h] = [str(int(n.strip())) for n in pos.split(",")]
         scan = self.pages[entry["Scan"]]
         date = scan["Date"]
@@ -417,6 +435,7 @@ class Validator:
             noga_code_3 = activity_3["NOGA-Code"]
             noga_label_3 = self.noga[noga_code_2]["Name_de"]
         return {
+            "ID": entry["ID"],
             "Name": self._normalize_company_name(entry["Name"]),
             "Adresse 1": addr_1,
             "Adresse 2": addr_2,
