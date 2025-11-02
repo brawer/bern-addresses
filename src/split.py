@@ -46,6 +46,7 @@ def is_valid_address(addr, validator):
 
 
 def split(vol, validator):
+    columns = [col for col in COLUMNS if col != "ID"]
     outpath = os.path.basename(vol).split(".")[0] + ".zip"
     zip_file = zipfile.ZipFile(outpath, "w")
     font = openpyxl.styles.Font(name="Calibri")
@@ -107,7 +108,7 @@ def split(vol, validator):
 
         entry = {
             "Scan": str(page_id),
-            "ID": pos,
+            "Position": pos,
             "Name": name,
             "Vorname": givenname,
             "Ledigname": maidenname,
@@ -136,8 +137,7 @@ def split(vol, validator):
         bad = validator.validate(entry, input_pos)
         if other:
             bad.add("nicht zuweisbar")
-
-        for column_index, column in enumerate(COLUMNS):
+        for column_index, column in enumerate(columns):
             cell = sheet.cell(row, column_index + 1)
             cell.value = entry[column]
             cell.font = font
@@ -273,7 +273,7 @@ def create_sheet(workbook, page_id, page_num):
     cell.font = font
     cell.fill = gray_fill
     sheet.merge_cells("A1:J1")
-    for i, col in enumerate(COLUMNS):
+    for i, col in enumerate([c for c in COLUMNS if c != "ID"]):
         cell = sheet.cell(2, i + 1)
         cell.value = col
         cell.font = font
