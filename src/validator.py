@@ -181,7 +181,8 @@ class Validator:
     def validate(self, entry, pos):
         assert all(key in self.columns for key in entry.keys()), entry
         bad = set()
-        bad.update(self._validate_id(entry, pos))
+        if "ID" in entry:
+            bad.update(self._validate_id(entry, pos))
         bad.update(self.validate_name(entry, pos))
         given_names_gender, bad_given_name_columns = self.validate_given_names(entry, pos)
         bad.update(bad_given_name_columns)
