@@ -8,16 +8,17 @@
 
 import argparse
 import csv
-import sys
+import io
 
 def process(path):
-    out = csv.writer(sys.stdout)
+    stream = io.StringIO(newline='')
+    out = csv.writer(stream)
     with open(path, "r", encoding="utf-8") as fp:
         for row in csv.reader(fp, delimiter=";"):
-            row = [c.removeprefix("\uFEFF") for c in row]
+            row = [c.removeprefix("\uFEFF").strip() for c in row]
             out.writerow(row)
+    print(stream.getvalue().replace('\r\n', '\n').rstrip())
 
-        
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
     ap.add_argument("input.csv")
