@@ -111,8 +111,8 @@ Bär H., Museumwirth, Marktgasse 66.  # 253,2023,635,54;352,2078,170,37
 Bardy, Architekt, Kramg. 209, Bureau Hottell, 232  # 253,2118,631,54;355,2169,424,47
 Bäriswyl J., Lederhändl., Judengasse 120  # 255,2210,631,57;354,2266,267,40
 Bart J. F., Lehrer, Matte 19  # 255,2315,609,46
-Negot., Matte Gerberl. 20  # 342,2364,547,44
-Insiruft., Aarberg. 58  # 343,2411,473,47
+- Negot., Matte Gerberl. 20  # 342,2364,547,44
+- Insiruft., Aarberg. 58  # 343,2411,473,47
 Bärtschi Chr., Schreiner, Altenberg 158 a  # 897,338,657,50;1017,391,280,39
 Basler E., Schneid., Spitalgasse 140  # 924,432,630,57;1020,488,193,39
 Bassy gb. Gobert, Mod. u. Lingère, Gerechtigkeitsg. 104  # 925,534,631,48;1023,582,537,50
@@ -132,7 +132,7 @@ Baumgartner N., Hafn., Matte  # 933,1591,631,57
 - G., Drechsler, Käfichg. 105  # 1018,1692,543,48
 - geb. Hirsbrunner, Trödl., Neuengasse 116  # 1018,1742,542,45;1030,1789,312,43
 - Friedr., Gyps., Langm. 20 a  # 994,1837,568,47
-Schneider, Gerberngr. 141  # 1020,1881,543,53
+- Schneider, Gerberngr. 141  # 1020,1881,543,53
 - Elise, Strohhutpugerin, Gerberngraben 141  # 1029,1927,531,57;1031,1981,395,45
 Bauer F., Metzger, Metzg. 95  # 935,2028,628,54
 Baur G., Abw. im Milit.-Spt., Zeughausgasse 2  # 936,2077,628,48;1032,2127,343,47
@@ -156,8 +156,7 @@ Becker, J. S., Kinderspielwaarenh., Kramg. 195  # 389,1043,635,38;487,1092,465,4
 - Fr., Sackzeich., Aarbg. 42  # 476,1185,550,46
 Beer J., Zahnarzt, Aarbg. 49  # 390,1237,611,43
 - geb. Anliker, Kostgeberin, Holligen 52  # 481,1283,544,44;488,1337,252,40
-Beff J., Vater, Schrifts. u  # 391,1383,637,37
-Negot., Keßlerg. 277  # 492,1430,452,40
+Beff J., Vater, Schrifts. u Negot., Keßlerg. 277  # 492,1430,452,40
 - geb. Siebenmann, Strickwolle- u. selbstverf. Arbeitenverkauf, Keßlergasse 277  # 481,1480,553,35;495,1530,541,35;492,1578,543,41
 - Elise, Schneiderin, KeßLergasse Nr. 277.  # 485,1619,550,48;495,1675,354,38
 - Julie, Mod., Keßlerg. 277  # 489,1721,549,43
@@ -178,8 +177,7 @@ Benteli, älter, Metzger, Metzgergasse 94  # 1048,355,669,38;1166,399,235,39
 - Karol., Lehrerin, Prg. 173  # 1162,788,551,41
 - W., Kunstmaler, rg. 184  # 1163,837,551,42
 - geb. Meyer, E., Bettmach., Kramg. 141  # 1130,886,583,42;1168,935,254,39
-Benz Chr., Schweinmeßger u. —  # 1071,982,642,43;1096,813,23,3
-Speisewirth, Keßlg. 241  # 1172,1032,504,42
+Benz Chr., Schweinmeßger u. —Speisewirth, Keßlg. 241  # 1172,1032,504,42
 Berchenmeyer H. J., Sattler, Neuengasse 104  # 1073,1077,642,45;1174,1133,322,40
 Berchten, J., Instrk., Postg. 27  # 1074,1177,645,45
 Berseth J., Rent., Schoßh. 43 a  # 1076,1228,642,36
@@ -190,7 +188,7 @@ Berger Chr.,II. Sekr., a. d. eidg. Militärdep., Brunng. 38  # 1078,1324,638,43;
 - S., Schreiner, Aarberg. 70  # 1174,1568,551,44
 - J. R., gew. Kohlenhändl., Langmauer 227  # 1168,1613,553,48;1182,1669,328,34
 - Chr., Speisew., Matte 95  # 1172,1716,561,33
-Kohlenhdl., Längg. 212  # 1176,1766,490,40
+- Kohlenhdl., Längg. 212  # 1176,1766,490,40
 - P., Fuhrm., Schiffl. 44  # 1176,1813,501,38
 - S., Tabakf., Schplg. 207  # 1182,1862,547,42
 Bergmann F. C., Schriftgieß., Matte 14  # 1090,1910,635,42;1190,1962,181,30
@@ -199,20 +197,19 @@ Bergsträßer, Buchbd., Schifflaube 44  # 1092,2057,640,45;1188,2106,187,31
 Beringer F. J., Neg., Mktg. 62  # 1096,2153,635,45
 - W., Negt., Marktg. 62  # 1183,2203,471,42
 Berla G., Chocoladefabr., Gerechtg. 86  # 1098,2250,640,45;1194,2304,201,33
-Berlancourt, Sekr. d. k. preuß.  # 1100,2349,637,44
-Gesandtsch., Aarz. 1.  # 1196,2397,436,39
+Berlancourt, Sekr. d. k. preuß. Gesandtsch., Aarz. 1.  # 1196,2397,436,39
 Bernard, frz. Pfr., Jkg. 195.  # 1099,2446,620,46
 # Date: 1863-06-30 Page: 29210312/79
 Berner Cäs., Spez., Spitg. 165  # 204,341,656,60
 - Henzi A. J., Spezierer, Kramg. 216  # 294,391,540,50;300,446,248,39
 - A. F., Amtsnot., Spitg. 165  # 260,488,575,48
-- Bernhard J. J., Zimmerm., Hollig. 155  # 204,534,628,54;297,592,237,39
-Zimmermann, Längg. 211  # 289,637,544,47
+Bernhard J. J., Zimmerm., Hollig. 155  # 204,534,628,54;297,592,237,39
+- Zimmermann, Längg. 211  # 289,637,544,47
 Bertsch, Neg., Bärenplatz 241 a  # 202,686,635,52
 - M., Handl. v. Kirchen- u. Priestergewänd. Aarbg. 28  # 291,736,543,48;304,779,532,52
 Bertschinger M., Sprachlehrerin, Marktgasse 61  # 203,830,635,48;302,880,387,42
 Beetschen M., Kostgeb. u. Gallerteverf., Scharfrchtg. 115  # 206,926,630,50;302,976,535,49
-Abwart, Spitalgasse 162  # 289,1020,502,54
+- Abwart, Spitalgasse 162  # 289,1020,502,54
 Beutler J. C., Schneid., Keßlergasse 288  # 205,1066,630,56;299,1124,190,42
 - J., Bedienter, Keßlg. 269  # 244,1170,591,48
 - I., Flößer, Matte 51 al  # 288,1216,526,40
@@ -221,7 +218,6 @@ Beyeler B., Knochens., Mtt. 91  # 202,1265,630,47
 - F., Dachd., Längg. 243  # 284,1356,486,56
 - F. C., Zeugschmied, Dalmazi u. Ablage Keßlg. 294  # 287,1405,549,54;301,1460,536,51
 - J., Lumpens., Altb. 152  # 289,1506,495,42
-Juriving  # 228,1526,48,6
 - M., Kostgeb., Neueng. 94  # 291,1555,521,49
 Biber, J., Kanzlist, n. Postgeb.  # 203,1596,629,55
 Bichsel, Hebamme, Gerbgr. 141  # 201,1647,633,52
@@ -253,14 +249,12 @@ Bigler Chr., Instruct., 3gbg. 13  # 883,782,637,53
 - S. F. J., Schnd., Ag. 25  # 973,1122,541,52
 - M. Obsthdl., Altb. 140  # 971,1170,476,43
 - gb. Lehmann, Rt., Mt. 44  # 969,1220,551,42
-- J., Weinhändler, Kramg.  # 973,1262,542,57
-168 (alte Bost)  # 981,1311,325,57
+- J., Weinhändler, Kramg. 168 (alte Bost)  # 981,1311,325,57
 - F. E., gew. Buchbind., Linierer, Frick 67  # 938,1366,581,43;981,1414,330,41
 Bickart S., Viehh., Bollw, 81  # 884,1460,632,51
-33ilegri 2., Ởhp1, cargtele  # 888,1503,579,62
+Bilegri 2., Ởhp1, cargtele  # 888,1503,579,62
 Binder A., Registrt., Sptg. 160  # 887,1553,630,54
-- Jh., Zuckerbäcker, b. d. hl.  # 971,1599,543,53
-Geistkirche, Bollw. 123  # 983,1652,474,43
+- Jh., Zuckerbäcker, b. d. hl. Geistkirche, Bollw. 123  # 983,1652,474,43
 Bindschädler H., Schnd., Aarbergergasse 72  # 882,1698,637,51;979,1751,291,44
 Binggeli J., Ellenwaarenhdl., Brunng. 25  # 883,1793,633,61;982,1848,237,45
 Binz Rud., Schrn., Junkg. 147  # 884,1890,638,54
@@ -288,13 +282,12 @@ Blaser B., Schuhm., Matte 4  # 429,1037,612,29
 - Chr., Schuhm., Metg. 135  # 518,1183,549,34
 - Chr. Pächter, Brunnad. 17  # 520,1230,553,39
 - J., Wirth, Stalden 15  # 522,1282,468,26
-+1863.-F., Privatleh., Aarberg. 45  # 226,1327,845,35
+- F., Privatleh., Aarberg. 45  # 226,1327,845,35
 - J., Eisentröd., Sptlg. 177  # 525,1376,548,35
-112111  # 509,1383,-45,284
 - C. G. N., Lehrer der Ma18 thematik, Gerechtg. 135  # 530,1424,543,31;457,1476,566,33
 - J., Schlosser, Stalden 18  # 523,1526,552,27
 - N., Schmied, Altbg. 184  # 526,1572,502,37
-Amtsnot. u. Amtsschaffner, Aarbergerg. 22  # 523,1617,552,42;540,1672,320,38
+- Amtsnot. u. Amtsschaffner, Aarbergerg. 22  # 523,1617,552,42;540,1672,320,38
 - J. E., Ing., Postg. 32  # 534,1720,471,37
 - Anna, Lehrerin, Postg. 32  # 537,1767,541,33
 - Luise, Lehrerin, Postg. 32  # 535,1816,544,34
@@ -306,8 +299,7 @@ Blatter-Reust Chr., Geometer, Marktg. 90  # 450,1964,632,33;549,2016,231,38
 Blau, Gutsbes., Stadtbach 183  # 458,2209,633,30
 - Sam., Not. u. Geschäfts88 büreau, Schaupg. 207  # 554,2256,540,39;490,2309,529,36
 - J. U. S., Hafner, Sulgenbach 99 (Salzbüchsli)  # 552,2353,548,35;561,2403,512,40
-+ J., Handl., Schauplg. 232  # 486,2454,615,34
-188. jun  # 469,2506,185,49
+- J., Handl., Schauplg. 232  # 486,2454,615,34
 Blau A., Schuhm., Sptlg. 140  # 1079,350,663,24
 - H., Handl., Schauplg. 219  # 1187,387,555,33
 - A., Factor, Aarbg. 73  # 1168,435,476,37
@@ -315,8 +307,7 @@ Blau A., Schuhm., Sptlg. 140  # 1079,350,663,24
 - I. I., Schrein., Postg. 39  # 1191,580,555,38
 - U., Schlosser, Schplg. 207  # 1169,628,577,37
 - F. G., Büchsenm., Grg. 75  # 1194,678,551,35
-- U., Hausmstr. im Hintern  # 1201,728,545,34
-Spital zw. d. Thor. 276  # 1209,777,513,33
+- U., Hausmstr. im Hintern Spital zw. d. Thor. 276  # 1209,777,513,33
 - C. H.,neap. Hptm., Krg. 201  # 1199,826,550,37
 - Teuscher, Sam. Fr., Sattler u. Tapez., Unternehm. d. Dienstmänneranst., Altenberg 187  # 1195,870,557,36;1206,925,539,33;1206,972,545,35;1210,1024,248,35
 - A. Schneider, Speicherg. 5  # 1140,1070,613,37
@@ -335,16 +326,13 @@ Blume G. A., Zahnarzt, Arz. 1  # 1135,2093,636,36
 Blumenstein, Oberichter, Länggap 195  # 1136,2141,639,38;1237,2194,170,41
 Blünter J. U., Holzh., Pg. 27  # 1141,2241,644,37
 - Chr., Holzh., Postg. 59  # 1187,2294,545,32
-Bodmer B., Steinh., Lorraine  # 1144,2337,642,32
-+1864  # 1761,2379,145,38
-16 43 (Schneiderhaus)  # 1151,2387,513,37
+Bodmer B., Steinh., Lorraine 43 (Schneiderhaus)  # 1151,2387,513,37
 - F., Färber, Matte 120  # 1175,2439,539,30
-els godd  # 1152,2491,351,36
 # Date: 1863-06-30 Page: 29210314/81
 Bögli Jb., Schneider, Bg. 23  # 256,333,628,66
 - B, Spengler, Aarbg. 24  # 278,383,563,63
-Böhlen, Gebr., Müller, Post  # 255,430,612,68
-pferdhalter 2c., Matte 109 u. Strickler, Bierbrauerei, Altenberg 156 gamb  # 348,483,534,66;341,530,540,59;347,581,442,48
+Böhlen, Gebr., Müller, Postpferdhalter 2c., Matte 109 
+- u. Strickler, Bierbrauerei, Altenberg 156  # 348,483,534,66;341,530,540,59;347,581,442,48
 Böhme F., Glaser, Neueng. 95  # 250,622,628,67
 Bohren P., Speisewirth beim Cafino 131 a  # 249,667,622,69;345,725,265,46
 - Fr., Weinhdl. Chrstffg. 186  # 335,770,541,66
@@ -354,17 +342,17 @@ Bolanz Fr., Sattl., Postg. 53 b  # 241,914,630,66
 Bollag, Ellenwaarenh., Kramgasse 205  # 243,963,631,62;334,1019,185,36
 Bolliger A., Bäcker, Aarbg. 75  # 239,1060,628,65
 - R., Mechaniker, Postg. 29  # 329,1106,540,66
-+1868 - Sam., Sohn, Mechaniker, - (Schauplatzg. 193  # 117,1141,748,79;277,1206,408,56
+- Sam., Sohn, Mechaniker, - (Schauplatzg. 193  # 117,1141,748,79;277,1206,408,56
 Barbier, Spitalg. 128  # 320,1254,458,60
 Bollin F., Abw., Judeng. 130  # 234,1300,628,65
 Bomonti, Vater, Schr., Bg. 38  # 236,1346,626,70
 - C. F. Sohn, Schreiner, Brunng. 38  # 257,1394,603,68;327,1450,242,47
 - A., Zinngießer, Brg. 38  # 316,1497,496,56
-Schlosser, Marktg. 51  # 322,1543,449,57
+- Schlosser, Marktg. 51  # 322,1543,449,57
 de Bondarewsky, Attaché d. rufsisch. Gesandtsch., Mktg. 41  # 225,1586,632,67;320,1635,537,69
 Bondeli A. E., Spitaleinzieher, Käfichgäßlein 111.  # 227,1680,626,72;320,1737,378,54
 - geb. Stettler, Marziele 2  # 257,1783,563,63
-Lingère, Junkerng. 149  # 307,1833,488,56
+- Lingère, Junkerng. 149  # 307,1833,488,56
 Bonef Abr., Pferdhdl., Neuengasse 122 b  # 220,1879,627,61;316,1936,234,40
 - E., Viehhdl., Aarberg. 56  # 305,1977,543,66
 - Jb. Pferdhdl., Aarbg. 25.  # 278,2024,563,65
@@ -372,7 +360,7 @@ Bonef Abr., Pferdhdl., Neuengasse 122 b  # 220,1879,627,61;316,1936,234,40
 Bonnet J., Coiff., Kramg. 152  # 217,2116,625,72
 - Schwestern, Blumenfabr., Kramgasse 152  # 307,2168,531,63;310,2223,295,43
 v. Bonstetten - de Vigneulle F., Rent., Judeng. 129 To  # 209,2259,627,72;309,2316,448,53
-von Valleyres, Frau, Enge  # 292,2360,542,67
+- von Valleyres, Frau, Enge  # 292,2360,542,67
 - J. (v. Welderen), Jkg. 186  # 240,2413,595,55
 v. Bonstetten-de Mestral, C. G.  # 933,350,625,66
 - S., Rent., Nydeckg. 199  # 1035,400,527,71
@@ -387,8 +375,7 @@ Bossart R. L., Amtsnot., Altenberg 175 u. Keßlergasse 238  # 923,931,629,66;101
 - Friedr., Holzhändl., Aarbergergasse 45  # 1003,1028,546,64;1014,1080,296,50
 Boßhard geb. Baldi, Rentiere, Schoßh. 32  # 916,1124,627,68;1015,1173,226,50
 Botz J., Schneid., Zeughg. 13  # 915,1219,629,70
-Bourgeois J. N. F. &., Dr.  # 913,1265,631,68
-med., Käfichg. 111  # 1010,1324,378,55
+Bourgeois J. N. F. &., Dr. med., Käfichg. 111  # 1010,1324,378,55
 - Schwestern, Käfichg. 111  # 973,1366,515,59
 Bracher U., Lehrer, Speichg. 3  # 910,1411,613,68
 - G., Buchhalt., Schauplahgasse 191  # 997,1462,540,71;1005,1512,190,46
@@ -414,12 +401,12 @@ Brönnimann Friedr., Feueraufseher und Baugehülfe, Schauplatzg. 224  # 374,884,
 Bruder J. Schweinm., Metzgergasse 95  # 379,1028,635,42;475,1086,222,36
 Bruderer, Metzger, Metg. 124  # 378,1133,641,32
 - Jgfr., Schnd., Metzg. 124  # 468,1181,551,32
-Ww., Weißnäh. Kplg. 285  # 470,1226,549,36
+- Ww., Weißnäh. Kplg. 285  # 470,1226,549,36
 Brüderlin J. M., Lebk., Ag. 46  # 382,1276,635,35
 - Jgfr., Damenschn., Spitalg. 168  # 472,1325,548,35;481,1378,190,38
 Brugg F., Schuhm., Ng. 117  # 384,1428,615,31
-Schriftsetzer, Gerechtg. 68  # 475,1472,525,35
-Schreiner, Gerechtg. 68  # 471,1518,482,37
+- Schriftsetzer, Gerechtg. 68  # 475,1472,525,35
+- Schreiner, Gerechtg. 68  # 471,1518,482,37
 Brüggen F., Lohnbed., Gerechtigkeitsg. 96 (alte Krone)  # 386,1572,640,30;485,1617,540,35
 Brügger J. C., Schnd., Zeughausg. 9  # 388,1669,638,35;483,1720,192,35
 - geb. Bichsel, Corsetmach., Aarbg. 78  # 453,1762,572,38;487,1813,206,43
@@ -427,8 +414,7 @@ Brügger J. C., Schnd., Zeughausg. 9  # 388,1669,638,35;483,1720,192,35
 - Gilg., Polizeid. u. Spez., Gerechtg. 132  # 483,1959,545,36;491,2011,282,37
 - gb. Adolf, Hbm, Matte 130  # 482,2061,550,26
 Brugger A., Privatlehr. (nabenpension) Brunng. 36.  # 393,2108,642,33;491,2151,515,37
-- Oberst, Oberinstruktor u. Garnis.-Emmdt, Lorraine  # 423,2201,609,33;499,2253,537,30
-34 (Arm-Haus)  # 495,2301,332,39
+- Oberst, Oberinstruktor u. Garnis.-Emmdt, Lorraine 34 (Arm-Haus)  # 495,2301,332,39
 - B., Negt., Kramg. 187  # 488,2351,471,36
 - Jgfr., Musikl., Marktg. 66  # 447,2398,589,35
 - Elise, Rent., Längg. 231  # 429,2443,560,43
@@ -438,8 +424,7 @@ hauspl. 50  # 1158,578,222,38
 - Chr., Müller, Metzgerg. 64  # 1151,626,547,41
 - J. S., Schrn., Stalden 16  # 1150,675,548,33
 - Jb., Kunst- u. Tapetenhdl., Kramg. 197  # 1151,720,549,45;1163,779,256,33
-- -Blau, D. R. L., Hdlsm., Kramg. 226 u. Altbg.-Dr.  # 1110,823,591,35;1163,872,537,34
-139 (Breitenrain)  # 1164,916,380,44
+- -Blau, D. R. L., Hdlsm., Kramg. 226 u. Altbg.-Dr. 139 (Breitenrain)  # 1164,916,380,44
 - -Lüthard A. F., gew. Maj., Inselg. 135 c  # 1130,967,573,40;1168,1020,297,37
 - C. E., Prof., Marktg. 50  # 1156,1065,552,38
 - Sutter J. R., Handlsm., Gerechtg. 130 u. Altbg.Drittel 126 (Spitalacker)  # 1156,1107,551,44;1172,1162,540,37;1169,1208,540,37
@@ -460,8 +445,7 @@ Bucher A., Bildh., Kramg. 141  # 1085,1991,640,34
 - J. A., Schnd., Brunng. 25  # 1172,2138,558,34
 - J. R., Spengl., Grchg. 81  # 1173,2186,556,37
 - J. R., Oberst, Kramg. 145  # 1176,2234,556,35
-- Alex. Friedr., Telgr.-Con-t  # 1175,2285,606,31
-troleur, Matte 129.  # 1187,2337,408,22
+- Alex. Friedr., Telgr.-Con-troleur, Matte 129.  # 1187,2337,408,22
 - -Kachelhofer, Buchdr. und Spielwrhdl., Marktg. 50  # 1127,2380,603,33;1197,2429,515,36
 # Date: 1863-06-30 Page: 29210316/83
 Bucherer, Karl, Kammmacher, Holligen 143  # 212,352,629,55;311,408,270,39
@@ -474,7 +458,7 @@ Buchschacher J., Mehlhändler, Matte 1  # 215,839,630,48;318,888,164,35
 - U., Obermstr. d. Strafanst.  # 241,936,603,42
 Büeler C., Journal., Zeughg. 6  # 214,977,633,54
 Bühler P., Inselverw. Inselsp.  # 214,1026,634,58
-Ww., Spez., Zeughpl. 252  # 298,1081,551,50
+- Ww., Spez., Zeughpl. 252  # 298,1081,551,50
 - F., Zahnarzt, Grchtg. 98  # 301,1130,499,46
 - H., Postcom., Längg. 280  # 301,1179,519,48
 - J. G., Registr. b. d. Erz.Dir., Käfichg. 110  # 305,1224,541,54;314,1271,388,56
@@ -490,21 +474,19 @@ Bühlmann, Frau Dr., Jdg. 117  # 216,1851,633,54
 - Schwest. Käs- u. Milchhdl., Neueng. 110  # 307,1939,537,59;317,2000,252,42
 Burgdorfer Cath., Lesekabin., Hotellaube 229  # 214,2041,633,60;316,2095,309,39
 Buren P., Feuerw., Sptg. 172  # 217,2141,634,49
-++/864. v. Büren-v. Tavel,Blumenr. 82  # 22,2193,826,40
+v. Büren-v. Tavel,Blumenr. 82  # 22,2193,826,40
 - -v. Effinger A. E., Sachw., Kramg. 216  # 242,2237,606,51;316,2285,237,51
-Frin., Rent., Kramg. 147  # 305,2337,521,45
-- v. Sinner R. DO., Gutsbes. u. Command., Schoßh. 86  # 303,2383,546,46;318,2431,532,47
-Ablage Gerechtigktsg. 126!  # 317,2484,561,44
+- Frin., Rent., Kramg. 147  # 305,2337,521,45
+- v. Sinner R. DO., Gutsbes. u. Command., Schoßh. 86, Ablage Gerechtigktsg. 126  # 317,2484,561,44
 Burger R. F., Buchdr., Mt. 96  # 895,355,633,56
-Graveur, Brunng. 32  # 987,403,447,59
+- Graveur, Brunng. 32  # 987,403,447,59
 Bürgi J. C. H., Drechsl., Bg. 5  # 897,453,639,59
 Buri Jb., Wagn., Ráfichg. 107  # 898,501,631,59
 - Oberricht., Schönburg 130  # 956,551,574,58
-Schweinm., Postg. 59  # 988,598,448,55
-SFTAR  # 934,624,34,3
-- 100 Controll. d. Kantonalbank, Kramg. 212  # 927,673,40,3;987,644,540,58;996,699,246,44
+- Schweinm., Postg. 59  # 988,598,448,55
+- Controll. d. Kantonalbank, Kramg. 212  # 927,673,40,3;987,644,540,58;996,699,246,44
 - J. J., Salzverw., Vill. 174  # 984,745,553,49
-Xylograph, Kramg. 212  # 985,795,479,52
+- Xylograph, Kramg. 212  # 985,795,479,52
 - Mar., Modiste, frmg. 199  # 987,841,549,57
 - Elise, Schneid., Krmg. 199  # 956,891,578,53
 - H., Schneiderin, Aarbg. 54  # 986,939,554,58
@@ -521,7 +503,7 @@ Burkhardt Jb., Lohnwascher, Lorraine 55  # 900,1658,629,63;998,1713,244,40
 - Frau, Schnd., Neueng. 119  # 992,1765,549,47
 - Jak., Postcom., Marktg. 94  # 995,1812,548,51
 - Anna B., Lehrerin, bei der kl. Schanze 184  # 986,1857,546,54;995,1909,323,42
-Nos., Krämer, Grchtg. 117  # 985,1955,547,50
+- Ros., Krämer, Grchtg. 117  # 985,1955,547,50
 - J., Schuhm., Läuferpl. 227  # 985,2004,555,49
 Bürki A. F., alt-Großr., Judeng. 128  # 898,2048,640,61;1000,2104,198,41
 - Jenner, Frau, Judg. 128 u. Brunnad. 21 u. 22  # 984,2151,559,49;1001,2198,453,38
@@ -536,16 +518,15 @@ Bürki Fr., Spengl., Stald. 5, - Chr., Schneider, Badl. 75  # 420,338,667,47;508
 - Chr., Gärtn., Salzm. 238  # 514,685,549,44
 - H., Schreiber, Spilg. 173  # 511,735,554,41
 - H. L., Schrb., Neueng. 98  # 509,785,554,45
-Elif., Glätt. u. Wascherin, Aarbg. 40  # 513,830,547,49;520,884,210,40
-Speisew., Stalden 223  # 511,928,478,43
-2. G., Wirth b. Weyermh.  # 508,978,552,45
+- Elif., Glätt. u. Wascherin, Aarbg. 40  # 513,830,547,49;520,884,210,40
+- Speisew., Stalden 223  # 511,928,478,43
+- L. G., Wirth b. Weyermh.  # 508,978,552,45
 - N., Gypshdi., Magazinier d. Pulverwalt., Schoßh. 96  # 510,1028,552,47;517,1076,546,44
 - Jak., Instr.-Hauptmann, Zeughg. 10  # 511,1124,550,44;521,1176,231,42
 - Jgfr., Mod., Zeughsg. 10  # 510,1226,556,43
 - Ros. Cath., Kräm., Arz. 28  # 513,1275,553,42
 - Anna, Schnd., Sptlg. 161  # 514,1319,550,45
-- Sam., Wasserträger, Badlaube 91 (Ablage im obern  # 480,1371,589,41;526,1416,538,45
-Eisenladen Meyer)  # 528,1464,394,50
+- Sam., Wasserträger, Badlaube 91 (Ablage im obern Eisenladen Meyer)  # 528,1464,394,50
 Burn C., Kanzlist, Marziele 21  # 429,1517,635,42
 - C., Schnd., Sptlg. 172  # 517,1564,485,44
 Burrer R., Bäcker, Hollig. 167  # 430,1615,640,39
@@ -555,7 +536,7 @@ Burri R., Schweinm., Mt. 113  # 429,1666,641,39
 - Friedr., Coiff., Gerchtg. 90  # 519,1859,551,40
 Busch Jos., Musiklehrer, Aarbergergasse 42  # 433,1903,640,45;531,1959,287,39
 Büttigkofer Joh., Küf. u. Faßfecker, Metzg. 85.  # 437,2007,636,40;532,2056,368,38
-Rof., Sesselm., Mezg. 89  # 524,2100,551,45
+- Rof., Sesselm., Mezg. 89  # 524,2100,551,45
 - Anna V., Färb., Krmg. 149  # 521,2152,553,42
 Calame J. H., Zuckerb., Kramgasse 177  # 439,2345,638,43;533,2399,187,37
 Camanini, Mal. u. Gyps. Bg. 10  # 437,2443,639,44
@@ -569,7 +550,7 @@ Chatelanaz F. G., Vergolder u., Glaser, Aarbg. 59  # 1116,778,640,44;1214,826,38
 - geb. Roggen E., Krämer, Aarbg. 59  # 1200,873,547,46;1210,925,202,41
 - I. F., Kanzl., Bubenbgr. 59  # 1197,971,552,41
 Chautems SI., Nent., gg. 279  # 1114,1020,638,46
-Lehrer, Postg. 25  # 1201,1072,356,41
+- Lehrer, Postg. 25  # 1201,1072,356,41
 Chenaux Jb., Bildh. Sptg. 166  # 1115,1114,639,43
 Cherbuliez, Lehrer an der Kantonsschule, Schauplg. 202  # 1115,1168,642,32;1213,1217,541,40
 Chevalier A., Uebers., Jfg. 159  # 1118,1266,635,41
@@ -578,13 +559,12 @@ Christeller- Kohler, Frau, Schauplatg. 197  # 1118,1409,635,45;1217,1458,365,42
 Christen, Schwest., Nng. 122 b  # 1120,1507,633,42
 - J. F., Gürtl., Nng. 122 b  # 1206,1561,551,34
 - Jgfr., Spez., Neueng. 98  # 1205,1609,554,37
-- A. G., Eisennegot., Matte  # 1207,1656,551,37
-107 u. Marktg. 46  # 1216,1702,369,47
+- A. G., Eisennegot., Matte 107 u. Marktg. 46  # 1216,1702,369,47
 - D., gw. Dachd., Hrng. 309  # 1209,1754,549,38
 - J. C. A., Posam., Khpl. 151  # 1206,1804,551,35
 - J. Jb., Schrb., Längg. 202  # 1205,1851,555,38
 - Raph., Bildhauer, Šild. 15  # 1210,1901,550,31
-Speisewirth, Metzg. 132  # 1209,1946,511,40
+- Speisewirth, Metzg. 132  # 1209,1946,511,40
 - Paul, Adjunkt, Marktg. 85  # 1210,1996,549,40
 - J. Schuhm. Kramg, 180  # 1209,2048,510,36
 - Frau, Mod., Spitalg. 163  # 1212,2098,551,34
