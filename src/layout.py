@@ -46,13 +46,20 @@ class LayoutAnalysis(object):
         self.raw_image = cv.imread(fetch_jpeg(page.id))
         self.divider_segments = self._detect_divider_segments()
         self._detect_rotation()
+        self.rotated_image = cv.warpAffine(
+            self.raw_image,
+            self.rotation_matrix,
+            self.raw_image.shape[1::-1],
+            flags=cv.INTER_CUBIC,
+        )
         self._detect_divider_x()
+        self._detect_edges()
 
     def _detect_divider_segments(self) -> list[LineSegment]:
         segments: list[LineSegment] = []
         img = self.raw_image
         dx, dy = 600, 250
-        blurred = cv.bilateralFilter(img, 9, 75, 75)
+        blurred = cv.bilateralFilter(img, 5, 75, 75)
         height, width, _ = blurred.shape
         blurred = blurred[dy : height - dy, dx : width - dx]
         gray = cv.cvtColor(blurred, cv.COLOR_BGR2GRAY)
@@ -95,6 +102,56 @@ class LayoutAnalysis(object):
             sum_weight += weight * 2
         self.divider_x = int((sum_x / sum_weight) + 0.5)
 
+    def _detect_edges(self) -> None:
+        blurred = cv.bilateralFilter(
+            self.rotated_image, 9, 75, 75, borderType=cv.BORDER_REPLICATE
+        )
+        gray = cv.cvtColor(blurred, cv.COLOR_BGR2GRAY)
+        height, width = gray.shape
+
+        # Erase the vertical divider line.
+        cv.line(
+            gray,
+            (self.divider_x, 0),
+            (self.divider_x, height),
+            color=(255, 255, 255),
+            thickness=18,
+        )
+
+        # https://pyimagesearch.com/2021/12/01/ocr-passports-with-opencv-and-tesseract/
+        rectKernel = cv.getStructuringElement(cv.MORPH_RECT, (25, 7))
+        sqKernel = cv.getStructuringElement(cv.MORPH_RECT, (21, 21))
+        blackhat = cv.morphologyEx(gray, cv.MORPH_BLACKHAT, rectKernel)
+        grad = np.absolute(cv.Sobel(blackhat, ddepth=cv.CV_32F, dx=1, dy=0, ksize=-1))
+        (minVal, maxVal) = (np.min(grad), np.max(grad))
+        grad = (grad - minVal) / (maxVal - minVal)
+        grad = (grad * 255).astype("uint8")
+        grad = cv.morphologyEx(grad, cv.MORPH_CLOSE, rectKernel)
+        thresh = cv.threshold(grad, 0, 255, cv.THRESH_BINARY | cv.THRESH_OTSU)[1]
+        thresh = cv.morphologyEx(thresh, cv.MORPH_CLOSE, sqKernel)
+        thresh = cv.erode(thresh, None, iterations=1)
+
+        # Find the right edge of the text box. Sometimes, there are
+        # manual annotations that extend the text boundary, so we probe
+        # 11 stripes from the middle of the document and take the median.
+        start = min(self.divider_x + 400, width)
+        limit = min(start + 400, width)
+        right_edges = []
+        for y in list(range(0, height, height // 13))[2:-2]:
+            fraction_used = np.mean(thresh[y : y + height // 13, start:limit], axis=0)
+            got = np.where(fraction_used < 0.5)
+            if len(got) > 0 and len(got[0] > 0):
+                x = got[0][0]
+                if x > 100:
+                    right_edges.append(start + x)
+        if len(right_edges) > 0:
+            self.right_edge = min(int(np.quantile(right_edges, 0.7) + 15), width)
+            column_width = self.right_edge - self.divider_x
+            self.left_edge = max(0, self.divider_x - column_width)
+        else:
+            self.right_edge = min(self.divider_x + 850, width)
+            self.left_edge = max(0, self.divider_x - 850)
+
     def debug_image(self) -> np.ndarray:
         image = self.raw_image.copy()
         height, width, num_channels = image.shape
@@ -103,20 +160,16 @@ class LayoutAnalysis(object):
             image, segments=self.divider_segments, color=(128, 128, 255)
         )
 
-        rotated_image = cv.warpAffine(
-            self.raw_image,
-            self.rotation_matrix,
-            self.raw_image.shape[1::-1],
-            flags=cv.INTER_LINEAR,
-        )
+        rotated_image = self.rotated_image.copy()
         self._draw_grid(rotated_image, color=(0, 128, 255))
-        cv.line(
-            rotated_image,
-            (self.divider_x, 0),
-            (self.divider_x, height),
-            color=(64, 128, 64),
-            thickness=3,
-        )
+        for x in (self.left_edge, self.divider_x, self.right_edge):
+            cv.line(
+                rotated_image,
+                (x, 0),
+                (x, height),
+                color=(64, 128, 64),
+                thickness=8,
+            )
 
         result = np.zeros((height, width * 2, num_channels), dtype=np.uint8)
         result[0:height, 0:width] = image
@@ -166,13 +219,14 @@ def main(years: set[int], pages: list[int]) -> None:
     for volume, volume_pages in sorted(read_pages().items()):
         year = int(volume[:4])
         for page in volume_pages:
-            if (page.id not in pages) and (year not in years):
+            if (page.id not in pages) and (year not in years) and (years or pages):
                 continue
             la = LayoutAnalysis(page)
             cv.imshow(f"Layout Analysis for Page {page.id}", la.debug_image())
             key = cv.waitKey(0)
             if key == ord("q"):
                 return
+            cv.destroyAllWindows()
 
 
 if __name__ == "__main__":
