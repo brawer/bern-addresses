@@ -4,15 +4,17 @@
 # Experimental tool for layout analysis through Computer Vision.
 #
 # Usage:
-#     venv/bin/python3 src/layout.py
+#     venv/bin/python3 src/layout.py --pages=29210355
+#     venv/bin/python3 src/layout.py --years=1863-1864,1921
 
+from argparse import ArgumentParser
 from dataclasses import dataclass
 import math
 
 import cv2 as cv
 import numpy as np
 
-from utils import Page, fetch_jpeg, read_pages
+from utils import Page, fetch_jpeg, parse_pages, parse_years, read_pages
 
 
 @dataclass
@@ -160,21 +162,22 @@ class LayoutAnalysis(object):
         return cv.transform(np.array([[[x, y]]]), matrix)[0][0]
 
 
-def main():
-    for volume, pages in sorted(read_pages().items()):
+def main(years: set[int], pages: list[int]) -> None:
+    for volume, volume_pages in sorted(read_pages().items()):
         year = int(volume[:4])
-        if year < 1863:
-            continue
-        for page in pages:
-            if page.id != 29210355:
+        for page in volume_pages:
+            if (page.id not in pages) and (year not in years):
                 continue
             la = LayoutAnalysis(page)
-            if True:
-                cv.imshow(f"Layout Analysis for Page {page.id}", la.debug_image())
-                key = cv.waitKey(0)
-                if key == ord("q"):
-                    return
+            cv.imshow(f"Layout Analysis for Page {page.id}", la.debug_image())
+            key = cv.waitKey(0)
+            if key == ord("q"):
+                return
 
 
 if __name__ == "__main__":
-    main()
+    ap = ArgumentParser()
+    ap.add_argument("--pages", default="", type=parse_pages)
+    ap.add_argument("--years", default="", type=parse_years)
+    args = ap.parse_args()
+    main(years=args.years, pages=args.pages)
