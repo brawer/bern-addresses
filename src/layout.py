@@ -42,6 +42,13 @@ class LineSegment:
         return angle
 
 
+@dataclass
+class Column:
+    x: int
+    y: int
+    image: np.ndarray
+
+
 class LayoutAnalysis(object):
     def __init__(self, page: Page):
         self.page = page
@@ -57,6 +64,21 @@ class LayoutAnalysis(object):
         )
         self._detect_divider_x()
         self._detect_edges()
+
+    def columns(self) -> list[Column]:
+        top, bottom = self.top_edge, self.bottom_edge
+        left, mid, right = self.left_edge, self.divider_x, self.right_edge
+        return [
+            self._make_column(left, top, mid - 10, bottom),
+            self._make_column(mid + 10, top, right, bottom),
+        ]
+
+    def _make_column(self, x1, y1, x2, y2) -> Column:
+        image = self.rotated_image[y1:y2, x1:x2]
+        blurred = cv.bilateralFilter(image, 9, 50, 75)
+        gray = cv.cvtColor(blurred, cv.COLOR_BGR2HLS_FULL)[:, :, 1]
+        thresh = cv.threshold(gray, 0, 255, cv.THRESH_BINARY | cv.THRESH_OTSU)[1]
+        return Column(x1, y1, thresh)
 
     def _detect_divider_segments(self) -> list[LineSegment]:
         # For the vast majority of pages, we can automatically detect
@@ -196,6 +218,7 @@ class LayoutAnalysis(object):
         )
 
         rotated_image = self.rotated_image.copy()
+        self._draw_columns(rotated_image)
         cv.rectangle(
             rotated_image,
             pt1=(self.left_edge, self.top_edge),
@@ -216,8 +239,14 @@ class LayoutAnalysis(object):
         result[0:height, width : width * 2] = rotated_image
         return result
 
+    def _draw_columns(self, image: np.ndarray) -> None:
+        for c in self.columns():
+            column_image = cv.cvtColor(c.image, cv.COLOR_GRAY2BGR)
+            height, width = column_image.shape[:2]
+            image[c.y : c.y + height, c.x : c.x + width] = column_image
+
     @staticmethod
-    def _draw_grid(image, color):
+    def _draw_grid(image: np.ndarray, color) -> None:
         height, width, _ = image.shape
         for x in range(0, width, 50):
             line_width = 3 if x % 250 == 0 else 1
@@ -283,6 +312,9 @@ def main(years: set[int], pages: list[int]) -> None:
             key = cv.waitKey(0)
             if key == ord("q"):
                 return
+            if key == ord("s"):
+                for i, col in enumerate(la.columns()):
+                    cv.imwrite(f"col-{page.id}-{i + 1}.png", col.image)
             cv.destroyAllWindows()
 
 
