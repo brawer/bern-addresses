@@ -45,6 +45,7 @@ class LineSegment:
 class LayoutAnalysis(object):
     def __init__(self, page: Page):
         self.page = page
+        print(page)
         self.raw_image = cv.imread(fetch_jpeg(page.id))
         self.divider_segments = self._detect_divider_segments()
         self._detect_rotation()
@@ -161,6 +162,30 @@ class LayoutAnalysis(object):
         else:
             self.right_edge = min(self.divider_x + 850, width)
             self.left_edge = max(0, self.divider_x - 850)
+        self._detect_top_bottom_edges(thresh)
+
+    def _detect_top_bottom_edges(self, thresh: np.ndarray) -> None:
+        roi = thresh[:, self.left_edge : self.right_edge].copy()
+        kernel = cv.getStructuringElement(cv.MORPH_RECT, (25, 5))
+        roi = cv.morphologyEx(roi, cv.MORPH_CLOSE, kernel, iterations=7)
+        height = roi.shape[0]
+
+        # Detect the top edge. We start in a region that is likely
+        # in the middle of the text, and scan towards the top until
+        # we find a row that is entirely empty.
+        start_y = int(height * (0.7 if self.page.is_title_page else 0.4))
+        for y in range(start_y, 0, -1):
+            if np.all(roi[y, :] == 0):
+                break
+        self.top_edge = max(y, 0)
+
+        # Detect the bottom edge. As with the top edge, we start
+        # in the middle of the text and scan towards the bottom until
+        # we reach a row that does not contain any set pixels.
+        for y in range(int(height * 0.7), height):
+            if np.all(roi[y, :] == 0):
+                break
+        self.bottom_edge = min(y, height)
 
     def debug_image(self) -> np.ndarray:
         image = self.raw_image.copy()
@@ -171,15 +196,20 @@ class LayoutAnalysis(object):
         )
 
         rotated_image = self.rotated_image.copy()
-        self._draw_grid(rotated_image, color=(0, 128, 255))
-        for x in (self.left_edge, self.divider_x, self.right_edge):
-            cv.line(
-                rotated_image,
-                (x, 0),
-                (x, height),
-                color=(64, 128, 64),
-                thickness=8,
-            )
+        cv.rectangle(
+            rotated_image,
+            pt1=(self.left_edge, self.top_edge),
+            pt2=(self.right_edge, self.bottom_edge),
+            color=(32, 128, 32),
+            thickness=6,
+        )
+        cv.line(
+            rotated_image,
+            (self.divider_x, self.top_edge),
+            (self.divider_x, self.bottom_edge),
+            color=(32, 128, 32),
+            thickness=6,
+        )
 
         result = np.zeros((height, width * 2, num_channels), dtype=np.uint8)
         result[0:height, 0:width] = image
