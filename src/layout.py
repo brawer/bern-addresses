@@ -219,20 +219,21 @@ class LayoutAnalysis(object):
 
         rotated_image = self.rotated_image.copy()
         self._draw_columns(rotated_image)
-        cv.rectangle(
-            rotated_image,
-            pt1=(self.left_edge, self.top_edge),
-            pt2=(self.right_edge, self.bottom_edge),
-            color=(32, 128, 32),
-            thickness=6,
-        )
-        cv.line(
-            rotated_image,
-            (self.divider_x, self.top_edge),
-            (self.divider_x, self.bottom_edge),
-            color=(32, 128, 32),
-            thickness=6,
-        )
+        if False:
+            cv.rectangle(
+                rotated_image,
+                pt1=(self.left_edge, self.top_edge),
+                pt2=(self.right_edge, self.bottom_edge),
+                color=(32, 128, 32),
+                thickness=6,
+            )
+            cv.line(
+                rotated_image,
+                (self.divider_x, self.top_edge),
+                (self.divider_x, self.bottom_edge),
+                color=(32, 128, 32),
+                thickness=6,
+            )
 
         result = np.zeros((height, width * 2, num_channels), dtype=np.uint8)
         result[0:height, 0:width] = image
@@ -308,7 +309,9 @@ def main(years: set[int], pages: list[int]) -> None:
             if (page.id not in pages) and (year not in years) and (years or pages):
                 continue
             la = LayoutAnalysis(page)
+            title = f"Layout Analysis for Page {page.id}"
             cv.imshow(f"Layout Analysis for Page {page.id}", la.debug_image())
+            cv.setMouseCallback(title, _on_event)
             key = cv.waitKey(0)
             if key == ord("q"):
                 return
@@ -316,6 +319,11 @@ def main(years: set[int], pages: list[int]) -> None:
                 for i, col in enumerate(la.columns()):
                     cv.imwrite(f"col-{page.id}-{i + 1}.png", col.image)
             cv.destroyAllWindows()
+
+
+def _on_event(event, x, y, _flags, _param):
+    if event == cv.EVENT_LBUTTONDOWN:
+        print(f"{x},{y}")
 
 
 if __name__ == "__main__":
