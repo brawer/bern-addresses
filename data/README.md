@@ -7,9 +7,11 @@ This directory contains various data files for the address book project.
 
 In 1882, the city of Bern had an address reform. Many house numbers changed,
 and some streets were renamed as well. The file `address_reform_1882.csv`
-contains a mapping table for this reform.
+contains a mapping table for this reform, taken from the 1882 publication
+[Die Häuser-Nummerirung in Bern. Gegenüberstellung der alten und neuen
+Hausnummern.](https://www.e-rara.ch/bes_1/periodical/titleinfo/3012646).
 
-To verify the mapping, We checked for each “new” address whether it
+To verify the mapping, we checked for each “new” address whether it
 still existed in the federal buildings register (Eidg. Gebäude- und
 Wohnungsregister, GWR) as of 2025.
 
@@ -33,9 +35,9 @@ Wohnungsregister, GWR) as of 2025.
 
 ## Divider lines
 
-The file `dividers.csv` contains an exception list for the detection of
-vertical divider lines in [../src/layout.py](src/layout.py).  For
-most pages, the Computer Vision algorithm works fine, but occasionally
-it fails.  If a page is listed in this file, the (manually entered) pixel
-coordinates of its divider line are used instead of the algorithmically
-determined position.
+The file `dividers.csv` contains an exception list for the detection
+of vertical divider lines in [layout.py](../src/layout.py).  For most
+pages, the Computer Vision algorithm works fine, but occasionally it
+fails.  If a page is listed in this file, the (manually entered) pixel
+coordinates of its divider line are used instead of the
+algorithmically determined position.
