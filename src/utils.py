@@ -11,7 +11,7 @@ import re
 import urllib.request
 
 
-Page = namedtuple("Page", "id date")
+Page = namedtuple("Page", "id date is_title_page")
 
 
 def fetch_jpeg(page_id: int) -> Path:
@@ -98,13 +98,16 @@ def parse_years(years: str) -> set[int]:
     return result
 
 
-def read_pages():
-    pages = {}
+def read_pages() -> dict[str, list[Page]]:
     path = Path(__file__) / ".." / "pages.csv"
+    pages = {}
+    seen_dates: set[str] = set()
     with open(path.resolve()) as csvfile:
         reader = csv.DictReader(csvfile)
         for row in reader:
             date, page_id = row["Date"], int(row["PageID"])
-            p = Page(page_id, date)
+            is_title_page = date not in seen_dates
+            seen_dates.add(date)
+            p = Page(page_id, date, is_title_page)
             pages.setdefault(date, []).append(p)
     return pages
