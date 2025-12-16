@@ -8,8 +8,10 @@
 #     venv/bin/python3 src/layout.py --years=1863-1864,1921
 
 from argparse import ArgumentParser
+import csv
 from dataclasses import dataclass
 import math
+from pathlib import Path
 
 import cv2 as cv
 import numpy as np
@@ -56,6 +58,14 @@ class LayoutAnalysis(object):
         self._detect_edges()
 
     def _detect_divider_segments(self) -> list[LineSegment]:
+        # For the vast majority of pages, we can automatically detect
+        # the divider. But for a few cases, the algorithm fails.
+        # Look up the current page in an exception table and return
+        # the manually entered divider segment if the page is found.
+        dividers = self._read_dividers()
+        if div := dividers.get(self.page.id):
+            return [div]
+
         segments: list[LineSegment] = []
         img = self.raw_image
         dx, dy = 600, 250
@@ -213,6 +223,23 @@ class LayoutAnalysis(object):
     def _transform_point(x: float, y: float, matrix) -> (float, float):
         """Transforms a point (x, y) via an affine transformation."""
         return cv.transform(np.array([[[x, y]]]), matrix)[0][0]
+
+    @staticmethod
+    def _read_dividers() -> dict[int, LineSegment]:
+        global _dividers
+        if len(_dividers) > 0:
+            return _dividers
+        path = Path(__file__) / ".." / ".." / "data" / "dividers.csv"
+        with open(path.resolve()) as fp:
+            for r in csv.DictReader(fp):
+                page_id = int(r["PageID"])
+                x1, y1 = float(r["X1"]), float(r["Y1"])
+                x2, y2 = float(r["X2"]), float(r["Y2"])
+                _dividers[page_id] = LineSegment(x1, y1, x2, y2)
+        return _dividers
+
+
+_dividers: dict[int, LineSegment] = {}
 
 
 def main(years: set[int], pages: list[int]) -> None:
