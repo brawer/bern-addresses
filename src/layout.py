@@ -47,6 +47,7 @@ class Column:
     x: int
     y: int
     image: np.ndarray
+    dashes: list[LineSegment]
 
 
 class LayoutAnalysis(object):
@@ -65,10 +66,9 @@ class LayoutAnalysis(object):
         self._detect_divider_x()
         self._detect_edges()
 
-    def columns(self) -> list[Column]:
         top, bottom = self.top_edge, self.bottom_edge
         left, mid, right = self.left_edge, self.divider_x, self.right_edge
-        return [
+        self.columns = [
             self._make_column(left, top, mid - 10, bottom),
             self._make_column(mid + 10, top, right, bottom),
         ]
@@ -78,7 +78,39 @@ class LayoutAnalysis(object):
         blurred = cv.bilateralFilter(image, 9, 50, 75)
         gray = cv.cvtColor(blurred, cv.COLOR_BGR2HLS_FULL)[:, :, 1]
         thresh = cv.threshold(gray, 0, 255, cv.THRESH_BINARY | cv.THRESH_OTSU)[1]
-        return Column(x1, y1, thresh)
+        dashes = self._detect_dashes(thresh)
+        return Column(x1, y1, thresh, dashes)
+
+    def _detect_dashes(self, image: np.ndarray) -> list[LineSegment]:
+        roi = image[:, 0:180].copy()
+        height, width = roi.shape[:2]
+        roi = cv.bitwise_not(roi)
+        kernel = cv.getStructuringElement(cv.MORPH_RECT, (5, 5))
+        roi = cv.morphologyEx(roi, cv.MORPH_CLOSE, kernel, iterations=3)
+
+        # Draw a background-colored border around the image to
+        # be analyzed. cv.findCountours() raises an exception
+        # if a contour crosses the image border.
+        cv.rectangle(roi, (0, 0), (width, height), color=0, thickness=2)
+        cv.imshow("roi", roi)
+
+        dashes: list[tuple(int, int, int)] = []  # x, y, length
+        contours, hierarchy = cv.findContours(
+            image[:, 0:140], cv.RETR_TREE, cv.CHAIN_APPROX_TC89_KCOS
+        )
+        for c, contour in enumerate(contours):
+            x, y, w, h = cv.boundingRect(contour)
+            if w < 25 or h > 10:
+                continue
+            if self._count_parents(hierarchy, c) > 1:
+                continue
+            mid_y = y + h // 2
+            dashes.append((x, y + h // 2, w))
+        median_x = np.median([d[0] for d in dashes])
+        median_length = np.median([d[2] for d in dashes])
+        return [
+            LineSegment(median_x, d[1], median_x + median_length, d[1]) for d in dashes
+        ]
 
     def _detect_divider_segments(self) -> list[LineSegment]:
         # For the vast majority of pages, we can automatically detect
@@ -241,10 +273,18 @@ class LayoutAnalysis(object):
         return result
 
     def _draw_columns(self, image: np.ndarray) -> None:
-        for c in self.columns():
+        for c in self.columns:
             column_image = cv.cvtColor(c.image, cv.COLOR_GRAY2BGR)
             height, width = column_image.shape[:2]
             image[c.y : c.y + height, c.x : c.x + width] = column_image
+            for dash in c.dashes:
+                cv.line(
+                    image,
+                    (int(dash.x1 + c.x + 0.5), int(dash.y1 + c.y + 0.5)),
+                    (int(dash.x2 + c.x + 0.5), int(dash.y2 + c.y + 0.5)),
+                    color=(0, 0, 255),
+                    thickness=7,
+                )
 
     @staticmethod
     def _draw_grid(image: np.ndarray, color) -> None:
@@ -278,6 +318,19 @@ class LayoutAnalysis(object):
                 markerSize=20,
                 thickness=2,
             )
+
+    @staticmethod
+    def _count_parents(hierarchy, i):
+        """
+        Count how many parents the i-th contour has
+        in an OpenCV countours hierarchy.
+        """
+        num_parents = 0
+        p = hierarchy[0][i][3]
+        while p >= 0:
+            num_parents += 1
+            p = hierarchy[0][p][3]
+        return num_parents
 
     @staticmethod
     def _transform_point(x: float, y: float, matrix) -> (float, float):
@@ -316,7 +369,7 @@ def main(years: set[int], pages: list[int]) -> None:
             if key == ord("q"):
                 return
             if key == ord("s"):
-                for i, col in enumerate(la.columns()):
+                for i, col in enumerate(la.columns):
                     cv.imwrite(f"col-{page.id}-{i + 1}.png", col.image)
             cv.destroyAllWindows()
 
