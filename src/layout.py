@@ -92,7 +92,7 @@ class LayoutAnalysis(object):
         # be analyzed. cv.findCountours() raises an exception
         # if a contour crosses the image border.
         cv.rectangle(roi, (0, 0), (width, height), color=0, thickness=2)
-        cv.imshow("roi", roi)
+        # cv.imshow("roi", roi)
 
         dashes: list[tuple(int, int, int)] = []  # x, y, length
         contours, hierarchy = cv.findContours(
