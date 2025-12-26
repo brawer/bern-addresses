@@ -43,6 +43,53 @@ class OCRLine:
     box: Box
 
 
+@dataclass
+class AddressBookEntry:
+    id: int | None
+    page_id: int
+    box: Box
+    family_name: str
+    given_name: str
+    maiden_name: str
+    nobility_name: str
+    title: str
+    occupations: list[str]
+    addresses: list[str]
+    workplace: str
+    unrecognized: str
+
+    def to_dict(self) -> dict[str, str]:
+        """
+        Returns a dictionary on behalf of older parts of the codebase,
+        such as the validator in src/validator.py.
+        """
+        pos = f"{self.box.x},{self.box.y},{self.box.width},{self.box.height}"
+        occ_1 = self.occupations[0] if len(self.occupations) >= 1 else ""
+        occ_2 = self.occupations[1] if len(self.occupations) >= 2 else ""
+        occ_3 = self.occupations[2] if len(self.occupations) >= 3 else ""
+        addr_1 = self.addresses[0] if len(self.addresses) >= 1 else ""
+        addr_2 = self.addresses[1] if len(self.addresses) >= 1 else ""
+        addr_3 = self.addresses[2] if len(self.addresses) >= 1 else ""
+        return {
+            "ID": f"BAE-{self.id}" if self.id else "",
+            "Scan": str(self.page_id),
+            "Position": pos,
+            "Name": self.family_name,
+            "Vorname": self.given_name,
+            "Ledigname": self.maiden_name,
+            "Adelsname": self.nobility_name,
+            "Titel": self.title,
+            "Beruf": occ_1,
+            "Beruf 2": occ_2,
+            "Beruf 3": occ_3,
+            "Adresse": addr_1,
+            "Adresse 2": addr_2,
+            "Adresse 3": addr_3,
+            "Arbeitsort": self.workplace,
+            "nicht zuweisbar": self.unrecognized,
+        }
+
+
 def fetch_jpeg(page_id: int) -> Path:
     """
     Fetch the JPEG image for a single page from e-rara.ch.
@@ -161,6 +208,41 @@ def read_ocr_lines(volume: str) -> list[OCRLine]:
             )
             lines.append(line)
     return lines
+
+
+def test_addressbookentry_to_dict():
+    entry = AddressBookEntry(
+        id=42,
+        page_id=3010970,
+        box=Box(302, 1091, 405, 23),
+        family_name="Meier",
+        given_name="Anna",
+        maiden_name="Müller",
+        nobility_name="von Mülinen",
+        title="Dr.",
+        occupations=["Fabrikantin", "O2", "O3"],
+        addresses=["A-Str. 1", "B-Str. 2", "C-Str. 3"],
+        workplace="Müller & Co.",
+        unrecognized="Huh?",
+    )
+    assert entry.to_dict() == {
+        "ID": "BAE-42",
+        "Scan": "3010970",
+        "Position": "302,1091,405,23",
+        "Name": "Meier",
+        "Vorname": "Anna",
+        "Ledigname": "Müller",
+        "Adelsname": "von Mülinen",
+        "Titel": "Dr.",
+        "Beruf": "Fabrikantin",
+        "Beruf 2": "O2",
+        "Beruf 3": "O3",
+        "Adresse": "A-Str. 1",
+        "Adresse 2": "B-Str. 2",
+        "Adresse 3": "C-Str. 3",
+        "Arbeitsort": "Müller & Co.",
+        "nicht zuweisbar": "Huh?",
+    }
 
 
 def test_box_union():
