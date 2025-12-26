@@ -5,6 +5,7 @@
 
 from collections import namedtuple
 import csv
+from dataclasses import dataclass
 import os
 from pathlib import Path
 import re
@@ -12,6 +13,34 @@ import urllib.request
 
 
 Page = namedtuple("Page", "id date is_title_page")
+
+
+@dataclass
+class Box:
+    x: int
+    y: int
+    width: int
+    height: int
+
+    def union(self, other: "Box") -> "Box":
+        """
+        Returns the union of this box with another box.
+        """
+        x1 = min(self.x, other.x)
+        x2 = max(self.x + self.width, other.x + other.width)
+        y1 = min(self.y, other.y)
+        y2 = max(self.y + self.height, other.y + other.height)
+        x1, y1 = min(x1, x2), min(y1, y2)
+        x2, y2 = max(x1, x2), max(y1, y2)
+        return Box(x1, y1, x2 - x1, y2 - y1)
+
+
+@dataclass
+class OCRLine:
+    page_id: int
+    column: int
+    text: str
+    box: Box
 
 
 def fetch_jpeg(page_id: int) -> Path:
@@ -111,3 +140,38 @@ def read_pages() -> dict[str, list[Page]]:
             p = Page(page_id, date, is_title_page)
             pages.setdefault(date, []).append(p)
     return pages
+
+
+def read_ocr_lines(volume: str) -> list[OCRLine]:
+    lines = []
+    path = Path(__file__) / ".." / ".." / "ocr-lines" / f"{volume}.csv"
+    with open(path.resolve(), "r") as fp:
+        for row in csv.DictReader(fp):
+            box = Box(
+                x=int(row["X"]),
+                y=int(row["Y"]),
+                width=int(row["Width"]),
+                height=int(row["Height"]),
+            )
+            line = OCRLine(
+                page_id=int(row["PageID"]),
+                column=int(row["Column"]),
+                box=box,
+                text=row["Text"],
+            )
+            lines.append(line)
+    return lines
+
+
+def test_box_union():
+    a = Box(1, 5, 2, 6)
+    assert a.union(Box(7, 3, 11, 3)) == Box(1, 3, 17, 8)
+
+
+def test_read_ocr_lines():
+    lines = read_ocr_lines("1864-08-15")
+    line = lines[1]
+    assert line.page_id == 29210592
+    assert line.column == 1
+    assert line.box == Box(287, 1632, 601, 56)
+    assert line.text == "Abderhalden A. Näh., Ag. 33"
