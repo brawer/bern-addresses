@@ -8,6 +8,10 @@
 #
 # See https://github.com/brawer/bern-addresses/issues/347 for possibly
 # using another OCR engine than Google Document AI.
+#
+# Usage:
+#
+#     venv/bin/python3 src/send_to_ocr.py --years=1864,1867-1873
 
 from argparse import ArgumentParser
 import csv
@@ -46,27 +50,6 @@ class Line:
     height: int
 
 
-REPLACEMENTS = {
-    "ẵ": "ä",
-    "gaffe": "gaſſe",
-    "gasse": "gaſſe",
-    "I.": "J.",
-    "Käshdir": "Käshdlr",
-    "Megg": "Metzg",
-    "Mezg": "Metzg",
-    "Nent": "Rent",
-    "plazg": "platzg",
-    "plagg": "platzg",
-    "Räfich": "Käfich",
-    "Regt.": "Negt.",
-    "Schlsfr": "Schlſſr",
-    "sc": "ſc",
-    "st": "ſt",
-    "sp": "ſp",
-    "ss": "ſſ",
-}
-
-
 class GoogleOCR(object):
     def __init__(self, location: str, project_id: str, processor_id: str):
         self.client = self._make_client(location)
@@ -76,7 +59,6 @@ class GoogleOCR(object):
     def process(self, page: Page) -> list[Line]:
         la = LayoutAnalysis(page)
         lines: list[Line] = []
-        is_fraktur = int(page.date[:4]) <= 1879
         for col_index, col in enumerate(la.columns):
             img = self._insert_at_signs(col)
             ok, png = cv.imencode(".png", img)
@@ -97,7 +79,7 @@ class GoogleOCR(object):
                     result.document.text[s.start_index : s.end_index]
                     for s in ll.text_anchor.text_segments
                 ]
-                text = self._clean_text("".join(segments).strip(), is_fraktur)
+                text = self._clean_text("".join(segments).strip())
                 if not text:
                     continue
                 x = min(v.x for v in ll.bounding_poly.vertices)
@@ -149,17 +131,9 @@ class GoogleOCR(object):
             img[at_y : at_y + at_h, at_x : at_x + at_w] = self.at_sign
         return img
 
-    def _clean_text(self, text: str, fraktur: bool) -> str:
+    def _clean_text(self, text: str) -> str:
         if text[0] == "@":
             text = "— " + text[1:].strip()
-        if fraktur and text[-1] in ("-", ":"):
-            text = text[:-1].strip() + "\u2e17"
-        text = re.sub(r"\.([0-9A-ZÄÖÜ])", lambda m: ". " + m.group(1), text)
-        text = re.sub(
-            r"([0-9] [a-z][,.]?)", lambda m: m.group(1).replace(" ", ""), text
-        )
-        for a, b in REPLACEMENTS.items():
-            text = text.replace(a, b)
         return text
 
 
