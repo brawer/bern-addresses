@@ -12,6 +12,7 @@ import os
 # note: all current pages are 2000 wide
 COL_X_MIN_WIDTH = 850
 
+
 # Helper that collects the entries on the same page,
 # and writes them out in sorted order.
 class Page(object):
@@ -64,12 +65,11 @@ def list_volumes():
 
 if __name__ == "__main__":
     for vol in list_volumes():
-
-        env_vl = os.environ.get('PROCESS_VOLUMES', False)
+        env_vl = os.environ.get("PROCESS_VOLUMES", False)
         if env_vl:
-            vl = env_vl.split(',')
-            if vol.split('/')[-1][:-4] not in vl:
+            vl = env_vl.split(",")
+            if vol.split("/")[-1][:-4] not in vl:
                 continue
 
-        print('Updating line order in %s' % vol.split('/')[-1])
+        print("Updating line order in %s" % vol.split("/")[-1])
         fix_line_order(vol)

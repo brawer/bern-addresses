@@ -184,7 +184,9 @@ class Validator:
         if "ID" in entry:
             bad.update(self._validate_id(entry, pos))
         bad.update(self.validate_name(entry, pos))
-        given_names_gender, bad_given_name_columns = self.validate_given_names(entry, pos)
+        given_names_gender, bad_given_name_columns = self.validate_given_names(
+            entry, pos
+        )
         bad.update(bad_given_name_columns)
         bad.update(self.validate_addresses(entry, pos))
         if self.is_company(entry):
@@ -207,7 +209,7 @@ class Validator:
         bad.update(self.validate_occupations(entry, pos))
         genders = set(g for g in (title_gender, given_names_gender) if g)
         if len(genders) > 1:
-            self.warn('inconsistent gender between title and given name', entry, pos)
+            self.warn("inconsistent gender between title and given name", entry, pos)
         return bad
 
     def validate_name(self, entry, pos):
@@ -227,8 +229,8 @@ class Validator:
             bad.add("Adresse 2")
         for p in ("Adresse", "Adresse 2", "Adresse 3"):
             if addr := entry[p]:
-                if any(a in addr for a in ('Abl.', 'Ablage')):
-                    message = '“Ablage” should not be part of address'
+                if any(a in addr for a in ("Abl.", "Ablage")):
+                    message = "“Ablage” should not be part of address"
                     self.warn(message, entry, pos)
                     bad.add(p)
                     continue
@@ -268,7 +270,7 @@ class Validator:
             if gender:
                 genders.add(gender)
                 if len(genders) > 1:
-                    self.warn('inconsistent gender across given names', entry, pos)
+                    self.warn("inconsistent gender across given names", entry, pos)
                     ok = False
             if not ok:
                 bad.add(key)
@@ -277,8 +279,8 @@ class Validator:
 
     def _validate_given_name(self, entry, key, pos):
         given_names = entry[key].split()
-        if 'VDM' in given_names or 'V. D. M.' in " ".join(given_names):
-            self.warn('VDM is an occupation, not a given name', entry, pos)
+        if "VDM" in given_names or "V. D. M." in " ".join(given_names):
+            self.warn("VDM is an occupation, not a given name", entry, pos)
             return "", False
         gn = [self.given_names.get(g) for g in given_names]
         ok = all(g != None for g in gn)
@@ -289,7 +291,7 @@ class Validator:
         if not ok:
             message = 'unknown given name "%s"' % entry[key]
             self.warn(message, entry, pos)
-        genders = set(g['Gender'] for g in gn if g != None and g['Gender'])
+        genders = set(g["Gender"] for g in gn if g != None and g["Gender"])
         if len(genders) > 1:
             message = 'inconsistent gender in %s "%s"' % (key, entry[key])
             self.warn(message, entry, pos)
@@ -421,7 +423,7 @@ class Validator:
             addr_2_before_1882 = ""
             addr_3_before_1882 = ""
 
-        noga_code_1, noga_label_1  = "", ""
+        noga_code_1, noga_label_1 = "", ""
         noga_code_2, noga_label_2 = "", ""
         noga_code_3, noga_label_3 = "", ""
         if activity_1 := self.economic_activities.get(entry["Beruf"]):
@@ -486,7 +488,7 @@ class Validator:
                         genders.add("F")
                 if code.endswith("-WI"):
                     genders.add("F")  # "Witwe" = Widow
-                
+
         return genders.pop() if len(genders) == 1 else ""
 
     def _normalize_name(self, name):

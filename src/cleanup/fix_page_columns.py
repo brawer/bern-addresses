@@ -28,6 +28,7 @@ import urllib.request
 import cv2
 import numpy as np
 
+
 # Fetch the JPEG image for a single page from e-rara.ch.
 # If the image is already in cache, the cached content is returned
 # without re-downloading it over the internet.
@@ -78,7 +79,7 @@ class ColumnSelector(object):
                 break
             if key == 127 and len(self._rois) > 0:  # delete
                 self._rois = self._rois[:-1]
-            if key == ord('q'):
+            if key == ord("q"):
                 done = True
                 break
         cv2.destroyAllWindows()
@@ -162,7 +163,7 @@ if __name__ == "__main__":
             img = cv2.imread(img_path)
             cs = ColumnSelector(f"Page {page}", img, columns.get(page, []))
             done, rois = cs.run()
-            for (x, y, w, h) in rois:
+            for x, y, w, h in rois:
                 print(f"{page},{x},{y},{w},{h}")
             if done:
                 break

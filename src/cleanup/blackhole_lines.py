@@ -1,5 +1,6 @@
 import os
 
+
 # Returns the file paths to all address book volumes.
 def list_volumes():
     path = os.path.join(os.path.dirname(__file__), "..", "..", "proofread")
@@ -8,36 +9,34 @@ def list_volumes():
         [os.path.join(path, f) for f in os.listdir(path) if f.endswith(".txt")]
     )
 
-def strip_lines():
 
+def strip_lines():
     lut = {}
     lut_raw_fn = os.path.join(os.path.dirname(__file__), "..", "blackhole-lines.txt")
     with open(lut_raw_fn) as fp:
         for line in fp:
             lut[line] = 0
-    print('Loaded %s lines to blackhole.' % len(lut))
+    print("Loaded %s lines to blackhole." % len(lut))
 
     for vol in list_volumes():
-
-        env_vl = os.environ.get('PROCESS_VOLUMES', False)
+        env_vl = os.environ.get("PROCESS_VOLUMES", False)
         if env_vl:
-            vl = env_vl.split(',')
-            if vol.split('/')[-1][:-4] not in vl:
+            vl = env_vl.split(",")
+            if vol.split("/")[-1][:-4] not in vl:
                 continue
 
-        print('Processing blackholes in %s' % vol.split('/')[-1])
+        print("Processing blackholes in %s" % vol.split("/")[-1])
 
         num_blackholes = 0
 
-        with open(vol + '.tmp', 'w') as out:
-            for line in open(vol, 'r'):
-
+        with open(vol + ".tmp", "w") as out:
+            for line in open(vol, "r"):
                 if line in lut:
                     num_blackholes += 1
                     continue
-        
+
                 out.write(line)
-        os.rename(vol + '.tmp', vol)
+        os.rename(vol + ".tmp", vol)
         print("%s lines removed" % num_blackholes)
 
 

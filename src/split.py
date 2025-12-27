@@ -71,7 +71,7 @@ def split(vol, validator):
             row = 2
             image = fetch_jpeg(page_id)
             continue
-        if '#' not in line:
+        if "#" not in line:
             msg = "%s:%d: Line should contain a # character" % input_pos
             print(msg)
             raise ValueError(msg)

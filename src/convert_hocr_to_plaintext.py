@@ -21,19 +21,21 @@ MAX_ALLOWED_LINE_WIDTH = 1000
 # only try to glue up until this threshold
 MAX_GLUE_OFFSET = 100
 
-LASTNAME_PATH = os.path.join(os.path.dirname(__file__), 'family_names.txt')
-LASTNAMES = {name.strip() for name in open(LASTNAME_PATH, 'r')}
+LASTNAME_PATH = os.path.join(os.path.dirname(__file__), "family_names.txt")
+LASTNAMES = {name.strip() for name in open(LASTNAME_PATH, "r")}
 
-GIVENNAME_PATH = os.path.join(os.path.dirname(__file__), 'givennames.txt')
-GIVENNAMES = {name.strip() for name in open(GIVENNAME_PATH, 'r')}
+GIVENNAME_PATH = os.path.join(os.path.dirname(__file__), "givennames.txt")
+GIVENNAMES = {name.strip() for name in open(GIVENNAME_PATH, "r")}
 
-STREET_ABBREVS_PATH = os.path.join(os.path.dirname(__file__), 'street_abbrevs.csv')
-STREET_ABBREVS = {street_abbrevs.split(',')[0] for street_abbrevs in open(STREET_ABBREVS_PATH, 'r')}
+STREET_ABBREVS_PATH = os.path.join(os.path.dirname(__file__), "street_abbrevs.csv")
+STREET_ABBREVS = {
+    street_abbrevs.split(",")[0] for street_abbrevs in open(STREET_ABBREVS_PATH, "r")
+}
 
 
 def read_pages():
     pages = {}
-    with open('src/pages.csv') as csvfile:
+    with open("src/pages.csv") as csvfile:
         reader = csv.DictReader(csvfile)
         for row in reader:
             date = row["Date"]
@@ -41,49 +43,52 @@ def read_pages():
             pages.setdefault(date, []).append((page_id, page_label))
     return pages
 
+
 # Abbreviations (and full words) that are definitely not family names.
 # If they start a new line, we assume that OCR has missed to recognize
 # a leading hyphen, and insert that missing hyphen programmatically.
 ABBREVS = {
-    '&',
-    '& Co',
-    'Abl.',
-    'Alb.',
-    'Chr.',
-    'Cie.',
-    'Fr.',
-    'Frau',
-    'Frl.',
-    'gb.',
-    'geb.',
-    'Gebr.'
-    'Gottf.',
-    'Math.',
-    'Karol.',
-    'Jb.',
-    'Jh.',
-    'Jgfr.',
-    'Joh.',
-    'Pfr.',
-    'Sam.',
-    'Schn.',
-    'Schuhm.',
-    'Schwest.',
-    'Tel.',
-    'Th.',
-    'Wittwe',
-    'Wtw.',
-    'Wwe.',
+    "&",
+    "& Co",
+    "Abl.",
+    "Alb.",
+    "Chr.",
+    "Cie.",
+    "Fr.",
+    "Frau",
+    "Frl.",
+    "gb.",
+    "geb.",
+    "Gebr.Gottf.",
+    "Math.",
+    "Karol.",
+    "Jb.",
+    "Jh.",
+    "Jgfr.",
+    "Joh.",
+    "Pfr.",
+    "Sam.",
+    "Schn.",
+    "Schuhm.",
+    "Schwest.",
+    "Tel.",
+    "Th.",
+    "Wittwe",
+    "Wtw.",
+    "Wwe.",
 }
 
+
 def read_page(date, page_id):
-    has_phone_arrows = (date >= '1885') and (date <= '1924')
+    has_phone_arrows = (date >= "1885") and (date <= "1924")
     boxes = []
     min_y = 260
     with open(f"cache/hocr/{page_id}.hocr", "r") as f:
         hocr = f.read()
     for x, y, x2, y2, txt in re.findall(
-        r"<span class='ocr_line' id='line_[_0-9]+' title='bbox (\d+) (\d+) (\d+) (\d+)'>(.+)\n", hocr):
+        r"<span class='ocr_line' id='line_[_0-9]+' title='bbox (\d+) (\d+) (\d+) (\d+)'>(.+)\n",
+        hocr,
+    ):
         x, y = int(x), int(y)
         w, h = int(x2) - x, int(y2) - y
         if y < min_y:
@@ -92,29 +97,28 @@ def read_page(date, page_id):
             continue
         if re.match(r"^-\w", txt):
             txt = "- " + txt[1:]
-        if '#' in txt:
+        if "#" in txt:
             if has_phone_arrows:
-                txt = re.sub(r'(#)\d{3,}', '↯', txt)
-            txt = txt.replace('#', ' ')
-        txt = txt.replace('ſ', 's').replace("'", "’")
+                txt = re.sub(r"(#)\d{3,}", "↯", txt)
+            txt = txt.replace("#", " ")
+        txt = txt.replace("ſ", "s").replace("'", "’")
         if has_phone_arrows:
-            txt = re.sub(r'\s+(\d{4,})[^\]]', r' ↯\1 ', txt)
-        if txt.strip() == '↯':
+            txt = re.sub(r"\s+(\d{4,})[^\]]", r" ↯\1 ", txt)
+        if txt.strip() == "↯":
             continue
-        if w > LINE_WIDTH_THRESHOLD and '|' in txt:
-            cols = txt.split('|')
+        if w > LINE_WIDTH_THRESHOLD and "|" in txt:
+            cols = txt.split("|")
             count = len(cols)
             for i, col in enumerate(cols):
                 col = col.strip()
                 # mark up lines we're confident
                 # that they've been split
-                if col.endswith('-'):
-                    col += '@@@GLUE@@@'
-                if col != '':
+                if col.endswith("-"):
+                    col += "@@@GLUE@@@"
+                if col != "":
                     boxes.append(
-                        (int(x + (i * w / count)), y,
-                        int(w / count), h,
-                        col + '\n'))
+                        (int(x + (i * w / count)), y, int(w / count), h, col + "\n")
+                    )
         # remove lines longer than MAX_ALLOWED_LINE_WIDTH,
         # since they are (mostly) bad ocrs; then save them
         # to src/collage/${pos}.raw.txt for human splitting
@@ -123,22 +127,21 @@ def read_page(date, page_id):
         # is available, use its contents to replace the
         # current line
         elif w > MAX_ALLOWED_LINE_WIDTH:
-            fn = f'{date}-{page_id}-{x}-{y}-{w}-{h}'
-            path = 'src/collage'
-            if os.path.isfile('%s/%s.txt' % (path, fn)):
-                with open('%s/%s.txt' % (path, fn), 'r') as f:
+            fn = f"{date}-{page_id}-{x}-{y}-{w}-{h}"
+            path = "src/collage"
+            if os.path.isfile("%s/%s.txt" % (path, fn)):
+                with open("%s/%s.txt" % (path, fn), "r") as f:
                     c = f.read().splitlines()
                     num_lines = len(c)
                     w_per_line = int(w / num_lines)
                     x_offset = 0
                     for patch_line in c:
                         boxes.append(
-                            (int(x + x_offset), y,
-                            w_per_line, h,
-                            patch_line + '\n'))
+                            (int(x + x_offset), y, w_per_line, h, patch_line + "\n")
+                        )
                         x_offset += w_per_line
             else:
-                with open('%s/%s.raw.txt' % (path, fn), 'w') as o:
+                with open("%s/%s.raw.txt" % (path, fn), "w") as o:
                     o.write(txt)
         else:
             boxes.append((x, y, w, h, txt))
@@ -148,92 +151,108 @@ def read_page(date, page_id):
 
 def convert_page(date, page_id, page_label):
     yield f"# Date: {date} Page: {page_id}/{page_label}"
-    last, last_pos = '', ''
+    last, last_pos = "", ""
     for line in read_page(date, page_id):
-        line = ' '.join(line.replace('.', '. ').split())
-        line = line.replace('. ,', '.,').replace('. -', '.-').replace('. )', '.)').replace('. :', '.:')
-        if line[0] == '#':
-            if last or last_pos: yield f'{last}  # {last_pos}'
+        line = " ".join(line.replace(".", ". ").split())
+        line = (
+            line.replace(". ,", ".,")
+            .replace(". -", ".-")
+            .replace(". )", ".)")
+            .replace(". :", ".:")
+        )
+        if line[0] == "#":
+            if last or last_pos:
+                yield f"{last}  # {last_pos}"
             yield line
-            last, last_pos = '', ''
+            last, last_pos = "", ""
             continue
-        if len(line) > 3 and (re.match(r'^[A-Z]\.', line) or any(line.startswith(x) for x in ABBREVS)):
-            line = '- ' + line
-        if line.startswith('--'):
-            line = '- -' + line[2:]
-        elif line.startswith('('):
-            line = '- ' + line
-        cur, cur_pos = [x.strip() for x in line.split('#')]
+        if len(line) > 3 and (
+            re.match(r"^[A-Z]\.", line) or any(line.startswith(x) for x in ABBREVS)
+        ):
+            line = "- " + line
+        if line.startswith("--"):
+            line = "- -" + line[2:]
+        elif line.startswith("("):
+            line = "- " + line
+        cur, cur_pos = [x.strip() for x in line.split("#")]
         # TODO(random-ao): worth moving to fix_conjunctions.py?
-        if last.endswith('-'):
-            _x, cur_y, _w, _h = [int(x) for x in cur_pos.split(';')[0].split(',')]
-            _x, last_y, _w, _h = [int(x) for x in last_pos.split(';')[0].split(',')]
+        if last.endswith("-"):
+            _x, cur_y, _w, _h = [int(x) for x in cur_pos.split(";")[0].split(",")]
+            _x, last_y, _w, _h = [int(x) for x in last_pos.split(";")[0].split(",")]
 
             # track movement on y, only attempt
             # gluing up to threshold offset
             last_ys = []
-            for pos in last_pos.split(';'):
-                last_ys.append(int(pos.split(',')[1]))
+            for pos in last_pos.split(";"):
+                last_ys.append(int(pos.split(",")[1]))
             last_y = int(max(last_ys))
             if abs(cur_y - last_y) > MAX_GLUE_OFFSET:
-                yield f'{last}  # {last_pos}'
+                yield f"{last}  # {last_pos}"
                 last, last_pos = cur, cur_pos
                 continue
 
             # don't glue lines that are rather
             # clearly invalid fragments
-            cur_segs = cur.replace(',',' ').split()
-            if len(cur_segs) < 1: continue
+            cur_segs = cur.replace(",", " ").split()
+            if len(cur_segs) < 1:
+                continue
             if cur_segs[0] in GIVENNAMES:
-                yield f'{cur}  # {cur_pos}'
+                yield f"{cur}  # {cur_pos}"
                 continue
             elif cur_segs[0] in LASTNAMES:
-                yield f'{cur}  # {cur_pos}'
+                yield f"{cur}  # {cur_pos}"
                 continue
             elif cur_segs[0] in STREET_ABBREVS:
-                yield f'{cur}  # {cur_pos}'
+                yield f"{cur}  # {cur_pos}"
                 continue
-            elif cur_segs[0] in ['-', 'gasse']:
-                yield f'{cur}  # {cur_pos}'
+            elif cur_segs[0] in ["-", "gasse"]:
+                yield f"{cur}  # {cur_pos}"
                 continue
             else:
                 last = last[:-1] + cur
-                last_pos += ';' + cur_pos
-        elif (any(last.endswith(' ' + x) for x in JOIN_WORDS) and
-                not cur.startswith('-') and
-                not cur.split()[0].strip().replace(',', '') in LASTNAMES):
-            last = last + ' ' + cur
-            last_pos += ';' + cur_pos
-        elif (any(line.startswith(x) for x in JOIN_WORDS) and
-                not any(x in line for x in ['Comp', 'Cie'])):
-            last = last + ' ' + cur
-            if last_pos != '':
-                last_pos += ';' + cur_pos
+                last_pos += ";" + cur_pos
+        elif (
+            any(last.endswith(" " + x) for x in JOIN_WORDS)
+            and not cur.startswith("-")
+            and not cur.split()[0].strip().replace(",", "") in LASTNAMES
+        ):
+            last = last + " " + cur
+            last_pos += ";" + cur_pos
+        elif any(line.startswith(x) for x in JOIN_WORDS) and not any(
+            x in line for x in ["Comp", "Cie"]
+        ):
+            last = last + " " + cur
+            if last_pos != "":
+                last_pos += ";" + cur_pos
             else:
                 last_pos = cur_pos
-        elif any(line.startswith(x) for x in JOIN_WORDS) and any(x in line for x in ['Comp', 'Cie']):
-            if last or last_pos: yield f'{last}  # {last_pos}'
-            last, last_pos = '-' + cur, cur_pos
+        elif any(line.startswith(x) for x in JOIN_WORDS) and any(
+            x in line for x in ["Comp", "Cie"]
+        ):
+            if last or last_pos:
+                yield f"{last}  # {last_pos}"
+            last, last_pos = "-" + cur, cur_pos
         else:
-            if last or last_pos: yield f'{last}  # {last_pos}'
+            if last or last_pos:
+                yield f"{last}  # {last_pos}"
             last, last_pos = cur, cur_pos
-    if last or last_pos: yield f'{last}  # {last_pos}'
+    if last or last_pos:
+        yield f"{last}  # {last_pos}"
 
 
 if __name__ == "__main__":
     for date, pages in sorted(read_pages().items()):
-        if date <= '1862': continue
+        if date <= "1862":
+            continue
 
-        env_vl = os.environ.get('PROCESS_VOLUMES', False)
+        env_vl = os.environ.get("PROCESS_VOLUMES", False)
         if env_vl:
-            vl = env_vl.split(',')
+            vl = env_vl.split(",")
             if date not in vl:
                 continue
 
-        print('Converting %s' % date)
-        with open(f'proofread/{date}.txt', 'w') as out:
+        print("Converting %s" % date)
+        with open(f"proofread/{date}.txt", "w") as out:
             for page_id, page_label in pages:
                 for line in convert_page(date, page_id, page_label):
-                    out.write(line + '\n')
-
-
+                    out.write(line + "\n")

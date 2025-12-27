@@ -10,14 +10,16 @@ import argparse
 import csv
 import io
 
+
 def process(path):
-    stream = io.StringIO(newline='')
+    stream = io.StringIO(newline="")
     out = csv.writer(stream)
     with open(path, "r", encoding="utf-8") as fp:
         for row in csv.reader(fp, delimiter=";"):
-            row = [c.removeprefix("\uFEFF").strip() for c in row]
+            row = [c.removeprefix("\ufeff").strip() for c in row]
             out.writerow(row)
-    print(stream.getvalue().replace('\r\n', '\n').rstrip())
+    print(stream.getvalue().replace("\r\n", "\n").rstrip())
+
 
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
