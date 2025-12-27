@@ -19,7 +19,7 @@ def download_family_names():
     names = set()
     for name in re.findall(r"pers_lastname=(.+?)&amp;", text):
         name = " ".join(name.split())
-        if any(c in name for c in ".,()?<>!0123456789\""):
+        if any(c in name for c in '.,()?<>!0123456789"'):
             continue
         if any(w in name for w in (" und ", " oder ")):
             continue
@@ -31,7 +31,7 @@ def download_family_names():
 
 def read_all_words():
     words = set()
-    path = os.path.join(os.path.dirname(__file__),  "..", "proofread")
+    path = os.path.join(os.path.dirname(__file__), "..", "proofread")
     path = os.path.normpath(path)
     for filename in os.listdir(path):
         if filename.endswith(".txt"):
