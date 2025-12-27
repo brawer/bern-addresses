@@ -12,6 +12,7 @@ from pathlib import Path
 import re
 
 from utils import (
+    AddressBookEntry,
     Box,
     OCRLine,
     Page,
@@ -20,6 +21,7 @@ from utils import (
     read_pages,
     read_ocr_lines,
 )
+from validator import Validator
 
 
 REPLACEMENTS = {
@@ -30,15 +32,59 @@ REPLACEMENTS = {
     "Megg": "Metzg",
     "Mezg": "Metzg",
     "Nent": "Rent",
+    "Nevifor": "Revisor",
     "plazg": "platzg",
     "plagg": "platzg",
     "Räfich": "Käfich",
     "Regt.": "Negt.",
     "Schlsfr": "Schlssr",
+    "Schweft": "Schwest",
 }
 
 
+class Splitter:
+    def __init__(self, validator: Validator):
+        self.validator = validator
+
+    def split(self, lines: list[OCRLine]) -> list[AddressBookEntry]:
+        result: list[AddressBoookEntry] = []
+        lemma: str = ""
+        for line in merge_lines(lines):
+            s = line.text
+            name, s = self.split_family_name(s)
+            if name == "—":
+                name = lemma
+            else:
+                # After "von Goumoens-von Tavel", the new lemma is "von Goumoens".
+                lemma = name.split("-")[0].strip()
+        return result
+
+    def split_name(self, text: str) -> (str, str):
+        p = text.split(",")
+        n = p[0].replace(" -", "-").replace("- ", "-")
+        words = n.split()
+        pos = 0
+        prefixes = {"de", "De", "von", "Von", "v.", "V."}
+        if words[0] in prefixes:
+            pos = pos + 1
+        if any(words[pos].endswith("-" + p) for p in prefixes):
+            pos = pos + 1
+        words[0] = {
+            "De": "de",
+            "v.": "von",
+            "V.": "von",
+        }.get(words[0], words[0])
+        name = " ".join(words[: pos + 1])
+        if name in "-–—":
+            name = "—"
+        rest_list = [" ".join(words[pos + 1 :])] + p[1:]
+        rest = ", ".join(rp.strip() for rp in rest_list if rp)
+        return (name, rest)
+
+
 def main(years: set[int]) -> None:
+    validator = Validator()
+    splitter = Splitter(validator)
     for volume, volume_pages in sorted(read_pages().items()):
         year = int(volume[:4])
         if year not in years:
@@ -49,9 +95,7 @@ def main(years: set[int]) -> None:
             columns = sorted(set(l.column for l in volume_lines))
             for col in columns:
                 col_lines = [l for l in volume_lines if l.column == col]
-                for line in merge_lines(col_lines):
-                    print(line)
-            return
+                splitter.split(col_lines)
 
 
 def merge_lines(lines: list[OCRLine]) -> list[OCRLine]:
@@ -97,43 +141,6 @@ def cleanup_text(s: str) -> str:
     for a, b in REPLACEMENTS.items():
         s = s.replace(a, b)
     return s
-
-
-def test_cleanup_text():
-    assert cleanup_text("ſtraß⸗") == "strass-"
-    assert cleanup_text("Aarberger:") == "Aarberger-"
-    assert cleanup_text("Aarberger=") == "Aarberger-"
-    assert cleanup_text("Räfichgaffe 8 b") == "Käfichgasse 8b"
-    assert cleanup_text("Mtzg. 8 b u. 9") == "Mtzg. 8b u. 9"
-
-
-def test_merge_lines():
-    assert merge_lines([]) == []
-    lines = [
-        OCRLine(29210592, 1, "Adam, Wittwe, Schneiderin,", Box(284, 1963, 628, 54)),
-        OCRLine(29210592, 1, "Aarberg. 63", Box(381, 2011, 254, 52)),
-        OCRLine(29210592, 1, "— Schweſt., Schneiderinnen,", Box(309, 2066, 604, 45)),
-        OCRLine(29210592, 1, "Marktgaſſe 83.", Box(381, 2105, 301, 52)),
-        OCRLine(29210592, 1, "Adamina Jean, Lehrer, Poſt⸗", Box(283, 2149, 631, 62)),
-        OCRLine(29210592, 1, "gaſſe 44", Box(380, 2204, 170, 47)),
-    ]
-    assert merge_lines(lines) == [
-        OCRLine(
-            29210592,
-            1,
-            "Adam, Wittwe, Schneiderin, Aarberg. 63",
-            Box(284, 1963, 628, 100),
-        ),
-        OCRLine(
-            29210592,
-            1,
-            "— Schwest., Schneiderinnen, Marktgasse 83.",
-            Box(309, 2066, 604, 91),
-        ),
-        OCRLine(
-            29210592, 1, "Adamina Jean, Lehrer, Postgasse 44", Box(283, 2149, 631, 102)
-        ),
-    ]
 
 
 if __name__ == "__main__":
