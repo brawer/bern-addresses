@@ -42,6 +42,45 @@ REPLACEMENTS = {
 }
 
 
+COMPANY_ABBREVS = {
+    "AG",
+    "A.-G.",
+    "Cie.",
+    "Co.",
+    "Comp.",
+    "Compagnie",
+    "Gebr.",
+    "Gebrüder",
+    "Gebrüd.",
+    "& Cie.",
+    "& Co.",
+    "& Comp.",
+    "& Cp.",
+    "& Sohn",
+    "& Söhne",
+    "u. Cie.",
+    "u. Comp.",
+}
+
+
+MAIDEN_NAME_PREFIXES = {
+    "geb.",
+    "gb.",
+    "geborne",
+    "geborene",
+}
+
+
+NOBILITY_PREFIXES = {
+    "de": "de",
+    "De": "de",
+    "von": "von",
+    "Von": "von",
+    "v.": "von",
+    "V.": "von",
+}
+
+
 class Splitter:
     def __init__(self, validator: Validator):
         self.validator = validator
@@ -49,14 +88,27 @@ class Splitter:
     def split(self, lines: list[OCRLine]) -> list[AddressBookEntry]:
         result: list[AddressBoookEntry] = []
         lemma: str = ""
-        for line in merge_lines(lines):
-            s = line.text
-            name, s = self.split_family_name(s)
+        lines = merge_lines(sorted(lines, key=lambda l: l.box.y))
+        min_x = min(line.box.x for line in lines)
+        max_x = max(line.box.x + line.box.width for line in lines)
+        for line in lines:
+            name, rest = self.split_name(line.text)
             if name == "—":
                 name = lemma
             else:
                 # After "von Goumoens-von Tavel", the new lemma is "von Goumoens".
                 lemma = name.split("-")[0].strip()
+            company, rest = self.split_company(name, rest)
+            if company:
+                name = company
+                maiden_name = ""
+                title = "[Firma]"
+            else:
+                maiden_name, rest = self.split_maiden_name(rest)
+                title, rest = self.split_title(rest)
+            box = Box(
+                x=min_x, y=line.box.y, width=max_x - min_x, height=line.box.height
+            )
         return result
 
     def split_name(self, text: str) -> (str, str):
@@ -64,22 +116,46 @@ class Splitter:
         n = p[0].replace(" -", "-").replace("- ", "-")
         words = n.split()
         pos = 0
-        prefixes = {"de", "De", "von", "Von", "v.", "V."}
-        if words[0] in prefixes:
+        if words[0] in NOBILITY_PREFIXES:
             pos = pos + 1
-        if any(words[pos].endswith("-" + p) for p in prefixes):
+        if any(words[pos].endswith("-" + p) for p in NOBILITY_PREFIXES):
             pos = pos + 1
-        words[0] = {
-            "De": "de",
-            "v.": "von",
-            "V.": "von",
-        }.get(words[0], words[0])
+        words[0] = NOBILITY_PREFIXES.get(words[0], words[0])
         name = " ".join(words[: pos + 1])
         if name in "-–—":
             name = "—"
         rest_list = [" ".join(words[pos + 1 :])] + p[1:]
         rest = ", ".join(rp.strip() for rp in rest_list if rp)
         return (name, rest)
+
+    def split_company(self, name: str, rest: str) -> (str, str):
+        words = rest.split()
+        for a in COMPANY_ABBREVS:
+            if rest.startswith(a):
+                company = f"{name} {a}"
+                rest = rest.removeprefix(a).removeprefix(",").strip()
+                return company, rest
+        return "", rest
+
+    def split_maiden_name(self, text: str) -> (str, str):
+        if not any(text.startswith(p) for p in MAIDEN_NAME_PREFIXES):
+            return "", text
+        parts = text.split(",")
+        words = parts[0].split()[1:]
+        maiden_name, rest_words = words[0], words[1:]
+        if len(words) >= 2:
+            if nob := NOBILITY_PREFIXES.get(words[0]):
+                maiden_name, rest_words = nob + " " + words[1], words[2:]
+        p = [" ".join(rest_words)] + parts[1:] if rest_words else parts[1:]
+        rest = ", ".join([x.strip() for x in p])
+        return (maiden_name, rest)
+
+    def split_title(self, text: str) -> (str, str):
+        for title in self.validator.titles:
+            if text.startswith(title):
+                rest = text.removeprefix(title).strip().removeprefix(",").strip()
+                return (title, rest)
+        return ("", text)
 
 
 def main(years: set[int]) -> None:

@@ -56,3 +56,33 @@ def test_split_name(splitter):
     assert split("Meier M., Schneiderin") == ("Meier", "M., Schneiderin")
     assert split("de Vigneule, B., Ag. 23") == ("de Vigneule", "B., Ag. 23")
     assert split("De Vigneule, B., Ag. 23") == ("de Vigneule", "B., Ag. 23")
+    assert split("De Vigneule, B., Ag. 23") == ("de Vigneule", "B., Ag. 23")
+    assert split("v. Büren H., geb. v. Tavel") == ("von Büren", "H., geb. v. Tavel")
+    assert split("V. Büren, Ag. 23") == ("von Büren", "Ag. 23")
+    assert split("Buss & Cie., Parfümerie") == ("Buss", "& Cie., Parfümerie")
+
+
+def test_split_company(splitter):
+    assert splitter.split_company("Buß", "& Cie., Parfümerie, Brückfeld") == (
+        "Buß & Cie.",
+        "Parfümerie, Brückfeld",
+    )
+    assert splitter.split_company("Meier", "M., Schneiderin") == ("", "M., Schneiderin")
+
+
+def test_split_maiden_name(splitter):
+    split = splitter.split_maiden_name
+    assert split("Anna, Zieglergasse 169") == ("", "Anna, Zieglergasse 169")
+    assert split("geborne Zbinden, Anna, Zieglergasse 169") == (
+        "Zbinden",
+        "Anna, Zieglergasse 169",
+    )
+    assert split("geborne v. Sinner, Frau, Kramgasse 172") == (
+        "von Sinner",
+        "Frau, Kramgasse 172",
+    )
+
+
+def test_split_title(splitter):
+    split = splitter.split_title
+    assert split("Frau, Lehrer., Jkg. 1") == ("Frau", "Lehrer., Jkg. 1")
