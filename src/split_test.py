@@ -86,3 +86,28 @@ def test_split_maiden_name(splitter):
 def test_split_title(splitter):
     split = splitter.split_title
     assert split("Frau, Lehrer., Jkg. 1") == ("Frau", "Lehrer., Jkg. 1")
+
+
+def test_split_addresses(splitter):
+    split = splitter.split_addresses
+    assert split("") == ([], "")
+    assert split("Metzg. 85 und 87, Bla, Bla") == (
+        ["Metzg. 85", "Metzg. 87"],
+        "Bla, Bla",
+    )
+    assert split("Lehrer, XY, Metzg. 85 und 87") == (
+        ["Metzg. 85", "Metzg. 87"],
+        "Lehrer, XY",
+    )
+
+
+def test_cleanup_address(splitter):
+    c = splitter.cleanup_address
+    assert c("") == []
+    assert c("Lehrerin") == []
+    assert c("Bahnhof") == ["Bahnhof"]
+    assert c("Something 85") == []
+    assert c("Metzg. 85") == ["Metzg. 85"]
+    assert c("Metzg. 85 und 87") == ["Metzg. 85", "Metzg. 87"]
+    assert c("Aarbg. 21 u. Postg. 24") == ["Aarbg. 21", "Postg. 24"]
+    assert c("Nng. 101 u. alte Gasfabrik") == ["Nng. 101", "alte Gasfabrik"]

@@ -17,7 +17,6 @@ from argparse import ArgumentParser
 import csv
 from dataclasses import dataclass
 from pathlib import Path
-import re
 import sys
 
 import cv2 as cv
