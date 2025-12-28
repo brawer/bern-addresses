@@ -26,17 +26,23 @@ from validator import Validator
 
 REPLACEMENTS = {
     "ẵ": "ä",
+    "Bolwerk": "Bollwerk",
+    "Casinoplag": "Casinoplatz",
     "gaffe": "gasse",
     "I.": "J.",
+    "Inkg.": "Jnkg.",
     "Käshdir": "Käshdlr",
     "Megg": "Metzg",
     "Mezg": "Metzg",
+    "Nabbenth": "Rabbenth",
     "Nent": "Rent",
     "Nevifor": "Revisor",
     "plazg": "platzg",
     "plagg": "platzg",
     "Räfich": "Käfich",
     "Regt.": "Negt.",
+    "Ressler": "Kessler",
+    "SchauFlagg": "Schauplatzg",
     "Schlsfr": "Schlssr",
     "Schweft": "Schwest",
 }
@@ -106,11 +112,12 @@ class Splitter:
             else:
                 maiden_name, rest = self.split_maiden_name(rest)
                 title, rest = self.split_title(rest)
-
+            given_name, rest = self.split_given_name(rest)
+            if not title:  # title sometimes before, sometimes after given name
+                title, rest = self.split_title(rest)
             addresses, rest = self.split_addresses(rest)
 
             # TODO
-            given_name = ""
             occupations = []
 
             box = Box(
@@ -179,6 +186,13 @@ class Splitter:
                 return (title, rest)
         return ("", text)
 
+    def split_given_name(self, text: str) -> (str, str):
+        parts = [p.strip() for p in text.split(",")]
+        if len(parts) > 0:
+            if all(n in self.validator.given_names for n in parts[0].split()):
+                return parts[0], ", ".join(parts[1:])
+        return "", text
+
     def split_addresses(self, text: str) -> (list[str], str):
         p = [p.strip() for p in text.split(",")]
         if len(p) == 0:
@@ -231,7 +245,7 @@ def main(years: set[int]) -> None:
             for col in columns:
                 col_lines = [l for l in volume_lines if l.column == col]
                 for entry in splitter.split(col_lines):
-                    print(entry)
+                    print(entry.unrecognized)
 
 
 def merge_lines(lines: list[OCRLine]) -> list[OCRLine]:
@@ -257,8 +271,9 @@ def merge_lines(lines: list[OCRLine]) -> list[OCRLine]:
             )
             continue
         last_text = last.text
+        sep = " " if any(text.startswith(p) for p in ("und", "u.")) else ""
         if any(last_text.endswith(c) for c in "⸗-="):
-            text = last_text[:-1] + text
+            text = last_text[:-1] + sep + text
         else:
             text = " ".join((last_text + " " + text).split())
         box = last.box.union(line.box)
