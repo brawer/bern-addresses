@@ -70,6 +70,13 @@ def test_split_company(splitter):
     assert splitter.split_company("Meier", "M., Schneiderin") == ("", "M., Schneiderin")
 
 
+def test_split_given_name(splitter):
+    split = splitter.split_given_name
+    assert split("A. M., Zieglergasse 169") == ("A. M.", "Zieglergasse 169")
+    assert split("Anna Maria, Zieglergasse 169") == ("Anna Maria", "Zieglergasse 169")
+    assert split("Lehrerin, Zieglergasse 169") == ("", "Lehrerin, Zieglergasse 169")
+
+
 def test_split_maiden_name(splitter):
     split = splitter.split_maiden_name
     assert split("Anna, Zieglergasse 169") == ("", "Anna, Zieglergasse 169")
