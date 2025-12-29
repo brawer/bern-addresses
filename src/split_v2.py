@@ -26,6 +26,7 @@ from validator import Validator
 
 REPLACEMENTS = {
     "ẵ": "ä",
+    "å": "ä",
     "Bolwerk": "Bollwerk",
     "Casinoplag": "Casinoplatz",
     "gaffe": "gasse",
@@ -38,6 +39,7 @@ REPLACEMENTS = {
     "Nent": "Rent",
     "Nevifor": "Revisor",
     "plazg": "platzg",
+    "plaz ": "platz ",
     "plagg": "platzg",
     "Räfich": "Käfich",
     "Regt.": "Negt.",
@@ -212,19 +214,19 @@ class Splitter:
         is_street = lambda s: (s in val.street_abbrevs) or (s in val.streets)
         if addr in val.pois:
             return [addr]
-        if m := re.match(r"^(.+) (\d+[a-t]?)$", addr):
+        if m := re.match(r"^(.+) (\d+[a-t]?)\.?$", addr):
             street, num = m.groups()
             if is_street(street):
                 return [f"{street} {num}"]
-        if m := re.match(r"^(.+) (\d+[a-t]?) (u\.|und) (\d+[a-t]?)$", addr):
+        if m := re.match(r"^(.+) (\d+[a-t]?)\s?(u\.|und) (\d+[a-t]?)$", addr):
             street, num1, _und, num2 = m.groups()
             if is_street(street):
                 return [f"{street} {num1}", f"{street} {num2}"]
-        if m := re.match(r"^(.+) (\d+[a-t]?) (u\.|und) (.+) (\d+[a-t]?)$", addr):
+        if m := re.match(r"^(.+) (\d+[a-t]?)\s?(u\.|und) (.+) (\d+[a-t]?)$", addr):
             s1, num1, _und, s2, num2 = m.groups()
             if is_street(s1) and is_street(s2):
                 return [f"{s1} {num1}", f"{s2} {num2}"]
-        if m := re.match(r"^(.+) (\d+[a-t]?) (u\.|und) (.+)$", addr):
+        if m := re.match(r"^(.+) (\d+[a-t]?)\s?(u\.|und)\s?(.+)$", addr):
             s1, num1, _und, poi = m.groups()
             if is_street(s1) and poi in val.pois:
                 return [f"{s1} {num1}", poi]
