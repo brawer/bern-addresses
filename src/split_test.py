@@ -115,6 +115,8 @@ def test_cleanup_address(splitter):
     assert c("Bahnhof") == ["Bahnhof"]
     assert c("Something 85") == []
     assert c("Metzg. 85") == ["Metzg. 85"]
+    assert c("Kramg. 190.") == ["Kramg. 190"]
+    assert c("Brunng. 7u. Marzielerain") == ["Brunng. 7", "Marzielerain"]
     assert c("Metzg. 85 und 87") == ["Metzg. 85", "Metzg. 87"]
     assert c("Aarbg. 21 u. Postg. 24") == ["Aarbg. 21", "Postg. 24"]
     assert c("Nng. 101 u. alte Gasfabrik") == ["Nng. 101", "alte Gasfabrik"]
