@@ -26,13 +26,16 @@ from validator import Validator
 
 REPLACEMENTS = {
     "..": ".,",
+    "'": "’",
     "ẵ": "ä",
     "å": "ä",
     "Bolwerk": "Bollwerk",
     "Casinoplag": "Casinoplatz",
     "gaffe": "gasse",
     "I.": "J.",
+    "Igfr.": "Jgfr.",
     "Inkg.": "Jnkg.",
+    "Junferng": "Junkerng",
     "Käshdir": "Käshdlr",
     "Megg": "Metzg",
     "Mezg": "Metzg",
