@@ -124,7 +124,8 @@ class Validator:
 
     def warn(self, message, entry, pos):
         self._num_warnings += 1
-        print("%s:%s:%s: %s" % (pos[0], pos[1], entry["Scan"], message))
+        prefix = "%s:%s:" % (pos[0], pos[1]) if pos else ""
+        print("%s%s: %s" % (prefix, entry["Scan"], message))
 
     def report(self):
         if self._missing_family_names:
@@ -312,6 +313,8 @@ class Validator:
         return bad
 
     def _validate_id(self, entry, pos):
+        if not entry["ID"]:
+            return set()
         m = re.match(r"^BAE-([0-9]+)$", entry["ID"])
         if not m:
             self.warn('bad ID "%s"' % entry["ID"], entry, pos)

@@ -1,27 +1,39 @@
 # SPDX-FileCopyrightText: 2025 Sascha Brawer <sascha@brawer.ch>
 # SPDX-License-Identifier: MIT
 #
+# Tool for splitting OCR-ed lines. Generates Excel files for human review.
+# For quick debugging, pass --format=text.
+#
 # Usage:
 #
-#     venv/bin/python3 src/split_v2.py --years=1870-1878
+#     venv/bin/python3 src/split_v2.py --years=1870-1878 --format=excel
+#     venv/bin/python3 src/split_v2.py --years=1865 --format=text
+
 
 from argparse import ArgumentParser
 import csv
 from dataclasses import dataclass
+from layout import LayoutAnalysis
+import io
+import os
 from pathlib import Path
 import re
+import zipfile
+
+import cv2 as cv
+import numpy as np
+import openpyxl
 
 from utils import (
     AddressBookEntry,
     Box,
     OCRLine,
     Page,
-    fetch_jpeg,
     parse_years,
     read_pages,
     read_ocr_lines,
 )
-from validator import Validator
+from validator import COLUMNS, Validator
 
 
 REPLACEMENTS = {
@@ -264,19 +276,115 @@ class Splitter:
         return []
 
 
-def main(years: set[int]) -> None:
+def main(years: set[int], format: str) -> None:
     validator = Validator()
     splitter = Splitter(validator)
     for volume, volume_pages in sorted(read_pages().items()):
         year = int(volume[:4])
         if year not in years:
             continue
+        if format == "excel":
+            out_zip = zipfile.ZipFile(f"{volume}.zip", "w")
+        else:
+            out_zip = None
         ocr_lines = read_ocr_lines(volume)
         for page in volume_pages:
             lines = [l for l in ocr_lines if l.page_id == page.id]
-            for entry in splitter.split(lines):
-                if entry.unrecognized:
-                    print(entry.unrecognized)
+            split_lines = splitter.split(lines)
+            match format:
+                case "text":
+                    for entry in split_lines:
+                        if entry.unrecognized:
+                            print(entry.unrecognized)
+                case "excel":
+                    workbook = make_excel_workbook(page, split_lines, validator)
+                    workbook.save("tmp.xlsx")
+                    with open("tmp.xlsx", "rb") as f:
+                        content = f.read()
+                    os.remove("tmp.xlsx")
+                    out_zip.writestr(
+                        f"{page.id}.xlsx",
+                        content,
+                        compress_type=zipfile.ZIP_DEFLATED,
+                        compresslevel=9,
+                    )
+        if out_zip is not None:
+            out_zip.close()
+
+
+def make_excel_workbook(
+    page: Page, entries: list[AddressBookEntry], validator: Validator
+) -> openpyxl.Workbook:
+    columns = [col for col in COLUMNS if col != "ID"]
+    la = LayoutAnalysis(page)
+    page_image = la.rotated_image
+
+    font = openpyxl.styles.Font(name="Calibri")
+    bold_font = openpyxl.styles.Font(name="Calibri", bold=True)
+    red = openpyxl.styles.colors.Color(rgb="00FF2222")
+    light_red = openpyxl.styles.colors.Color(rgb="00FFAAAA")
+    red_fill = openpyxl.styles.fills.PatternFill(patternType="solid", fgColor=red)
+    light_red_fill = openpyxl.styles.fills.PatternFill(
+        patternType="solid", fgColor=light_red
+    )
+    gray = openpyxl.styles.colors.Color(rgb="00DDDDDD")
+    gray_fill = openpyxl.styles.fills.PatternFill(patternType="solid", fgColor=gray)
+
+    workbook = openpyxl.Workbook()
+    del workbook["Sheet"]
+
+    # Add first row.
+    sheet = workbook.create_sheet(page.label)
+    row = 1
+    cell = sheet.cell(1, row)
+    cell.value = f"https://www.e-rara.ch/bes_1/periodical/pageview/{page.id}"
+    cell.font = font
+    cell.fill = gray_fill
+    sheet.merge_cells("A1:M1")
+
+    # Add second row.
+    row += 1
+    for i, col in enumerate(columns):
+        cell = sheet.cell(row, i + 1)
+        cell.value = col
+        cell.font = bold_font
+        cell.fill = gray_fill
+    sheet.column_dimensions["A"].width = 3  # ID
+    sheet.column_dimensions["B"].width = 35  # Scan
+    sheet.column_dimensions["O"].width = 20  # nicht zuweisbar
+
+    # Add remaining rows.
+    for entry in entries:
+        row += 1
+        entry_dict = entry.to_dict()
+        bad = validator.validate(entry_dict, pos=None)
+        if entry_dict.get("nicht zuweisbar"):
+            bad.add("nicht zuweisbar")
+        for column_index, column in enumerate(columns):
+            cell = sheet.cell(row, column_index + 1)
+            cell.value = entry_dict[column]
+            cell.font = font
+            if column in bad:
+                cell.fill = red_fill
+            elif len(bad) > 0:
+                cell.fill = light_red_fill
+        cropped = crop_image(page_image, entry.box)
+        sheet.add_image(cropped, f"B{row}")
+        sheet.row_dimensions[row].height = cropped.height
+
+    return workbook
+
+
+def crop_image(image: np.ndarray, box: Box) -> openpyxl.drawing.image.Image:
+    cropped = image[box.y : box.y + box.height, box.x : box.x + box.width]
+    size = (int(box.width / 2.5), int(box.height / 2.5))
+    scaled = cv.resize(cropped, size, interpolation=cv.INTER_CUBIC)
+    ok, png = cv.imencode(".png", scaled)
+    if not ok:
+        raise ValueError(f"could not encode PNG image at {box}")
+    out = io.BytesIO()
+    out.write(png.tobytes())
+    return openpyxl.drawing.image.Image(out)
 
 
 def merge_lines(lines: list[OCRLine]) -> list[OCRLine]:
@@ -328,5 +436,6 @@ def cleanup_text(s: str) -> str:
 if __name__ == "__main__":
     ap = ArgumentParser()
     ap.add_argument("--years", default="1864", type=parse_years)
+    ap.add_argument("--format", default="excel", choices=["excel", "text"])
     args = ap.parse_args()
-    main(years=args.years)
+    main(years=args.years, format=args.format)

@@ -12,7 +12,7 @@ import re
 import urllib.request
 
 
-Page = namedtuple("Page", "id date is_title_page")
+Page = namedtuple("Page", "id date label is_title_page")
 
 
 @dataclass
@@ -68,8 +68,8 @@ class AddressBookEntry:
         occ_2 = self.occupations[1] if len(self.occupations) >= 2 else ""
         occ_3 = self.occupations[2] if len(self.occupations) >= 3 else ""
         addr_1 = self.addresses[0] if len(self.addresses) >= 1 else ""
-        addr_2 = self.addresses[1] if len(self.addresses) >= 1 else ""
-        addr_3 = self.addresses[2] if len(self.addresses) >= 1 else ""
+        addr_2 = self.addresses[1] if len(self.addresses) >= 2 else ""
+        addr_3 = self.addresses[2] if len(self.addresses) >= 3 else ""
         return {
             "ID": f"BAE-{self.id}" if self.id else "",
             "Scan": str(self.page_id),
@@ -182,9 +182,10 @@ def read_pages() -> dict[str, list[Page]]:
         reader = csv.DictReader(csvfile)
         for row in reader:
             date, page_id = row["Date"], int(row["PageID"])
+            label = row["PageLabel"]
             is_title_page = date not in seen_dates
             seen_dates.add(date)
-            p = Page(page_id, date, is_title_page)
+            p = Page(page_id, date, label, is_title_page)
             pages.setdefault(date, []).append(p)
     return pages
 
