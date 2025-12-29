@@ -118,3 +118,12 @@ def test_cleanup_address(splitter):
     assert c("Metzg. 85 und 87") == ["Metzg. 85", "Metzg. 87"]
     assert c("Aarbg. 21 u. Postg. 24") == ["Aarbg. 21", "Postg. 24"]
     assert c("Nng. 101 u. alte Gasfabrik") == ["Nng. 101", "alte Gasfabrik"]
+
+
+def test_split_occupations(splitter):
+    split = splitter.split_occupations
+    assert split("Mal., Bärenw.") == (["Mal.", "Bärenw."], "")
+    assert split("Schnd., Spitg. 153") == (["Schnd."], "Spitg. 153")
+    assert split("Schnd, Spitg 153") == (["Schnd."], "Spitg 153")
+    assert split("Blah, Schnd., X") == (["Schnd."], "Blah, X")
+    assert split("Mod. u. Lingère") == (["Mod.", "Lingère"], "")

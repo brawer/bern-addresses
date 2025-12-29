@@ -25,6 +25,7 @@ from validator import Validator
 
 
 REPLACEMENTS = {
+    "..": ".,",
     "ẵ": "ä",
     "Bolwerk": "Bollwerk",
     "Casinoplag": "Casinoplatz",
@@ -116,10 +117,7 @@ class Splitter:
             if not title:  # title sometimes before, sometimes after given name
                 title, rest = self.split_title(rest)
             addresses, rest = self.split_addresses(rest)
-
-            # TODO
-            occupations = []
-
+            occupations, rest = self.split_occupations(rest)
             box = Box(
                 x=min_x, y=line.box.y, width=max_x - min_x, height=line.box.height
             )
@@ -192,6 +190,28 @@ class Splitter:
             if all(n in self.validator.given_names for n in parts[0].split()):
                 return parts[0], ", ".join(parts[1:])
         return "", text
+
+    def split_occupations(self, text: str) -> (list[str], str):
+        all_occupations = self.validator.occupations
+        parts = [p.strip() for p in text.split(",")]
+        found, rest = [], []
+        for p in parts:
+            if p in all_occupations:
+                found.append(p)
+                continue
+            if p + "." in all_occupations:
+                # Sometimes OCR (or the typesetter) missed a final dot,
+                # as in "Schneid".
+                found.append(p + ".")
+                continue
+            if m := re.match(r"(.+) (u\.|und) (.+)", p):
+                p1, _und, p2 = m.groups()
+                if p1 in all_occupations and p2 in all_occupations:
+                    found.append(p1)
+                    found.append(p2)
+                    continue
+            rest.append(p)
+        return found, ", ".join(rest)
 
     def split_addresses(self, text: str) -> (list[str], str):
         p = [p.strip() for p in text.split(",")]
