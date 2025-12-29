@@ -98,6 +98,14 @@ class Splitter:
         self.validator = validator
 
     def split(self, lines: list[OCRLine]) -> list[AddressBookEntry]:
+        result = []
+        columns = set((l.page_id, l.column) for l in lines)
+        for page_id, col in sorted(columns):
+            col_lines = [l for l in lines if l.page_id == page_id and l.column == col]
+            result.extend(self.split_column(col_lines))
+        return result
+
+    def split_column(self, lines: list[OCRLine]) -> list[AddressBookEntry]:
         result: list[AddressBoookEntry] = []
         lemma: str = ""
         lines = merge_lines(sorted(lines, key=lambda l: l.box.y))
@@ -265,11 +273,9 @@ def main(years: set[int]) -> None:
             continue
         ocr_lines = read_ocr_lines(volume)
         for page in volume_pages:
-            volume_lines = [l for l in ocr_lines if l.page_id == page.id]
-            columns = sorted(set(l.column for l in volume_lines))
-            for col in columns:
-                col_lines = [l for l in volume_lines if l.column == col]
-                for entry in splitter.split(col_lines):
+            lines = [l for l in ocr_lines if l.page_id == page.id]
+            for entry in splitter.split(lines):
+                if entry.unrecognized:
                     print(entry.unrecognized)
 
 
