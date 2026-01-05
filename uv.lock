@@ -34,7 +34,7 @@ requires-dist = [
     { name = "opencv-python-headless", specifier = ">=4.12.0.88" },
     { name = "openpyxl", specifier = ">=3.1.5" },
     { name = "pillow", specifier = ">=12.0.0" },
-    { name = "pyproj", specifier = ">=3.7.2" },
+    { name = "pyproj", specifier = ">=3.7.1" },
     { name = "requests", specifier = ">=2.32.5" },
 ]
 
