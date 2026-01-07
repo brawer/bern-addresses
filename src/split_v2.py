@@ -166,6 +166,8 @@ class Splitter:
     def split_name(self, text: str) -> (str, str):
         p = text.split(",")
         n = p[0].replace(" -", "-").replace("- ", "-")
+        if n.startswith("—-"):
+            n = "— -" + n[2:]
         words = n.split()
         pos = 0
         if words[0] in NOBILITY_PREFIXES:
