@@ -3,7 +3,7 @@ name = "bern-addresses"
 version = "0.1.0"
 description = "OCR project for Bern City Archives"
 readme = "README.md"
-requires-python = ">=3.12"
+requires-python = ">=3.10"
 dependencies = [
     "google-cloud-documentai>=3.7.0",
     "numpy>=2.2.6",
