@@ -14,7 +14,7 @@ def splitter() -> Splitter:
 
 
 def test_cleanup_text():
-    assert cleanup_text("ſtraß⸗") == "strass-"
+    assert cleanup_text("ſtraß⸗") == "straß-"
     assert cleanup_text("Aarberger:") == "Aarberger-"
     assert cleanup_text("Aarberger=") == "Aarberger-"
     assert cleanup_text("Räfichgaffe 8 b") == "Käfichgasse 8b"
