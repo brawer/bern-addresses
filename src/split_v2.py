@@ -426,7 +426,7 @@ def merge_lines(lines: list[OCRLine]) -> list[OCRLine]:
 def cleanup_text(s: str) -> str:
     if s[-1] in ":=":
         s = s[:-1] + "-"
-    s = s.replace("ſ", "s").replace("ß", "ss").replace("⸗", "-")
+    s = s.replace("ſ", "s").replace("⸗", "-")
     s = re.sub(r"\.([0-9A-ZÄÖÜ])", lambda m: ". " + m.group(1), s)
     s = re.sub(r"([0-9] [a-z][,.]?)", lambda m: m.group(1).replace(" ", ""), s)
 
