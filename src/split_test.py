@@ -50,6 +50,46 @@ def test_merge_lines():
     ]
 
 
+def test_merge_lines_bug_404():
+    # https://github.com/brawer/bern-addresses/issues/404
+    lines = [
+        OCRLine(29210900, 2, "Jäggi Eman. Fried., Amtsnot.", Box(977, 1311, 665, 51)),
+        OCRLine(29210900, 2, "Pelikan 230 u. Kirchg. 268", Box(1078, 1363, 566, 49)),
+        OCRLine(29210900, 2, "— =Gruner, Hotellaube 229 ±", Box(1003, 1609, 652, 55)),
+        OCRLine(29210900, 2, "Chariatte, Schnd., Markt-", Box(1071, 1661, 570, 58)),
+        OCRLine(29210900, 2, "gasse 44", Box(1078, 1712, 174, 52)),
+        OCRLine(29210900, 2, "— =", Box(1008, 1681, 59, 17)),
+        OCRLine(29210900, 2, "— R., 2. Pfr. a. d. H.-G.-", Box(1003, 1767, 639, 47)),
+        OCRLine(29210900, 2, "Kirche, Aarbg. 54", Box(1079, 1810, 397, 58)),
+    ]
+    assert merge_lines(lines) == [
+        OCRLine(
+            page_id=29210900,
+            column=2,
+            text="Jäggi Eman. Fried., Amtsnot. Pelikan 230u. Kirchg. 268",
+            box=Box(x=977, y=1311, width=667, height=101),
+        ),
+        OCRLine(
+            page_id=29210900,
+            column=2,
+            text="— =Gruner, Hotellaube 229 ± Chariatte, Schnd., Marktgasse 44",
+            box=Box(x=1003, y=1609, width=652, height=155),
+        ),
+        OCRLine(
+            page_id=29210900,
+            column=2,
+            text="— -",
+            box=Box(x=1008, y=1681, width=59, height=17),
+        ),
+        OCRLine(
+            page_id=29210900,
+            column=2,
+            text="— R., 2. Pfr. a. d. H.-G.Kirche, Aarbg. 54",
+            box=Box(x=1003, y=1767, width=639, height=101),
+        ),
+    ]
+
+
 def test_split_name(splitter):
     split = splitter.split_name
     assert split("Meier, M., Schneiderin") == ("Meier", "M., Schneiderin")
