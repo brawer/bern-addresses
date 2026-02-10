@@ -3,7 +3,7 @@
 
 import pytest
 
-from split_v2 import Splitter, cleanup_text, merge_lines
+from split import Splitter, cleanup_text, merge_lines
 from utils import Box, OCRLine
 from validator import Validator
 
