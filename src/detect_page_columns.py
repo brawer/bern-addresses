@@ -17,7 +17,7 @@ import re
 import cv2
 import numpy
 
-from split import fetch_jpeg
+from utils import fetch_jpeg
 
 
 # Given an OpenCV contour hierarchy, count how many parents

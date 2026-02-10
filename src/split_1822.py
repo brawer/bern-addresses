@@ -11,7 +11,7 @@ import re
 import cv2
 import numpy
 
-from split import fetch_jpeg
+from utils import fetch_jpeg
 from validator import Validator
 
 
