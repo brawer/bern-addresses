@@ -340,6 +340,7 @@ def make_excel_workbook(
     row = 1
     cell = sheet.cell(1, row)
     cell.value = f"https://www.e-rara.ch/bes_1/periodical/pageview/{page.id}"
+    cell.data_type = "s"  # string, not number or formula
     cell.font = font
     cell.fill = gray_fill
     sheet.merge_cells("A1:M1")
@@ -349,6 +350,7 @@ def make_excel_workbook(
     for i, col in enumerate(columns):
         cell = sheet.cell(row, i + 1)
         cell.value = col
+        cell.data_type = "s"  # string, not number or formula
         cell.font = bold_font
         cell.fill = gray_fill
     sheet.column_dimensions["A"].width = 3  # ID
@@ -365,6 +367,7 @@ def make_excel_workbook(
         for column_index, column in enumerate(columns):
             cell = sheet.cell(row, column_index + 1)
             cell.value = entry_dict[column]
+            cell.data_type = "s"  # string, not number or formula
             cell.font = font
             if column in bad:
                 cell.fill = red_fill
