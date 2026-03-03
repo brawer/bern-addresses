@@ -220,9 +220,17 @@ class LayoutAnalysis(object):
 
     def _detect_top_bottom_edges(self, thresh: np.ndarray) -> None:
         roi = thresh[:, self.left_edge : self.right_edge].copy()
+
         kernel = cv.getStructuringElement(cv.MORPH_RECT, (25, 5))
         roi = cv.morphologyEx(roi, cv.MORPH_CLOSE, kernel, iterations=7)
-        height = roi.shape[0]
+        height, width = roi.shape[0], roi.shape[1]
+
+        # Erase the area where the page number is typically located.
+        mid_x = width // 2
+        if int(self.page.date[:4]) >= 1880:
+            cv.rectangle(
+                roi, (mid_x - 150, 0), (mid_x + 150, 500), color=0, thickness=-1
+            )
 
         # Detect the top edge. We start in a region that is likely
         # in the middle of the text, and scan towards the top until
