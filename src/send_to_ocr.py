@@ -127,7 +127,10 @@ class GoogleOCR(object):
             cv.line(img, (x1, y1), (x2, y2), color=(255,), thickness=7)
             at_x = x1
             at_y = min(y1, y2) - (at_h // 2)
-            img[at_y : at_y + at_h, at_x : at_x + at_w] = self.at_sign
+            try:
+                img[at_y : at_y + at_h, at_x : at_x + at_w] = self.at_sign
+            except:
+                pass
         return img
 
     def _clean_text(self, text: str) -> str:

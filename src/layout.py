@@ -209,7 +209,7 @@ class LayoutAnalysis(object):
                 x = got[0][0]
                 if x > 100:
                     right_edges.append(start + x)
-        if len(right_edges) > 0:
+        if len(right_edges) > 0 and self.page.id not in {3012404, 3012432, 3012460}:
             self.right_edge = min(int(np.quantile(right_edges, 0.7) + 15), width)
             column_width = self.right_edge - self.divider_x
             self.left_edge = max(0, self.divider_x - column_width)
