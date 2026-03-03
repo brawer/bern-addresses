@@ -100,8 +100,8 @@ NOBILITY_PREFIXES = {
     "De": "de",
     "von": "von",
     "Von": "von",
-    "v.": "von",
-    "V.": "von",
+    "v.": "v.",
+    "V.": "v.",
 }
 
 
