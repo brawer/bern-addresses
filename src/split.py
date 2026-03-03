@@ -316,6 +316,7 @@ def main(years: set[int], format: str) -> None:
                     )
         if out_zip is not None:
             out_zip.close()
+    validator.report()
 
 
 def make_excel_workbook(
