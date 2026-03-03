@@ -207,8 +207,12 @@ class Splitter:
     def split_title(self, text: str) -> (str, str):
         for title in self.validator.titles:
             if text.startswith(title):
-                rest = text.removeprefix(title).strip().removeprefix(",").strip()
-                return (title, rest)
+                rest = text.removeprefix(title)
+                if len(rest) == 0:
+                    return (title, rest)
+                if rest[0] in (".", ",", " "):
+                    rest = rest.strip().removeprefix(",").strip()
+                    return (title, rest)
         return ("", text)
 
     def split_given_name(self, text: str) -> (str, str):
