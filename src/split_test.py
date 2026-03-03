@@ -97,8 +97,8 @@ def test_split_name(splitter):
     assert split("de Vigneule, B., Ag. 23") == ("de Vigneule", "B., Ag. 23")
     assert split("De Vigneule, B., Ag. 23") == ("de Vigneule", "B., Ag. 23")
     assert split("De Vigneule, B., Ag. 23") == ("de Vigneule", "B., Ag. 23")
-    assert split("v. Büren H., geb. v. Tavel") == ("von Büren", "H., geb. v. Tavel")
-    assert split("V. Büren, Ag. 23") == ("von Büren", "Ag. 23")
+    assert split("v. Büren H., geb. v. Tavel") == ("v. Büren", "H., geb. v. Tavel")
+    assert split("V. Büren, Ag. 23") == ("v. Büren", "Ag. 23")
     assert split("Buss & Cie., Parfümerie") == ("Buss", "& Cie., Parfümerie")
 
 
@@ -125,7 +125,7 @@ def test_split_maiden_name(splitter):
         "Anna, Zieglergasse 169",
     )
     assert split("geborne v. Sinner, Frau, Kramgasse 172") == (
-        "von Sinner",
+        "v. Sinner",
         "Frau, Kramgasse 172",
     )
 
