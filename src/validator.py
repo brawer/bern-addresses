@@ -91,6 +91,11 @@ class Validator:
         self.pages = self.read_csv("pages.csv", "PageID")
         self.family_names = self.read_lines("family_names.txt")
         self.given_names = self.read_csv("givennames.txt", "Name")
+        for name, gn in self.given_names.items():
+            gender = gn["Gender"]
+            if gender not in {"M", "F", ""}:
+                message = 'src/givennames.txt: name "%s" has unknown gender' % name
+                raise ValueError(message)
         self.nobility_names = self.read_csv("nobility_names.csv", "Adelsname (Rohtext)")
         self.titles = self.read_csv("titles.csv", "Title")
         self.occupations = self.read_csv("occupations.csv", "Occupation")
