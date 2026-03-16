@@ -98,11 +98,14 @@ if __name__ == "__main__":
     company_writer = csv.DictWriter(company_buffer, fieldnames=COMPANY_FIELDS)
     company_writer.writeheader()
     for filename in sorted(os.listdir(reviewed_dir)):
+        if not filename.endswith(".csv"):
+            continue
         path = os.path.join(reviewed_dir, filename)
         line = 1
         with open(path, mode="r") as stream:
             for row in csv.DictReader(stream):
                 line += 1
+                assert row["ID"].startswith("BAE-"), row
                 validator.validate(row, (filename, line))
                 if validator.is_company(row):
                     if norm := validator.normalize_company(row):
