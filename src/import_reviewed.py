@@ -1,4 +1,4 @@
-# SPDX-FileCopyrightText: 2024 Sascha Brawer <sascha@brawer.ch>
+# SPDX-FileCopyrightText: 2026 Sascha Brawer <sascha@brawer.ch>
 # SPDX-License-Identifier: MIT
 
 # Imports one manually reviewed address book volume into the `reviewed` folder.
@@ -34,7 +34,8 @@ IGNORED_COLUMNS = {
 }
 
 
-def process_zip(path):
+def process_zip(path, start_id):
+    entry_id = start_id
     volume_pattern = re.compile(r"^(\d{4}-\d{2}-\d{2})_reviewed\.zip$")
     if m := volume_pattern.match(path.rsplit("/", 1)[-1]):
         volume = m.group(1)
@@ -87,6 +88,8 @@ def process_zip(path):
                 for col_title, col_index in col.items():
                     if value := row[col_index - 1]:
                         entry[col_title] = str(value).strip()
+                entry["ID"] = "BAE-%d" % entry_id
+                entry_id += 1
                 entry["Scan"] = page_id
                 outrow = [""] * len(COLUMNS)
                 for i, col_title in enumerate(COLUMNS):
@@ -107,5 +110,6 @@ def process_zip(path):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("zipfile")
+    parser.add_argument("--start_id", type=int)
     args = parser.parse_args()
-    process_zip(args.zipfile)
+    process_zip(args.zipfile, args.start_id)
