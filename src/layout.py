@@ -223,7 +223,7 @@ class LayoutAnalysis(object):
             self.top_edge = 230
             self.bottom_edge = 1125
             return
-        
+
         roi = thresh[:, self.left_edge : self.right_edge].copy()
 
         kernel = cv.getStructuringElement(cv.MORPH_RECT, (25, 5))
