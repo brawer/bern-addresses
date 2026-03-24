@@ -1,13 +1,7 @@
 Occupation,CH-ISCO-19
-"Milch-, Anken- u. Käsehdlr.",31109150
-"Milch-, Anken- u. Käshdl.",31109150
-"Milch-, Anken- u. Weinhandlg.",31109150
 "Näh- u. Strickmaschinenrepar.",25404052
 "Redakt. d. „Bund“",37101027
 "Redaktor d. „Bund“",37101027
-"Spezer.- u. Drogueriehdlg.",31109030
-"Spezer.- u. Merceriehdl.",31109030
-"Spezerei- u. Samenhdlr.",31109030
 "Steinkohlen- u. Cockshdlg. en gros & en détail",31109165
 "Tuch-, Kleider- u. Strickgarnhd.",31109162
 "Uhren-, Bijouterie- u. Goldwaarenhdlg.",31109106
@@ -38,7 +32,7 @@ Abwart d. Baudir.,41103022
 Abwart d. Büreau J-B-L,41103022
 Abwart d. Direkt. d. Innern,41103022
 Abwart d. Eisenb. u. Entsumpf.-Dir.,41103022
-Abwart d. Erzieh.-Direkt. u. d. Hochschule,41103022
+Abwart d. Erzieh.-Direkt. u. d. Hochschule,41103054
 Abwart d. J-B-L-Verwalt.,41103022
 Abwart d. Kantonalbank,41103022
 Abwart d. Kriegscommiss.,41103022
@@ -107,6 +101,10 @@ Angestellter d. Justiz- u. Polizeidirektion,33202126
 Angestellter d. Mob.-Assekuranz,33201190
 Angestellter,33201001
 Ankenhdl.,31109071
+Anken[handlg.],31109071
+Anken[hdl.],31109071
+Anken[hdlr.],31109071
+[gew.] Ankenhdlr.,31109071-EX
 Anschläger,26104026
 Antiq.,31109002
 Antiquar,31109002
@@ -141,7 +139,7 @@ Attaché,33102208
 Aufseher,36102014
 Augenarzt,42101031
 Aushilfe,47101062
-Ausläufer,34502027
+Ausläufer,34502008
 Ausrufer,37306077
 Auswandagent,32501002
 Auswander.-Agent,32501002
@@ -183,6 +181,7 @@ Bankdirektor,33101134
 Bankier,33101015
 Bankkassier,31103017
 Bankprokurist,33101196
+Prokurist d. Bankhauses v. Wagner,33101196
 Bannw.,11502009
 Bannwart,11502009
 Banq.,33101015
@@ -263,7 +262,7 @@ Brieftr.,35103002
 Brieftrg.,35103002
 Briefträg.,35103002
 Briefträger,35103002
-Briefträgerchef,35103002
+Briefträgerchef,35103010
 Brillenhändl.,31102081
 Brngrb.,23107007
 Brod.,22203001
@@ -298,10 +297,10 @@ Buchdruckereibes.,33101114
 Buchdruckereibesitzer,33101114
 Buchführer,33203029
 Buchh.,33203029
-Buchhalt. d. Hyp.Kasse,33203029
+Buchhalt. d. Hyp.-Kasse,33203019
 Buchhalt. d. Ohmgeld u. Steuerverw.,33203029
 Buchhalt.,33203029
-Buchhalter d. Spar- u. Leihkasse,33203029
+Buchhalter d. Spar- u. Leihkasse,33203002
 Buchhalter,33203029
 Buchhalterin,33203029
 Buchhaltungsgehülfe,33203036
@@ -324,19 +323,20 @@ Bundeswb.,33202022
 Bundesweibel,33202022
 Bureau-Abw. d. bern. Staatsbahn,41103022
 Bureau-Abw.,41103022
-Bureauangest.,33201053
-Bureauangestellte,33201053
-Bureauangestellter,33201053
+Bureauangest.,33201010
+Bureauangestellte,33201010
+Bureauangestellter,33201010
 Bureauchef,33105108
-Bureaudiener,33201053
+Bureaudiener,33201074
 Bureaugehilfe,33201057
 Bureaugehilfin,33201057
-Bureaul.,33201053
-Bureaulist,33201053
-Bureaulistin,33201053
-Burgerrathsschreib.,33202051
+Bureaul.,33201094
+Bureaulist,33201094
+Bureaulistin,33201094
+Burgerrathsschreib.,33202206
 Burgerschreiber,33202206
 Butter[händler],31109071
+[gew.] Butterhdl.,31109071
 Butterh.,31109071
 Butterhandlg.,31109071
 Butterhdl.,31109071
@@ -376,7 +376,7 @@ Büreauchef,33105108
 Bürolistin,33201094
 Bürstbd.,46105081
 Bürstenb.,46105081
-Bürstenhl.,31109098
+Bürstenhl.,31109040
 Bürstenm.,46105026
 Bürstenmacher,46105026
 Bürstenmch.,46105026
@@ -407,9 +407,9 @@ Chocoladefabr.,21104026
 Chocolfbr.,21104026
 Cigarren- und Tabakhdl.,31109059
 Cigarrenhdl.,31109059
-Cigarrenm.,21301002
-Cigarrenmacher,21301002
-Cigarrenmch.,21301002
+Cigarrenm.,21301015
+Cigarrenmacher,21301015
+Cigarrenmch.,21301015
 Clavierlehr.,44603004
 Claviermach.,38406001
 Coiff.,41301008
@@ -417,7 +417,7 @@ Coiffeur,41301008
 Coiffeurmeister,41301012
 Coiffeuse,41301008
 Com.,47101047
-Comm.,*
+Comm.,47101047
 Commis,47101047
 Commission.,47101047
 Commissionsbureau,47101047
@@ -431,11 +431,11 @@ Condukteur,34105001
 Confis.,21103039
 Controlgehülfe,47101094
 Controll. d. Kantonalbank,33203060
-Corsetm.,22201055
-Corsetmach.,22201055
-Corsetmacherin,22201055
-Corsets u. Art. f. weibl. Arb.,22201055
-Courrier,34502014
+Corsetm.,22201002
+Corsetmach.,22201002
+Corsetmacherin,22201002
+Corsets u. Art. f. weibl. Arb.,22201002
+Courrier,34502025
 Courtier,32101002
 Cravattenfabr.,33101253
 Cravattenmach.,22201028
@@ -457,7 +457,7 @@ Dekorateur,38407002
 Dekorationsmaler,38407025
 Depeschenträger,35103012
 Depotarbeiter,34104037
-Dienstchef,*
+Dienstchef,33105163
 Dienstm.,46106091
 Dienstmann,46106091
 Dintenfabrikant,33101148
@@ -471,12 +471,12 @@ Direkt. d. Spar- u. Leihkasse,33101134
 Direkt. der burglich. Mädchenschule,33102137
 Direkt.,33101023
 Direktor d. Waldau,33102131
-Direktor,*
+Direktor,33101139
 Doz.,44101006
 Dozent,44101006
 Drechsl.,26102031
 Drechsler,26102031
-Drechslermeister,26102002
+Drechslermeister,26102047
 Dreher,25207001
 Dreschl.,11103011
 Drexl.,26102031
@@ -486,12 +486,13 @@ Drogist,31105001
 Droschkenführer,34503017
 Droschkenhalt.,34503017
 Droschkenhalter,34503017
+Drotschkenhalter,34503017
 Ebenist,26105080
 Einleger,26302014
 Einlegerin,26302014
 Einnehmer im Bahnhof,31103005
 Einzieher,31103001
-Eisenbahnangestellter,34108027
+Eisenbahnangestellter,34108036
 Eisenbahnarb.,34108027
 Eisenbahnarbeiter,34108027
 Eisenbahnkondukt.,34105001
@@ -501,6 +502,7 @@ Eisengiesser,25102049
 Eisengieß.,25102049
 Eisenhdl.,31109068
 Eisenhändler,31109068
+Eisenhandlg.,31109068
 Eisenneg.,31109068
 Eisennegot.,31109068
 Eisennegotiant,31109068
@@ -517,6 +519,7 @@ Elektromonteur,23210034
 Elektrotechn.,29201002
 Elektrotechniker,29201002
 Ellenwaarenh.,31109089
+Ellenwaarenhandlg.,31109089
 Ellenwaarenhandl.,31109089
 Ellenwaarenhandlung,31109089
 Ellenwaarenhdl.,31109089
@@ -543,7 +546,7 @@ Faktor,27201123
 Falkenw.,39101051
 Falzerin,22301048
 Farbenfabrik.,33101148
-Faßf.,*
+Faßf.,26107063
 Fechtmeister,44605024
 Fechtmstr.,44605024
 Fegerin,51104154
@@ -576,7 +579,7 @@ Friedensrichter,36201016
 Frspr.,36203006
 Fruchthl.,31109072
 Fräser,25205006
-Früchtehändler,31109201
+Früchtehändler,31109072
 Fuhrhalt.,34503039
 Fuhrhalter,34503039
 Fuhrhl.,34503039
@@ -585,7 +588,7 @@ Fuhrmann,34503009
 Färb.,22103014
 Färber,22103014
 Färberin,22103014
-Först.,34301022
+Först.,11501015
 Förster,11501015
 Führergehilfe,47101024
 Fümist,23208001
@@ -599,7 +602,9 @@ Fürsprecher,36203006
 Fürtücherfabr.,22201051
 Galand.,*
 Garagechef,25702018
-Gasanzünder,23205065
+Gasanz.,28104085
+Gasanzünder,28104085
+Gasanzünd.,28104085
 Gasarbeiter,28104085
 Gasaufs.,51104163
 Gasdirekt.,33101045
@@ -616,9 +621,11 @@ Gehülfe,47101024
 Gehülfin,47101024
 Gemeinderat,33102020
 Gemeinderath,33102020
+Gmdrath,33102020
 Gemeindspr.,33102010
 Gemüsehdl.,31109075
 Gemüsehdlg.,31109075
+Gemüsehändl.,31109075
 Gemüsehändler,31109075
 Gemüsehändlerin,31109075
 Gemüshdl.,31109075
@@ -628,13 +635,15 @@ Geom.,29110013
 Geometer,29110013
 Gerber,22301003
 Gerichtspräs.,36201010
+Gerichtspräsident,36201010
 Gesandter,33102096
-Gesandtschaftsattaché,33102208
+Gesandtschaftsattaché,33102077
 Gesandtschaftssekretär,33202055
 Gesanglehrerin,44603027
 Gesch.-Ag.,32501026
 Geschirrhdl.,31102335
 Geschirrhdlg.,31102335
+Geschirrhändlr.,31102335
 Geschirrhändlerin,31102335
 Geschäftsag.,32501026
 Geschäftsführer,51102245
@@ -712,6 +721,7 @@ Haarflechterin,41301023
 Haf.,23208015
 Hafn.,23208015
 Hafner,23208015
+Hafnerg.,23208015
 Hafnerm.,23208020
 Hafnermeister,23208020
 Hafnermstr.,23208020
@@ -739,11 +749,13 @@ Hauptm.,51101872
 Hauptmann,51101872
 Haus.,31107010
 Haushaltungslehrerin,44702062
-Haushälterin,39202024
+Haushälterin,39202008
 Hausierer,31107010
+Hausk.,11102019
 Hausknecht,11102019
 Hausmeister,51103037
 Hausmstr. im hintern Spital,51103037
+Hausmeister im Burgerspital,51103037
 Haustochter,39202021
 Hauswart,51101322
 Hbam.,51103313
@@ -765,6 +777,7 @@ Helf. z. heil. Geist,43204005
 Helfer an d. Nydeck,43204005
 Helfer,43204005
 Hemden[m.],22202099
+Hemdenschneiderin,22202099
 Hilfsarb.,47101059
 Hilfsarbeit.,47101059
 Hilfsarbeiter,47101059
@@ -827,10 +840,10 @@ Jurist,36204022
 Jüponsstep.,22204110
 Kabishdl.,31109075
 Kabishändlerin,31109075
-Kabshbl.,*
-Kabishobler,*
-Kabishobler.,*
-Kabishoblerin,*
+Kabshbl.,21107017
+Kabishobler,21107017
+Kabishobler.,21107017
+Kabishoblerin,21107017
 Kaffeew.,39101006
 Kaffeewirth,39101006
 Kavall.-Major,46104024
@@ -902,7 +915,7 @@ Kaufm.,51102218
 Kaufmann,51102218
 Kellerhlt.,*
 Kellerwirth,39101051
-Kellner,39105033
+Kellner,39103007
 Kerzenfabr.,28104001
 Kerzenfabrik.,28104001
 Kerzenfabrikant,28104001
@@ -916,6 +929,7 @@ Klavierlehrerin,44603004
 Klavierm.,38406001
 Klaviermach.,38406001
 Klaviermacher,38406001
+Klavierschrein.,38406001
 Klavierstimmer,38406009
 Klaßhl.,*
 Kleiderhdl.,31109047
@@ -926,8 +940,8 @@ Kleiderreinigerin,41101012
 Kleidertrödler,31109047
 Kleinkinderlehrerin,44501002
 Klösterliw.,39101051
-Knabenschneid.,22201006
-Knabenschneiderin,22201006
+Knabenschneid.,22201016
+Knabenschneiderin,22201016
 Knecht,11102001
 Knochens.,28104142
 Knopffabr.,28201027
@@ -954,7 +968,7 @@ Kondukteur,34105001
 Konfiseur,21103039
 Konsul,33102001
 Kontrolleur,46101012
-Kontrollingenieur,46106067
+Kontrollingenieur,29112007
 Kopist,27202001
 Korber,26106002
 Korbflecht.,26106004
@@ -987,6 +1001,7 @@ Krämer.,31109022
 Krämerin,31109022
 Ktsbuchh.,33102113
 Kunstgärt.,11401017
+Kunstgärtner,11401017
 Kunsthdl.,31109050
 Kunstm.,38302019
 Kunstmal.,38302019
@@ -1001,7 +1016,10 @@ Kursinsp.,46106013
 Kutsch.,34503015
 Kutscher,34503015
 Käs[hdl.],31109071
+Käs[hdlr.],31109071
 Käsehändler,31109071
+Käs[...]handlung,31109071
+Käsehdlr.,31109071
 Käser,21105001
 Käsesalzer,21105001
 Käshdl.,31109071
@@ -1021,6 +1039,9 @@ Küchliwirth,31102430
 Küchliwirthin,31102430
 Küf.,26107015
 Küfer,26107015
+Küferg.,26107015
+Faßküfer,26107050
+Fassküfer,26107050
 Küfermeister,26107100
 Kürsch.,22305001
 Kürschn.,22305001
@@ -1055,7 +1076,7 @@ Lederhl.,31109064
 Lederhändl.,31109064
 Lederhändler,31109064
 Legationsrat,33102009
-Legationsrath,33102208
+Legationsrath,33102009
 Leh.,44401007
 Lehenmann,*
 Lehr. a. d. Realsch.,44301007
@@ -1110,11 +1131,11 @@ Lingere,41102031
 Lingeres,41102031
 Lingère,41102031
 Lingères,41102031
+Lingerie,41102031
 Liniererin,27302023
 Literat,37104001
 Lith.,27102014
 Lithogr.,27102014
-Lithograph und Negotiant,27102014
 Lithograph,27102014
 Lithographiebesitzer,27201008
 Lohnbed.,39202012
@@ -1141,7 +1162,7 @@ Lumpenhändl.,41202012
 Lumpenhl.,41202012
 Lumpens.,41202012
 Lumpensamml.,41202012
-Lumpensammler,*
+Lumpensammler,41202012
 Lumpensl.,41202012
 Lumphdl.,41202012
 Magaz.,46103036
@@ -1235,19 +1256,22 @@ Metzgermst.,51102829
 Metzgermstr.,51102829
 Metzgmst.,51102829
 Metzgrmst.,51102829
-Milch- u. Käshändler,31109150
-Milch- u. Mehlhdl.,31109150
-Milch- und Käshändler,31109150
 Milchführer,34203014
+Milch[hdl.],31109150
+Milch[handlg.],31109150
 Milchhdl.,31109150
+gew. Milch[hdl.],31109150-EX
+gew. Milch[hdlr.],31109150-EX
 Milchhdlr.,31109150
+Milch[hdlr.],31109150
 Milchhl.,31109150
 Milchhndl.,31109150
 Milchhändl.,31109150
 Milchhändler,31109150
+Milch[händler],31109150
 Milchtr.,21203011
 Milchträger,21203011
-Militärattaché,33102208
+Militärattaché,33102076
 Militärschneiderin,22201061
 Mineralwasserfabrikant,21203001
 Missionsarbeiter,33202068
@@ -1262,7 +1286,7 @@ Modiste,22204007
 Modistin,22204007
 Modistinnen,22204007
 Molkereiarbeiter,21105056
-Monteur,25404080
+Monteur,25405005
 Mtzg.,21102001
 Museumwth.,36102049
 Musik.,38101031
@@ -1279,6 +1303,7 @@ Musikl. (Organist),44603006
 Musikl.,44603018
 Musiklehr.,44603018
 Musiklehrer,44603018
+Zitherlehrer,44603018
 Müsiklehrer,44603018
 Musiklehrerin,44603018
 Musikus,38101031
@@ -1333,9 +1358,9 @@ Nähmaschinenfabr.,*
 Nähmaschinenrepr.,25404052
 Näht.,22202062
 Ober-Postcontrll.,35105056
-Oberbibliothek.,37201005
-Oberbibliothekar,37201005
-Oberbriefträger,35103002
+Oberbibliothek.,37201002
+Oberbibliothekar,37201002
+Oberbriefträger,35103010
 Oberf. Stadtb.,11501002
 Oberfeldarzt,42101001
 Oberförster,11501002
@@ -1344,8 +1369,8 @@ Obergerichtsschr.,36202002
 Obergerichtsschreiber,36202002
 Obergerichtswbl.,33202154
 Obergerichtsweibel,33202154
-Obergärtner,11401017
-Oberingen.,29112007
+Obergärtner,51102843
+Oberingen.,29112113
 Oberinstruktor,36104033
 Oberkriegskomm.,33102019
 Oberl.,44401004
@@ -1353,7 +1378,7 @@ Oberlehr. der Privat-Mädchenschule im Gerberngraben,44401004
 Oberlehr.,44401004
 Oberlehrer,44401004
 Oberlehrerin,44401004
-Oberlieutenant,36104015
+Oberlieutenant,51101872
 Oberpost-Rev.,35101016
 Oberpostcontrolleur,35105056
 Oberpostsekret.,35105043
@@ -1367,11 +1392,11 @@ Obersten Wittwe,36104021-WI
 eidg. Oberstlt.,51101872
 Oberstl.,51101872
 Oberstlieut.,51101872
-Oberstlt.,36104015
+Oberstlt.,51101872
 Oberzolldirekt.,33102054
-Oberzollrev.,33102054
-Oberzollrevis.,33102054
-Oberzollsekret.,33102054
+Oberzollrev.,36106023
+Oberzollrevis.,36106023
+Oberzollsekret.,36106001
 Obrstkrgsc.,33102019
 Obsthdl.,31109072
 Obsthndl.,31109072
@@ -1379,7 +1404,7 @@ Obsthändlerin,31109072
 Oekonom a. Krankenhaus,45101004
 Oeler,29405098
 Offizial,*
-Offizier,*
+Offizier,51103470
 Ohmgeldbeamt.,33202108
 Ohmgeldverw.,33202108
 Optiker,42204001
@@ -1387,14 +1412,15 @@ Organist,38101022
 Orgelbauer,38406004
 Packer,46102002
 Packerin,46102002
-Papet.,31109158
+Papet.,31109015
 Papeteriehandlg.,31109158
+Schreibmaterialienhdl.,31109158
 Papeteriehdl.,31109158
 Papetier,31109015
 Papierfabr.,33101055
 Papierfabrik.,33101055
-Papierhdlg.,*
-Papierhdlr.,*
+Papierhdlg.,31109015
+Papierhdlr.,31109015
 Papierhl.,31109015
 Papierhändler,31109015
 Papierneg.,31109015
@@ -1408,9 +1434,9 @@ Parqueteriearbeiter,23201020
 Parquetteriefabr.,26104025
 Part.,*
 Pastetenb.,21103074
-Pastetenbäck,21103001
+Pastetenbäck,21103074
 Patentanwalt,36203010
-Patissier,51101346
+Patissier,21103038
 Patronenarbeiter,25309066
 Pelzhdl.,31109155
 Pensionshalterin,39101010
@@ -1459,6 +1485,7 @@ Pfr.,43201027
 Photogr.,37305001
 Photograph,37305001
 Photographin,37305001
+Photographen,37305001
 Pianist,38101036
 Pianistin,38101036
 Pianostimmer,38406009
@@ -1477,16 +1504,16 @@ Polizeidiener-Corpor.,36101047
 Polizeidiener-Wachtm.,36101027
 Polizeidn.,36101048
 Polizeigefreiter,36101040
-Polizeikassier,*
+Polizeikassier,31103039
 Polizeikorpor.,36101047
 Polizeikorporal,36101047
 Polizeisekret.,33202199
 Polizeiwachtmeister,36101027
 Polizist,36101011
-Port.,39102001
-Portier i. Bahnhof,39102001
-Portier im Zeughaus,39102001
-Portier,39102001
+Port.,41103037
+Portier i. Bahnhof,41103039
+Portier im Zeughaus,41103037
+Portier,41103037
 Portraiteur,38302002
 Porträtmal.,38302002
 Porträtmaler,38302002
@@ -1500,7 +1527,7 @@ Postadj.,35101013
 Postangest.,35105058
 Postangestellte,35105058
 Postangestellter,35105058
-Postaushelfer,47101024
+Postaushelfer,35105006
 Postb.,35101017
 Postbeamt.,35101017
 Postbeamter,35101017
@@ -1520,11 +1547,11 @@ Postdir.,33102222
 Postem.,*
 Postfaktor,27201123
 Postgeh.,35105006
-Postgehilfe,47101024
+Postgehilfe,35105006
 Postgehilfin,35105006
 Posthalter,35101001
 Postillon,35103002
-Postkassier,*
+Postkassier,31103039
 Postkom.,35105051
 Postkommis,35105051
 Postkondkt.,35105052
@@ -1561,7 +1588,8 @@ Privatlh.,44703005
 Privatmetzger,21102001
 Prof. Vet.,44101037
 Prof. d. Mathem.,44101044
-Prof. d. Theologie,44101009
+Prof. d. Theologie,44101035
+Prof. der Theologie,44101035
 Prof.,44101001
 Profess.,44101001
 Professor,44101001
@@ -1586,7 +1614,6 @@ Pörtn. im Burgersp.,41103060
 Pörtner im Museum,41103060
 Pörtner,41103060
 Quartieramtschef,51103486
-Quartierauff.,36102014
 Quartieraufs.,36102014
 Quartieraufseh.,36102014
 Quartieraufseher d. IV. Bez.,36102014
@@ -1624,7 +1651,6 @@ Redakt.,37101027
 Redakteur,37101027
 Redaktor,37101027
 Reg-Rath,33102120
-Reg.,33102120
 Reg.-R.,33102120
 Reg.-Rat.,33102120
 Reg.-Rath,33102120
@@ -1640,7 +1666,7 @@ Registrt.,33207014
 Reisende,31108001
 Reisender,31108001
 Rektor d. Kantonsschule,44201007
-Rektor,*
+Rektor,44101013
 Reliefkartenfabrikant,25209040
 Rent.,*
 Rentier,*
@@ -1671,7 +1697,7 @@ Revisor des eidg. Oberkriegskommissariats,32401012
 Revisor,32401012
 Richter,36201019
 Rittm.,44605047
-Rittmstr.,11301019
+Rittmstr.,44605047
 Rnt.,*
 Robes,22201067
 Rohr- und Strohsesselflechterin,22204074
@@ -1691,7 +1717,7 @@ Sachwalter,32402004
 Sackträger,34503007
 Sackzeich.,38304048
 Sagermeister,26101001
-Salzmagazingehülfe,21105008
+Salzmagazingehülfe,46103036
 Salzverk.,31109055
 Salzverw.,21105008
 Salzwaagmeister,46106058
@@ -1700,7 +1726,7 @@ Samenhdl.,31109029
 Samenhdlg.,31109029
 Samenhdlr.,31109029
 Samenhändler,31109029
-Sanitätspolizist,*
+Sanitätspolizist,42507021
 Sattelmacher,22303008
 Sattl.,22303008
 Sattler,22303008
@@ -1739,6 +1765,7 @@ Schlosser,25308047
 Schlosser.,25308047
 Schlosserges.,25308047
 Schlossergesell,25308047
+Schlssrm.,25308022
 Schlosserm.,25308022
 Schlossermeist.,25308022
 Schlossermeister,25308022
@@ -1783,7 +1810,7 @@ Schr.,26105004
 Schrb.,33201078
 Schreib.,33201078
 Schreib[lehrer],44601024
-Schreibbücherfabr.,33101059
+Schreibbücherfabr.,27301020
 Schreibbücherfabrik,27301020
 Schreiber,33201078
 Schreiblehrer,44601024
@@ -1858,6 +1885,7 @@ Schäfter,22302043
 Schätz.,46106101
 Schätzer,46106101
 Schätzerin,46106101
+gewes. Schätzerin,46106101-EX
 Sdr.,22201006
 Seckelm.,31103039
 Seiden-Negt.,31109216
@@ -1943,10 +1971,14 @@ Spenglmstr.,51102910
 Spez.,31109030
 Spezereihandl.,31109030
 Spezereihdl.,31109030
+Spezer.[hdl.],31109030
+Spezier.[hdl.],31109030
+Spezer.[hdlg.],31109030
+Spezerei[hdlr.],31109030
 Spezereihdlg.,31109030
 Spezereihändler,31109030
 Spezereihändlerinnen,31109030
-Spezereimüller,31109030
+Spezereimüller,21106016
 Spezialarzt,42101026
 Spezier. u. Ankenhdl.,31109030
 Spezier. u. Essigfabr.,31109030
@@ -1956,13 +1988,13 @@ Speziererin,31109030
 Speziererinnen,31109030
 Spgl.,23206002
 Spiegelhdl.,31109078
-Spielkartenfabrikant,33101055
+Spielkartenfabrikant,46105126
 Spielwaarenhandlung,31109073
 Spielwaarnhdl.,31109073
 Spielzeughandlg.,31109073
 Spinner bei Herrn Rolle,22101038
 Spinner,22101038
-Spinnereiaufseher,22101038
+Spinnereiaufseher,22101170
 Spirituosen- und Preßhefe-Fabrikant,33101225
 Spiritusfabr.,33101225
 Spitalarzt,42101020
@@ -1980,14 +2012,14 @@ Sprachlehrerin,51103216
 Spritzenfabr.,*
 Spsew.,39101001
 Spsw.,39101001
-Spundenmacher,*
+Spundenmacher,26102012
 Staatsapotheker,42103006
 Staatskassier,33202172
 Staatsschr.,33102167
 Staatsschreiber,33102167
 Stabshauptm.,33105172
 Stadtarchivar,37202005
-Stadtbannw.,11502009
+Stadtbannw.,11502012
 Stadtbannwart,11502012
 Stadtbaumstr.,33102112
 Stadtbuchhalt.,33203029
@@ -1997,7 +2029,7 @@ Stadtfuhruntern.,34503009
 Stadtgeometer,29110004
 Stadting.,29112007
 Stadtkassier,33202166
-Stadtoberförst.,11501002
+Stadtoberförst.,11501004
 Stadtobförst.,11501004
 Stadtr.,33102021
 Stadtrath,33102021
@@ -2033,7 +2065,7 @@ Steinhauerm.,24201030
 Steinhauermeister b. Station,24201030
 Steinhauermeister,24201030
 Steinhauermstr.,24201030
-Steinhg.,24201003
+Steinhg.,24201039
 Steinhm.,24201039
 Stellvertreter d. Bahnhofvorstandes,34101016
 Stellvertreter d. Oberkriegskomm.,33102019
@@ -2046,7 +2078,7 @@ Sternenwirth,39101051
 Sternwart,45302018
 Steuerangest.,33102231
 Steuerbuchhalter,33102231
-Steuereinz.,33102231
+Steuereinz.,33202047
 Steuerverwalter,33102231
 Stickerin,22203001
 Stickerinnen,22203001
@@ -2056,10 +2088,10 @@ Strassensäuberer,41203001
 Straßenpflasterer,23105008
 Stricker,22102018
 Strickerin,22102018
-Strickmaschinenverkauf,22102060
+Strickmaschinenverkauf,31102091
 Strickwaarenhandlung,31109047
-Strickwaarenhdlg.,31109109
-Strickwaarenhdlr.,31109109
+Strickwaarenhdlg.,31109047
+Strickwaarenhdlr.,31109047
 Strickwhandlung,31109047
 Strickwhdl.,31109047
 Strofl.,22204068
@@ -2068,12 +2100,12 @@ Strohfabrikation,22204068
 Strohflech.,22204068
 Strohhfb.,22204039
 Strohhutausrüster,22204039
-Strohhutausrüster.,22204021
+Strohhutausrüster.,22204039
 Strohhutausrüsterin,22204039
-Strohhutbleicher,22204021
+Strohhutbleicher,22204039
 Strohhutfabr.,22204039
 Strohhutfabrikant,22204039
-Strohhutfabrikanten,22204068
+Strohhutfabrikanten,22204039
 Strumpfstuhlschlssr.,*
 Strumpfw. und Wollenhandlung,22102176
 Strumpfw.,22102176
@@ -2083,7 +2115,7 @@ Strumpfweber,22102176
 Stubenschreiber,33201078
 Stubrch.,*
 Ständerathsweibel,33202106
-Subdirektor,*
+Subdirektor,33101012
 Subst.,46106087
 Substit. d. Gemd.kanzlei,46106087
 Substitut a. d. Stadtpolizei,46106087
@@ -2098,22 +2130,21 @@ Sägenf.,25203036
 Sägenfeiler,25203036
 Säger,26101001
 Südfrüchtenhändler,31109201
-Tabak- u. Cig.-Fabr.,21301012
+Tabak- u. Cig.-Fabr.,21301011
 Tabak- u. Cigarrenhdl.,31109087
 Tabak- u. Cigarrenhdlr.,31109087
-Tabakfab.,21301012
-Tabakfabr.,21301012
-Tabakfabrik.,21301012
-Tabakfabrikant,21301012
-Tabakfb.,21301012
-Tabakfbr.,21301012
+Tabakfab.,21301011
+Tabakfabr.,21301011
+Tabakfabrik.,21301011
+Tabakfabrikant,21301011
+Tabakfb.,21301011
+Tabakfbr.,21301011
 Tabakgeschäft,31109087
 Tabakhndlg.,31109087
 Tabaknegotiant,31109087
 Tagl.,47101002
 Taglöhn.,47101002
 Taglöhner,47101002
-Tanz- u. Zitherlehrer,38202001
 Tanzl.,38202001
 Tanzlhr.,38202001
 Tanzlehrer,38202001
@@ -2144,17 +2175,17 @@ Telegr.-Beamter,35105057
 Telegr.-Direktor,33102222
 Telegr.-Gehülf.,35103005
 Telegr.-Gehülfin,35103005
-Telegr.-Insp. d. J. B. L.,35103005
-Telegr.-Inspekt.,35103005
+Telegr.-Insp. d. J. B. L.,35104005
+Telegr.-Inspekt.,35104005
 Telegr.-Kontrolleur,35104005
 Telegr.-Werkführer,35104005
-Telegraph.,35103005
+Telegraph.,35104005
 Telegraphaufseher,35103005
 Telegraphenarbeit.,25509011
 Telegraphenarbeiter,25509011
 Telegraphenläufer,35103005
 Telegraphist,35104005
-Telegraphistengehülfin,35103005
+Telegraphistengehülfin,35104005
 Telegraphistin,35104005
 Telegrph.-Kontrolleur,35104005
 Teleph.-Monteur,25509016
@@ -2162,7 +2193,7 @@ Telephonarbeiter,25509012
 Telephonbeamter,35104007
 Telephonistin,35104003
 Telephonmonteur,25509016
-Telgr.,35103005
+Telgr.,35104005
 Telgraphist,35104005
 Teppichhändl.,31109088
 Theaterkass.,31103030
@@ -2241,7 +2272,7 @@ Unters.-Richt.,36201005
 Untersuch.-Richter,36201005
 Untersuchbeamter in Heimathliach.,36101051
 Unterwbl.,33202113
-Unterweibel,33202119
+Unterweibel,33202113
 V. D. M.,43201027
 VDM,43201027
 Velohändler,31109092
@@ -2260,6 +2291,7 @@ Vertreter,31108005
 Vertreterin,31108005
 Verw. d. Deposito-Cas.,32103058
 Verw. d. Hypoth.-K.,32103058
+Hypothekarkassaverw.,32103058
 Verwalt. d. Zieglerspitals,33102098
 Verwalt.,33105156
 Verwalter der Strafanstalt,33102012
@@ -2279,7 +2311,7 @@ Vikar,43201025
 Violinsp.,38101007
 Visiteur i. Bahnhof.,34108048
 Vizedirektor der Lerberschule,33102137
-Vizedirektor,*
+Vizedirektor,33101012
 Vizekonsul d. Niederlande,33102201
 Vogelhändl.,31106009
 Vorarbeiter,29403018
@@ -2287,7 +2319,7 @@ Vorgäng.,*
 Vorgängerin,*
 Vorst. d. apost. Gemeinde,43201027
 Vorst. des Armenbüreau,33102055
-Vorstand,*
+Vorstand,33102206
 Vorsteh. d. Blindenanstalt,43103001
 Vorsteher d. Blindenanstalt,33102055
 Vorsteher d. Brüdersoc.,43201027
@@ -2307,13 +2339,13 @@ Wachtmeister,36101027
 Waffelnbäcker,21103011
 Waffenchef der Infanterie,36104036
 Waffenchef,36104036
-Waffenfabr.,25404081
+Waffenfabr.,47101081
 Waffenhdl.,31109200
 Waffenhdlr.,31109200
 Waffenkontrol.,25404088
 Waffenkontrolleur,25404088
 Wagenbauer,25701068
-Wagenfabrikt.,25404081
+Wagenfabrikt.,33101148
 Wagenführer,34203008
 Wagenhüter,36102013
 Wagenm.,35105061
@@ -2343,8 +2375,8 @@ Wattenfb.,26302024
 Weber,22102084
 Weberin,22102084
 Webermeister,22102030
-Wechselstube Grünwald & Cp.,32501063
-Wegaufseher,36102025
+Wechselstube Grünwald & Cp.,32101069
+Wegaufseher,23104028
 Wegkn.,41203016
 Wegknecht,41203016
 Wegmeister,23104029
@@ -2357,6 +2389,7 @@ Wein- u. Spirituosenhdlg.,51101481
 Weinh.,51101481
 Weinhandl.,51101481
 Weinhandlung,51101481
+Wein[handlung],51101481
 Weinhdl.,51101481
 Weinhdlg.,51101481
 Weinhdlr.,51101481
@@ -2394,7 +2427,7 @@ Werzeugmacher,25401001
 Wirt,39101051
 Wirth (Beausite),39101051
 Wirth (Weinhalle),39101051
-Wirth Café Krone,39101051
+Wirth Café Krone,39101006
 Wirth Hôtel Bellevue,39101051
 Wirth a. d. Beundenfeld,39101051
 Wirth auf dem Inseli,39101051
@@ -2404,10 +2437,10 @@ Wirth b. Weyermh.,39101051
 Wirth b. d. Neubrück,39101051
 Wirth i. d. Enge,39101051
 Wirth im Café de la Place,39101006
-Wirth im Café du Nord,39101051
-Wirth im Café du Théâtre,39101051
+Wirth im Café du Nord,39101006
+Wirth im Café du Théâtre,39101006
 Wirth im Café français,39101006
-Wirth im Café „Berna“,39101051
+Wirth im Café „Berna“,39101006
 Wirth im Hallergarten,39101051
 Wirth im Hôtel de France,39101051
 Wirth im Mattenhof,39101051
@@ -2557,8 +2590,8 @@ Wwe. des Vorstehers d. Blindenanstalt,33102055-WI
 Wächter,36102034
 Wärter,47101138
 Wäscherin,41102025
-Xylogr.,27201120
-Xylograph,27201120
+Xylogr.,27104064
+Xylograph,27104064
 Zahnarzt,42301002
 Zahntechn.,42302007
 Zahntechniker,42302007
@@ -2578,7 +2611,7 @@ Zeitungsträger.,34502019
 Zeitungsverkäufer,31102038
 Zementer,24302055
 Zeughaus-Verwalt.,36104043
-Zeughausangest.,36104028
+Zeughausangest.,36104038
 Zeughausarb.,36104038
 Zeughausarbeit.,36104038
 Zeughausarbeiter,36104038
@@ -2653,7 +2686,7 @@ franz. Ges.,33102096
 ital. Gesandter,33102096
 brasilian. Gesandter,33102096
 belg. Gesandte,33102096
-chem. Wascher.,41101020
+chem. Wascher.,41101021
 chemisch-technisches u. analytisches Laborator.,28101044
 chemisches Laborator. u. Drogueriegeschäft,31105001
 d. Pfr. Ww.,43201027-WI
@@ -2691,7 +2724,7 @@ franz. Pfarrer,43201027
 franz. Sprachlehr.,44702095
 frz. Pfarr.,43201027
 frz. Pfr.,43201027
-g. Offiz. in Oesterr.,36104026
+g. Offiz. in Oesterr.,36104006
 g. Wagner,26107051-EX
 gew. Abwart der Centr.-Poliz.,41103022-EX
 gew. Ammann,33102006-EX
@@ -2913,10 +2946,10 @@ gw. Brodbäck,21103005-EX
 gw. Bäck.,21103001-EX
 gw. Bäcker,21103001-EX
 gw. Centralstadtkassier,33202166-EX
-gw. Dachb.,23202001
+gw. Dachb.,23202001-EX
 gw. Drag.-Maj.,51101872-EX
 gw. Eisennegt.,31109068-EX
-gw. Glas.,23209006
+gw. Glas.,23209006-EX
 gw. Landjäger-Kommandant,36101018-EX
 gw. Lehrer,44401007-EX
 gw. Lehrer.,44401007-EX
@@ -2960,7 +2993,7 @@ römisch-katholischer Pfr.,43201027
 span. Gesandte,33102096
 techn. Bureau,33101050
 technischer Zeichner,29303001
-topograph. Zeichner u. Graveur,38303018
+topograph. Zeichner,29110012
 österr. Gesandt.,33102096
 östr. Gesandter,33102096
 Abwärt.,41103022
@@ -2986,7 +3019,6 @@ Postwagenmeist.,35105061
 Pensionshalt.,39101010
 Pensionshalter,39101010
 Modisten,22204007
-Abwart d. Erzieh.-Direkt. u. d Hochschule,41103054
 Abwart d. Oberkriegskomm.,41103022
 Adj. d. Direkt. Mob.-Assek.,33102013
 Adj. d. Kreispostdir.,35101013
@@ -3001,8 +3033,8 @@ Anatomieabwart d. Veterinär-Abthl.,41103022
 Appret.,22103153
 Arbeitslehr.,44604013
 Archivar d. Kant.-Bank,37202030
-Arzt d. Strafanst.,42101001
-Arzt d. Zieglerspitals,42101001
+Arzt d. Strafanst.,42101019
+Arzt d. Zieglerspitals,42101020
 Arzt des Kinderspitals,42101020
 Asphaltarbeiter,23207039
 Asphaltgießer,23207039
@@ -3016,9 +3048,9 @@ Bahnhofangestellter,34108026
 Bahnhofarb.,34108026
 Bahnhofkontrolleur,46101012
 Bahnhofpörtner,41103039
-Bahnhofwächter,43102002
-Bahnw.,43102002
-Bahnwächter,43102002
+Bahnhofwächter,36102034
+Bahnw.,36102034
+Bahnwächter,36102034
 Bankbuchhalt.,33203019
 Bankgehülfe,32101004
 Bannwart im Bremgartenwald,11502009
@@ -3039,20 +3071,21 @@ Bettfedernreinig.,41105019
 Bettfedernreiniger,41105019
 Bettfedernreiniger.,41105019
 Bettfedernreinigung,41105019
-Bettmacher.,41105019
+Bettmacher.,22204063
 Buch- u. Kunsthdlr.,31104006
 Buchbdr.,27301001
 Buchdruckergehülfe,27201009
 Buchh. d. Kantonalbank,33203019
 Buchhaltungsgeh. d. eidg. Finanz- u. Zolldep.,33203036
+Buchhandl.,31104006
 Buchhändl.,31104006
 Bundeswbl.,33202022
 Bureau-Angestellt. der Strafanstalt,33201010
 Bureau-Angestellter,33201010
 Bureauabwart,41103022
-Bureauchef J B-L,41103022
-Bureauchef d. Briefexped.,41103022
-Bureauchef d. J-B-L,41103022
+Bureauchef J B-L,33105108
+Bureauchef d. Briefexped.,33105108
+Bureauchef d. J-B-L,33105108
 Bureaudiener a. d. Filialpostbureau,33201074
 Bäckermster,21103060
 Bücherhdl. i. Bahnhof,31104006
@@ -3063,16 +3096,16 @@ Büchsenmchr.,25404083
 Büreau-Angest.,33201010
 Büreauangestellter,33201010
 Büroangestellter,33201010
-Bürstenhdl.,46105029
-Bürstenhändler,46105029
+Bürstenhdl.,31109040
+Bürstenhändler,31109040
 Bürstenmacherin,46105029
 Bürstenfabr.,46105029
 Cafetier,39101006
 Cafétier,39101006
 Calculator im eidgen. statist. Bureau,29402015
 Camionn.,34202011
-Cassier der Spar- u. Leihkasse,31103015
-Cassier im Bahnbof,31103015
+Cassier der Spar- u. Leihkasse,31103039
+Cassier im Bahnbof,31103039
 Cementgießer,23102006
 Cementirer,23102006
 Charcutier,21102003
@@ -3086,7 +3119,7 @@ Comestibleshdl.,31109003
 Comestibleshändler,31109003
 Dachdeckermeist.,23202018
 Dachdeckermst.,23202018
-Dachdeckg.,23202001
+Dachdeckg.,23202014
 Confiseur,21103039
 Consularagt. d. Ver. St.,33202058
 Corsetmacher.,22201002
