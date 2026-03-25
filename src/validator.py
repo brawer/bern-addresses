@@ -99,6 +99,16 @@ class Validator:
         self.nobility_names = self.read_csv("nobility_names.csv", "Adelsname (Rohtext)")
         self.titles = self.read_csv("titles.csv", "Title")
         self.occupations = self.read_csv("occupations.csv", "Occupation")
+        self.codeless_occupations = self.read_csv(
+            "../data/codeless_occupations.csv", "name"
+        )
+        for occ in self.codeless_occupations.values():
+            if occ["gender"] not in "MFX":
+                message = (
+                    'data/codeless_occupations.csv: "%s" has unknown gender'
+                    % occ["name"]
+                )
+                raise ValueError(message)
         self.economic_activities = self.read_csv("economic_activities.csv", "Branche")
         self.isco = self.read_csv("HCL_CH_ISCO_19_PROF_1_2_2_level_6.csv", "Code")
         self.noga = self.read_csv("HCL_NOGA_level_5.csv", "Code")
@@ -309,7 +319,7 @@ class Validator:
         bad = set()
         for p in ("Beruf", "Beruf 2", "Beruf 3"):
             if occ := entry[p]:
-                if occ in self.occupations:
+                if occ in self.occupations or occ in self.codeless_occupations:
                     self._occupation_counts[occ] += 1
                 else:
                     self.warn('unknown occupation "%s"' % occ, entry, pos)
@@ -485,8 +495,12 @@ class Validator:
                 if g := self.given_names.get(name, {}).get("Gender", ""):
                     genders.add(g)
         for key in ("Beruf", "Beruf 2", "Beruf 3"):
-            occ_label = entry["Beruf"]
-            if occ := self.occupations.get(occ_label, {}):
+            occ_label = entry[key]
+            if occ := self.codeless_occupations.get(occ_label):
+                if g := occ.get("gender"):
+                    if g in "FM":
+                        genders.add(g)
+            elif occ := self.occupations.get(occ_label, {}):
                 code = occ["CH-ISCO-19"]
                 labels = self.isco.get(code, {}).get("Name_de", "").split(" | ")
                 if len(labels) == 2 and labels[0] != labels[1]:
@@ -523,6 +537,12 @@ class Validator:
             return name
 
     def _normalize_occupation(self, occupation, gender):
+        if occ := self.codeless_occupations.get(occupation):
+            name_key = {"M": "clean_name_m", "F": "clean_name_f", "": "clean_name_x"}[
+                gender
+            ]
+            return occ[name_key], ""
+
         occ = self.occupations.get(occupation, {})
         code = occ.get("CH-ISCO-19", "")
         if code == "*" or code == "":
