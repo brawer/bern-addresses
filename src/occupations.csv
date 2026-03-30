@@ -1,5 +1,11 @@
 Occupation,CH-ISCO-19
+"Milch-, Anken- u. Käsehdlr.",31109150
+"Milch-, Anken- u. Käshdl.",31109150
+"Milch-, Anken- u. Weinhandlg.",31109150
 "Näh- u. Strickmaschinenrepar.",25404052
+"Spezer.- u. Drogueriehdlg.",31109030
+"Spezer.- u. Merceriehdl.",31109030
+"Spezerei- u. Samenhdlr.",31109030
 "Steinkohlen- u. Cockshdlg. en gros & en détail",31109165
 "Vorstand des Armenbureau’s",33102055
 "Wollengarn-, Stickerei-, Weiß- u. Manufakturwaarenhndl.",31109109
@@ -150,9 +156,6 @@ Angestellter b. Stempelamt,33202108
 Angestellter d. Justiz- u. Polizeidirektion,33202126
 Angestellter d. Mob.-Assekuranz,33201190
 Angestellter,33201001
-Anken[handlg.],31109071
-Anken[hdl.],31109071
-Anken[hdlr.],31109071
 Ankenhdl.,31109071
 Ankenhdlr.,31109071
 Ankenhändlerin,31109071
@@ -864,7 +867,7 @@ Friedensrichter,36201016
 Frspr.,36203006
 Fruchthl.,31109072
 Fräser,25205006
-Früchtehändler,31109072
+Früchtehändler,31109201
 Fuhrhalt.,34503039
 Fuhrhalter,34503039
 Fuhrhl.,34503039
@@ -1375,9 +1378,6 @@ Kupferstecher,27104054
 Kursinsp.,46106013
 Kutsch.,34503015
 Kutscher,34503015
-Käs[...]handlung,31109071
-Käs[hdl.],31109071
-Käs[hdlr.],31109071
 Käsehdlr.,31109071
 Käsehändler,31109071
 Käser,21105001
@@ -1494,6 +1494,7 @@ Liniererin,27302023
 Literat,37104001
 Lith.,27102014
 Lithogr.,27102014
+Lithograph und Negotiant,27102014
 Lithograph,27102014
 Lithographiebesitzer,27201008
 Lohnbed. i. Bernerhof,39202012
@@ -1613,10 +1614,9 @@ Metzgermst.,51102829
 Metzgermstr.,51102829
 Metzgmst.,51102829
 Metzgrmst.,51102829
-Milch[handlg.],31109150
-Milch[hdl.],31109150
-Milch[hdlr.],31109150
-Milch[händler],31109150
+Milch- u. Käshändler,31109150
+Milch- u. Mehlhdl.,31109150
+Milch- und Käshändler,31109150
 Milchführer,34203014
 Milchhdl.,31109150
 Milchhdlr.,31109150
@@ -2313,8 +2313,8 @@ Silberschmied,38401016
 Souffleur,37306043
 Sous-Chef d. Mat.-Verwaltung J-B-L,34101001
 Sous-Chef im Personenbahnhof,34101001
-Sous-Chef,39105001
-Souschef,39105001
+Sous-Chef,33101012
+Souschef,34101001
 Spanner,22103121
 Spedit.,34501003
 Spediteur,34501003
@@ -2336,9 +2336,6 @@ Spenglermeister,51102910
 Spenglermstr.,51102910
 Spenglmstr.,51102910
 Spez.,31109030
-Spezer.[hdl.],31109030
-Spezer.[hdlg.],31109030
-Spezerei[hdlr.],31109030
 Spezereihandl.,31109030
 Spezereihdl.,31109030
 Spezereihdlg.,31109030
@@ -2433,7 +2430,7 @@ Steinhauermeister b. Station,24201030
 Steinhauermeister,24201030
 Steinhauermstr.,24201030
 Steinhg.,24201039
-Steinhm.,24201039
+Steinhm.,24201030
 Stellvertreter d. Bahnhofvorstandes,34101016
 Stellvertreter d. Oberkriegskomm.,33102019
 Stellvertreter,*
@@ -2512,6 +2509,7 @@ Tabaknegotiant,31109087
 Tagl.,47101002
 Taglöhn.,47101002
 Taglöhner,47101002
+Tanz- u. Zitherlehrer,38202001
 Tanzl.,38202001
 Tanzlehrer,38202001
 Tanzlhr.,38202001
@@ -3107,7 +3105,7 @@ franz. Pfarrer,43201027
 franz. Sprachlehr.,44702095
 frz. Pfarr.,43201027
 frz. Pfr.,43201027
-g. Offiz. in Oesterr.,36104006
+g. Offiz. in Oesterr.,36104006-EX
 g. Wagner,26107051-EX
 gem. Schhmach.,22302003-EX
 gew. Abwart der Centr.-Poliz.,41103022-EX
@@ -3226,7 +3224,7 @@ gew. Offizier in Frankreich,36104026-EX
 gew. Offizier in Holland,36104026-EX
 gew. Offizier in Neapel,36104026-EX
 gew. Papiernegt.,31109015-EX
-gew. Pastetenbäck,21103001-EX
+gew. Pastetenbäck,21103074-EX
 gew. Pensionshalterin,39101010-EX
 gew. Pfarrer in Kirchlindach,43201027-EX
 gew. Pfarrer von Jegenstorf,43201027-EX
@@ -3382,7 +3380,7 @@ römisch-katholischer Pfr.,43201027
 span. Gesandte,33102096
 techn. Bureau,33101050
 technischer Zeichner,29303001
-topograph. Zeichner,29110012
+topograph. Zeichner u. Graveur,29110012
 österr. Gesandt.,33102096
 östr. Gesandter,33102096
 Hbm,22204006
