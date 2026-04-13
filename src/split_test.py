@@ -128,6 +128,8 @@ def test_split_maiden_name(splitter):
         "v. Sinner",
         "Frau, Kramgasse 172",
     )
+    # https://github.com/brawer/bern-addresses/issues/455
+    assert split("geb.König, Rent., Gchtg. 78") == ("König", "Rent., Gchtg. 78")
 
 
 def test_split_title(splitter):
