@@ -192,10 +192,12 @@ class Splitter:
         return "", rest
 
     def split_maiden_name(self, text: str) -> (str, str):
-        if not any(text.startswith(p) for p in MAIDEN_NAME_PREFIXES):
+        prefix = next((p for p in MAIDEN_NAME_PREFIXES if text.startswith(p)), None)
+        if not prefix:
             return "", text
+        text = text.removeprefix(prefix).strip()
         parts = text.split(",")
-        words = parts[0].split()[1:]
+        words = parts[0].split()
         maiden_name, rest_words = words[0], words[1:]
         if len(words) >= 2:
             if nob := NOBILITY_PREFIXES.get(words[0]):
