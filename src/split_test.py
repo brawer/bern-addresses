@@ -101,6 +101,9 @@ def test_split_name(splitter):
     assert split("V. Büren, Ag. 23") == ("v. Büren", "Ag. 23")
     assert split("Buss & Cie., Parfümerie") == ("Buss", "& Cie., Parfümerie")
 
+    # https://github.com/brawer/bern-addresses/issues/455
+    assert split(", Steinh., Rathhpl. 103") == ("—", "Steinh., Rathhpl. 103")
+
 
 def test_split_company(splitter):
     assert splitter.split_company("Buß", "& Cie., Parfümerie, Brückfeld") == (

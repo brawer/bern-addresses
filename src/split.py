@@ -164,6 +164,8 @@ class Splitter:
         return result
 
     def split_name(self, text: str) -> (str, str):
+        if text.startswith(","):
+            text = "- " + text
         p = text.split(",")
         n = p[0].replace(" -", "-").replace("- ", "-")
         if n.startswith("—-"):
