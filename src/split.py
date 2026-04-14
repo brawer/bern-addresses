@@ -209,7 +209,7 @@ class Splitter:
         return (maiden_name, rest)
 
     def split_title(self, text: str) -> (str, str):
-        for title in self.validator.titles:
+        for title in sorted(self.validator.titles, key=lambda x: -len(x)):
             if text.startswith(title):
                 rest = text.removeprefix(title)
                 if len(rest) == 0:
