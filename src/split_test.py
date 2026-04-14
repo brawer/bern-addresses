@@ -141,6 +141,8 @@ def test_split_title(splitter):
     # https://github.com/brawer/bern-addresses/issues/422
     assert split("Drechsler, Jkg. 1") == ("", "Drechsler, Jkg. 1")
     assert split("Dr Echsler, Jkg. 1") == ("Dr", "Echsler, Jkg. 1")
+    assert split("Dr. Echsler, Jkg. 1") == ("Dr.", "Echsler, Jkg. 1")
+    assert split("Prof. Dr., Hotellaube 229") == ("Prof. Dr.", "Hotellaube 229")
     assert split("Droguist, Gg. 1") == ("", "Droguist, Gg. 1")
 
 
