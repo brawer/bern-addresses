@@ -102,6 +102,9 @@ if __name__ == "__main__":
             continue
         path = os.path.join(reviewed_dir, filename)
         line = 1
+        with open(path, mode="rb") as stream:
+            if b"\x0d" in stream.read():
+                raise ValueError(f"{path} contains MS-DOS line separators")
         with open(path, mode="r") as stream:
             for row in csv.DictReader(stream):
                 line += 1
