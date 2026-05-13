@@ -97,6 +97,7 @@ if __name__ == "__main__":
     company_buffer = io.StringIO()
     company_writer = csv.DictWriter(company_buffer, fieldnames=COMPANY_FIELDS)
     company_writer.writeheader()
+    assigned_ids = set()
     for filename in sorted(os.listdir(reviewed_dir)):
         if not filename.endswith(".csv"):
             continue
@@ -108,7 +109,11 @@ if __name__ == "__main__":
         with open(path, mode="r") as stream:
             for row in csv.DictReader(stream):
                 line += 1
-                assert row["ID"].startswith("BAE-"), row
+                id = row["ID"]
+                assert id.startswith("BAE-"), row
+                if id in assigned_ids:
+                    raise ValueError(f"id {id} is not unique")
+                assigned_ids.add(id)
                 validator.validate(row, (filename, line))
                 if validator.is_company(row):
                     if norm := validator.normalize_company(row):
