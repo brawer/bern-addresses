@@ -116,6 +116,7 @@ class Validator:
         self.street_abbrevs = self.read_csv("street_abbrevs.csv", "Abbreviation")
         self.streets = self.read_csv("streets.csv", "Street")
         self.address_reform_1882 = self.read_address_reform_1882()
+        self.gwr_addresses = self.read_gwr_addresses()
         self.unknown_addresses_before_1882 = {}
         for abbr, s in self.street_abbrevs.items():
             street = s["Street"]
@@ -368,6 +369,9 @@ class Validator:
             addr_1_before_1882 = ""
             addr_2_before_1882 = ""
             addr_3_before_1882 = ""
+        addr_1_coord = self._geocode_address(addr_1)
+        addr_2_coord = self._geocode_address(addr_2)
+        addr_3_coord = self._geocode_address(addr_3)
 
         gender = self._infer_gender(entry)
         occupations = [
@@ -407,6 +411,12 @@ class Validator:
             "Adresse 1 (bereinigt, vor Adressreform 1882)": addr_1_before_1882,
             "Adresse 2 (bereinigt, vor Adressreform 1882)": addr_2_before_1882,
             "Adresse 3 (bereinigt, vor Adressreform 1882)": addr_3_before_1882,
+            "Adresse 1 (Längengrad)": str(addr_1_coord[0]) if addr_1_coord else "",
+            "Adresse 1 (Breitengrad)": str(addr_1_coord[1]) if addr_1_coord else "",
+            "Adresse 2 (Längengrad)": str(addr_2_coord[0]) if addr_2_coord else "",
+            "Adresse 2 (Breitengrad)": str(addr_2_coord[1]) if addr_2_coord else "",
+            "Adresse 3 (Längengrad)": str(addr_3_coord[0]) if addr_3_coord else "",
+            "Adresse 3 (Breitengrad)": str(addr_3_coord[1]) if addr_3_coord else "",
             "Beruf 1 (Rohtext)": entry["Beruf"],
             "Beruf 2 (Rohtext)": entry["Beruf 2"],
             "Beruf 3 (Rohtext)": entry["Beruf 3"],
@@ -440,6 +450,9 @@ class Validator:
             addr_1_before_1882 = ""
             addr_2_before_1882 = ""
             addr_3_before_1882 = ""
+        addr_1_coord = self._geocode_address(addr_1)
+        addr_2_coord = self._geocode_address(addr_2)
+        addr_3_coord = self._geocode_address(addr_3)
 
         noga_code_1, noga_label_1 = "", ""
         noga_code_2, noga_label_2 = "", ""
@@ -474,6 +487,12 @@ class Validator:
             "Adresse 1 (bereinigt, vor Adressreform 1882)": addr_1_before_1882,
             "Adresse 2 (bereinigt, vor Adressreform 1882)": addr_2_before_1882,
             "Adresse 3 (bereinigt, vor Adressreform 1882)": addr_3_before_1882,
+            "Adresse 1 (Längengrad)": str(addr_1_coord[0]) if addr_1_coord else "",
+            "Adresse 1 (Breitengrad)": str(addr_1_coord[1]) if addr_1_coord else "",
+            "Adresse 2 (Längengrad)": str(addr_2_coord[0]) if addr_2_coord else "",
+            "Adresse 2 (Breitengrad)": str(addr_2_coord[1]) if addr_2_coord else "",
+            "Adresse 3 (Längengrad)": str(addr_3_coord[0]) if addr_3_coord else "",
+            "Adresse 3 (Breitengrad)": str(addr_3_coord[1]) if addr_3_coord else "",
             "Branche 1 (Rohtext)": entry["Beruf"],
             "Branche 2 (Rohtext)": entry["Beruf 2"],
             "Branche 3 (Rohtext)": entry["Beruf 3"],
@@ -626,6 +645,14 @@ class Validator:
 
         return ""
 
+    def _geocode_address(self, addr) -> tuple[float, float] | None:
+        s = addr.rsplit(" ", 1)
+        if len(s) == 2:
+            key = (s[0], s[1], "Bern")
+            if rec := self.gwr_addresses.get(key):
+                return (float(rec["Längengrad"]), float(rec["Breitengrad"]))
+        return None
+
     def read_lines(self, filename):
         path = os.path.join(os.path.dirname(__file__), filename)
         lines = set()
@@ -673,6 +700,16 @@ class Validator:
                 new_addr = f"{new_street} {new_num}".strip()
                 if old_addr and new_addr:
                     result[old_addr] = new_addr
+        return result
+
+    def read_gwr_addresses(self):
+        data_path = os.path.join(os.path.dirname(__file__), "..", "data")
+        path = os.path.join(data_path, "gwr_addresses.csv")
+        result = {}
+        with open(path, "r") as stream:
+            for row in csv.DictReader(stream):
+                key = (row["Strasse"], row["Hausnummer"], row["Ort"])
+                result[key] = row
         return result
 
 
